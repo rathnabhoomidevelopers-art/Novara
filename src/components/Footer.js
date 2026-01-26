@@ -72,10 +72,10 @@ export default function Footer() {
               <div>
                 Phone:{" "}
                 <a
-                  href="tel:+918867867775"
+                  href="tel:+918660200662"
                   className="text-white/85 no-underline"
                 >
-                  +91 8867867775
+                  +91 8660200662
                 </a>
               </div>
             </div>
@@ -150,7 +150,7 @@ export default function Footer() {
                   href="tel:+918660200662"
                   className="text-white/85 no-underline"
                 >
-                  +91 86602 00662
+                  +91 8660200662
                 </a>
               </div>
             </div>

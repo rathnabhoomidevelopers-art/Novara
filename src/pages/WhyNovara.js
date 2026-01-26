@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
+const API_BASE =
+  process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
 
 const viewport = { once: true, amount: 0.25 };
 
@@ -143,7 +144,7 @@ const BrochureModal = ({ isOpen, onClose }) => {
             },
           });
 
-          return; 
+          return;
         } else {
           alert("Something went wrong, please try again.");
         }
@@ -726,7 +727,7 @@ export function WhyNovara() {
         initial={{ opacity: 0, y: 12, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ type: "spring", stiffness: 120, damping: 18, mass: 0.9 }}
-        className="fixed bottom-5 right-4 z-[9999] flex flex-col items-end gap-4 font-poppins"
+        className="fixed bottom-12 lg:bottom-5 right-7 lg:right-4 z-[9999] flex flex-col items-end gap-4 font-poppins"
       >
         <a
           href="https://wa.me/918660200662"
@@ -834,7 +835,8 @@ export function WhyNovara() {
           </span>
         </a>
       </motion.div>
-       <div className="block">
+
+      <div className="block">
         <motion.div
           initial={{ opacity: 0, y: 12, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -845,7 +847,7 @@ export function WhyNovara() {
             mass: 0.9,
           }}
           onClick={() => setIsModalOpen(true)}
-          className="fixed bottom-6 left-4 z-[9999] bg-white cursor-pointer flex flex-row items-center gap-3 p-2 rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
+          className="fixed bottom-12 lg:bottom-5 left-7 lg:left-4 z-[9999] bg-white cursor-pointer flex flex-row items-center gap-3 p-2 rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
         >
           {/* Text → only on desktop */}
           <span className="hidden lg:inline text-[#2b2b2b] hover:text-[#964B00] font-semibold text-base whitespace-nowrap transition-colors">
@@ -866,7 +868,7 @@ export function WhyNovara() {
         description="Fully developed farmland with clear titles and professional management ready for immediate ownership, peaceful living."
         ctaText="Get Started"
       />
-       <BrochureModal
+      <BrochureModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       />

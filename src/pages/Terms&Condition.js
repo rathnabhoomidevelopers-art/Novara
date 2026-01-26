@@ -190,7 +190,7 @@ export default function TermsCondition() {
         initial={{ opacity: 0, y: 12, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ type: "spring", stiffness: 120, damping: 18, mass: 0.9 }}
-        className="fixed bottom-5 right-4 z-[9999] flex flex-col items-end gap-4 font-poppins"
+        className="fixed bottom-12 lg:bottom-5 right-7 lg:right-4 z-[9999] flex flex-col items-end gap-4 font-poppins"
       >
         <a
           href="https://wa.me/918660200662"
