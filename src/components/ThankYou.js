@@ -20,99 +20,103 @@ export default function ThankYou() {
   const phone = location?.state?.phone || "";
 
   useEffect(() => {
-    // Nice: keep user at top
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   return (
     <div className="min-h-screen w-full bg-[#FBF3E6]">
-      {/* Top brand bar */}
+      {/* Top brand bar - Mobile optimized */}
       <div className="w-full bg-[#0F3F3B]">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-4">
           <img
             src="/images/logo.svg"
             alt="SLV Golden Towers"
-            className="h-auto w-[180px] sm:w-[240px]"
+            className="h-auto w-[140px] sm:w-[180px] md:w-[240px]"
           />
 
           <Link
             to="/"
-            className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-white no-underline hover:bg-white/15"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-white/10 px-4 py-2.5 text-xs font-semibold text-white no-underline hover:bg-white/15 sm:text-sm"
           >
-            <ArrowLeft size={18} />
+            <ArrowLeft size={16} />
             Back to Home
           </Link>
         </div>
       </div>
 
-      {/* Main */}
+      {/* Main - Fully responsive grid */}
       <motion.main
         variants={fadeIn}
         initial="hidden"
         animate="show"
-        className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 py-10 lg:grid-cols-[55%_45%] lg:py-16"
+        className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-2 py-8 sm:px-6 sm:py-10 md:py-12 lg:grid-cols-[55%_45%] lg:gap-8 lg:py-16"
       >
-        {/* Left content */}
+
+        
+        {/* Left content - Mobile first */}
         <motion.section
           variants={fadeUp}
           initial="hidden"
           animate="show"
-          className="rounded-3xl border border-[#FFEEC3] bg-white p-6 shadow-sm sm:p-10"
+          className="order-1 rounded-2xl border border-[#FFEEC3] bg-white p-[12px] shadow-sm sm:order-1 sm:p-8 sm:rounded-3xl md:p-10 lg:p-[24px]"
         >
-          <div className="flex items-start gap-4">
-            <div className="mt-1 rounded-2xl bg-[#0F3F3B]/10 p-3 text-[#0F3F3B]">
-              <CheckCircle2 size={28} />
-            </div>
-
-            <div>
-              <h1 className="text-3xl font-brushelva text-[#0F3F3B] sm:text-[44px]">
-                Thank You!
-              </h1>
-
-              <p className="mt-3 max-w-xl text-sm leading-7 text-slate-700 sm:text-[18px]">
-                Your enquiry has been received. Our team will
-                connect with you shortly to share pricing, and site
-                visit details for <span className="font-bold">Ecovara</span>.
-              </p>
-
-              {(name || phone) && (
-                <div className="mt-5 rounded-2xl bg-[#FFF7E5] px-4 py-3 text-sm text-slate-700 sm:text-[16px]">
-                  <div className="font-semibold text-[#0F3F3B]">
-                    Submitted Details
-                  </div>
-                  <div className="mt-1">
-                    {name ? (
-                      <div>
-                        Name: <span className="font-medium">{name}</span>
-                      </div>
-                    ) : null}
-                    {phone ? (
-                      <div>
-                        Phone: <span className="font-medium">{phone}</span>
-                      </div>
-                    ) : null}
-                  </div>
-                </div>
-              )}
-
-              <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
-                <InfoPill title="Response time" value="Within 30–60 mins" />
-                <InfoPill title="Location" value="Yelahanka, Bengaluru" />
-                <InfoPill title="Working hours" value="Mon–Sun 9:30–6:30" />
+          <div className="flex flex-col gap-6">
+            <div className="flex items-start gap-1 sm:gap-4">
+              <div className="mt-1 flex shrink-0 rounded-xl bg-[#0F3F3B]/10 p-2.5 sm:rounded-2xl sm:p-3">
+                <CheckCircle2 size={24} className="sm:[size:28]" />
               </div>
 
-              <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="tel:+918660200662"
-                  className="inline-flex no-underline items-center justify-center gap-2 rounded-full bg-[#0F3F3B] px-6 py-3 text-sm font-semibold text-[#FFEFC4] hover:bg-[#0a2926]"
-                >
-                  <PhoneIcon size={18} />
-                  Call Now
-                </a>
+              <div className="min-w-0 flex-1">
+                <h1 className="text-2xl font-brushelva text-[#0F3F3B] sm:text-3xl md:text-[44px]">
+                  Thank You!
+                </h1>
 
+                <p className="mt-3 text-sm leading-6 text-slate-700 sm:text-base sm:leading-7 md:text-[18px] md:max-w-xl">
+                  Your enquiry has been received. Our team will connect with you
+                  shortly to share pricing, and site visit details for{" "}
+                  <span className="font-bold">Ecovara</span>.
+                </p>
+              </div>
+            </div>
+
+            {(name || phone) && (
+              <div className="rounded-xl bg-[#FFF7E5] px-2 py-3 text-sm text-slate-700 sm:rounded-2xl sm:px-5 sm:text-base">
+                <div className="font-semibold text-[#0F3F3B]">Submitted Details</div>
+                <div className="mt-1.5 space-y-1 text-sm sm:text-base">
+                  {name && (
+                    <div>
+                      Name: <span className="font-medium">{name}</span>
+                    </div>
+                  )}
+                  {phone && (
+                    <div>
+                      Phone: <span className="font-medium">{phone}</span>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              <InfoPill title="Response time" value="Within 30–60 mins" />
+              <InfoPill title="Location" value="Yelahanka, Bengaluru" />
+              <InfoPill title="Working hours" value="Mon–Sun 9:30–6:30" />
+            </div>
+
+            {/* CTA Buttons - Mobile stacked */}
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <a
+                href="tel:+918660200662"
+                className="inline-flex items-center justify-center gap-2 rounded-xl no-underline bg-[#0F3F3B] px-5 py-3.5 text-sm font-semibold text-[#FFEFC4] hover:bg-[#0a2926] sm:px-6 sm:py-3"
+              >
+                <PhoneIcon size={18} />
+                Call Now
+              </a>
+
+              <div className="flex flex-col gap-3 sm:flex-row sm:flex-1">
                 <a
                   href="mailto:info@novaranatureestate.com"
-                  className="inline-flex no-underline items-center justify-center gap-2 rounded-full border border-[#0F3F3B] bg-white px-6 py-3 text-sm font-semibold text-[#0F3F3B] hover:bg-[#0F3F3B]/5"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border no-underline border-[#0F3F3B] bg-white px-5 py-3.5 text-sm font-semibold text-[#0F3F3B] hover:bg-[#0F3F3B]/5 sm:px-6 sm:py-3"
                 >
                   <MailIcon size={18} />
                   Email Us
@@ -120,56 +124,57 @@ export default function ThankYou() {
 
                 <Link
                   to="/projects"
-                  className="inline-flex no-underline items-center justify-center gap-2 rounded-full bg-[#E0B24A] px-6 py-3 text-sm font-semibold text-[#0F3F3B] hover:brightness-95"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#E0B24A] px-2 no-underline py-3.5 text-sm font-semibold text-[#0F3F3B] hover:brightness-95 sm:px-6 sm:py-3"
                 >
                   Explore Project
                 </Link>
               </div>
+            </div>
 
-              <div className="mt-10 rounded-3xl bg-[#FBF3E6] p-5">
-                <div className="text-sm font-semibold uppercase tracking-[0.12em] text-slate-600">
-                  What happens next?
-                </div>
-
-                <ul className="mt-4 space-y-3 text-sm text-slate-700 sm:text-[16px]">
-                  <li className="flex gap-3">
-                    <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#E0B24A]" />
-                    We confirm your requirement.
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#E0B24A]" />
-                    We share brochure + latest pricing + offers (if any).
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-[#E0B24A]" />
-                    We schedule a private site visit as per your availability.
-                  </li>
-                </ul>
+            {/* What happens next - Mobile optimized */}
+            <div className="rounded-2xl bg-[#FBF3E6] p-[8px] sm:rounded-3xl sm:p-5">
+              <div className="text-xs font-semibold uppercase tracking-[0.15em] text-slate-600 sm:text-sm">
+                What happens next?
               </div>
+
+              <ul className="mt-3 space-y-2.5 text-sm leading-5 text-slate-700 sm:mt-4 sm:text-base sm:leading-6 sm:space-y-3">
+                <li className="flex gap-2.5">
+                  <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#E0B24A]" />
+                  We confirm your requirement.
+                </li>
+                <li className="flex gap-2.5">
+                  <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#E0B24A]" />
+                  We share brochure + latest pricing + offers (if any).
+                </li>
+                <li className="flex gap-2.5">
+                  <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#E0B24A]" />
+                  We schedule a private site visit as per your availability.
+                </li>
+              </ul>
             </div>
           </div>
         </motion.section>
 
-        {/* Right card */}
+        {/* Right card - Mobile stacked below */}
         <motion.aside
           variants={fadeUp}
           initial="hidden"
           animate="show"
-          className="rounded-3xl border border-[#FFEEC3] bg-[#FFF7E5] p-6 shadow-sm sm:p-8"
+          className="order-2 rounded-2xl border border-[#FFEEC3] bg-[#FFF7E5] p-3 shadow-sm sm:rounded-3xl sm:p-6 md:p-8"
         >
-          <h2 className="text-2xl font-brushelva text-[#0F3F3B] sm:text-[32px]">
+          <h2 className="text-xl font-brushelva text-[#0F3F3B] sm:text-2xl md:text-[32px]">
             Quick Contacts
           </h2>
 
-          <div className="mt-6 space-y-4">
+          <div className="mt-5 space-y-3 sm:mt-6 sm:space-y-4">
             <ContactRow
-              icon={<PhoneIcon />}
+              icon={<PhoneIcon size={18} />}
               label="Phone"
               value="+91 8660200662"
               href="tel:+918660200662"
             />
             <ContactRow
-              icon={<MailIcon />}
+              icon={<MailIcon size={18} />}
               label="Email"
               value="info@novaranatureestate.com"
               href="mailto:info@novaranatureestate.com"
@@ -177,21 +182,21 @@ export default function ThankYou() {
             />
           </div>
 
-          <div className="mt-8 overflow-hidden rounded-3xl bg-white">
+          <div className="mt-6 overflow-hidden rounded-2xl bg-white sm:rounded-3xl">
             <img
               src="/images/ecovara_arch.webp"
               alt="Ecovara"
-              className="h-[220px] w-full object-cover"
+              className="h-[180px] w-full object-cover sm:h-[220px]"
             />
           </div>
 
-          <div className="mt-6 rounded-3xl bg-white p-5">
-            <div className="text-sm font-bold uppercase tracking-[0.12em] text-slate-600">
+          <div className="mt-5 rounded-2xl bg-white p-4 sm:mt-6 sm:rounded-3xl sm:p-5">
+            <div className="text-xs font-bold uppercase tracking-[0.15em] text-slate-600 sm:text-sm">
               Address
             </div>
-            <p className="mt-2 text-sm leading-6 text-slate-700 sm:text-[16px]">
+            <p className="mt-2 text-sm leading-5 text-slate-700 sm:text-base sm:leading-6">
               Novara Nature Estate No. 387, 13th Cross, F-Block,
-              <br />
+              <br className="sm:hidden" />
               Sahakar Nagar, Bengaluru, Karnataka 560092
             </p>
           </div>
@@ -200,106 +205,64 @@ export default function ThankYou() {
 
       {/* Footer strip */}
       <div className="w-full bg-[#1F4B48]">
-        <div className="mx-auto max-w-7xl px-6 py-8 text-center text-white/90">
-          <p className="text-sm sm:text-[16px]">
-            © 2025 novaranatureestates.com. All Rights Reserved.
-          </p>
+        <div className="mx-auto max-w-7xl px-4 py-6 text-center text-white/90 sm:px-6 sm:py-8">
+          <p className="text-xs sm:text-sm">© 2025 novaranatureestates.com. All Rights Reserved.</p>
         </div>
       </div>
+
+      {/* Floating CTAs - Mobile optimized */}
       <motion.div
         initial={{ opacity: 0, y: 12, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ type: "spring", stiffness: 120, damping: 18, mass: 0.9 }}
-        className="fixed bottom-5 right-4 z-[9999] flex flex-col items-end gap-4 font-poppins"
+        className="fixed bottom-4 right-4 z-[9999] flex flex-col gap-3 sm:gap-4"
       >
-        <a
-          href="https://wa.me/918660200662"
-          target="_blank"
-          rel="noopener noreferrer"
-          className=" whatsapp-chat
-            sm:hidden
-            w-12 h-12
-            rounded-xl
-            bg-[#25D366]
-            flex items-center justify-center
-            shadow-[0_12px_30px_rgba(0,0,0,0.25)]
-          "
-        >
-          <MessageCircleIcon className="w-6 h-6 text-white" />
-        </a>
-        <a
-          href="https://wa.me/918660200662"
-          target="_blank"
-          rel="noopener noreferrer"
-          className=" whatsapp-chat-gtm
-            hidden sm:inline-flex
-            group no-underline relative items-center
-            bg-white
-            pl-3 pr-[70px] py-3
-            rounded-xl
-            shadow-[0_12px_35px_rgba(0,0,0,0.18)]
-            hover:scale-[1.02] transition-transform
-          "
-        >
-          <span className="text-slate-800 group-hover:text-green-600 font-semibold text-base whitespace-nowrap transition-colors">
-            WhatsApp
-          </span>
-
-          <span
-            className="
-              absolute right-3 top-1/2 -translate-y-1/2
-              w-11 h-11 rounded-xl
-              bg-[#25D366]
-              flex items-center justify-center
-              shadow-[0_6px_16px_rgba(0,0,0,0.12)]
-            "
+        {/* Mobile floating buttons - Stacked */}
+        <div className="flex flex-col gap-3 sm:hidden">
+          <a
+            href="https://wa.me/918660200662"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-chat w-14 h-14 rounded-2xl bg-[#25D366] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:scale-105 transition-transform"
           >
-            <MessageCircleIcon className="w-5 h-5 text-white" />
-          </span>
-        </a>
-
-        <a
-          href="tel:+918660200662"
-          className=" tel-chat
-            sm:hidden
-            w-12 h-12
-            rounded-xl
-            bg-[#3B46F6]
-            flex items-center justify-center
-            shadow-[0_12px_30px_rgba(0,0,0,0.25)]
-          "
-        >
-          <PhoneIcon className="w-6 h-6 text-white" />
-        </a>
-
-        <a
-          href="tel:+918660200662"
-          className=" tel-chat-gtm
-            hidden sm:inline-flex
-            group no-underline relative items-center
-            bg-white
-            pl-3 pr-[66px] py-3
-            rounded-xl
-            shadow-[0_12px_35px_rgba(0,0,0,0.18)]
-            hover:scale-[1.02] transition-transform
-          "
-        >
-          <span className="text-slate-800 group-hover:text-[#3B46F6] font-semibold text-base whitespace-nowrap transition-colors">
-            +91 8660200662
-          </span>
-
-          <span
-            className="
-              absolute right-3 top-1/2 -translate-y-1/2
-              w-11 h-11 rounded-xl
-              bg-[#3B46F6]
-              flex items-center justify-center
-              shadow-[0_6px_16px_rgba(0,0,0,0.12)]
-            "
+            <MessageCircleIcon className="w-6 h-6 text-white" />
+          </a>
+          <a
+            href="tel:+918660200662"
+            className="tel-chat w-14 h-14 rounded-2xl bg-[#3B82F6] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:scale-105 transition-transform"
           >
-            <PhoneIcon className="w-5 h-5 text-white" />
-          </span>
-        </a>
+            <PhoneIcon className="w-6 h-6 text-white" />
+          </a>
+        </div>
+
+        {/* Desktop floating buttons */}
+        <div className="hidden gap-2 sm:flex">
+          <a
+            href="https://wa.me/918660200662"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-chat-gtm group relative inline-flex items-center bg-white pl-3 pr-[70px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform no-underline"
+          >
+            <span className="text-slate-800 group-hover:text-green-600 font-semibold text-sm whitespace-nowrap transition-colors">
+              WhatsApp
+            </span>
+            <span className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-xl bg-[#25D366] flex items-center justify-center shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
+              <MessageCircleIcon className="w-5 h-5 text-white" />
+            </span>
+          </a>
+
+          <a
+            href="tel:+918660200662"
+            className="tel-chat-gtm group relative inline-flex items-center bg-white pl-3 pr-[62px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform no-underline"
+          >
+            <span className="text-slate-800 group-hover:text-[#3B82F6] font-semibold text-sm whitespace-nowrap transition-colors">
+              +91 8660200662
+            </span>
+            <span className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-xl bg-[#3B82F6] flex items-center justify-center shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
+              <PhoneIcon className="w-5 h-5 text-white" />
+            </span>
+          </a>
+        </div>
       </motion.div>
     </div>
   );
@@ -307,11 +270,11 @@ export default function ThankYou() {
 
 function InfoPill({ title, value }) {
   return (
-    <div className="rounded-2xl border border-slate-100 bg-white px-4 py-3 shadow-sm">
-      <div className="text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-500">
+    <div className="rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm sm:rounded-2xl sm:px-4">
+      <div className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500 sm:text-[11px]">
         {title}
       </div>
-      <div className="mt-1 text-sm font-semibold text-[#0F3F3B]">{value}</div>
+      <div className="mt-1 text-sm font-semibold text-[#0F3F3B] sm:text-base">{value}</div>
     </div>
   );
 }
@@ -320,16 +283,16 @@ function ContactRow({ icon, label, value, href, breakAll }) {
   return (
     <a
       href={href}
-      className="flex items-center gap-4 rounded-2xl bg-white px-4 py-4 hover:bg-slate-50"
+      className="flex items-center gap-3 rounded-xl bg-white px-3 py-3.5 hover:bg-slate-50 shadow-sm sm:gap-4 sm:px-4 sm:py-4 sm:rounded-2xl"
     >
-      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFEFC4] text-[#0F3F3B]">
-        <span className="text-lg">{icon}</span>
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#FFEFC4] text-[#0F3F3B]">
+        {icon}
       </div>
-      <div className="min-w-0">
-        <div className="text-[13px] text-slate-600">{label}</div>
+      <div className="min-w-0 flex-1">
+        <div className="text-xs text-slate-600 sm:text-[13px]">{label}</div>
         <div
-          className={`text-[14px] font-semibold text-[#0F3F3B] ${
-            breakAll ? "break-all" : ""
+          className={`mt-0.5 text-sm font-semibold text-[#0F3F3B] sm:text-[14px] sm:mt-0 ${
+            breakAll ? "break-words" : ""
           }`}
         >
           {value}
