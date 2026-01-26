@@ -5,7 +5,7 @@ export default function FarmlandSmartChoiceSection({
   bgImage = "/images/invest_banner.png",
 }) {
   return (
-    <section className="relative w-full lg:h-[798px] overflow-hidden">
+    <section className="relative w-full  lg:h-[798px] overflow-hidden">
       {/* Background */}
       <img
         src={bgImage}
@@ -14,7 +14,7 @@ export default function FarmlandSmartChoiceSection({
         draggable="false"
       />
       {/* Dark overlay */}
-      <div className="relative mx-auto w-[390px] lg:w-[1280px] lg:h-[526px] px-[12px] py-10 sm:px-8 sm:py-14 lg:py-[120px]">
+      <div className="relative mx-auto w-full lg:w-[1280px] lg:h-[526px] px-[12px] py-10 sm:px-8 sm:py-14 lg:py-[120px] ">
         {/* Layout */}
         <div className="grid gap-8 lg:grid-cols-[1fr_1.15fr] lg:items-start lg:gap-10">
           {/* LEFT */}
@@ -25,11 +25,11 @@ export default function FarmlandSmartChoiceSection({
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-white"
           >
-            <h2 className="w-[357px] lg:w-[456px] font-brushelva text-[28px] leading-tight text-[#FFD972] lg:text-[38px] lg:leading-relaxed">
+            <h2 className="w-full max-w-[340px] lg:max-w-[456px] font-brushelva text-[28px] leading-tight text-[#FFD972] lg:text-[38px] lg:leading-relaxed">
               Why Investing in Our Farmland is a Smart Choice
             </h2>
 
-            <p className="mt-4 w-[340px] lg:w-[456px] text-[14px] leading-6 text-white/90 lg:text-[16px]">
+            <p className="mt-4 w-full max-w-[340px] lg:max-w-[456px] text-[14px] leading-6 text-white/90 lg:text-[16px]">
               Our farmlands offer a smart, eco-friendly investment with strong
               long-term growth, prime locations, and rising value perfect for
               both personal use and future returns.
@@ -38,7 +38,7 @@ export default function FarmlandSmartChoiceSection({
             {/* CTA Card */}
             <div
               style={{ backgroundImage: "url('/images/why_investing.webp')" }}
-              className="bg-no-repeat bg-center bg-cover mt-6 w-[357px] mx-auto lg:w-[483px] h-[260px] rounded-2xl bg-[#1E6B54] p-[24px] lg:p-[40px] shadow-[0_18px_40px_rgba(0,0,0,0.28)] sm:bg-[url('/public/images/why_inversting_mobile.webp')] lg:bg-[url('/public/images/why_investing.webp')]"
+              className="bg-no-repeat bg-center bg-cover mt-6 w-full max-w-[340px] mx-auto lg:mx-0 lg:max-w-[483px] h-[260px] rounded-2xl bg-[#1E6B54] p-[24px] lg:p-[40px] shadow-[0_18px_40px_rgba(0,0,0,0.28)] sm:bg-[url('/public/images/why_inversting_mobile.webp')] lg:bg-[url('/public/images/why_investing.webp')]"
             >
               {/* subtle lines pattern (like screenshot) */}
               <div
@@ -46,11 +46,11 @@ export default function FarmlandSmartChoiceSection({
                 aria-hidden="true"
               />
 
-              <h3 className="text-[20px] lg:text-[22px] w-[307px] lg:w-[403px] font-urbanist font-semibold text-white">
+              <h3 className="text-[20px] lg:text-[22px] w-full lg:w-[403px] font-urbanist font-semibold text-white">
                 Unlock Your Property Investment Growth
               </h3>
 
-              <p className="mt-[20px] text-[14px] lg:text-[16px] lg:w-[390px] font-urbanist leading-6 text-white/85">
+              <p className="mt-[20px] text-[14px] lg:text-[16px] w-full lg:w-[390px] font-urbanist leading-6 text-white/85">
                 Explore our comprehensive Property Management Services, designed
                 to take the complexity out of property ownership.
               </p>
@@ -87,7 +87,7 @@ export default function FarmlandSmartChoiceSection({
             transition={{ duration: 0.55, ease: "easeOut", delay: 0.05 }}
           >
             <div className="flex flex-col lg:flex-row mt-3 gap-[16px]">
-              <div className="bg-white mx-auto font-urbanist w-[350px] lg:w-[358px] rounded rounded-3 h-[175px] lg:h-[236px] p-[20px] lg:p-[40px]">
+              <div className="bg-white mx-auto font-urbanist max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px] lg:h-[236px] p-[20px] lg:p-[40px]">
                 <div className="flex align-items-center">
                   <div>
                     <img src="/images/long_term.svg" />
@@ -101,7 +101,7 @@ export default function FarmlandSmartChoiceSection({
                   making them a solid investment for the future.
                 </div>
               </div>
-              <div className="bg-white mx-auto font-urbanist w-[350px] lg:w-[358px] rounded rounded-3 h-[175px]  lg:h-[236px] p-[20px] lg:p-[40px]">
+              <div className="bg-white mx-auto font-urbanist max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px]  lg:h-[236px] p-[20px] lg:p-[40px]">
                 <div className="flex align-items-center">
                   <div>
                     <img src="/images/prime_location.svg" />
@@ -117,12 +117,12 @@ export default function FarmlandSmartChoiceSection({
               </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-[16px] mt-4">
-              <div className="bg-white mx-auto font-urbanist w-[350px] lg:w-[358px] rounded rounded-3 h-[175px]  lg:h-[236px] p-[20px] lg:p-[32px]">
+              <div className="bg-white mx-auto font-urbanist max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px]  lg:h-[236px] p-[20px] lg:p-[32px]">
                 <div className="flex align-items-center">
                   <div>
                     <img src="/images/eco_freindly.svg" />
                   </div>
-                  <div className="ps-3 text-[18px] lg:text-[20px] text-[#1A614F] font-semibold">
+                  <div className="ps-3  text-[18px] lg:text-[18px] text-[#1A614F] font-semibold">
                     Eco-Friendly Investment
                   </div>
                 </div>
@@ -131,7 +131,7 @@ export default function FarmlandSmartChoiceSection({
                   while meeting the growing demand for sustainable living.
                 </div>
               </div>
-              <div className="bg-white mx-auto font-urbanist w-[350px] lg:w-[358px] rounded rounded-3 h-[175px]  lg:h-[236px] p-[20px] lg:p-[40px]">
+              <div className="bg-white mx-auto font-urbanist  max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px]  lg:h-[236px] p-[20px] lg:p-[40px]">
                 <div className="flex align-items-center">
                   <div>
                     <img src="/images/dual_benefits.svg" />

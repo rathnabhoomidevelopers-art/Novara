@@ -12,7 +12,8 @@ import Footer from "../components/Footer";
 import { useState } from "react";
 import { DownloadIcon } from "lucide-react";
 
-const API_BASE = process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
+const API_BASE =
+  process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
 
 const smoothSpring = { type: "spring", stiffness: 80, damping: 18, mass: 0.9 };
 
@@ -137,7 +138,7 @@ const BrochureModal = ({ isOpen, onClose }) => {
             },
           });
 
-          return; 
+          return;
         } else {
           alert("Something went wrong, please try again.");
         }
@@ -508,7 +509,7 @@ export function HomePage() {
       </div>
 
       <div
-        className="w-[390px] lg:w-full lg:h-[839px] lg:px-[120px] pb-[20px] py-[16px] lg:py-[89px] bg-cover bg-center bg-no-repeat"
+        className="w-full lg:w-full lg:h-[860px] lg:px-[120px] pb-[20px] py-[16px] lg:py-[89px] bg-cover bg-center bg-no-repeat overflow-x-hidden"
         style={{ backgroundImage: "url('/images/amenities_bg.webp')" }}
       >
         <div className="text-[#FFD972] px-3 text-[28px] lg:text-[50px] font-brushelva">
@@ -525,7 +526,7 @@ export function HomePage() {
           {amenitiesCards.map((card) => (
             <div
               key={card.id}
-              className="bg-white font-urbanist mx-auto w-[370px]  lg:w-[413.33px] rounded rounded-3 lg:h-[236px] p-[20px] lg:p-[40px]"
+              className="bg-white font-urbanist mx-auto w-full max-w-[340px] lg:max-w-[370px] rounded rounded-3 lg:h-[236px] p-[20px] lg:p-[40px]"
             >
               <div className="flex align-items-center">
                 <div>
@@ -546,7 +547,7 @@ export function HomePage() {
           {amenitiesCard.map((card) => (
             <div
               key={card.id}
-              className="bg-white font-urbanist mx-auto w-[370px] lg:w-[413.33px] rounded rounded-3 lg:h-[236px] p-[20px] lg:p-[40px]"
+              className="bg-white font-urbanist mx-auto w-full max-w-[340px] lg:max-w-[370px] rounded rounded-3 lg:h-[236px] p-[20px] lg:p-[40px]"
             >
               <div className="flex align-items-center">
                 <div>
@@ -564,7 +565,7 @@ export function HomePage() {
 
           <div
             style={{ backgroundImage: "url('/images/cta_background.webp')" }}
-            className="bg-no-repeat bg-center bg-cover mx-auto text-white font-urbanist w-[370px] lg:w-[847px] rounded-3 py-[24px] px-[20px] lg:h-[236px] lg:py-[60px] lg:p-[40px] ]"
+            className="bg-no-repeat bg-center bg-cover mx-auto text-white font-urbanist w-full max-w-[340px] lg:max-w-none lg:w-[847px] rounded-3 py-[24px] px-[20px] lg:h-[236px] lg:py-[60px] lg:p-[40px]"
           >
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
               {/* Left side (Title + Description) */}
@@ -778,17 +779,17 @@ export function HomePage() {
             mass: 0.9,
           }}
           onClick={() => setIsModalOpen(true)}
-          className="fixed bottom-16 lg:bottom-5 left-6 lg:left-4 z-[9999] bg-white cursor-pointer flex flex-row items-center gap-3 p-2 rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
+          className="fixed bottom-16 lg:bottom-5 left-6 lg:left-4 z-[9999] bg-[#964B00] lg:bg-white cursor-pointer flex flex-col lg:flex-row items-center lg:gap-[12px] p-[6px] lg:p-[12px] rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
         >
           {/* Text → only on desktop */}
-          <span className="hidden lg:inline text-[#2b2b2b] hover:text-[#964B00] font-semibold text-base whitespace-nowrap transition-colors">
+          <span className="lg:inline text-[#ffff] lg:text-[#2b2b2b] lg:hover:text-[#964B00] font-semibold text-base whitespace-nowrap transition-colors">
             Get Brochure
           </span>
 
           {/* Icon → always visible */}
           <button
             type="button"
-            className="bg-[#964B00] text-white p-2 rounded-lg"
+            className="bg-[#964B00] text-white p-1 lg:p-2 rounded-lg"
           >
             <DownloadIcon />
           </button>

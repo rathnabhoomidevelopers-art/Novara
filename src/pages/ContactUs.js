@@ -322,7 +322,7 @@ export function ContactUs() {
       <div className=" lg:h-[180px] font-urbanist bg-[#52A09A] p-[10px]">
         <div className=" flex flex-col gap-2 justify-center lg:flex-row">
           <div className="flex gap-2 flex-row">
-            <div className="relative bg-white flex flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[340px]">
+            <div className="relative bg-white flex flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[280px]">
               <img src="/images/mail.svg" className="h-[60px] w-[60px]" />
               <a
                 href="mailto:info@novaranatureestate.com"
@@ -545,7 +545,7 @@ export function ContactUs() {
         </a>
       </motion.div>
 
-      <div className="block">
+            <div className="block">
         <motion.div
           initial={{ opacity: 0, y: 12, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -556,17 +556,17 @@ export function ContactUs() {
             mass: 0.9,
           }}
           onClick={() => setIsModalOpen(true)}
-          className="fixed bottom-16 lg:bottom-5 left-6 lg:left-4 z-[9999] bg-white cursor-pointer flex flex-row items-center gap-3 p-2 rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
+          className="fixed bottom-16 lg:bottom-5 left-6 lg:left-4 z-[9999] bg-[#964B00] lg:bg-white cursor-pointer flex flex-col lg:flex-row items-center lg:gap-[12px] p-[6px] lg:p-[12px] rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
         >
           {/* Text → only on desktop */}
-          <span className="hidden lg:inline text-[#2b2b2b] hover:text-[#964B00] font-semibold text-base whitespace-nowrap transition-colors">
+          <span className="lg:inline text-[#ffff] lg:text-[#2b2b2b] lg:hover:text-[#964B00] font-semibold text-base whitespace-nowrap transition-colors">
             Get Brochure
           </span>
 
           {/* Icon → always visible */}
           <button
             type="button"
-            className="bg-[#964B00] text-white p-2 rounded-lg"
+            className="bg-[#964B00] text-white p-1 lg:p-2 rounded-lg"
           >
             <DownloadIcon />
           </button>

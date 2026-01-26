@@ -610,13 +610,13 @@ export function WhyNovara() {
         </div>
       </div>
 
-      <div className="h-[1753px] w-[390px] lg:w-full py-[40px] px-[8px] lg:px-[80px] lg:py-[80px] lg:h-[925px] bg-[#1F5C57]">
+      <div className="h-[1753px] w-full max-w-[390px] mx-auto py-[40px] px-[8px] lg:max-w-none lg:w-full lg:px-[80px] lg:py-[80px] lg:h-[1020px] bg-[#1F5C57] overflow-x-hidden">
         <img src="/images/sparkle_3.svg" alt="sparkle" />
         <div className="pt-[6px] px-3 font-urbanist">
           <div className="font-brushelva text-white text-[28px] lg:text-[38px]">
             Navigating the Novara Experience
           </div>
-          <p className="text-[#CFCACA] pt-[10px] w-[357px] lg:w-[950px] text-[14px] lg:text-[16px]">
+          <p className="text-[#CFCACA] pt-[10px] w-full max-w-[357px] lg:max-w-[950px] text-[14px] lg:text-[16px]">
             At Novara Nature Estate, we follow a simple and transparent process
             to help you own farmland with confidence. Here's how we guide you at
             every step.
@@ -629,7 +629,7 @@ export function WhyNovara() {
                 <div className="text-[#FFBA00] h-[52px] flex items-center text-[16px] border-l-2 border-[#FFCE4C] ps-4">
                   Step 01
                 </div>
-                <div className="border-2 border-[#62A77F] rounded-tr-xl rounded-br-xl rounded-bl-xl p-[30px] lg:p-[40px] bg-gradient-to-br from-[#6FAE9E] via-[#3C7F75]/40 to-[#D5FFE6]/0 w-[357px] h-[164px] lg:w-[413px] lg:h-[198px]">
+                <div className="border-2 border-[#62A77F] rounded-tr-xl rounded-br-xl rounded-bl-xl p-[30px] lg:p-[40px] bg-gradient-to-br from-[#6FAE9E] via-[#3C7F75]/40 to-[#D5FFE6]/0 w-full max-w-[357px] h-[164px] lg:max-w-[413px] lg:h-[198px]">
                   <div className="text-white text-[18px] lg:text-[20px]">
                     Explore the Farmland Options
                   </div>
@@ -644,7 +644,7 @@ export function WhyNovara() {
                 <div className="text-[#FFBA00] h-[52px] flex items-center text-[16px] border-l-2 border-[#FFCE4C] ps-4">
                   Step 02
                 </div>
-                <div className="border-2 border-[#62A77F] rounded-tr-xl rounded-br-xl rounded-bl-xl p-[30px] lg:p-[40px] bg-gradient-to-br from-[#6FAE9E] via-[#3C7F75]/40 to-[#D5FFE6]/0 w-[357px] h-[164px] lg:w-[413px] lg:h-[198px]">
+                <div className="border-2 border-[#62A77F] rounded-tr-xl rounded-br-xl rounded-bl-xl p-[30px] lg:p-[40px] bg-gradient-to-br from-[#6FAE9E] via-[#3C7F75]/40 to-[#D5FFE6]/0 w-full max-w-[357px] h-[164px] lg:max-w-[413px] lg:h-[198px]">
                   <div className="text-white text-[18px] lg:text-[20px]">
                     Choose the Right Plot
                   </div>
@@ -659,7 +659,7 @@ export function WhyNovara() {
                 <div className="text-[#FFBA00] h-[52px] flex items-center text-[16px] border-l-2 border-[#FFCE4C] ps-4">
                   Step 03
                 </div>
-                <div className="border-2 border-[#62A77F] rounded-tr-xl rounded-br-xl rounded-bl-xl p-[30px] lg:p-[40px] bg-gradient-to-br from-[#6FAE9E] via-[#3C7F75]/40 to-[#D5FFE6]/0 w-[357px] h-[164px] lg:w-[413px] lg:h-[198px]">
+                <div className="border-2 border-[#62A77F] rounded-tr-xl rounded-br-xl rounded-bl-xl p-[30px] lg:p-[40px] bg-gradient-to-br from-[#6FAE9E] via-[#3C7F75]/40 to-[#D5FFE6]/0 w-full max-w-[357px] h-[164px] lg:max-w-[413px] lg:h-[198px]">
                   <div className="text-white text-[18px] lg:text-[20px]">
                     Expert Guidance
                   </div>
@@ -678,7 +678,7 @@ export function WhyNovara() {
                 <div className="text-[#FFBA00] h-[52px] flex items-center text-[16px] border-l-2 border-[#FFCE4C] ps-4">
                   Step 04
                 </div>
-                <div className="border-2 border-[#62A77F] rounded-tr-xl rounded-br-xl rounded-bl-xl p-[30px] lg:p-[40px] bg-gradient-to-br from-[#6FAE9E] via-[#3C7F75]/40 to-[#D5FFE6]/0 w-[357px] h-[164px] lg:w-[413px] lg:h-[198px]">
+                <div className="border-2 border-[#62A77F] rounded-tr-xl rounded-br-xl rounded-bl-xl p-[30px] lg:p-[40px] bg-gradient-to-br from-[#6FAE9E] via-[#3C7F75]/40 to-[#D5FFE6]/0 w-full max-w-[357px] h-[164px] lg:max-w-[413px] lg:h-[198px]">
                   <div className="text-white text-[18px] lg:text-[20px]">
                     Visit the Site
                   </div>
@@ -693,7 +693,7 @@ export function WhyNovara() {
                 <div className="text-[#FFBA00] h-[52px] flex items-center text-[16px] border-l-2 border-[#FFCE4C] ps-4">
                   Step 05
                 </div>
-                <div className="border-2 border-[#62A77F] rounded-tr-xl rounded-br-xl rounded-bl-xl p-[30px] lg:p-[40px] bg-gradient-to-br from-[#6FAE9E] via-[#3C7F75]/40 to-[#D5FFE6]/0 w-[357px] h-[164px] lg:w-[413px] lg:h-[198px]">
+                <div className="border-2 border-[#62A77F] rounded-tr-xl rounded-br-xl rounded-bl-xl p-[30px] lg:p-[40px] bg-gradient-to-br from-[#6FAE9E] via-[#3C7F75]/40 to-[#D5FFE6]/0 w-full max-w-[357px] h-[164px] lg:max-w-[413px] lg:h-[198px]">
                   <div className="text-white text-[18px] lg:text-[20px]">
                     Make an Informed Decision
                   </div>
@@ -708,7 +708,7 @@ export function WhyNovara() {
                 <div className="text-[#FFBA00] h-[52px] flex items-center text-[16px] border-l-2 border-[#FFCE4C] ps-4">
                   Step 06
                 </div>
-                <div className="border-2 border-[#62A77F] rounded-tr-xl rounded-br-xl rounded-bl-xl p-[30px] lg:p-[40px] bg-gradient-to-br from-[#6FAE9E] via-[#3C7F75]/40 to-[#D5FFE6]/0 w-[357px] h-[164px] lg:w-[413px] lg:h-[198px]">
+                <div className="border-2 border-[#62A77F] rounded-tr-xl rounded-br-xl rounded-bl-xl p-[30px] lg:p-[40px] bg-gradient-to-br from-[#6FAE9E] via-[#3C7F75]/40 to-[#D5FFE6]/0 w-full max-w-[357px] h-[164px] lg:max-w-[413px] lg:h-[198px]">
                   <div className="text-white text-[18px] lg:text-[20px]">
                     Secure Your Farmland
                   </div>
@@ -847,17 +847,17 @@ export function WhyNovara() {
             mass: 0.9,
           }}
           onClick={() => setIsModalOpen(true)}
-          className="fixed bottom-16 lg:bottom-5 left-6 lg:left-4 z-[9999] bg-white cursor-pointer flex flex-row items-center gap-3 p-2 rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
+          className="fixed bottom-16 lg:bottom-5 left-6 lg:left-4 z-[9999] bg-[#964B00] lg:bg-white cursor-pointer flex flex-col lg:flex-row items-center lg:gap-[12px] p-[6px] lg:p-[12px] rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
         >
           {/* Text → only on desktop */}
-          <span className="hidden lg:inline text-[#2b2b2b] hover:text-[#964B00] font-semibold text-base whitespace-nowrap transition-colors">
+          <span className="lg:inline text-[#ffff] lg:text-[#2b2b2b] lg:hover:text-[#964B00] font-semibold text-base whitespace-nowrap transition-colors">
             Get Brochure
           </span>
 
           {/* Icon → always visible */}
           <button
             type="button"
-            className="bg-[#964B00] text-white p-2 rounded-lg"
+            className="bg-[#964B00] text-white p-1 lg:p-2 rounded-lg"
           >
             <DownloadIcon />
           </button>

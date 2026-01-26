@@ -502,7 +502,7 @@ export function Projects() {
           </div>
         </div>
         <div>
-          <div className="relative mx-auto w-[358px] lg:w-[1250px] mt-[36px] overflow-visible">
+          <div className="relative mx-auto w-[358px] lg:w-[1250px] lg:mt-[36px] overflow-visible">
             <div className="relative overflow-hidden">
               <motion.div
                 className="flex items-stretch gap-2 lg:gap-6"
@@ -543,7 +543,7 @@ export function Projects() {
               type="button"
               onClick={goPrev}
               aria-label="Previous image"
-              className="absolute left-[-10px] top-1/2 z-10 -translate-y-1/2 lg:left-[-60px] lg:top-1/2 lg:z-10 -lg:translate-y-1/2 rounded-full bg-[#0F6A49] p-[2px] lg:p-2 text-white transition hover:scale-[1.02] active:scale-[0.98]"
+              className="absolute left-[-1px] top-1/2 z-10 -translate-y-1/2 lg:left-[-60px] lg:top-1/2 lg:z-10 -lg:translate-y-1/2 rounded-full bg-[#0F6A49] p-[2px] lg:p-2 text-white transition hover:scale-[1.02] active:scale-[0.98]"
             >
               <ChevronLeft className="h-5 w-5 lg:h-8 lg:w-8" />
             </button>
@@ -552,7 +552,7 @@ export function Projects() {
               type="button"
               onClick={goNext}
               aria-label="Next image"
-              className="absolute right-[-10px] top-1/2 z-10 -translate-y-1/2 lg:right-[-30px] lg:top-1/2 lg:z-10 -lg:translate-y-1/2 rounded-full bg-[#0F6A49] p-[2px] lg:p-2 text-white transition hover:scale-[1.02] active:scale-[0.98]"
+              className="absolute right-[-1px] top-1/2 z-10 -translate-y-1/2 lg:right-[-30px] lg:top-1/2 lg:z-10 -lg:translate-y-1/2 rounded-full bg-[#0F6A49] p-[2px] lg:p-2 text-white transition hover:scale-[1.02] active:scale-[0.98]"
             >
               <ChevronRight className="h-5 w-5 lg:h-8 lg:w-8" />
             </button>
@@ -642,13 +642,13 @@ export function Projects() {
 
       <div>
         <div
-          className="w-[390px] lg:w-full lg:h-[1067px] px-[32px] py-[40px] lg:px-[120px] lg:py-[89px] bg-cover bg-center bg-no-repeat"
+          className="w-full max-w-[390px] mx-auto lg:max-w-none lg:w-full lg:h-[1090px] px-[16px] sm:px-[32px] py-[40px] lg:px-[120px] lg:py-[89px] bg-cover bg-center bg-no-repeat overflow-x-hidden"
           style={{ backgroundImage: "url('/images/amenities_bg.webp')" }}
         >
           <div className="text-[#FFD972] text-[28px] lg:text-[50px] font-brushelva">
             Project Highlights
           </div>
-          <p className="text-white text-[14px] lg:text-[16px] mt-3 lg:w-[1030px] font-urbanist">
+          <p className="text-white text-[14px] lg:text-[16px] mt-3 w-full lg:max-w-[1300px] font-urbanist">
             Selling your property should be a rewarding experience, and at
             Estatein, we make sure it is. Our Property Selling Service is
             designed to maximize the value of your property, ensuring you get
@@ -660,7 +660,7 @@ export function Projects() {
             {amenitiesCards.map((card) => (
               <div
                 key={card.id}
-                className="bg-white font-urbanist w-[325px] lg:w-[413.33px] p-[24px] rounded rounded-3 lg:h-[236px] lg:p-[40px]"
+                className="bg-white font-urbanist lg:w-[413.33px] p-[24px] rounded rounded-3 lg:h-[236px] lg:p-[40px]"
               >
                 <div className="flex align-items-center">
                   <div>
@@ -670,7 +670,7 @@ export function Projects() {
                     {card.title}
                   </div>
                 </div>
-                <div className="mt-[18px] text-[14px] lg:w-[320px] lg:text-[16px]">
+                <div className="mt-[18px] text-[14px] lg:text-[16px] w-full">
                   {card.description}
                 </div>
               </div>
@@ -681,7 +681,7 @@ export function Projects() {
             {amenitiesCarded.map((card) => (
               <div
                 key={card.id}
-                className="bg-white font-urbanist w-[325px] lg:w-[413.33px] p-[24px] rounded rounded-3 lg:h-[236px] lg:p-[40px]"
+                className="bg-white font-urbanist lg:w-[413.33px] p-[24px] rounded rounded-3 lg:h-[236px] lg:p-[40px]"
               >
                 <div className="flex align-items-center">
                   <div>
@@ -691,7 +691,7 @@ export function Projects() {
                     {card.title}
                   </div>
                 </div>
-                <div className="mt-[18px] text-[14px] lg:w-[320px] lg:text-[16px]">
+                <div className="mt-[18px] text-[14px] lg:text-[16px] w-full">
                   {card.description}
                 </div>
               </div>
@@ -712,7 +712,7 @@ export function Projects() {
                     {card.title}
                   </div>
                 </div>
-                <div className="mt-[18px] text-[14px] lg:text-[16px]">
+                <div className="mt-[18px] text-[14px] lg:text-[16px] w-full">
                   {card.description}
                 </div>
               </div>
@@ -720,7 +720,7 @@ export function Projects() {
 
             <div
               style={{ backgroundImage: "url('/images/cta_background.webp')" }}
-              className="bg-no-repeat bg-center bg-cover text-white font-urbanist lg:w-[847px] rounded-3 py-[24px] px-[24px] lg:h-[236px] lg:py-[60px] lg:p-[40px]"
+              className="bg-no-repeat bg-center bg-cover text-white font-urbanist w-full lg:w-[847px] rounded-3 py-[24px] px-[24px] lg:h-[236px] lg:py-[60px] lg:p-[40px]"
             >
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
                 {/* Left side (Title + Description) */}
@@ -936,17 +936,17 @@ export function Projects() {
             mass: 0.9,
           }}
           onClick={() => setIsModalOpen(true)}
-          className="fixed bottom-16 lg:bottom-5 left-6 lg:left-4 z-[9999] bg-white cursor-pointer flex flex-row items-center gap-3 p-2 rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
+          className="fixed bottom-16 lg:bottom-5 left-6 lg:left-4 z-[9999] bg-[#964B00] lg:bg-white cursor-pointer flex flex-col lg:flex-row items-center lg:gap-[12px] p-[6px] lg:p-[12px] rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
         >
           {/* Text → only on desktop */}
-          <span className="hidden lg:inline text-[#2b2b2b] hover:text-[#964B00] font-semibold text-base whitespace-nowrap transition-colors">
+          <span className="lg:inline text-[#ffff] lg:text-[#2b2b2b] lg:hover:text-[#964B00] font-semibold text-base whitespace-nowrap transition-colors">
             Get Brochure
           </span>
 
           {/* Icon → always visible */}
           <button
             type="button"
-            className="bg-[#964B00] text-white p-2 rounded-lg"
+            className="bg-[#964B00] text-white p-1 lg:p-2 rounded-lg"
           >
             <DownloadIcon />
           </button>
