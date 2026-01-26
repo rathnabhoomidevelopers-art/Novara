@@ -15,6 +15,8 @@ import { useEffect, useMemo, useState } from "react";
 import InquiryForm from "../components/InquiryForm";
 import { motion } from "framer-motion";
 
+const API_BASE = process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
+
 const slugify = (str = "") =>
   str
     .toLowerCase()
@@ -90,7 +92,7 @@ const BrochureModal = ({ isOpen, onClose }) => {
     if (Object.keys(newErrors).length === 0) {
       setIsSubmitting(true);
       try {
-        const response = await fetch("http://localhost:3001/pop-up", {
+        const response = await fetch(`${API_BASE}/pop-up`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

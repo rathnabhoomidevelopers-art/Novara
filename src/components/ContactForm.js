@@ -4,6 +4,8 @@ import * as Yup from "yup";
 import { ChevronDown } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
+const API_BASE = process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
+
 const validationSchema = Yup.object({
   firstName: Yup.string()
     .required("First name is required")
@@ -53,7 +55,7 @@ export default function ContactForm() {
       try {
         setSubmitting(true);
 
-        const response = await fetch("http://localhost:3001/contact", {
+        const response = await fetch(`${API_BASE}/contact`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(values),
@@ -92,7 +94,7 @@ export default function ContactForm() {
     if (!formik.isValid) return; // Ensure validation passed
 
     try {
-      const response = await fetch("http://localhost:3001/contact", {
+      const response = await fetch(`${API_BASE}/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

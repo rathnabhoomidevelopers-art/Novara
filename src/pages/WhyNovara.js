@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+const API_BASE = process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
+
 const viewport = { once: true, amount: 0.25 };
 
 const smoothSpring = { type: "spring", stiffness: 80, damping: 18, mass: 0.9 };
@@ -107,7 +109,7 @@ const BrochureModal = ({ isOpen, onClose }) => {
     if (Object.keys(newErrors).length === 0) {
       setIsSubmitting(true);
       try {
-        const response = await fetch("http://localhost:3001/pop-up", {
+        const response = await fetch(`${API_BASE}/pop-up`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

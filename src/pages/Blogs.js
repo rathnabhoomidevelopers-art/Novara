@@ -7,6 +7,8 @@ import { BLOGS } from "../data/blogs";
 import { useState } from "react";
 import { DownloadIcon } from "lucide-react";
 
+const API_BASE = process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
+
 const smoothSpring = { type: "spring", stiffness: 80, damping: 18, mass: 0.9 };
 
 const fadeUp = {
@@ -90,7 +92,7 @@ const BrochureModal = ({ isOpen, onClose }) => {
     if (Object.keys(newErrors).length === 0) {
       setIsSubmitting(true);
       try {
-        const response = await fetch("http://localhost:3001/pop-up", {
+        const response = await fetch(`${API_BASE}/pop-up`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

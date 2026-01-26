@@ -2,6 +2,8 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
 
+const API_BASE = process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
+
 const validationSchema = Yup.object({
   name: Yup.string()
     .required("First name is required")
@@ -33,7 +35,7 @@ export default function InquiryForm() {
 
       // Submit the form data to the backend API
       try {
-        const response = await fetch("http://localhost:3001/blogs", {
+        const response = await fetch(`${API_BASE}/blogs`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

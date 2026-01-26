@@ -3,6 +3,8 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
 
+const API_BASE = process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
+
 const validationSchema = Yup.object({
   firstName: Yup.string()
     .required("First name is required")
@@ -40,7 +42,7 @@ export default function EcovaraInquiryForm() {
 
       // Submit the form data to the backend API
       try {
-        const response = await fetch("http://localhost:3001/inquiry", {
+        const response = await fetch(`${API_BASE}/inquiry`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
