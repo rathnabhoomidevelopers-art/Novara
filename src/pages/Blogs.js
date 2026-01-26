@@ -481,7 +481,7 @@ export function Blogs() {
         </a>
       </motion.div>
 
-            <div className="block">
+      <div className="block">
         <motion.div
           initial={{ opacity: 0, y: 12, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -492,7 +492,7 @@ export function Blogs() {
             mass: 0.9,
           }}
           onClick={() => setIsModalOpen(true)}
-          className="fixed bottom-16 lg:bottom-5 left-6 lg:left-4 z-[9999] bg-[#964B00] lg:bg-white cursor-pointer flex flex-col lg:flex-row items-center lg:gap-[12px] p-[6px] lg:p-[12px] rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
+          className="fixed bottom-16 lg:bottom-5 left-6 lg:left-4 z-[9999] bg-[#cd6701] lg:bg-white cursor-pointer flex flex-col lg:flex-row items-center lg:gap-[12px] p-[6px] lg:p-[12px] rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
         >
           {/* Text → only on desktop */}
           <span className="lg:inline text-[#ffff] lg:text-[#2b2b2b] lg:hover:text-[#964B00] font-semibold text-base whitespace-nowrap transition-colors">
@@ -502,7 +502,7 @@ export function Blogs() {
           {/* Icon → always visible */}
           <button
             type="button"
-            className="bg-[#964B00] text-white p-1 lg:p-2 rounded-lg"
+            className="bg-[#cd6701] text-white p-1 lg:p-2 rounded-lg"
           >
             <DownloadIcon />
           </button>

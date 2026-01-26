@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { BackgroundBeams } from "./ui/background-beams";
 
@@ -19,26 +19,50 @@ const getYouTubeId = (input) => {
   return "";
 };
 
+function loadYouTubeAPI() {
+  return new Promise((resolve) => {
+    if (window.YT?.Player) return resolve(window.YT);
+
+    const existing = document.getElementById("yt-iframe-api");
+    if (existing) {
+      // API script exists but may not be ready yet
+      const check = setInterval(() => {
+        if (window.YT?.Player) {
+          clearInterval(check);
+          resolve(window.YT);
+        }
+      }, 50);
+      return;
+    }
+
+    window.onYouTubeIframeAPIReady = () => resolve(window.YT);
+
+    const tag = document.createElement("script");
+    tag.id = "yt-iframe-api";
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.body.appendChild(tag);
+  });
+}
+
 export default function TestimonialsCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const playerRef = useRef(null); // YT Player instance
+  const iframeIdRef = useRef(""); // current center iframe id (string)
 
-  const videos = [
-    { id: 1, youtube: "#", title: "Short 1" },
-    { id: 2, youtube: "#", title: "Short 2" },
-    { id: 3, youtube: "#", title: "Short 3" },
-    { id: 4, youtube: "#", title: "Short 4" },
-    { id: 5, youtube: "#", title: "Short 5" },
-  ];
+  const videos = useMemo(
+    () => [
+      { id: 1, youtube: "https://youtu.be/pxDCt7y0aXc", title: "Short 1" },
+      { id: 2, youtube: "https://youtu.be/MjY3WfJ0f_s", title: "Short 2" },
+      { id: 3, youtube: "https://youtu.be/LD3j4d55xgI", title: "Short 3" },
+      { id: 4, youtube: "https://youtu.be/l_6Vpyrfx7Q", title: "Short 4" },
+      { id: 5, youtube: "https://youtu.be/3RYUtKbMEHg", title: "Short 5" },
+    ],
+    [],
+  );
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % videos.length);
-    }, 4000);
+  const nextSlide = () =>
+    setCurrentIndex((prev) => (prev + 1) % videos.length);
 
-    return () => clearInterval(interval);
-  }, [videos.length]);
-
-  const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % videos.length);
   const prevSlide = () =>
     setCurrentIndex((prev) => (prev - 1 + videos.length) % videos.length);
 
@@ -51,19 +75,75 @@ export default function TestimonialsCarousel() {
     return visible;
   };
 
+  // Create/attach YT player ONLY for the center iframe, and advance when it ends
+  useEffect(() => {
+    let cancelled = false;
+
+    const init = async () => {
+      const YT = await loadYouTubeAPI();
+      if (cancelled) return;
+
+      const centerVideo = videos[currentIndex];
+      const vid = getYouTubeId(centerVideo.youtube);
+      if (!vid) return;
+
+      const iframeId = `yt-center-${vid}-${currentIndex}`; // unique per index
+      iframeIdRef.current = iframeId;
+
+      // Wait a tick so the iframe is in DOM
+      setTimeout(() => {
+        if (cancelled) return;
+
+        // Destroy old player if any (prevents multiple listeners)
+        if (playerRef.current?.destroy) {
+          try {
+            playerRef.current.destroy();
+          } catch (e) {}
+          playerRef.current = null;
+        }
+
+        // Create player on the center iframe
+        playerRef.current = new YT.Player(iframeId, {
+          events: {
+            onReady: (e) => {
+              try {
+                e.target.mute();
+                e.target.playVideo();
+              } catch (err) {}
+            },
+            onStateChange: (e) => {
+              // ENDED = 0
+              if (e.data === YT.PlayerState.ENDED) {
+                nextSlide();
+              }
+            },
+          },
+        });
+      }, 0);
+    };
+
+    init();
+
+    return () => {
+      cancelled = true;
+      if (playerRef.current?.destroy) {
+        try {
+          playerRef.current.destroy();
+        } catch (e) {}
+        playerRef.current = null;
+      }
+    };
+  }, [currentIndex, videos]);
+
   return (
     <div className="min-h-screen relative bg-teal-700 flex items-center justify-center py-5 lg:py-[90px]">
       <BackgroundBeams className="absolute inset-0 z-10" />
+
       <div className="relative w-full max-w-7xl">
         <div className="flex flex-col justify-center text-center items-center">
           <div className="text-[28px] lg:text-[50px] font-brushelva text-[#FFD972]">
-            Customer Say about our Services
+            Ecovara Farmland Videos
           </div>
-          <p className="hidden lg:block lg:text-[16px] font-urbanist text-white lg:w-[900px] mt-[10px]">
-            Our customers love our services! They value our expert guidance, smooth process,
-            and the great returns on their investments. Trusted by many for making smart
-            property decisions!
-          </p>
         </div>
 
         {/* Carousel Container */}
@@ -74,9 +154,16 @@ export default function TestimonialsCarousel() {
 
             const vid = getYouTubeId(video.youtube);
 
-            const src = `https://www.youtube.com/embed/${vid}?playsinline=1&rel=0&modestbranding=1&controls=1&mute=1&autoplay=${
-              isCenter ? 1 : 0
-            }`;
+            // IMPORTANT:
+            // - enablejsapi=1 is required to detect ENDED via YT API
+            // - center iframe gets an id so we can attach YT.Player to it
+            const iframeId = isCenter ? `yt-center-${vid}-${currentIndex}` : "";
+
+            const src = vid
+              ? `https://www.youtube.com/embed/${vid}?playsinline=1&rel=0&modestbranding=1&controls=1&mute=1&autoplay=1&enablejsapi=1&origin=${encodeURIComponent(
+                  window.location.origin,
+                )}`
+              : "";
 
             return (
               <div
@@ -93,6 +180,7 @@ export default function TestimonialsCarousel() {
                 <div className="w-[280px] h-[420px] rounded-3xl overflow-hidden bg-black">
                   {vid ? (
                     <iframe
+                      id={iframeId || undefined}
                       className="w-full h-full"
                       src={src}
                       title={video.title}
@@ -113,7 +201,7 @@ export default function TestimonialsCarousel() {
         {/* navigation buttons */}
         <button
           onClick={prevSlide}
-          className="absolute left-1 top-[400px] -translate-y-1/2 lg:left-4 lg:top-[450px] bg-white/20 hover:bg-white/30 text-white p-3 rounded-full backdrop-blur-sm transition-all z-40"
+          className="absolute left-1 top-[350px] -translate-y-1/2 lg:left-4 lg:top-[380px] bg-white/20 hover:bg-white/30 text-white p-3 rounded-full backdrop-blur-sm transition-all z-40"
           aria-label="Previous slide"
         >
           <ChevronLeft className="w-6 h-6" />
@@ -121,7 +209,7 @@ export default function TestimonialsCarousel() {
 
         <button
           onClick={nextSlide}
-          className="absolute right-1 top-[400px] -translate-y-1/2 lg:right-4 lg:top-[450px] bg-white/20 hover:bg-white/30 text-white p-3 rounded-full backdrop-blur-sm transition-all z-40"
+          className="absolute right-1 top-[350px] -translate-y-1/2 lg:right-4 lg:top-[380px] bg-white/20 hover:bg-white/30 text-white p-3 rounded-full backdrop-blur-sm transition-all z-40"
           aria-label="Next slide"
         >
           <ChevronRight className="w-6 h-6" />

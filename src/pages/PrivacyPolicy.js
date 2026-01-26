@@ -163,7 +163,7 @@ export default function PrivacyPolicy() {
           </p>
         </div>
       </motion.div>
-            <motion.div
+      <motion.div
         initial={{ opacity: 0, y: 12, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ type: "spring", stiffness: 120, damping: 18, mass: 0.9 }}
