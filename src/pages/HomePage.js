@@ -340,7 +340,7 @@ export function HomePage() {
   const amenitiesCard = [
     {
       id: 1,
-      imgSrc: "/images/eco_freindly.svg",
+      imgSrc: "/images/organic_icon.svg",
       title: "Organic Farming",
       description:
         "Dedicated space for organic farming, allowing you to grow healthy, chemical-free produce naturally.",
@@ -361,21 +361,21 @@ export function HomePage() {
   const amenitiesCards = [
     {
       id: 1,
-      imgSrc: "/images/eco_freindly.svg",
+      imgSrc: "/images/club_house_icon.svg",
       title: "Clubhouse",
       description:
         "An exclusive clubhouse offering comfortable spaces for leisure, events, and social interaction.",
     },
     {
       id: 2,
-      imgSrc: "/images/dual_benefits.svg",
+      imgSrc: "/images/kids_play_icon.svg",
       title: "Kids Play Area",
       description:
         "A safe and fun play area designed for children to enjoy outdoor activities in a secure, natural environment.",
     },
     {
       id: 3,
-      imgSrc: "/images/eco_freindly.svg",
+      imgSrc: "/images/swimming_icon.svg",
       title: "Swimming Pool",
       description:
         "Enjoy a refreshing swim in a well-designed pool that adds comfort, leisure, and a resort-style feel.",
@@ -422,7 +422,7 @@ export function HomePage() {
           className="relative z-10 text-center font-urbanist text-white/80 text-[14px] lg:w-[850px] sm:text-[14px] mt-[10px] lg:mt-[20px] lg:text-[24px]"
         >
           Discover managed farmlands near Bangalore North with clear titles,
-          prime locations, and expert management. schedule a site visit.
+          prime locations, and expert management.
         </motion.p>
         <motion.div
           variants={fadeUp}
@@ -526,7 +526,7 @@ export function HomePage() {
           {amenitiesCards.map((card) => (
             <div
               key={card.id}
-              className="bg-white font-urbanist mx-auto w-full max-w-[340px] lg:max-w-[370px] rounded rounded-3 lg:h-[236px] p-[20px] lg:p-[40px]"
+              className="bg-white font-urbanist mx-auto w-full max-w-[340px] lg:max-w-[380px] rounded rounded-3 lg:h-[236px] p-[20px] lg:p-[40px]"
             >
               <div className="flex align-items-center">
                 <div>
@@ -547,7 +547,7 @@ export function HomePage() {
           {amenitiesCard.map((card) => (
             <div
               key={card.id}
-              className="bg-white font-urbanist mx-auto w-full max-w-[340px] lg:max-w-[370px] rounded rounded-3 lg:h-[236px] p-[20px] lg:p-[40px]"
+              className="bg-white font-urbanist mx-auto w-full max-w-[340px] lg:max-w-[380px] rounded rounded-3 lg:h-[236px] p-[20px] lg:p-[40px]"
             >
               <div className="flex align-items-center">
                 <div>
@@ -565,7 +565,7 @@ export function HomePage() {
 
           <div
             style={{ backgroundImage: "url('/images/cta_background.webp')" }}
-            className="bg-no-repeat bg-center bg-cover mx-auto text-white font-urbanist w-full max-w-[340px] lg:max-w-none lg:w-[847px] rounded-3 py-[24px] px-[20px] lg:h-[236px] lg:py-[60px] lg:p-[40px]"
+            className="bg-no-repeat bg-center bg-cover mx-auto text-white font-urbanist w-full max-w-[340px] lg:max-w-none lg:w-[810px] rounded-3 py-[24px] px-[20px] lg:h-[236px] lg:py-[60px] lg:p-[40px]"
           >
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
               {/* Left side (Title + Description) */}
