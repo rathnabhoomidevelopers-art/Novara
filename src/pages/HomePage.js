@@ -637,7 +637,7 @@ export function HomePage() {
                   <img
                     src={blog.image}
                     alt={blog.title}
-                    className="h-[240px] w-full object-cover"
+                    className="h-[200px] w-full object-cover"
                   />
                 </Link>
               </div>
@@ -651,7 +651,7 @@ export function HomePage() {
                   </span>
 
                   {/* Title */}
-                  <div className="flex justify-between items-center">
+                  <div className="flex justify-between items-center mt-4">
                     <h3 className="mt-3 text-[16px] lg:text-[20px] lg:w-[250px] font-semibold leading-snug text-[#0F172A]">
                       {blog.title}
                     </h3>

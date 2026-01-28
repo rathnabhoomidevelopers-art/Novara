@@ -6,6 +6,7 @@ import {
   Youtube,
   MessageCircle,
   DownloadIcon,
+  Instagram,
 } from "lucide-react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { BLOGS } from "../data/blogs";
@@ -392,16 +393,16 @@ export default function BlogDetail() {
           <div className="hidden lg:block w-[80px] mr-6">
             <div className="sticky top-64 flex flex-col gap-4">
               <a
-                href="https://www.facebook.com/sharer/sharer.php?u=YOUR_URL"
+                href="https://www.facebook.com/profile.php?id=61585877764871#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-full bg-[#FFF6E6] flex items-center justify-center text-[#8A8A8A] hover:bg-[#E3A600] hover:text-white transition"
+                className="h-10 w-10 rounded-full bg-[#FFF6E6] flex items-center justify-center text-[#8A8A8A] hover:bg-[#1877F2] hover:text-white transition"
               >
                 <Facebook className="h-5 w-5" />
               </a>
 
               <a
-                href="https://wa.me/?text=YOUR_URL"
+                href="https://wa.me/918660200662"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full bg-[#FFF6E6] flex items-center justify-center text-[#8A8A8A] hover:bg-[#25D366] hover:text-white transition"
@@ -410,16 +411,16 @@ export default function BlogDetail() {
               </a>
 
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.instagram.com/novaranatureestates/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-full bg-[#FFF6E6] flex items-center justify-center text-[#8A8A8A] hover:bg-[#0A66C2] hover:text-white transition"
+                className="h-10 w-10 rounded-full bg-[#FFF6E6] flex items-center justify-center text-[#8A8A8A] hover:bg-gradient-to-r from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] hover:text-white transition"
               >
-                <Linkedin className="h-5 w-5" />
+                <Instagram className="h-5 w-5" />
               </a>
 
               <a
-                href="https://www.youtube.com/"
+                href="https://www.youtube.com/@NovaraNatureEstates"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full bg-[#FFF6E6] flex items-center justify-center text-[#8A8A8A] hover:bg-[#FF0000] hover:text-white transition"
