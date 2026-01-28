@@ -497,7 +497,7 @@ export function HomePage() {
           <div className="order-2 relative z-10 lg:left-64 lg:-mt-[160px]">
             <img
               src="/images/location.webp"
-              className="w-[370px] lg:w-[940px]"
+              className="w-full max-w-[370px] lg:max-w-[940px]"
               alt="Location"
             />
           </div>
@@ -540,7 +540,7 @@ export function HomePage() {
           24/7 security, and reliable water supply, all ensuring a comfortable
           living experience with easy access to key landmarks.
         </p>
-        <div className="flex flex-col lg:flex-row gap-[16px] mt-4">
+        <div className="flex flex-col lg:flex-row lg:ms-6 gap-[16px] mt-4 lg:w-[1200px]">
           {amenitiesCards.map((card) => (
             <div
               key={card.id}
@@ -561,7 +561,7 @@ export function HomePage() {
           ))}
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-[16px] mt-[16px]">
+        <div className="flex flex-col lg:flex-row  gap-[16px] sm:ms-0 md-ms-0 lg:ms-6 lg:gap-[16px] mt-[16px] lg:mt-[20px] lg:w-[1200px]">
           {amenitiesCard.map((card) => (
             <div
               key={card.id}
@@ -583,7 +583,7 @@ export function HomePage() {
 
           <div
             style={{ backgroundImage: "url('/images/cta_background.webp')" }}
-            className="bg-no-repeat bg-center bg-cover mx-auto text-white font-urbanist w-full max-w-[340px] lg:max-w-none lg:w-[810px] rounded-3 py-[24px] px-[20px] lg:h-[236px] lg:py-[60px] lg:p-[40px]"
+            className="bg-no-repeat bg-center bg-cover mx-auto text-white font-urbanist w-full max-w-[340px] lg:max-w-none lg:w-[780px] rounded-3 py-[24px] px-[20px] lg:h-[236px] lg:py-[60px] lg:p-[40px]"
           >
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
               {/* Left side (Title + Description) */}
@@ -670,7 +670,7 @@ export function HomePage() {
         </div>
       </div>
 
-      <div>
+      <div className="overflow-x-clip">
         <TestimonialsCarousel />
       </div>
       <motion.div

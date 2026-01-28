@@ -190,7 +190,7 @@ export default function Header() {
             transition={{ duration: 0.18, ease: "easeOut" }}
             className="fixed left-0 right-0 top-[104px] z-50 bg-[#52A09A] lg:hidden"
           >
-            <div className="mx-auto max-w-[1400px] px-4 pb-5 pt-4 sm:px-6">
+            <div className="mx-auto  max-w-[1400px] px-4 pb-5 pt-4 sm:px-6">
               <div className="rounded-2xl bg-white/95 p-3 shadow-[0_10px_24px_rgba(0,0,0,0.18)]">
                 <nav className="flex flex-col gap-1">
                   {links.map((l) => {
