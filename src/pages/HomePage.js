@@ -629,7 +629,7 @@ export function HomePage() {
           {latestBlogs.map((blog) => (
             <div
               key={blog.id}
-              className="w-[351px] h-[400px] lg:w-[400px] lg:h-[424px] rounded-[22px] bg-white p-3 shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
+              className="w-[351px] h-[350px] lg:w-[400px] lg:h-[380px] rounded-[22px] bg-white p-3 shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
             >
               {/* Image */}
               <div className="overflow-hidden rounded-[16px]">
@@ -643,7 +643,7 @@ export function HomePage() {
               </div>
 
               {/* Content */}
-              <div className="mt-4 flex font-urbanist items-start justify-between gap-3">
+              <div className="mt-3 flex font-urbanist items-start justify-between gap-3">
                 <div>
                   {/* Tag */}
                   <span className="inline-block rounded-full bg-[#E9FFF3] px-3 py-1 text-[12px] font-medium text-[#1B9A63]">
@@ -651,8 +651,8 @@ export function HomePage() {
                   </span>
 
                   {/* Title */}
-                  <div className="flex justify-between items-center mt-4">
-                    <h3 className="mt-3 text-[16px] lg:text-[20px] lg:w-[250px] font-semibold leading-snug text-[#0F172A]">
+                  <div className="flex justify-between items-center mt-2">
+                    <h3 className=" text-[16px] lg:text-[20px] lg:w-[250px] font-semibold leading-snug text-[#0F172A]">
                       {blog.title}
                     </h3>
 
