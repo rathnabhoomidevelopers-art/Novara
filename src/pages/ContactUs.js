@@ -5,6 +5,7 @@ import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import { DownloadIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const API_BASE =
   process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
@@ -296,6 +297,18 @@ export function ContactUs() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div>
+      <Helmet>
+        <title>Sustainable Farming Solution by Novara | Eco-Friendly Growth</title>
+        <meta
+          name="description"
+          content="Discover sustainable farming practices with Novara. We promote eco-friendly agriculture, soil health, water conservation, and long-term farm productivity."
+        />
+        <meta name="keywords" content="Sustainable Farming" />
+        <link
+          rel="canonical"
+          href="https://www.novaranatureestates.com/contactus"
+        />
+      </Helmet>
       <Header />
       <motion.div
         initial="hidden"

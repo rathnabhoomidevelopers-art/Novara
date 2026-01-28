@@ -7,6 +7,7 @@ import EcovaraInquiryForm from "../components/EcovaraInquiryForm";
 import CTAStrip from "../components/CTAStrip";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const API_BASE =
   process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
@@ -428,6 +429,18 @@ export function Projects() {
 
   return (
     <div>
+      <Helmet>
+        <title>Farmland for Sale Near Lepakshi | Novara Nature Estates</title>
+        <meta
+          name="description"
+          content="Explore premium farmland for sale near Lepakshi with Novara Nature Estates. Secure gated plots, legal documents, and high-return investment opportunities today."
+        />
+        <meta name="keywords" content="Farmland for Sale" />
+        <link
+          rel="canonical"
+          href="https://www.novaranatureestates.com/projects"
+        />
+      </Helmet>
       <Header />
       <motion.div
         initial="hidden"

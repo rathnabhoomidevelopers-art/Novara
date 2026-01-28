@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import OurStorySection from "../components/OurStorySection";
 import EcovaraHeroBlock from "../components/EcovaraHeroBlock";
@@ -386,6 +387,23 @@ export function HomePage() {
 
   return (
     <div>
+      <Helmet>
+        <title>
+          Managed Farmlands Near Bangalore | Novara Nature Estate
+        </title>
+        <meta
+          name="description"
+          content="Invest in managed farmlands near Bangalore with Novara Nature Estate. Enjoy hassle-free ownership, expert maintenance, and high-return agricultural investments."
+        />
+        <meta
+          name="keywords"
+          content="Managed Farmlands Near Bangalore"
+        />
+        <link
+          rel="canonical"
+          href="https://www.novaranatureestates.com"
+        />
+      </Helmet>
       <Header />
       {/* HERO */}
       <motion.div

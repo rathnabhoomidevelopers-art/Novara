@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const API_BASE =
   process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
@@ -317,6 +318,15 @@ export function WhyNovara() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div>
+      <Helmet>
+        <title>Farmland Near Bangalore | Invest in Nature with Novara</title>
+        <meta
+          name="description"
+          content="Discover premium farmland near Bangalore with Novara. Ideal for weekend retreats and long-term investment. Secure, scenic, and legally approved plots."
+        />
+        <meta name="keywords" content="Farmland Near Bangalore" />
+        <link rel="canonical" href="https://www.novaranatureestates.com/whynovara" />
+      </Helmet>
       <Header />
       {/* Hero block */}
       <motion.div

@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import { BLOGS } from "../data/blogs";
 import { useState } from "react";
 import { DownloadIcon } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const API_BASE =
   process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
@@ -300,6 +301,18 @@ export function Blogs() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="font-urbanist">
+      <Helmet>
+        <title>Invest in Land with Novara | Secure Farmland Investment</title>
+        <meta
+          name="description"
+          content="Invest in land with Novara and own premium farmland near Lepakshi. Safe, legal plots with high returns, greenery, and long-term value. Book now."
+        />
+        <meta name="keywords" content="Invest in Land" />
+        <link
+          rel="canonical"
+          href="https://www.novaranatureestates.com/blogs"
+        />
+      </Helmet>
       <Header />
 
       <motion.div

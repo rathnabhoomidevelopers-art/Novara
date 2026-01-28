@@ -137,12 +137,12 @@ export default function FarmlandSmartChoiceSection({
                     <img src="/images/dual_benefits.svg" />
                   </div>
                   <div className="ps-3 text-[18px] lg:text-[20px] text-[#1A614F] font-semibold">
-                    Dual Benefits
+                    Tax Free Income
                   </div>
                 </div>
                 <div className="mt-[24px] text-[14px] lg:text-[16px]">
-                  Whether for personal enjoyment or profitable returns, our
-                  farmlands provide the perfect balance of both.
+                  Enjoy tax savings and dual benefits with smart investments
+                  that offer financial growth and long-term security.
                 </div>
               </div>
             </div>
