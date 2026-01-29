@@ -191,12 +191,12 @@ export default function EcovaraPhotoGallery({
                 />
               </svg>
 
-              <p className="text-[14px] mt-3 sm:text-[20px] font-semibold tracking-[0.22em] text-[#DCA000]">
+              <p className="text-[14px] mt-3 sm:text-[20px] font-semibold font-urbanist tracking-[0.22em] text-[#DCA000]">
                 {titleTop}
               </p>
             </div>
 
-            <h2 className="font-serif lg:text-left text-[#0F5E49]">
+            <h2 className="font-brushelva lg:text-left text-[#0F5E49]">
               <div className="font-light text-2xl lg:text-[32px]">{titleLine1}</div>
               <div className="text-3xl lg:mt-2 lg:text-[45px]">{titleLine2}</div>
             </h2>
@@ -236,7 +236,7 @@ export default function EcovaraPhotoGallery({
                           draggable={false}
                           loading="lazy"
                         />
-                        <div className="absolute bottom-2 left-5 flex justify-center items-center w-[250px] lg:w-[350px] rounded-full bg-black/60 text-white py-[4px] lg:py-[8px] px-4 text-sm lg:text-base">
+                        <div className="absolute bottom-2 left-5 font-urbanist flex justify-center items-center w-[250px] lg:w-[350px] rounded-full bg-black/60 text-white py-[4px] lg:py-[8px] px-4 text-sm lg:text-base">
                           {img.badgeText}
                         </div>
                       </div>

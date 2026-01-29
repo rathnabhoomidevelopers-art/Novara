@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, PhoneIcon, MailIcon, ArrowLeft, MessageCircleIcon } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import Footer from "./Footer";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },
@@ -24,9 +25,9 @@ export default function ThankYou() {
   }, []);
 
   return (
-    <div className="min-h-screen w-full bg-[#FBF3E6]">
+    <div className="min-h-screen font-urbanist w-full bg-[#FBF3E6]">
       {/* Top brand bar - Mobile optimized */}
-      <div className="w-full bg-[#0F3F3B]">
+      <div className="w-full bg-[#52A09A]">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-4">
           <img
             src="/images/logo.svg"
@@ -204,11 +205,7 @@ export default function ThankYou() {
       </motion.main>
 
       {/* Footer strip */}
-      <div className="w-full bg-[#1F4B48]">
-        <div className="mx-auto max-w-7xl px-4 py-6 text-center text-white/90 sm:px-6 sm:py-8">
-          <p className="text-xs sm:text-sm">© 2025 novaranatureestates.com. All Rights Reserved.</p>
-        </div>
-      </div>
+     <Footer/>
 
       {/* Floating CTAs - Mobile optimized */}
       <motion.div
