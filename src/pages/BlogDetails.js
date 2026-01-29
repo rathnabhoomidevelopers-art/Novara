@@ -516,6 +516,21 @@ export default function BlogDetail() {
                     );
                   }
 
+                  if (s.type === "ul") {
+                    return (
+                      <ul
+                        key={i}
+                        className="list-disc list-outside pl-5 space-y-2 text-[13px] sm:text-[14px] text-slate-600"
+                      >
+                        {s.text.map((item, idx) => (
+                          <li key={idx} className="leading-relaxed">
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    );
+                  }
+
                   return (
                     <p
                       key={i}
