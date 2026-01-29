@@ -99,7 +99,7 @@ export default function ThankYou() {
 
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
               <InfoPill title="Response time" value="Within 30–60 mins" />
-              <InfoPill title="Location" value="Yelahanka, Bengaluru" />
+              <InfoPill title="Location" value="Sahakara Nagar, Bengaluru" />
               <InfoPill title="Working hours" value="Mon–Sun 9:30–6:30" />
             </div>
 
