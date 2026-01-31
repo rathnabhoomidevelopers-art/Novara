@@ -386,7 +386,7 @@ export function HomePage() {
   const latestBlogs = BLOGS.slice(0, 3);
 
   return (
-    <div>
+    <div className="font-urbanist">
       <Helmet>
         <title>
           Managed Farmlands Near Bangalore | Novara Nature Estate
@@ -456,7 +456,7 @@ export function HomePage() {
               text-[14px] sm:text-[16px] lg:text-[18px]
               font-urbanist font-semibold
               shadow-lg
-              bg-[#1f6b57] hover:bg-[#165a47]
+              bg-[#DCA000] hover:bg-[#DCA000]/90
               text-white
               no-underline
               transition-all duration-300

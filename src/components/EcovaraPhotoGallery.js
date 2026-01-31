@@ -10,6 +10,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const DEFAULT_IMAGES = [
   {
+    src: "/images/kempegowda_airport.webp",
+    alt: "Kempegowda International Airport",
+    badgeText: "Kempegowda International Airport",
+  },
+  {
     src: "/images/lepakshi_temple.webp",
     alt: "lepakshi temple",
     badgeText: "Lepakshi Temple",
@@ -44,11 +49,7 @@ const DEFAULT_IMAGES = [
     alt: "vidhurashwatha temple",
     badgeText: "Vidhurashwatha Temple",
   },
-  {
-    src: "/images/kempegowda_airport.webp",
-    alt: "Kempegowda International Airport",
-    badgeText: "Kempegowda International Airport",
-  },
+  
 ];
 
 export default function EcovaraPhotoGallery({

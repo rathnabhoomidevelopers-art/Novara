@@ -428,7 +428,7 @@ export function Projects() {
   ];
 
   return (
-    <div>
+    <div className="font-urbanist">
       <Helmet>
         <title>Farmland for Sale Near Lepakshi | Novara Nature Estates</title>
         <meta
@@ -515,7 +515,7 @@ export function Projects() {
           </div>
         </div>
         <div>
-          <div className="relative mx-auto w-[358px] lg:w-[1250px] lg:mt-[36px] overflow-visible">
+          <div className="relative mx-auto w-[358px] lg:w-[1300px] lg:mt-[36px] overflow-visible">
             <div className="relative overflow-hidden">
               <motion.div
                 className="flex items-stretch gap-2 lg:gap-6"
@@ -556,7 +556,7 @@ export function Projects() {
               type="button"
               onClick={goPrev}
               aria-label="Previous image"
-              className="absolute left-[-1px] top-1/2 z-10 -translate-y-1/2 lg:left-[-60px] lg:top-1/2 lg:z-10 -lg:translate-y-1/2 rounded-full bg-[#0F6A49] p-[2px] lg:p-2 text-white transition hover:scale-[1.02] active:scale-[0.98]"
+              className="absolute left-[-1px] top-1/2 z-10 -translate-y-1/2 lg:left-[-25px] lg:top-1/2 lg:z-10 -lg:translate-y-1/2 rounded-full bg-[#0F6A49] p-[2px] lg:p-2 text-white transition hover:scale-[1.02] active:scale-[0.98]"
             >
               <ChevronLeft className="h-5 w-5 lg:h-8 lg:w-8" />
             </button>
