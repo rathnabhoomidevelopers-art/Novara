@@ -551,7 +551,6 @@ export function Projects() {
               </motion.div>
             </div>
 
-            {/* Buttons outside, visible */}
             <button
               type="button"
               onClick={goPrev}
