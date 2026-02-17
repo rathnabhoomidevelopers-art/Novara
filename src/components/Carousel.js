@@ -60,8 +60,7 @@ export default function TestimonialsCarousel() {
     [],
   );
 
-  const nextSlide = () =>
-    setCurrentIndex((prev) => (prev + 1) % videos.length);
+  const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % videos.length);
 
   const prevSlide = () =>
     setCurrentIndex((prev) => (prev - 1 + videos.length) % videos.length);
@@ -160,7 +159,7 @@ export default function TestimonialsCarousel() {
             const iframeId = isCenter ? `yt-center-${vid}-${currentIndex}` : "";
 
             const src = vid
-              ? `https://www.youtube.com/embed/${vid}?playsinline=1&rel=0&modestbranding=1&controls=1&mute=1&autoplay=1&enablejsapi=1&origin=${encodeURIComponent(
+              ? `https://www.youtube.com/embed/${vid}?playsinline=1&rel=0&modestbranding=1&controls=1&enablejsapi=1&origin=${encodeURIComponent(
                   window.location.origin,
                 )}`
               : "";
@@ -171,7 +170,11 @@ export default function TestimonialsCarousel() {
                 className="absolute transition-all duration-500 ease-out"
                 style={{
                   transform: `translateX(${position * 340}px) scale(${
-                    isCenter ? 1.2 : position === -1 || position === 1 ? 1 : 0.85
+                    isCenter
+                      ? 1.2
+                      : position === -1 || position === 1
+                        ? 1
+                        : 0.85
                   })`,
                   zIndex: isCenter ? 30 : 20 - Math.abs(position),
                   opacity: Math.abs(position) > 2 ? 0 : 1,

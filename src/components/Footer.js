@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Youtube } from "lucide-react";
+import { Facebook, Icon, Instagram, Linkedin, Youtube } from "lucide-react";
 
 export default function Footer() {
 
@@ -17,6 +17,7 @@ export default function Footer() {
     { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61585877764871#", label: "Facebook" },
     { Icon: Instagram, href: "https://www.instagram.com/novaranatureestates/", label: "Instagram" },
     { Icon: Youtube, href: "https://www.youtube.com/@NovaraNatureEstates", label: "YouTube" },
+    { Icon: Linkedin, href: "https://www.linkedin.com/company/novara-nature-estates/"}
   ];
 
   return (
@@ -32,7 +33,7 @@ export default function Footer() {
           />
 
           <p className="mt-4 text-white/80 leading-relaxed max-w-sm">
-            <b className="text-lg">Novara Nature Estate</b> focuses on thoughtfully planned farmland and land offerings designed for long-term value. With an emphasis on transparency, responsible planning, and natural surroundings, it delivers opportunities that support sustainable land ownership and future growth.
+            <b className="text-lg">Novara Nature Estates</b> focuses on thoughtfully planned farmland and land offerings designed for long-term value. With an emphasis on transparency, responsible planning, and natural surroundings, it delivers opportunities that support sustainable land ownership and future growth.
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-10">
@@ -60,6 +61,10 @@ export default function Footer() {
           <div className="mt-6">
             <h3 className="text-2xl font-semibold">Contact Us</h3>
             <div className="mt-3 space-y-2 text-white/85">
+            <div>
+              <span>Location : </span>
+              <a href="https://maps.app.goo.gl/pgNQqUDdzVo8fciY7" className="text-white no-underline">13th Cross Rd, F Block, CQAL Layout, Sahakar Nagar, Bengaluru, Karnataka 560092</a>
+            </div>
               <div>
                 Email:{" "}
                 <a
@@ -97,7 +102,7 @@ export default function Footer() {
 
           <div className="mt-8 border-t border-white/35" />
           <div className="pt-4 text-left text-[12px] text-white/85">
-            © 2025 novaranatureestate.com. All Rights Reserved.
+            © 2025 All Rights Reserved. Designed by <a href="https://www.skyupdigitalsolutions.com/" target="_blank" className="text-white no-underline">SKYUP Digital Solutions</a>
           </div>
         </div>
 
@@ -110,7 +115,7 @@ export default function Footer() {
               className="w-[170px] h-auto mt-2"
             />
             <p className="mt-4 text-white/80 leading-relaxed max-w-sm">
-              <b className="text-lg">Novara Nature Estate </b>focuses on thoughtfully planned farmland and land offerings designed for long-term value. With an emphasis on transparency, responsible planning, and natural surroundings, it delivers opportunities that support sustainable land ownership and future growth.
+              <b className="text-lg">Novara Nature Estates </b>focuses on thoughtfully planned farmland and land offerings designed for long-term value. With an emphasis on transparency, responsible planning, and natural surroundings, it delivers opportunities that support sustainable land ownership and future growth.
             </p>
           </div>
 
@@ -135,17 +140,21 @@ export default function Footer() {
           <div className="pt-[6px]">
             <h3 className="text-2xl font-semibold">Contact Us</h3>
             <div className="mt-3 space-y-2 text-white/85">
+            <div>
+              <span>Location : </span>
+              <a href="https://maps.app.goo.gl/pgNQqUDdzVo8fciY7" className="text-white no-underline">13th Cross Rd, F Block, CQAL Layout, Sahakar Nagar, Bengaluru, Karnataka 560092</a>
+            </div>
               <div className="flex">
-                Email:&nbsp;{" "}
+                Email :&nbsp;{" "}
                 <a
                   href="mailto:info@novaranatureestate.com"
                   className="text-white/85 no-underline"
                 >
-                   info@novaranatureestate.com
+                   info@novaranatureestates.com
                 </a>
               </div>
               <div>
-                Phone:{" "}
+                Phone :{" "}
                 <a
                   href="tel:+918660200662"
                   className="text-white/85 no-underline"
@@ -173,7 +182,7 @@ export default function Footer() {
 
         <div className="hidden sm:block mt-8 border-t border-white/35" />
         <div className="hidden sm:block mt-2 py-3 text-center text-white/85">
-          © 2025 novaranatureestate.com. All Rights Reserved.
+          © 2025 All Rights Reserved. Designed by <a href="https://www.skyupdigitalsolutions.com/" target="_blank" className="text-white no-underline">SKYUP Digital Solutions</a>
         </div>
       </div>
     </footer>

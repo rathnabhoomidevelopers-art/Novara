@@ -354,10 +354,10 @@ export function HomePage() {
     { name: "Hindupuram Town", time: "10 Mins" },
     { name: "Bagepalli Toll Plaza", time: "20 Mins" },
     { name: "Penukonda Fort", time: "30 Mins" },
-    { name: "Isha Foundation", time: "60 Mins" },
+    { name: "Isha Foundation", time: "50 Mins" },
+    { name: "Nandhi Hills", time: "60 Mins" },
     { name: "Devanahalli", time: "65 Mins" },
-    { name: "Nandhi Hills", time: "70 Mins" },
-    { name: "KIA Airport Devanahalli", time: "70 Mins" },
+    { name: "KIA Airport Devanahalli", time: "75 Mins" },
   ];
 
   const amenitiesCards = [
@@ -433,7 +433,7 @@ export function HomePage() {
           className="relative z-10 text-center text-white font-brushelva text-[22px] sm:text-[32px] lg:text-[64px] lg:w-[1200px]"
         >
           Premium Managed Farmland Near North Bangalore With Novara Nature
-          Estate
+          Estates
         </motion.h1>
 
         <motion.p

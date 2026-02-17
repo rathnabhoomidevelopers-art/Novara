@@ -488,11 +488,11 @@ export function Projects() {
             <img src="/images/project_icon.svg" />
             <div className="font-brushelva text-[25px] lg:text-[50px] text-[#000000]">
               <span className="text-[#1A614F]">Ecovara</span> by Novara Nature
-              Estate
+              Estates
             </div>
             <p className="text-[16px] lg:text-[18px] font-urbanist pt-[14px]">
               Strategic Location, Promising Returns Ecovara by Novara Nature
-              Estate is strategically situated near prominent IT hubs and
+              Estates is strategically situated near prominent IT hubs and
               industrial corridors – blending the tranquility of countryside
               living with the convenience of urban access.
             </p>
@@ -502,7 +502,7 @@ export function Projects() {
                 Situated Near The Historic Lepakshi Temple Along
                 Bengaluru-Hyderabad National Highway
               </strong>
-              , Novara Nature Estate Is A Gated Community Where Free-Spirited
+              , Novara Nature Estates Is A Gated Community Where Free-Spirited
               Design Blends Seamlessly With Modern Living.
             </p>
             <p>

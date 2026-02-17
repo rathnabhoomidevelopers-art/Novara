@@ -328,7 +328,7 @@ export function ContactUs() {
           variants={fadeUp}
           className="relative z-10  text-[#2B2B2B] font-urbanist  text-[14px] sm:text-[14px] mt-[10px] lg:mt-[10px] lg:w-[1160px] lg:text-[16px]"
         >
-          Welcome to Estatein's Contact Us page. We're here to assist you with
+          Welcome to Novara Nature Estates Contact Us page. We're here to assist you with
           any inquiries, requests, or feedback you may have.
         </motion.p>
       </motion.div>
@@ -348,7 +348,7 @@ export function ContactUs() {
                 href="mailto:info@novaranatureestate.com"
                 className="text-[#1A614F] pt-3 text-[12px] lg:text-[16px] no-underline font-semibold "
               >
-                info@novaranatureestate.com
+                info@novaranatureestates.com
               </a>
             </div>
 
@@ -387,7 +387,7 @@ export function ContactUs() {
                 target="_blank"
                 className="text-[#1A614F] pt-3 text-[12px] lg:text-[16px] no-underline font-semibold "
               >
-                View Address
+                Office Location
               </a>
             </div>
             <div className="relative bg-white flex flex-wrap lg:flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[340px]">
@@ -418,6 +418,13 @@ export function ContactUs() {
                 >
                   Facebook
                 </a>
+                <a
+                  href="https://www.linkedin.com/company/novara-nature-estates/"
+                  target="_blank"
+                  className="text-[#1A614F] pt-3 text-[12px] lg:text-[16px] no-underline font-semibold "
+                >
+                  Linked In
+                </a>
               </span>
             </div>
           </div>
@@ -438,7 +445,7 @@ export function ContactUs() {
         </div>
         <p className="text-white px-[18px] pt-[10px] text-[14px] lg:text-[16px] mt-3 lg:w-[1030px] font-urbanist">
           We're excited to connect with you and learn more about your real
-          estate goals. Use the form below to get in touch with Estatein.
+          estate goals. Use the form below to get in touch with Novara Nature Estates.
           Whether you're a prospective client, partner, or simply curious about
           our services, we're here to answer your questions and provide the
           assistance you need.

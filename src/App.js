@@ -17,6 +17,7 @@ import TermsCondition from "./pages/Terms&Condition";
 import ThankYou from "./components/ThankYou";
 import { Practice } from "./components/Practice";
 import Chatbot from "./components/Chatbot";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path="/practice" element={<Practice />}/>
         <Route path="/chatbot" element={<Chatbot/>}/> 
         <Route path="/thankyou" element={<ThankYou />} />
+        <Route path="*" element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>
   );

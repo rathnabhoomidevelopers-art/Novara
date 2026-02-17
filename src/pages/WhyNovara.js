@@ -326,7 +326,10 @@ export function WhyNovara() {
           content="Discover premium farmland near Bangalore with Novara. Ideal for weekend retreats and long-term investment. Secure, scenic, and legally approved plots."
         />
         <meta name="keywords" content="Farmland Near Bangalore" />
-        <link rel="canonical" href="https://www.novaranatureestates.com/whynovara" />
+        <link
+          rel="canonical"
+          href="https://www.novaranatureestates.com/whynovara"
+        />
       </Helmet>
       <Header />
       {/* Hero block */}
@@ -359,7 +362,7 @@ export function WhyNovara() {
       </motion.div>
 
       <div className="bg-gradient-to-b from-[#D3FFE5] via-[#e8fff2e5] to-[#FEFFFF] ">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-[100px]  py-[30px] lg:py-[90px]">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-[100px]  py-[30px] lg:py-[70px]">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-[70px] items-center">
             {/* Text */}
             <motion.div
@@ -380,8 +383,8 @@ export function WhyNovara() {
                 variants={fadeUp}
                 className="text-[14px] font-urbanist lg:w-[599px] sm:text-[16px] lg:text-[18px] lg:pt-3 text-[#2B2B2B] leading-relaxed"
               >
-                <strong>Novara Nature Estate</strong> brings together nature and
-                modern living by offering thoughtfully planned{" "}
+                <strong>Novara Nature Estates</strong> brings together nature
+                and modern living by offering thoughtfully planned{" "}
                 <strong>farmland near Bangalore</strong>. With a strong focus on
                 agriculture and sustainability, we make farmland ownership
                 simple, secure, and rewarding for both lifestyle seekers and
@@ -409,7 +412,7 @@ export function WhyNovara() {
                   className="flex flex-col lg:flex-row lg:gap-2  items-start"
                 >
                   <span className="text-[24px] sm:text-[32px] lg:text-[44px] text-[#166D22] font-bold leading-none">
-                    5+
+                    15+
                   </span>
                   <span className=" text-[14px] sm:text-[14px] lg:text-[16px] text-[#2B2B2B] leading-snug">
                     Years of <br className="hidden sm:block" /> Experience
@@ -421,10 +424,10 @@ export function WhyNovara() {
                   className="flex flex-col lg:flex-row lg:gap-2 items-start"
                 >
                   <span className="text-[24px] sm:text-[32px] lg:text-[44px] text-[#166D22] font-bold leading-none">
-                    10K+
+                    4
                   </span>
                   <span className=" text-[14px] sm:text-[14px] lg:text-[16px] text-[#2B2B2B] leading-snug">
-                    Project <br className="sm:block" /> Completed
+                    Projects <br className="sm:block" /> Completed
                   </span>
                 </motion.div>
 
@@ -433,7 +436,7 @@ export function WhyNovara() {
                   className="flex flex-col lg:flex-row lg:gap-2 items-start"
                 >
                   <span className="text-[24px] sm:text-[32px] lg:text-[44px] text-[#166D22] font-bold leading-none">
-                    1K+
+                    450+
                   </span>
                   <span className=" text-[14px] sm:text-[14px] lg:text-[16px] text-[#2B2B2B] leading-snug">
                     Happy <br className="hidden sm:block" /> Clients
@@ -465,12 +468,12 @@ export function WhyNovara() {
       </div>
 
       <div
-        className="bg-no-repeat bg-cover bg-center flex flex-col lg:flex-row justify-center items-center p-3 lg:p-0 gap-2 lg:gap-5 lg:h-[577px]"
+        className="bg-no-repeat bg-cover bg-center flex flex-col lg:flex-row justify-center items-center p-3 lg:p-0 gap-3 lg:gap-[60px] lg:h-[500px]"
         style={{ backgroundImage: "url('/images/specification.webp')" }}
       >
-        <div className="lg:w-[413px]">
+        <div className="lg:w-[500px]">
           <img src="/images/updated_icon.svg" alt="sparkle" />
-          <div className="font-brushelva text-[#FFD871] text-[28px] lg:text-[38px]">
+          <div className="font-brushelva text-[#FFD871] text-[28px] lg:pb-[10px] lg:text-[38px]">
             Our Values
           </div>
           <p className="text-[14px] lg:text-[16px] font-urbanist text-white">
@@ -481,7 +484,7 @@ export function WhyNovara() {
           </p>
         </div>
 
-        <div className="bg-white font-urbanist p-[30px] lg:p-[50px] lg:w-[807px] lg:h-[396px] rounded-xl">
+        <div className="bg-white font-urbanist p-[20px] lg:p-[20px] lg:w-[740px] lg:h-[350px] rounded-xl">
           <div>
             <div className="flex flex-col lg:flex-row">
               <div className="">
@@ -494,7 +497,7 @@ export function WhyNovara() {
                   integrity, and reliability.
                 </p>
               </div>
-              <div className="w-full lg:hidden my-[14px] h-[1.5px] bg-[#262626]/60"></div>
+              <div className="w-full lg:hidden my-[6px] h-[1.5px] bg-[#262626]/60"></div>
               <span className="h-[130px] hidden lg:block w-[1.5px] me-10 bg-[#262626]/60"></span>
               <div className="">
                 <div className="flex items-center gap-[10px]">
@@ -508,7 +511,7 @@ export function WhyNovara() {
               </div>
             </div>
 
-            <div className="w-full my-[14px] h-[1.5px] bg-[#262626]/60"></div>
+            <div className="w-full my-[6px] h-[1.5px] bg-[#262626]/60"></div>
 
             <div className="flex flex-col lg:flex-row">
               <div className="">
@@ -523,7 +526,7 @@ export function WhyNovara() {
                   with your needs first.
                 </p>
               </div>
-              <div className="w-full lg:hidden my-[14px] h-[1.5px] bg-[#262626]/60"></div>
+              <div className="w-full lg:hidden my-[6px] h-[1.5px] bg-[#262626]/60"></div>
               <span className="h-[130px] hidden lg:block w-[1.5px] me-10 bg-[#262626]/60"></span>
               <div className="">
                 <div className="flex items-center gap-[10px]">
@@ -879,7 +882,7 @@ export function WhyNovara() {
         description="Fully developed farmland with clear titles and professional management ready for immediate ownership, peaceful living."
         ctaText="Get Started"
       />
-      <Chatbot/>
+      <Chatbot />
       <BrochureModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
