@@ -8,6 +8,7 @@ import CTAStrip from "../components/CTAStrip";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import Chatbot from "../components/Chatbot";
 
 const API_BASE =
   process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
@@ -964,6 +965,7 @@ export function Projects() {
           </button>
         </motion.div>
       </div>
+      <Chatbot/>
       <Footer />
     </div>
   );

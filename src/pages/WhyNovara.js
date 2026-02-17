@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import Chatbot from "../components/Chatbot";
 
 const API_BASE =
   process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
@@ -878,6 +879,7 @@ export function WhyNovara() {
         description="Fully developed farmland with clear titles and professional management ready for immediate ownership, peaceful living."
         ctaText="Get Started"
       />
+      <Chatbot/>
       <BrochureModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

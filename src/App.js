@@ -15,6 +15,8 @@ import BlogDetail from "./pages/BlogDetails";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsCondition from "./pages/Terms&Condition";
 import ThankYou from "./components/ThankYou";
+import { Practice } from "./components/Practice";
+import Chatbot from "./components/Chatbot";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
         <Route path="/carousel" element={<TestimonialsCarousel />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/termscondition" element={<TermsCondition />} />
+        <Route path="/practice" element={<Practice />}/>
+        <Route path="/chatbot" element={<Chatbot/>}/> 
         <Route path="/thankyou" element={<ThankYou />} />
       </Routes>
     </BrowserRouter>

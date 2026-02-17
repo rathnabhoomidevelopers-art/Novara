@@ -1,3 +1,4 @@
+import Chatbot from "../components/Chatbot";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { motion } from "framer-motion";
@@ -275,6 +276,7 @@ export default function PrivacyPolicy() {
           </span>
         </a>
       </motion.div>
+      <Chatbot/>
       <Footer />
     </div>
   );

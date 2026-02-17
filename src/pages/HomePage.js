@@ -12,6 +12,7 @@ import { BLOGS } from "../data/blogs";
 import Footer from "../components/Footer";
 import { useState } from "react";
 import { DownloadIcon } from "lucide-react";
+import Chatbot from "../components/Chatbot";
 
 const API_BASE =
   process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
@@ -819,6 +820,7 @@ export function HomePage() {
         description="Enjoy hassle-free farming with expert care, regular maintenance, and sustainable practices that help your land grow in value and productivity."
         ctaText="Book a Farm Visit"
       />
+      <Chatbot/>
       <Footer />
 
       <BrochureModal

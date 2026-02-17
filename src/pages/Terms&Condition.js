@@ -1,3 +1,4 @@
+import Chatbot from "../components/Chatbot";
 import CTAStrip from "../components/CTAStrip";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -298,6 +299,7 @@ export default function TermsCondition() {
           </span>
         </a>
       </motion.div>
+      <Chatbot/>
       <Footer />
     </div>
   );

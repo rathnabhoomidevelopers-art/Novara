@@ -49,6 +49,7 @@
       "/privacypolicy",
       "/termscondition"
     ],
+
     "fixWebpackChunksIssue": "CRA2",
     "skipThirdPartyRequests": true,
     "waitFor": 2500

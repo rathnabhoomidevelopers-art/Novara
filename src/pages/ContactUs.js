@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import { DownloadIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import Chatbot from "../components/Chatbot";
 
 const API_BASE =
   process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
@@ -296,7 +297,7 @@ const BrochureModal = ({ isOpen, onClose }) => {
 export function ContactUs() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <div>
+    <div className="font-urbanist">
       <Helmet>
         <title>Sustainable Farming Solution by Novara | Eco-Friendly Growth</title>
         <meta
@@ -589,6 +590,7 @@ export function ContactUs() {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       />
+      <Chatbot/>
       <Footer />
     </div>
   );

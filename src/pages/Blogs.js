@@ -7,6 +7,7 @@ import { BLOGS } from "../data/blogs";
 import { useState } from "react";
 import { DownloadIcon } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import Chatbot from "../components/Chatbot";
 
 const API_BASE =
   process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
@@ -525,6 +526,7 @@ export function Blogs() {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       />
+      <Chatbot/>
       <Footer />
     </div>
   );
