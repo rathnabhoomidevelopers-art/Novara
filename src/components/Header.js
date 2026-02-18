@@ -29,7 +29,7 @@ export default function Header() {
     { iconSrc: "/images/fb.svg", href: "https://www.facebook.com/profile.php?id=61585877764871#", label: "Facebook" },
     { iconSrc: "/images/insta.svg", href: "https://www.instagram.com/novaranatureestates/", label: "Instagram" },
     { iconSrc: "/images/yt.svg", href: "https://www.youtube.com/@NovaraNatureEstates", label: "YouTube" },
-    { iconSrc: "/images/yt.svg", href:"https://www.linkedin.com/company/novara-nature-estates/" }
+    { iconSrc: "/images/linkedin1.svg", href:"https://www.linkedin.com/company/novara-nature-estates/" }
   ];
 
 

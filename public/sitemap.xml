@@ -1,23 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.novaranatureestates.com/</loc>
+    <loc>https://www.novaranatureestates.com</loc>
     <lastmod>2026-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.novaranatureestates.com/whynovara/</loc>
+    <loc>https://www.novaranatureestates.com/whynovara</loc>
     <lastmod>2026-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.novaranatureestates.com/projects</loc>
     <lastmod>2026-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novaranatureestates.com/blogs/</loc>
+    <loc>https://www.novaranatureestates.com/blogs</loc>
     <lastmod>2026-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.novaranatureestates.com/contactus/</loc>
+    <loc>https://www.novaranatureestates.com/contactus</loc>
     <lastmod>2026-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.novaranatureestates.com/blogs/top-farming-techniques-for-farmlands-near-bangalore</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.novaranatureestates.com/blogs/top-5-benefits-of-owning-farmland-as-an-investment</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.novaranatureestates.com/blogs/how-to-invest-in-farmland-in-india-a-step-by-step-guide-for-beginners</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+   <url>
+    <loc>https://www.novaranatureestates.com/blogs/how-farmlands-near-bangalore-are-becoming-the-ideal-weekend-retreat</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.novaranatureestates.com/blogs/how-to-generate-passive-income-from-farmland-near-bangalore</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.novaranatureestates.com/blogs/the-future-of-farmland-investment-in-india-trends-to-watch-in-2026</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.novaranatureestates.com/thankyou</loc>
+    <lastmod>2026-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
