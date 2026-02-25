@@ -11,8 +11,10 @@ import CTAStrip from "../components/CTAStrip";
 import { BLOGS } from "../data/blogs";
 import Footer from "../components/Footer";
 import { useState } from "react";
-import { DownloadIcon } from "lucide-react";
+import { DownloadIcon, Images } from "lucide-react";
 import Chatbot from "../components/Chatbot";
+import { ClientTestimonials } from "../components/Clienttestimonials";
+import ClientFAQ from "../components/ClientFAQ";
 
 const API_BASE =
   process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
@@ -610,9 +612,12 @@ export function HomePage() {
           </div>
         </div>
       </div>
+      <ClientTestimonials/>
 
-      <div className="lg:h-[690px] lg:px-[100px] py-5 lg:py-[90px] bg-gradient-to-b from-[#D3FFE5] to-[#FEFFFF]">
-        <div className="text-[24px] lg:text-[44px] font-brushelva text-center">
+      <div className="lg:h-[690px] lg:px-[100px] py-5 lg:py-[90px] bg-cover bg-center bg-no-repeat"
+      style={{backgroundImage:"url('/images/blog-bg.webp')"}}
+      >
+        <div className="text-[24px] lg:text-[44px] text-[#FFC62C] font-brushelva text-center">
           Our Latest Blogs
         </div>
 
@@ -671,9 +676,13 @@ export function HomePage() {
         </div>
       </div>
 
-      <div className="overflow-x-clip">
-        <TestimonialsCarousel />
+      <div>
+        <ClientFAQ/>
       </div>
+
+      {/* <div className="overflow-x-clip">
+        <TestimonialsCarousel />
+      </div> */}
       <motion.div
         initial={{ opacity: 0, y: 12, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -815,11 +824,13 @@ export function HomePage() {
         </motion.div>
       </div>
 
-      <CTAStrip
+      <div className="bg-yellow-50/50">
+        <CTAStrip
         title="Start Managed Farming Today"
         description="Enjoy hassle-free farming with expert care, regular maintenance, and sustainable practices that help your land grow in value and productivity."
         ctaText="Book a Farm Visit"
       />
+      </div>
       <Chatbot/>
       <Footer />
 

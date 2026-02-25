@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Chatbot from "../components/Chatbot";
+import ClientFAQ from "../components/ClientFAQ";
 
 const API_BASE =
   process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
@@ -816,11 +817,52 @@ export function Projects() {
         </div>
       </div>
       <EcovaraInquiryForm />
-      <CTAStrip
+      <ClientFAQ
+        faqs={[
+          {
+            id: 1,
+            question: "What is Ecovara by Novara Nature Estates?",
+            answer: "Ecovara is a premium gated farmland project offering legally clear agricultural land near Bangalore, designed for secure ownership, weekend retreats, and long-term farmland investment.",
+          },
+          {
+            id: 2,
+            question: "Where is the Ecovara project located?",
+            answer: "Ecovara offers farm plots near Lepakshi, strategically positioned within the North Bangalore growth corridor. The location provides peaceful natural surroundings while remaining well connected to Bangalore and the airport region.",
+          },
+          {
+            id: 3,
+            question: "Is Ecovara a gated farmland community?",
+            answer: "Yes, Ecovara is a planned gated farmland project near Bangalore with secure entry, compound fencing, internal roads, and structured layout development.",
+          },
+          {
+            id: 4,
+            question:" Is Ecovara suitable for farmland investment near Bangalore?",
+            answer:"Yes. Due to its location advantage and increasing demand for farm plots near Bangalore, Ecovara presents strong long-term appreciation potential."
+          },
+          {
+            id: 5,
+            question:'Can I build a farmhouse on my plot?',
+            answer:"Yes, buyers can develop private farmhouses on their agricultural land near Lepakshi, subject to applicable local regulations."
+          },
+          {
+            id: 6,
+            question:"Is the land legally verified and ready for registration?",
+            answer:"All plots come with legally verified documentation and are ready for registration, ensuring safe agricultural land investment."
+          },
+          {
+            id: 7,
+            question:"How can I book a site visit for Ecovara farm plots?",
+            answer:'You can schedule a guided site visit by contacting our team through the enquiry form or by calling our sales representatives directly.'
+          }
+        ]}
+      />
+      <div className="bg-yellow-50/50">
+        <CTAStrip
         title="Move-In Ready Managed Farmland"
         description="Fully developed managed farmlands offering easy ownership, modern infrastructure, and peaceful nature living perfect for weekend stays or long-term investment."
         ctaText="Get Started"
       />
+      </div>
       <BrochureModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
@@ -965,7 +1007,7 @@ export function Projects() {
           </button>
         </motion.div>
       </div>
-      <Chatbot/>
+      <Chatbot />
       <Footer />
     </div>
   );
