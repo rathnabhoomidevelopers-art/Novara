@@ -1,8 +1,8 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { useNavigate } from "react-router-dom";
+import { navigate } from "vike/client/router";
 
-const API_BASE = process.env.REACT_APP_API_BASE || "https://novara-backend-one.vercel.app";
+const API_BASE = import.meta.env.VITE_API_BASE || "https://novara-backend-one.vercel.app";
 
 const validationSchema = Yup.object({
   name: Yup.string()
@@ -20,41 +20,25 @@ const validationSchema = Yup.object({
 });
 
 export default function InquiryForm() {
-  const navigate = useNavigate();
   const formik = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      phone: "",
-      agreeToTerms: false,
-    },
-    validationSchema: validationSchema,
+    initialValues: { name: "", email: "", phone: "", agreeToTerms: false },
+    validationSchema,
     onSubmit: async (values) => {
-      console.log("Form submitted:", values);
       formik.resetForm();
-
-      // Submit the form data to the backend API
       try {
         const response = await fetch(`${API_BASE}/blogs`, {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(values), // Send the form values
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(values),
         });
 
-        const data = await response.text(); // Response from the API
+        const data = await response.text();
         if (response.ok) {
-          alert(data); // Success message
+          alert(data);
         } else {
           alert("Something went wrong, please try again.");
         }
-        navigate("/thankyou", {
-          state: {
-            name: values.name,
-            phone: values.phone,
-          },
-        });
+        navigate(`/thankyou?name=${encodeURIComponent(values.name)}&phone=${encodeURIComponent(values.phone)}`);
       } catch (error) {
         console.error("Error submitting form:", error);
         alert("There was an error submitting the form.");
@@ -69,96 +53,50 @@ export default function InquiryForm() {
           Make a Smart Investment Today !!!
         </h2>
         <form onSubmit={formik.handleSubmit} className="space-y-4">
-          {/* Name */}
           <div className="py-1">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Name"
-              className="w-full p-2 rounded-lg mt-2"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.name}
+            <input type="text" name="name" id="name" placeholder="Name"
+              className="w-full p-2 rounded-lg mt-2 text-gray-800"
+              onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.name}
             />
             {formik.touched.name && formik.errors.name && (
-              <div className="text-red-300 text-xs mt-1">
-                {formik.errors.name}
-              </div>
+              <div className="text-red-300 text-xs mt-1">{formik.errors.name}</div>
             )}
           </div>
 
-          {/* Email */}
           <div className="py-1">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your Email"
-              className="w-full p-2 rounded-lg mt-2"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.email}
+            <input type="email" name="email" id="email" placeholder="Enter your Email"
+              className="w-full p-2 rounded-lg mt-2 text-gray-800"
+              onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.email}
             />
             {formik.touched.email && formik.errors.email && (
-              <div className="text-red-300 text-xs mt-1">
-                {formik.errors.email}
-              </div>
+              <div className="text-red-300 text-xs mt-1">{formik.errors.email}</div>
             )}
           </div>
 
-          {/* Phone */}
           <div className="py-1">
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="Enter Phone Number"
-              className={`w-full p-2 rounded-lg text-dark mt-2 ${
-                formik.touched.phone && formik.errors.phone
-                  ? "border-red-500"
-                  : "border-gray-300"
-              }`}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.phone}
+            <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number"
+              className={`w-full p-2 rounded-lg text-gray-800 mt-2 ${formik.touched.phone && formik.errors.phone ? "border-red-500" : "border-gray-300"}`}
+              onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.phone}
             />
             {formik.touched.phone && formik.errors.phone && (
-              <div className="text-red-300 text-xs mt-1">
-                {formik.errors.phone}
-              </div>
+              <div className="text-red-300 text-xs mt-1">{formik.errors.phone}</div>
             )}
           </div>
 
-          {/* Agree to Terms */}
           <div className="flex items-center pt-2">
-            <input
-              type="checkbox"
-              name="agreeToTerms"
-              id="agreeToTerms"
+            <input type="checkbox" name="agreeToTerms" id="agreeToTerms"
               className="mr-2 w-5 h-5"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              checked={formik.values.agreeToTerms}
+              onChange={formik.handleChange} onBlur={formik.handleBlur} checked={formik.values.agreeToTerms}
             />
-            <label
-              htmlFor="agreeToTerms"
-              className="text-[14px] text-[#999999]"
-            >
+            <label htmlFor="agreeToTerms" className="text-[14px] text-[#999999]">
               I agree with Terms of Use and Privacy Policy
             </label>
           </div>
           {formik.touched.agreeToTerms && formik.errors.agreeToTerms && (
-            <div className="text-red-300 text-xs mt-1">
-              {formik.errors.agreeToTerms}
-            </div>
+            <div className="text-red-300 text-xs mt-1">{formik.errors.agreeToTerms}</div>
           )}
 
-          {/* Submit Button */}
-          <button
-            type="submit"
-            className="w-full bg-[#DCA000] text-white p-2 rounded-lg mt-4"
-          >
+          <button type="submit" className="w-full bg-[#DCA000] text-white p-2 rounded-lg mt-4">
             Send Your Message
           </button>
         </form>

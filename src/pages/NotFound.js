@@ -1,8 +1,13 @@
+// pages/_error/+Page.jsx
+//
+// Vike's special error page — file MUST live at pages/_error/+Page.jsx
+// It handles 404s and other errors. Use `usePageContext()` to read the status code.
+
 import Chatbot from "../components/Chatbot";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { navigate } from "vike/client/router"; // replaces useNavigate()
 
 const smoothSpring = { type: "spring", stiffness: 80, damping: 18, mass: 0.9 };
 const staggerWrap = {
@@ -15,13 +20,11 @@ const fadeUp = {
 };
 
 export default function NotFound() {
-  const navigate = useNavigate();
-
   return (
     <div className="font-poppins">
       <Header />
 
-      {/* Hero — matches PrivacyPolicy hero */}
+      {/* Hero */}
       <motion.div
         initial="hidden"
         animate="show"
@@ -60,28 +63,6 @@ export default function NotFound() {
         className="px-4 py-10 sm:p-20 lg:p-20"
       >
         <div className="mx-auto max-w-5xl text-[#111827] flex flex-col items-center text-center">
-
-          {/* Big 404 */}
-          {/* <motion.div
-            variants={fadeUp}
-            className="text-[100px] sm:text-[160px] font-brushelva leading-none"
-            style={{
-              background: "linear-gradient(180deg, #2d7a5a 0%, #baffd7 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-            }}
-          >
-            404
-          </motion.div> */}
-
-          {/* Divider */}
-          {/* <motion.div
-            variants={fadeUp}
-            className="w-16 h-[2px] bg-gradient-to-r from-[#baffd7] to-[#2d7a5a] rounded-full my-6"
-          /> */}
-
-          {/* Message */}
           <motion.h2
             variants={fadeUp}
             className="font-bold text-[18px] sm:text-[24px] text-[#111827]"
@@ -97,34 +78,6 @@ export default function NotFound() {
             farmlands. It may have been moved, renamed, or no longer exists.
             Let us guide you back to familiar grounds.
           </motion.p>
-
-          {/* Suggestions */}
-          {/* <motion.div
-            variants={fadeUp}
-            className="mt-8 w-full max-w-[520px] text-left"
-          >
-            <p className="font-bold text-[16px] sm:text-[18px] text-[#111827] mb-3">
-              You might be looking for:
-            </p>
-            <ul className="list-disc pl-5 space-y-2 text-[14px] sm:text-[16px] text-[#374151]">
-              {[
-                { label: "Home Page", path: "/" },
-                { label: "Why Novara", path: "/whynovara" },
-                { label: "Our Projects", path: "/projects" },
-                { label: "Blogs", path: "/blogs" },
-                { label: "Contact Us", path: "/contactus" },
-              ].map(({ label, path }) => (
-                <li key={path}>
-                  <button
-                    onClick={() => navigate(path)}
-                    className="text-[#2d7a5a] hover:underline font-medium bg-transparent border-none cursor-pointer p-0"
-                  >
-                    {label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </motion.div> */}
 
           {/* CTA Buttons */}
           <motion.div
@@ -157,7 +110,7 @@ export default function NotFound() {
         </div>
       </motion.div>
 
-      {/* WhatsApp & Call floating buttons */}
+      {/* Floating WhatsApp & Call buttons */}
       <motion.div
         initial={{ opacity: 0, y: 12, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}

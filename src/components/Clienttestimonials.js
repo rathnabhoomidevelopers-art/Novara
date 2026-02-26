@@ -4,29 +4,39 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
   {
     name: "Sridhar",
-    text: "Visited Ecovara Farm near Lepakshi; beautiful location, supportive team. Glad to buy a farm plot for family time & passive income.",
+    text: "My experience at ECOVARA Farm, located near Lepakshi Temple towards Bangalore North, was truly amazing. What started as a casual discussion with a friend about weekend getaways and investment options turned into a confident decision after visiting the farm.Thank you to the entire Novara Nature Estate team for such a wonderful experience.",
     rating: 5,
   },
   {
     name: "Anitha",
-    text: "Visited ECOVARA Farm by Novara Nature Estate. Coconut & mango plantations, prime location near Lepakshi make it a smart investment.",
+    text: "Novara Nature Estate truly impressed me after I visited their ECOVARA Farm and saw the existing coconut and mango plantations.The quality of the development and the way the farm is maintained convinced me to go ahead and purchase a farm plot.Visiting the site gave me complete clarity, and in my opinion, this location is a strong and promising investment opportunity ,Thank you.",
     rating: 5,
   },
   {
-    name: "Mansur",
-    text: "Visited ECOVARA Farm in January with families. Model house, BBQ, homely food & warm hospitality made it memorable. Thanks team!",
+    name: "Rahul",
+    text: "We visited ECOVARA Farm again in January, this time as a group of five families.The newly constructed model house and the open farm space kept the children happily engaged with farm activities throughout our stay. Just like our previous visits, the food was prepared according to our preferences.Thanks to the entire Novara Nature Estate team for making our stay memorable.",
     rating: 5,
   },
   {
-    name: "Elena Rowe",
-    text: "Novara Nature Estate is transforming farm ownership with transparency and professionalism. My one-year experience has been excellent—highly satisfied. Thank you!",
+    name: "Nidhi",
+    text: "Thank you so much for visiting us and sharing your wonderful review. We’re delighted to know that you enjoyed the lunch—it truly made our day! Your kind words mean a lot to us and motivate our team to do even better. Please feel free to get in touch with us anytime; we always welcome your suggestions. We look forward to welcoming you again soon.",
     rating: 5,
   },
   {
-    name: "James Lin",
-    text: "Ecovara Farm near Lepakshi offers peaceful, well-planned plots with mango & coconut trees, Andhra food, and easy road access.",
+    name: "Vikas",
+    text: "Novara Nature Estate is truly revolutionizing farm ownership. I appreciate their transparent business model and professional approach. I’ve been a customer for over a year now and my experience has been excellent. Highly satisfied—thank you.",
     rating: 5,
   },
+  {
+    name : "Harish",
+    text:"Ecovara Farm offers a serene and well-maintained environment, ideal for those seeking a peaceful retreat amidst nature. Conveniently located near the renowned Lepakshi Temple, the property provides the experience of a spacious, green farm setting.Ecovara Farm is a suitable option for budget-conscious families looking for a calm and nature-oriented experience.",
+    rating: 5,
+  },
+  {
+    name : "Nirmala",
+    text : "Ecovara Farm itself is a lovely retreat ,peaceful, close to nature, with a fireplace to cozy up by. The cook specializes in North Indian cuisine, and the food was decent and satisfying. The nearest market is about 3–4 km away. Overall, a perfect spot for a relaxing, nature-oriented stay.Thank you, Novara Nature Estate Team.",
+    rating: 5,
+  }
 ];
 
 const StarRating = ({ count }) => (
@@ -84,7 +94,7 @@ export function ClientTestimonials() {
         {visible.map((t, idx) => (
           <div
             key={`${current}-${idx}`}
-            className={`bg-white rounded-2xl pt-[20px] h-[220px] lg:h-[282px] pl-[17px] pb-[14px] pr-[10px] lg:pt-[40px] lg:pl-[32px] lg:pr-[28px] lg:pb-[26px] flex flex-col justify-between
+            className={`bg-white rounded-2xl pt-[20px] h-[250px] lg:h-[300px] pl-[17px] pb-[14px] pr-[10px] lg:pt-[40px] lg:pl-[32px] lg:pr-[28px] lg:pb-[26px] flex flex-col justify-between
         ${idx !== 1 ? "hidden lg:flex" : "flex"}
       `}
             style={{
@@ -99,7 +109,7 @@ export function ClientTestimonials() {
               <StarRating count={t.rating} />
               <p
                 className="text-sm text-[16px] font-urbanist"
-                style={{ color: "#374151", lineHeight: "30px" }}
+                style={{ color: "#374151", lineHeight:"2thek 0px" }}
               >
                 {t.text.split(" ").map((word, i) =>
                   [

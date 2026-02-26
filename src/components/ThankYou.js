@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, PhoneIcon, MailIcon, ArrowLeft, MessageCircleIcon } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { usePageContext } from "vike-react/usePageContext";
 import Footer from "./Footer";
 
 const fadeUp = {
@@ -15,10 +15,12 @@ const fadeIn = {
 };
 
 export default function ThankYou() {
-  const location = useLocation();
-
-  const name = location?.state?.name || "";
-  const phone = location?.state?.phone || "";
+  // In Vike, state passed via navigate() is available in pageContext.routeParams
+  // For form submissions, pass name/phone as URL query params or use a global store.
+  // Here we gracefully read them from pageContext if available.
+  const pageContext = usePageContext();
+  const name = pageContext?.routeParams?.name || "";
+  const phone = pageContext?.routeParams?.phone || "";
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -26,35 +28,28 @@ export default function ThankYou() {
 
   return (
     <div className="min-h-screen font-urbanist w-full bg-[#FBF3E6]">
-      {/* Top brand bar - Mobile optimized */}
+      {/* Top brand bar */}
       <div className="w-full bg-[#52A09A]">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-4">
-          <img
-            src="/images/logo.svg"
-            alt="SLV Golden Towers"
-            className="h-auto w-[140px] sm:w-[180px] md:w-[240px]"
-          />
-
-          <Link
-            to="/"
+          <img src="/images/logo.svg" alt="Novara Nature Estate" className="h-auto w-[140px] sm:w-[180px] md:w-[240px]" />
+          <a
+            href="/"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-white/10 px-4 py-2.5 text-xs font-semibold text-white no-underline hover:bg-white/15 sm:text-sm"
           >
             <ArrowLeft size={16} />
             Back to Home
-          </Link>
+          </a>
         </div>
       </div>
 
-      {/* Main - Fully responsive grid */}
+      {/* Main */}
       <motion.main
         variants={fadeIn}
         initial="hidden"
         animate="show"
         className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-2 py-8 sm:px-6 sm:py-10 md:py-12 lg:grid-cols-[55%_45%] lg:gap-8 lg:py-16"
       >
-
-        
-        {/* Left content - Mobile first */}
+        {/* Left */}
         <motion.section
           variants={fadeUp}
           initial="hidden"
@@ -64,17 +59,12 @@ export default function ThankYou() {
           <div className="flex flex-col gap-6">
             <div className="flex items-start gap-1 sm:gap-4">
               <div className="mt-1 flex shrink-0 rounded-xl bg-[#0F3F3B]/10 p-2.5 sm:rounded-2xl sm:p-3">
-                <CheckCircle2 size={24} className="sm:[size:28]" />
+                <CheckCircle2 size={24} />
               </div>
-
               <div className="min-w-0 flex-1">
-                <h1 className="text-2xl font-brushelva text-[#0F3F3B] sm:text-3xl md:text-[44px]">
-                  Thank You!
-                </h1>
-
+                <h1 className="text-2xl font-brushelva text-[#0F3F3B] sm:text-3xl md:text-[44px]">Thank You!</h1>
                 <p className="mt-3 text-sm leading-6 text-slate-700 sm:text-base sm:leading-7 md:text-[18px] md:max-w-xl">
-                  Your enquiry has been received. Our team will connect with you
-                  shortly to share pricing, and site visit details for{" "}
+                  Your enquiry has been received. Our team will connect with you shortly to share pricing, and site visit details for{" "}
                   <span className="font-bold">Ecovara</span>.
                 </p>
               </div>
@@ -84,16 +74,8 @@ export default function ThankYou() {
               <div className="rounded-xl bg-[#FFF7E5] px-2 py-3 text-sm text-slate-700 sm:rounded-2xl sm:px-5 sm:text-base">
                 <div className="font-semibold text-[#0F3F3B]">Submitted Details</div>
                 <div className="mt-1.5 space-y-1 text-sm sm:text-base">
-                  {name && (
-                    <div>
-                      Name: <span className="font-medium">{name}</span>
-                    </div>
-                  )}
-                  {phone && (
-                    <div>
-                      Phone: <span className="font-medium">{phone}</span>
-                    </div>
-                  )}
+                  {name && <div>Name: <span className="font-medium">{name}</span></div>}
+                  {phone && <div>Phone: <span className="font-medium">{phone}</span></div>}
                 </div>
               </div>
             )}
@@ -104,157 +86,84 @@ export default function ThankYou() {
               <InfoPill title="Working hours" value="Mon–Sun 9:30–6:30" />
             </div>
 
-            {/* CTA Buttons - Mobile stacked */}
             <div className="flex flex-col gap-3 sm:flex-row">
-              <a
-                href="tel:+918660200662"
-                className="inline-flex items-center justify-center gap-2 rounded-xl no-underline bg-[#0F3F3B] px-5 py-3.5 text-sm font-semibold text-[#FFEFC4] hover:bg-[#0a2926] sm:px-6 sm:py-3"
-              >
+              <a href="tel:+918660200662" className="inline-flex items-center justify-center gap-2 rounded-xl no-underline bg-[#0F3F3B] px-5 py-3.5 text-sm font-semibold text-[#FFEFC4] hover:bg-[#0a2926] sm:px-6 sm:py-3">
                 <PhoneIcon size={18} />
                 Call Now
               </a>
-
               <div className="flex flex-col gap-3 sm:flex-row sm:flex-1">
-                <a
-                  href="mailto:info@novaranatureestate.com"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl border no-underline border-[#0F3F3B] bg-white px-5 py-3.5 text-sm font-semibold text-[#0F3F3B] hover:bg-[#0F3F3B]/5 sm:px-6 sm:py-3"
-                >
+                <a href="mailto:info@novaranatureestate.com" className="inline-flex items-center justify-center gap-2 rounded-xl border no-underline border-[#0F3F3B] bg-white px-5 py-3.5 text-sm font-semibold text-[#0F3F3B] hover:bg-[#0F3F3B]/5 sm:px-6 sm:py-3">
                   <MailIcon size={18} />
                   Email Us
                 </a>
-
-                <Link
-                  to="/projects"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#E0B24A] px-2 no-underline py-3.5 text-sm font-semibold text-[#0F3F3B] hover:brightness-95 sm:px-6 sm:py-3"
-                >
+                <a href="/projects" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#E0B24A] px-2 no-underline py-3.5 text-sm font-semibold text-[#0F3F3B] hover:brightness-95 sm:px-6 sm:py-3">
                   Explore Project
-                </Link>
+                </a>
               </div>
             </div>
 
-            {/* What happens next - Mobile optimized */}
             <div className="rounded-2xl bg-[#FBF3E6] p-[8px] sm:rounded-3xl sm:p-5">
-              <div className="text-xs font-semibold uppercase tracking-[0.15em] text-slate-600 sm:text-sm">
-                What happens next?
-              </div>
-
+              <div className="text-xs font-semibold uppercase tracking-[0.15em] text-slate-600 sm:text-sm">What happens next?</div>
               <ul className="mt-3 space-y-2.5 text-sm leading-5 text-slate-700 sm:mt-4 sm:text-base sm:leading-6 sm:space-y-3">
-                <li className="flex gap-2.5">
-                  <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#E0B24A]" />
-                  We confirm your requirement.
-                </li>
-                <li className="flex gap-2.5">
-                  <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#E0B24A]" />
-                  We share brochure + latest pricing + offers (if any).
-                </li>
-                <li className="flex gap-2.5">
-                  <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#E0B24A]" />
-                  We schedule a private site visit as per your availability.
-                </li>
+                <li className="flex gap-2.5"><span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#E0B24A]" />We confirm your requirement.</li>
+                <li className="flex gap-2.5"><span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#E0B24A]" />We share brochure + latest pricing + offers (if any).</li>
+                <li className="flex gap-2.5"><span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-[#E0B24A]" />We schedule a private site visit as per your availability.</li>
               </ul>
             </div>
           </div>
         </motion.section>
 
-        {/* Right card - Mobile stacked below */}
+        {/* Right */}
         <motion.aside
           variants={fadeUp}
           initial="hidden"
           animate="show"
           className="order-2 rounded-2xl border border-[#FFEEC3] bg-[#FFF7E5] p-3 shadow-sm sm:rounded-3xl sm:p-6 md:p-8"
         >
-          <h2 className="text-xl font-brushelva text-[#0F3F3B] sm:text-2xl md:text-[32px]">
-            Quick Contacts
-          </h2>
-
+          <h2 className="text-xl font-brushelva text-[#0F3F3B] sm:text-2xl md:text-[32px]">Quick Contacts</h2>
           <div className="mt-5 space-y-3 sm:mt-6 sm:space-y-4">
-            <ContactRow
-              icon={<PhoneIcon size={18} />}
-              label="Phone"
-              value="+91 8660200662"
-              href="tel:+918660200662"
-            />
-            <ContactRow
-              icon={<MailIcon size={18} />}
-              label="Email"
-              value="info@novaranatureestate.com"
-              href="mailto:info@novaranatureestate.com"
-              breakAll
-            />
+            <ContactRow icon={<PhoneIcon size={18} />} label="Phone" value="+91 8660200662" href="tel:+918660200662" />
+            <ContactRow icon={<MailIcon size={18} />} label="Email" value="info@novaranatureestate.com" href="mailto:info@novaranatureestate.com" breakAll />
           </div>
-
           <div className="mt-6 overflow-hidden rounded-2xl bg-white sm:rounded-3xl">
-            <img
-              src="/images/ecovara_arch.webp"
-              alt="Ecovara"
-              className="h-[180px] w-full object-cover sm:h-[220px]"
-            />
+            <img src="/images/ecovara_arch.webp" alt="Ecovara" className="h-[180px] w-full object-cover sm:h-[220px]" />
           </div>
-
           <div className="mt-5 rounded-2xl bg-white p-4 sm:mt-6 sm:rounded-3xl sm:p-5">
-            <div className="text-xs font-bold uppercase tracking-[0.15em] text-slate-600 sm:text-sm">
-              Address
-            </div>
+            <div className="text-xs font-bold uppercase tracking-[0.15em] text-slate-600 sm:text-sm">Address</div>
             <p className="mt-2 text-sm leading-5 text-slate-700 sm:text-base sm:leading-6">
-              Novara Nature Estate No. 387, 13th Cross, F-Block,
-              <br className="sm:hidden" />
+              Novara Nature Estate No. 387, 13th Cross, F-Block,<br className="sm:hidden" />
               Sahakar Nagar, Bengaluru, Karnataka 560092
             </p>
           </div>
         </motion.aside>
       </motion.main>
 
-      {/* Footer strip */}
-     <Footer/>
+      <Footer />
 
-      {/* Floating CTAs - Mobile optimized */}
+      {/* Floating CTAs */}
       <motion.div
         initial={{ opacity: 0, y: 12, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ type: "spring", stiffness: 120, damping: 18, mass: 0.9 }}
         className="fixed bottom-4 right-4 z-[9999] flex flex-col gap-3 sm:gap-4"
       >
-        {/* Mobile floating buttons - Stacked */}
         <div className="flex flex-col gap-3 sm:hidden">
-          <a
-            href="https://wa.me/918660200662"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="whatsapp-chat w-14 h-14 rounded-2xl bg-[#25D366] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:scale-105 transition-transform"
-          >
+          <a href="https://wa.me/918660200662" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-2xl bg-[#25D366] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:scale-105 transition-transform">
             <MessageCircleIcon className="w-6 h-6 text-white" />
           </a>
-          <a
-            href="tel:+918660200662"
-            className="tel-chat w-14 h-14 rounded-2xl bg-[#3B82F6] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:scale-105 transition-transform"
-          >
+          <a href="tel:+918660200662" className="w-14 h-14 rounded-2xl bg-[#3B82F6] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:scale-105 transition-transform">
             <PhoneIcon className="w-6 h-6 text-white" />
           </a>
         </div>
-
-        {/* Desktop floating buttons */}
         <div className="hidden gap-2 sm:flex">
-          <a
-            href="https://wa.me/918660200662"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="whatsapp-chat-gtm group relative inline-flex items-center bg-white pl-3 pr-[70px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform no-underline"
-          >
-            <span className="text-slate-800 group-hover:text-green-600 font-semibold text-sm whitespace-nowrap transition-colors">
-              WhatsApp
-            </span>
+          <a href="https://wa.me/918660200662" target="_blank" rel="noopener noreferrer" className="group relative inline-flex items-center bg-white pl-3 pr-[70px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform no-underline">
+            <span className="text-slate-800 group-hover:text-green-600 font-semibold text-sm whitespace-nowrap transition-colors">WhatsApp</span>
             <span className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-xl bg-[#25D366] flex items-center justify-center shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
               <MessageCircleIcon className="w-5 h-5 text-white" />
             </span>
           </a>
-
-          <a
-            href="tel:+918660200662"
-            className="tel-chat-gtm group relative inline-flex items-center bg-white pl-3 pr-[62px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform no-underline"
-          >
-            <span className="text-slate-800 group-hover:text-[#3B82F6] font-semibold text-sm whitespace-nowrap transition-colors">
-              +91 8660200662
-            </span>
+          <a href="tel:+918660200662" className="group relative inline-flex items-center bg-white pl-3 pr-[62px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform no-underline">
+            <span className="text-slate-800 group-hover:text-[#3B82F6] font-semibold text-sm whitespace-nowrap transition-colors">+91 8660200662</span>
             <span className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-xl bg-[#3B82F6] flex items-center justify-center shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
               <PhoneIcon className="w-5 h-5 text-white" />
             </span>
@@ -268,9 +177,7 @@ export default function ThankYou() {
 function InfoPill({ title, value }) {
   return (
     <div className="rounded-xl border border-slate-100 bg-white px-3 py-3 shadow-sm sm:rounded-2xl sm:px-4">
-      <div className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500 sm:text-[11px]">
-        {title}
-      </div>
+      <div className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500 sm:text-[11px]">{title}</div>
       <div className="mt-1 text-sm font-semibold text-[#0F3F3B] sm:text-base">{value}</div>
     </div>
   );
@@ -278,22 +185,11 @@ function InfoPill({ title, value }) {
 
 function ContactRow({ icon, label, value, href, breakAll }) {
   return (
-    <a
-      href={href}
-      className="flex items-center gap-3 rounded-xl bg-white px-3 py-3.5 hover:bg-slate-50 shadow-sm sm:gap-4 sm:px-4 sm:py-4 sm:rounded-2xl"
-    >
-      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#FFEFC4] text-[#0F3F3B]">
-        {icon}
-      </div>
+    <a href={href} className="flex items-center gap-3 rounded-xl bg-white px-3 py-3.5 hover:bg-slate-50 shadow-sm sm:gap-4 sm:px-4 sm:py-4 sm:rounded-2xl no-underline">
+      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#FFEFC4] text-[#0F3F3B]">{icon}</div>
       <div className="min-w-0 flex-1">
         <div className="text-xs text-slate-600 sm:text-[13px]">{label}</div>
-        <div
-          className={`mt-0.5 text-sm font-semibold text-[#0F3F3B] sm:text-[14px] sm:mt-0 ${
-            breakAll ? "break-words" : ""
-          }`}
-        >
-          {value}
-        </div>
+        <div className={`mt-0.5 text-sm font-semibold text-[#0F3F3B] sm:text-[14px] sm:mt-0 ${breakAll ? "break-words" : ""}`}>{value}</div>
       </div>
     </a>
   );

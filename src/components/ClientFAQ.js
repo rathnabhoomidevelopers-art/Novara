@@ -6,7 +6,7 @@ const defaultFaqs = [
     id: 1,
     question: "What is Novara Nature Estates?",
     answer:
-      "Novara Nature Estates is a premium farmland development company offering gated farm plots and agricultural land near Bangalore with clear titles, managed infrastructure, and long-term investment potential.",
+      "Novara Nature Estates is a premium farmland developer offering gated farm plots and agricultural land near Bangalore with clear titles, managed infrastructure, and long-term investment potential.",
   },
   {
     id: 2,
@@ -29,18 +29,11 @@ const defaultFaqs = [
   },
   {
     id: 5,
-    question:
-      "What is the minimum plot size available?",
-    answer:
-      "Plot sizes typically start from 1 acre. ",
-  },
-  {
-    id: 6,
     question:"Is the farmland legally clear?",
     answer:"All our agricultural land parcels come with clear titles, proper documentation, and legal due diligence to ensure a safe purchase."
   },
   {
-    id: 7,
+    id: 6,
     question:"Do you provide plantation or farm management support?",
     answer:"Yes, we offer optional managed farmland services including plantation assistance and maintenance support."
   }

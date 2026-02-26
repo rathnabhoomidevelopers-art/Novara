@@ -1,21 +1,17 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 export default function FarmlandSmartChoiceSection({
   bgImage = "/images/invest_banner.png",
 }) {
   return (
-    <section className="relative w-full  lg:h-[798px] overflow-hidden">
-      {/* Background */}
+    <section className="relative w-full lg:h-[798px] overflow-hidden">
       <img
         src={bgImage}
         alt="Farmland background"
         className="absolute inset-0 h-full w-full object-cover"
         draggable="false"
       />
-      {/* Dark overlay */}
-      <div className="relative mx-auto w-full lg:w-[1280px] lg:h-[526px] px-[12px] py-10 sm:px-8 sm:py-14 lg:py-[120px] ">
-        {/* Layout */}
+      <div className="relative mx-auto w-full lg:w-[1280px] lg:h-[526px] px-[12px] py-10 sm:px-8 sm:py-14 lg:py-[120px]">
         <div className="grid gap-8 lg:grid-cols-[1fr_1.15fr] lg:items-start lg:gap-10">
           {/* LEFT */}
           <motion.div
@@ -38,14 +34,8 @@ export default function FarmlandSmartChoiceSection({
             {/* CTA Card */}
             <div
               style={{ backgroundImage: "url('/images/why_investing.webp')" }}
-              className="bg-no-repeat bg-center bg-cover mt-6 w-full max-w-[340px] mx-auto lg:mx-0 lg:max-w-[483px] h-[260px] rounded-2xl bg-[#1E6B54] p-[24px] lg:p-[40px] shadow-[0_18px_40px_rgba(0,0,0,0.28)] sm:bg-[url('/public/images/why_inversting_mobile.webp')] lg:bg-[url('/public/images/why_investing.webp')]"
+              className="bg-no-repeat bg-center bg-cover mt-6 w-full max-w-[340px] mx-auto lg:mx-0 lg:max-w-[483px] h-[260px] rounded-2xl bg-[#1E6B54] p-[24px] lg:p-[40px] shadow-[0_18px_40px_rgba(0,0,0,0.28)]"
             >
-              {/* subtle lines pattern (like screenshot) */}
-              <div
-                className="pointer-events-none absolute hidden"
-                aria-hidden="true"
-              />
-
               <h3 className="text-[20px] lg:text-[22px] w-full lg:w-[403px] font-urbanist font-semibold text-white">
                 Unlock Your Property Investment Growth
               </h3>
@@ -55,27 +45,17 @@ export default function FarmlandSmartChoiceSection({
                 to take the complexity out of property ownership.
               </p>
 
-              <Link
-                to="/projects"
+              <a
+                href="/projects"
                 className="
-                      mt-2
-                      block w-full
-                      text-center
-                      font-urbanist
-                      no-underline
-                      rounded-xl
-                      bg-[#DCA000]
-                      border-2 border-[#FFCE4C]
-                      px-5 py-3
-                      text-sm font-semibold
-                      text-white
-                      transition
-                      hover:brightness-95
-                      active:brightness-90
-                    "
+                  mt-2 block w-full text-center font-urbanist no-underline
+                  rounded-xl bg-[#DCA000] border-2 border-[#FFCE4C]
+                  px-5 py-3 text-sm font-semibold text-white
+                  transition hover:brightness-95 active:brightness-90
+                "
               >
                 LEARN MORE
-              </Link>
+              </a>
             </div>
           </motion.div>
 
@@ -89,9 +69,7 @@ export default function FarmlandSmartChoiceSection({
             <div className="flex flex-col lg:flex-row mt-3 gap-[16px]">
               <div className="bg-white mx-auto font-urbanist max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px] lg:h-[236px] p-[20px] lg:p-[40px]">
                 <div className="flex align-items-center">
-                  <div>
-                    <img src="/images/long_term.svg" />
-                  </div>
+                  <img src="/images/long_term.svg" />
                   <div className="ps-3 text-[18px] lg:text-[20px] text-[#1A614F] font-semibold">
                     Long-Term Growth
                   </div>
@@ -101,11 +79,9 @@ export default function FarmlandSmartChoiceSection({
                   making them a solid investment for the future.
                 </div>
               </div>
-              <div className="bg-white mx-auto font-urbanist max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px]  lg:h-[236px] p-[20px] lg:p-[40px]">
+              <div className="bg-white mx-auto font-urbanist max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px] lg:h-[236px] p-[20px] lg:p-[40px]">
                 <div className="flex align-items-center">
-                  <div>
-                    <img src="/images/prime_location.svg" />
-                  </div>
+                  <img src="/images/prime_location.svg" />
                   <div className="ps-3 text-[18px] lg:text-[20px] text-[#1A614F] font-semibold">
                     Prime Locations
                   </div>
@@ -117,12 +93,10 @@ export default function FarmlandSmartChoiceSection({
               </div>
             </div>
             <div className="flex flex-col lg:flex-row gap-[16px] mt-4">
-              <div className="bg-white mx-auto font-urbanist max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px]  lg:h-[236px] p-[20px] lg:p-[32px]">
+              <div className="bg-white mx-auto font-urbanist max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px] lg:h-[236px] p-[20px] lg:p-[32px]">
                 <div className="flex align-items-center">
-                  <div>
-                    <img src="/images/eco_freindly.svg" />
-                  </div>
-                  <div className="ps-3  text-[18px] lg:text-[18px] text-[#1A614F] font-semibold">
+                  <img src="/images/eco_freindly.svg" />
+                  <div className="ps-3 text-[18px] lg:text-[18px] text-[#1A614F] font-semibold">
                     Eco-Friendly Investment
                   </div>
                 </div>
@@ -131,11 +105,9 @@ export default function FarmlandSmartChoiceSection({
                   while meeting the growing demand for sustainable living.
                 </div>
               </div>
-              <div className="bg-white mx-auto font-urbanist  max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px]  lg:h-[236px] p-[20px] lg:p-[40px]">
+              <div className="bg-white mx-auto font-urbanist max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px] lg:h-[236px] p-[20px] lg:p-[40px]">
                 <div className="flex align-items-center">
-                  <div>
-                    <img src="/images/dual_benefits.svg" />
-                  </div>
+                  <img src="/images/dual_benefits.svg" />
                   <div className="ps-3 text-[18px] lg:text-[20px] text-[#1A614F] font-semibold">
                     Tax Free Income
                   </div>

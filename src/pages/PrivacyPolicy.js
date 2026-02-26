@@ -1,3 +1,5 @@
+// pages/privacy-policy/+Page.jsx
+
 import Chatbot from "../components/Chatbot";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -30,17 +32,14 @@ export default function PrivacyPolicy() {
           px-4
         "
       >
-        <motion.h1
+        <motion.div
           variants={fadeUp}
-          className="
-            text-center
-            text-[22px] sm:text-[32px] lg:text-[64px]
-            max-w-[900px]
-            leading-snug font-brushelva
-          "
+          className="text-center max-w-[900px] leading-snug font-brushelva"
         >
-          Privacy Policy
-        </motion.h1>
+          <h1 className="text-[22px] sm:text-[32px] lg:text-[64px]">
+            Privacy Policy
+          </h1>
+        </motion.div>
       </motion.div>
 
       {/* Content */}
@@ -51,14 +50,12 @@ export default function PrivacyPolicy() {
         className="px-4 py-10 sm:p-20 lg:p-20"
       >
         <div className="mx-auto max-w-5xl text-[#111827]">
-          {/* Introduction */}
           <h2 className="font-bold text-[18px] sm:text-[24px]">Introduction</h2>
           <p className="mt-3 text-[14px] sm:text-[16px] leading-relaxed text-[#374151]">
             We value your privacy and are committed to protecting the personal
             information you share with us through this website.
           </p>
 
-          {/* Information We Collect */}
           <h2 className="mt-8 font-bold text-[18px] sm:text-[24px]">
             Information We Collect
           </h2>
@@ -80,7 +77,6 @@ export default function PrivacyPolicy() {
           <p className="mt-3 text-[14px] sm:text-[16px] text-[#374151]">
             Your information is used to:
           </p>
-
           <ul className="mt-3 list-disc pl-5 space-y-2 text-[14px] sm:text-[16px] text-[#374151]">
             <li>Respond to enquiries and requests</li>
             <li>Share project details, brochures, and updates</li>
@@ -116,6 +112,7 @@ export default function PrivacyPolicy() {
               service partners strictly for project-related communication.
             </li>
           </ul>
+
           <h3 className="mt-6 font-bold text-[16px] sm:text-[18px] text-[#111827]">
             6. Cookies & Tracking
           </h3>
@@ -132,6 +129,7 @@ export default function PrivacyPolicy() {
               prefer.
             </li>
           </ul>
+
           <h3 className="mt-6 font-bold text-[16px] sm:text-[18px] text-[#111827]">
             7. Third-Party Links
           </h3>
@@ -148,6 +146,7 @@ export default function PrivacyPolicy() {
             collection and use of your information as outlined in this Privacy
             Policy.
           </p>
+
           <h3 className="mt-6 font-bold text-[16px] sm:text-[18px] text-[#111827]">
             9. Updates to Policy
           </h3>
@@ -155,6 +154,7 @@ export default function PrivacyPolicy() {
             We reserve the right to update or modify this Privacy Policy at any
             time. Changes will be posted on this page.
           </p>
+
           <h3 className="mt-6 font-bold text-[16px] sm:text-[18px] text-[#111827]">
             10. Contact Information
           </h3>
@@ -164,6 +164,8 @@ export default function PrivacyPolicy() {
           </p>
         </div>
       </motion.div>
+
+      {/* Floating CTA buttons */}
       <motion.div
         initial={{ opacity: 0, y: 12, scale: 0.98 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -174,109 +176,46 @@ export default function PrivacyPolicy() {
           href="https://wa.me/918660200662"
           target="_blank"
           rel="noopener noreferrer"
-          className=" whatsapp-chat
-            sm:hidden
-            w-12 h-12
-            rounded-xl
-            bg-[#25D366]
-            flex items-center justify-center
-            shadow-[0_12px_30px_rgba(0,0,0,0.25)]
-          "
+          className="whatsapp-chat sm:hidden w-12 h-12 rounded-xl bg-[#25D366] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)]"
         >
-          <img
-            src="/images/whatsapp.svg"
-            alt="whatsapp"
-            className="w-7 h-7 text-white"
-          />
+          <img src="/images/whatsapp.svg" alt="whatsapp" className="w-7 h-7 text-white" />
         </a>
 
         <a
           href="https://wa.me/918660200662"
           target="_blank"
           rel="noopener noreferrer"
-          className=" whatsapp-chat-gtm
-            hidden sm:inline-flex
-            group no-underline relative items-center
-            bg-white
-            pl-3 pr-[70px] py-3
-            rounded-xl
-            shadow-[0_12px_35px_rgba(0,0,0,0.18)]
-            hover:scale-[1.02] transition-transform
-          "
+          className="whatsapp-chat-gtm hidden sm:inline-flex group no-underline relative items-center bg-white pl-3 pr-[70px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform"
         >
           <span className="text-slate-800 group-hover:text-green-600 font-semibold text-base whitespace-nowrap transition-colors">
             WhatsApp
           </span>
-
-          <span
-            className="
-              absolute right-3 top-1/2 -translate-y-1/2
-              w-11 h-11 rounded-xl
-              bg-[#25D366]
-              flex items-center justify-center
-              shadow-[0_6px_16px_rgba(0,0,0,0.12)]
-            "
-          >
-            <img
-              src="/images/whatsapp.svg"
-              alt="whatsapp"
-              className="w-7 h-7 text-white"
-            />
+          <span className="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-[#25D366] flex items-center justify-center shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
+            <img src="/images/whatsapp.svg" alt="whatsapp" className="w-7 h-7 text-white" />
           </span>
         </a>
 
         <a
           href="tel:+918660200662"
-          className=" tel-chat
-            sm:hidden
-            w-12 h-12
-            rounded-xl
-            bg-[#3B46F6]
-            flex items-center justify-center
-            shadow-[0_12px_30px_rgba(0,0,0,0.25)]
-          "
+          className="tel-chat sm:hidden w-12 h-12 rounded-xl bg-[#3B46F6] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)]"
         >
-          <img
-            src="/images/call_ico.svg"
-            alt="call"
-            className="w-7 h-7 text-white"
-          />
+          <img src="/images/call_ico.svg" alt="call" className="w-7 h-7 text-white" />
         </a>
 
         <a
           href="tel:+918660200662"
-          className=" tel-chat-gtm
-            hidden sm:inline-flex
-            group no-underline relative items-center
-            bg-white
-            pl-3 pr-[66px] py-3
-            rounded-xl
-            shadow-[0_12px_35px_rgba(0,0,0,0.18)]
-            hover:scale-[1.02] transition-transform
-          "
+          className="tel-chat-gtm hidden sm:inline-flex group no-underline relative items-center bg-white pl-3 pr-[66px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform"
         >
           <span className="text-slate-800 group-hover:text-[#3B46F6] font-semibold text-base whitespace-nowrap transition-colors">
             +91 8660200662
           </span>
-
-          <span
-            className="
-              absolute right-3 top-1/2 -translate-y-1/2
-              w-11 h-11 rounded-xl
-              bg-[#3B46F6]
-              flex items-center justify-center
-              shadow-[0_6px_16px_rgba(0,0,0,0.12)]
-            "
-          >
-            <img
-              src="/images/call_ico.svg"
-              alt="call"
-              className="w-7 h-7 text-white"
-            />
+          <span className="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-[#3B46F6] flex items-center justify-center shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
+            <img src="/images/call_ico.svg" alt="call" className="w-7 h-7 text-white" />
           </span>
         </a>
       </motion.div>
-      <Chatbot/>
+
+      <Chatbot />
       <Footer />
     </div>
   );

@@ -1,21 +1,11 @@
-// src/components/Header.js
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { usePageContext } from "vike-react/usePageContext";
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  Menu,
-  X,
-  Facebook,
-  Instagram,
-  Youtube,
-  Phone,
-  Mail,
-  Moon,
-} from "lucide-react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const location = useLocation();
+  const { urlPathname } = usePageContext();
 
   const links = [
     { to: "/", label: "Home" },
@@ -26,19 +16,35 @@ export default function Header() {
   ];
 
   const social = [
-    { iconSrc: "/images/fb.svg", href: "https://www.facebook.com/profile.php?id=61585877764871#", label: "Facebook" },
-    { iconSrc: "/images/insta.svg", href: "https://www.instagram.com/novaranatureestates/", label: "Instagram" },
-    { iconSrc: "/images/yt.svg", href: "https://www.youtube.com/@NovaraNatureEstates", label: "YouTube" },
-    { iconSrc: "/images/linkedin1.svg", href:"https://www.linkedin.com/company/novara-nature-estates/" }
+    {
+      iconSrc: "/images/fb.svg",
+      href: "https://www.facebook.com/profile.php?id=61585877764871#",
+      label: "Facebook",
+    },
+    {
+      iconSrc: "/images/insta.svg",
+      href: "https://www.instagram.com/novaranatureestates/",
+      label: "Instagram",
+    },
+    {
+      iconSrc: "/images/yt.svg",
+      href: "https://www.youtube.com/@NovaraNatureEstates",
+      label: "YouTube",
+    },
+    {
+      iconSrc: "/images/linkedin1.svg",
+      href: "https://www.linkedin.com/company/novara-nature-estates/",
+      label: "LinkedIn",
+    },
   ];
 
-
   const isActive = (to) => {
-    if (to === "/") return location.pathname === "/";
-    return location.pathname.startsWith(to);
+    if (to === "/") return urlPathname === "/";
+    return urlPathname.startsWith(to);
   };
 
-  useEffect(() => setMobileOpen(false), [location.pathname]);
+  // Close mobile menu on route change
+  useEffect(() => setMobileOpen(false), [urlPathname]);
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
@@ -47,7 +53,6 @@ export default function Header() {
 
   return (
     <>
-      {/* make header a motion element (smooth mount) */}
       <motion.header
         initial={{ y: -16, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -55,8 +60,8 @@ export default function Header() {
         className="sticky font-urbanist top-0 z-50 w-full bg-[#52A09A]"
       >
         <div className="mx-auto flex h-[90px] lg:max-w-[1420px] items-center justify-between gap-4 px-4 sm:px-6">
-          {/* Left: Logo */}
-          <Link to="/" className="flex items-center gap-3 !no-underline">
+          {/* Logo */}
+          <a href="/" className="flex items-center gap-3 !no-underline">
             <img
               src="/images/logo.svg"
               alt="Novara Nature Estates"
@@ -65,36 +70,29 @@ export default function Header() {
                 e.currentTarget.style.display = "none";
               }}
             />
-          </Link>
+          </a>
 
-          {/* Center: Nav pill (desktop) */}
+          {/* Desktop Nav */}
           <nav className="hidden flex-1 justify-center lg:flex">
-            {/* relative wrapper so we can animate active pill */}
-            <div
-              className="
-                relative inline-flex items-center gap-2 lg:ms-4 2xl:ms-0
-                rounded-full bg-white/95 p-1.5
-                shadow-[0_8px_20px_rgba(0,0,0,0.12)]
-              "
-            >
+            <div className="relative inline-flex items-center gap-2 lg:ms-4 2xl:ms-0 rounded-full bg-white/95 p-1.5 shadow-[0_8px_20px_rgba(0,0,0,0.12)]">
               {links.map((l) => {
                 const active = isActive(l.to);
-
                 return (
-                  <Link
+                  <a
                     key={l.label}
-                    to={l.to}
+                    href={l.to}
                     className={[
                       "relative z-10 rounded-full px-7 py-2 text-[15px] font-semibold",
                       "transition-colors duration-200 !no-underline",
-                      active ? "text-[#0C4A43]" : "text-[#1B2B2A] hover:text-[#0C4A43]",
+                      active
+                        ? "text-[#0C4A43]"
+                        : "text-[#1B2B2A] hover:text-[#0C4A43]",
                     ].join(" ")}
                   >
-                    {/* animated active background (no flicker) */}
                     {active && (
                       <motion.span
                         layoutId="navActivePill"
-                        className="absolute inset-0 -z-10 rounded-full bg-white border-1 border-[#148240]"
+                        className="absolute inset-0 -z-10 rounded-full bg-white border border-[#148240]"
                         transition={{
                           type: "spring",
                           stiffness: 520,
@@ -103,8 +101,6 @@ export default function Header() {
                         }}
                       />
                     )}
-
-                    {/* optional: subtle text animation */}
                     <motion.span
                       initial={false}
                       animate={{ opacity: 1 }}
@@ -112,12 +108,13 @@ export default function Header() {
                     >
                       {l.label}
                     </motion.span>
-                  </Link>
+                  </a>
                 );
               })}
             </div>
           </nav>
 
+          {/* Desktop: Social + Phone */}
           <div className="hidden items-center gap-4 lg:flex lg:ml-0 2xl:-ml-8">
             <div className="flex items-center gap-3">
               {social.map(({ iconSrc, href, label }) => (
@@ -129,13 +126,7 @@ export default function Header() {
                   aria-label={label}
                   whileHover={{ scale: 1.06 }}
                   whileTap={{ scale: 0.98 }}
-                  className="
-                    flex items-center justify-center
-                    h-[36px] w-[36px]
-                    rounded-full overflow-hidden
-                    bg-white
-                    shadow-[0_6px_14px_rgba(0,0,0,0.14)]
-                  "
+                  className="flex items-center justify-center h-[36px] w-[36px] rounded-full overflow-hidden bg-white shadow-[0_6px_14px_rgba(0,0,0,0.14)]"
                 >
                   <img
                     src={iconSrc}
@@ -146,13 +137,12 @@ export default function Header() {
               ))}
             </div>
 
-           <div className="flex flex-col gap-2 text-white">
-              {/* 📞 Phone */}
+            <div className="flex flex-col gap-2 text-white">
               <a
                 href="tel:+918660200662"
                 className="flex items-center gap-2 text-[15px] text-white font-semibold !no-underline hover:opacity-90"
               >
-                <span className="grid  place-items-center rounded-full bg-white/15 ring-1 ring-white/25">
+                <span className="grid place-items-center rounded-full bg-white/15 ring-1 ring-white/25">
                   <img
                     src="/images/call_icon.svg"
                     alt="Phone"
@@ -162,26 +152,26 @@ export default function Header() {
                 <span>+91-8660200662</span>
               </a>
             </div>
-
           </div>
 
+          {/* Mobile menu toggle */}
           <motion.button
             type="button"
             onClick={() => setMobileOpen((v) => !v)}
             whileTap={{ scale: 0.96 }}
-            className="
-              inline-flex lg:hidden
-              h-11 w-11 items-center justify-center rounded-full
-              bg-white/15 text-white ring-1 ring-white/25
-            "
+            className="inline-flex lg:hidden h-11 w-11 items-center justify-center rounded-full bg-white/15 text-white ring-1 ring-white/25"
             aria-label="Open menu"
           >
-            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {mobileOpen ? (
+              <X className="h-5 w-5" />
+            ) : (
+              <Menu className="h-5 w-5" />
+            )}
           </motion.button>
         </div>
       </motion.header>
 
-      {/* Mobile menu */}
+      {/* Mobile Menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -191,53 +181,47 @@ export default function Header() {
             transition={{ duration: 0.18, ease: "easeOut" }}
             className="fixed left-0 right-0 top-[104px] z-50 bg-[#52A09A] lg:hidden"
           >
-            <div className="mx-auto  max-w-[1400px] px-4 pb-5 pt-4 sm:px-6">
+            <div className="mx-auto max-w-[1400px] px-4 pb-5 pt-4 sm:px-6">
               <div className="rounded-2xl bg-white/95 p-3 shadow-[0_10px_24px_rgba(0,0,0,0.18)]">
                 <nav className="flex flex-col gap-1">
                   {links.map((l) => {
                     const active = isActive(l.to);
                     return (
-                      <Link
+                      <a
                         key={l.label}
-                        to={l.to}
+                        href={l.to}
                         className={[
                           "rounded-xl px-4 py-3 text-[15px] font-semibold !no-underline",
-                          active ? "bg-[#EAF7F6] text-[#0C4A43]" : "text-[#1B2B2A]",
+                          active
+                            ? "bg-[#EAF7F6] text-[#0C4A43]"
+                            : "text-[#1B2B2A]",
                         ].join(" ")}
                       >
                         {l.label}
-                      </Link>
+                      </a>
                     );
                   })}
                 </nav>
 
-                <div className="mt-4 flex items-center justify-between gap-3">
-                  <div className="flex items-center gap-2">
-                    {social.map(({ iconSrc, href, label }) => (
-                      <motion.a
-                        key={label}
-                        href={href}
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label={label}
-                        whileHover={{ scale: 1.06 }}
-                        whileTap={{ scale: 0.98 }}
-                        className="
-                          flex items-center justify-center
-                          h-[36px] w-[36px]
-                          rounded-full overflow-hidden
-                          bg-white
-                          shadow-[0_6px_14px_rgba(0,0,0,0.14)]
-                        "
-                      >
-                        <img
-                          src={iconSrc}
-                          alt={label}
-                          className="h-full w-full object-contain p-2"
-                        />
-                      </motion.a>
-                    ))}
-                  </div>
+                <div className="mt-4 flex items-center gap-2">
+                  {social.map(({ iconSrc, href, label }) => (
+                    <motion.a
+                      key={label}
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={label}
+                      whileHover={{ scale: 1.06 }}
+                      whileTap={{ scale: 0.98 }}
+                      className="flex items-center justify-center h-[36px] w-[36px] rounded-full overflow-hidden bg-white shadow-[0_6px_14px_rgba(0,0,0,0.14)]"
+                    >
+                      <img
+                        src={iconSrc}
+                        alt={label}
+                        className="h-full w-full object-contain p-2"
+                      />
+                    </motion.a>
+                  ))}
                 </div>
 
                 <div className="mt-4 space-y-2 text-[14px] font-semibold text-[#174E49]">

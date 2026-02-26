@@ -1,4 +1,5 @@
 {
+  "outputDirectory": "build/client",
   "redirects": [
     {
       "source": "/:path*",
@@ -11,21 +12,6 @@
     {
       "source": "/api/(.*)",
       "destination": "https://novara-backend-one.vercel.app/api/$1"
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": ".*(Googlebot|Bingbot|Slurp|DuckDuckBot|Baiduspider|YandexBot|Sogou|Exabot|facebot|facebookexternalhit|ia_archiver|LinkedInBot|Twitterbot|WhatsApp|Applebot|AhrefsBot|SemrushBot|MJ12bot|DotBot|rogerbot|PetalBot|screaming.frog|prerender).*"
-        }
-      ],
-      "destination": "https://VtbyI2tdf3UGRiGTHQmj@service.prerender.io/https://www.novaranatureestates.com/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
   ],
   "headers": [
@@ -35,7 +21,7 @@
     },
     {
       "source": "/(.*)",
-      "headers": [{ "key": "X-Prerender-Token", "value": "VtbyI2tdf3UGRiGTHQmj" }]
+      "headers": [{ "key": "Cache-Control", "value": "no-cache, must-revalidate" }]
     }
   ]
 }

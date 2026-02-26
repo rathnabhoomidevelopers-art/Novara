@@ -5,52 +5,25 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { motion, useMotionValue } from "framer-motion";
+import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const DEFAULT_IMAGES = [
-  {
-    src: "/images/kempegowda_airport.webp",
-    alt: "Kempegowda International Airport",
-    badgeText: "Kempegowda International Airport",
-  },
-  {
-    src: "/images/lepakshi_temple.webp",
-    alt: "lepakshi temple",
-    badgeText: "Lepakshi Temple",
-  },
-  {
-    src: "/images/gudibande_fort.webp",
-    alt: "gudibande fort",
-    badgeText: "Gudibande Fort",
-  },
-  {
-    src: "/images/isha_foundation.webp",
-    alt: "isha foundation",
-    badgeText: "Isha Foundation",
-  },
-  {
-    src: "/images/nandi_hills.webp",
-    alt: "nandi hills",
-    badgeText: "Nandi Hills",
-  },
-  {
-    src: "/images/penukonda_fort.webp",
-    alt: "penukonda fort",
-    badgeText: "Penukonda Fort",
-  },
-  {
-    src: "/images/puttaraparti_temple.webp",
-    alt: "puttaraparti temple",
-    badgeText: "Puttaraparti Sai Baba Temple",
-  },
-  {
-    src: "/images/vishurashwatha.webp",
-    alt: "vidhurashwatha temple",
-    badgeText: "Vidhurashwatha Temple",
-  },
-  
+  { src: "/images/kempegowda_airport.webp", alt: "Kempegowda International Airport", badgeText: "Kempegowda International Airport" },
+  { src: "/images/lepakshi_temple.webp", alt: "lepakshi temple", badgeText: "Lepakshi Temple" },
+  { src: "/images/gudibande_fort.webp", alt: "gudibande fort", badgeText: "Gudibande Fort" },
+  { src: "/images/isha_foundation.webp", alt: "isha foundation", badgeText: "Isha Foundation" },
+  { src: "/images/nandi_hills.webp", alt: "nandi hills", badgeText: "Nandi Hills" },
+  { src: "/images/penukonda_fort.webp", alt: "penukonda fort", badgeText: "Penukonda Fort" },
+  { src: "/images/puttaraparti_temple.webp", alt: "puttaraparti temple", badgeText: "Puttaraparti Sai Baba Temple" },
+  { src: "/images/vishurashwatha.webp", alt: "vidhurashwatha temple", badgeText: "Vidhurashwatha Temple" },
 ];
+
+// ── SSR-safe useLayoutEffect ──────────────────────────────────────────────────
+// useLayoutEffect throws a warning on the server. We swap it for useEffect
+// during SSR so Vike's pre-render doesn't complain.
+const useIsomorphicLayoutEffect =
+  typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 export default function EcovaraPhotoGallery({
   images = DEFAULT_IMAGES,
@@ -64,28 +37,27 @@ export default function EcovaraPhotoGallery({
   );
 
   const [index, setIndex] = useState(0);
+  // ── Start as false so SSR renders the mobile layout (no window check on server)
   const [isDesktop, setIsDesktop] = useState(false);
   const cardRef = useRef(null);
   const [step, setStep] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // Detect desktop screen size
+  // Detect desktop — runs only on client
   useEffect(() => {
-    const checkScreen = () => {
-      setIsDesktop(window.innerWidth >= 1024);
-    };
+    const checkScreen = () => setIsDesktop(window.innerWidth >= 1024);
     checkScreen();
     window.addEventListener("resize", checkScreen);
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
-  // For infinite loop on desktop: triple the slides
+  // Triple slides for infinite desktop loop
   const displaySlides = useMemo(() => {
     if (!isDesktop) return slides;
     return [...slides, ...slides, ...slides];
   }, [slides, isDesktop]);
 
-  // Start at the middle set on desktop
+  // Start at middle set on desktop
   useEffect(() => {
     if (isDesktop) {
       setIndex(slides.length);
@@ -114,17 +86,15 @@ export default function EcovaraPhotoGallery({
     setIndex((v) => clampIndex(v + 1));
   };
 
-  // Calculate step size
-  useLayoutEffect(() => {
+  // ── ResizeObserver — only runs on client (useIsomorphicLayoutEffect)
+  useIsomorphicLayoutEffect(() => {
     if (!cardRef.current) return;
-
     const el = cardRef.current;
     const ro = new ResizeObserver(() => {
       const w = el.getBoundingClientRect().width;
       const gap = 24;
       setStep(w + gap);
     });
-
     ro.observe(el);
     return () => ro.disconnect();
   }, []);
@@ -132,20 +102,15 @@ export default function EcovaraPhotoGallery({
   // Handle infinite loop reset on desktop
   const handleAnimationComplete = () => {
     setIsAnimating(false);
-    
     if (!isDesktop) return;
-
-    // If we're at the start of first set, jump to start of middle set
     if (index <= 0) {
       setIndex(slides.length);
-    }
-    // If we're at the end of last set, jump to end of middle set
-    else if (index >= slides.length * 2) {
+    } else if (index >= slides.length * 2) {
       setIndex(slides.length);
     }
   };
 
-  // Keyboard support
+  // Keyboard support — only on client
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === "ArrowLeft") goPrev();
@@ -159,6 +124,7 @@ export default function EcovaraPhotoGallery({
     <section className="w-full bg-gradient-to-b from-[#D3FFE5] to-[#ffff]">
       <div className="mx-auto max-w-full px-5 py-20 sm:px-8 sm:py-14 lg:py-20">
         <div className="grid items-center gap-10 lg:grid-cols-[420px_minmax(0,1fr)] lg:gap-14">
+
           {/* LEFT CONTENT */}
           <motion.div
             initial={{ opacity: 0, y: 18 }}
@@ -168,35 +134,15 @@ export default function EcovaraPhotoGallery({
             className="text-center lg:text-left"
           >
             <div className="flex flex-col items-center lg:items-start">
-              <svg
-                width="34"
-                height="18"
-                viewBox="0 0 34 18"
-                fill="none"
-                aria-hidden="true"
-              >
-                <path
-                  d="M9 0C9.9 4.2 12.2 6.5 16.4 7.4C12.2 8.3 9.9 10.6 9 14.8C8.1 10.6 5.8 8.3 1.6 7.4C5.8 6.5 8.1 4.2 9 0Z"
-                  fill="#0F5E49"
-                  opacity="0.9"
-                />
-                <path
-                  d="M23 3C23.55 5.6 24.95 7 27.55 7.55C24.95 8.1 23.55 9.5 23 12.1C22.45 9.5 21.05 8.1 18.45 7.55C21.05 7 22.45 5.6 23 3Z"
-                  fill="#F3B300"
-                  opacity="0.95"
-                />
-                <path
-                  d="M31 6C31.35 7.7 32.25 8.6 33.95 8.95C32.25 9.3 31.35 10.2 31 11.9C30.65 10.2 29.75 9.3 28.05 8.95C29.75 8.6 30.65 7.7 31 6Z"
-                  fill="#0F5E49"
-                  opacity="0.8"
-                />
+              <svg width="34" height="18" viewBox="0 0 34 18" fill="none" aria-hidden="true">
+                <path d="M9 0C9.9 4.2 12.2 6.5 16.4 7.4C12.2 8.3 9.9 10.6 9 14.8C8.1 10.6 5.8 8.3 1.6 7.4C5.8 6.5 8.1 4.2 9 0Z" fill="#0F5E49" opacity="0.9" />
+                <path d="M23 3C23.55 5.6 24.95 7 27.55 7.55C24.95 8.1 23.55 9.5 23 12.1C22.45 9.5 21.05 8.1 18.45 7.55C21.05 7 22.45 5.6 23 3Z" fill="#F3B300" opacity="0.95" />
+                <path d="M31 6C31.35 7.7 32.25 8.6 33.95 8.95C32.25 9.3 31.35 10.2 31 11.9C30.65 10.2 29.75 9.3 28.05 8.95C29.75 8.6 30.65 7.7 31 6Z" fill="#0F5E49" opacity="0.8" />
               </svg>
-
               <p className="text-[14px] mt-3 sm:text-[20px] font-semibold font-urbanist tracking-[0.22em] text-[#DCA000]">
                 {titleTop}
               </p>
             </div>
-
             <h2 className="font-brushelva lg:text-left text-[#0F5E49]">
               <div className="font-light text-2xl lg:text-[32px]">{titleLine1}</div>
               <div className="text-3xl lg:mt-2 lg:text-[45px]">{titleLine2}</div>
@@ -209,11 +155,11 @@ export default function EcovaraPhotoGallery({
               <motion.div
                 className="flex items-stretch gap-6"
                 animate={{ x: step ? -index * step : 0 }}
-                transition={{ 
-                  type: "spring", 
-                  stiffness: 140, 
+                transition={{
+                  type: "spring",
+                  stiffness: 140,
                   damping: 20,
-                  duration: isDesktop ? undefined : 0.5
+                  duration: isDesktop ? undefined : 0.5,
                 }}
                 onAnimationComplete={handleAnimationComplete}
               >

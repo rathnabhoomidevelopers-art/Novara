@@ -21,15 +21,13 @@ export default function EcovaraHeroBlock({
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="
-                    absolute inset-x-0 top-44 z-10
-                    flex justify-center
-                    sm:bottom-6
-                    lg:inset-auto lg:left-10 lg:bottom-1 lg:block
-                    "
+            absolute inset-x-0 top-44 z-10
+            flex justify-center
+            sm:bottom-6
+            lg:inset-auto lg:left-10 lg:bottom-1 lg:block
+          "
         >
-          <div
-            className=" w-[340px] h-[113px] rounded-[22px] px-2 py-3 bg-[#083b33] lg:bg-[#083b33]/80 ring-1 ring-white/15 overflow-hidden sm:w-[520px] sm:h-auto sm:px-5 sm:py-4 lg:w-[800px] lg:h-[160px] lg:rounded-[26px] lg:px-3 lg:py-2 flex flex-col lg:flex-row lg:items-center "
-          >
+          <div className="w-[340px] h-[113px] rounded-[22px] px-2 py-3 bg-[#083b33] lg:bg-[#083b33]/80 ring-1 ring-white/15 overflow-hidden sm:w-[520px] sm:h-auto sm:px-5 sm:py-4 lg:w-[800px] lg:h-[160px] lg:rounded-[26px] lg:px-3 lg:py-2 flex flex-col lg:flex-row lg:items-center">
             {/* Left: headline */}
             <div className="lg:flex-1">
               <motion.h3
@@ -37,27 +35,18 @@ export default function EcovaraHeroBlock({
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
-                className="
-                  font-brushelva ms-3 lg:ms-2 text-[22px] leading-tight text-white
-                  sm:text-[30px]
-                  lg:text-[44px]
-                "
+                className="font-brushelva ms-3 lg:ms-2 text-[22px] leading-tight text-white sm:text-[30px] lg:text-[44px]"
               >
                 Estate-Style&nbsp;
                 <span className="text-[#DCA000] font-brushelva">living</span>
               </motion.h3>
             </div>
 
-            {/* Divider (only on desktop like the reference) */}
+            {/* Divider (desktop only) */}
             <div className="hidden lg:block me-8 h-[120px] w-px bg-[#FFD698]" />
 
             {/* Stats */}
-            <div
-              className="
-                 grid grid-cols-3 gap-3 text-center
-                lg:mt-5 lg:flex lg:flex-1 lg:justify-between
-              "
-            >
+            <div className="grid grid-cols-3 gap-3 text-center lg:mt-5 lg:flex lg:flex-1 lg:justify-between">
               <Stat k="800+" label="Existing Trees" delay={0.05} />
               <Stat k="80%" label="Open Space" delay={0.12} />
               <Stat k="15" label="Acres Project" delay={0.18} />

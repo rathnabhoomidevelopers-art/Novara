@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export default function CTAStrip({
   title,
   description,
@@ -28,8 +26,8 @@ export default function CTAStrip({
       )}
 
       <div className="lg:mt-8 flex justify-center">
-        <Link
-          to={ctaLink}
+        <a
+          href={ctaLink}
           className="
             font-urbanist
             bg-[#DCA000] text-white
@@ -44,7 +42,7 @@ export default function CTAStrip({
           "
         >
           {ctaText}
-        </Link>
+        </a>
       </div>
     </div>
   );
