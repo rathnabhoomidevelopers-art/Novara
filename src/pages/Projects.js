@@ -856,7 +856,7 @@ export function Projects() {
           }
         ]}
       />
-      <div className="bg-yellow-50/50">
+      <div className="bg-yellow-50">
         <CTAStrip
         title="Move-In Ready Managed Farmland"
         description="Fully developed managed farmlands offering easy ownership, modern infrastructure, and peaceful nature living perfect for weekend stays or long-term investment."
