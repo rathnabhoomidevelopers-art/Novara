@@ -824,7 +824,7 @@ export function HomePage() {
         </motion.div>
       </div>
 
-      <div className="bg-yellow-50/50">
+      <div className="bg-yellow-50">
         <CTAStrip
         title="Start Managed Farming Today"
         description="Enjoy hassle-free farming with expert care, regular maintenance, and sustainable practices that help your land grow in value and productivity."

@@ -83,7 +83,7 @@ export function ClientFAQ({ title = "Frequently Asked Questions", faqs = default
                   />
                   <span
                     className={` md:text-[16px] leading-snug transition-colors ${
-                      isActive ? "text-gray-900 font-medium" : "text-gray-600"
+                      isActive ? "text-gray-900 font-medium" : "text-gray-800"
                     }`}
                   >
                     {faq.question}
@@ -106,7 +106,7 @@ export function ClientFAQ({ title = "Frequently Asked Questions", faqs = default
               <h3 className="text-base md:text-lg font-bold text-gray-900 mb-4 leading-snug">
                 {activeItem.question}
               </h3>
-              <p className="text-sm md:text-[16px] text-gray-500 leading-relaxed">
+              <p className="text-sm md:text-[16px] text-gray-800 leading-relaxed">
                 {activeItem.answer}
               </p>
             </div>
