@@ -83,8 +83,7 @@ export function ClientTestimonials() {
           What Our Clients Say
         </h2>
         <p className="text-gray-500 text-[16px] max-w-[644px] mx-auto leading-relaxed">
-          Community development is often linked with community work or community
-          planning, and may involve stakeholders, foundations.
+          Real stories from happy investors who trusted us with their farmland journey.
         </p>
       </div>
 
@@ -94,7 +93,7 @@ export function ClientTestimonials() {
         {visible.map((t, idx) => (
           <div
             key={`${current}-${idx}`}
-            className={`bg-white rounded-2xl pt-[20px] h-[250px] lg:h-[300px] pl-[17px] pb-[14px] pr-[10px] lg:pt-[40px] lg:pl-[32px] lg:pr-[28px] lg:pb-[26px] flex flex-col justify-between
+            className={`bg-white rounded-2xl pt-[20px] h-[280px] lg:h-[300px] pl-[17px] pb-[14px] pr-[10px] lg:pt-[40px] lg:pl-[32px] lg:pr-[28px] lg:pb-[26px] flex flex-col justify-between
         ${idx !== 1 ? "hidden lg:flex" : "flex"}
       `}
             style={{

@@ -231,7 +231,7 @@ export default function Header() {
                   </div>
                   <div className="flex items-center gap-2 break-all">
                     <Mail className="h-4 w-4" />
-                    <span>info@novaranatureestate.com</span>
+                    <span>info@novaranatureestates.com</span>
                   </div>
                 </div>
               </div>

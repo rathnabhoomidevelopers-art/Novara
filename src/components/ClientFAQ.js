@@ -45,6 +45,7 @@ export function ClientFAQ({ title = "Frequently Asked Questions", faqs = default
   const activeItem = faqs.find((f) => f.id === selected);
 
   return (
+    
     <section className="w-full py-10 px-6 md:px-12 lg:px-[120px]">
       {/* Heading */}
       <h2
@@ -54,7 +55,7 @@ export function ClientFAQ({ title = "Frequently Asked Questions", faqs = default
       </h2>
 
       {/* Layout */}
-      <div className="relative flex flex-col lg:flex-row gap-6 w-full max-w-6xl">
+      <div className="relative flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto">
         {/* Left: Question List */}
         <div className=" bg-gray-50/10 rounded-2xl lg:p-4 md:p-6 flex flex-col gap-1 lg:w-[640px]">
           {faqs.map((faq) => {

@@ -252,7 +252,7 @@ export default function WhyNovara() {
                   { value: "4", label: "Projects Completed" },
                   { value: "450+", label: "Happy Clients" },
                 ].map(({ value, label }) => (
-                  <motion.div key={label} variants={softScale} className="flex flex-col lg:flex-row lg:gap-2 items-start">
+                  <motion.div key={label} variants={softScale} className="flex flex-col lg:flex-row lg:gap-2 items-center">
                     <span className="text-[24px] sm:text-[32px] lg:text-[44px] text-[#166D22] font-bold leading-none">{value}</span>
                     <span className="text-[14px] sm:text-[14px] lg:text-[16px] text-[#2B2B2B] leading-snug">{label}</span>
                   </motion.div>

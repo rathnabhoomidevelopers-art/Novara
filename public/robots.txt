@@ -1,5 +1,5 @@
 # Host directive
-Host: https://www.novaranatureestates.com/
+Host: https://www.novaranatureestates.com
 
 # Sitemap location
 Sitemap: https://www.novaranatureestates.com/sitemap.xml
