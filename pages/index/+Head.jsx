@@ -108,6 +108,22 @@ export default function Head() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:title"
+        content="Managed Farmlands Near Bangalore | Novara Nature Estates"
+      />
+      <meta
+        property="og:description"
+        content="Invest in premium managed farmlands near Bangalore at Novara Nature Estates. Clear titles, gated layout & professional farm management. Enquire now."
+      />
+      <meta property="og:url" content="https://www.novaranatureestates.com/" />
+      <meta
+        property="og:image"
+        content="https://www.novaranatureestates.com/images/Ecovara%20_11zon.webp"
+      />
+      <meta property="og:site_name" content="Novara Nature Estates" />
+      <meta property="og:locale" content="en_IN" />
     </>
   );
 }

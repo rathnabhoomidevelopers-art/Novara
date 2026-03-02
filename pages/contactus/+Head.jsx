@@ -2,7 +2,7 @@ export default function Head() {
   const contactPage = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "@id": "https://novaranatureestates.com/contact/#contactpage",
+    "@id": "https://novaranatureestates.com/contactus/#contactpage",
     "url": "https://novaranatureestates.com/contactus",
     "name": "Contact Novara Nature Estates",
     "description": "Get in touch with Novara Nature Estates for managed farmland investment opportunities near Lepakshi and Bangalore."

@@ -1,29 +1,29 @@
 export default function Head() {
   const realEstateListing = {
-    "@context": "https://schema.org",
-    "@type": "RealEstateListing",
-    "@id": "https://novaranatureestates.com/projects",
-    "name": "Ecovara Managed Farmland Near Lepakshi",
-    "description": "Ecovara is a premium managed farmland project near Lepakshi, just 90 minutes from Bangalore, offering secure agricultural land investment with professional farm management.",
-    "url": "https://novaranatureestates.com/projects",
-    "image": "https://novaranatureestates.com/ecovara-feature-image.jpg",
-    "datePosted": "2026-02-01",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lepakshi",
-      "addressRegion": "Andhra Pradesh",
-      "addressCountry": "IN"
-    },
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "INR",
-      "availability": "https://schema.org/InStock"
-    },
-    "seller": {
-      "@type": "Organization",
-      "@id": "https://novaranatureestates.com/#organization"
-    }
+  "@context": "https://schema.org",
+  "@type": "RealEstateListing",
+  "@id": "https://www.novaranatureestates.com/projects/#listing",
+  "name": "Ecovara Managed Farmland Near Lepakshi",
+  "description": "Explore Ecovara, premium managed farmland for sale near Lepakshi. Gated layout, clear titles, and professional farm management by Novara Nature Estates.",
+  "url": "https://www.novaranatureestates.com/projects",
+  "image": "https://www.novaranatureestates.com/images/ecovara.webp",
+  "datePosted": "2026-02-01",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lepakshi",
+    "addressRegion": "Andhra Pradesh",
+    "addressCountry": "IN"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.novaranatureestates.com/projects",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock"
+  },
+  "seller": {
+    "@id": "https://www.novaranatureestates.com/#organization"
   }
+}
 
   const breadcrumb = {
     "@context": "https://schema.org",
