@@ -2,15 +2,17 @@
 export const BLOGS = [
   {
     id: 1,
-    slug: "top-farming-techniques-for-farmlands-near-bangalore",
+    slug: "farming-techniques-farmlands-near-bangalore",
     category: "Sustainable Farmland",
-    title:
-      "Top Farming Techniques for Farmlands Near Bangalore: From Organic to High-Tech",
+    title: "Top Farming Techniques Near Bangalore (2026 Guide)",
+    description:
+      "Discover the best farming techniques for farmlands near Bangalore – organic farming, hydroponics, drip irrigation & precision farming explained.",
     date: "2026",
+    keywords:'farming techniques near Bangalore',
     author: "Novara / Your Brand",
-    image: "/images/blog-1.webp",
-    heroImage: "/images/blog-1.webp",
-    coverImage: "/images/blog-1.webp",
+    image: "/images/Blog 1_11zon.webp",
+    heroImage: "/images/Blog 1_11zon.webp",
+    coverImage: "/images/Blog 1_11zon.webp",
     tags: [
       "Sustainable Farming",
       "Eco Farmland",
@@ -222,14 +224,16 @@ export const BLOGS = [
 
   {
     id: 2,
-    slug: "top-5-benefits-of-owning-farmland-as-an-investment",
+    slug: "benefits-of-farmland-investment-near-bangalore",
     category: "Investment",
-    title: "Top 5 Benefits of Owning Farmland as an Investment",
+    title: "Top 5 Benefits of Farmland Investment Near Bangalore",
+    description:"Discover the top 5 benefits of farmland investment including steady income, appreciation, tax benefits & long-term wealth creation near Bangalore.",
     date: "2026",
+    keywords:"farmland investment benefits",
     author: "Novara / Your Brand",
-    image: "/images/blog-2.webp",
-    heroImage: "/images/blog-2.webp",
-    coverImage: "/images/blog-2.webp",
+    image: "/images/Blog 2_11zon.webp",
+    heroImage: "/images/Blog 2_11zon.webp",
+    coverImage: "/images/Blog 2_11zon.webp",
     tags: [
       "Farmland Investment",
       "Wealth Management",
@@ -318,15 +322,17 @@ export const BLOGS = [
 
   {
     id: 3,
-    slug: "how-to-invest-in-farmland-in-india-a-step-by-step-guide-for-beginners",
+    slug: "how-to-invest-in-farmland-india",
     category: "Investment",
     title:
-      "How to Invest in Farmland in India: A Step-by-Step Guide for Beginners",
+      "How to Invest in Farmland in India | Bangalore Guide",
+      description:"Step-by-step guide to investing in farmland in India. Learn legal checks, financing, location tips & how to buy farmland near Bangalore safely.",
     date: "2026",
+    keywords:"how to invest in farmland in India",
     author: "Novara / Your Brand",
-    image: "/images/blog-3.webp",
-    heroImage: "/images/blog-3.webp",
-    coverImage: "/images/blog-3.webp",
+    image: "/images/Blog 3_11zon.webp",
+    heroImage: "/images/Blog 3_11zon.webp",
+    coverImage: "/images/Blog 3_11zon.webp",
     tags: [
       "Farmland Investment",
       "Beginner's Guide",
@@ -530,15 +536,17 @@ export const BLOGS = [
 
   {
     id: 4,
-    slug: "how-farmlands-near-bangalore-are-becoming-the-ideal-weekend-retreat",
+    slug: "farmlands-near-bangalore-weekend-retreat",
     category: "Lifestyle & Investment",
     title:
-      "How Farmlands Near Bangalore Are Becoming the Ideal Weekend Retreat",
+      "Farmlands Near Bangalore: Perfect Weekend Retreat",
+      description:"Discover why farmlands near Bangalore are becoming the ideal weekend retreat. Peace, nature, farmhouse living & smart investment benefits.",
     date: "2026",
+    keywords:"farmlands near Bangalore",
     author: "Novara / Your Brand",
-    image: "/images/blog-4.webp",
-    heroImage: "/images/blog-4.webp",
-    coverImage: "/images/blog-4.webp",
+    image: "/images/Blog 4_11zon.webp",
+    heroImage: "/images/Blog 4_11zon.webp",
+    coverImage: "/images/Blog 4_11zon.webp",
     tags: [
       "Weekend Retreat",
       "Sustainable Living",
@@ -637,14 +645,16 @@ export const BLOGS = [
 
   {
     id: 5,
-    slug: "how-to-generate-passive-income-from-farmland-near-bangalore",
+    slug: "passive-income-from-farmland-near-bangalore",
     category: "Investment",
-    title: "How to Generate Passive Income from Farmland Near Bangalore",
+    title: "Passive Income from Farmland Near Bangalore",
+    description:"Learn how to generate passive income from farmland near Bangalore through leasing, agro-tourism, specialty crops & smart land investments.",
     date: "2026",
+    keywords:"passive income from farmland near Bangalore",
     author: "Novara / Your Brand",
-    image: "/images/blog-5.webp",
-    heroImage: "/images/blog-5.webp",
-    coverImage: "/images/blog-5.webp",
+    image: "/images/Blog 5_11zon.webp",
+    heroImage: "/images/Blog 5_11zon.webp",
+    coverImage: "/images/Blog 5_11zon.webp",
     tags: [
       "Passive Income",
       "Farmland Investment",
@@ -795,15 +805,17 @@ export const BLOGS = [
 
   {
     id: 6,
-    slug: "the-future-of-farmland-investment-in-india-trends-to-watch-in-2026",
+    slug: "future-of-farmland-investment-india-2026",
     category: "Investment",
     title:
-      "The Future of Farmland Investment in India: Trends to Watch in 2026",
+      "Farmland Investment Trends 2026 | India & Bangalore",
+      description:"Explore farmland investment trends for 2026 in India. Learn about sustainability, agri-tech, agro-tourism & opportunities near Bangalore.",
     date: "2026",
+    keywords:"future of farmland investment in India",
     author: "Novara / Your Brand",
-    image: "/images/blog-6.webp",
-    heroImage: "/images/blog-6.webp",
-    coverImage: "/images/blog-6.webp",
+    image: "/images/Blog 6_11zon.webp",
+    heroImage: "/images/Blog 6_11zon.webp",
+    coverImage: "/images/Blog 6_11zon.webp",
     tags: [
       "Farmland Investment",
       "Sustainable Farming",

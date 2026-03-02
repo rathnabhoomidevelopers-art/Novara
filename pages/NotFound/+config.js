@@ -1,3 +1,0 @@
-export default {
-  title: '404 – Page Not Found',
-}

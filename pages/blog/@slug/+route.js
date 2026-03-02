@@ -1,2 +1,2 @@
-// pages/blogs/@id/+route.js
-export default '/blogs/@id'
+// pages/blog/@slug/+route.js
+export default '/blogs/@slug'

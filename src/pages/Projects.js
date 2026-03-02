@@ -219,7 +219,7 @@ export default function Projects() {
         initial="hidden"
         animate="show"
         variants={staggerWrap}
-        className="h-[400px] px-2 lg:h-[600px] flex flex-col items-center justify-center relative"
+        className="h-[400px] px-2 lg:h-[400px] flex flex-col items-center justify-center relative"
       >
         <video
           className="absolute inset-0 w-full h-full object-cover"
@@ -244,9 +244,9 @@ export default function Projects() {
           variants={fadeUp}
           className="relative z-10 text-center text-white font-brushelva lg:w-[1070px]"
         >
-          <h1 className="text-[30px] lg:text-[100px] sm:text-[32px]">
+          <h2 className="text-[30px] lg:text-[100px] sm:text-[32px]">
             ECOVARA
-          </h1>
+          </h2>
         </motion.div>
       </motion.div>
 
@@ -255,17 +255,16 @@ export default function Projects() {
         <div className="flex flex-col lg:flex-row gap-[24px] lg:gap-[67px] px-[16px] pt-[51px] lg:px-[100px] lg:pt-[101px]">
           <div>
             <img
-              src="/images/ecovara.webp"
+              src="/images/Farm_11zon.webp"
               alt="Ecovara"
               className="w-[358px] h-[334px] lg:w-[563px] lg:h-[540px]"
             />
           </div>
           <div className="lg:w-[610px]">
             <img src="/images/project_icon.svg" alt="" />
-            <div className="font-brushelva text-[25px] lg:text-[50px] text-[#000000]">
-              <span className="text-[#1A614F]">Ecovara</span> by Novara Nature
-              Estates
-            </div>
+            <h1 className="font-brushelva text-[25px] lg:text-[48px] text-[#000000]">
+              <span className="text-[#1A614F]">Ecovara</span> Premium Managed Farmland Near Lepakshi
+            </h1>
             <p className="text-[16px] lg:text-[18px] font-urbanist pt-[14px]">
               Strategic Location, Promising Returns Ecovara by Novara Nature
               Estates is strategically situated near prominent IT hubs and

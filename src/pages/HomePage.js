@@ -301,7 +301,7 @@ export default function HomePage() {
           </div>
 
           <div className="order-2 relative z-10 lg:left-64 lg:-mt-[160px]">
-            <img src="/images/location.webp" className="w-full max-w-[370px] lg:max-w-[940px]" alt="Location" />
+            <img src="/images/Map_location.webp" className="w-full max-w-[370px] lg:max-w-[940px]" alt="Location" />
           </div>
 
           <div className="order-3 flex items-center font-urbanist mt-[12px] lg:mt-[1px] w-[309px] h-[276px] lg:w-[400px] lg:h-[352px] justify-center lg:absolute lg:left-[80px] lg:top-[220px]">
@@ -321,7 +321,7 @@ export default function HomePage() {
       {/* Amenities */}
       <div
         className="w-full lg:w-full lg:h-[860px] lg:px-[120px] pb-[20px] py-[16px] lg:py-[89px] bg-cover bg-center bg-no-repeat overflow-x-hidden"
-        style={{ backgroundImage: "url('/images/amenities_bg.webp')" }}
+        style={{ backgroundImage: "url('/images/Background 2_11zon.webp')" }}
       >
         <div className="text-[#FFD972] px-3 text-[28px] lg:text-[50px] font-brushelva">Our Amenities</div>
         <p className="text-white text-[14px] lg:text-[16px] px-3 mt-3 lg:w-[1030px] font-urbanist">

@@ -1,4 +1,4 @@
 export default {
-  title: 'Contact Novara | Managed Farmlands Near Bangalore',
-  metaDescription: 'Looking to invest in managed farmland near Bangalore? Contact Novara Nature Estates for expert advice, pricing details & site visit scheduling.'
+  title: 'Contact Novara Nature Estates | Book Site Visit',
+  metaDescription: 'Get in touch with Novara Nature Estates to book a farmland site visit  or speak with our experts about managed farmland investments.'
 }

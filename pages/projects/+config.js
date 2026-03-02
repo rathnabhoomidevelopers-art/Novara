@@ -1,5 +1,5 @@
 export default {
-  title: 'Farmland for Sale Near Lepakshi | Ecovara',
-  metaDescription: 'Ecovara by Novara Nature Estates offers premium farmland for sale near Lepakshi with clear titles, gated layout & professional farm management.',
+  title: 'Farmland for Sale Near Lepakshi | Ecovara by Novara',
+  metaDescription: 'Explore Ecovara, premium managed farmland for sale near Lepakshi. Gated layout, clear titles, and professional farm management by Novara Nature Estates.',
   keywords: 'Farmland for Sale'
 }

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function EcovaraHeroBlock({
-  bgSrc = "/images/ecovara_arch.webp",
+  bgSrc = "/images/Ecovara _11zon.webp",
 }) {
   return (
     <section className="relative w-full">

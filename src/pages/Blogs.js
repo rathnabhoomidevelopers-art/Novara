@@ -181,7 +181,7 @@ export default function Blogs() {
           className="relative z-10 text-center text-white font-brushelva lg:w-[700px]"
         >
           <h1 className="text-[30px] lg:text-[50px] sm:text-[32px]">
-            Insights & Inspiration for Sustainable Living
+            Farmland Investment Insights & Guides.
           </h1>
         </motion.div>
       </motion.div>

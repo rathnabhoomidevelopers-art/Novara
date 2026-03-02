@@ -1,5 +1,6 @@
 import { usePageContext } from 'vike-react/usePageContext'
 import { useEffect } from 'react'
+import { BLOGS } from '../src/data/blogs'
 
 export default function Layout({ children }) {
   const pageContext = usePageContext()
@@ -14,18 +15,19 @@ export default function Layout({ children }) {
     const blogMatch = urlPathname.match(/^\/blogs\/(.+)$/)
     if (blogMatch) {
       const slug = blogMatch[1]
-      // If you have a BLOGS data file, import and use it here:
-      // import { BLOGS } from '../src/data/blogs'
-      // const blog = BLOGS.find((b) => b.slug === slug)
-      // title = blog?.title
-      // description = blog?.description
-      // keywords = blog?.keywords
+      const blog = BLOGS.find((b) => b.slug === slug)
+      if (blog) {
+        title = blog.title ? `${blog.title} | Novara Nature Estates` : title
+        description = blog.description
+          || blog.sections?.find(s => s.type === 'p' && typeof s.text === 'string')?.text?.slice(0, 160)
+          || description
+        keywords = blog.keywords || keywords
+      }
     }
 
     // ── Apply title ───────────────────────────────────────────
     if (title) document.title = title
 
-    // ── Apply description ─────────────────────────────────────
     let descTag = document.querySelector('meta[name="description"]')
     if (!descTag) {
       descTag = document.createElement('meta')
@@ -34,7 +36,6 @@ export default function Layout({ children }) {
     }
     descTag.setAttribute('content', description ?? '')
 
-    // ── Apply keywords ────────────────────────────────────────
     let kwTag = document.querySelector('meta[name="keywords"]')
     if (!kwTag) {
       kwTag = document.createElement('meta')
@@ -43,7 +44,6 @@ export default function Layout({ children }) {
     }
     kwTag.setAttribute('content', keywords ?? '')
 
-    // ── Canonical ─────────────────────────────────────────────
     let canonical = document.querySelector('link[rel="canonical"]')
     if (!canonical) {
       canonical = document.createElement('link')

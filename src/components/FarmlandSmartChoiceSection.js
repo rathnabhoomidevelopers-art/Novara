@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export default function FarmlandSmartChoiceSection({
-  bgImage = "/images/invest_banner.png",
+  bgImage = "/images/background_11.webp",
 }) {
   return (
     <section className="relative w-full lg:h-[798px] overflow-hidden">

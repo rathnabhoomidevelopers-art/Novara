@@ -156,12 +156,10 @@ const BrochureModal = ({ isOpen, onClose }) => {
   );
 };
 
-export default function BlogDetail() {
+export default function BlogDetail({ vikeSlug }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  // ✅ Vike way to get URL params — replaces useParams() from react-router-dom
-  const pageContext = usePageContext();
-  const slug = pageContext.routeParams?.id;
+  
+  const slug = vikeSlug;
 
   const blog = BLOGS.find((b) => b.slug === slug);
 

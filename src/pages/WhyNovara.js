@@ -196,13 +196,13 @@ export default function WhyNovara() {
           className="relative z-10 text-center text-white font-brushelva lg:w-[700px]"
         >
           <h1 className="text-[30px] sm:text-[32px] lg:text-[50px]">
-            A Thoughtful Approach to Nature-Centric Living
+            Building Sustainable Farmland Investments Near Bangalore
           </h1>
         </motion.div>
 
         <motion.p
           variants={fadeUp}
-          className="relative z-10 text-center text-[#2B2B2B] font-urbanist text-white/75 text-[14px] lg:w-[648px] sm:text-[14px] mt-[10px] lg:mt-[40px] lg:text-[20px]"
+          className="relative z-10 text-center text-[#2B2B2B] font-urbanist text-white/75 text-[14px] lg:w-[648px] sm:text-[14px] mt-[10px] lg:mt-[10px] lg:text-[20px]"
         >
           Thoughtfully planned farmland near Bangalore offering peaceful living,
           sustainable growth, and easy access to modern essentials.
