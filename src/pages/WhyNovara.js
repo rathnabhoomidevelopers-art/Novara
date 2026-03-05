@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { navigate } from "vike/client/router"; // ✅ Vike navigation (replaces useNavigate)
 import Chatbot from "../components/Chatbot";
+import FloatingCT from "../components/FloatingCT";
 
 const API_BASE =
   import.meta.env.VITE_API_BASE_URL || "https://novara-backend-one.vercel.app";
@@ -440,53 +441,7 @@ export default function WhyNovara() {
       </div>
 
       {/* Floating WhatsApp + Call */}
-      <motion.div
-        initial={{ opacity: 0, y: 12, scale: 0.98 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ type: "spring", stiffness: 120, damping: 18, mass: 0.9 }}
-        className="fixed bottom-16 lg:bottom-5 right-9 lg:right-4 z-[9999] flex flex-col items-end gap-4 font-poppins"
-      >
-        <a href="https://wa.me/918660200662" target="_blank" rel="noopener noreferrer"
-          className="whatsapp-chat sm:hidden w-12 h-12 rounded-xl bg-[#25D366] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)]">
-          <img src="/images/whatsapp.svg" alt="whatsapp" className="w-7 h-7 text-white" />
-        </a>
-        <a href="https://wa.me/918660200662" target="_blank" rel="noopener noreferrer"
-          className="whatsapp-chat-gtm hidden sm:inline-flex group no-underline relative items-center bg-white pl-3 pr-[70px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform">
-          <span className="text-slate-800 group-hover:text-green-600 font-semibold text-base whitespace-nowrap transition-colors">WhatsApp</span>
-          <span className="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-[#25D366] flex items-center justify-center shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
-            <img src="/images/whatsapp.svg" alt="whatsapp" className="w-7 h-7 text-white" />
-          </span>
-        </a>
-        <a href="tel:+918660200662"
-          className="tel-chat sm:hidden w-12 h-12 rounded-xl bg-[#3B46F6] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)]">
-          <img src="/images/call_ico.svg" alt="call" className="w-7 h-7 text-white" />
-        </a>
-        <a href="tel:+918660200662"
-          className="tel-chat-gtm hidden sm:inline-flex group no-underline relative items-center bg-white pl-3 pr-[66px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform">
-          <span className="text-slate-800 group-hover:text-[#3B46F6] font-semibold text-base whitespace-nowrap transition-colors">+91 8660200662</span>
-          <span className="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-[#3B46F6] flex items-center justify-center shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
-            <img src="/images/call_ico.svg" alt="call" className="w-7 h-7 text-white" />
-          </span>
-        </a>
-      </motion.div>
-
-      {/* Floating Brochure */}
-      <div className="block">
-        <motion.div
-          initial={{ opacity: 0, y: 12, scale: 0.98 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ type: "spring", stiffness: 120, damping: 18, mass: 0.9 }}
-          onClick={() => setIsModalOpen(true)}
-          className="fixed bottom-16 lg:bottom-5 left-6 lg:left-4 z-[9999] bg-[#cd6701] lg:bg-white cursor-pointer flex flex-col lg:flex-row items-center lg:gap-[12px] p-[6px] lg:p-[12px] rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
-        >
-          <span className="lg:inline text-[#ffff] lg:text-[#2b2b2b] lg:hover:text-[#964B00] font-semibold text-base whitespace-nowrap transition-colors">
-            Get Brochure
-          </span>
-          <button type="button" className="bg-[#cd6701] text-white p-1 lg:p-2 rounded-lg">
-            <DownloadIcon />
-          </button>
-        </motion.div>
-      </div>
+    <FloatingCT/>
 
       <CTAStrip
         title="Ready Farmland for Immediate Ownership"

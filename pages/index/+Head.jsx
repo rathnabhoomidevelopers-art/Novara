@@ -39,6 +39,27 @@ export default function Head() {
           postalCode: "560092",
           addressCountry: "IN",
         },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 13.0583, // 👈 replace with your exact latitude
+          longitude: 77.5942, // 👈 replace with your exact longitude
+        },
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            opens: "09:00",
+            closes: "18:00",
+          },
+        ],
         areaServed: [
           { "@type": "Place", name: "Bangalore" },
           { "@type": "Place", name: "Lepakshi" },

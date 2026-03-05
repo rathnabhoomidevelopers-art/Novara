@@ -30,7 +30,7 @@ export const BLOGS = [
       },
 
       {
-        type: "h3",
+        type: "h2",
         text: "1. Organic Farming: Cultivating the Land with Care",
       },
       {

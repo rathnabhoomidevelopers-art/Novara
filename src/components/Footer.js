@@ -57,7 +57,7 @@ export default function Footer() {
               <div>
                 Email:{" "}
                 <a href="mailto:info@novaranatureestate.com" className="text-white/85 no-underline">
-                  info@novaranatureestate.com
+                  info@novaranatureestates.com
                 </a>
               </div>
               <div>

@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { CheckCircle2, PhoneIcon, MailIcon, ArrowLeft, MessageCircleIcon } from "lucide-react";
 import { usePageContext } from "vike-react/usePageContext";
 import Footer from "./Footer";
+import FloatingCT from "./FloatingCT";
+import Chatbot from "./Chatbot";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 18 },
@@ -141,35 +143,8 @@ export default function ThankYou() {
       <Footer />
 
       {/* Floating CTAs */}
-      <motion.div
-        initial={{ opacity: 0, y: 12, scale: 0.98 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ type: "spring", stiffness: 120, damping: 18, mass: 0.9 }}
-        className="fixed bottom-4 right-4 z-[9999] flex flex-col gap-3 sm:gap-4"
-      >
-        <div className="flex flex-col gap-3 sm:hidden">
-          <a href="https://wa.me/918660200662" target="_blank" rel="noopener noreferrer" className="w-14 h-14 rounded-2xl bg-[#25D366] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:scale-105 transition-transform">
-            <MessageCircleIcon className="w-6 h-6 text-white" />
-          </a>
-          <a href="tel:+918660200662" className="w-14 h-14 rounded-2xl bg-[#3B82F6] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)] hover:scale-105 transition-transform">
-            <PhoneIcon className="w-6 h-6 text-white" />
-          </a>
-        </div>
-        <div className="hidden gap-2 sm:flex">
-          <a href="https://wa.me/918660200662" target="_blank" rel="noopener noreferrer" className="group relative inline-flex items-center bg-white pl-3 pr-[70px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform no-underline">
-            <span className="text-slate-800 group-hover:text-green-600 font-semibold text-sm whitespace-nowrap transition-colors">WhatsApp</span>
-            <span className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-xl bg-[#25D366] flex items-center justify-center shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
-              <MessageCircleIcon className="w-5 h-5 text-white" />
-            </span>
-          </a>
-          <a href="tel:+918660200662" className="group relative inline-flex items-center bg-white pl-3 pr-[62px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform no-underline">
-            <span className="text-slate-800 group-hover:text-[#3B82F6] font-semibold text-sm whitespace-nowrap transition-colors">+91 8660200662</span>
-            <span className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-xl bg-[#3B82F6] flex items-center justify-center shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
-              <PhoneIcon className="w-5 h-5 text-white" />
-            </span>
-          </a>
-        </div>
-      </motion.div>
+      <FloatingCT/>
+      <Chatbot/>
     </div>
   );
 }

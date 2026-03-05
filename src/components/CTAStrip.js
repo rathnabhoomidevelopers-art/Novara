@@ -25,7 +25,7 @@ export default function CTAStrip({
         </p>
       )}
 
-      <div className="lg:mt-8 flex justify-center">
+      <div className="mt-4 lg:mt-8 flex justify-center">
         <a
           href={ctaLink}
           className="

@@ -16,8 +16,11 @@ import { useEffect, useMemo, useState } from "react";
 import InquiryForm from "../components/InquiryForm";
 import { motion } from "framer-motion";
 import { usePageContext } from "vike-react/usePageContext"; // ✅ Vike route params
+import FloatingCT from "../components/FloatingCT";
+import Chatbot from "../components/Chatbot";
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://novara-backend-one.vercel.app";
+const API_BASE =
+  import.meta.env.VITE_API_BASE_URL || "https://novara-backend-one.vercel.app";
 
 const slugify = (str = "") =>
   str
@@ -42,7 +45,8 @@ const BrochureModal = ({ isOpen, onClose }) => {
 
   const validate = (values) => {
     const newErrors = {};
-    if (!values.firstName.trim()) newErrors.firstName = "First name is required";
+    if (!values.firstName.trim())
+      newErrors.firstName = "First name is required";
     if (!values.mobile.trim()) {
       newErrors.mobile = "Mobile number is required";
     } else if (!/^[0-9]{10}$/.test(values.mobile)) {
@@ -85,7 +89,13 @@ const BrochureModal = ({ isOpen, onClose }) => {
         if (response.ok) {
           downloadPDF();
           const name = `${formData.firstName} ${formData.lastName}`.trim();
-          setFormData({ firstName: "", lastName: "", mobile: "", email: "", message: "" });
+          setFormData({
+            firstName: "",
+            lastName: "",
+            mobile: "",
+            email: "",
+            message: "",
+          });
           setErrors({});
           onClose();
           // ✅ Vike navigate (replaces useNavigate hook)
@@ -107,44 +117,104 @@ const BrochureModal = ({ isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
       <div className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl max-h-[90vh] overflow-y-auto">
-        <button onClick={onClose} className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
         </button>
         <div className="p-6 lg:p-8">
-          <h2 className="text-2xl lg:text-3xl font-bold text-[#1A614F] mb-2">Get Your Brochure</h2>
-          <p className="text-gray-600 text-sm mb-6">Fill in your details and we'll send you our detailed brochure</p>
+          <h2 className="text-2xl lg:text-3xl font-bold text-[#1A614F] mb-2">
+            Get Your Brochure
+          </h2>
+          <p className="text-gray-600 text-sm mb-6">
+            Fill in your details and we'll send you our detailed brochure
+          </p>
           <div className="space-y-4">
             {[
-              { id: "firstName", label: "First Name *", type: "text", placeholder: "Enter your first name" },
-              { id: "lastName", label: "Last Name", type: "text", placeholder: "Enter your last name" },
-              { id: "mobile", label: "Mobile Number *", type: "tel", placeholder: "10-digit mobile number" },
-              { id: "email", label: "Email Address", type: "email", placeholder: "your.email@example.com" },
+              {
+                id: "firstName",
+                label: "First Name *",
+                type: "text",
+                placeholder: "Enter your first name",
+              },
+              {
+                id: "lastName",
+                label: "Last Name",
+                type: "text",
+                placeholder: "Enter your last name",
+              },
+              {
+                id: "mobile",
+                label: "Mobile Number *",
+                type: "tel",
+                placeholder: "10-digit mobile number",
+              },
+              {
+                id: "email",
+                label: "Email Address",
+                type: "email",
+                placeholder: "your.email@example.com",
+              },
             ].map(({ id, label, type, placeholder }) => (
               <div key={id}>
-                <label htmlFor={id} className="block text-sm font-medium text-gray-700 mb-1">{label}</label>
+                <label
+                  htmlFor={id}
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  {label}
+                </label>
                 <input
-                  id={id} name={id} type={type}
-                  onChange={handleChange} onBlur={handleBlur} value={formData[id]}
+                  id={id}
+                  name={id}
+                  type={type}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={formData[id]}
                   className={`w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A614F] transition ${errors[id] ? "border-red-500" : "border-gray-300"}`}
                   placeholder={placeholder}
                 />
-                {errors[id] && <p className="mt-1 text-xs text-red-500">{errors[id]}</p>}
+                {errors[id] && (
+                  <p className="mt-1 text-xs text-red-500">{errors[id]}</p>
+                )}
               </div>
             ))}
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Message
+              </label>
               <textarea
-                id="message" name="message" rows="4"
-                onChange={handleChange} onBlur={handleBlur} value={formData.message}
+                id="message"
+                name="message"
+                rows="4"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={formData.message}
                 className={`w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A614F] transition resize-none ${errors.message ? "border-red-500" : "border-gray-300"}`}
                 placeholder="Tell us what you're interested in..."
               />
-              {errors.message && <p className="mt-1 text-xs text-red-500">{errors.message}</p>}
+              {errors.message && (
+                <p className="mt-1 text-xs text-red-500">{errors.message}</p>
+              )}
             </div>
             <button
-              onClick={handleSubmit} disabled={isSubmitting}
+              onClick={handleSubmit}
+              disabled={isSubmitting}
               className="w-full bg-[#DCA000] hover:bg-[#E3A600] text-white font-semibold py-3 px-6 rounded-lg border border-[#FFCE4C] transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? "Submitting..." : "Submit & Download"}
@@ -158,14 +228,19 @@ const BrochureModal = ({ isOpen, onClose }) => {
 
 export default function BlogDetail({ vikeSlug }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  
+
   const slug = vikeSlug;
 
   const blog = BLOGS.find((b) => b.slug === slug);
 
   const sections = blog?.sections?.length
     ? blog.sections
-    : [{ type: "p", text: "Content not added yet. Add sections in src/data/blogs.js" }];
+    : [
+        {
+          type: "p",
+          text: "Content not added yet. Add sections in src/data/blogs.js",
+        },
+      ];
 
   const toc = useMemo(() => {
     const used = new Map();
@@ -185,16 +260,24 @@ export default function BlogDetail({ vikeSlug }) {
 
   useEffect(() => {
     if (!toc.length) return;
-    const headingEls = toc.map((t) => document.getElementById(t.id)).filter(Boolean);
+    const headingEls = toc
+      .map((t) => document.getElementById(t.id))
+      .filter(Boolean);
     if (!headingEls.length) return;
     const io = new IntersectionObserver(
       (entries) => {
         const visible = entries
           .filter((e) => e.isIntersecting)
-          .sort((a, b) => (b.intersectionRatio || 0) - (a.intersectionRatio || 0))[0];
+          .sort(
+            (a, b) => (b.intersectionRatio || 0) - (a.intersectionRatio || 0),
+          )[0];
         if (visible?.target?.id) setActiveId(visible.target.id);
       },
-      { root: null, rootMargin: "-25% 0px -65% 0px", threshold: [0.1, 0.25, 0.5, 0.75, 1] }
+      {
+        root: null,
+        rootMargin: "-25% 0px -65% 0px",
+        threshold: [0.1, 0.25, 0.5, 0.75, 1],
+      },
     );
     headingEls.forEach((el) => io.observe(el));
     return () => io.disconnect();
@@ -213,7 +296,12 @@ export default function BlogDetail({ vikeSlug }) {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-10 py-10">
           <p className="text-slate-700">Blog not found.</p>
           {/* ✅ Plain <a> replaces <Link> */}
-          <a href="/blogs" className="text-[#E3A600] no-underline font-semibold">Go back</a>
+          <a
+            href="/blogs"
+            className="text-[#E3A600] no-underline font-semibold"
+          >
+            Go back
+          </a>
         </div>
       </section>
     );
@@ -229,13 +317,35 @@ export default function BlogDetail({ vikeSlug }) {
           <div className="hidden lg:block w-[80px] mr-6">
             <div className="sticky top-64 flex flex-col gap-4">
               {[
-                { href: "https://www.facebook.com/profile.php?id=61585877764871#", icon: <Facebook className="h-5 w-5" />, hover: "hover:bg-[#1877F2]" },
-                { href: "https://wa.me/918660200662", icon: <MessageCircle className="h-5 w-5" />, hover: "hover:bg-[#25D366]" },
-                { href: "https://www.instagram.com/novaranatureestates/", icon: <Instagram className="h-5 w-5" />, hover: "hover:bg-gradient-to-r from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]" },
-                { href: "https://www.youtube.com/@NovaraNatureEstates", icon: <Youtube className="h-5 w-5" />, hover: "hover:bg-[#FF0000]" },
+                {
+                  href: "https://www.facebook.com/profile.php?id=61585877764871#",
+                  icon: <Facebook className="h-5 w-5" />,
+                  hover: "hover:bg-[#1877F2]",
+                },
+                {
+                  href: "https://wa.me/918660200662",
+                  icon: <MessageCircle className="h-5 w-5" />,
+                  hover: "hover:bg-[#25D366]",
+                },
+                {
+                  href: "https://www.instagram.com/novaranatureestates/",
+                  icon: <Instagram className="h-5 w-5" />,
+                  hover:
+                    "hover:bg-gradient-to-r from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]",
+                },
+                {
+                  href: "https://www.youtube.com/@NovaraNatureEstates",
+                  icon: <Youtube className="h-5 w-5" />,
+                  hover: "hover:bg-[#FF0000]",
+                },
               ].map(({ href, icon, hover }, i) => (
-                <a key={i} href={href} target="_blank" rel="noopener noreferrer"
-                  className={`h-10 w-10 rounded-full bg-[#FFF6E6] flex items-center justify-center text-[#8A8A8A] ${hover} hover:text-white transition`}>
+                <a
+                  key={i}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`h-10 w-10 rounded-full bg-[#FFF6E6] flex items-center justify-center text-[#8A8A8A] ${hover} hover:text-white transition`}
+                >
                   {icon}
                 </a>
               ))}
@@ -243,9 +353,12 @@ export default function BlogDetail({ vikeSlug }) {
           </div>
 
           {/* Blog content */}
-          <div className="flex-1 max-w-6xl">
+          <div className="flex-1 max-w-4xl">
             {/* ✅ Plain <a> replaces <Link> */}
-            <a href="/blogs" className="inline-flex no-underline items-center gap-2 text-[12px] font-semibold text-slate-700 hover:text-[#E3A600] transition">
+            <a
+              href="/blogs"
+              className="inline-flex no-underline items-center gap-2 text-[12px] font-semibold text-slate-700 hover:text-[#E3A600] transition"
+            >
               <span className="h-7 w-7 rounded-full border border-slate-200 flex items-center justify-center">
                 <ChevronLeft className="h-4 w-4" />
               </span>
@@ -263,7 +376,11 @@ export default function BlogDetail({ vikeSlug }) {
             </h1>
 
             <div className="mt-5 rounded-2xl overflow-hidden border border-slate-100 bg-slate-100">
-              <img src={blog.heroImage || blog.image} alt={blog.title} className="w-full h-[210px] sm:h-full object-cover" />
+              <img
+                src={blog.heroImage || blog.image}
+                alt={blog.title}
+                className="w-full h-[210px] sm:h-full object-cover"
+              />
             </div>
 
             {/* Content */}
@@ -271,43 +388,84 @@ export default function BlogDetail({ vikeSlug }) {
               {(() => {
                 const used = new Map();
                 return sections.map((s, i) => {
+                  if (s.type === "h2") {
+                    return (
+                      <h2
+                        key={i}
+                        className="scroll-mt-28 text-[20px] sm:text-[24px] font-bold  mt-4"
+                      >
+                        {s.text}
+                      </h2>
+                    );
+                  }
+
                   if (s.type === "h3") {
                     const base = slugify(s.text || "");
                     const count = (used.get(base) || 0) + 1;
                     used.set(base, count);
                     const id = count === 1 ? base : `${base}-${count}`;
                     return (
-                      <h3 key={i} id={id} className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]">
+                      <h3
+                        key={i}
+                        id={id}
+                        className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]"
+                      >
                         {s.text}
                       </h3>
                     );
                   }
                   if (s.type === "quote") {
                     return (
-                      <div key={i} className="rounded-xl border border-[#F2E6C9] bg-[#FFF8E8] px-4 py-4 text-[13px] sm:text-[14px] text-slate-700">
-                        <div className="border-l-4 border-[#E3A600] pl-3 italic leading-relaxed">{s.text}</div>
+                      <div
+                        key={i}
+                        className="rounded-xl border border-[#F2E6C9] bg-[#FFF8E8] px-4 py-4 text-[13px] sm:text-[14px] text-slate-700"
+                      >
+                        <div className="border-l-4 border-[#E3A600] pl-3 italic leading-relaxed">
+                          {s.text}
+                        </div>
                       </div>
                     );
                   }
                   if (s.type === "image") {
                     return (
-                      <figure key={i} className="rounded-2xl overflow-hidden border border-slate-100 bg-slate-50">
-                        <img src={s.src} alt={s.caption || "Blog image"} className="w-full h-auto" />
-                        {s.caption && <figcaption className="px-4 py-3 text-[12px] text-slate-500">{s.caption}</figcaption>}
+                      <figure
+                        key={i}
+                        className="rounded-2xl overflow-hidden border border-slate-100 bg-slate-50"
+                      >
+                        <img
+                          src={s.src}
+                          alt={s.caption || "Blog image"}
+                          className="w-full h-auto"
+                        />
+                        {s.caption && (
+                          <figcaption className="px-4 py-3 text-[12px] text-slate-500">
+                            {s.caption}
+                          </figcaption>
+                        )}
                       </figure>
                     );
                   }
                   if (s.type === "ul") {
                     return (
-                      <ul key={i} className="list-disc list-outside pl-5 space-y-2 text-[13px] sm:text-[14px] text-slate-600">
+                      <ul
+                        key={i}
+                        className="list-disc list-outside pl-5 space-y-2 text-[13px] sm:text-[14px] text-slate-600"
+                      >
                         {s.text.map((item, idx) => (
-                          <li key={idx} className="leading-relaxed">{item}</li>
+                          <li key={idx} className="leading-relaxed">
+                            {item}
+                          </li>
                         ))}
                       </ul>
                     );
                   }
                   return (
-                    <p key={i} className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600">{s.text}</p>
+                    <p
+                      key={i}
+                      className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600"
+                    >
+                      {s.text}
+                    </p>
                   );
                 });
               })()}
@@ -315,64 +473,71 @@ export default function BlogDetail({ vikeSlug }) {
           </div>
 
           {/* Right TOC / Inquiry Form */}
-          {toc.length > 0 && (
+          {/* {toc.length > 0 && (
             <aside className="hidden lg:block w-[390px] ml-6">
               <div className="sticky top-36">
                 <InquiryForm />
               </div>
             </aside>
-          )}
+          )} */}
         </div>
+
+        {(() => {
+          const related = BLOGS.filter(
+            (b) => b.slug !== blog.slug && b.category === blog.category,
+          ).slice(0, 3);
+
+          if (!related.length) return null;
+
+          return (
+            <div className=" py-8 border-t border-slate-100">
+              <h2 className="text-[24px] text-center sm:text-[32px] font-urbanist font-bold text-[#111827] mb-6">
+                Related Articles
+              </h2>
+              <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
+                {related.map((b) => (
+                  <a
+                    key={b.id}
+                    href={`/blogs/${b.slug}`}
+                    className="no-underline group rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow w-[380px] h-[380px] sm:w-[calc(50%-12px)] sm:h-auto lg:w-[calc(33.333%-16px)] flex flex-col"
+                  >
+                    <div className="overflow-hidden h-[220px] sm:h-[180px] bg-slate-100 flex-shrink-0">
+                      <img
+                        src={b.heroImage || b.image}
+                        alt={b.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-4 flex flex-col flex-1">
+                      <span className="inline-flex rounded-full bg-[#E9FFF3] w-[70px] text-center text-[#1B9A63] px-2 py-0.5 text-[10px] font-semibold mb-2">
+                        {b.category}
+                      </span>
+                      <h3 className="text-[14px] sm:text-[14px] font-bold text-[#111827] leading-snug group-hover:text-[#1A614F] transition-colors line-clamp-2">
+                        {b.title}
+                      </h3>
+                      <p className="mt-1 text-[11px] sm:text-[12px] text-slate-500 line-clamp-3">
+                        {b.description}
+                      </p>
+                      <span className="mt-auto inline-flex items-center gap-1 text-[14px] lg:mt-2 font-semibold text-[#E3A600] group-hover:gap-2 transition-all">
+                        Read more
+                        <ChevronLeft className="h-3 w-3 rotate-180" />
+                      </span>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
       </div>
 
       {/* Floating WhatsApp + Call */}
-      <motion.div
-        initial={{ opacity: 0, y: 12, scale: 0.98 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ type: "spring", stiffness: 120, damping: 18, mass: 0.9 }}
-        className="fixed bottom-16 lg:bottom-5 right-9 lg:right-4 z-[9999] flex flex-col items-end gap-4 font-poppins"
-      >
-        <a href="https://wa.me/918660200662" target="_blank" rel="noopener noreferrer"
-          className="whatsapp-chat sm:hidden w-12 h-12 rounded-xl bg-[#25D366] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)]">
-          <img src="/images/whatsapp.svg" alt="whatsapp" className="w-7 h-7 text-white" />
-        </a>
-        <a href="https://wa.me/918660200662" target="_blank" rel="noopener noreferrer"
-          className="whatsapp-chat-gtm hidden sm:inline-flex group no-underline relative items-center bg-white pl-3 pr-[70px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform">
-          <span className="text-slate-800 group-hover:text-green-600 font-semibold text-base whitespace-nowrap transition-colors">WhatsApp</span>
-          <span className="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-[#25D366] flex items-center justify-center shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
-            <img src="/images/whatsapp.svg" alt="whatsapp" className="w-7 h-7 text-white" />
-          </span>
-        </a>
-        <a href="tel:+918660200662"
-          className="tel-chat sm:hidden w-12 h-12 rounded-xl bg-[#3B46F6] flex items-center justify-center shadow-[0_12px_30px_rgba(0,0,0,0.25)]">
-          <img src="/images/call_ico.svg" alt="call" className="w-7 h-7 text-white" />
-        </a>
-        <a href="tel:+918660200662"
-          className="tel-chat-gtm hidden sm:inline-flex group no-underline relative items-center bg-white pl-3 pr-[66px] py-3 rounded-xl shadow-[0_12px_35px_rgba(0,0,0,0.18)] hover:scale-[1.02] transition-transform">
-          <span className="text-slate-800 group-hover:text-[#3B46F6] font-semibold text-base whitespace-nowrap transition-colors">+91 8660200662</span>
-          <span className="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 rounded-xl bg-[#3B46F6] flex items-center justify-center shadow-[0_6px_16px_rgba(0,0,0,0.12)]">
-            <img src="/images/call_ico.svg" alt="call" className="w-7 h-7 text-white" />
-          </span>
-        </a>
-      </motion.div>
-
-      {/* Floating Brochure */}
-      <motion.div
-        initial={{ opacity: 0, y: 12, scale: 0.98 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ type: "spring", stiffness: 120, damping: 18, mass: 0.9 }}
-        onClick={() => setIsModalOpen(true)}
-        className="fixed bottom-16 lg:bottom-5 left-6 lg:left-4 z-[9999] bg-[#cd6701] lg:bg-white cursor-pointer flex flex-col lg:flex-row items-center lg:gap-[12px] p-[6px] lg:p-[12px] rounded-lg font-poppins shadow-[0_6px_16px_rgba(0,0,0,0.12)]"
-      >
-        <span className="lg:inline text-[#ffff] lg:text-[#2b2b2b] lg:hover:text-[#964B00] font-semibold text-base whitespace-nowrap transition-colors">
-          Get Brochure
-        </span>
-        <button type="button" className="bg-[#cd6701] text-white p-1 lg:p-2 rounded-lg">
-          <DownloadIcon />
-        </button>
-      </motion.div>
-
-      <BrochureModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <FloatingCT />
+      <BrochureModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
+      <Chatbot />
       <Footer />
     </section>
   );

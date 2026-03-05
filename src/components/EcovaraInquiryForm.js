@@ -62,9 +62,9 @@ export default function EcovaraInquiryForm() {
           {/* Left */}
           <div className="text-white lg:w-[500px]">
             <img src="/images/updated_icon.svg" alt="sparkle" />
-            <h1 className="text-[38px] font-brushelva lg:text-5xl mt-[6px] text-[#F5B841] mb-6">
+            <h2 className="text-[38px] font-brushelva lg:text-5xl mt-[6px] text-[#F5B841] mb-6">
               Inquire About Ecovara Farm Plot
-            </h1>
+            </h2>
             <p className="text-white font-urbanist text-base lg:text-lg leading-relaxed">
               Interested in this property? Fill out the form below, and our real estate experts will get back to you with more details, including scheduling a viewing and answering any questions you may have.
             </p>

@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 import Chatbot from "../components/Chatbot";
 import ClientFAQ from "../components/ClientFAQ";
 import BrochureModal from "../components/BrochureModal";
-import FloatingCTA from "../components/FloatingCTA";
+import FloatingCT from "../components/FloatingCT";
 
 const useIsomorphicLayoutEffect =
   typeof window !== "undefined" ? useLayoutEffect : useEffect;
@@ -174,18 +174,51 @@ const faqData = [
 // ── Page component ────────────────────────────────────────────────────────────
 export default function Projects() {
   const slides = useMemo(() => DEFAULT_IMAGES, []);
+
+  // Duplicate slides for infinite loop: [original + clone]
+  const LOOPED_SLIDES = useMemo(() => [...slides, ...slides], [slides]);
+
   const [index, setIndex] = useState(0);
+  const [animated, setAnimated] = useState(true);
   const cardRef = useRef(null);
   const [step, setStep] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const clampIndex = (i) => {
-    const n = slides.length;
-    return ((i % n) + n) % n;
+  const goNext = () => {
+    setAnimated(true);
+    setIndex((i) => i + 1);
   };
 
-  const goPrev = () => setIndex((v) => clampIndex(v - 1));
-  const goNext = () => setIndex((v) => clampIndex(v + 1));
+  const goPrev = () => {
+    setAnimated(true);
+    setIndex((i) => i - 1);
+  };
+
+  // When index goes past the original set, silently snap back
+  useEffect(() => {
+    if (index >= slides.length) {
+      const t = setTimeout(() => {
+        setAnimated(false);
+        setIndex((i) => i - slides.length);
+      }, 450); // wait for spring to finish
+      return () => clearTimeout(t);
+    }
+    if (index < 0) {
+      const t = setTimeout(() => {
+        setAnimated(false);
+        setIndex((i) => i + slides.length);
+      }, 450);
+      return () => clearTimeout(t);
+    }
+  }, [index, slides.length]);
+
+  // Re-enable animation after the silent jump
+  useEffect(() => {
+    if (!animated) {
+      const id = requestAnimationFrame(() => setAnimated(true));
+      return () => cancelAnimationFrame(id);
+    }
+  }, [animated]);
 
   // ── ResizeObserver — client only ─────────────────────────────────────────
   useIsomorphicLayoutEffect(() => {
@@ -199,7 +232,7 @@ export default function Projects() {
     return () => ro.disconnect();
   }, []);
 
-  // ── Keyboard navigation — typeof window guard ────────────────────────────
+  // ── Keyboard navigation ──────────────────────────────────────────────────
   useEffect(() => {
     if (typeof window === "undefined") return;
     const onKey = (e) => {
@@ -213,13 +246,11 @@ export default function Projects() {
   return (
     <div className="font-urbanist">
       <Header />
-
-      {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <motion.div
+      <motion.div // hero section
         initial="hidden"
         animate="show"
         variants={staggerWrap}
-        className="h-[400px] px-2 lg:h-[400px] flex flex-col items-center justify-center relative"
+        className="h-[300px] px-2 lg:h-[400px] flex flex-col items-center justify-center relative"
       >
         <video
           className="absolute inset-0 w-full h-full object-cover"
@@ -263,7 +294,8 @@ export default function Projects() {
           <div className="lg:w-[610px]">
             <img src="/images/project_icon.svg" alt="" />
             <h1 className="font-brushelva text-[25px] lg:text-[48px] text-[#000000]">
-              <span className="text-[#1A614F]">Ecovara</span> Premium Managed Farmland Near Lepakshi
+              <span className="text-[#1A614F]">Ecovara</span> Premium Managed
+              Farmland Near Lepakshi
             </h1>
             <p className="text-[16px] lg:text-[18px] font-urbanist pt-[14px]">
               Strategic Location, Promising Returns Ecovara by Novara Nature
@@ -291,15 +323,19 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* Image Carousel */}
-        <div className="relative mx-auto w-[358px] lg:w-[1300px] lg:mt-[36px] overflow-visible">
+        {/* ── Image Carousel (infinite loop) ──────────────────────────────── */}
+        <div className="relative mx-auto w-[358px] mt-[36px] lg:w-[1300px] lg:mt-[36px] overflow-visible">
           <div className="relative overflow-hidden">
             <motion.div
               className="flex items-stretch gap-2 lg:gap-6"
               animate={{ x: step ? -index * step : 0 }}
-              transition={{ type: "spring", stiffness: 140, damping: 20 }}
+              transition={
+                animated
+                  ? { type: "spring", stiffness: 140, damping: 20 }
+                  : { duration: 0 } // instant silent snap — invisible to user
+              }
             >
-              {slides.map((img, i) => (
+              {LOOPED_SLIDES.map((img, i) => (
                 <motion.div
                   key={`${img.src}-${i}`}
                   ref={i === 0 ? cardRef : null}
@@ -342,7 +378,7 @@ export default function Projects() {
 
       {/* ── Specifications ───────────────────────────────────────────────── */}
       <div
-        className="bg-no-repeat bg-cover bg-center flex flex-col lg:flex-row justify-center items-center p-3 lg:p-0 gap-[8px] lg:gap-[20px] lg:h-[577px]"
+        className="bg-no-repeat bg-cover bg-center flex flex-col lg:flex-row justify-center items-center py-[40px] p-3 lg:p-0 gap-[8px] lg:gap-[20px] lg:h-[577px]"
         style={{ backgroundImage: "url('/images/specification.webp')" }}
       >
         <div className="lg:w-[413px]">
@@ -364,19 +400,24 @@ export default function Projects() {
               )}
               <div className="flex flex-col lg:flex-row">
                 {row.map(({ icon, title, desc }, colIdx) => (
-                  <div key={title} className="flex">
+                  <div key={title} className="flex items-stretch">
+                    {/* Vertical divider — desktop only, between columns */}
                     {colIdx > 0 && (
-                      <div className="w-full lg:hidden my-[14px] h-[1.5px] bg-[#262626]/60" />
+                      <span className="hidden lg:block w-[2px] mx-4 bg-[#262626]/60 self-stretch" />
                     )}
-                    {colIdx > 0 && (
-                      <span className="h-[150px] hidden lg:block w-[2px] ms-4 me-4 bg-[#262626]/60" />
-                    )}
-                    <div>
+
+                    {/* Horizontal divider — mobile only, between stacked items */}
+                    <div className="flex flex-col w-full">
+                      {colIdx > 0 && (
+                        <div className="w-full mb-[14px] h-[1.5px] bg-[#262626]/60 lg:hidden" />
+                      )}
                       <div className="flex items-center gap-[10px]">
                         <img src={icon} alt="" />
-                        <div className="font-semibold text-[20px]">{title}</div>
+                        <div className="font-semibold text-[18px] lg:text-[20px]">
+                          {title}
+                        </div>
                       </div>
-                      <p className="lg:w-[329px] pt-2 lg:pt-0 text-[14px] lg:text-[16px] lg:mt-[10px]">
+                      <p className="lg:w-[329px] mt-2 text-[14px] lg:text-[16px]">
                         {desc}
                       </p>
                     </div>
@@ -518,7 +559,6 @@ export default function Projects() {
       </div>
 
       <EcovaraInquiryForm />
-
       <ClientFAQ faqs={faqData} />
 
       <div className="bg-yellow-50">
@@ -534,7 +574,7 @@ export default function Projects() {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       />
-      <FloatingCTA onBrochureClick={() => setIsModalOpen(true)} />
+      <FloatingCT />
       <Chatbot />
       <Footer />
     </div>
