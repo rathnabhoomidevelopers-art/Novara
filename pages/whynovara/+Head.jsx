@@ -16,7 +16,7 @@ export default function Head() {
 
   return (
     <>
-      <link rel="canonical" href="https://novaranatureestates.com/whynovara" />
+      <link rel="canonical" href="https://www.novaranatureestates.com/whynovara" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
