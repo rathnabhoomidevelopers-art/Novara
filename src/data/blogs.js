@@ -67,7 +67,7 @@ export const BLOGS = [
         ],
       },
 
-      { type: "h3", text: "2. Hydroponics: Farming Without Soil" },
+      { type: "h2", text: "2. Hydroponics: Farming Without Soil" },
       {
         type: "p",
         text: "While organic farming focuses on using natural processes and soil health, hydroponics takes a completely different approach. If you have a small plot of land near Bangalore or are limited by soil quality, hydroponics might be an ideal solution. This soil-less farming technique uses nutrient-rich water to grow plants, often in specially designed systems that are easy to manage.",
@@ -101,7 +101,7 @@ export const BLOGS = [
         ],
       },
 
-      { type: "h3", text: "3. Drip Irrigation: Maximizing Water Efficiency" },
+      { type: "h2", text: "3. Drip Irrigation: Maximizing Water Efficiency" },
       {
         type: "p",
         text: "With the increasing scarcity of water in many parts of India, including the areas around Bangalore, it’s important to adopt water-efficient farming methods. Drip irrigation is one of the most effective techniques to use water efficiently, ensuring your crops get exactly what they need without wasting a drop.",
@@ -135,7 +135,7 @@ export const BLOGS = [
         ],
       },
 
-      { type: "h3", text: "4. Agroforestry: Combining Trees with Crops" },
+      { type: "h2", text: "4. Agroforestry: Combining Trees with Crops" },
       {
         type: "p",
         text: "Agroforestry is a sustainable farming technique that integrates trees with traditional crop production. By planting trees alongside crops, you create a more diverse farming ecosystem that benefits the land and the crops. This technique is gaining popularity near Bangalore, where farmers are looking to improve the biodiversity of their farms while still generating income from crops.",
@@ -170,7 +170,7 @@ export const BLOGS = [
       },
 
       {
-        type: "h3",
+        type: "h2",
         text: "5. Precision Farming: Technology-Powered Efficiency",
       },
       {
@@ -246,7 +246,7 @@ export const BLOGS = [
         text: "When most people think about investments, their minds usually jump to stocks, bonds, or real estate. But there's another type of investment that’s often overlooked: farmland. Owning farmland is not only a smart financial decision, but it can also be a rewarding experience in many ways. Let's take a closer look at why farmland ownership is such a great investment and why more people are starting to consider it.",
       },
 
-      { type: "h3", text: "1. Steady, Reliable Income from Agriculture" },
+      { type: "h2", text: "1. Steady, Reliable Income from Agriculture" },
       {
         type: "p",
         text: "One of the top reasons people invest in farmland is the potential for steady income. Farmland isn’t just a piece of land sitting idle — it’s a source of income that can generate money year after year. By farming the land, you can grow crops, raise livestock, or even sell organic produce, all of which can create a regular income stream.",
@@ -257,7 +257,7 @@ export const BLOGS = [
         text: "Not only can you sell crops, but you also have options like renting the land to farmers, setting up agro-tourism ventures (think farm stays or farm-to-table experiences), or even growing specialty crops that can fetch a higher price in niche markets. This means your farmland can work for you, and you get to reap the rewards.",
       },
 
-      { type: "h3", text: "2. Long-Term Appreciation in Value" },
+      { type: "h2", text: "2. Long-Term Appreciation in Value" },
       {
         type: "p",
         text: "Farmland tends to increase in value over time. Unlike other investments that can fluctuate with market conditions, land generally appreciates in value because it’s a finite resource. As the demand for food increases globally, especially with growing populations and urban expansion, the value of productive agricultural land continues to rise.",
@@ -268,7 +268,7 @@ export const BLOGS = [
         text: "What’s more, owning farmland near developing areas (like Ecovara near Lepakshi) can add even more value, as the surrounding land becomes more desirable over time. Location matters, and if your farmland is in a growing region, it can experience significant value growth over the years.",
       },
 
-      { type: "h3", text: "3. Diversification for Your Investment Portfolio" },
+      { type: "h2", text: "3. Diversification for Your Investment Portfolio" },
       {
         type: "p",
         text: "As the old saying goes, “Don’t put all your eggs in one basket.” That’s exactly why farmland is such a valuable addition to any investment portfolio. By owning farmland, you’re diversifying your assets in a way that can weather economic downturns. While stock markets and real estate can be unpredictable, farmland tends to hold its ground, providing a stable investment even during uncertain times.",
@@ -280,7 +280,7 @@ export const BLOGS = [
       },
 
       {
-        type: "h3",
+        type: "h2",
         text: "4. Farmland’s Tax Benefits and Government Incentives",
       },
       {
@@ -293,7 +293,7 @@ export const BLOGS = [
         text: "Depending on where your farmland is located, you might also be eligible for government grants or subsidies for organic farming, environmentally friendly practices, or renewable energy initiatives (like solar-powered irrigation). These incentives can make owning farmland even more financially attractive, giving you additional financial support as you grow your investment.",
       },
 
-      { type: "h3", text: "5. A Legacy to Pass Down" },
+      { type: "h2", text: "5. A Legacy to Pass Down" },
       {
         type: "p",
         text: "Farmland isn’t just a short-term investment; it’s also an asset you can pass down through generations. There’s something deeply rewarding about owning a piece of land that can continue to provide for your family, generation after generation. Whether you’re growing crops, running a small farm, or simply holding onto the land, it can serve as a long-term financial safety net for your children or grandchildren.",
@@ -349,7 +349,7 @@ export const BLOGS = [
         text: "If you’re new to farmland investment, don’t worry! We’ve broken it down into simple steps to guide you through the process. By the end of this post, you’ll have a clear understanding of how to get started, what to consider, and why investing in farmland could be one of the best decisions you ever make.",
       },
 
-      { type: "h3", text: "1. Understand the Benefits of Farmland Investment" },
+      { type: "h2", text: "1. Understand the Benefits of Farmland Investment" },
       {
         type: "p",
         text: "Before diving into the how, let’s first take a moment to understand the why. Why should you invest in farmland?",
@@ -375,7 +375,7 @@ export const BLOGS = [
         text: "Farmland investments, especially those focused on organic farming or sustainable agriculture, are increasingly popular with eco-conscious investors.",
       },
 
-      { type: "h3", text: "2. Research the Land Market in India" },
+      { type: "h2", text: "2. Research the Land Market in India" },
       {
         type: "p",
         text: "Investing in farmland isn’t the same as buying a house. The land market can vary greatly depending on the region, and there are several factors to consider.",
@@ -402,7 +402,7 @@ export const BLOGS = [
       },
 
       {
-        type: "h3",
+        type: "h2",
         text: "3. Understand the Legalities of Farmland Ownership in India",
       },
       {
@@ -430,7 +430,7 @@ export const BLOGS = [
         text: "Hire a lawyer or legal expert to help you navigate land registration, ownership rights, and ensure all legal procedures are followed. This will help avoid any future issues.",
       },
 
-      { type: "h3", text: "4. Choose the Right Type of Land for Your Needs" },
+      { type: "h2", text: "4. Choose the Right Type of Land for Your Needs" },
       {
         type: "p",
         text: "Farmland can be used for many purposes, and it’s important to match the type of land with your goals. Here are some options to consider:",
@@ -456,7 +456,7 @@ export const BLOGS = [
         text: "For large-scale operations, such as plantations, orchards, or timber farming, this would require significant upfront investment but could yield long-term profits.",
       },
 
-      { type: "h3", text: "5. Secure Financing for Your Farmland Investment" },
+      { type: "h2", text: "5. Secure Financing for Your Farmland Investment" },
       {
         type: "p",
         text: "Buying farmland requires capital, and while it’s tempting to pay in cash, many people choose financing options to make the process more manageable.",
@@ -477,7 +477,7 @@ export const BLOGS = [
         text: "Many investors also choose to pool resources with family or friends to fund a farmland purchase.",
       },
 
-      { type: "h3", text: "6. Finalize the Purchase and Register the Land" },
+      { type: "h2", text: "6. Finalize the Purchase and Register the Land" },
       {
         type: "p",
         text: "Once you’ve found the right piece of land and sorted the legalities and financing, it’s time to close the deal.",
@@ -498,7 +498,7 @@ export const BLOGS = [
         text: "In India, once the purchase is agreed upon, the final step is land registration. This legally transfers ownership from the seller to you, and it’s done through the local sub-registrar’s office. You’ll need to bring all necessary documents, including the sale agreement and ID proof.",
       },
 
-      { type: "h3", text: "7. Managing Your Farmland Investment" },
+      { type: "h2", text: "7. Managing Your Farmland Investment" },
       {
         type: "p",
         text: "Once you own the land, it’s time to manage it. Whether you’re farming yourself, renting it out, or exploring agro-tourism, regular maintenance and management are key.",
@@ -563,7 +563,7 @@ export const BLOGS = [
         text: "More people are choosing to invest in farmlands not just for farming or investment purposes, but as their very own weekend escape. The growing interest in sustainable living, peace of mind, and getting away from the city’s chaos has made these farmlands a perfect choice for many looking for a getaway. Let’s dive into why farmlands near Bangalore are quickly becoming the ideal weekend retreat.",
       },
       {
-        type: "h3",
+        type: "h2",
         text: "1. Proximity to Bangalore: Close Enough for Comfort, Far Enough to Escape",
       },
       {
@@ -574,7 +574,7 @@ export const BLOGS = [
         type: "p",
         text: "For example, land near places like Nandi Hills, Devanahalli, and Lepakshi not only offer beautiful landscapes but also proximity to Bangalore’s city center. These areas are becoming increasingly popular for those who want to build their dream weekend farmhouses or simply enjoy a farm stay.",
       },
-      { type: "h3", text: "2. The Charm of Nature and Fresh Air" },
+      { type: "h2", text: "2. The Charm of Nature and Fresh Air" },
       {
         type: "p",
         text: "There’s something uniquely special about being surrounded by nature. Whether it’s the sight of vast green fields, the smell of fresh earth, or the sound of birds chirping, farmlands near Bangalore offer a refreshing break from the hustle and bustle. Imagine spending your weekend on a plot of land where you can breathe in the fresh air, enjoy a sunset over your private property, and take long walks through open fields.",
@@ -584,7 +584,7 @@ export const BLOGS = [
         text: "For many, it’s the chance to slow down, appreciate the simple things in life, and reconnect with nature. No crowded cafes or loud traffic — just peaceful surroundings where you can finally take a break from technology and distractions.",
       },
       {
-        type: "h3",
+        type: "h2",
         text: "3. The Possibility of Building Your Dream Farmhouse",
       },
       {
@@ -595,7 +595,7 @@ export const BLOGS = [
         type: "p",
         text: "Building a weekend farmhouse on your farmland offers the best of both worlds. You can design it to reflect your personality, whether you want a cozy retreat with a modern twist or a rustic cottage that feels like a home away from home. Plus, the land surrounding your house can be used to grow your own vegetables, fruits, and even flowers — adding that personal touch to your weekend retreat.",
       },
-      { type: "h3", text: "4. Peace, Quiet, and a Break from Technology" },
+      { type: "h2", text: "4. Peace, Quiet, and a Break from Technology" },
       {
         type: "p",
         text: "In today’s world, where we’re constantly connected to our phones, emails, and social media, a weekend retreat on farmland offers a much-needed digital detox. Picture this: no email alerts, no notifications, just you and the beauty of nature. Farmlands near Bangalore provide a sanctuary where you can truly switch off.",
@@ -604,7 +604,7 @@ export const BLOGS = [
         type: "p",
         text: "You can spend your time reading a book in the garden, taking a leisurely walk around the property, or perhaps even trying your hand at some light farming. It’s a place where you can embrace a slower pace of life, free from the constant buzz of the digital world.",
       },
-      { type: "h3", text: "5. Embrace a Sustainable Lifestyle" },
+      { type: "h2", text: "5. Embrace a Sustainable Lifestyle" },
       {
         type: "p",
         text: "More people today are embracing sustainability and mindful living. Farmlands near Bangalore provide the perfect setting to do just that. Whether you want to grow your own organic vegetables, set up a small herb garden, or simply live in a way that’s more in tune with nature, owning farmland gives you the space to create a sustainable lifestyle.",
@@ -613,7 +613,7 @@ export const BLOGS = [
         type: "p",
         text: "The beauty of owning farmland is that you can start small. You don’t need to become a full-time farmer to enjoy the benefits of living closer to nature. Even if it’s just cultivating a garden or learning about organic farming, your weekend retreat can help you embrace eco-friendly living and grow your own food, which adds a layer of fulfillment that’s hard to find in the city.",
       },
-      { type: "h3", text: "6. A Space for Family and Friends to Gather" },
+      { type: "h2", text: "6. A Space for Family and Friends to Gather" },
       {
         type: "p",
         text: "A weekend retreat isn’t just about peace and solitude — it’s also about creating memories with your loved ones. A farmhouse near Bangalore provides the perfect setting for family and friends to gather and enjoy quality time together.",
@@ -622,7 +622,7 @@ export const BLOGS = [
         type: "p",
         text: "Whether it’s a weekend BBQ, a nature walk, or a simple picnic in the fields, a farmhouse on your farmland offers the space to host guests without the restrictions of city living. Imagine having your family over for a weekend of fun, away from the distractions of everyday life — everyone can enjoy the wide-open spaces and activities on the land.",
       },
-      { type: "h3", text: "7. The Rise of Farm Stays and Rural Tourism" },
+      { type: "h2", text: "7. The Rise of Farm Stays and Rural Tourism" },
       {
         type: "p",
         text: "If you’re not quite ready to buy land but still want to experience the charm of farmlands, farm stays near Bangalore are a growing trend. This form of agro-tourism allows you to spend weekends on a working farm, experiencing life as a farmer, learning about organic farming, or even participating in harvesting crops.",
@@ -667,7 +667,7 @@ export const BLOGS = [
         text: "Farmland is more than just a plot of land — it’s an investment that can work for you. Whether you’re an aspiring farmer or someone looking to diversify your income streams, generating passive income from farmland near Bangalore can be a rewarding opportunity. With the growing interest in sustainable farming, organic produce, and agro-tourism, there are plenty of ways to turn your land into a reliable source of income. Let’s dive into how you can make the most of farmland near Bangalore and create a passive income that works year-round.",
       },
 
-      { type: "h3", text: "1. Lease Your Farmland for Agricultural Use" },
+      { type: "h2", text: "1. Lease Your Farmland for Agricultural Use" },
       {
         type: "p",
         text: "One of the easiest ways to generate passive income from farmland near Bangalore is by leasing your land to farmers. Renting out your property allows you to earn a steady stream of income without actively working the land yourself.",
@@ -681,7 +681,7 @@ export const BLOGS = [
         text: "Leasing is a win-win situation: you get a reliable income while allowing someone else to make use of the land, and the farmer gets the opportunity to work on land without having to buy it.",
       },
 
-      { type: "h3", text: "2. Start a Farm-to-Table Business" },
+      { type: "h2", text: "2. Start a Farm-to-Table Business" },
       {
         type: "p",
         text: "The demand for organic, locally grown produce is on the rise, especially in urban areas like Bangalore. If your farmland is located near the city, you have a unique opportunity to tap into the growing market for fresh, farm-to-table produce.",
@@ -695,7 +695,7 @@ export const BLOGS = [
         text: "By focusing on organic farming or specialty crops, you can command higher prices for your produce and build a steady revenue stream. And if you don’t have the time or resources to manage it full-time, you can always lease the land to a farming business that will handle the day-to-day operations.",
       },
 
-      { type: "h3", text: "3. Create an Agro-Tourism Destination" },
+      { type: "h2", text: "3. Create an Agro-Tourism Destination" },
       {
         type: "p",
         text: "Another great way to generate passive income from farmland near Bangalore is by turning it into an agro-tourism destination. With the rise of eco-tourism and people seeking rural experiences, you can make your farmland a place for city dwellers to escape, learn about farming, and enjoy nature.",
@@ -721,7 +721,7 @@ export const BLOGS = [
         text: "Agro-tourism allows you to turn your land into a profitable venture while offering people a unique way to experience farm life. Plus, it aligns with the growing demand for sustainable and immersive travel experiences.",
       },
 
-      { type: "h3", text: "4. Grow Specialty Crops for High-Value Markets" },
+      { type: "h2", text: "4. Grow Specialty Crops for High-Value Markets" },
       {
         type: "p",
         text: "If you’re looking to make the most of your land and generate a steady income with relatively low effort, growing specialty crops could be the answer. Crops like ginseng, saffron, organic herbs, or even flowers can be highly profitable and don’t require the same level of maintenance as traditional crops like rice or wheat.",
@@ -736,7 +736,7 @@ export const BLOGS = [
       },
 
       {
-        type: "h3",
+        type: "h2",
         text: "5. Install Solar Panels for Clean Energy Generation",
       },
       {
@@ -748,7 +748,7 @@ export const BLOGS = [
         text: "If your farmland has a good amount of open space and receives plenty of sunlight, you can generate electricity through solar panels and either use it for your own needs or sell it to the grid. Depending on the size of your land and installation, you could earn a steady income from the electricity produced. This is a completely passive income stream — once the system is installed, there’s little to no maintenance, and you can enjoy regular payouts for the power you generate.",
       },
 
-      { type: "h3", text: "6. Lease Land for Recreational Purposes" },
+      { type: "h2", text: "6. Lease Land for Recreational Purposes" },
       {
         type: "p",
         text: "If your farmland is located in a scenic area near Bangalore, you might want to consider leasing it for recreational use. Farmlands in picturesque locations can be attractive to outdoor enthusiasts, weekend campers, or photographers looking for a beautiful natural setting.",
@@ -775,7 +775,7 @@ export const BLOGS = [
       },
 
       {
-        type: "h3",
+        type: "h2",
         text: "7. Rent Out Your Land for Infrastructure Development",
       },
       {
@@ -832,7 +832,7 @@ export const BLOGS = [
         text: "If you’re thinking about investing in farmland, or if you're already a landowner, it’s essential to keep an eye on the evolving trends. In this blog, we’ll explore the key trends that are likely to impact the farmland market in India over the next few years and how you can leverage these changes to make informed investment decisions.",
       },
       {
-        type: "h3",
+        type: "h2",
         text: "1. Growing Demand for Sustainable and Organic Farming",
       },
       {
@@ -848,7 +848,7 @@ export const BLOGS = [
         text: "If you’re considering investing in farmland, look for properties that offer good soil quality and favorable climates for organic farming. These lands are likely to see higher demand and potentially higher returns, as the market for organic products continues to expand.",
       },
       {
-        type: "h3",
+        type: "h2",
         text: "2. Farmland as a Long-Term Investment in a Growing Economy",
       },
       {
@@ -864,7 +864,7 @@ export const BLOGS = [
         text: "2026 will see more government initiatives to link rural areas to urban hubs through improved roads, highways, and even technology-driven farming initiatives. These infrastructure developments will further enhance the value of nearby farmlands.",
       },
       {
-        type: "h3",
+        type: "h2",
         text: "3. The Rise of Agri-Tech: Technology Meets Farming",
       },
       {
@@ -880,7 +880,7 @@ export const BLOGS = [
         text: "This trend also opens the door to precision farming — a more efficient and profitable way to manage crops using data and technology. As this becomes more widespread, it could significantly increase the returns on your farmland investment.",
       },
       {
-        type: "h3",
+        type: "h2",
         text: "4. The Growing Popularity of Agro-Tourism and Farm Stays",
       },
       {
@@ -895,7 +895,7 @@ export const BLOGS = [
         type: "p",
         text: "In the coming years, more farmland owners will tap into the agro-tourism market, offering activities like fruit-picking, organic farm tours, workshops on sustainable living, and even cooking classes using farm-fresh ingredients.",
       },
-      { type: "h3", text: "5. Government Initiatives and Support for Farmers" },
+      { type: "h2", text: "5. Government Initiatives and Support for Farmers" },
       {
         type: "p",
         text: "The Indian government is focusing on improving the agricultural sector, and this will create several opportunities for farmland investors. From subsidies for farmers to grants for sustainable farming practices, there are numerous policies in place to support those who invest in agriculture.",
@@ -909,7 +909,7 @@ export const BLOGS = [
         text: "Additionally, the government’s push for food security will ensure that demand for agricultural land continues to grow. Farmland owners who align with these initiatives and invest in technologies like drip irrigation or solar-powered systems will be positioned for success.",
       },
       {
-        type: "h3",
+        type: "h2",
         text: "6. Increased Interest in Farmland for Green Living and Self-Sufficiency",
       },
       {
