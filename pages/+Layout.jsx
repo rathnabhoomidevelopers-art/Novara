@@ -275,7 +275,7 @@ const getSchema = (urlPathname, blog = null) => {
           "@id": "https://novaranatureestates.com/#organization",
           name: "Novara Nature Estates",
           url: "https://www.novaranatureestates.com",
-          logo: "https://novaranatureestates.com/logo.png",
+          logo: "https://novaranatureestates.com/logo.svg",
           description:
             "Invest in premium managed farmlands near Bangalore at Novara Nature Estates. Clear titles, gated layout & professional farm management. Enquire now.",
           sameAs: [

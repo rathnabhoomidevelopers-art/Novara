@@ -4,12 +4,11 @@ import Header from "../../src/components/Header";
 import { motion } from "framer-motion";
 import ContactForm from "../../src/components/ContactForm";
 import Footer from "../../src/components/Footer";
-import { DownloadIcon } from "lucide-react";
 import { navigate } from "vike/client/router";
 import Chatbot from "../../src/components/Chatbot";
 import FloatingCT from "../components/FloatingCT";
 
-// ✅ process.env.REACT_APP_* → import.meta.env.VITE_*
+// process.env.REACT_APP_* → import.meta.env.VITE_*
 const API_BASE =
   import.meta.env.VITE_API_BASE_URL || "https://novara-backend-one.vercel.app";
 
@@ -311,13 +310,13 @@ export default function ContactUs() {
             <div className="relative bg-white flex flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[280px]">
               <img src="/images/mail.svg" className="h-[60px] w-[60px]" />
               <a
-                href="mailto:info@novaranatureestate.com"
+                href="mailto:info@novaranatureestates.com"
                 className="absolute top-2 right-2 lg:top-5 lg:right-5"
               >
                 <img src="/images/nav.svg" />
               </a>
               <a
-                href="mailto:info@novaranatureestate.com"
+                href="mailto:info@novaranatureestates.com"
                 className="text-[#1A614F] mt-3 p-2 hover:rounded-full hover:bg-gray-200 text-[12px] lg:text-[16px] no-underline font-semibold"
               >
                 info@novaranatureestates.com
