@@ -239,7 +239,7 @@ export default function HomePage() {
       >
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="/videos/hero.mp4"
+          src="/videos/hero_video.mp4"
           autoPlay
           loop
           muted

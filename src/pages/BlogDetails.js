@@ -372,7 +372,7 @@ export default function BlogDetail({ vikeSlug }) {
             </div>
 
             <h1 className="mt-3 text-[22px] sm:text-[28px] font-bold text-[#111827] leading-tight">
-              {blog.title}
+              {blog.headline}
             </h1>
 
             <div className="mt-5 rounded-2xl overflow-hidden border border-slate-100 bg-slate-100">

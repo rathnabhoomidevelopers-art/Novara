@@ -33,7 +33,7 @@ export default function Head() {
         address: {
           "@type": "PostalAddress",
           streetAddress:
-            "13th Cross Rd, F Block, CQAL Layout, Sahakar Nagar, Bengaluru, Karnataka 560092",
+            "13th Cross Rd, F Block, Sahakar Nagar, Byatarayanapura, Bengaluru, Karnataka 560092",
           addressLocality: "Bangalore",
           addressRegion: "Karnataka",
           postalCode: "560092",
@@ -41,8 +41,8 @@ export default function Head() {
         },
         geo: {
           "@type": "GeoCoordinates",
-          latitude: 13.0583, // 👈 replace with your exact latitude
-          longitude: 77.5942, // 👈 replace with your exact longitude
+          latitude: 13.062526806781209,
+          longitude:  77.58860358010297,
         },
         openingHoursSpecification: [
           {

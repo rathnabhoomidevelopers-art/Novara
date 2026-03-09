@@ -50,8 +50,8 @@ export default function Footer() {
             <div className="mt-3 space-y-2 text-white/85">
               <div>
                 <span>Location : </span>
-                <a target="_blank" href="https://maps.app.goo.gl/pgNQqUDdzVo8fciY7" className="text-white no-underline">
-                  13th Cross Rd, F Block, CQAL Layout, Sahakar Nagar, Bengaluru, Karnataka 560092
+                <a target="_blank" href="https://maps.app.goo.gl/cag4aTqXEW5BEZp87" className="text-white no-underline">
+                 13th Cross Rd, F Block, Sahakar Nagar, Byatarayanapura, Bengaluru, Karnataka 560092
                 </a>
               </div>
               <div>
@@ -113,8 +113,8 @@ export default function Footer() {
             <div className="mt-3 space-y-2 text-white/85">
               <div>
                 <span>Location : </span>
-                <a target="_blank" href="https://maps.app.goo.gl/pgNQqUDdzVo8fciY7" className="text-white no-underline">
-                  13th Cross Rd, F Block, CQAL Layout, Sahakar Nagar, Bengaluru, Karnataka 560092
+                <a target="_blank" href="https://maps.app.goo.gl/cag4aTqXEW5BEZp87" className="text-white no-underline">
+                 13th Cross Rd, F Block, Sahakar Nagar, Byatarayanapura, Bengaluru, Karnataka 560092
                 </a>
               </div>
               <div className="flex">

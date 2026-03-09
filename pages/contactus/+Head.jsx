@@ -18,7 +18,7 @@ export default function Head() {
     "email": "info@novaranatureestates.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "13th Cross Rd, F Block, CQAL Layout, Sahakar Nagar, Bengaluru, Karnataka 560092",
+      "streetAddress": "13th Cross Rd, F Block, Sahakar Nagar, Byatarayanapura, Bengaluru, Karnataka 560092",
       "addressLocality": "Bangalore",
       "addressRegion": "Karnataka",
       "postalCode": "560092",

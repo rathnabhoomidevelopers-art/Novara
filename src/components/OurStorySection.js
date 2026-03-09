@@ -65,7 +65,7 @@ export default function OurStorySection() {
                 initial={{ y: 10 }} whileInView={{ y: 0 }} viewport={{ once: true }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
               >
-                <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=80" alt="" className="h-full w-full object-cover" draggable="false" />
+                <img src="/images/3_11zon.webp" alt="farmland near bangalore" className="h-full w-full object-cover" draggable="false" />
               </motion.div>
 
               <motion.div
@@ -73,7 +73,7 @@ export default function OurStorySection() {
                 initial={{ y: 12 }} whileInView={{ y: 0 }} viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.05 }}
               >
-                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="" className="h-full w-full object-cover" draggable="false" />
+                <img src="/images/2_11zon.webp" alt="farmland near lepakshi" className="h-full w-full object-cover" draggable="false" />
               </motion.div>
 
               <motion.div
@@ -81,7 +81,7 @@ export default function OurStorySection() {
                 initial={{ y: 14 }} whileInView={{ y: 0 }} viewport={{ once: true }}
                 transition={{ duration: 0.85, ease: "easeOut", delay: 0.1 }}
               >
-                <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80" alt="" className="h-full w-full object-cover" draggable="false" />
+                <img src="/images/1_11zon.webp" alt="farmland investment" className="h-full w-full object-cover" draggable="false" />
               </motion.div>
             </div>
           </motion.div>

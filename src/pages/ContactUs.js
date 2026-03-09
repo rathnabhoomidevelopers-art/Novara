@@ -347,13 +347,13 @@ export default function ContactUs() {
               <img src="/images/address.svg" className="h-[60px] w-[60px]" />
               <a
                 target="_blank"
-                href="https://maps.app.goo.gl/FSNHwgUjtDSgPnxC6"
+                href="https://maps.app.goo.gl/cag4aTqXEW5BEZp87"
                 className="absolute top-5 right-5"
               >
                 <img src="/images/nav.svg" />
               </a>
               <a
-                href="https://maps.app.goo.gl/FSNHwgUjtDSgPnxC6"
+                href="https://maps.app.goo.gl/cag4aTqXEW5BEZp87"
                 target="_blank"
                 className="text-[#1A614F] mt-3 p-2 hover:rounded-full text-[12px] lg:text-[16px] no-underline font-semibold hover:bg-gray-200"
               >
