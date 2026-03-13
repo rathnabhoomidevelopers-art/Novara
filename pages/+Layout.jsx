@@ -475,5 +475,5 @@ export default function Layout({ children }) {
     injectSchemas(getSchema(urlPathname, blog));
   }, [urlPathname]);
 
-  return <>{children}</>;
+  return <main>{children}</main>;
 }
