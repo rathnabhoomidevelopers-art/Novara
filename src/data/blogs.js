@@ -950,7 +950,7 @@ export const BLOGS = [
     title: "Ecovara Farms Near Lepakshi — Complete Guide 2026",
     headline: "Ecovara Farms Near Lepakshi — Complete Guide 2026",
     description:
-      Discover Ecovara Farms near Lepakshi — Novara Nature Estates' premium managed farmland 75 mins from Bangalore. Clear titles, 800+ trees. Book a free farm visit.",
+      "Discover Ecovara Farms near Lepakshi — Novara Nature Estates' premium managed farmland 75 mins from Bangalore. Clear titles, 800+ trees. Book a free farm visit.",
     date: "2026",
     keywords: "Ecovara Farms Lepakshi",
     author: "Novara / Your Brand",
@@ -981,14 +981,7 @@ export const BLOGS = [
         type: "h2",
         text: "What is Ecovara Farms Near Lepakshi?",
       },
-      {
-        type: "p",
-        text: "If you’re considering investing in farmland, look for properties that offer good soil quality and favorable climates for organic farming. These lands are likely to see higher demand and potentially higher returns, as the market for organic products continues to expand.",
-      },
-      {
-        type: "h2",
-        text: "2. Farmland as a Long-Term Investment in a Growing Economy",
-      },
+     
       {
         type: "p",
         text: "Ecovara Farms is a premium managed farmland project developed by Novara Nature Estates, a Bengaluru-based farmland developer focused on clear-title, legally verified agricultural land investments near Bangalore.",
@@ -1235,7 +1228,7 @@ export const BLOGS = [
       },
    {
         type: "p",
-        text: "? No. Novara Nature Estates provides complete farm management services. You own the land — the team handles plantation maintenance, water, security, and operations.",
+        text: "No. Novara Nature Estates provides complete farm management services. You own the land — the team handles plantation maintenance, water, security, and operations.",
       },
    {
         type: "h3",
@@ -1277,8 +1270,6 @@ export const BLOGS = [
         type: "h3",
         text: "Interested in other farmland investment opportunities near Bangalore? Explore our Ecovara managed farmland project or read more about farmland investment near Bangalore.",
       },
-  
-
   
     ],
   },
