@@ -943,4 +943,334 @@ export const BLOGS = [
       },
     ],
   },
+  {
+    id: 7,
+    slug: "ecovara-farms-near-lepakshi-complete-guide",
+    category: "Investment",
+    title: "Ecovara Farms Near Lepakshi — Complete Guide 2026",
+    headline: "Ecovara Farms Near Lepakshi — Complete Guide 2026",
+    description:
+      "Discover Ecovara Farms near Lepakshi — Novara Nature Estates' premium managed farmland 75 mins from Bangalore. Clear titles, 800+ trees. Book a free farm visit.",
+    date: "2026",
+    keywords: "Ecovara Farms Lepakshi",
+    author: "Novara / Your Brand",
+    image: "/images/blog_7.webp",
+    heroImage: "/images/blog_7.webp",
+    coverImage: "/images/blog_7.webp",
+    tags: [
+      "Farmland Investment",
+      "Sustainable Farming",
+      "Agri-Tech",
+      "Agro-Tourism",
+    ],
+    sections: [
+      {
+        type: "p",
+        text: "Karthik had been driving down NH44 every other weekend for three years. Mysore trips, Hyderabad work travel, the occasional Nandi Hills escape. And every single time, somewhere around the 75-kilometre mark from Bangalore, he would slow down slightly and look out at the stretches of green farmland rolling past his window.",
+      },
+      {
+        type: "p",
+        text: '"Someone owns all of this," he told us when he finally called. "I just never thought that someone could be me.".',
+      },
+      
+      {
+        type: "p",
+        text: "Three weeks after that call, Karthik stood inside Ecovara Farms near Lepakshi Temple — 15 acres of managed farmland with 800 existing coconut and mango trees, a gated entrance, a clubhouse, and a view that made his Whitefield apartment feel very far away. He booked his plot the same afternoon.",
+      },
+      {
+        type: "h2",
+        text: "What is Ecovara Farms Near Lepakshi?",
+      },
+     
+      {
+        type: "p",
+        text: "Ecovara Farms is a premium managed farmland project developed by Novara Nature Estates, a Bengaluru-based farmland developer focused on clear-title, legally verified agricultural land investments near Bangalore.",
+      },
+      {
+        type: "p",
+        text: "The project sits in the North Bangalore corridor near Lepakshi Temple — one of the most historically significant and naturally scenic locations in the region. It spans 15 acres and has been thoughtfully developed for urban investors who want to own productive farmland without managing it themselves.",
+      },
+      {
+        type: "h3",
+        text: "The Vision Behind Ecovara",
+      },
+      {
+        type: "p",
+        text: "Most people who want to own farmland near Bangalore have the same problem — they love the idea but have no time, no farming knowledge, and no local contacts to manage the land. Ecovara was built specifically to solve that problem.",
+      },
+      {
+        type: "p",
+        text: "You own the land. Novara Nature Estates manages everything else — plantation maintenance, water supply, security, and farm operations. It is farmland ownership made genuinely simple.",
+      },
+      {
+        type: "h3",
+        text: "What Makes This Project Different",
+      },
+      {
+        type: "p",
+        text: "Three things set Ecovara apart from most farmland projects near Bangalore:",
+      },
+      {
+        type: "p",
+        text: "First, the existing plantation. When you buy a plot at Ecovara you are not buying bare land and waiting years for trees to grow. There are already 800+ coconut and mango trees on the property — mature, established, and productive.",
+      },
+      {
+        type: "p",
+        text: "Second, the location. Lepakshi is not a random location choice. It sits directly on NH44 — the Bangalore-Hyderabad National Highway — with exceptional connectivity, growing infrastructure investment, and strong land appreciation history.",
+      },
+      {
+        type: "p",
+        text: "Third, clear titles. Every plot at Ecovara comes with legally verified, clear title documentation. No disputes, no grey areas, no surprises after purchase.",
+      },
+      {
+        type: "h2",
+        text: "Location Advantages of Ecovara Farms Near Lepakshi",
+      },
+     
+      {
+        type: "h3",
+        text: "Distance from Bangalore — Exactly How Far",
+      },
+      {
+        type: "p",
+        text: "Ecovara Farms is located approximately 75 kilometres from Kempegowda International Airport, Devanahalli — roughly 75 to 90 minutes by road depending on traffic. From Electronic City or Whitefield, add another 20-30 minutes.",
+      },
+      {
+        type: "p",
+        text: "For most Bangalore residents this distance is the sweet spot — far enough to feel genuinely away from the city, close enough for a comfortable weekend drive without overnight commitment.",
+      },
+      {
+        type: "p",
+        text: "Hindupuram town is just 10 minutes from the farm, giving you easy access to daily necessities, hospitals, and local markets.",
+      },
+      {
+        type: "h3",
+        text: "NH44 Connectivity — Why It Matters",
+      },
+      {
+        type: "p",
+        text: "The Bangalore-Hyderabad National Highway is not just a road — it is one of the most actively developed infrastructure corridors in South India. The expressway expansion, ongoing logistics park development, and growing industrial zones along this corridor have been consistently driving land appreciation in the region for the past decade.",
+      },
+      {
+        type: "p",
+        text: "Buying farmland directly on or adjacent to NH44 means your asset sits on a corridor that governments and private developers are actively investing in. That infrastructure tailwind is built into every plot at Ecovara.",
+      },
+      {
+        type: "h3",
+        text: "Lepakshi Temple and Surrounding Landmarks",
+      },
+      {
+        type: "p",
+        text: "Lepakshi Temple is a UNESCO-recognised Vijayanagara architectural masterpiece that draws over 2 lakh visitors annually. The presence of a significant heritage landmark 10 minutes from Ecovara is not just a lifestyle advantage — it is an economic one. Tourism demand drives local land prices, hospitality investment, and regional development in ways that benefit landowners directly.",
+      },
+       {
+        type: "p",
+        text: "Other landmarks within easy reach include Gudibande Fort (30 minutes), Nandi Hills (60 minutes), Isha Foundation (50 minutes), and Penukonda Fort (30 minutes). On weekends Ecovara is not just your farm — it is your base for exploring one of Karnataka's richest heritage corridors.",
+      },
+         {
+        type: "h2",
+        text: "What You Get — Ecovara Farms Features and Amenities",
+      },
+     {
+        type: "h3",
+        text: "Land and Plantation Details",
+      },
+       {
+        type: "ul",
+        text: ["Total project size: 15 acres","Existing trees: 800+ coconut and mango trees" , "Open space: 80% of the project is green and open","Plot sizes: Available in multiple configurations",],
+      },
+       {
+        type: "p",
+        text: "The existing plantation is one of Ecovara's strongest selling points. Unlike projects that hand you bare land, Ecovara gives you an already-green farm. The trees are established, the canopy is visible, and the farm feels alive from day one.",
+      },
+   {
+        type: "h3",
+        text: "Infrastructure and Amenities",
+      },
+         {
+        type: "p",
+        text: "Ecovara Farms includes:",
+      },
+  
+       {
+        type: "ul",
+        text: ["Clubhouse — a dedicated social and leisure space for plot owners","Swimming pool — resort-style facility within the farm community" , "Kids play area — designed for families who visit on weekends","Organic farming plots — dedicated space to grow your own produce","Well-planned internal roads — paved access throughout the property","24/7 security — gated entry with round-the-clock monitoring","Reliable water supply — managed irrigation for the plantation",],
+      },
+          {
+        type: "h3",
+        text: "Farm Management Services",
+      },
+         {
+        type: "p",
+        text: "This is where Ecovara genuinely stands out. Novara Nature Estates provides complete farm management — plantation care, maintenance schedules, water management, and regular property updates. You do not need to visit every week to keep your investment healthy. The team handles it so your farm grows in value whether you are at your Bangalore desk or on a flight to Singapore.",
+      },
+         {
+        type: "h2",
+        text: "Why Investing in Ecovara Farms Near Lepakshi Makes Sense in 2026",
+      },
+         {
+        type: "h3",
+        text: "Land Appreciation in the North Bangalore Corridor",
+      },
+         {
+        type: "p",
+        text: "Agricultural land along the NH44 corridor between Bangalore and Hindupuram has seen consistent appreciation over the past five years driven by infrastructure investment, airport proximity, and growing investor demand from Bangalore's IT workforce.",
+      },
+         {
+        type: "p",
+        text: "Early buyers in this corridor have seen land values grow significantly — and with the Bangalore metropolitan expansion continuing northward, this trend shows no sign of reversing.",
+      },
+
+       {
+        type: "h3",
+        text: "Passive Income Potential",
+      },
+         {
+        type: "p",
+        text: "Agricultural land in India enjoys significant tax advantages. Income from farming activities on agricultural land is exempt from income tax under the Indian Income Tax Act. For high-earning IT professionals in Bangalore this tax efficiency alone makes farmland a compelling asset class.",
+      },
+       {
+        type: "p",
+        text: "Beyond tax benefits the existing plantation at Ecovara generates ongoing produce — coconuts, mangoes, and seasonal crops — creating a passive income stream from the land itself.",
+      },
+         {
+        type: "h3",
+        text: "Tax Benefits of Agricultural Land",
+      },
+       {
+        type: "p",
+        text: "Agricultural income in India is not subject to income tax. Capital gains on sale of agricultural land in rural areas are also exempt under specific conditions. For a Bangalore professional in the 30% tax bracket these benefits represent genuine financial value beyond land appreciation alone. Always consult your CA for specific advice on your situation.",
+      },
+       {
+        type: "h2",
+        text: "What Buyers Are Saying About Ecovara Farms",
+      },
+       {
+        type: "h3",
+        text: "Real Client Experiences",
+      },
+         {
+        type: "p",
+        text: 'Sridhar, who works in the IT sector in Bangalore, visited Ecovara after a conversation with a friend about weekend investment options. He told us: "What started as a casual discussion turned into a confident decision after visiting the farm. The team was transparent and the location was everything they said it would be."',
+      },
+       {
+        type: "p",
+        text: 'Anitha, another plot owner, was convinced after seeing the existing coconut and mango plantation in person. "The quality of development and the way the farm is maintained convinced me. Visiting the site gave me complete clarity."',
+      },
+   {
+        type: "p",
+        text: 'Rahul visited with four other families in January. "The model house, the open space, the farm activities — it was a genuinely memorable experience. The food was prepared according to our preferences. It felt like a resort and a farm at the same time."',
+      },
+
+   {
+        type: "h3",
+        text: "What They Checked Before Buying",
+      },
+   {
+        type: "p",
+        text: "Every serious buyer at Ecovara asked three things: Is the title clear? Is the location genuine? And is the management team trustworthy? The answer to all three, as our buyers consistently confirm, is yes.",
+      },
+   {
+        type: "h2",
+        text: "How to Book Your Plot at Ecovara Farms",
+      },
+   {
+        type: "h3",
+        text: "Step by Step Process",
+      },
+       {
+        type: "ol",
+        text: ["Schedule a free farm visit through the Novara website","Visit Ecovara Farms with your family — see the land in person","Review plot options, sizes, and pricing with the team","Complete legal and documentation verification","Register your plot and become an Ecovara landowner",],
+      },
+       {
+        type: "h3",
+        text: "Documents Required",
+      },
+       {
+        type: "p",
+        text: "Standard KYC documents — Aadhaar, PAN, address proof. The Novara team handles all land documentation, title verification, and registration support.",
+      },
+     {
+        type: "h3",
+        text: "Schedule a Farm Visit",
+      },
+   {
+        type: "p",
+        text: "The best way to understand Ecovara is to walk it. No photograph, no video, and no blog post does justice to 15 acres of green farmland with coconut trees, open sky, and Lepakshi Temple visible on the horizon.",
+      },
+       {
+        type: "h3",
+        text: "Book your free farm visit at Ecovara here →",
+      },
+         {
+        type: "h2",
+        text: "Frequently Asked Questions About Ecovara Farms Near Lepakshi",
+      },
+     {
+        type: "h3",
+        text: "Q1. How far is Ecovara Farms from Bangalore?",
+      },
+     {
+        type: "p",
+        text: " Ecovara Farms is approximately 75 kilometres from Kempegowda International Airport, Devanahalli — roughly 75 to 90 minutes by road on NH44.",
+      },
+   {
+        type: "h3",
+        text: "Q2. Is the farmland title clear at Ecovara?",
+      },
+   {
+        type: "p",
+        text: " Yes. Every plot at Ecovara Farms comes with legally verified, clear title documentation. Novara Nature Estates handles complete title due diligence before sale.",
+      },
+   {
+        type: "h3",
+        text: "Q3. Do I need farming experience to own a plot at Ecovara?",
+      },
+   {
+        type: "p",
+        text: "No. Novara Nature Estates provides complete farm management services. You own the land — the team handles plantation maintenance, water, security, and operations.",
+      },
+   {
+        type: "h3",
+        text: "Q4. What amenities are available at Ecovara Farms?",
+      },
+   {
+        type: "p",
+        text: "Ecovara includes a clubhouse, swimming pool, kids play area, organic farming plots, 24/7 security, reliable water supply, and well-maintained internal roads.",
+      },
+   {
+        type: "h3",
+        text: "Q5. Can I visit Ecovara Farms before buying?",
+      },
+   {
+        type: "p",
+        text: " Absolutely — and we strongly encourage it. Farm visits are free and can be scheduled through the contact page. Most buyers make their decision after visiting in person.",
+      },
+   {
+        type: "h2",
+        text: "Conclusion",
+      },
+   {
+        type: "p",
+        text: "Ecovara Farms near Lepakshi is not just a farmland project. It is a carefully managed, legally sound, strategically located land investment that gives Bangalore investors everything they have been looking for — without the complexity of doing it alone.",
+      },
+   {
+        type: "p",
+        text: "The land is real. The trees are already growing. The team is already managing it. The only question left is whether you want to be part of it.",
+      },
+   {
+        type: "p",
+        text: "Come see it for yourself.",
+      },
+      {
+        type: "h3",
+        text: "Schedule your free farm visit today →",
+      },
+   {
+        type: "h3",
+        text: "Interested in other farmland investment opportunities near Bangalore? Explore our Ecovara managed farmland project or read more about farmland investment near Bangalore.",
+      },
+  
+    ],
+  },
 ];
