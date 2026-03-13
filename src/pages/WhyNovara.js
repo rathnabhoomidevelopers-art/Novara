@@ -361,7 +361,7 @@ export default function WhyNovara() {
           <div className="flex flex-col lg:flex-row gap-[30px] lg:gap-[60px] pt-[20px] pb-[20px] lg:pt-[75px] shadow-[0_-6px_18px_-4px_rgba(0,0,0,0.12),0_12px_28px_-6px_rgba(0,0,0,0.08)] rounded-3xl lg:pb-10 px-[25px] lg:px-[55px]">
             <div className="lg:w-[379px] font-urbanist">
               <div className="flex items-center gap-[8px] lg:gap-[16px]">
-                <img src="/images/vision.svg" className="h-[40px] w-[40px] lg:h-[48px] lg:w-[48px]" />
+                <img src="/images/vision.svg" alt="" className="h-[40px] w-[40px] lg:h-[48px] lg:w-[48px]" />
                 <span className="text-[20px] lg:text-[24px] font-bold text-[#1A614F]">Vision</span>
               </div>
               <div className="text-[14px] lg:mt-[8px] lg:text-[18px]">
@@ -373,7 +373,7 @@ export default function WhyNovara() {
             <span className="w-[1px] hidden lg:block bg-[#DDFF7E]"></span>
             <div className="lg:w-[379px] font-urbanist">
               <div className="flex items-center gap-[8px] lg:gap-[16px]">
-                <img src="/images/mission.svg" className="h-[40px] w-[40px] lg:h-[48px] lg:w-[48px]" />
+                <img src="/images/mission.svg" alt="" className="h-[40px] w-[40px] lg:h-[48px] lg:w-[48px]" />
                 <span className="text-[20px] lg:text-[24px] font-bold text-[#1A614F]">Mission</span>
               </div>
               <div className="text-[14px] lg:mt-[8px] lg:text-[18px]">

@@ -69,7 +69,7 @@ export default function FarmlandSmartChoiceSection({
             <div className="flex flex-col lg:flex-row mt-3 gap-[16px]">
               <div className="bg-white mx-auto font-urbanist max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px] lg:h-[236px] p-[20px] lg:p-[40px]">
                 <div className="flex align-items-center">
-                  <img src="/images/long_term.svg" />
+                  <img src="/images/long_term.svg" alt=""/>
                   <div className="ps-3 text-[18px] lg:text-[20px] text-[#1A614F] font-semibold">
                     Long-Term Growth
                   </div>
@@ -81,7 +81,7 @@ export default function FarmlandSmartChoiceSection({
               </div>
               <div className="bg-white mx-auto font-urbanist max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px] lg:h-[236px] p-[20px] lg:p-[40px]">
                 <div className="flex align-items-center">
-                  <img src="/images/prime_location.svg" />
+                  <img src="/images/prime_location.svg" alt=""/>
                   <div className="ps-3 text-[18px] lg:text-[20px] text-[#1A614F] font-semibold">
                     Prime Locations
                   </div>
@@ -95,7 +95,7 @@ export default function FarmlandSmartChoiceSection({
             <div className="flex flex-col lg:flex-row gap-[16px] mt-4">
               <div className="bg-white mx-auto font-urbanist max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px] lg:h-[236px] p-[20px] lg:p-[32px]">
                 <div className="flex align-items-center">
-                  <img src="/images/eco_freindly.svg" />
+                  <img src="/images/eco_freindly.svg" alt=""/>
                   <div className="ps-3 text-[18px] lg:text-[18px] text-[#1A614F] font-semibold">
                     Eco-Friendly Investment
                   </div>
@@ -107,7 +107,7 @@ export default function FarmlandSmartChoiceSection({
               </div>
               <div className="bg-white mx-auto font-urbanist max-w-[340px] lg:w-[358px] rounded rounded-3 h-[175px] lg:h-[236px] p-[20px] lg:p-[40px]">
                 <div className="flex align-items-center">
-                  <img src="/images/dual_benefits.svg" />
+                  <img src="/images/dual_benefits.svg" alt=""/>
                   <div className="ps-3 text-[18px] lg:text-[20px] text-[#1A614F] font-semibold">
                     Tax Free Income
                   </div>

@@ -308,12 +308,12 @@ export default function ContactUs() {
         <div className="flex flex-col gap-2 justify-center lg:flex-row">
           <div className="flex gap-2 flex-row">
             <div className="relative bg-white flex flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[280px]">
-              <img src="/images/mail.svg" className="h-[60px] w-[60px]" />
+              <img src="/images/mail.svg" alt="" className="h-[60px] w-[60px]" />
               <a
                 href="mailto:info@novaranatureestates.com"
                 className="absolute top-2 right-2 lg:top-5 lg:right-5"
               >
-                <img src="/images/nav.svg" />
+                <img src="/images/nav.svg" alt=""/>
               </a>
               <a
                 href="mailto:info@novaranatureestates.com"
@@ -324,13 +324,13 @@ export default function ContactUs() {
             </div>
 
             <div className="relative bg-white flex flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[340px]">
-              <img src="/images/call.svg" className="h-[60px] w-[60px]" />
+              <img src="/images/call.svg" alt="" className="h-[60px] w-[60px]" />
               <a
                 target="_blank"
                 href="tel:+918660200662"
                 className="absolute top-2 right-2 lg:top-5 lg:right-5"
               >
-                <img src="/images/nav.svg" />
+                <img src="/images/nav.svg" alt=""/>
               </a>
               <a
                 href="tel:+918660200662"
@@ -344,13 +344,13 @@ export default function ContactUs() {
 
           <div className="flex gap-2 flex-row">
             <div className="relative bg-white flex flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[340px]">
-              <img src="/images/address.svg" className="h-[60px] w-[60px]" />
+              <img src="/images/address.svg" alt="" className="h-[60px] w-[60px]" />
               <a
                 target="_blank"
                 href="https://maps.app.goo.gl/cag4aTqXEW5BEZp87"
                 className="absolute top-5 right-5"
               >
-                <img src="/images/nav.svg" />
+                <img src="/images/nav.svg" alt=""/>
               </a>
               <a
                 href="https://maps.app.goo.gl/cag4aTqXEW5BEZp87"
@@ -362,9 +362,9 @@ export default function ContactUs() {
             </div>
 
             <div className="relative bg-white flex flex-wrap lg:flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[340px]">
-              <img src="/images/meta.svg" className="h-[60px] w-[60px]" />
+              <img src="/images/meta.svg" alt="" className="h-[60px] w-[60px]" />
               <a href="" className="absolute top-5 right-5">
-                <img src="/images/nav.svg" />
+                <img src="/images/nav.svg" alt=""/>
               </a>
               <span className="flex gap-2 lg:gap-3">
                 <a
@@ -373,7 +373,7 @@ export default function ContactUs() {
                   className="text-[#1A614F] mt-3 p-1 hover:rounded-full hover:bg-gray-200 no-underline font-semibold"
                 >
                   <img
-                    src="/images/insta.svg"
+                    src="/images/insta.svg" alt="Novara Nature Estates Instagram"
                     className="block lg:hidden w-5 h-5"
                   />
                   <span className="hidden lg:block text-[16px]">Instagram</span>
@@ -384,7 +384,7 @@ export default function ContactUs() {
                   className="text-[#1A614F] mt-3 p-1 hover:rounded-full hover:bg-gray-200 no-underline font-semibold"
                 >
                   <img
-                    src="/images/yt.svg"
+                    src="/images/yt.svg" alt="Novara Nature Estates YouTube"
                     className="block lg:hidden w-5 h-5"
                   />
                   <span className="hidden lg:block text-[16px]">YouTube</span>
@@ -395,7 +395,7 @@ export default function ContactUs() {
                   className="text-[#1A614F] mt-3 p-1 hover:rounded-full hover:bg-gray-200 no-underline font-semibold"
                 >
                   <img
-                    src="/images/fb.svg"
+                    src="/images/fb.svg" alt="Novara Nature Estates Facebook"
                     className="block lg:hidden w-5 h-5"
                   />
                   <span className="hidden lg:block text-[16px]">Facebook</span>
@@ -406,7 +406,7 @@ export default function ContactUs() {
                   className="text-[#1A614F] mt-3 p-1 hover:rounded-full hover:bg-gray-200 no-underline font-semibold"
                 >
                   <img
-                    src="/images/linkedin1.svg"
+                    src="/images/linkedin1.svg" alt="Novara Nature Estates LinkedIn"
                     className="block lg:hidden w-5 h-5"
                   />
                   <span className="hidden lg:block text-[16px]">Linked In</span>

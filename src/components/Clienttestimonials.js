@@ -147,11 +147,11 @@ export function ClientTestimonials() {
             aria-label="Previous"
           >
             <img
-              src="/images/clientprev.svg"
+              src="/images/clientprev.svg" alt=""
               className="block group-hover:hidden"
             />
             <img
-              src="/images/clientprevhover.svg"
+              src="/images/clientprevhover.svg" alt=""
               className="hidden group-hover:block"
             />
           </button>
@@ -161,11 +161,11 @@ export function ClientTestimonials() {
             aria-label="Next"
           >
             <img
-              src="/images/clientnext.svg"
+              src="/images/clientnext.svg" alt=""
               className="block group-hover:hidden"
             />
             <img
-              src="/images/clientnexthover.svg"
+              src="/images/clientnexthover.svg" alt=""
               className="hidden group-hover:block"
             />
           </button>

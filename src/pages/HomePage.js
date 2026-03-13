@@ -334,7 +334,7 @@ export default function HomePage() {
           {amenitiesCards.map((card) => (
             <div key={card.id} className="bg-white font-urbanist mx-auto w-full max-w-[340px] lg:max-w-[380px] rounded rounded-3 lg:h-[236px] p-[20px] lg:p-[40px]">
               <div className="flex align-items-center">
-                <div><img src={card.imgSrc} /></div>
+                <div><img src={card.imgSrc} alt=""/></div>
                 <div className="ps-3 lg:text-[20px] text-[#1A614F] font-semibold">{card.title}</div>
               </div>
               <div className="mt-[18px] lg:w-[320px] text-[14px] lg:text-[16px]">{card.description}</div>
@@ -346,7 +346,7 @@ export default function HomePage() {
           {amenitiesCard.map((card) => (
             <div key={card.id} className="bg-white font-urbanist mx-auto w-full max-w-[340px] lg:max-w-[380px] rounded rounded-3 lg:h-[236px] p-[20px] lg:p-[40px]">
               <div className="flex align-items-center">
-                <div><img src={card.imgSrc} /></div>
+                <div><img src={card.imgSrc} alt=""/></div>
                 <div className="ps-3 lg:text-[20px] text-[#1A614F] font-semibold">{card.title}</div>
               </div>
               <div className="mt-[18px] text-[14px] lg:text-[16px]">{card.description}</div>

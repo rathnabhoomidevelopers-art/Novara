@@ -322,7 +322,7 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* ── Image Carousel (infinite loop) ──────────────────────────────── */}
+        {/* Image Carousel (infinite loop)  */}
         <div className="relative mx-auto w-[358px] mt-[36px] lg:w-[1300px] lg:mt-[36px] overflow-visible">
           <div className="relative overflow-hidden">
             <motion.div
