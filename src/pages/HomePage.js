@@ -245,7 +245,6 @@ export default function HomePage() {
           muted
           playsInline
           preload="auto"
-          poster="/images/homepage.webp"
         />
         <div className="absolute inset-0 bg-black/35"></div>
 
