@@ -279,9 +279,9 @@ export default function Blogs() {
                     {blog.category}
                   </span>
                   <div className="mt-3 flex items-start justify-between gap-4">
-                    <h3 className="text-[16px] lg:text-[20px] font-semibold leading-snug text-[#0F172A]">
+                    <h2 className="text-[16px] lg:text-[20px] font-semibold leading-snug text-[#0F172A]">
                       {blog.title}
-                    </h3>
+                    </h2>
                     {/* ✅ Plain <a> replaces <Link> */}
                     <a
                       href={`/blogs/${blog.slug}`}

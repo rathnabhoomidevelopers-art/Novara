@@ -426,9 +426,9 @@ export default function ContactUs() {
           backgroundPosition: "center",
         }}
       >
-        <div className="text-[#FFD972] px-[18px] pt-[10px] text-[28px] lg:text-[50px] font-brushelva">
+        <h2 className="text-[#FFD972] px-[18px] pt-[10px] text-[28px] lg:text-[50px] font-brushelva">
           Let's Connect
-        </div>
+        </h2>
         <p className="text-white px-[18px] pt-[10px] text-[14px] lg:text-[16px] mt-3 lg:w-[1030px] font-urbanist">
           We're excited to connect with you and learn more about your real
           estate goals. Use the form below to get in touch with Novara Nature

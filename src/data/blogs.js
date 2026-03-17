@@ -27,11 +27,13 @@ export const BLOGS = [
         text: "Farmlands near Bangalore are a treasure trove of opportunities. Whether you're a new landowner, an aspiring farmer, or an experienced investor, the region offers fertile soil, a great climate, and the right resources to grow a variety of crops. As we move towards a future focused on sustainability, efficiency, and innovation, the farming techniques available are evolving. Whether you're into traditional farming methods or excited by the potential of cutting-edge technology, there's something for everyone.",
       },
       {
-        "type": "p_with_link",
-        "textBefore": "In this blog, we'll take a deep dive into some of the most effective and popular farming techniques that are perfect for ",
-        "linkText": "farmlands near Bangalore",
-        "href": "https://www.novaranatureestates.com",
-        "textAfter": "— from organic practices that respect the land to high-tech solutions that maximize yield. Let’s explore the best ways to grow and thrive on your farmland."
+        type: "p_with_link",
+        textBefore:
+          "In this blog, we'll take a deep dive into some of the most effective and popular farming techniques that are perfect for ",
+        linkText: "farmlands near Bangalore",
+        href: "https://www.novaranatureestates.com",
+        textAfter:
+          "— from organic practices that respect the land to high-tech solutions that maximize yield. Let’s explore the best ways to grow and thrive on your farmland.",
       },
       {
         type: "p",
@@ -146,11 +148,12 @@ export const BLOGS = [
 
       { type: "h2", text: "4. Agroforestry: Combining Trees with Crops" },
       {
-        "type": "p_with_link",
-        "textBefore": "Agroforestry is a ",
-        "linkText": "sustainable farming",
-        "href": "https://www.novaranatureestates.com/whynovara",
-        "textAfter": " technique that integrates trees with traditional crop production. By planting trees alongside crops, you create a more diverse farming ecosystem that benefits the land and the crops. This technique is gaining popularity near Bangalore, where farmers are looking to improve the biodiversity of their farms while still generating income from crops."
+        type: "p_with_link",
+        textBefore: "Agroforestry is a ",
+        linkText: "sustainable farming",
+        href: "https://www.novaranatureestates.com/whynovara",
+        textAfter:
+          " technique that integrates trees with traditional crop production. By planting trees alongside crops, you create a more diverse farming ecosystem that benefits the land and the crops. This technique is gaining popularity near Bangalore, where farmers are looking to improve the biodiversity of their farms while still generating income from crops.",
       },
       {
         type: "p",
@@ -302,11 +305,12 @@ export const BLOGS = [
         text: "4. Farmland’s Tax Benefits and Government Incentives",
       },
       {
-        "type": "p_with_link",
-        "textBefore": "When you ",
-        "linkText": "invest in farmland",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": " you can take advantage of several tax incentives that make it an even smarter investment. In many countries, farmers receive tax breaks for implementing sustainable farming practices or maintaining certain types of land. Additionally, there are often tax deductions for landowners who engage in farming or forestry activities, such as equipment purchases or property maintenance costs."
+        type: "p_with_link",
+        textBefore: "When you ",
+        linkText: "invest in farmland",
+        href: "https://www.novaranatureestates.com/projects",
+        textAfter:
+          " you can take advantage of several tax incentives that make it an even smarter investment. In many countries, farmers receive tax breaks for implementing sustainable farming practices or maintaining certain types of land. Additionally, there are often tax deductions for landowners who engage in farming or forestry activities, such as equipment purchases or property maintenance costs.",
       },
 
       {
@@ -334,11 +338,13 @@ export const BLOGS = [
         text: "Owning farmland as an investment offers a wealth of benefits that go beyond just financial returns. From generating reliable income and increasing in value over time to providing tax incentives and creating a lasting legacy, farmland is a smart choice for any investor looking to diversify their portfolio and secure their financial future.",
       },
       {
-        "type": "p_with_link",
-        "textBefore": "If you’re considering adding farmland to your investment portfolio, Ecovara’s ",
-        "linkText": "sustainable farming",
-        "href": "https://www.novaranatureestates.com/whynovara",
-        "textAfter": " community near Lepakshi offers a unique opportunity to reap the benefits of owning land while living a sustainable, eco-friendly lifestyle. So why not take the leap into farmland investment? It’s more than just land — it’s a chance to grow your wealth, your lifestyle, and your legacy."
+        type: "p_with_link",
+        textBefore:
+          "If you’re considering adding farmland to your investment portfolio, Ecovara’s ",
+        linkText: "sustainable farming",
+        href: "https://www.novaranatureestates.com/whynovara",
+        textAfter:
+          " community near Lepakshi offers a unique opportunity to reap the benefits of owning land while living a sustainable, eco-friendly lifestyle. So why not take the leap into farmland investment? It’s more than just land — it’s a chance to grow your wealth, your lifestyle, and your legacy.",
       },
     ],
   },
@@ -348,7 +354,8 @@ export const BLOGS = [
     slug: "how-to-invest-in-farmland-india",
     category: "Investment",
     title: "How to Invest in Farmland in India | Bangalore Guide",
-    headline: "How to Invest in Farmland in India: A Step-by-Step Guide for Beginners",
+    headline:
+      "How to Invest in Farmland in India: A Step-by-Step Guide for Beginners",
     description:
       "Step-by-step guide to investing in farmland in India. Learn legal checks, financing, location tips & how to buy farmland near Bangalore safely.",
     date: "2026",
@@ -369,11 +376,12 @@ export const BLOGS = [
         text: "When you think about investment, you might imagine stocks, real estate, or mutual funds. But have you ever considered investing in farmland? It’s a smart, stable, and long-term way to grow your wealth — and it’s especially appealing if you’re looking for something tangible and meaningful. Whether you’re drawn to the idea of cultivating crops, enjoying the peace of rural life, or diversifying your investment portfolio, owning farmland in India offers a unique set of benefits.",
       },
       {
-        "type": "p_with_link",
-        "textBefore": "If you’re new to ",
-        "linkText": "farmland investment,",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": " don’t worry! We’ve broken it down into simple steps to guide you through the process. By the end of this post, you’ll have a clear understanding of how to get started, what to consider, and why investing in farmland could be one of the best decisions you ever make."
+        type: "p_with_link",
+        textBefore: "If you’re new to ",
+        linkText: "farmland investment,",
+        href: "https://www.novaranatureestates.com/projects",
+        textAfter:
+          " don’t worry! We’ve broken it down into simple steps to guide you through the process. By the end of this post, you’ll have a clear understanding of how to get started, what to consider, and why investing in farmland could be one of the best decisions you ever make.",
       },
 
       { type: "h2", text: "1. Understand the Benefits of Farmland Investment" },
@@ -398,11 +406,12 @@ export const BLOGS = [
       },
       { type: "h3", text: "Sustainability:" },
       {
-        "type": "p_with_link",
-        "textBefore": "Farmland investments, especially those focused on organic farming or ",
-        "linkText": "sustainable agriculture,",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": " are increasingly popular with eco-conscious investors."
+        type: "p_with_link",
+        textBefore:
+          "Farmland investments, especially those focused on organic farming or ",
+        linkText: "sustainable agriculture,",
+        href: "https://www.novaranatureestates.com/projects",
+        textAfter: " are increasingly popular with eco-conscious investors.",
       },
 
       { type: "h2", text: "2. Research the Land Market in India" },
@@ -569,7 +578,8 @@ export const BLOGS = [
     slug: "farmlands-near-bangalore-weekend-retreat",
     category: "Lifestyle & Investment",
     title: "Farmlands Near Bangalore: Perfect Weekend Retreat",
-    headline:"How Farmlands Near Bangalore Are Becoming the Ideal Weekend Retreat",
+    headline:
+      "How Farmlands Near Bangalore Are Becoming the Ideal Weekend Retreat",
     description:
       "Discover why farmlands near Bangalore are becoming the ideal weekend retreat. Peace, nature, farmhouse living & smart investment benefits.",
     date: "2026",
@@ -586,11 +596,12 @@ export const BLOGS = [
     ],
     sections: [
       {
-        "type": "p_with_link",
-        "textBefore": "Life in Bangalore can get fast-paced. With the traffic, deadlines, and constant hustle, it’s no wonder more and more people are looking for a place to unwind and reconnect with nature. Imagine this: after a busy week in the city, you drive just a couple of hours to a peaceful, serene retreat surrounded by greenery, fresh air, and open spaces. No, it's not a dream — it's becoming a reality with ",
-        "linkText": "farmlands near Bangalore.",
-        "href": "https://www.novaranatureestates.com",
-        "textAfter": ""
+        type: "p_with_link",
+        textBefore:
+          "Life in Bangalore can get fast-paced. With the traffic, deadlines, and constant hustle, it’s no wonder more and more people are looking for a place to unwind and reconnect with nature. Imagine this: after a busy week in the city, you drive just a couple of hours to a peaceful, serene retreat surrounded by greenery, fresh air, and open spaces. No, it's not a dream — it's becoming a reality with ",
+        linkText: "farmlands near Bangalore.",
+        href: "https://www.novaranatureestates.com",
+        textAfter: "",
       },
       {
         type: "p",
@@ -621,12 +632,13 @@ export const BLOGS = [
         type: "h2",
         text: "3. The Possibility of Building Your Dream Farmhouse",
       },
-       {
-        "type": "p_with_link",
-        "textBefore": "One of the biggest attractions of ",
-        "linkText": "farmlands near Bangalore.",
-        "href": "https://www.novaranatureestates.com",
-        "textAfter": " is the opportunity to design your very own farmhouse. Many city dwellers dream of owning a house surrounded by greenery, where they can spend their weekends gardening, hosting family get-togethers, or simply relaxing."
+      {
+        type: "p_with_link",
+        textBefore: "One of the biggest attractions of ",
+        linkText: "farmlands near Bangalore.",
+        href: "https://www.novaranatureestates.com",
+        textAfter:
+          " is the opportunity to design your very own farmhouse. Many city dwellers dream of owning a house surrounded by greenery, where they can spend their weekends gardening, hosting family get-togethers, or simply relaxing.",
       },
       {
         type: "p",
@@ -685,7 +697,7 @@ export const BLOGS = [
     slug: "passive-income-from-farmland-near-bangalore",
     category: "Investment",
     title: "Passive Income from Farmland Near Bangalore",
-    headline:"How to Generate Passive Income from Farmland Near Bangalore",
+    headline: "How to Generate Passive Income from Farmland Near Bangalore",
     description:
       "Learn how to generate passive income from farmland near Bangalore through leasing, agro-tourism, specialty crops & smart land investments.",
     date: "2026",
@@ -702,11 +714,13 @@ export const BLOGS = [
     ],
     sections: [
       {
-        "type": "p_with_link",
-        "textBefore": "Farmland is more than just a plot of land — it’s an investment that can work for you. Whether you’re an aspiring farmer or someone looking to diversify your income streams, generating passive income from ",
-        "linkText": "farmland near Bangalore",
-        "href": "https://www.novaranatureestates.com",
-        "textAfter": " can be a rewarding opportunity. With the growing interest in sustainable farming, organic produce, and agro-tourism, there are plenty of ways to turn your land into a reliable source of income. Let’s dive into how you can make the most of farmland near Bangalore and create a passive income that works year-round."
+        type: "p_with_link",
+        textBefore:
+          "Farmland is more than just a plot of land — it’s an investment that can work for you. Whether you’re an aspiring farmer or someone looking to diversify your income streams, generating passive income from ",
+        linkText: "farmland near Bangalore",
+        href: "https://www.novaranatureestates.com",
+        textAfter:
+          " can be a rewarding opportunity. With the growing interest in sustainable farming, organic produce, and agro-tourism, there are plenty of ways to turn your land into a reliable source of income. Let’s dive into how you can make the most of farmland near Bangalore and create a passive income that works year-round.",
       },
 
       { type: "h2", text: "1. Lease Your Farmland for Agricultural Use" },
@@ -850,7 +864,8 @@ export const BLOGS = [
     slug: "future-of-farmland-investment-india-2026",
     category: "Investment",
     title: "Farmland Investment Trends 2026 | India & Bangalore",
-    headline: "The Future of Farmland Investment in India: Trends to Watch in 2026",
+    headline:
+      "The Future of Farmland Investment in India: Trends to Watch in 2026",
     description:
       "Explore farmland investment trends for 2026 in India. Learn about sustainability, agri-tech, agro-tourism & opportunities near Bangalore.",
     date: "2026",
@@ -879,11 +894,13 @@ export const BLOGS = [
         text: "1. Growing Demand for Sustainable and Organic Farming",
       },
       {
-        "type": "p_with_link",
-        "textBefore": "One of the most noticeable trends in India’s agricultural sector is the rising demand for ",
-        "linkText": "sustainable and organic farming",
-        "href": "https://www.novaranatureestates.com/whynovara",
-        "textAfter": " As awareness about health and environmental sustainability grows, consumers are increasingly turning to organic produce. This shift is prompting farmers to adopt more eco-friendly practices, which in turn is driving up the demand for land that supports organic farming."
+        type: "p_with_link",
+        textBefore:
+          "One of the most noticeable trends in India’s agricultural sector is the rising demand for ",
+        linkText: "sustainable and organic farming",
+        href: "https://www.novaranatureestates.com/whynovara",
+        textAfter:
+          " As awareness about health and environmental sustainability grows, consumers are increasingly turning to organic produce. This shift is prompting farmers to adopt more eco-friendly practices, which in turn is driving up the demand for land that supports organic farming.",
       },
       {
         type: "p",
@@ -971,11 +988,12 @@ export const BLOGS = [
         text: "Conclusion: The Future of Farmland Investment Is Bright",
       },
       {
-        "type": "p_with_link",
-        "textBefore": "The future of ",
-        "linkText": "farmland investment",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": " in India looks promising as we move toward 2026. From the rise of sustainable farming practices and agri-tech to the increasing popularity of agro-tourism, there are countless opportunities for those looking to invest in farmland. With India’s growing population, rapid urbanization, and increasing demand for organic produce, farmland is set to become an even more valuable asset."
+        type: "p_with_link",
+        textBefore: "The future of ",
+        linkText: "farmland investment",
+        href: "https://www.novaranatureestates.com/projects",
+        textAfter:
+          " in India looks promising as we move toward 2026. From the rise of sustainable farming practices and agri-tech to the increasing popularity of agro-tourism, there are countless opportunities for those looking to invest in farmland. With India’s growing population, rapid urbanization, and increasing demand for organic produce, farmland is set to become an even more valuable asset.",
       },
       {
         type: "p",
@@ -987,7 +1005,7 @@ export const BLOGS = [
     id: 7,
     slug: "ecovara-farms-near-lepakshi-complete-guide",
     category: "Investment",
-    title: "Ecovara Farms Near Lepakshi — Complete Guide 2026",
+    title: "Ecovara Farm Land Near Lepakshi",
     headline: "Ecovara Farms Near Lepakshi — Complete Guide 2026",
     description:
       "Discover Ecovara Farms near Lepakshi — Novara Nature Estates' premium managed farmland 75 mins from Bangalore. Clear titles, 800+ trees. Book a free farm visit.",
@@ -1012,7 +1030,7 @@ export const BLOGS = [
         type: "p",
         text: '"Someone owns all of this," he told us when he finally called. "I just never thought that someone could be me.".',
       },
-      
+
       {
         type: "p",
         text: "Three weeks after that call, Karthik stood inside Ecovara Farms near Lepakshi Temple — 15 acres of managed farmland with 800 existing coconut and mango trees, a gated entrance, a clubhouse, and a view that made his Whitefield apartment feel very far away. He booked his plot the same afternoon.",
@@ -1022,13 +1040,14 @@ export const BLOGS = [
         text: "What is Ecovara Farms Near Lepakshi?",
       },
       {
-        "type": "p_with_link",
-        "textBefore": "Ecovara Farms is a premium ",
-        "linkText": "managed farmland",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": " project developed by Novara Nature Estates, a Bengaluru-based farmland developer focused on clear-title, legally verified agricultural land investments near Bangalore."
+        type: "p_with_link",
+        textBefore: "Ecovara Farms is a premium ",
+        linkText: "managed farmland",
+        href: "https://www.novaranatureestates.com/projects",
+        textAfter:
+          " project developed by Novara Nature Estates, a Bengaluru-based farmland developer focused on clear-title, legally verified agricultural land investments near Bangalore.",
       },
-      
+
       {
         type: "p",
         text: "The project sits in the North Bangalore corridor near Lepakshi Temple — one of the most historically significant and naturally scenic locations in the region. It spans 15 acres and has been thoughtfully developed for urban investors who want to own productive farmland without managing it themselves.",
@@ -1069,7 +1088,7 @@ export const BLOGS = [
         type: "h2",
         text: "Location Advantages of Ecovara Farms Near Lepakshi",
       },
-     
+
       {
         type: "h3",
         text: "Distance from Bangalore — Exactly How Far",
@@ -1106,229 +1125,248 @@ export const BLOGS = [
         type: "p",
         text: "Lepakshi Temple is a UNESCO-recognised Vijayanagara architectural masterpiece that draws over 2 lakh visitors annually. The presence of a significant heritage landmark 10 minutes from Ecovara is not just a lifestyle advantage — it is an economic one. Tourism demand drives local land prices, hospitality investment, and regional development in ways that benefit landowners directly.",
       },
-       {
+      {
         type: "p",
         text: "Other landmarks within easy reach include Gudibande Fort (30 minutes), Nandi Hills (60 minutes), Isha Foundation (50 minutes), and Penukonda Fort (30 minutes). On weekends Ecovara is not just your farm — it is your base for exploring one of Karnataka's richest heritage corridors.",
       },
-         {
+      {
         type: "h2",
         text: "What You Get — Ecovara Farms Features and Amenities",
       },
-     {
+      {
         type: "h3",
         text: "Land and Plantation Details",
       },
-       {
+      {
         type: "ul",
-        text: ["Total project size: 15 acres","Existing trees: 800+ coconut and mango trees" , "Open space: 80% of the project is green and open","Plot sizes: Available in multiple configurations",],
+        text: [
+          "Total project size: 15 acres",
+          "Existing trees: 800+ coconut and mango trees",
+          "Open space: 80% of the project is green and open",
+          "Plot sizes: Available in multiple configurations",
+        ],
       },
-       {
+      {
         type: "p",
         text: "The existing plantation is one of Ecovara's strongest selling points. Unlike projects that hand you bare land, Ecovara gives you an already-green farm. The trees are established, the canopy is visible, and the farm feels alive from day one.",
       },
-   {
+      {
         type: "h3",
         text: "Infrastructure and Amenities",
       },
-         {
+      {
         type: "p",
         text: "Ecovara Farms includes:",
       },
-  
-       {
+
+      {
         type: "ul",
-        text: ["Clubhouse — a dedicated social and leisure space for plot owners","Swimming pool — resort-style facility within the farm community" , "Kids play area — designed for families who visit on weekends","Organic farming plots — dedicated space to grow your own produce","Well-planned internal roads — paved access throughout the property","24/7 security — gated entry with round-the-clock monitoring","Reliable water supply — managed irrigation for the plantation",],
+        text: [
+          "Clubhouse — a dedicated social and leisure space for plot owners",
+          "Swimming pool — resort-style facility within the farm community",
+          "Kids play area — designed for families who visit on weekends",
+          "Organic farming plots — dedicated space to grow your own produce",
+          "Well-planned internal roads — paved access throughout the property",
+          "24/7 security — gated entry with round-the-clock monitoring",
+          "Reliable water supply — managed irrigation for the plantation",
+        ],
       },
-          {
+      {
         type: "h3",
         text: "Farm Management Services",
       },
-         {
+      {
         type: "p",
         text: "This is where Ecovara genuinely stands out. Novara Nature Estates provides complete farm management — plantation care, maintenance schedules, water management, and regular property updates. You do not need to visit every week to keep your investment healthy. The team handles it so your farm grows in value whether you are at your Bangalore desk or on a flight to Singapore.",
       },
-         {
+      {
         type: "h2",
         text: "Why Investing in Ecovara Farms Near Lepakshi Makes Sense in 2026",
       },
-         {
+      {
         type: "h3",
         text: "Land Appreciation in the North Bangalore Corridor",
       },
-         {
+      {
         type: "p",
         text: "Agricultural land along the NH44 corridor between Bangalore and Hindupuram has seen consistent appreciation over the past five years driven by infrastructure investment, airport proximity, and growing investor demand from Bangalore's IT workforce.",
       },
-         {
+      {
         type: "p",
         text: "Early buyers in this corridor have seen land values grow significantly — and with the Bangalore metropolitan expansion continuing northward, this trend shows no sign of reversing.",
       },
 
-       {
+      {
         type: "h3",
         text: "Passive Income Potential",
       },
-         {
+      {
         type: "p",
         text: "Agricultural land in India enjoys significant tax advantages. Income from farming activities on agricultural land is exempt from income tax under the Indian Income Tax Act. For high-earning IT professionals in Bangalore this tax efficiency alone makes farmland a compelling asset class.",
       },
-       {
+      {
         type: "p",
         text: "Beyond tax benefits the existing plantation at Ecovara generates ongoing produce — coconuts, mangoes, and seasonal crops — creating a passive income stream from the land itself.",
       },
-         {
+      {
         type: "h3",
         text: "Tax Benefits of Agricultural Land",
       },
-       {
+      {
         type: "p",
         text: "Agricultural income in India is not subject to income tax. Capital gains on sale of agricultural land in rural areas are also exempt under specific conditions. For a Bangalore professional in the 30% tax bracket these benefits represent genuine financial value beyond land appreciation alone. Always consult your CA for specific advice on your situation.",
       },
-       {
+      {
         type: "h2",
         text: "What Buyers Are Saying About Ecovara Farms",
       },
-       {
+      {
         type: "h3",
         text: "Real Client Experiences",
       },
       {
-        "type": "p_with_link",
-        "textBefore": "Sridhar, who works in the IT sector in Bangalore, visited ",
-        "linkText": "Ecovara",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": " after a conversation with a friend about weekend investment options. He told us: What started as a casual discussion turned into a confident decision after visiting the farm. The team was transparent and the location was everything they said it would be."
+        type: "p_with_link",
+        textBefore:
+          "Sridhar, who works in the IT sector in Bangalore, visited ",
+        linkText: "Ecovara",
+        href: "https://www.novaranatureestates.com/projects",
+        textAfter:
+          " after a conversation with a friend about weekend investment options. He told us: What started as a casual discussion turned into a confident decision after visiting the farm. The team was transparent and the location was everything they said it would be.",
       },
-       {
+      {
         type: "p",
         text: 'Anitha, another plot owner, was convinced after seeing the existing coconut and mango plantation in person. "The quality of development and the way the farm is maintained convinced me. Visiting the site gave me complete clarity."',
       },
-   {
+      {
         type: "p",
         text: 'Rahul visited with four other families in January. "The model house, the open space, the farm activities — it was a genuinely memorable experience. The food was prepared according to our preferences. It felt like a resort and a farm at the same time."',
       },
 
-   {
+      {
         type: "h3",
         text: "What They Checked Before Buying",
       },
-   {
+      {
         type: "p",
         text: "Every serious buyer at Ecovara asked three things: Is the title clear? Is the location genuine? And is the management team trustworthy? The answer to all three, as our buyers consistently confirm, is yes.",
       },
-   {
+      {
         type: "h2",
         text: "How to Book Your Plot at Ecovara Farms",
       },
-   {
+      {
         type: "h3",
         text: "Step by Step Process",
       },
-       {
+      {
         type: "ol",
-        text: ["Schedule a free farm visit through the Novara website","Visit Ecovara Farms with your family — see the land in person","Review plot options, sizes, and pricing with the team","Complete legal and documentation verification","Register your plot and become an Ecovara landowner",],
+        text: [
+          "Schedule a free farm visit through the Novara website",
+          "Visit Ecovara Farms with your family — see the land in person",
+          "Review plot options, sizes, and pricing with the team",
+          "Complete legal and documentation verification",
+          "Register your plot and become an Ecovara landowner",
+        ],
       },
-       {
+      {
         type: "h3",
         text: "Documents Required",
       },
-       {
+      {
         type: "p",
         text: "Standard KYC documents — Aadhaar, PAN, address proof. The Novara team handles all land documentation, title verification, and registration support.",
       },
-     {
+      {
         type: "h3",
         text: "Schedule a Farm Visit",
       },
-   {
+      {
         type: "p",
         text: "The best way to understand Ecovara is to walk it. No photograph, no video, and no blog post does justice to 15 acres of green farmland with coconut trees, open sky, and Lepakshi Temple visible on the horizon.",
       },
-         {
+      {
         type: "h2",
         text: "Frequently Asked Questions About Ecovara Farms Near Lepakshi",
       },
-     {
+      {
         type: "h3",
         text: "Q1. How far is Ecovara Farms from Bangalore?",
       },
-     {
+      {
         type: "p",
         text: " Ecovara Farms is approximately 75 kilometres from Kempegowda International Airport, Devanahalli — roughly 75 to 90 minutes by road on NH44.",
       },
-   {
+      {
         type: "h3",
         text: "Q2. Is the farmland title clear at Ecovara?",
       },
-   {
+      {
         type: "p",
         text: " Yes. Every plot at Ecovara Farms comes with legally verified, clear title documentation. Novara Nature Estates handles complete title due diligence before sale.",
       },
-   {
+      {
         type: "h3",
         text: "Q3. Do I need farming experience to own a plot at Ecovara?",
       },
-   {
+      {
         type: "p",
         text: "No. Novara Nature Estates provides complete farm management services. You own the land — the team handles plantation maintenance, water, security, and operations.",
       },
-   {
+      {
         type: "h3",
         text: "Q4. What amenities are available at Ecovara Farms?",
       },
-   {
+      {
         type: "p",
         text: "Ecovara includes a clubhouse, swimming pool, kids play area, organic farming plots, 24/7 security, reliable water supply, and well-maintained internal roads.",
       },
-   {
+      {
         type: "h3",
         text: "Q5. Can I visit Ecovara Farms before buying?",
       },
-   {
+      {
         type: "p",
         text: " Absolutely — and we strongly encourage it. Farm visits are free and can be scheduled through the contact page. Most buyers make their decision after visiting in person.",
       },
-   {
+      {
         type: "h2",
         text: "Conclusion",
       },
-   {
+      {
         type: "p",
         text: "Ecovara Farms near Lepakshi is not just a farmland project. It is a carefully managed, legally sound, strategically located land investment that gives Bangalore investors everything they have been looking for — without the complexity of doing it alone.",
       },
-   {
+      {
         type: "p",
         text: "The land is real. The trees are already growing. The team is already managing it. The only question left is whether you want to be part of it.",
       },
-   {
+      {
         type: "p",
         text: "Come see it for yourself.",
       },
       {
-        "type": "p_with_link",
-        "textBefore": "",
-        "linkText": "Schedule your free farm visit",
-        "href": "https://www.novaranatureestates.com/contactus",
-        "textAfter": " today"
+        type: "p_with_link",
+        textBefore: "",
+        linkText: "Schedule your free farm visit",
+        href: "https://www.novaranatureestates.com/contactus",
+        textAfter: " today",
       },
       {
         type: "p",
         text: "Schedule your free farm visit today ",
       },
-   {
+      {
         type: "h3",
         text: "Interested in other farmland investment opportunities near Bangalore? Explore our Ecovara managed farmland project or read more about farmland investment near Bangalore.",
       },
-  
     ],
   },
-    {
+  {
     id: 8,
     slug: "farmland-investment-lepakshi",
     category: "Sustainable Farmland",
     title: "Lepakshi is Bangalore’s Best Farmland Investment Location",
-    headline:
-      "Why Lepakshi is Bangalore's Best Farmland Investment Location",
+    headline: "Why Lepakshi is Bangalore's Best Farmland Investment Location",
     description:
       " Discover why Lepakshi is emerging as a top destination for farmland investment near Bangalore. Learn about location advantages and investment potential.",
     date: "2026",
@@ -1353,15 +1391,17 @@ export const BLOGS = [
         text: "Over the past few years, farmland investment has become increasingly popular among urban investors looking for stable and sustainable assets. Many professionals from Bangalore are exploring agricultural land as a long-term investment option, and one location that is gaining significant attention is Lepakshi.",
       },
       {
-        type: "p",
-        text: "Located along the Bangalore–Hyderabad highway (NH44), Lepakshi offers the perfect balance between accessibility and peaceful rural surroundings. With improving infrastructure, tourism growth, and increasing interest in managed farmland projects, the region is emerging as one of the most promising destinations for farmland investment near Bangalore.",
+        type: "p_with_link",
+        textBefore:
+          "Located along the Bangalore–Hyderabad highway (NH44), Lepakshi offers the perfect balance between accessibility and peaceful rural surroundings. With improving infrastructure, tourism growth, and increasing interest in managed farmland projects, the region is emerging as one of the most promising destinations for ",
+        linkText: "farmland investment near Bangalore.",
+        href: "https://www.novaranatureestates.com/",
+        textAfter: "",
       },
-
       {
         type: "p",
         text: "For investors seeking long-term appreciation, a weekend retreat, or an environmentally friendly asset, farmland investment in Lepakshi presents a unique opportunity. This guide explains why Lepakshi is becoming one of the best farmland investment locations for Bangalore buyers.",
       },
-     
 
       { type: "h2", text: "Strategic Location Near Bangalore" },
       {
@@ -1373,21 +1413,21 @@ export const BLOGS = [
         text: "For many investors, proximity to a major city is an important factor when choosing farmland. Lepakshi offers the advantage of being reachable from Bangalore within a few hours while still providing a peaceful countryside environment away from the city’s congestion.",
       },
       {
-        type: "p",
-        text: "Because of this convenient connectivity, many people from Bangalore prefer Lepakshi when looking for farmland investments or weekend agricultural retreats.",
+        type: "p_with_link",
+        textBefore:
+          "Because of this convenient connectivity, many people from Bangalore prefer Lepakshi when looking for ",
+        linkText: "farmland investments",
+        href: "https://www.novaranatureestates.com/projects",
+        textAfter: " or weekend agricultural retreats.",
       },
 
-      
       { type: "h2", text: "Connectivity Through the NH44 Corridor" },
-     
 
-     
       {
         type: "p",
         text: "The Bangalore–Hyderabad highway (NH44) is one of the most important transportation corridors in South India. This highway has significantly improved connectivity between major cities and smaller towns along its route.",
       },
 
-     
       {
         type: "p",
         text: "Lepakshi’s location along NH44 makes travel smooth and convenient for farmland owners visiting from Bangalore. Easy highway access also contributes to the long-term investment potential of the region because infrastructure development often drives land appreciation.",
@@ -1410,18 +1450,17 @@ export const BLOGS = [
         type: "p",
         text: "Lepakshi has become particularly appealing for Bangalore investors because it offers a combination of affordability, accessibility, and natural surroundings. Owning farmland in this region allows investors to enjoy a peaceful environment while still remaining connected to the city.",
       },
-       {
+      {
         type: "p",
         text: "Additionally, farmland investments are often viewed as long-term assets that can appreciate gradually as infrastructure and development expand in surrounding areas.",
       },
       { type: "h2", text: "Tourism and Cultural Significance" },
-     
+
       {
         type: "p",
         text: "Lepakshi is widely known for the famous Veerabhadra Temple, a historic temple that attracts visitors and tourists throughout the year. The temple’s architectural beauty and cultural significance make Lepakshi a well-known destination in the region.",
       },
 
-    
       {
         type: "p",
         text: "Tourism activity contributes to local development and infrastructure improvements, which can indirectly increase the attractiveness of farmland investments nearby. As the area continues to receive visitors, supporting facilities such as roads and services gradually improve.",
@@ -1430,24 +1469,26 @@ export const BLOGS = [
         type: "p",
         text: "For investors, locations with cultural and tourism importance often have strong long-term potential.",
       },
-    
-      
+
       { type: "h2", text: "Managed Farmland Projects in Lepakshi" },
-     
-     
+
       {
         type: "p",
         text: "One of the reasons farmland investment has become easier for urban investors is the rise of managed farmland projects. These projects allow buyers to own farmland while professional teams handle plantation, irrigation, and maintenance.",
       },
 
-      { type: "p",
-         text: "Managed farmland eliminates many of the challenges associated with traditional farming. Investors can enjoy the benefits of farmland ownership without needing to manage agricultural operations themselves."
-         },
       {
         type: "p",
-        text: "Companies such as Novara Nature Estates are offering managed farmland opportunities where investors can purchase farmland in well-planned agricultural communities. These projects typically include plantation management, irrigation systems, and maintenance services, making farmland investment more accessible for city-based investors.",
+        text: "Managed farmland eliminates many of the challenges associated with traditional farming. Investors can enjoy the benefits of farmland ownership without needing to manage agricultural operations themselves.",
       },
-     
+      {
+        "type": "p_with_link",
+        "textBefore": "Companies such as ",
+        "linkText": "Novara Nature Estates",
+        "href": "https://www.novaranatureestates.com/whynovara",
+        "textAfter": " are offering managed farmland opportunities where investors can purchase farmland in well-planned agricultural communities. These projects typically include plantation management, irrigation systems, and maintenance services, making farmland investment more accessible for city-based investors."
+      },
+
       {
         type: "h2",
         text: "Benefits of Investing in Farmland in Lepakshi",
@@ -1458,8 +1499,7 @@ export const BLOGS = [
         text: "Farmland investment in Lepakshi offers several advantages for buyers seeking long-term value.",
       },
       { type: "h3", text: "Long-Term Land Appreciation" },
-      
-      
+
       {
         type: "p",
         text: "Land is a finite resource, and as infrastructure development expands near major cities, nearby rural areas often experience gradual price appreciation. Lepakshi’s location along an important highway corridor increases its potential for future growth.",
@@ -1470,18 +1510,17 @@ export const BLOGS = [
         type: "p",
         text: "Many farmland owners use their land as a weekend retreat where they can relax and reconnect with nature. Owning farmland near Lepakshi allows investors to escape the busy city life and enjoy peaceful countryside surroundings.",
       },
-       { type: "h3", text: "Sustainable and Eco-Friendly Investment" },
+      { type: "h3", text: "Sustainable and Eco-Friendly Investment" },
       {
         type: "p",
         text: "Farmland ownership is often associated with sustainable living and environmentally friendly investments. Plantation-based farming and agroforestry projects help create green landscapes while supporting agricultural activities.",
       },
-      
-     
+
       { type: "h2", text: "Key Factors to Consider Before Investing" },
-     {
+      {
         type: "p",
-        text: "Before purchasing farmland in Lepakshi, investors should carefully evaluate a few important aspects."
-     },
+        text: "Before purchasing farmland in Lepakshi, investors should carefully evaluate a few important aspects.",
+      },
 
       { type: "h3", text: "Land Title and Documentation" },
       {
@@ -1498,75 +1537,86 @@ export const BLOGS = [
         type: "p",
         text: "Good road connectivity ensures that farmland owners can easily visit and maintain their property.",
       },
-       { type: "h3", text: "Soil Quality" },
+      { type: "h3", text: "Soil Quality" },
       {
         type: "p",
         text: "Understanding the soil condition helps determine the agricultural potential of the land and suitability for plantations.",
       },
 
-       { type: "h2", text: "Future Growth Potential of Lepakshi" },
+      { type: "h2", text: "Future Growth Potential of Lepakshi" },
 
       {
         type: "p",
         text: "The growing interest in farmland investment near Bangalore is likely to continue as more investors seek sustainable and nature-based assets. Lepakshi’s strategic location, improving connectivity, and natural surroundings make it an attractive region for agricultural land ownership.",
       },
-       {
+      {
         type: "p",
         text: "As infrastructure development progresses along the NH44 corridor and nearby areas continue to grow, farmland investment in Lepakshi could offer promising long-term value for investors.",
       },
-       { type: "h2", text: "Conclusion" },
+      { type: "h2", text: "Conclusion" },
 
-       {
+      {
         type: "p",
         text: "Lepakshi is emerging as one of the most attractive farmland investment destinations for buyers from Bangalore. Its strategic location along the Bangalore–Hyderabad highway, cultural significance, and peaceful environment make it a compelling choice for those seeking agricultural land.",
       },
-       {
+      {
         type: "p",
         text: "With the increasing popularity of managed farmland projects and the growing interest in sustainable investments, Lepakshi is likely to remain an important farmland investment location in the coming years.",
       },
-       {
+      {
         type: "p",
         text: "For investors looking to explore farmland ownership near Bangalore, managed farmland projects offered by Novara Nature Estates provide an opportunity to experience agricultural land investment while benefiting from professional farm management.",
       },
-       {
+      {
         type: "p",
         text: "Scheduling a farm visit can help potential buyers understand the location, environment, and investment potential of farmland in Lepakshi.",
       },
       { type: "h2", text: "FAQs" },
-       { type: "h3", text: "1. Why is Lepakshi popular for farmland investment?" },
-       {
+      {
+        type: "h3",
+        text: "1. Why is Lepakshi popular for farmland investment?",
+      },
+      {
         type: "p",
         text: " Lepakshi offers good connectivity to Bangalore, peaceful surroundings, and increasing interest from urban investors looking for farmland ownership.",
       },
-       { type: "h3", text: "2. Is farmland investment in Lepakshi suitable for weekend retreats?" },
-       {
+      {
+        type: "h3",
+        text: "2. Is farmland investment in Lepakshi suitable for weekend retreats?",
+      },
+      {
         type: "p",
         text: " Yes, many investors use farmland near Lepakshi as a weekend retreat where they can enjoy nature and relaxation.",
       },
-       { type: "h3", text: "3. What is managed farmland?" },
-       {
+      { type: "h3", text: "3. What is managed farmland?" },
+      {
         type: "p",
         text: "Managed farmland allows investors to own farmland while professional teams handle plantation, irrigation, and maintenance.",
       },
-       { type: "h3", text: "4. How does infrastructure affect farmland investment?" },
-       {
+      {
+        type: "h3",
+        text: "4. How does infrastructure affect farmland investment?",
+      },
+      {
         type: "p",
         text: "Improving roads, highways, and connectivity often increase the long-term value of agricultural land.",
       },
-       { type: "h3", text: "5. What should investors check before buying farmland?" },
-       {
+      {
+        type: "h3",
+        text: "5. What should investors check before buying farmland?",
+      },
+      {
         type: "p",
         text: " Buyers should verify land titles, water availability, soil quality, and road accessibility.",
       },
     ],
   },
-    {
+  {
     id: 9,
     slug: "farm-plots-near-lepakshi",
     category: "Sustainable Farmland",
     title: "Farm Plots Near Lepakshi | Investment Guide for Buyers",
-    headline:
-      "Farm Plots Near Lepakshi — Everything Buyers Need to Know",
+    headline: "Farm Plots Near Lepakshi — Everything Buyers Need to Know",
     description:
       "Explore farm plots near Lepakshi and discover why this region is attracting farmland investors from Bangalore. Complete guide for buyers.",
     date: "2026",
@@ -1591,17 +1641,22 @@ export const BLOGS = [
         text: "Farm plots near Lepakshi are becoming increasingly popular among investors from Bangalore who are looking for agricultural land ownership combined with long-term investment potential. Located along the Bangalore–Hyderabad National Highway (NH44), Lepakshi offers a unique opportunity for buyers to own farmland in a peaceful natural setting while staying connected to a major metropolitan city.",
       },
       {
-        type: "p",
-        text: "With rising interest in sustainable investments and weekend retreats, many urban professionals are exploring farm plots near Lepakshi as an alternative to traditional real estate assets. The region offers open landscapes, improving infrastructure, and the potential for plantation-based farming.",
+        "type": "p_with_link",
+        "textBefore": "With rising interest in sustainable investments and weekend retreats, many urban professionals are exploring ",
+        "linkText": "farm plots near Lepakshi",
+        "href": "https://www.novaranatureestates.com/projects",
+        "textAfter": " as an alternative to traditional real estate assets. The region offers open landscapes, improving infrastructure, and the potential for plantation-based"
       },
 
       {
         type: "p",
         text: "For buyers who want to diversify their investments or enjoy a countryside lifestyle, farm plots near Lepakshi provide an attractive opportunity. In this guide, we will explore the advantages of buying farm plots in Lepakshi, key factors to consider before investing, and how managed farmland projects simplify the ownership experience.",
       },
-     
 
-      { type: "h2", text: "Why Farm Plots Near Lepakshi Are Attracting Investors" },
+      {
+        type: "h2",
+        text: "Why Farm Plots Near Lepakshi Are Attracting Investors",
+      },
       {
         type: "p",
         text: "Over the past few years, farmland ownership has gained popularity among urban investors who are seeking stable assets and greener lifestyles. Lepakshi has emerged as one of the preferred locations for farm plots due to its strategic location and peaceful environment.",
@@ -1615,15 +1670,14 @@ export const BLOGS = [
         text: "Another important factor is affordability. Compared to many locations closer to Bangalore, farm plots near Lepakshi often provide better value for buyers who want larger land parcels and agricultural potential.",
       },
 
-      
       { type: "h2", text: "Strategic Location and Connectivity" },
-          
+
       {
         type: "p",
         text: "Location plays a major role when choosing farmland. Lepakshi benefits from excellent connectivity through the Bangalore–Hyderabad highway, which connects the region to several important cities.",
       },
       { type: "h3", text: "Access from Bangalore" },
-      
+
       {
         type: "p",
         text: "Many investors prefer farmland that is within comfortable driving distance from Bangalore. Lepakshi’s location allows buyers to reach their farmland within a few hours, making it suitable for weekend visits and agricultural activities.",
@@ -1634,17 +1688,17 @@ export const BLOGS = [
         type: "p",
         text: "NH44 is one of the most important highways in South India. Its connectivity improves accessibility to Lepakshi and enhances the long-term investment potential of farmland in the region.",
       },
-       { type: "h3", text: "Proximity to North Bangalore Development" },
+      { type: "h3", text: "Proximity to North Bangalore Development" },
       {
         type: "p",
         text: "North Bangalore is experiencing rapid growth due to expanding infrastructure, business hubs, and transportation networks. As development continues in this direction, surrounding regions such as Lepakshi are likely to attract increasing interest from investors.",
       },
-      
+
       { type: "h2", text: "Advantages of Buying Farm Plots Near Lepakshi" },
-     {
+      {
         type: "p",
-        text: "Owning a farm plot near Lepakshi offers several advantages for buyers looking for agricultural land investment."
-     },
+        text: "Owning a farm plot near Lepakshi offers several advantages for buyers looking for agricultural land investment.",
+      },
 
       { type: "h3", text: "Long-Term Land Appreciation" },
       {
@@ -1661,25 +1715,29 @@ export const BLOGS = [
         type: "p",
         text: "Agricultural land supports plantation activities and eco-friendly farming practices. Investors interested in sustainable investments often prefer farmland as it contributes to environmental conservation and green living.",
       },
-     
-       { type: "h2", text: "Managed Farmland Projects Near Lepakshi" },
+
+      { type: "h2", text: "Managed Farmland Projects Near Lepakshi" },
 
       {
         type: "p",
         text: "For many urban investors, managing farmland operations can be challenging due to lack of time and agricultural expertise. Managed farmland projects solve this problem by providing professional farm management services.",
       },
-       {
+      {
         type: "p",
         text: "In managed farmland communities, experts handle plantation activities, irrigation systems, and maintenance of the farmland. This allows investors to enjoy farmland ownership without dealing with the complexities of farming.",
       },
-       { type: "p", 
-        text: "Companies like Novara Nature Estates offer managed farmland opportunities where buyers can own farm plots while professionals manage the agricultural operations. These projects often include well-planned plantations and sustainable farming practices."
-     },
-     { type: "h2", text: "What Buyers Should Check Before Purchasing Farm Plots" },
-     {
-         type: "p",
-             text: "Before investing in farm plots near Lepakshi, buyers should carefully evaluate several factors to ensure a secure investment." 
-    },
+      {
+        type: "p",
+        text: "Companies like Novara Nature Estates offer managed farmland opportunities where buyers can own farm plots while professionals manage the agricultural operations. These projects often include well-planned plantations and sustainable farming practices.",
+      },
+      {
+        type: "h2",
+        text: "What Buyers Should Check Before Purchasing Farm Plots",
+      },
+      {
+        type: "p",
+        text: "Before investing in farm plots near Lepakshi, buyers should carefully evaluate several factors to ensure a secure investment.",
+      },
 
       { type: "h3", text: "Land Title Verification" },
       {
@@ -1696,80 +1754,88 @@ export const BLOGS = [
         type: "p",
         text: "Soil condition determines the suitability of farmland for plantations or crops. Understanding soil fertility helps investors evaluate the agricultural potential of the land.",
       },
-       { type: "h3", text: "Road Access" },
+      { type: "h3", text: "Road Access" },
       {
         type: "p",
         text: "Good road connectivity ensures that farmland owners can easily access their property whenever required.",
       },
 
-       { type: "h2", text: "Investment Potential of Lepakshi Region" },
+      { type: "h2", text: "Investment Potential of Lepakshi Region" },
       {
         type: "p",
         text: "The Lepakshi region is gradually gaining recognition among farmland investors because of its location and infrastructure growth. As interest in agricultural land increases, regions near major highways often see gradual development.",
       },
 
-       {
+      {
         type: "p",
         text: "Additionally, the rising demand for managed farmland projects and sustainable living is encouraging more buyers to consider farm plots near Lepakshi as a long-term investment.",
       },
-       {
+      {
         type: "p",
         text: "For investors looking to diversify their portfolio while enjoying nature-based assets, Lepakshi presents an attractive farmland investment opportunity.",
       },
 
-        { type: "h2", text: "Conclusion" },
+      { type: "h2", text: "Conclusion" },
       {
         type: "p",
         text: "Farm plots near Lepakshi offer an appealing combination of natural beauty, investment potential, and accessibility from Bangalore. The region’s location along NH44, peaceful environment, and growing interest from investors make it a promising destination for farmland ownership.",
       },
 
-       {
+      {
         type: "p",
         text: "With the availability of managed farmland projects, owning agricultural land has become easier for urban investors who want to benefit from farmland investments without managing farming activities themselves.",
       },
-       {
+      {
         type: "p",
         text: "Exploring farmland projects offered by Novara Nature Estates can help investors experience well-planned agricultural communities designed for long-term land ownership and sustainable living.",
       },
-       {
-        type: "p",
-        text: "Scheduling a farm visit allows potential buyers to better understand the location, surroundings, and investment potential of farm plots near Lepakshi.",
+      {
+        "type": "p_with_link",
+        "textBefore": "",
+        "linkText": "Scheduling a farm visit",
+        "href": "https://www.novaranatureestates.com/contactus",
+        "textAfter": " allows potential buyers to better understand the location, surroundings, and investment potential of farm plots near Lepakshi."
       },
       { type: "h2", text: "FAQs" },
-       { type: "h3", text: "1. Are farm plots near Lepakshi good for investment?" },
-       {
+      {
+        type: "h3",
+        text: "1. Are farm plots near Lepakshi good for investment?",
+      },
+      {
         type: "p",
         text: "Yes, Lepakshi is attracting investors due to its connectivity to Bangalore and growing interest in farmland investments.",
       },
-       { type: "h3", text: "2. Can farm plots be used as weekend retreats?" },
-       {
+      { type: "h3", text: "2. Can farm plots be used as weekend retreats?" },
+      {
         type: "p",
         text: "Many investors purchase farm plots near Lepakshi to enjoy a peaceful weekend getaway away from city life.",
       },
-       { type: "h3", text: "3. What is managed farmland?" },
-       {
+      { type: "h3", text: "3. What is managed farmland?" },
+      {
         type: "p",
         text: "Managed farmland allows investors to own farmland while professionals manage plantation and maintenance activities.",
       },
-       { type: "h3", text: "4. How far is Lepakshi from Bangalore?" },
-       {
+      { type: "h3", text: "4. How far is Lepakshi from Bangalore?" },
+      {
         type: "p",
         text: "Lepakshi is accessible through the Bangalore–Hyderabad highway and can be reached from Bangalore within a few hours.",
       },
-       { type: "h3", text: "5. What should buyers check before buying farmland?" },
-       {
+      {
+        type: "h3",
+        text: "5. What should buyers check before buying farmland?",
+      },
+      {
         type: "p",
         text: "Important factors include land title verification, water availability, soil quality, and accessibility.",
       },
     ],
   },
-   {
+  {
     id: 10,
     slug: "managed-farmland-lepakshi",
     category: "Sustainable Farmland",
     title: "Managed Farmland Near Lepakshi | How It Works for Investors",
-    headline:
-      "Managed Farmland Near Lepakshi — How It Works.",
+    headline: "Managed Farmland Near Lepakshi — How It Works.",
     description:
       "Learn how managed farmland near Lepakshi works and why it is becoming popular among Bangalore investors seeking sustainable farmland ownership.",
     date: "2026",
@@ -1790,8 +1856,11 @@ export const BLOGS = [
         text: "Introduction",
       },
       {
-        type: "p",
-        text: "Managed farmland near Lepakshi is becoming an attractive option for investors who want to own agricultural land without managing the daily responsibilities of farming. Many professionals from Bangalore are exploring farmland investments not only for long-term appreciation but also for sustainable living and weekend retreats.",
+        "type": "p_with_link",
+        "textBefore": "Managed ",
+        "linkText": "farmland near Lepakshi",
+        "href": "https://www.novaranatureestates.com/projects",
+        "textAfter": " is becoming an attractive option for investors who want to own agricultural land without managing the daily responsibilities of farming. Many professionals from Bangalore are exploring farmland investments not only for long-term appreciation but also for sustainable living and weekend retreats."
       },
       {
         type: "p",
@@ -1802,12 +1871,14 @@ export const BLOGS = [
         type: "p",
         text: "Lepakshi, located along the Bangalore–Hyderabad highway (NH44), has emerged as a promising destination for managed farmland investments. Its proximity to Bangalore, peaceful environment, and growing interest in agricultural land ownership make it an ideal location for farmland investors.",
       },
-     
 
       { type: "h2", text: "What is Managed Farmland?" },
       {
-        type: "p",
-        text: "Managed farmland is an investment model where buyers purchase agricultural land while a professional farm management team takes care of plantation, irrigation, and maintenance activities.",
+        "type": "p_with_link",
+        "textBefore": "",
+        "linkText": "Managed farmland",
+        "href": "https://www.novaranatureestates.com/",
+        "textAfter": " is an investment model where buyers purchase agricultural land while a professional farm management team takes care of plantation, irrigation, and maintenance activities."
       },
       {
         type: "p",
@@ -1818,9 +1889,11 @@ export const BLOGS = [
         text: "For urban investors who do not have agricultural expertise or time to manage farming operations, managed farmland offers a convenient way to participate in farmland ownership.",
       },
 
-      
-      { type: "h2", text: "Why Lepakshi is Ideal for Managed Farmland Projects" },
-     
+      {
+        type: "h2",
+        text: "Why Lepakshi is Ideal for Managed Farmland Projects",
+      },
+
       {
         type: "p",
         text: "Lepakshi has gained attention as a suitable location for managed farmland due to several key factors.",
@@ -1849,8 +1922,7 @@ export const BLOGS = [
         type: "p",
         text: "Many buyers from Bangalore are looking for farmland investments that offer both financial potential and a peaceful environment. Managed farmland projects in Lepakshi meet this demand by combining land ownership with professional farm management.",
       },
-     
-     
+
       {
         type: "h2",
         text: "How Managed Farmland Works",
@@ -1860,7 +1932,7 @@ export const BLOGS = [
         type: "p",
         text: "Understanding how managed farmland operates can help investors make informed decisions.",
       },
-       {
+      {
         type: "h3",
         text: "Land Ownership",
       },
@@ -1868,7 +1940,7 @@ export const BLOGS = [
         type: "p",
         text: "Investors purchase a specific farmland plot within a managed farmland community. Ownership of the land remains with the buyer.",
       },
-       {
+      {
         type: "h3",
         text: "Plantation Development",
       },
@@ -1876,7 +1948,7 @@ export const BLOGS = [
         type: "p",
         text: "The farm management team typically develops plantations on the farmland, such as fruit trees or other crops suitable for the region.",
       },
-       {
+      {
         type: "h3",
         text: "Maintenance and Farm Management",
       },
@@ -1884,7 +1956,7 @@ export const BLOGS = [
         type: "p",
         text: "Professional teams handle tasks such as irrigation, soil management, pest control, and plantation care. This ensures that the farmland remains productive and well maintained.",
       },
-       {
+      {
         type: "h3",
         text: "Community Infrastructure",
       },
@@ -1892,15 +1964,14 @@ export const BLOGS = [
         type: "p",
         text: "Managed farmland projects often include internal roads, water systems, and other basic infrastructure to support agricultural activities.",
       },
-     
 
       { type: "h2", text: "Benefits of Managed Farmland Near Lepakshi" },
-     
+
       {
         type: "p",
         text: "Managed farmland offers several advantages for investors who want to own agricultural land.",
       },
-     {
+      {
         type: "h3",
         text: "Hassle-Free Ownership",
       },
@@ -1908,7 +1979,7 @@ export const BLOGS = [
         type: "p",
         text: "Since professionals handle farming operations, investors can enjoy farmland ownership without worrying about daily management tasks.",
       },
-       {
+      {
         type: "h3",
         text: "Long-Term Land Value",
       },
@@ -1916,7 +1987,7 @@ export const BLOGS = [
         type: "p",
         text: "Land values in developing regions can gradually increase over time. Lepakshi’s location along an important highway corridor contributes to its long-term investment potential.",
       },
-       {
+      {
         type: "h3",
         text: "Sustainable Investment",
       },
@@ -1924,7 +1995,7 @@ export const BLOGS = [
         type: "p",
         text: "Managed farmland projects often focus on plantations and eco-friendly agricultural practices. This supports sustainable farming and environmental conservation.",
       },
-       {
+      {
         type: "h3",
         text: "Weekend Retreat Opportunity",
       },
@@ -1932,25 +2003,23 @@ export const BLOGS = [
         type: "p",
         text: "Many farmland investors enjoy visiting their farmland as a weekend retreat where they can relax and experience nature away from the city.",
       },
-     
-    
-      
+
       { type: "h2", text: "Managed Farmland vs Traditional Farming" },
-     
-     
+
       {
         type: "p",
         text: "There are several differences between managed farmland and traditional farmland ownership.",
       },
 
-      { type: "p",
-         text: "In traditional farming, the landowner is responsible for managing crops, irrigation, and maintenance. This requires time, knowledge, and involvement in farming activities."
-         },
+      {
+        type: "p",
+        text: "In traditional farming, the landowner is responsible for managing crops, irrigation, and maintenance. This requires time, knowledge, and involvement in farming activities.",
+      },
       {
         type: "p",
         text: "Managed farmland, on the other hand, allows investors to own agricultural land while professionals manage farming operations. This makes farmland ownership accessible for people who live in cities and cannot manage farms themselves.",
       },
-     
+
       {
         type: "h2",
         text: "Things to Consider Before Investing in Managed Farmland",
@@ -1961,8 +2030,7 @@ export const BLOGS = [
         text: "Before investing in managed farmland near Lepakshi, buyers should evaluate a few important aspects.",
       },
       { type: "h3", text: "Legal Documentation" },
-      
-      
+
       {
         type: "p",
         text: "Ensure that the farmland has proper legal documentation and a clear title.",
@@ -1973,76 +2041,85 @@ export const BLOGS = [
         type: "p",
         text: "Understand what services are included in the farm management plan, such as plantation development, irrigation, and maintenance.",
       },
-       { type: "h3", text: "Water Resources" },
+      { type: "h3", text: "Water Resources" },
       {
         type: "p",
         text: "Reliable water sources are essential for agricultural land. Investors should confirm the availability of irrigation systems or borewells.",
       },
-      
-     
 
       { type: "h3", text: "Developer Reputation" },
       {
         type: "p",
         text: "Choosing a trusted farmland developer helps ensure that the project is professionally managed and properly maintained.",
       },
-     
 
-       { type: "h2", text: "Managed Farmland Opportunities with Novara Nature Estates" },
+      {
+        type: "h2",
+        text: "Managed Farmland Opportunities with Novara Nature Estates",
+      },
 
       {
         type: "p",
         text: "Companies like Novara Nature Estates are introducing managed farmland communities where investors can own farmland while benefiting from professional farm management.",
       },
-       {
+      {
         type: "p",
         text: "These projects are designed to provide a structured approach to farmland ownership, including plantation management and agricultural maintenance. This allows investors to experience farmland ownership while enjoying the convenience of managed services.",
       },
-       {
+      {
         type: "p",
         text: "For many urban investors, this model makes farmland investment simpler and more accessible.",
       },
-       { type: "h2", text: "Conclusion" },
+      { type: "h2", text: "Conclusion" },
 
-       {
+      {
         type: "p",
         text: "Managed farmland near Lepakshi provides a practical solution for investors who want to own agricultural land without dealing with the complexities of traditional farming. With professional farm management, plantation development, and infrastructure support, managed farmland projects make farmland ownership easier for urban buyers.",
-       },
-       {
+      },
+      {
         type: "p",
         text: "Lepakshi’s strategic location, natural environment, and growing interest from investors make it an attractive destination for farmland investment near Bangalore.",
       },
-       {
+      {
         type: "p",
         text: "Exploring managed farmland projects offered by Novara Nature Estates can help investors understand how structured farmland communities provide both investment potential and a peaceful connection with nature.",
       },
-       {
+      {
         type: "p",
         text: "Scheduling a farm visit allows buyers to experience the farmland environment and learn more about managed farmland opportunities in the Lepakshi region.",
       },
       { type: "h2", text: "FAQs" },
-       { type: "h3", text: "1. What is managed farmland?" },
-       {
+      { type: "h3", text: "1. What is managed farmland?" },
+      {
         type: "p",
         text: " Managed farmland allows investors to own farmland while professional teams manage plantation, irrigation, and maintenance.",
       },
-       { type: "h3", text: "2. Why is Lepakshi popular for managed farmland projects?" },
-       {
+      {
+        type: "h3",
+        text: "2. Why is Lepakshi popular for managed farmland projects?",
+      },
+      {
         type: "p",
         text: "Lepakshi offers good connectivity to Bangalore, natural agricultural conditions, and growing interest from investors.",
       },
-       { type: "h3", text: "3. Can urban investors buy managed farmland?" },
-       {
+      { type: "h3", text: "3. Can urban investors buy managed farmland?" },
+      {
         type: "p",
         text: "Yes, managed farmland is designed for urban investors who want farmland ownership without managing farming operations.",
       },
-       { type: "h3", text: "4. What plantations are common in managed farmland projects?" },
-       {
+      {
+        type: "h3",
+        text: "4. What plantations are common in managed farmland projects?",
+      },
+      {
         type: "p",
         text: "Many projects include fruit plantations, agroforestry, or tree-based farming depending on the soil and climate.",
       },
-       { type: "h3", text: "5. How can investors visit managed farmland projects?" },
-       {
+      {
+        type: "h3",
+        text: "5. How can investors visit managed farmland projects?",
+      },
+      {
         type: "p",
         text: " Investors can schedule a farm visit to explore the farmland, understand the project layout, and learn about farm management services.",
       },
