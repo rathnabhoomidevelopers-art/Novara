@@ -27,6 +27,13 @@ export const BLOGS = [
         text: "Farmlands near Bangalore are a treasure trove of opportunities. Whether you're a new landowner, an aspiring farmer, or an experienced investor, the region offers fertile soil, a great climate, and the right resources to grow a variety of crops. As we move towards a future focused on sustainability, efficiency, and innovation, the farming techniques available are evolving. Whether you're into traditional farming methods or excited by the potential of cutting-edge technology, there's something for everyone.",
       },
       {
+        "type": "p_with_link",
+        "textBefore": "In this blog, we'll take a deep dive into some of the most effective and popular farming techniques that are perfect for ",
+        "linkText": "farmlands near Bangalore",
+        "href": "https://www.novaranatureestates.com",
+        "textAfter": "— from organic practices that respect the land to high-tech solutions that maximize yield. Let’s explore the best ways to grow and thrive on your farmland."
+      },
+      {
         type: "p",
         text: "In this blog, we'll take a deep dive into some of the most effective and popular farming techniques that are perfect for farmlands near Bangalore — from organic practices that respect the land to high-tech solutions that maximize yield. Let’s explore the best ways to grow and thrive on your farmland.",
       },
@@ -139,8 +146,15 @@ export const BLOGS = [
 
       { type: "h2", text: "4. Agroforestry: Combining Trees with Crops" },
       {
+        "type": "p_with_link",
+        "textBefore": "Agroforestry is a ",
+        "linkText": "sustainable farming",
+        "href": "https://www.novaranatureestates.com/whynovara",
+        "textAfter": " technique that integrates trees with traditional crop production. By planting trees alongside crops, you create a more diverse farming ecosystem that benefits the land and the crops. This technique is gaining popularity near Bangalore, where farmers are looking to improve the biodiversity of their farms while still generating income from crops."
+      },
+      {
         type: "p",
-        text: "Agroforestry is a sustainable farming technique that integrates trees with traditional crop production. By planting trees alongside crops, you create a more diverse farming ecosystem that benefits the land and the crops. This technique is gaining popularity near Bangalore, where farmers are looking to improve the biodiversity of their farms while still generating income from crops.",
+        text: "sustainable farming technique that integrates trees with traditional crop production. By planting trees alongside crops, you create a more diverse farming ecosystem that benefits the land and the crops. This technique is gaining popularity near Bangalore, where farmers are looking to improve the biodiversity of their farms while still generating income from crops.",
       },
 
       { type: "h3", text: "Why agroforestry?" },
@@ -288,8 +302,11 @@ export const BLOGS = [
         text: "4. Farmland’s Tax Benefits and Government Incentives",
       },
       {
-        type: "p",
-        text: "When you invest in farmland, you can take advantage of several tax incentives that make it an even smarter investment. In many countries, farmers receive tax breaks for implementing sustainable farming practices or maintaining certain types of land. Additionally, there are often tax deductions for landowners who engage in farming or forestry activities, such as equipment purchases or property maintenance costs.",
+        "type": "p_with_link",
+        "textBefore": "When you ",
+        "linkText": "invest in farmland",
+        "href": "https://www.novaranatureestates.com/projects",
+        "textAfter": " you can take advantage of several tax incentives that make it an even smarter investment. In many countries, farmers receive tax breaks for implementing sustainable farming practices or maintaining certain types of land. Additionally, there are often tax deductions for landowners who engage in farming or forestry activities, such as equipment purchases or property maintenance costs."
       },
 
       {
@@ -316,10 +333,12 @@ export const BLOGS = [
         type: "p",
         text: "Owning farmland as an investment offers a wealth of benefits that go beyond just financial returns. From generating reliable income and increasing in value over time to providing tax incentives and creating a lasting legacy, farmland is a smart choice for any investor looking to diversify their portfolio and secure their financial future.",
       },
-
       {
-        type: "p",
-        text: "If you’re considering adding farmland to your investment portfolio, Ecovara’s sustainable farming community near Lepakshi offers a unique opportunity to reap the benefits of owning land while living a sustainable, eco-friendly lifestyle. So why not take the leap into farmland investment? It’s more than just land — it’s a chance to grow your wealth, your lifestyle, and your legacy.",
+        "type": "p_with_link",
+        "textBefore": "If you’re considering adding farmland to your investment portfolio, Ecovara’s ",
+        "linkText": "sustainable farming",
+        "href": "https://www.novaranatureestates.com/whynovara",
+        "textAfter": " community near Lepakshi offers a unique opportunity to reap the benefits of owning land while living a sustainable, eco-friendly lifestyle. So why not take the leap into farmland investment? It’s more than just land — it’s a chance to grow your wealth, your lifestyle, and your legacy."
       },
     ],
   },
@@ -350,8 +369,11 @@ export const BLOGS = [
         text: "When you think about investment, you might imagine stocks, real estate, or mutual funds. But have you ever considered investing in farmland? It’s a smart, stable, and long-term way to grow your wealth — and it’s especially appealing if you’re looking for something tangible and meaningful. Whether you’re drawn to the idea of cultivating crops, enjoying the peace of rural life, or diversifying your investment portfolio, owning farmland in India offers a unique set of benefits.",
       },
       {
-        type: "p",
-        text: "If you’re new to farmland investment, don’t worry! We’ve broken it down into simple steps to guide you through the process. By the end of this post, you’ll have a clear understanding of how to get started, what to consider, and why investing in farmland could be one of the best decisions you ever make.",
+        "type": "p_with_link",
+        "textBefore": "If you’re new to ",
+        "linkText": "farmland investment,",
+        "href": "https://www.novaranatureestates.com/projects",
+        "textAfter": " don’t worry! We’ve broken it down into simple steps to guide you through the process. By the end of this post, you’ll have a clear understanding of how to get started, what to consider, and why investing in farmland could be one of the best decisions you ever make."
       },
 
       { type: "h2", text: "1. Understand the Benefits of Farmland Investment" },
@@ -376,8 +398,11 @@ export const BLOGS = [
       },
       { type: "h3", text: "Sustainability:" },
       {
-        type: "p",
-        text: "Farmland investments, especially those focused on organic farming or sustainable agriculture, are increasingly popular with eco-conscious investors.",
+        "type": "p_with_link",
+        "textBefore": "Farmland investments, especially those focused on organic farming or ",
+        "linkText": "sustainable agriculture,",
+        "href": "https://www.novaranatureestates.com/projects",
+        "textAfter": " are increasingly popular with eco-conscious investors."
       },
 
       { type: "h2", text: "2. Research the Land Market in India" },
@@ -561,8 +586,11 @@ export const BLOGS = [
     ],
     sections: [
       {
-        type: "p",
-        text: "Life in Bangalore can get fast-paced. With the traffic, deadlines, and constant hustle, it’s no wonder more and more people are looking for a place to unwind and reconnect with nature. Imagine this: after a busy week in the city, you drive just a couple of hours to a peaceful, serene retreat surrounded by greenery, fresh air, and open spaces. No, it's not a dream — it's becoming a reality with farmlands near Bangalore.",
+        "type": "p_with_link",
+        "textBefore": "Life in Bangalore can get fast-paced. With the traffic, deadlines, and constant hustle, it’s no wonder more and more people are looking for a place to unwind and reconnect with nature. Imagine this: after a busy week in the city, you drive just a couple of hours to a peaceful, serene retreat surrounded by greenery, fresh air, and open spaces. No, it's not a dream — it's becoming a reality with ",
+        "linkText": "farmlands near Bangalore.",
+        "href": "https://www.novaranatureestates.com",
+        "textAfter": ""
       },
       {
         type: "p",
@@ -593,9 +621,12 @@ export const BLOGS = [
         type: "h2",
         text: "3. The Possibility of Building Your Dream Farmhouse",
       },
-      {
-        type: "p",
-        text: "One of the biggest attractions of farmlands near Bangalore is the opportunity to design your very own farmhouse. Many city dwellers dream of owning a house surrounded by greenery, where they can spend their weekends gardening, hosting family get-togethers, or simply relaxing.",
+       {
+        "type": "p_with_link",
+        "textBefore": "One of the biggest attractions of ",
+        "linkText": "farmlands near Bangalore.",
+        "href": "https://www.novaranatureestates.com",
+        "textAfter": " is the opportunity to design your very own farmhouse. Many city dwellers dream of owning a house surrounded by greenery, where they can spend their weekends gardening, hosting family get-togethers, or simply relaxing."
       },
       {
         type: "p",
@@ -671,8 +702,11 @@ export const BLOGS = [
     ],
     sections: [
       {
-        type: "p",
-        text: "Farmland is more than just a plot of land — it’s an investment that can work for you. Whether you’re an aspiring farmer or someone looking to diversify your income streams, generating passive income from farmland near Bangalore can be a rewarding opportunity. With the growing interest in sustainable farming, organic produce, and agro-tourism, there are plenty of ways to turn your land into a reliable source of income. Let’s dive into how you can make the most of farmland near Bangalore and create a passive income that works year-round.",
+        "type": "p_with_link",
+        "textBefore": "Farmland is more than just a plot of land — it’s an investment that can work for you. Whether you’re an aspiring farmer or someone looking to diversify your income streams, generating passive income from ",
+        "linkText": "farmland near Bangalore",
+        "href": "https://www.novaranatureestates.com",
+        "textAfter": " can be a rewarding opportunity. With the growing interest in sustainable farming, organic produce, and agro-tourism, there are plenty of ways to turn your land into a reliable source of income. Let’s dive into how you can make the most of farmland near Bangalore and create a passive income that works year-round."
       },
 
       { type: "h2", text: "1. Lease Your Farmland for Agricultural Use" },
@@ -765,12 +799,12 @@ export const BLOGS = [
       { type: "h3", text: "Camping sites" },
       {
         type: "p",
-        text: "during weekends and holidays.",
+        text: "During weekends and holidays.",
       },
       { type: "h3", text: "Photography shoots" },
       {
         type: "p",
-        text: "for couples, families, or nature photographers.",
+        text: "For couples, families, or nature photographers.",
       },
 
       {
@@ -845,8 +879,11 @@ export const BLOGS = [
         text: "1. Growing Demand for Sustainable and Organic Farming",
       },
       {
-        type: "p",
-        text: "One of the most noticeable trends in India’s agricultural sector is the rising demand for sustainable and organic farming. As awareness about health and environmental sustainability grows, consumers are increasingly turning to organic produce. This shift is prompting farmers to adopt more eco-friendly practices, which in turn is driving up the demand for land that supports organic farming.",
+        "type": "p_with_link",
+        "textBefore": "One of the most noticeable trends in India’s agricultural sector is the rising demand for ",
+        "linkText": "sustainable and organic farming",
+        "href": "https://www.novaranatureestates.com/whynovara",
+        "textAfter": " As awareness about health and environmental sustainability grows, consumers are increasingly turning to organic produce. This shift is prompting farmers to adopt more eco-friendly practices, which in turn is driving up the demand for land that supports organic farming."
       },
       {
         type: "p",
@@ -934,8 +971,11 @@ export const BLOGS = [
         text: "Conclusion: The Future of Farmland Investment Is Bright",
       },
       {
-        type: "p",
-        text: "The future of farmland investment in India looks promising as we move toward 2026. From the rise of sustainable farming practices and agri-tech to the increasing popularity of agro-tourism, there are countless opportunities for those looking to invest in farmland. With India’s growing population, rapid urbanization, and increasing demand for organic produce, farmland is set to become an even more valuable asset.",
+        "type": "p_with_link",
+        "textBefore": "The future of ",
+        "linkText": "farmland investment",
+        "href": "https://www.novaranatureestates.com/projects",
+        "textAfter": " in India looks promising as we move toward 2026. From the rise of sustainable farming practices and agri-tech to the increasing popularity of agro-tourism, there are countless opportunities for those looking to invest in farmland. With India’s growing population, rapid urbanization, and increasing demand for organic produce, farmland is set to become an even more valuable asset."
       },
       {
         type: "p",
@@ -981,11 +1021,14 @@ export const BLOGS = [
         type: "h2",
         text: "What is Ecovara Farms Near Lepakshi?",
       },
-     
       {
-        type: "p",
-        text: "Ecovara Farms is a premium managed farmland project developed by Novara Nature Estates, a Bengaluru-based farmland developer focused on clear-title, legally verified agricultural land investments near Bangalore.",
+        "type": "p_with_link",
+        "textBefore": "Ecovara Farms is a premium ",
+        "linkText": "managed farmland",
+        "href": "https://www.novaranatureestates.com/projects",
+        "textAfter": " project developed by Novara Nature Estates, a Bengaluru-based farmland developer focused on clear-title, legally verified agricultural land investments near Bangalore."
       },
+      
       {
         type: "p",
         text: "The project sits in the North Bangalore corridor near Lepakshi Temple — one of the most historically significant and naturally scenic locations in the region. It spans 15 acres and has been thoughtfully developed for urban investors who want to own productive farmland without managing it themselves.",
@@ -1149,9 +1192,12 @@ export const BLOGS = [
         type: "h3",
         text: "Real Client Experiences",
       },
-         {
-        type: "p",
-        text: 'Sridhar, who works in the IT sector in Bangalore, visited Ecovara after a conversation with a friend about weekend investment options. He told us: "What started as a casual discussion turned into a confident decision after visiting the farm. The team was transparent and the location was everything they said it would be."',
+      {
+        "type": "p_with_link",
+        "textBefore": "Sridhar, who works in the IT sector in Bangalore, visited ",
+        "linkText": "Ecovara",
+        "href": "https://www.novaranatureestates.com/projects",
+        "textAfter": " after a conversation with a friend about weekend investment options. He told us: What started as a casual discussion turned into a confident decision after visiting the farm. The team was transparent and the location was everything they said it would be."
       },
        {
         type: "p",
@@ -1197,10 +1243,6 @@ export const BLOGS = [
    {
         type: "p",
         text: "The best way to understand Ecovara is to walk it. No photograph, no video, and no blog post does justice to 15 acres of green farmland with coconut trees, open sky, and Lepakshi Temple visible on the horizon.",
-      },
-       {
-        type: "h3",
-        text: "Book your free farm visit at Ecovara here →",
       },
          {
         type: "h2",
@@ -1263,8 +1305,15 @@ export const BLOGS = [
         text: "Come see it for yourself.",
       },
       {
-        type: "h3",
-        text: "Schedule your free farm visit today →",
+        "type": "p_with_link",
+        "textBefore": "",
+        "linkText": "Schedule your free farm visit",
+        "href": "https://www.novaranatureestates.com/contactus",
+        "textAfter": " today"
+      },
+      {
+        type: "p",
+        text: "Schedule your free farm visit today ",
       },
    {
         type: "h3",

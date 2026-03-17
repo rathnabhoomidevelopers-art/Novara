@@ -8,14 +8,14 @@ import {
   DownloadIcon,
   Instagram,
 } from "lucide-react";
-import { navigate } from "vike/client/router"; // ✅ Vike navigation (replaces useNavigate)
+import { navigate } from "vike/client/router";
 import { BLOGS } from "../data/blogs";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useEffect, useMemo, useState } from "react";
 import InquiryForm from "../components/InquiryForm";
 import { motion } from "framer-motion";
-import { usePageContext } from "vike-react/usePageContext"; // ✅ Vike route params
+import { usePageContext } from "vike-react/usePageContext";
 import FloatingCT from "../components/FloatingCT";
 import Chatbot from "../components/Chatbot";
 
@@ -98,7 +98,6 @@ const BrochureModal = ({ isOpen, onClose }) => {
           });
           setErrors({});
           onClose();
-          // ✅ Vike navigate (replaces useNavigate hook)
           navigate("/thankyou");
           return;
         } else {
@@ -295,7 +294,6 @@ export default function BlogDetail({ vikeSlug }) {
       <section className="w-full font-urbanist">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-10 py-10">
           <p className="text-slate-700">Blog not found.</p>
-          {/* ✅ Plain <a> replaces <Link> */}
           <a
             href="/blogs"
             className="text-[#E3A600] no-underline font-semibold"
@@ -354,7 +352,6 @@ export default function BlogDetail({ vikeSlug }) {
 
           {/* Blog content */}
           <div className="flex-1 max-w-4xl">
-            {/* ✅ Plain <a> replaces <Link> */}
             <a
               href="/blogs"
               className="inline-flex no-underline items-center gap-2 text-[12px] font-semibold text-slate-700 hover:text-[#E3A600] transition"
@@ -388,11 +385,12 @@ export default function BlogDetail({ vikeSlug }) {
               {(() => {
                 const used = new Map();
                 return sections.map((s, i) => {
+
                   if (s.type === "h2") {
                     return (
                       <h2
                         key={i}
-                        className="scroll-mt-28 text-[20px] sm:text-[24px] font-bold  mt-4"
+                        className="scroll-mt-28 text-[20px] sm:text-[24px] font-bold mt-4"
                       >
                         {s.text}
                       </h2>
@@ -414,6 +412,7 @@ export default function BlogDetail({ vikeSlug }) {
                       </h3>
                     );
                   }
+
                   if (s.type === "quote") {
                     return (
                       <div
@@ -426,6 +425,7 @@ export default function BlogDetail({ vikeSlug }) {
                       </div>
                     );
                   }
+
                   if (s.type === "image") {
                     return (
                       <figure
@@ -445,6 +445,7 @@ export default function BlogDetail({ vikeSlug }) {
                       </figure>
                     );
                   }
+
                   if (s.type === "ul") {
                     return (
                       <ul
@@ -459,6 +460,110 @@ export default function BlogDetail({ vikeSlug }) {
                       </ul>
                     );
                   }
+
+                  // ✅ NEW: ordered list
+                  if (s.type === "ol") {
+                    return (
+                      <ol
+                        key={i}
+                        className="list-decimal list-outside pl-5 space-y-2 text-[13px] sm:text-[14px] text-slate-600"
+                      >
+                        {s.text.map((item, idx) => (
+                          <li key={idx} className="leading-relaxed">
+                            {item}
+                          </li>
+                        ))}
+                      </ol>
+                    );
+                  }
+
+                  // ✅ NEW: paragraph with inline link
+                  if (s.type === "p_with_link") {
+                    return (
+                      <p
+                        key={i}
+                        className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600"
+                      >
+                        {s.textBefore}
+                        <a
+                          href={s.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#DCA000] font-semibold no-underline hover:opacity-90"
+                        >
+                          {s.linkText}
+                        </a>
+                        {s.textAfter}
+                      </p>
+                    );
+                  }
+
+                  // ✅ NEW: paragraph with bold inline parts
+                  if (s.type === "p_with_bold") {
+                    return (
+                      <p
+                        key={i}
+                        className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600"
+                      >
+                        {s.parts.map((part, idx) =>
+                          part.bold ? (
+                            <strong
+                              key={idx}
+                              className="font-semibold text-[#111827]"
+                            >
+                              {part.text}
+                            </strong>
+                          ) : (
+                            <span key={idx}>{part.text}</span>
+                          ),
+                        )}
+                      </p>
+                    );
+                  }
+
+                  // ✅ NEW: paragraph with bold parts + inline link
+                  if (s.type === "p_with_link_bold") {
+                    return (
+                      <p
+                        key={i}
+                        className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600"
+                      >
+                        {s.partsBefore?.map((part, idx) =>
+                          part.bold ? (
+                            <strong
+                              key={idx}
+                              className="font-semibold text-[#111827]"
+                            >
+                              {part.text}
+                            </strong>
+                          ) : (
+                            <span key={idx}>{part.text}</span>
+                          ),
+                        )}
+                        <a
+                          href={s.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#DCA000] font-semibold no-underline hover:opacity-90"
+                        >
+                          {s.linkText}
+                        </a>
+                        {s.partsAfter?.map((part, idx) =>
+                          part.bold ? (
+                            <strong
+                              key={idx}
+                              className="font-semibold text-[#111827]"
+                            >
+                              {part.text}
+                            </strong>
+                          ) : (
+                            <span key={idx}>{part.text}</span>
+                          ),
+                        )}
+                      </p>
+                    );
+                  }
+
                   return (
                     <p
                       key={i}
