@@ -637,7 +637,8 @@ export default function BlogDetail({ vikeSlug }) {
       </div>
 
       {/* Floating WhatsApp + Call */}
-      <FloatingCT />
+       <FloatingCT onBrochureClick={() => setIsModalOpen(true)} />
+
       <BrochureModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

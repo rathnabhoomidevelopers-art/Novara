@@ -229,7 +229,7 @@ export default function HomePage() {
   return (
     <div className="font-urbanist">
       <Header />
-
+        <BrochureModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       {/* HERO */}
       <motion.div
         initial="hidden"
@@ -427,7 +427,12 @@ export default function HomePage() {
       </div>
 
       {/* Floating WhatsApp + Call */}
-      <FloatingCT/>
+      <FloatingCT onBrochureClick={() => setIsModalOpen(true)} />
+
+      <BrochureModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
 
       <div className="bg-yellow-50">
         <CTAStrip
@@ -439,8 +444,6 @@ export default function HomePage() {
 
       <Chatbot />
       <Footer />
-
-      <BrochureModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
 }

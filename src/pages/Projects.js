@@ -569,11 +569,12 @@ export default function Projects() {
       </div>
 
       {/* ── Shared components ────────────────────────────────────────────── */}
+      <FloatingCT onBrochureClick={() => setIsModalOpen(true)} />
+
       <BrochureModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       />
-      <FloatingCT />
       <Chatbot />
       <Footer />
     </div>
