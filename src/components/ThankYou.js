@@ -33,7 +33,7 @@ export default function ThankYou() {
       {/* Top brand bar */}
       <div className="w-full bg-[#52A09A]">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-4">
-          <img src="/images/logo.svg" alt="Novara Nature Estate" className="h-auto w-[140px] sm:w-[180px] md:w-[240px]" />
+          <img src="/images/logo.svg" alt="Novara Nature Estates" className="h-auto w-[140px] sm:w-[180px] md:w-[240px]" />
           <a
             href="/"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-white/10 px-4 py-2.5 text-xs font-semibold text-white no-underline hover:bg-white/15 sm:text-sm"
@@ -94,7 +94,7 @@ export default function ThankYou() {
                 Call Now
               </a>
               <div className="flex flex-col gap-3 sm:flex-row sm:flex-1">
-                <a href="mailto:info@novaranatureestate.com" className="inline-flex items-center justify-center gap-2 rounded-xl border no-underline border-[#0F3F3B] bg-white px-5 py-3.5 text-sm font-semibold text-[#0F3F3B] hover:bg-[#0F3F3B]/5 sm:px-6 sm:py-3">
+                <a href="mailto:info@novaranatureestates.com" className="inline-flex items-center justify-center gap-2 rounded-xl border no-underline border-[#0F3F3B] bg-white px-5 py-3.5 text-sm font-semibold text-[#0F3F3B] hover:bg-[#0F3F3B]/5 sm:px-6 sm:py-3">
                   <MailIcon size={18} />
                   Email Us
                 </a>
@@ -125,7 +125,7 @@ export default function ThankYou() {
           <h2 className="text-xl font-brushelva text-[#0F3F3B] sm:text-2xl md:text-[32px]">Quick Contacts</h2>
           <div className="mt-5 space-y-3 sm:mt-6 sm:space-y-4">
             <ContactRow icon={<PhoneIcon size={18} />} label="Phone" value="+91 8660200662" href="tel:+918660200662" />
-            <ContactRow icon={<MailIcon size={18} />} label="Email" value="info@novaranatureestate.com" href="mailto:info@novaranatureestate.com" breakAll />
+            <ContactRow icon={<MailIcon size={18} />} label="Email" value="info@novaranatureestates.com" href="mailto:info@novaranatureestates.com" breakAll />
           </div>
           <div className="mt-6 overflow-hidden rounded-2xl bg-white sm:rounded-3xl">
             <img src="/images/ecovara_arch.webp" alt="Ecovara" className="h-[180px] w-full object-cover sm:h-[220px]" />
@@ -133,7 +133,7 @@ export default function ThankYou() {
           <div className="mt-5 rounded-2xl bg-white p-4 sm:mt-6 sm:rounded-3xl sm:p-5">
             <div className="text-xs font-bold uppercase tracking-[0.15em] text-slate-600 sm:text-sm">Address</div>
             <p className="mt-2 text-sm leading-5 text-slate-700 sm:text-base sm:leading-6">
-              Novara Nature Estate No. 387, 13th Cross, F-Block,<br className="sm:hidden" />
+              Novara Nature Estates No. 387, 13th Cross, F-Block,<br className="sm:hidden" />
               Sahakar Nagar, Bengaluru, Karnataka 560092
             </p>
           </div>
