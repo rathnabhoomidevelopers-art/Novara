@@ -363,7 +363,7 @@ export default function Blogs() {
       </div>
 
       {/* Floating WhatsApp + Call */}
-      <FloatingCT/>
+      <FloatingCT onBrochureClick={() => setIsModalOpen(true)} />
 
       <BrochureModal
         isOpen={isModalOpen}
