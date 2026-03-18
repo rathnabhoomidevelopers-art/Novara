@@ -1,5 +1,4 @@
 // pages/whynovara/+Page.jsx
-import { DownloadIcon } from "lucide-react";
 import CTAStrip from "../components/CTAStrip";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -76,15 +75,6 @@ const BrochureModal = ({ isOpen, onClose }) => {
 
   const handleBlur = () => setErrors(validate(formData));
 
-  const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/brochures/novara-brochure.pdf";
-    link.download = "Novara-Nature-Estate-Brochure.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = validate(formData);
@@ -98,7 +88,6 @@ const BrochureModal = ({ isOpen, onClose }) => {
           body: JSON.stringify(formData),
         });
         if (response.ok) {
-          downloadPDF();
           setFormData({
             firstName: "",
             lastName: "",

@@ -5,7 +5,6 @@ import {
   Facebook,
   Youtube,
   MessageCircle,
-  DownloadIcon,
   Instagram,
 } from "lucide-react";
 import { navigate } from "vike/client/router";
@@ -13,9 +12,6 @@ import { BLOGS } from "../data/blogs";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useEffect, useMemo, useState } from "react";
-import InquiryForm from "../components/InquiryForm";
-import { motion } from "framer-motion";
-import { usePageContext } from "vike-react/usePageContext";
 import FloatingCT from "../components/FloatingCT";
 import Chatbot from "../components/Chatbot";
 
@@ -65,15 +61,6 @@ const BrochureModal = ({ isOpen, onClose }) => {
 
   const handleBlur = () => setErrors(validate(formData));
 
-  const downloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/brochures/novara-brochure.pdf";
-    link.download = "Novara-Nature-Estate-Brochure.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = validate(formData);
@@ -87,7 +74,6 @@ const BrochureModal = ({ isOpen, onClose }) => {
           body: JSON.stringify(formData),
         });
         if (response.ok) {
-          downloadPDF();
           const name = `${formData.firstName} ${formData.lastName}`.trim();
           setFormData({
             firstName: "",
