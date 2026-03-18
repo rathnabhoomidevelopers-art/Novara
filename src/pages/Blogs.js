@@ -6,11 +6,13 @@ import { BLOGS } from "../data/blogs";
 import { useState } from "react";
 import { DownloadIcon } from "lucide-react";
 import Chatbot from "../components/Chatbot";
-import { navigate } from "vike/client/router"; // ✅ Vike navigation
+import { navigate } from "vike/client/router";
 import FloatingCT from "../components/FloatingCT";
 
 const API_BASE =
   import.meta.env.VITE_API_BASE_URL || "https://novara-backend-one.vercel.app";
+
+const BLOGS_PER_PAGE = 6;
 
 const smoothSpring = { type: "spring", stiffness: 80, damping: 18, mass: 0.9 };
 
@@ -98,7 +100,6 @@ const BrochureModal = ({ isOpen, onClose }) => {
           });
           setErrors({});
           onClose();
-          // ✅ Vike navigate (replaces useNavigate hook)
           navigate("/thankyou");
           return;
         } else {
@@ -228,6 +229,26 @@ const BrochureModal = ({ isOpen, onClose }) => {
 
 export default function Blogs() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  // Sort by id descending — handles both number and string ids
+  const sortedBlogs = [...BLOGS].sort((a, b) => {
+    const idA = typeof a.id === "string" ? parseInt(a.id, 10) : a.id;
+    const idB = typeof b.id === "string" ? parseInt(b.id, 10) : b.id;
+    return idB - idA;
+  });
+
+  const totalPages = Math.ceil(sortedBlogs.length / BLOGS_PER_PAGE);
+
+  const paginatedBlogs = sortedBlogs.slice(
+    (currentPage - 1) * BLOGS_PER_PAGE,
+    currentPage * BLOGS_PER_PAGE
+  );
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div className="font-urbanist">
@@ -258,13 +279,12 @@ export default function Blogs() {
       {/* Cards */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-7">
-          {BLOGS.map((blog) => (
+          {paginatedBlogs.map((blog) => (
             <div
               key={blog.id}
               className="rounded-[22px] bg-white p-3 shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
             >
               <div className="overflow-hidden rounded-[16px]">
-                {/* ✅ Plain <a> replaces <Link> */}
                 <a href={`/blogs/${blog.slug}`}>
                   <img
                     src={blog.image}
@@ -279,10 +299,9 @@ export default function Blogs() {
                     {blog.category}
                   </span>
                   <div className="mt-3 flex items-start justify-between gap-4">
-                    <h2 className="text-[16px] lg:text-[20px] font-semibold leading-snug text-[#0F172A]">
+                    <h3 className="text-[16px] lg:text-[20px] font-semibold leading-snug text-[#0F172A]">
                       {blog.title}
-                    </h2>
-                    {/* ✅ Plain <a> replaces <Link> */}
+                    </h3>
                     <a
                       href={`/blogs/${blog.slug}`}
                       className="flex w-[48px] h-[48px] shrink-0 items-center justify-center rounded-full bg-[#E3A600] text-white transition hover:scale-105"
@@ -295,10 +314,56 @@ export default function Blogs() {
             </div>
           ))}
         </div>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex items-center justify-center gap-3 mt-12">
+            {/* Prev Arrow */}
+            <button
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-200 bg-white text-gray-400 shadow-sm hover:border-gray-400 hover:text-gray-600 transition disabled:opacity-30 disabled:cursor-not-allowed"
+              aria-label="Previous page"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+
+            {/* Page Number Buttons */}
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <button
+                key={page}
+                onClick={() => handlePageChange(page)}
+                className={`w-11 h-11 flex items-center justify-center rounded-full text-sm font-semibold transition shadow-sm ${
+                  currentPage === page
+                    ? "bg-blue-600 text-white shadow-md"
+                    : "bg-white border border-gray-200 text-gray-700 hover:border-gray-400"
+                }`}
+                aria-label={`Page ${page}`}
+                aria-current={currentPage === page ? "page" : undefined}
+              >
+                {page}
+              </button>
+            ))}
+
+            {/* Next Arrow */}
+            <button
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-200 bg-white text-gray-400 shadow-sm hover:border-gray-400 hover:text-gray-600 transition disabled:opacity-30 disabled:cursor-not-allowed"
+              aria-label="Next page"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Floating WhatsApp + Call */}
-      <FloatingCT/>
+      <FloatingCT />
 
       <BrochureModal
         isOpen={isModalOpen}
