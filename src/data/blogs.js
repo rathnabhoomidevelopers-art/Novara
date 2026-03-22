@@ -2365,7 +2365,7 @@ export const BLOGS = [
         "type": "p_with_bold",
         "parts": [
           {
-            "text": "Your farming income is tax-free.",
+            "text": "Your farming income is tax-free. ",
             "bold": true
           },
           {
@@ -2378,7 +2378,7 @@ export const BLOGS = [
         "type": "p_with_bold",
         "parts": [
           {
-            "text": "Selling and reinvesting is efficient.",
+            "text": "Selling and reinvesting is efficient. ",
             "bold": true
           },
           {
@@ -2391,7 +2391,7 @@ export const BLOGS = [
         "type": "p_with_bold",
         "parts": [
           {
-            "text": "No wealth tax liability.",
+            "text": "No wealth tax liability. ",
             "bold": true
           },
           {
@@ -2404,7 +2404,7 @@ export const BLOGS = [
         "type": "p_with_bold",
         "parts": [
           {
-            "text": "Lower transaction costs.",
+            "text": "Lower transaction costs. ",
             "bold": true
           },
           {
@@ -2417,7 +2417,7 @@ export const BLOGS = [
         "type": "p_with_bold",
         "parts": [
           {
-            "text": "One important note:",
+            "text": "One important note: ",
             "bold": true
           },
           {
@@ -2439,7 +2439,7 @@ export const BLOGS = [
         "type": "p_with_bold",
         "parts": [
           {
-            "text": "Get an independent title opinion.",
+            "text": "Get an independent title opinion. ",
             "bold": true
           },
           {
@@ -2452,7 +2452,7 @@ export const BLOGS = [
         "type": "p_with_bold",
         "parts": [
           {
-            "text": "Visit before you commit to anything.",
+            "text": "Visit before you commit to anything. ",
             "bold": true
           },
           {
@@ -2465,7 +2465,7 @@ export const BLOGS = [
         "type": "p_with_bold",
         "parts": [
           {
-            "text": "Understand exactly what management means.",
+            "text": "Understand exactly what management means. ",
             "bold": true
           },
           {
@@ -2478,7 +2478,7 @@ export const BLOGS = [
         "type": "p_with_bold",
         "parts": [
           {
-            "text": "Talk to existing buyers.",
+            "text": "Talk to existing buyers. ",
             "bold": true
           },
           {
@@ -2496,7 +2496,7 @@ export const BLOGS = [
         "type": "p_with_bold",
         "parts": [
           {
-            "text": "Against an apartment:",
+            "text": "Against an apartment: ",
             "bold": true
           },
           {
@@ -2508,7 +2508,7 @@ export const BLOGS = [
         "type": "p_with_bold",
         "parts": [
           {
-            "text": "Against gold:",
+            "text": "Against gold: ",
             "bold": true
           },
           {
@@ -2520,7 +2520,7 @@ export const BLOGS = [
         "type": "p_with_bold",
         "parts": [
           {
-            "text": "Against equities:",
+            "text": "Against equities: ",
             "bold": true
           },
           {
@@ -2532,7 +2532,7 @@ export const BLOGS = [
         "type": "p_with_bold",
         "parts": [
           {
-            "text": "Against a second home:",
+            "text": "Against a second home: ",
             "bold": true
           },
           {
@@ -2626,7 +2626,7 @@ export const BLOGS = [
         "href": "https://www.novaranatureestates.com/contactus",
         "partsAfter": [
           {
-            "text": "to Ecovara",
+            "text": "to Ecovara ",
             "bold": true
           },
             {
