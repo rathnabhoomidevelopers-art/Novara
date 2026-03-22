@@ -595,7 +595,7 @@ export default function BlogDetail({ vikeSlug }) {
                     <div className="overflow-hidden h-[220px] sm:h-[180px] bg-slate-100 flex-shrink-0">
                       <img
                         src={b.heroImage || b.image}
-                        alt={b.title}
+                        alt={b.keywords}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
