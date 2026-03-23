@@ -1,49 +1,5 @@
 export const BLOGS = [
   {
-    "id": 13,
-    "slug": "s",
-    "category": "Managed Farmland",
-    "title": "svsdfv",
-    "headline": "svsdfv",
-    "description": "",
-    "date": "Mar 23, 2026",
-    "keywords": "",
-    "author": "Novara Nature Estates",
-    "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1774266539/kcggbv26q7azo8vzikci.webp",
-    "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1774266539/kcggbv26q7azo8vzikci.webp",
-    "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1774266539/kcggbv26q7azo8vzikci.webp",
-    "imageAlt": "svsdfv",
-    "tags": [],
-    "sections": [
-      {
-        "type": "table",
-        "headers": [
-          "Firstname",
-          "Lastname",
-          "Age"
-        ],
-        "rows": [
-          [
-            "Lucas",
-            "Rossi",
-            "24"
-          ],
-          [
-            "Sophie",
-            "Dubois",
-            "32"
-          ],
-          [
-            "Sam",
-            "Watson",
-            "41"
-          ]
-        ],
-        "themed": false
-      }
-    ]
-  },
-  {
     "id": 1,
     "slug": "farming-techniques-farmlands-near-bangalore",
     "category": "Sustainable Farmland",
@@ -2368,7 +2324,7 @@ export const BLOGS = [
   },
   {
     "id": 11,
-    "slug": "farmland-investment-near-bangalore",
+    "slug": "farmland-investment-near-bangalore-guide",
     "category": "Sustainable Farmland",
     "title": "Farmland Near Bangalore — Complete Investment Guide 2026",
     "headline": "Farmland Investment Near Bangalore — The Complete Guide 2026",
