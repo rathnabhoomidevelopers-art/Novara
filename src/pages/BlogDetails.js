@@ -487,7 +487,8 @@ export default function BlogDetail({ vikeSlug }) {
                     className="no-underline group rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow w-[380px] h-[380px] sm:w-[calc(50%-12px)] sm:h-auto lg:w-[calc(33.333%-16px)] flex flex-col">
                     <div className="overflow-hidden h-[220px] sm:h-[180px] bg-slate-100 flex-shrink-0">
                       <img
-                        src={b.heroImage || b.image} alt={b.title}
+                        src={b.heroImage || b.image}
+                        alt={b.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
