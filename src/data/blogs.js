@@ -2847,9 +2847,9 @@ export const BLOGS = [
     "date": "Mar 23, 2026",
     "keywords": " Farmland Investment Near Bangalore ",
     "author": "Novara Nature Estates",
-    "image": "/images/blog_12.webp",
-    "heroImage": "/images/blog_12.webp",
-    "coverImage": "/images/blog_12.webp",
+    "image": "/images/blog12.webp",
+    "heroImage": "/images/blog12.webp",
+    "coverImage": "/images/blog12.webp",
     "tags": [
       "Sustainable Farming",
       "Eco Farmland",
