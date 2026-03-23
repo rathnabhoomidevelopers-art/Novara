@@ -539,7 +539,7 @@ function BlogEditor({ editingBlog, onBack }) {
 
   // ── GitHub config ─────────────────────────────────────────────────────────
   const GH_TOKEN  = import.meta.env.VITE_GH_TOKEN;
-  const GH_REPO   = "rathnabhoomidevelopers-art/Novara";
+  const GH_REPO   = "Novara";
   const GH_BRANCH = "main";
   const GH_FILE   = "src/data/blogs.js";
 
