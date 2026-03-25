@@ -427,7 +427,7 @@ export default function Layout({ children }) {
       const slug = blogMatch[1];
       blog = BLOGS.find((b) => b.slug === slug);
       if (blog) {
-        title = blog.title ? `${blog.title} | Novara Nature Estates` : title;
+        title = blog.title;
         description =
           blog.description ||
           blog.sections

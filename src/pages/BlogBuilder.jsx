@@ -539,7 +539,7 @@ function BlogEditor({ editingBlog, onBack }) {
 
   // ── GitHub config ─────────────────────────────────────────────────────────
   const GH_TOKEN  = import.meta.env.VITE_GH_TOKEN;
-  const GH_REPO   = "Novara";
+  const GH_REPO   = "rathnabhoomidevelopers-art/Novara";
   const GH_BRANCH = "main";
   const GH_FILE   = "src/data/blogs.js";
 
@@ -628,9 +628,10 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
           : `✅ Blog published to GitHub! Vercel will redeploy shortly.`
       );
     } catch (e) {
-      setPublishStatus("error");
-      setPublishMsg(e.message || "Unknown error occurred.");
-    }
+    console.error("Full publish error:", e);   // ← add this
+    setPublishStatus("error");
+    setPublishMsg(e.message || "Unknown error occurred.");
+  }
   };
 
   const progress = [
