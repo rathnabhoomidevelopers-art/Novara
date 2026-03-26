@@ -17,320 +17,400 @@ export const BLOGS = [
     "sections": [
       {
         "type": "p",
-        "text": "Suresh had been looking at farmland near Bangalore for almost eight months.\nHe liked the idea. The land appreciation story made sense. The tax benefits were real. But every time he got close to making a decision, the same question pulled him back.\n\"I live in Koramangala. I work sixty hours a week. I know nothing about farming. Who is actually going to look after this land?\"\nIt's the question that stops more Bangalore investors than any legal concern or pricing issue. And it's the question that the managed farmland model exists specifically to answer.\n"
+        "text": "Suresh had been looking at farmland near Bangalore for almost eight months.\nHe liked the idea. The land appreciation story made sense. The tax benefits were real. But every time he got close to making a decision, the same question pulled him back.\n\"I live in Koramangala. I work sixty hours a week. I know nothing about farming. Who is actually going to look after this land?\"\nIt's the question that stops more Bangalore investors than any legal concern or pricing issue. And it's the question that the managed farmland model exists specifically to answer.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p_with_link",
         "textBefore": "",
         "linkText": "This guide explains exactly how managed farmland near Bangalore works ",
         "href": "https://www.novaranatureestates.com/blogs/farmland-investment-near-bangalore",
-        "textAfter": "what you own, what someone else handles, what income looks like, and what to look for in a developer before you commit."
+        "textAfter": "what you own, what someone else handles, what income looks like, and what to look for in a developer before you commit.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "What Managed Farmland Actually Means"
+        "text": "What Managed Farmland Actually Means",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Managed farmland is agricultural land that has been developed, infrastructure-ready, and professionally managed by a developer or estate management company on behalf of individual plot owners. You purchase a clearly demarcated piece of land — with a registered title in your name. The developer's team then handles everything that happens on that land: plantation maintenance, irrigation, security, access roads, and ongoing farm operations.\n"
+        "text": "Managed farmland is agricultural land that has been developed, infrastructure-ready, and professionally managed by a developer or estate management company on behalf of individual plot owners. You purchase a clearly demarcated piece of land — with a registered title in your name. The developer's team then handles everything that happens on that land: plantation maintenance, irrigation, security, access roads, and ongoing farm operations.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "You own the asset completely. You receive updates on its condition. You can visit whenever you wish. You do not need to be present, involved, or agriculturally knowledgeable for the farm to function."
+        "text": "You own the asset completely. You receive updates on its condition. You can visit whenever you wish. You do not need to be present, involved, or agriculturally knowledgeable for the farm to function.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Think of it like owning a flat in a well-managed apartment complex. You own your unit. The association and management company handle the building's common areas, security, and maintenance. Except in this case your \"unit\" is agricultural land with coconut and mango trees on it, and the income it generates is tax-free."
+        "text": "Think of it like owning a flat in a well-managed apartment complex. You own your unit. The association and management company handle the building's common areas, security, and maintenance. Except in this case your \"unit\" is agricultural land with coconut and mango trees on it, and the income it generates is tax-free.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "How the Ownership Model Works"
+        "text": "How the Ownership Model Works",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Understanding what you actually own — and what you don't — is the starting point for any serious investor.\n"
+        "text": "Understanding what you actually own — and what you don't — is the starting point for any serious investor.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "What You Own"
+        "text": "What You Own",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "When you purchase a plot in a managed farmland project like Ecovara, you receive a registered sale deed in your name at the Sub-Registrar's office. The land is legally yours. The trees on your plot are legally yours. The title is clear, documented, and verifiable.\nYour plot is physically demarcated — boundary markers, a survey number, and a specific location within the project map. You can stand on it, identify it, photograph it, and verify it against the revenue records independently.\n"
+        "text": "When you purchase a plot in a managed farmland project like Ecovara, you receive a registered sale deed in your name at the Sub-Registrar's office. The land is legally yours. The trees on your plot are legally yours. The title is clear, documented, and verifiable.\nYour plot is physically demarcated — boundary markers, a survey number, and a specific location within the project map. You can stand on it, identify it, photograph it, and verify it against the revenue records independently.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "What the Management Company Handles"
+        "text": "What the Management Company Handles",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "The developer’s estate management team handles all day-to-day operations, making farmland ownership completely hassle-free. At Ecovara, Novara Nature Estates manages everything from plantation care—such as pruning, fertilising, and pest control—to ensuring coconut and mango trees remain productive throughout the year ,"
+        "text": "The developer’s estate management team handles all day-to-day operations, making farmland ownership completely hassle-free. At Ecovara, Novara Nature Estates manages everything from plantation care—such as pruning, fertilising, and pest control—to ensuring coconut and mango trees remain productive throughout the year ,",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Irrigation is taken care of through efficient drip systems, so you don’t have to worry about water management or additional costs. The project also includes 24/7 security, regular maintenance of roads and common areas, and a well-kept environment for every visit. Along with this, you receive regular updates on farm activities, allowing you to stay informed without needing to be physically present."
+        "text": "Irrigation is taken care of through efficient drip systems, so you don’t have to worry about water management or additional costs. The project also includes 24/7 security, regular maintenance of roads and common areas, and a well-kept environment for every visit. Along with this, you receive regular updates on farm activities, allowing you to stay informed without needing to be physically present.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "What You Decide"
+        "text": "What You Decide",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "When to visit. Whether to use your organic farming plot to grow your own produce. Whether to eventually build a farmhouse on your land if regulations permit. Whether to sell, hold, or pass the land to your family. All the decisions that matter remain entirely yours."
+        "text": "When to visit. Whether to use your organic farming plot to grow your own produce. Whether to eventually build a farmhouse on your land if regulations permit. Whether to sell, hold, or pass the land to your family. All the decisions that matter remain entirely yours.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "How Income Is Generated from Managed Farmland"
+        "text": "How Income Is Generated from Managed Farmland",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "This is the part most investors want to understand clearly — and where some developers are less than transparent."
+        "text": "This is the part most investors want to understand clearly — and where some developers are less than transparent.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Plantation Produce Income"
+        "text": "Plantation Produce Income",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "At Ecovara, the 800+ existing coconut and mango trees across the 15-acre property are productive from day one. A mature coconut tree in Karnataka yields approximately 80 to 100 coconuts annually under managed conditions. Mango trees generate seasonal harvest income on top of that."
+        "text": "At Ecovara, the 800+ existing coconut and mango trees across the 15-acre property are productive from day one. A mature coconut tree in Karnataka yields approximately 80 to 100 coconuts annually under managed conditions. Mango trees generate seasonal harvest income on top of that.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "The produce from common plantation areas is harvested and the income is shared with plot owners according to the project's allocation model. Your individual plot trees contribute to your specific income allocation. This is agricultural income — and as discussed, it is entirely exempt from income tax under Section 10(1) of the Income Tax Act.\n"
+        "text": "The produce from common plantation areas is harvested and the income is shared with plot owners according to the project's allocation model. Your individual plot trees contribute to your specific income allocation. This is agricultural income — and as discussed, it is entirely exempt from income tax under Section 10(1) of the Income Tax Act.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Land Appreciation"
+        "text": "Land Appreciation",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Beyond produce income, the land itself appreciates over time. The Lepakshi–NH44 corridor has seen consistent appreciation driven by airport proximity, infrastructure development, and Bangalore's northward urban expansion. This appreciation is realised when you eventually sell — and capital gains on agricultural land enjoy specific exemptions under Section 54B that make the tax picture on exit very efficient.\n"
+        "text": "Beyond produce income, the land itself appreciates over time. The Lepakshi–NH44 corridor has seen consistent appreciation driven by airport proximity, infrastructure development, and Bangalore's northward urban expansion. This appreciation is realised when you eventually sell — and capital gains on agricultural land enjoy specific exemptions under Section 54B that make the tax picture on exit very efficient.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Future Income Streams"
+        "text": "Future Income Streams",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "As the managed farmland model matures in India, additional income streams are emerging for plot owners — agro-tourism, farm stays, solar panel leasing on agricultural land under government schemes like PM Kusum, and specialty crop cultivation. These are not guaranteed income today but represent genuine optionality that comes with owning agricultural land in a professionally managed community.\n"
+        "text": "As the managed farmland model matures in India, additional income streams are emerging for plot owners — agro-tourism, farm stays, solar panel leasing on agricultural land under government schemes like PM Kusum, and specialty crop cultivation. These are not guaranteed income today but represent genuine optionality that comes with owning agricultural land in a professionally managed community.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "What Ecovara Offers — The Benchmark for Managed Farmland Near Bangalore"
+        "text": "What Ecovara Offers — The Benchmark for Managed Farmland Near Bangalore",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "When Bangalore investors research managed farmland, Ecovara by Novara Nature Estates consistently comes up as the reference point. Here is why.\n"
+        "text": "When Bangalore investors research managed farmland, Ecovara by Novara Nature Estates consistently comes up as the reference point. Here is why.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Location"
+        "text": "Location",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Ecovara sits on NH44 near Lepakshi Temple — approximately 75 kilometres from Kempegowda International Airport at Devanahalli. The location combines direct highway access, proximity to a major heritage tourism destination, and position within one of Karnataka's most actively developing land corridors. It is genuinely accessible from Bangalore on a Saturday morning without an overnight stay.\n"
+        "text": "Ecovara sits on NH44 near Lepakshi Temple — approximately 75 kilometres from Kempegowda International Airport at Devanahalli. The location combines direct highway access, proximity to a major heritage tourism destination, and position within one of Karnataka's most actively developing land corridors. It is genuinely accessible from Bangalore on a Saturday morning without an overnight stay.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "The Existing Plantation"
+        "text": "The Existing Plantation",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Most farmland projects near Bangalore sell you bare land and plant saplings after purchase. At Ecovara there are already 800+ mature coconut and mango trees across the property — 64+ tree varieties in total. You are not buying a future farm. You are buying a functioning one. Income generation, tree shade, biodiversity, and the visual reality of owning green productive land — all of it is there from day one.\n"
+        "text": "Most farmland projects near Bangalore sell you bare land and plant saplings after purchase. At Ecovara there are already 800+ mature coconut and mango trees across the property — 64+ tree varieties in total. You are not buying a future farm. You are buying a functioning one. Income generation, tree shade, biodiversity, and the visual reality of owning green productive land — all of it is there from day one.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "The Amenities"
+        "text": "The Amenities",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Ecovara is designed for the investor who also wants to use the land as a lifestyle asset. The project includes a clubhouse, swimming pool, cafeteria, kids play area, jogging track, lotus pond, campfire and rain dance area, organic farming plots, solar street lights, and 24/7 gated security.\n"
+        "text": "Ecovara is designed for the investor who also wants to use the land as a lifestyle asset. The project includes a clubhouse, swimming pool, cafeteria, kids play area, jogging track, lotus pond, campfire and rain dance area, organic farming plots, solar street lights, and 24/7 gated security.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "A weekend at Ecovara is not a weekend roughing it in a field. It is a resort experience on land that you own and that is growing in value while you enjoy it.\n"
+        "text": "A weekend at Ecovara is not a weekend roughing it in a field. It is a resort experience on land that you own and that is growing in value while you enjoy it.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Plot Sizes and Configuration"
+        "text": "Plot Sizes and Configuration",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Plots start from 6,000 square feet with 8,000 and 10,000 square feet configurations also available. The layout follows a European-inspired design philosophy with 80% of the project maintained as open green space. Internal roads are paved. The project is fully operational — not under development.\n"
+        "text": "Plots start from 6,000 square feet with 8,000 and 10,000 square feet configurations also available. The layout follows a European-inspired design philosophy with 80% of the project maintained as open green space. Internal roads are paved. The project is fully operational — not under development.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Legal Clarity"
+        "text": "Legal Clarity",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Every plot at Ecovara comes with a legally verified, clear title. Novara Nature Estates conducts thorough due diligence — title search, encumbrance certificate verification, RTC review, and boundary survey — before any plot is offered for sale. The registration process is handled end-to-end by the Novara team with full documentation support for the buyer.\n"
+        "text": "Every plot at Ecovara comes with a legally verified, clear title. Novara Nature Estates conducts thorough due diligence — title search, encumbrance certificate verification, RTC review, and boundary survey — before any plot is offered for sale. The registration process is handled end-to-end by the Novara team with full documentation support for the buyer.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p_with_link",
         "textBefore": "",
         "linkText": "Explore Ecovara farm plots",
         "href": "https://novaranatureestates.com/projects",
-        "textAfter": " or schedule a free site visit to see the project in person."
+        "textAfter": " or schedule a free site visit to see the project in person.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "How Managed Farmland Differs from Traditional Farmland Purchase"
+        "text": "How Managed Farmland Differs from Traditional Farmland Purchase",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Many investors have a parent or grandparent who owns agricultural land somewhere in Karnataka or Andhra Pradesh. That experience — the land disputes, the tenant farmer complications, the irregular visits, the absence of infrastructure — is not what managed farmland is.\n"
+        "text": "Many investors have a parent or grandparent who owns agricultural land somewhere in Karnataka or Andhra Pradesh. That experience — the land disputes, the tenant farmer complications, the irregular visits, the absence of infrastructure — is not what managed farmland is.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "<b>Traditional agricultural land purchase</b> means buying a parcel from a local seller, usually through a broker, with varying degrees of legal clarity. The land may have existing tenants, unclear boundaries, pending litigation, or no infrastructure whatsoever. After purchase, the responsibility for farming, security, maintenance, and development falls entirely on the buyer. Most urban investors who buy this way end up with land that sits neglected for years because managing it from Bangalore is genuinely difficult.\n"
+        "text": "<b>Traditional agricultural land purchase</b> means buying a parcel from a local seller, usually through a broker, with varying degrees of legal clarity. The land may have existing tenants, unclear boundaries, pending litigation, or no infrastructure whatsoever. After purchase, the responsibility for farming, security, maintenance, and development falls entirely on the buyer. Most urban investors who buy this way end up with land that sits neglected for years because managing it from Bangalore is genuinely difficult.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "<b>Managed farmland</b> is a developed product. The legal work is done before sale. Infrastructure exists at purchase. A professional team manages ongoing operations. The buyer receives a functioning asset, not a project. For a Bangalore professional with limited time and no agricultural background, the difference is enormous."
+        "text": "<b>Managed farmland</b> is a developed product. The legal work is done before sale. Infrastructure exists at purchase. A professional team manages ongoing operations. The buyer receives a functioning asset, not a project. For a Bangalore professional with limited time and no agricultural background, the difference is enormous.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "Questions to Ask Any Managed Farmland Developer Before Buying"
+        "text": "Questions to Ask Any Managed Farmland Developer Before Buying",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "The managed farmland space near Bangalore has grown quickly and not all projects are equal. Use these questions to separate serious developers from marketing operations.\n"
+        "text": "The managed farmland space near Bangalore has grown quickly and not all projects are equal. Use these questions to separate serious developers from marketing operations.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "What does your management team actually do on the property each month?"
+        "text": "What does your management team actually do on the property each month?",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": " A credible developer will give you a specific answer — irrigation schedule, pruning calendar, security rotation, maintenance log. Vague answers about \"professional management\" without specifics are a red flag."
+        "text": " A credible developer will give you a specific answer — irrigation schedule, pruning calendar, security rotation, maintenance log. Vague answers about \"professional management\" without specifics are a red flag.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Can I visit the property unannounced? "
+        "text": "Can I visit the property unannounced? ",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Yes should be the immediate answer. If a developer needs to prepare for your visit or discourages drop-in inspections, something is wrong."
+        "text": "Yes should be the immediate answer. If a developer needs to prepare for your visit or discourages drop-in inspections, something is wrong.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "How do you communicate with existing owners?"
+        "text": "How do you communicate with existing owners?",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Ask what format updates come in — WhatsApp group, email report, owner portal — and how frequently. Then ask to speak with two or three existing owners independently."
+        "text": "Ask what format updates come in — WhatsApp group, email report, owner portal — and how frequently. Then ask to speak with two or three existing owners independently.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "What happens when I want to sell my plot?"
+        "text": "What happens when I want to sell my plot?",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Understand the resale process clearly before buying. Is there a developer buyback option? Can you sell to any third party? Are there transfer fees?"
+        "text": "Understand the resale process clearly before buying. Is there a developer buyback option? Can you sell to any third party? Are there transfer fees?",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Show me the title documents for a plot"
+        "text": "Show me the title documents for a plot",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Any developer who hesitates to show you an actual title deed, EC, and RTC before you have paid anything is not a developer you should be buying from."
+        "text": "Any developer who hesitates to show you an actual title deed, EC, and RTC before you have paid anything is not a developer you should be buying from.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "The Lifestyle Dimension — Why the Weekend Matters"
+        "text": "The Lifestyle Dimension — Why the Weekend Matters",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "There is a part of managed farmland ownership that does not appear in any financial model but ends up being the most talked-about benefit among existing buyers"
+        "text": "There is a part of managed farmland ownership that does not appear in any financial model but ends up being the most talked-about benefit among existing buyers",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Bangalore's professionals spend five days a week in offices, on calls, in traffic. The city is relentless. An Ecovara plot 75 kilometres away on NH44 is a completely different world — open sky, coconut canopy, birdsong, organic produce you grew yourself, your kids running between trees.\n"
+        "text": "Bangalore's professionals spend five days a week in offices, on calls, in traffic. The city is relentless. An Ecovara plot 75 kilometres away on NH44 is a completely different world — open sky, coconut canopy, birdsong, organic produce you grew yourself, your kids running between trees.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Several Ecovara owners who initially bought purely as a financial investment tell us that the weekend experience has become the part they value most. They use the campfire area. They swim in the pool. They pick mangoes from their trees. They sit on their land at sunset and feel something that a mutual fund statement has never given them.\n"
+        "text": "Several Ecovara owners who initially bought purely as a financial investment tell us that the weekend experience has become the part they value most. They use the campfire area. They swim in the pool. They pick mangoes from their trees. They sit on their land at sunset and feel something that a mutual fund statement has never given them.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "That is not a small thing. Owning land you can actually enjoy while it appreciates is an asset class in itself."
+        "text": "That is not a small thing. Owning land you can actually enjoy while it appreciates is an asset class in itself.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "Frequently Asked Questions About Managed Farmland Near Bangalore"
+        "text": "Frequently Asked Questions About Managed Farmland Near Bangalore",
+        "fontWeight": "font-bold"
       },
       {
         "type": "h3",
-        "text": "Do I need to visit regularly to keep my investment healthy?"
+        "text": "Do I need to visit regularly to keep my investment healthy?",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "No. The management team handles all ongoing operations regardless of how often you visit. Some owners visit every month. Others visit twice a year. The farm functions the same either way."
+        "text": "No. The management team handles all ongoing operations regardless of how often you visit. Some owners visit every month. Others visit twice a year. The farm functions the same either way.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "What if I want to grow my own crops on my plot?"
+        "text": "What if I want to grow my own crops on my plot?",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Ecovara includes dedicated organic farming plots where owners can cultivate their own produce. The management team can support your growing choices or manage the organic plot on your behalf.\n"
+        "text": "Ecovara includes dedicated organic farming plots where owners can cultivate their own produce. The management team can support your growing choices or manage the organic plot on your behalf.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Can I build a farmhouse on my Ecovara plot?"
+        "text": "Can I build a farmhouse on my Ecovara plot?",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "This depends on local zoning regulations and conversion permissions. The Novara team can advise on the current regulatory position for your specific plot and the process involved."
+        "text": "This depends on local zoning regulations and conversion permissions. The Novara team can advise on the current regulatory position for your specific plot and the process involved.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Is the agricultural income from my plot really tax-free?"
+        "text": "Is the agricultural income from my plot really tax-free?",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Yes — under Section 10(1) of the Income Tax Act, agricultural income is fully exempt from income tax. However, how this applies to your specific situation depends on your income profile. Consult your CA for personalised advice.\n"
+        "text": "Yes — under Section 10(1) of the Income Tax Act, agricultural income is fully exempt from income tax. However, how this applies to your specific situation depends on your income profile. Consult your CA for personalised advice.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "What happens to my investment if the developer stops operating?"
+        "text": "What happens to my investment if the developer stops operating?",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "You own the land outright with a registered title in your name. The land is yours regardless of what happens to the management company. You would need to find alternative management arrangements, but your core asset — the land and plantation — remains completely yours.\n"
+        "text": "You own the land outright with a registered title in your name. The land is yours regardless of what happens to the management company. You would need to find alternative management arrangements, but your core asset — the land and plantation — remains completely yours.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "How do I get started?"
+        "text": "How do I get started?",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": " The best first step is a site visit. Schedule your free visit to Ecovara through the Novara contact page. See the land in person, meet the team, and walk the plantation before making any financial commitment.\n"
+        "text": " The best first step is a site visit. Schedule your free visit to Ecovara through the Novara contact page. See the land in person, meet the team, and walk the plantation before making any financial commitment.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "Conclusion"
+        "text": "Conclusion",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Suresh — the investor from Koramangala who spent eight months asking who would look after his land — visited Ecovara on a Sunday in March.\nHe met the farm manager. Walked the plantation. Saw the irrigation system running. Sat in the clubhouse with three other plot owners who happened to be visiting the same day. Ate lunch made from produce grown on the farm.\nHe called us on the drive back to Bangalore.\n"
+        "text": "Suresh — the investor from Koramangala who spent eight months asking who would look after his land — visited Ecovara on a Sunday in March.\nHe met the farm manager. Walked the plantation. Saw the irrigation system running. Sat in the clubhouse with three other plot owners who happened to be visiting the same day. Ate lunch made from produce grown on the farm.\nHe called us on the drive back to Bangalore.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "\"I've been asking the wrong question,\" he said. \"I kept wondering who would take care of the land. The right question was — why did I wait this long?\"\nIf you've been asking the same question Suresh was, you now have the answer.\n"
+        "text": "\"I've been asking the wrong question,\" he said. \"I kept wondering who would take care of the land. The right question was — why did I wait this long?\"\nIf you've been asking the same question Suresh was, you now have the answer.\n",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p_with_link",
         "textBefore": "",
         "linkText": "Schedule your free Ecovara site visit",
         "href": "https://www.novaranatureestates.com/contactus",
-        "textAfter": " Call us: +91-8660200662"
+        "textAfter": " Call us: +91-8660200662",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h6",
+        "text": "hello",
+        "fontWeight": "font-bold"
       }
     ]
   },
-  
   {
     "id": 1,
     "slug": "farming-techniques-farmlands-near-bangalore",
