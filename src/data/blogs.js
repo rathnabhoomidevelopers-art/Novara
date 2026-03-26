@@ -404,11 +404,6 @@ export const BLOGS = [
         "textAfter": " Call us: +91-8660200662",
         "fontWeight": "font-normal"
       },
-      {
-        "type": "h6",
-        "text": "hello",
-        "fontWeight": "font-bold"
-      }
     ]
   },
   {
