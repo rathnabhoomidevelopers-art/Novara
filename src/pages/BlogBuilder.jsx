@@ -1,3 +1,14 @@
+// src/pages/BlogBuilder.jsx
+// Novara Nature Estates — Blog Builder  (upgraded: Skyup feature parity)
+// ✅ h4 / h5 / h6 heading blocks
+// ✅ h2_with_link … h6_with_link blocks
+// ✅ p_with_bold  (inline bold parts)
+// ✅ p_with_link_bold
+// ✅ fontWeight property on paragraphs
+// ✅ Right-side TOC (sticky scrollspy, h2-h6 indent levels)
+// ✅ Create mode  — build a new blog and publish to GitHub
+// ✅ Edit mode    — load an existing blog, mutate it, publish update
+// ✅ Auth-aware   — uses AuthContext; shows login gate if not authenticated
 
 import React, { useState, useMemo, useCallback, useEffect } from "react";
 import {
@@ -731,6 +742,7 @@ function BlogEditor({ editingBlog, onBack }) {
         setPublishMsg("Updating existing blog entry…");
         const idx = blogsArray.findIndex(b => String(b.id) === String(editingBlogId.current));
         if (idx === -1) throw new Error(`Could not find blog with id ${editingBlogId.current} in blogs.js`);
+         newBlogsArray = [...blogsArray];
         newBlogsArray[idx] = { ...blogData, id: editingBlogId.current };
       } else {
         setPublishMsg("Inserting new blog entry…");
