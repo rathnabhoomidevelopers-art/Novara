@@ -403,28 +403,6 @@ export const BLOGS = [
         "href": "https://www.novaranatureestates.com/contactus",
         "textAfter": " Call us: +91-8660200662",
         "fontWeight": "font-normal"
-      },
-      {
-        "type": "p_with_link_bold",
-        "partsBefore": [
-          {
-            "bold": false,
-            "text": "i m ok "
-          },
-          {
-            "bold": true,
-            "text": "hello brother "
-          }
-        ],
-        "linkText": "dont invest",
-        "href": "https://novaranatureestates.com",
-        "partsAfter": [
-          {
-            "bold": false,
-            "text": "for the return of pooja"
-          }
-        ],
-        "fontWeight": "font-normal"
       }
     ]
   },
