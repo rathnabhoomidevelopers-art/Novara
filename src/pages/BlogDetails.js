@@ -281,9 +281,9 @@ export default function BlogDetail({ vikeSlug }) {
 
 {/* Breadcrumb — below author/date, no background */}
 <div className="mt-3 flex items-center gap-1.5 flex-wrap text-[12px] text-slate-400">
-  <a href="/" className="hover:text-[#E3A600] transition-colors">Home</a>
+  <a href="/" className="hover:text-[#E3A600] transition-colors font-semibold">Home</a>
   <span className="text-slate-300 text-[10px]">{">>"}</span>
-  <a href="/blogs" className="hover:text-[#E3A600] transition-colors">Blog</a>
+  <a href="/blogs" className="hover:text-[#E3A600] transition-colors font-semibold">Blog</a>
   <span className="text-slate-300 text-[10px]">{">>"}</span>
   <span className="text-slate-500 line-clamp-1 max-w-[420px] sm:max-w-[600px]">{blog.title}</span>
 </div>
