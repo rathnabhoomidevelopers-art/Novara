@@ -243,7 +243,7 @@ export default function Blogs() {
     <div className="font-urbanist">
       <Header />
 
-      <motion.div
+  <motion.div
   initial="hidden"
   animate="show"
   variants={staggerWrap}
@@ -263,22 +263,18 @@ export default function Blogs() {
       Farmland Investment Insights & Guides.
     </h1>
   </motion.div>
-</motion.div>
 
-{/* Breadcrumb */}
-<div
-  className="w-full px-6 py-3"
-  style={{
-    background: "linear-gradient(135deg, #6B1A1A 0%, #8B2020 50%, #7A1818 100%)",
-  }}
->
-  <div className="max-w-7xl mx-auto flex items-center gap-2 text-[13px] font-medium text-white/80">
-    <a href="/" className="hover:text-white transition-colors">Home</a>
-    <span className="text-white/50">{">>"}</span>
-    <span className="text-white font-semibold">Blog</span>
+  {/* Breadcrumb — pinned to bottom of banner */}
+  <div
+    className="absolute bottom-0 left-0 right-0 px-6 py-2.5"
+  >
+    <div className="max-w-7xl mx-auto flex items-center gap-2 text-[13px] font-medium text-white/80">
+      <a href="/" className="hover:text-white transition-colors">Home</a>
+      <span className="text-white/60 text-[11px]">{">>"}</span>
+      <span className="text-white font-semibold">Blog</span>
+    </div>
   </div>
-</div>
-
+</motion.div>
       {/* Cards */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-7">
