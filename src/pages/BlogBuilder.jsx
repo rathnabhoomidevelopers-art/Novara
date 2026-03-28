@@ -1,5 +1,11 @@
 // src/pages/BlogBuilder.jsx
-// Novara Nature Estates — Blog Builder
+// Novara Nature Estates — Blog Builder  (upgraded: Skyup feature parity)
+// ✅ h4 / h5 / h6 heading blocks
+// ✅ h2_with_link … h6_with_link blocks
+// ✅ p_with_bold  (inline bold parts)
+// ✅ p_with_link_bold
+// ✅ fontWeight property on paragraphs
+// ✅ Right-side TOC (sticky scrollspy, h2-h6 indent levels)
 // ✅ Create mode  — build a new blog and publish to GitHub
 // ✅ Edit mode    — load an existing blog, mutate it, publish update
 // ✅ Auth-aware   — uses AuthContext; shows login gate if not authenticated
@@ -48,16 +54,12 @@ const compressAndUpload = (file, { maxW = 1400, quality = 0.82 } = {}) =>
         form.append("file", blob, file.name.replace(/\.[^.]+$/, ".webp"));
         form.append("upload_preset", CL_PRESET);
         try {
-          const cloudName = CL_CLOUD;
           const res = await fetch(
-            `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`,
+            `https://api.cloudinary.com/v1_1/${CL_CLOUD}/image/upload`,
             { method: "POST", body: form }
           );
           const data = await res.json();
-          if (!res.ok) {
-            const msg = data?.error?.message || `HTTP ${res.status}`;
-            return reject(new Error(`Cloudinary: ${msg}`));
-          }
+          if (!res.ok) return reject(new Error(`Cloudinary: ${data?.error?.message || `HTTP ${res.status}`}`));
           resolve(data.secure_url);
         } catch (e) { reject(e); }
       }, "image/webp", quality);
@@ -66,52 +68,96 @@ const compressAndUpload = (file, { maxW = 1400, quality = 0.82 } = {}) =>
     img.src = objectUrl;
   });
 
+// ─── Section ↔ Element converters ────────────────────────────────────────────
 const sectionToElement = (s) => {
   const base = { id: Date.now() + Math.random() };
-  if (s.type === "p")          return { ...base, type: "p",          text: s.text };
-  if (s.type === "h2")         return { ...base, type: "h2",         text: s.text };
-  if (s.type === "h3")         return { ...base, type: "h3",         text: s.text };
+  // headings
+  if (["h2","h3","h4","h5","h6"].includes(s.type))
+    return { ...base, type: s.type, text: s.text, fontWeight: s.fontWeight || "font-bold" };
+  // headings with link
+  if (["h2_with_link","h3_with_link","h4_with_link","h5_with_link","h6_with_link"].includes(s.type))
+    return { ...base, type: s.type, textBefore: s.textBefore || "", linkText: s.linkText || "", href: s.href || "", textAfter: s.textAfter || "", fontWeight: s.fontWeight || "font-bold" };
+  if (s.type === "p")          return { ...base, type: "p",          text: s.text, fontWeight: s.fontWeight || "font-normal" };
   if (s.type === "quote")      return { ...base, type: "quote",      text: s.text };
   if (s.type === "ul")         return { ...base, type: "ul",         text: s.text };
   if (s.type === "ol")         return { ...base, type: "ol",         text: s.text };
   if (s.type === "table")      return { ...base, type: "table",      headers: s.headers || [], rows: s.rows || [], themed: s.themed || false };
   if (s.type === "image")      return { ...base, type: "image",      src: s.src,  caption: s.caption || "" };
   if (s.type === "p_with_link")
-    return { ...base, type: "p_with_link", textBefore: s.textBefore || "", linkText: s.linkText || "", href: s.href || "", textAfter: s.textAfter || "" };
+    return { ...base, type: "p_with_link", textBefore: s.textBefore || "", linkText: s.linkText || "", href: s.href || "", textAfter: s.textAfter || "", fontWeight: s.fontWeight || "font-normal" };
+  if (s.type === "p_with_bold")
+    return { ...base, type: "p_with_bold", parts: s.parts || [], fontWeight: s.fontWeight || "font-normal" };
+  if (s.type === "p_with_link_bold")
+    return { ...base, type: "p_with_link_bold", partsBefore: s.partsBefore || [], linkText: s.linkText || "", href: s.href || "", partsAfter: s.partsAfter || [], fontWeight: s.fontWeight || "font-normal" };
   return { ...base, type: "p", text: s.text || "" };
 };
 
 const toSections = (elements) =>
   elements.map((el) => {
-    if (el.type === "p")          return { type: "p",    text: el.text };
-    if (el.type === "h2")         return { type: "h2",   text: el.text };
-    if (el.type === "h3")         return { type: "h3",   text: el.text };
+    if (["h2","h3","h4","h5","h6"].includes(el.type))
+      return { type: el.type, text: el.text, fontWeight: el.fontWeight };
+    if (["h2_with_link","h3_with_link","h4_with_link","h5_with_link","h6_with_link"].includes(el.type))
+      return { type: el.type, textBefore: el.textBefore, linkText: el.linkText, href: el.href, textAfter: el.textAfter, fontWeight: el.fontWeight };
+    if (el.type === "p")          return { type: "p",    text: el.text, fontWeight: el.fontWeight };
     if (el.type === "quote")      return { type: "quote",text: el.text };
     if (el.type === "ul")         return { type: "ul",   text: el.text };
     if (el.type === "ol")         return { type: "ol",   text: el.text };
     if (el.type === "table")      return { type: "table", headers: el.headers, rows: el.rows, themed: el.themed };
     if (el.type === "image")      return { type: "image",src: el.src, caption: el.caption };
     if (el.type === "p_with_link")
-      return { type: "p_with_link", textBefore: el.textBefore, linkText: el.linkText, href: el.href, textAfter: el.textAfter };
+      return { type: "p_with_link", textBefore: el.textBefore, linkText: el.linkText, href: el.href, textAfter: el.textAfter, fontWeight: el.fontWeight };
+    if (el.type === "p_with_bold")
+      return { type: "p_with_bold", parts: el.parts, fontWeight: el.fontWeight };
+    if (el.type === "p_with_link_bold")
+      return { type: "p_with_link_bold", partsBefore: el.partsBefore, linkText: el.linkText, href: el.href, partsAfter: el.partsAfter, fontWeight: el.fontWeight };
     return { type: "p", text: el.text || "" };
   });
 
 const createElement = (type) => {
   const base = { id: Date.now() + Math.random(), type };
   switch (type) {
-    case "p":          return { ...base, text: "Write your paragraph here…" };
-    case "h2":         return { ...base, text: "Section Heading" };
-    case "h3":         return { ...base, text: "Sub-section Heading" };
+    case "p":          return { ...base, text: "Write your paragraph here…", fontWeight: "font-normal" };
+    case "h2":         return { ...base, text: "Section Heading (H2)", fontWeight: "font-bold" };
+    case "h3":         return { ...base, text: "Sub-section Heading (H3)", fontWeight: "font-bold" };
+    case "h4":         return { ...base, text: "Minor Heading (H4)", fontWeight: "font-bold" };
+    case "h5":         return { ...base, text: "Small Heading (H5)", fontWeight: "font-bold" };
+    case "h6":         return { ...base, text: "Tiny Heading (H6)", fontWeight: "font-bold" };
+    case "h2_with_link": return { ...base, textBefore: "Learn more about", linkText: "managed farmland", href: "https://novaranatureestates.com", textAfter: "near Bangalore.", fontWeight: "font-bold" };
+    case "h3_with_link": return { ...base, textBefore: "Explore our", linkText: "project details", href: "https://novaranatureestates.com/projects", textAfter: "here.", fontWeight: "font-bold" };
+    case "h4_with_link": return { ...base, textBefore: "See the", linkText: "full guide", href: "https://novaranatureestates.com", textAfter: "for more.", fontWeight: "font-bold" };
+    case "h5_with_link": return { ...base, textBefore: "Read about", linkText: "our approach", href: "https://novaranatureestates.com", textAfter: "today.", fontWeight: "font-bold" };
+    case "h6_with_link": return { ...base, textBefore: "More at", linkText: "our site", href: "https://novaranatureestates.com", textAfter: "", fontWeight: "font-bold" };
     case "quote":      return { ...base, text: "An insightful quote goes here…" };
     case "ul":         return { ...base, text: ["First point", "Second point", "Third point"] };
     case "ol":         return { ...base, text: ["Step one", "Step two", "Step three"] };
     case "table":      return { ...base, headers: ["Firstname", "Lastname", "Age"], rows: [["Lucas", "Rossi", "24"], ["Sophie", "Dubois", "32"], ["Sam", "Watson", "41"]], themed: false };
     case "image":      return { ...base, src: "", caption: "" };
     case "p_with_link":
-      return { ...base, textBefore: "Learn more about", linkText: "managed farmland", href: "https://novaranatureestates.com/projects", textAfter: "near Bangalore." };
+      return { ...base, textBefore: "Learn more about", linkText: "managed farmland", href: "https://novaranatureestates.com/projects", textAfter: "near Bangalore.", fontWeight: "font-normal" };
+    case "p_with_bold":
+      return { ...base, parts: [{ bold: false, text: "This is regular text, and " }, { bold: true, text: "this part is bold" }, { bold: false, text: ", then regular again." }], fontWeight: "font-normal" };
+    case "p_with_link_bold":
+      return { ...base, partsBefore: [{ bold: false, text: "Discover " }, { bold: true, text: "premium farmland" }], linkText: "invest now", href: "https://novaranatureestates.com", partsAfter: [{ bold: false, text: " for the best returns." }], fontWeight: "font-normal" };
     default: return base;
   }
 };
+
+// ─── Heading size map ─────────────────────────────────────────────────────────
+const HEADING_SIZE = {
+  h2: "text-[20px] sm:text-[24px]",
+  h3: "text-[16px] sm:text-[18px]",
+  h4: "text-[15px] sm:text-[16px]",
+  h5: "text-[13px] sm:text-[14px]",
+  h6: "text-[12px] sm:text-[13px]",
+};
+
+// ─── TOC heading types ────────────────────────────────────────────────────────
+const TOC_TYPES = new Set([
+  "h2","h3","h4","h5","h6",
+  "h2_with_link","h3_with_link","h4_with_link","h5_with_link","h6_with_link",
+]);
+
+const getHeadingTag = (type) => type.replace("_with_link", "");
 
 // ─── Tiny UI ──────────────────────────────────────────────────────────────────
 const Label = ({ children }) => (
@@ -142,36 +188,72 @@ const SectionDivider = ({ children }) => (
   </div>
 );
 
+// ─── Element type catalogue ───────────────────────────────────────────────────
 const ELEMENT_TYPES = [
-  { type: "p",          icon: Type,      label: "Paragraph" },
-  { type: "h2",         icon: Type,      label: "H2" },
-  { type: "h3",         icon: Type,      label: "H3" },
-  { type: "quote",      icon: Type,      label: "Quote" },
-  { type: "ul",         icon: List,      label: "Bullets" },
-  { type: "ol",         icon: List,      label: "Numbered" },
-  { type: "table",      icon: List,      label: "Table" },
-  { type: "image",      icon: ImageIcon, label: "Image" },
-  { type: "p_with_link",icon: LinkIcon,  label: "Para+Link" },
+  { type: "p",               icon: Type,      label: "Para" },
+  { type: "h2",              icon: Type,      label: "H2" },
+  { type: "h3",              icon: Type,      label: "H3" },
+  { type: "h4",              icon: Type,      label: "H4" },
+  { type: "h5",              icon: Type,      label: "H5" },
+  { type: "h6",              icon: Type,      label: "H6" },
+  { type: "h2_with_link",    icon: LinkIcon,  label: "H2+Link" },
+  { type: "h3_with_link",    icon: LinkIcon,  label: "H3+Link" },
+  { type: "h4_with_link",    icon: LinkIcon,  label: "H4+Link" },
+  { type: "h5_with_link",    icon: LinkIcon,  label: "H5+Link" },
+  { type: "h6_with_link",    icon: LinkIcon,  label: "H6+Link" },
+  { type: "quote",           icon: Type,      label: "Quote" },
+  { type: "ul",              icon: List,      label: "Bullets" },
+  { type: "ol",              icon: List,      label: "Numbered" },
+  { type: "table",           icon: List,      label: "Table" },
+  { type: "image",           icon: ImageIcon, label: "Image" },
+  { type: "p_with_link",     icon: LinkIcon,  label: "Para+Link" },
+  { type: "p_with_bold",     icon: Type,      label: "Para+Bold" },
+  { type: "p_with_link_bold",icon: LinkIcon,  label: "P+Lnk+Bold" },
 ];
 
-// ─── Preview section renderer (exact BlogDetails output) ──────────────────────
+// ─── Preview section renderer (mirrors BlogDetail output) ─────────────────────
 function PreviewSection({ s, usedH3 }) {
-  if (s.type === "h2")
-    return <h2 className="scroll-mt-28 text-[20px] sm:text-[24px] font-bold text-[#111827] mt-4">{s.text}</h2>;
-
-  if (s.type === "h3") {
+  // Plain headings h2-h6
+  if (["h2","h3","h4","h5","h6"].includes(s.type)) {
+    const tag = s.type;
     const base = slugify(s.text || "");
     const count = (usedH3.get(base) || 0) + 1;
     usedH3.set(base, count);
     const id = count === 1 ? base : `${base}-${count}`;
-    return <h3 id={id} className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]">{s.text}</h3>;
+    const sizeClass = HEADING_SIZE[tag];
+    return React.createElement(tag, {
+      id,
+      className: `scroll-mt-28 ${sizeClass} ${s.fontWeight || "font-bold"} text-[#111827]`,
+      dangerouslySetInnerHTML: { __html: s.text },
+    });
   }
+
+  // Headings with link
+  if (["h2_with_link","h3_with_link","h4_with_link","h5_with_link","h6_with_link"].includes(s.type)) {
+    const tag = getHeadingTag(s.type);
+    const base = slugify(s.linkText || "");
+    const count = (usedH3.get(base) || 0) + 1;
+    usedH3.set(base, count);
+    const id = count === 1 ? base : `${base}-${count}`;
+    const sizeClass = HEADING_SIZE[tag];
+    return React.createElement(tag, {
+      id,
+      className: `scroll-mt-28 ${sizeClass} ${s.fontWeight || "font-bold"} text-[#111827]`,
+    }, [
+      s.textBefore ? s.textBefore.trimEnd() + " " : "",
+      <a key="link" href={s.href} target="_blank" rel="noopener noreferrer"
+        className="text-[#E3A600] no-underline hover:opacity-80 transition-opacity">{s.linkText}</a>,
+      s.textAfter ? " " + s.textAfter.trimStart() : "",
+    ]);
+  }
+
   if (s.type === "quote")
     return (
       <div className="rounded-xl border border-[#F2E6C9] bg-[#FFF8E8] px-4 py-4 text-[13px] sm:text-[14px] text-slate-700">
         <div className="border-l-4 border-[#E3A600] pl-3 italic leading-relaxed">{s.text}</div>
       </div>
     );
+
   if (s.type === "table") {
     const themed = s.themed;
     return (
@@ -198,6 +280,7 @@ function PreviewSection({ s, usedH3 }) {
       </div>
     );
   }
+
   if (s.type === "image")
     return (
       <figure className="rounded-2xl overflow-hidden border border-slate-100 bg-slate-50">
@@ -208,27 +291,60 @@ function PreviewSection({ s, usedH3 }) {
         {s.caption && <figcaption className="px-4 py-3 text-[12px] text-slate-500">{s.caption}</figcaption>}
       </figure>
     );
+
   if (s.type === "ul")
     return (
       <ul className="list-disc list-outside pl-5 space-y-2 text-[13px] sm:text-[14px] text-slate-600">
         {(s.text || []).map((item, i) => <li key={i} className="leading-relaxed">{item}</li>)}
       </ul>
     );
+
   if (s.type === "ol")
     return (
       <ol className="list-decimal list-outside pl-5 space-y-2 text-[13px] sm:text-[14px] text-slate-600">
         {(s.text || []).map((item, i) => <li key={i} className="leading-relaxed">{item}</li>)}
       </ol>
     );
+
   if (s.type === "p_with_link")
     return (
-      <p className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600">
+      <p className={`text-[13px] sm:text-[14px] leading-relaxed text-slate-600 ${s.fontWeight || ""}`}>
         {s.textBefore && <span>{s.textBefore} </span>}
         <a href={s.href} className="text-[#E3A600] font-semibold underline underline-offset-2 hover:opacity-80">{s.linkText}</a>
         {s.textAfter && <span> {s.textAfter}</span>}
       </p>
     );
-  return <p className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600" dangerouslySetInnerHTML={{ __html: s.text }} />;
+
+  if (s.type === "p_with_bold")
+    return (
+      <p className={`text-[13px] sm:text-[14px] leading-relaxed text-slate-600 ${s.fontWeight || ""}`}>
+        {(s.parts || []).map((part, i) =>
+          part.bold
+            ? <strong key={i} className="font-semibold text-[#111827]">{part.text}</strong>
+            : <span key={i}>{part.text}</span>
+        )}
+      </p>
+    );
+
+  if (s.type === "p_with_link_bold")
+    return (
+      <p className={`text-[13px] sm:text-[14px] leading-relaxed text-slate-600 ${s.fontWeight || ""}`}>
+        {(s.partsBefore || []).map((part, i) =>
+          part.bold
+            ? <strong key={i} className="font-semibold text-[#111827]">{part.text}</strong>
+            : <span key={i}>{part.text}</span>
+        )}
+        {" "}<a href={s.href} className="text-[#E3A600] font-semibold underline underline-offset-2 hover:opacity-80">{s.linkText}</a>{" "}
+        {(s.partsAfter || []).map((part, i) =>
+          part.bold
+            ? <strong key={i} className="font-semibold text-[#111827]">{part.text}</strong>
+            : <span key={i}>{part.text}</span>
+        )}
+      </p>
+    );
+
+  // default paragraph
+  return <p className={`text-[13px] sm:text-[14px] leading-relaxed text-slate-600 ${s.fontWeight || ""}`} dangerouslySetInnerHTML={{ __html: s.text }} />;
 }
 
 // ═════════════════════════════════════════════════════════════════════════════
@@ -261,7 +377,7 @@ function LoginScreen() {
             <Leaf size={26} className="text-white" />
           </div>
           <h1 className="text-2xl font-bold text-[#111827]">Novara Blog Builder</h1>
-          <p className="text-sm text-slate-500 mt-1">Sign in to create & edit blogs</p>
+          <p className="text-sm text-slate-500 mt-1">Sign in to create &amp; edit blogs</p>
         </div>
         <div className="bg-white rounded-2xl shadow-xl border border-slate-100 p-7">
           {error && (
@@ -390,17 +506,18 @@ function BlogPicker({ onSelect }) {
 // ═════════════════════════════════════════════════════════════════════════════
 function BlogEditor({ editingBlog, onBack }) {
   const { token, user, logout } = useAuth();
-  const isEditMode = !!editingBlog;
+  const [isEditMode] = useState(!!editingBlog);
 
-  const [elements, setElements]         = useState([]);
-  const [selectedId, setSelectedId]     = useState(null);
-  const [showAddMenu, setShowAddMenu]   = useState(false);
+
+  const [elements, setElements]             = useState([]);
+  const [selectedId, setSelectedId]         = useState(null);
+  const [showAddMenu, setShowAddMenu]       = useState(false);
   const [insertAfterIdx, setInsertAfterIdx] = useState(null);
   const [hoveredInsert, setHoveredInsert]   = useState(null);
-  const [showSettings, setShowSettings] = useState(false);
-  const [previewMode, setPreviewMode]   = useState(false);
-  const [publishStatus, setPublishStatus] = useState(null);
-  const [publishMsg, setPublishMsg]       = useState("");
+  const [showSettings, setShowSettings]     = useState(false);
+  const [previewMode, setPreviewMode]       = useState(false);
+  const [publishStatus, setPublishStatus]   = useState(null);
+  const [publishMsg, setPublishMsg]         = useState("");
 
   const [meta, setMeta] = useState({
     title: "", headline: "", description: "", keywords: "",
@@ -409,6 +526,7 @@ function BlogEditor({ editingBlog, onBack }) {
     date: new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }),
     heroImage: "", imageAlt: "", tags: "",
   });
+  const editingBlogId = React.useRef(editingBlog?.id ?? null);
 
   useEffect(() => {
     if (!editingBlog) return;
@@ -431,17 +549,47 @@ function BlogEditor({ editingBlog, onBack }) {
 
   const selectedEl = elements.find((el) => el.id === selectedId) || null;
 
+  // ── TOC computation (h2-h6 + with_link variants) ──────────────────────────
   const toc = useMemo(() => {
     const used = new Map();
     return elements
-      .filter((el) => el.type === "h3" && el.text)
+      .filter((el) => TOC_TYPES.has(el.type))
       .map((el) => {
-        const base = slugify(el.text);
+        const rawText = el.linkText || el.text || "";
+        const base = slugify(rawText);
         const count = (used.get(base) || 0) + 1;
         used.set(base, count);
-        return { id: count === 1 ? base : `${base}-${count}`, text: el.text };
+        const id = count === 1 ? base : `${base}-${count}`;
+        const level = getHeadingTag(el.type);
+        return { id, text: rawText, level };
       });
   }, [elements]);
+
+  // ── Scrollspy for preview TOC ─────────────────────────────────────────────
+  const [activeId, setActiveId] = useState("");
+  useEffect(() => {
+    if (!previewMode || !toc.length) return;
+    const headingEls = toc.map((t) => document.getElementById(t.id)).filter(Boolean);
+    if (!headingEls.length) return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => (b.intersectionRatio || 0) - (a.intersectionRatio || 0))[0];
+        if (visible?.target?.id) setActiveId(visible.target.id);
+      },
+      { root: null, rootMargin: "-25% 0px -65% 0px", threshold: [0.1, 0.25, 0.5, 0.75, 1] },
+    );
+    headingEls.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, [previewMode, toc]);
+
+  const scrollToId = (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+    setActiveId(id);
+  };
 
   const addElement = useCallback((type) => {
     const el = createElement(type);
@@ -476,9 +624,22 @@ function BlogEditor({ editingBlog, onBack }) {
     });
   }, []);
 
-  const addListItem = (id) => updateEl(id, { text: [...(elements.find((e) => e.id === id)?.text || []), "New item"] });
-  const updateItem  = (id, idx, val) => updateEl(id, { text: elements.find((e) => e.id === id).text.map((t, i) => i === idx ? val : t) });
-  const deleteItem  = (id, idx) => updateEl(id, { text: elements.find((e) => e.id === id).text.filter((_, i) => i !== idx) });
+  const addListItem    = (id) => updateEl(id, { text: [...(elements.find((e) => e.id === id)?.text || []), "New item"] });
+  const updateItem     = (id, idx, val) => updateEl(id, { text: elements.find((e) => e.id === id).text.map((t, i) => i === idx ? val : t) });
+  const deleteItem     = (id, idx) => updateEl(id, { text: elements.find((e) => e.id === id).text.filter((_, i) => i !== idx) });
+
+  // p_with_bold helpers
+  const addBoldPart    = (id) => updateEl(id, { parts: [...(elements.find((e) => e.id === id)?.parts || []), { bold: false, text: "New part" }] });
+  const updatePart     = (id, idx, patch) => updateEl(id, { parts: elements.find((e) => e.id === id).parts.map((p, i) => i === idx ? { ...p, ...patch } : p) });
+  const deletePart     = (id, idx) => updateEl(id, { parts: elements.find((e) => e.id === id).parts.filter((_, i) => i !== idx) });
+
+  // p_with_link_bold helpers
+  const addPartBefore  = (id) => updateEl(id, { partsBefore: [...(elements.find((e) => e.id === id)?.partsBefore || []), { bold: false, text: "New part" }] });
+  const updatePartB    = (id, idx, patch) => updateEl(id, { partsBefore: elements.find((e) => e.id === id).partsBefore.map((p, i) => i === idx ? { ...p, ...patch } : p) });
+  const deletePartB    = (id, idx) => updateEl(id, { partsBefore: elements.find((e) => e.id === id).partsBefore.filter((_, i) => i !== idx) });
+  const addPartAfter   = (id) => updateEl(id, { partsAfter: [...(elements.find((e) => e.id === id)?.partsAfter || []), { bold: false, text: "New part" }] });
+  const updatePartA    = (id, idx, patch) => updateEl(id, { partsAfter: elements.find((e) => e.id === id).partsAfter.map((p, i) => i === idx ? { ...p, ...patch } : p) });
+  const deletePartA    = (id, idx) => updateEl(id, { partsAfter: elements.find((e) => e.id === id).partsAfter.filter((_, i) => i !== idx) });
 
   const [heroUploading, setHeroUploading]       = useState(false);
   const [contentUploading, setContentUploading] = useState(null);
@@ -509,7 +670,7 @@ function BlogEditor({ editingBlog, onBack }) {
     const slug     = meta.slug || slugify(title) || `blog-${Date.now()}`;
     const tagsArr  = meta.tags ? meta.tags.split(",").map((t) => t.trim()).filter(Boolean) : [];
     return {
-      id:          isEditMode ? editingBlog.id : Date.now(),
+     id: isEditMode ? editingBlogId.current : Date.now(),
       slug,
       category:    meta.category,
       title:       meta.title || title,
@@ -562,8 +723,8 @@ function BlogEditor({ editingBlog, onBack }) {
       const fileData = await fileRes.json();
       const sha = fileData.sha;
       const binary = atob(fileData.content.replace(/\n/g, ""));
-const bytes = Uint8Array.from(binary, c => c.charCodeAt(0));
-const currentContent = new TextDecoder("utf-8").decode(bytes);
+      const bytes = Uint8Array.from(binary, c => c.charCodeAt(0));
+      const currentContent = new TextDecoder("utf-8").decode(bytes);
 
       const stripped = currentContent
         .replace(/^[\s\S]*?export\s+const\s+BLOGS\s*=\s*/, "")
@@ -579,10 +740,10 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
       let newBlogsArray;
       if (isEditMode) {
         setPublishMsg("Updating existing blog entry…");
-        const idx = blogsArray.findIndex(b => String(b.id) === String(editingBlog.id));
-        if (idx === -1) throw new Error(`Could not find blog with id ${editingBlog.id} in blogs.js`);
-        newBlogsArray = [...blogsArray];
-        newBlogsArray[idx] = { ...blogData, id: editingBlog.id };
+        const idx = blogsArray.findIndex(b => String(b.id) === String(editingBlogId.current));
+        if (idx === -1) throw new Error(`Could not find blog with id ${editingBlogId.current} in blogs.js`);
+         newBlogsArray = [...blogsArray];
+        newBlogsArray[idx] = { ...blogData, id: editingBlogId.current };
       } else {
         setPublishMsg("Inserting new blog entry…");
         newBlogsArray = [{ ...blogData, id: nextId }, ...blogsArray];
@@ -628,10 +789,10 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
           : `✅ Blog published to GitHub! Vercel will redeploy shortly.`
       );
     } catch (e) {
-    console.error("Full publish error:", e);   // ← add this
-    setPublishStatus("error");
-    setPublishMsg(e.message || "Unknown error occurred.");
-  }
+      console.error("Full publish error:", e);
+      setPublishStatus("error");
+      setPublishMsg(e.message || "Unknown error occurred.");
+    }
   };
 
   const progress = [
@@ -669,13 +830,31 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
     };
 
     let content;
-    if (el.type === "h2")
-      content = <h2 className={`text-[20px] sm:text-[24px] font-bold text-[#111827] ${ring}`} onClick={pick}
-        contentEditable suppressContentEditableWarning onBlur={(e) => updateEl(el.id, { text: e.currentTarget.innerText })}>{el.text}</h2>;
-    else if (el.type === "h3")
-      content = <h3 className={`text-[16px] sm:text-[18px] font-bold text-[#111827] ${ring}`} onClick={pick}
-        contentEditable suppressContentEditableWarning onBlur={(e) => updateEl(el.id, { text: e.currentTarget.innerText })}>{el.text}</h3>;
-    else if (el.type === "quote")
+    const isHeading = ["h2","h3","h4","h5","h6"].includes(el.type);
+    const isHeadingLink = ["h2_with_link","h3_with_link","h4_with_link","h5_with_link","h6_with_link"].includes(el.type);
+
+    if (isHeading) {
+      const tag = el.type;
+      const sizeClass = HEADING_SIZE[tag];
+      content = React.createElement(tag, {
+        className: `${sizeClass} ${el.fontWeight || "font-bold"} text-[#111827] ${ring}`,
+        onClick: pick,
+        contentEditable: true,
+        suppressContentEditableWarning: true,
+        onBlur: (e) => updateEl(el.id, { text: e.currentTarget.innerText }),
+      }, el.text);
+    } else if (isHeadingLink) {
+      const tag = getHeadingTag(el.type);
+      const sizeClass = HEADING_SIZE[tag];
+      content = React.createElement(tag, {
+        className: `${sizeClass} ${el.fontWeight || "font-bold"} text-[#111827] ${ring}`,
+        onClick: pick,
+      }, [
+        el.textBefore ? el.textBefore + " " : "",
+        <span key="link" className="text-[#E3A600] underline">{el.linkText || "link"}</span>,
+        el.textAfter ? " " + el.textAfter : "",
+      ]);
+    } else if (el.type === "quote")
       content = (
         <div className={`rounded-xl border border-[#F2E6C9] bg-[#FFF8E8] px-4 py-4 ${ring}`} onClick={pick}>
           <div className="border-l-4 border-[#E3A600] pl-3 italic text-[13px] text-slate-700 leading-relaxed"
@@ -699,23 +878,15 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
       content = (
         <div className={`overflow-x-auto rounded-xl border border-slate-200 ${ring}`} onClick={pick}>
           <table className="w-full text-[13px] sm:text-[14px] text-slate-700 border-collapse">
-            <thead>
-              <tr>
-                {(el.headers || []).map((h, i) => (
-                  <th key={i} className="text-left px-4 py-3 font-bold border border-slate-200 text-[#111827]"
-                    style={{ background: el.themed ? "#e8dfa8" : "#ffffff" }}>{h}</th>
-                ))}
+            <thead><tr>{(el.headers || []).map((h, i) => (
+              <th key={i} className="text-left px-4 py-3 font-bold border border-slate-200 text-[#111827]"
+                style={{ background: el.themed ? "#e8dfa8" : "#ffffff" }}>{h}</th>
+            ))}</tr></thead>
+            <tbody>{(el.rows || []).map((row, ri) => (
+              <tr key={ri} style={{ background: el.themed ? (ri % 2 === 0 ? "#faf7ec" : "#f5f0d8") : "#ffffff" }}>
+                {row.map((cell, ci) => <td key={ci} className="px-4 py-2.5 border border-slate-200">{cell}</td>)}
               </tr>
-            </thead>
-            <tbody>
-              {(el.rows || []).map((row, ri) => (
-                <tr key={ri} style={{ background: el.themed ? (ri % 2 === 0 ? "#faf7ec" : "#f5f0d8") : "#ffffff" }}>
-                  {row.map((cell, ci) => (
-                    <td key={ci} className="px-4 py-2.5 border border-slate-200">{cell}</td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
+            ))}</tbody>
           </table>
         </div>
       );
@@ -729,10 +900,36 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
       );
     } else if (el.type === "p_with_link")
       content = (
-        <p className={`text-[13px] sm:text-[14px] leading-relaxed text-slate-600 ${ring}`} onClick={pick}>
+        <p className={`text-[13px] sm:text-[14px] leading-relaxed text-slate-600 ${el.fontWeight || ""} ${ring}`} onClick={pick}>
           {el.textBefore && <span>{el.textBefore} </span>}
           <span className="text-[#E3A600] font-semibold underline underline-offset-2">{el.linkText || "link"}</span>
           {el.textAfter && <span> {el.textAfter}</span>}
+        </p>
+      );
+    else if (el.type === "p_with_bold")
+      content = (
+        <p className={`text-[13px] sm:text-[14px] leading-relaxed text-slate-600 ${el.fontWeight || ""} ${ring}`} onClick={pick}>
+          {(el.parts || []).map((part, i) =>
+            part.bold
+              ? <strong key={i} className="font-semibold text-[#111827]">{part.text}</strong>
+              : <span key={i}>{part.text}</span>
+          )}
+        </p>
+      );
+    else if (el.type === "p_with_link_bold")
+      content = (
+        <p className={`text-[13px] sm:text-[14px] leading-relaxed text-slate-600 ${el.fontWeight || ""} ${ring}`} onClick={pick}>
+          {(el.partsBefore || []).map((part, i) =>
+            part.bold
+              ? <strong key={i} className="font-semibold text-[#111827]">{part.text}</strong>
+              : <span key={i}>{part.text}</span>
+          )}
+          {" "}<span className="text-[#E3A600] font-semibold underline underline-offset-2">{el.linkText || "link"}</span>{" "}
+          {(el.partsAfter || []).map((part, i) =>
+            part.bold
+              ? <strong key={i} className="font-semibold text-[#111827]">{part.text}</strong>
+              : <span key={i}>{part.text}</span>
+          )}
         </p>
       );
     else
@@ -751,7 +948,7 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
               >✕ bold</button>
             </div>
           )}
-          <p className={`text-[13px] sm:text-[14px] leading-relaxed text-slate-600 ${ring}`}
+          <p className={`text-[13px] sm:text-[14px] leading-relaxed text-slate-600 ${el.fontWeight || ""} ${ring}`}
             onClick={pick} contentEditable suppressContentEditableWarning
             dangerouslySetInnerHTML={{ __html: el.text }}
             onBlur={(e) => updateEl(el.id, { text: e.currentTarget.innerHTML })} />
@@ -767,7 +964,7 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
     );
   };
 
-  // ── Element editor ────────────────────────────────────────────────────────
+  // ── Element editor panel ──────────────────────────────────────────────────
   const renderEditor = () => {
     if (!selectedEl)
       return (
@@ -780,6 +977,9 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
       );
 
     const el = selectedEl;
+    const isHeading     = ["h2","h3","h4","h5","h6"].includes(el.type);
+    const isHeadingLink = ["h2_with_link","h3_with_link","h4_with_link","h5_with_link","h6_with_link"].includes(el.type);
+
     return (
       <div className="flex-1 overflow-y-auto px-5 py-4 space-y-4 panel-scroll">
         <div className="flex items-center justify-between">
@@ -797,32 +997,80 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
           </div>
         </div>
 
-        {["p", "h2", "h3", "quote"].includes(el.type) && (
+        {/* fontWeight for headings & paragraphs */}
+        {(isHeading || isHeadingLink || ["p","p_with_link","p_with_bold","p_with_link_bold"].includes(el.type)) && (
           <div>
-            <Label>Content</Label>
-            {el.type === "p" ? (
-              <div className="space-y-2">
-                <Textarea
-                  value={el.text.replace(/<strong>/g, "**").replace(/<\/strong>/g, "**")}
-                  rows={4}
-                  onChange={(e) => {
-                    const html = e.target.value.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
-                    updateEl(el.id, { text: html });
-                  }}
-                  placeholder="Type content… Use **word** to make it bold"
-                />
-                <p className="text-[10px] text-slate-400 leading-snug">
-                  Tip: wrap words in <code className="bg-slate-100 px-1 rounded">**double asterisks**</code> to make them <strong>bold</strong>. Or select text directly in the preview and click <strong>B</strong>.
-                </p>
-              </div>
-            ) : (
-              <Textarea value={el.text} rows={2}
-                onChange={(e) => updateEl(el.id, { text: e.target.value })}
-                placeholder="Type your content…" />
-            )}
+            <Label>Font weight</Label>
+            <select
+              value={el.fontWeight || (isHeading || isHeadingLink ? "font-bold" : "font-normal")}
+              onChange={(e) => updateEl(el.id, { fontWeight: e.target.value })}
+              className="w-full px-3 py-2 text-sm rounded-lg border border-slate-200 bg-white text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#1A614F]/20 focus:border-[#1A614F] transition-all"
+            >
+              <option value="font-normal">Normal</option>
+              <option value="font-medium">Medium</option>
+              <option value="font-semibold">Semibold</option>
+              <option value="font-bold">Bold</option>
+              <option value="font-extrabold">Extra Bold</option>
+            </select>
           </div>
         )}
 
+        {/* Plain headings h2-h6 */}
+        {isHeading && (
+          <div>
+            <Label>Heading text</Label>
+            <Textarea value={el.text} rows={2}
+              onChange={(e) => updateEl(el.id, { text: e.target.value })}
+              placeholder="Type your heading…" />
+          </div>
+        )}
+
+        {/* Heading with link */}
+        {isHeadingLink && (
+          <div className="space-y-3">
+            <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg text-[11px] text-amber-800">
+              Preview: <span className="text-slate-600">{el.textBefore} </span>
+              <span className="text-[#E3A600] font-semibold underline">{el.linkText}</span>
+              <span className="text-slate-600"> {el.textAfter}</span>
+            </div>
+            <div><Label>Text before link</Label><Input value={el.textBefore || ""} onChange={(e) => updateEl(el.id, { textBefore: e.target.value })} /></div>
+            <div><Label>Link text</Label><Input value={el.linkText || ""} onChange={(e) => updateEl(el.id, { linkText: e.target.value })} /></div>
+            <div><Label>URL</Label><Input value={el.href || ""} placeholder="https://…" onChange={(e) => updateEl(el.id, { href: e.target.value })} /></div>
+            <div><Label>Text after link</Label><Input value={el.textAfter || ""} onChange={(e) => updateEl(el.id, { textAfter: e.target.value })} /></div>
+          </div>
+        )}
+
+        {/* Plain paragraph & quote */}
+        {["quote"].includes(el.type) && (
+          <div>
+            <Label>Content</Label>
+            <Textarea value={el.text} rows={3}
+              onChange={(e) => updateEl(el.id, { text: e.target.value })}
+              placeholder="Type your content…" />
+          </div>
+        )}
+
+        {el.type === "p" && (
+          <div>
+            <Label>Content</Label>
+            <div className="space-y-2">
+              <Textarea
+                value={el.text.replace(/<strong>/g, "**").replace(/<\/strong>/g, "**")}
+                rows={4}
+                onChange={(e) => {
+                  const html = e.target.value.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+                  updateEl(el.id, { text: html });
+                }}
+                placeholder="Type content… Use **word** to bold"
+              />
+              <p className="text-[10px] text-slate-400 leading-snug">
+                Tip: wrap words in <code className="bg-slate-100 px-1 rounded">**double asterisks**</code> to make them <strong>bold</strong>.
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* p_with_link */}
         {el.type === "p_with_link" && (
           <div className="space-y-3">
             <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg text-[11px] text-amber-800">
@@ -837,6 +1085,84 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
           </div>
         )}
 
+        {/* p_with_bold */}
+        {el.type === "p_with_bold" && (
+          <div className="space-y-3">
+            <Label>Text parts (toggle bold per part)</Label>
+            <div className="space-y-2">
+              {(el.parts || []).map((part, i) => (
+                <div key={i} className="flex gap-2 items-center">
+                  <button onClick={() => updatePart(el.id, i, { bold: !part.bold })}
+                    className={`shrink-0 px-2 py-1 rounded text-[10px] font-bold border transition-all ${
+                      part.bold ? "bg-[#1A614F] text-white border-[#1A614F]" : "bg-white text-slate-500 border-slate-200"}`}>
+                    B
+                  </button>
+                  <Input value={part.text} onChange={(e) => updatePart(el.id, i, { text: e.target.value })}
+                    className={part.bold ? "font-semibold" : ""} />
+                  <button onClick={() => deletePart(el.id, i)}
+                    className="shrink-0 w-6 h-6 flex items-center justify-center rounded border border-red-100 text-red-400 hover:bg-red-50">
+                    <X size={10} />
+                  </button>
+                </div>
+              ))}
+            </div>
+            <button onClick={() => addBoldPart(el.id)}
+              className="w-full flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-dashed border-slate-300 text-slate-500 text-xs hover:border-[#1A614F] hover:text-[#1A614F] transition-all">
+              <Plus size={11} /> Add part
+            </button>
+          </div>
+        )}
+
+        {/* p_with_link_bold */}
+        {el.type === "p_with_link_bold" && (
+          <div className="space-y-3">
+            <SectionDivider>Parts before link</SectionDivider>
+            <div className="space-y-2">
+              {(el.partsBefore || []).map((part, i) => (
+                <div key={i} className="flex gap-2 items-center">
+                  <button onClick={() => updatePartB(el.id, i, { bold: !part.bold })}
+                    className={`shrink-0 px-2 py-1 rounded text-[10px] font-bold border transition-all ${
+                      part.bold ? "bg-[#1A614F] text-white border-[#1A614F]" : "bg-white text-slate-500 border-slate-200"}`}>
+                    B
+                  </button>
+                  <Input value={part.text} onChange={(e) => updatePartB(el.id, i, { text: e.target.value })} />
+                  <button onClick={() => deletePartB(el.id, i)}
+                    className="shrink-0 w-6 h-6 flex items-center justify-center rounded border border-red-100 text-red-400 hover:bg-red-50"><X size={10} /></button>
+                </div>
+              ))}
+            </div>
+            <button onClick={() => addPartBefore(el.id)}
+              className="w-full flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-dashed border-slate-300 text-slate-500 text-xs hover:border-[#1A614F] hover:text-[#1A614F] transition-all">
+              <Plus size={11} /> Add part before
+            </button>
+
+            <SectionDivider>Link</SectionDivider>
+            <div><Label>Link text</Label><Input value={el.linkText || ""} onChange={(e) => updateEl(el.id, { linkText: e.target.value })} /></div>
+            <div><Label>URL</Label><Input value={el.href || ""} placeholder="https://…" onChange={(e) => updateEl(el.id, { href: e.target.value })} /></div>
+
+            <SectionDivider>Parts after link</SectionDivider>
+            <div className="space-y-2">
+              {(el.partsAfter || []).map((part, i) => (
+                <div key={i} className="flex gap-2 items-center">
+                  <button onClick={() => updatePartA(el.id, i, { bold: !part.bold })}
+                    className={`shrink-0 px-2 py-1 rounded text-[10px] font-bold border transition-all ${
+                      part.bold ? "bg-[#1A614F] text-white border-[#1A614F]" : "bg-white text-slate-500 border-slate-200"}`}>
+                    B
+                  </button>
+                  <Input value={part.text} onChange={(e) => updatePartA(el.id, i, { text: e.target.value })} />
+                  <button onClick={() => deletePartA(el.id, i)}
+                    className="shrink-0 w-6 h-6 flex items-center justify-center rounded border border-red-100 text-red-400 hover:bg-red-50"><X size={10} /></button>
+                </div>
+              ))}
+            </div>
+            <button onClick={() => addPartAfter(el.id)}
+              className="w-full flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg border border-dashed border-slate-300 text-slate-500 text-xs hover:border-[#1A614F] hover:text-[#1A614F] transition-all">
+              <Plus size={11} /> Add part after
+            </button>
+          </div>
+        )}
+
+        {/* Image */}
         {el.type === "image" && (
           <div className="space-y-3">
             <div>
@@ -859,6 +1185,7 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
           </div>
         )}
 
+        {/* Table */}
         {el.type === "table" && (
           <div className="space-y-3">
             <div className="flex items-center justify-between p-3 rounded-lg border border-slate-100 bg-slate-50">
@@ -924,6 +1251,7 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
           </div>
         )}
 
+        {/* Lists */}
         {(el.type === "ul" || el.type === "ol") && (
           <div>
             <Label>List items</Label>
@@ -984,7 +1312,7 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
         .btn-ghost:hover { border-color: #1A614F; color: #1A614F; background: #E9FFF3; }
         .chip {
           background: white; border: 1.5px solid #e2e8f0; color: #475569;
-          padding: 8px 6px; border-radius: 8px; font-size: 11px; font-weight: 600;
+          padding: 6px 4px; border-radius: 8px; font-size: 10px; font-weight: 600;
           cursor: pointer; display: flex; flex-direction: column; align-items: center;
           gap: 3px; transition: all .2s; text-align: center;
         }
@@ -994,6 +1322,8 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
           display: flex; align-items: center; justify-content: space-between;
           position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 12px rgba(26,97,79,.3);
         }
+        .toc-scroll::-webkit-scrollbar { width: 3px; }
+        .toc-scroll::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 4px; }
       `}</style>
 
       <div className={`grid min-h-screen ${previewMode ? "grid-cols-1" : "grid-cols-1 lg:grid-cols-[360px_1fr]"}`}>
@@ -1163,7 +1493,7 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
                 <div className="mt-3 grid grid-cols-4 gap-1.5">
                   {ELEMENT_TYPES.map(({ type, icon: Icon, label }) => (
                     <button key={type} onClick={() => addElement(type)} className="chip">
-                      <Icon size={13} /><span>{label}</span>
+                      <Icon size={12} /><span className="leading-tight">{label}</span>
                     </button>
                   ))}
                 </div>
@@ -1258,28 +1588,75 @@ const currentContent = new TextDecoder("utf-8").decode(bytes);
                         </div>
                       : previewMode
                         ? (() => {
-                            const usedH3 = new Map();
+                            const usedH = new Map();
                             return elements.map((el, i) => {
-                              // ✅ FIX: build section object correctly for ALL types
                               let s;
-                              if (el.type === "image") {
+                              if (["h2","h3","h4","h5","h6"].includes(el.type))
+                                s = { type: el.type, text: el.text, fontWeight: el.fontWeight };
+                              else if (["h2_with_link","h3_with_link","h4_with_link","h5_with_link","h6_with_link"].includes(el.type))
+                                s = { type: el.type, textBefore: el.textBefore, linkText: el.linkText, href: el.href, textAfter: el.textAfter, fontWeight: el.fontWeight };
+                              else if (el.type === "image")
                                 s = { type: "image", src: el.src, caption: el.caption };
-                              } else if (el.type === "p_with_link") {
-                                s = { type: "p_with_link", textBefore: el.textBefore, linkText: el.linkText, href: el.href, textAfter: el.textAfter };
-                              } else if (el.type === "table") {
+                              else if (el.type === "p_with_link")
+                                s = { type: "p_with_link", textBefore: el.textBefore, linkText: el.linkText, href: el.href, textAfter: el.textAfter, fontWeight: el.fontWeight };
+                              else if (el.type === "p_with_bold")
+                                s = { type: "p_with_bold", parts: el.parts, fontWeight: el.fontWeight };
+                              else if (el.type === "p_with_link_bold")
+                                s = { type: "p_with_link_bold", partsBefore: el.partsBefore, linkText: el.linkText, href: el.href, partsAfter: el.partsAfter, fontWeight: el.fontWeight };
+                              else if (el.type === "table")
                                 s = { type: "table", headers: el.headers, rows: el.rows, themed: el.themed };
-                              } else if (el.type === "ul" || el.type === "ol") {
+                              else if (el.type === "ul" || el.type === "ol")
                                 s = { type: el.type, text: el.text };
-                              } else {
-                                s = { type: el.type, text: el.text };
-                              }
-                              return <PreviewSection key={i} s={s} usedH3={usedH3} />;
+                              else
+                                s = { type: el.type, text: el.text, fontWeight: el.fontWeight };
+                              return <PreviewSection key={i} s={s} usedH3={usedH} />;
                             });
                           })()
                         : elements.map((el, idx) => renderBuilder(el, idx))
                     }
                   </div>
                 </div>
+
+                {/* ── RIGHT TABLE OF CONTENTS (preview mode only) ── */}
+                {previewMode && toc.length > 0 && (
+                  <aside className="hidden lg:block w-[280px] ml-8 flex-shrink-0">
+                    <div className="sticky top-36">
+                      <div className="rounded-2xl border border-slate-100 bg-white shadow-[0_12px_35px_rgba(0,0,0,0.06)] p-4">
+                        <div className="text-[13px] font-bold text-slate-900 tracking-wide uppercase mb-3">
+                          Table of Contents
+                        </div>
+                        <div className="space-y-0.5 max-h-[60vh] overflow-auto toc-scroll pr-1">
+                          {toc.map((t) => {
+                            const isActive = t.id === activeId;
+                            const indentClass =
+                              t.level === "h3" ? "pl-4" :
+                              t.level === "h4" ? "pl-7" :
+                              t.level === "h5" ? "pl-10" :
+                              t.level === "h6" ? "pl-12 text-[11px]" : "";
+                            return (
+                              <button
+                                key={t.id}
+                                onClick={() => scrollToId(t.id)}
+                                className={[
+                                  "w-full text-left rounded-lg px-2 py-1.5 text-[12px] leading-snug transition-all",
+                                  indentClass,
+                                  isActive
+                                    ? "bg-[#E9FFF3] text-[#1A614F] font-semibold"
+                                    : "text-slate-600 hover:bg-slate-50 hover:text-slate-900",
+                                ].join(" ")}
+                              >
+                                {t.text}
+                              </button>
+                            );
+                          })}
+                        </div>
+                        <div className="mt-3 text-[10px] text-slate-400 border-t border-slate-100 pt-2">
+                          Tip: Click a heading to jump.
+                        </div>
+                      </div>
+                    </div>
+                  </aside>
+                )}
               </div>
             </div>
           </section>

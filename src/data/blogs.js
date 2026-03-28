@@ -1,5 +1,1407 @@
 export const BLOGS = [
   {
+    "id": 16,
+    "slug": "how-to-buy-farmland-karnataka-legal-guide",
+    "category": "Managed Farmland",
+    "title": "How to Buy Farmland in Karnataka — Legal Guide 2026",
+    "headline": "How to Buy Farmland in Karnataka — Step-by-Step Guide",
+    "description": "The complete legal guide to buying farmland in Karnataka — title verification, EC, khata, stamp duty, registration, and the best locations near Bangalore.\n",
+    "date": "Mar 27, 2026",
+    "keywords": "Farmland in karnataka, Agricultural land",
+    "author": "Novara Nature Estates",
+    "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1774594332/ocsuiacacxdgg8vntjf1.webp",
+    "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1774594332/ocsuiacacxdgg8vntjf1.webp",
+    "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1774594332/ocsuiacacxdgg8vntjf1.webp",
+    "imageAlt": "Farmland In Karnataka",
+    "tags": [],
+    "sections": [
+      {
+        "type": "p",
+        "text": "Anand had been sitting on the same decision for seven months.\nHe had the money. He had found a project he liked near Lepakshi. He had visited the site twice. But every time he got ready to move forward, a new question appeared.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Is the title really clean? What is an encumbrance certificate and do I need one? What is khata and why does everyone keep mentioning it? What happens at registration? What if something goes wrong after I pay?\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "His brother-in-law - a property lawyer in Chennai , gave him the clearest advice he received in those seven months.\n\"The farmland investment itself is not complicated. The legal process is not complicated either. What makes it feel complicated is not knowing the sequence. Learn the sequence and the whole thing becomes straightforward.\"\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "This guide is the sequence. Written specifically for urban investors buying agricultural land in Karnataka — step by step, document by document, question by question.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Why the Legal Process for Agricultural Land Is Different",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Most Bangalore investors have bought a flat or know someone who has. The legal process for residential property - sale agreement, home loan, registration is reasonably familiar.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Agricultural land works differently. The documents are different. The revenue records system is different. The authorities involved are different. And the checks you need to do before buying are more specific than most developers will proactively walk you through.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "This is not a reason to avoid farmland. It is a reason to understand the process before you start , which is exactly what this guide gives you.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "The good news: for buyers purchasing within a professionally managed project like Ecovara by Novara Nature Estates, most of this process is handled by the developer's legal team with full transparency. You still need to understand it — so you can verify that it has been done correctly and ask the right questions.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Step 1 — Understand What You Are Buying",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Before any document check, clarify exactly what the purchase includes.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<b>The land parcel </b>— a specific survey number with defined boundaries, area in square feet or guntas, and a location within the project layout. Confirm the survey number matches across all documents.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<b>The trees and plantation </b>-  in a managed farmland project, the trees on your plot are part of your purchase. Confirm this is explicitly stated in the sale agreement.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<b>Infrastructure and amenities</b> - roads, water supply, security, common areas. Understand what is included in your purchase and what the ongoing maintenance arrangement covers.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<b>Management services </b>- confirm the specific services included in farm management, the duration of the management agreement, and what happens at the end of the agreement period.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "At Ecovara, all of this is clearly documented before any payment is made. The legal guide on how to buy agricultural land in Karnataka walks through each element in detail.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Step 2 -  The 6 Documents Every Farmland Buyer Must Verify",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "This is the core of farmland due diligence in Karnataka. Every serious buyer - regardless of which project they are purchasing from -must verify these six documents before signing anything.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Document 1 - Title Deed (Sale Deed)",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The title deed is the most important document in any land transaction. It establishes who legally owns the land and traces the ownership history.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<b>What to check:</b> Obtain the chain of title deeds going back a minimum of 30 years. Each transfer of ownership should be documented through a registered sale deed. Look for any gaps in the ownership chain — periods where the land appears to have changed hands without a registered document. Gaps are serious red flags.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Confirm that the person currently selling the land is the registered owner as per the most recent title deed. Confirm they have the legal right to sell - that there is no joint ownership dispute, no court order restricting sale, and no mortgage or lien on the property",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<b>Who to get it from: </b>The seller provides the original. Cross-verify at the Sub-Registrar's office where the land is registered.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<b>Red flag:</b> Any reluctance to provide original title documents for your lawyer's review before payment.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Document 2 - Encumbrance Certificate (EC)",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The encumbrance certificate is a record of all registered transactions on a property - purchases, mortgages, leases, and legal charges - over a specific period.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<b>What to check:</b> Obtain the EC for a minimum of 15 years, ideally 30. A clean EC shows only the current ownership and no other registered transactions. Any mortgage, lien, or pending legal charge will appear here. These must be resolved before purchase.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<b>Who to get it from:</b> The Sub-Registrar's office covering the jurisdiction where the land is located. You can apply in person or through online portals in Karnataka",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<b>Why it matters</b>: A clean EC is your confirmation that the land has no financial or legal encumbrances that could affect your ownership after purchase. It is non-negotiable.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Document 3 - RTC (Record of Rights, Tenancy and Crops)",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The RTC - commonly called the pahani - is the revenue department's master record for agricultural land in Karnataka. It is the single most information-rich document in the farmland buying process.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "What to check: "
+          },
+          {
+            "bold": false,
+            "text": "The RTC shows the survey number, total extent of land, current owner's name, land classification — whether it is agricultural, converted, or forest land — nature of possession, and current crop or plantation details."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Verify that the owner's name on the RTC matches the name on the title deed exactly. Verify that the extent of land matches the sale agreement. Verify that the land classification is agricultural - not converted or forest land. Confirm there are no tenant entries that could complicate your ownership.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Who to get it from:"
+          },
+          {
+            "bold": false,
+            "text": " The Village Accountant (VA) or Tahsildar's office for the village where the land is located. Also available through the Bhoomi portal - Karnataka's online land records system."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Why it matters:"
+          },
+          {
+            "bold": false,
+            "text": " The RTC is the government's official record of who owns what land and how it is classified. Discrepancies between the RTC and the title deed are serious issues that must be resolved before purchase."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Document 4 -  Khata Certificate and Khata Extract",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The khata is the local body's record of a property for taxation purposes. It identifies who is responsible for paying property tax on a piece of land.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "What to check:"
+          },
+          {
+            "bold": false,
+            "text": " Confirm the seller holds an A-Khata — which indicates the property is properly registered and approved. A B-Khata indicates the property has not received formal approval and may have regulatory issues. For agricultural land in panchayat areas, the khata is maintained by the Gram Panchayat."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Confirm the khata is in the seller's name. Confirm all property taxes are paid up to the current date -  ask for tax paid receipts for the past three years. Unpaid taxes become the new owner's liability.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": " "
+          },
+          {
+            "bold": true,
+            "text": "Who to get it from :"
+          },
+          {
+            "bold": false,
+            "text": " The relevant Gram Panchayat or local body office for the area where the land is located"
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Document 5 -  Mutation Register (Pahani)",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Mutation is the process of updating revenue records when land changes hands. After any sale or inheritance, the new owner's name must be updated in the revenue records - this update is recorded in the Mutation Register.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "What to check:"
+          },
+          {
+            "bold": false,
+            "text": " Verify that the current seller's name has been correctly mutated in the revenue records after they acquired the land. If the name in the revenue records does not match the current seller's name, the mutation has not been completed — which means the seller's ownership is not fully recognised in the government's records."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": " "
+          },
+          {
+            "bold": true,
+            "text": "Why it matters:"
+          },
+          {
+            "bold": false,
+            "text": " Incomplete mutation is one of the most common issues in Karnataka agricultural land transactions and can significantly complicate your own registration and future sale."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Document 6 - Survey Sketch and Boundary Verification",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The survey sketch shows the physical boundaries of the land parcel - its shape, dimensions, and relationship to neighbouring parcels.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "What to check :"
+          },
+          {
+            "bold": false,
+            "text": " Compare the survey sketch with the physical boundaries of the land during your site visit. The actual boundaries should match the documented boundaries. Look for boundary stones at the corners of the plot. Confirm there are no encroachments from neighbouring land."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "For projects like Ecovara where individual plots are carved out of a larger survey number, confirm that the layout plan has been properly approved and that your specific plot dimensions are documented.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Who to get it from:"
+          },
+          {
+            "bold": false,
+            "text": " The Survey Settlement and Land Records department of Karnataka. A licensed surveyor can also conduct a physical boundary survey."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Step 3 - Stamp Duty and Registration in Karnataka",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Once due diligence is complete and you are ready to proceed, the transaction is formalised through stamp duty payment and registration.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Stamp Duty Rates for Agricultural Land",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Agricultural land in Karnataka attracts lower stamp duty rates than residential or commercial property — typically in the range of 3% to 5% of the guidance value or sale consideration, whichever is higher. The exact rate depends on the location of the land and the current Karnataka government schedule",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Additionally, a registration fee of 1% of the property value is applicable at the time of registration.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Important: "
+          },
+          {
+            "bold": false,
+            "text": "Stamp duty rates are revised periodically by the Karnataka government. Confirm the current applicable rate with a local property lawyer or the Sub-Registrar's office before finalising your budget."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "The Registration Process",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Registration is the legal act that transfers ownership from seller to buyer and creates a public record of the transaction.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": " "
+          },
+          {
+            "bold": true,
+            "text": "Step 1 - Stamp paper purchase:"
+          },
+          {
+            "bold": false,
+            "text": " Stamp paper of the applicable value is purchased — either as physical stamp paper from licensed vendors or through the Karnataka government's online e-stamp system"
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Step 2 - Sale deed drafting:"
+          },
+          {
+            "bold": false,
+            "text": " The sale deed is drafted by a lawyer incorporating all agreed terms — buyer and seller details, property description, survey number, consideration amount, and transfer of rights."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Step 3 — Appointment at Sub-Registrar's office:"
+          },
+          {
+            "bold": false,
+            "text": " Both buyer and seller - or their authorised representatives — appear at the Sub-Registrar's office with original documents and two witnesses."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": " "
+          },
+          {
+            "bold": true,
+            "text": "Step 4 - Biometric verification:"
+          },
+          {
+            "bold": false,
+            "text": " Karnataka requires biometric verification — fingerprint and photograph — of both buyer and seller at the time of registration."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Step 5 -  Registration and receipt:"
+          },
+          {
+            "bold": false,
+            "text": " The Sub-Registrar registers the sale deed and returns the original registered document to the buyer. This registered sale deed is your proof of ownership."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "At Ecovara, Novara Nature Estates handles the entire registration process - document preparation, stamp paper, Sub-Registrar appointment, and post-registration support. Buyers are guided through every step with complete transparency.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Step 4 - Post-Registration: Mutation in Your Name\n",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Registration transfers legal ownership. But the revenue records — the RTC, khata, and mutation register — still show the previous owner's name until mutation is completed.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Mutation in your name is a separate process that must be completed after registration.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "How to apply:"
+          },
+          {
+            "bold": false,
+            "text": " Submit the registered sale deed along with a mutation application to the Tahsildar's office of the taluk where the land is located. In Karnataka this can also be done through the Bhoomi portal for certain categories."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Timeline:"
+          },
+          {
+            "bold": false,
+            "text": " Mutation typically takes 30 to 90 days depending on the office and any pending queries."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Why it matters: "
+          },
+          {
+            "bold": false,
+            "text": "Until your name appears in the revenue records, you are the legal owner but the government's records do not reflect this. This creates complications for future transactions, succession, and any government schemes you may want to access as a landowner."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Novara Nature Estates supports buyers through the mutation process after registration - this is part of the end-to-end legal support included in every Ecovara purchase.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Step 5 - Documents You Receive as a Buyer",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "At the end of the legal process you should hold the following documents:",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Original registered sale deed"
+          },
+          {
+            "bold": false,
+            "text": " — your primary proof of ownership, with the Sub-Registrar's stamp and registration number"
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Encumbrance certificate"
+          },
+          {
+            "bold": false,
+            "text": " — updated after registration to show the new transaction. Obtain a fresh EC after your sale deed is registered to confirm your ownership is recorded."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Updated RTC"
+          },
+          {
+            "bold": false,
+            "text": " — after mutation, request a fresh RTC from the Bhoomi portal or Tahsildar's office. It should now show your name as the owner."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Khata in your name "
+          },
+          {
+            "bold": false,
+            "text": "- after mutation, apply for khata transfer to your name at the relevant Gram Panchayat. The khata certificate and extract should reflect your ownership."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Survey sketch "
+          },
+          {
+            "bold": false,
+            "text": "- the physical boundary map of your plot for your records."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Keep all original documents in a safe location. Maintain digital copies. Share copies with your lawyer for safekeeping.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "The Locations Where These Legal Checks Matter Most Near Bangalore",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Karnataka's revenue records system applies across all districts but implementation quality varies by location. Here are the key areas near Bangalore where most managed farmland investment happens - and what to know about each.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Lepakshi -  Anantapur District, Andhra Pradesh Border",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Lepakshi sits in Andhra Pradesh's Anantapur district near the Karnataka border - which means some land in this area may fall under Andhra Pradesh revenue jurisdiction rather than Karnataka. Confirm which state's records apply to your specific plot and verify documents accordingly. The complete guide to farmland near Lepakshi covers this geography in detail.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Devanahalli -  Bangalore Rural District",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Devanahalli falls under Bangalore Rural district and its revenue records are generally well-maintained given the area's high transaction volume driven by airport proximity. The farmland near Devanahalli guide covers this location specifically.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "NH44 Corridor - Bangalore Rural to Chikkaballapur",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The NH44 belt passes through both Bangalore Rural and Chikkaballapur districts. Confirm the specific taluk and hobli your land falls under - this determines which Sub-Registrar's office handles registration and which Tahsildar's office handles mutation.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Why Buying Within a Verified Project Simplifies Everything",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Every document check described in this guide can be done independently by a buyer purchasing raw agricultural land from an individual seller. It is time-consuming, requires local knowledge, and demands engagement with multiple government offices in a specific jurisdiction.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "The reason most Bangalore investors choose managed farmland projects like Ecovara is that this entire process has already been done - by the developer's legal team, before any plot is offered for sale.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "At Ecovara, every plot has been through:",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "ul",
+        "text": [
+          "30-year title search and verification",
+          "Clean encumbrance certificate confirmed",
+          "RTC verified with correct classification and ownership",
+          "A-Khata status confirmed",
+          "Mutation completed in Novara's name before resale",
+          "Physical boundary survey completed",
+          "Layout plan approved"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "The buyer's due diligence then becomes verification rather than discovery — confirming that what the developer says has been done has actually been done. This is significantly faster, less complicated, and more reliable than starting from scratch on raw land.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_link",
+        "textBefore": "",
+        "linkText": "Explore Ecovara farm plots",
+        "href": "https://novaranatureestates.com/projects",
+        "textAfter": "Explore Ecovara farm plots or get in touch with the Novara team for a detailed document review before your purchase.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Common Mistakes Buyers Make - and How to Avoid Them",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": " "
+          },
+          {
+            "bold": true,
+            "text": "Relying only on the developer's lawyer"
+          },
+          {
+            "bold": false,
+            "text": ". The developer's legal team is working for the developer. Engage your own independent lawyer to review all documents — even in a reputable project. This is not a sign of distrust — it is standard practice in any serious property transaction."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Skipping the physical site visit."
+          },
+          {
+            "bold": false,
+            "text": " Documents can be verified on paper. The physical reality of the land — its boundaries, plantation condition, infrastructure, access — can only be verified in person. Visit before you pay anything."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Not checking for tenant entries in the RTC."
+          },
+          {
+            "bold": false,
+            "text": " Agricultural land in Karnataka may have tenant records — entries showing farmers who have been cultivating the land under various historical tenancy arrangements. These entries can complicate your ownership. A clean RTC should have no tenant entries"
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Paying before registration."
+          },
+          {
+            "bold": false,
+            "text": " Full payment should be linked to registration — not before. The sale deed should be registered at the Sub-Registrar's office before or simultaneously with final payment."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": " "
+          },
+          {
+            "bold": true,
+            "text": "Not completing mutation. "
+          },
+          {
+            "bold": false,
+            "text": "Many buyers treat registration as the end of the process. It is not. Mutation in your name is essential and should be completed within 90 days of registration."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Frequently Asked Questions About Buying Farmland in Karnataka",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "h3",
+        "text": "Can a non-farmer buy agricultural land in Karnataka? ",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": " Yes. Karnataka does not restrict agricultural land purchase to farmers. Any Indian citizen can purchase agricultural land in Karnataka subject to applicable laws. Confirm the current position with a local property lawyer as regulations can vary.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What is the difference between A-Khata and B-Khata?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "A-Khata indicates the property is properly registered and approved by the local authority. B-Khata indicates the property lacks formal approval — often because it was built on converted or unauthorised land. For agricultural farmland purchases always confirm A-Khata status.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "How long does the entire purchase process take?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "From decision to registered sale deed — typically 30 to 60 days for a straightforward transaction with clear documents. At Ecovara the process is streamlined by the developer's legal support — most buyers complete registration within 30 days of committing.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What documents do I need as the buyer?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Aadhaar card, PAN card, and address proof. Two passport-sized photographs. Bank details for transaction records. The seller and developer provide all land-related documents.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Is RERA applicable to farmland projects in Karnataka?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "RERA primarily applies to residential and commercial real estate projects. Agricultural farmland projects typically fall outside RERA's scope. This makes independent legal due diligence on the title and project documents even more important — there is no regulatory authority specifically overseeing farmland developer compliance. Our guide on RERA vs non-RERA farmland covers this distinction in detail.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What happens to my land if I want to sell it later?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "You sell it as you would any property — through a registered sale deed. The buyer does their own due diligence on the documents you hold. A clean title, updated RTC in your name, current khata, and clean EC make your plot significantly easier to sell and command better pricing.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What is the farmland investment checklist before buying?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Our complete farmland investment checklist before buying covers every document, every question, and every site visit checklist item in one place.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Closing Thought",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Anand completed his purchase at Ecovara three months after that conversation with his brother-in-law.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Not because the process was complicated — it wasn't. But because he took the time to understand what he was buying, verified the documents independently, visited the site twice, and asked every question he had until he had clear answers.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "\"The legal process was actually the easiest part,\" he told us after registration. \"The hardest part was convincing myself to stop researching and start deciding.\"\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "If you're at the research stage — this guide has given you the framework. If you're at the decision stage — the Novara team is ready to walk you through every document for Ecovara before you commit to anything.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_link",
+        "textBefore": "",
+        "linkText": "Schedule your free site visit to Ecovara ",
+        "href": "https://novaranatureestates.com/contactus",
+        "textAfter": "+91-8660200662",
+        "fontWeight": "font-normal"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "managed-farmland-near-bangalore-guide",
+    "category": "Managed Farmland",
+    "title": "Managed Farmland Near Bangalore | How It Works — 2026 Guide ",
+    "headline": "Managed Farmland Near Bangalore — How It Works for Investors",
+    "description": "What is managed farmland near Bangalore and how does it work? A complete guide to ownership, management services, income, and why Ecovara leads the market.\n",
+    "date": "Mar 26, 2026",
+    "keywords": "Managed Farmland , Farmland Investment,Managed Farmland Near Bangalore",
+    "author": "Novara Nature Estates",
+    "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1774520396/z3vlveexltt9id4jyd0j.webp",
+    "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1774520396/z3vlveexltt9id4jyd0j.webp",
+    "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1774520396/z3vlveexltt9id4jyd0j.webp",
+    "imageAlt": "Managed Farmland Near Bangalore",
+    "tags": [],
+    "sections": [
+      {
+        "type": "p",
+        "text": "Suresh had been looking at farmland near Bangalore for almost eight months.\nHe liked the idea. The land appreciation story made sense. The tax benefits were real. But every time he got close to making a decision, the same question pulled him back.\n\"I live in Koramangala. I work sixty hours a week. I know nothing about farming. Who is actually going to look after this land?\"\nIt's the question that stops more Bangalore investors than any legal concern or pricing issue. And it's the question that the managed farmland model exists specifically to answer.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_link",
+        "textBefore": "",
+        "linkText": "This guide explains exactly how managed farmland near Bangalore works ",
+        "href": "https://www.novaranatureestates.com/blogs/farmland-investment-near-bangalore",
+        "textAfter": "what you own, what someone else handles, what income looks like, and what to look for in a developer before you commit.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "What Managed Farmland Actually Means",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Managed farmland is agricultural land that has been developed, infrastructure-ready, and professionally managed by a developer or estate management company on behalf of individual plot owners. You purchase a clearly demarcated piece of land — with a registered title in your name. The developer's team then handles everything that happens on that land: plantation maintenance, irrigation, security, access roads, and ongoing farm operations.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "You own the asset completely. You receive updates on its condition. You can visit whenever you wish. You do not need to be present, involved, or agriculturally knowledgeable for the farm to function.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Think of it like owning a flat in a well-managed apartment complex. You own your unit. The association and management company handle the building's common areas, security, and maintenance. Except in this case your \"unit\" is agricultural land with coconut and mango trees on it, and the income it generates is tax-free.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "How the Ownership Model Works",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Understanding what you actually own — and what you don't — is the starting point for any serious investor.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What You Own",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "When you purchase a plot in a managed farmland project like Ecovara, you receive a registered sale deed in your name at the Sub-Registrar's office. The land is legally yours. The trees on your plot are legally yours. The title is clear, documented, and verifiable.\nYour plot is physically demarcated — boundary markers, a survey number, and a specific location within the project map. You can stand on it, identify it, photograph it, and verify it against the revenue records independently.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What the Management Company Handles",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The developer’s estate management team handles all day-to-day operations, making farmland ownership completely hassle-free. At Ecovara, Novara Nature Estates manages everything from plantation care—such as pruning, fertilising, and pest control—to ensuring coconut and mango trees remain productive throughout the year ,",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Irrigation is taken care of through efficient drip systems, so you don’t have to worry about water management or additional costs. The project also includes 24/7 security, regular maintenance of roads and common areas, and a well-kept environment for every visit. Along with this, you receive regular updates on farm activities, allowing you to stay informed without needing to be physically present.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What You Decide",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "When to visit. Whether to use your organic farming plot to grow your own produce. Whether to eventually build a farmhouse on your land if regulations permit. Whether to sell, hold, or pass the land to your family. All the decisions that matter remain entirely yours.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "How Income Is Generated from Managed Farmland",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "This is the part most investors want to understand clearly — and where some developers are less than transparent.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Plantation Produce Income",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "At Ecovara, the 800+ existing coconut and mango trees across the 15-acre property are productive from day one. A mature coconut tree in Karnataka yields approximately 80 to 100 coconuts annually under managed conditions. Mango trees generate seasonal harvest income on top of that.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "The produce from common plantation areas is harvested and the income is shared with plot owners according to the project's allocation model. Your individual plot trees contribute to your specific income allocation. This is agricultural income — and as discussed, it is entirely exempt from income tax under Section 10(1) of the Income Tax Act.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Land Appreciation",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Beyond produce income, the land itself appreciates over time. The Lepakshi–NH44 corridor has seen consistent appreciation driven by airport proximity, infrastructure development, and Bangalore's northward urban expansion. This appreciation is realised when you eventually sell — and capital gains on agricultural land enjoy specific exemptions under Section 54B that make the tax picture on exit very efficient.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Future Income Streams",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "As the managed farmland model matures in India, additional income streams are emerging for plot owners — agro-tourism, farm stays, solar panel leasing on agricultural land under government schemes like PM Kusum, and specialty crop cultivation. These are not guaranteed income today but represent genuine optionality that comes with owning agricultural land in a professionally managed community.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "What Ecovara Offers — The Benchmark for Managed Farmland Near Bangalore",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "When Bangalore investors research managed farmland, Ecovara by Novara Nature Estates consistently comes up as the reference point. Here is why.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Location",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Ecovara sits on NH44 near Lepakshi Temple — approximately 75 kilometres from Kempegowda International Airport at Devanahalli. The location combines direct highway access, proximity to a major heritage tourism destination, and position within one of Karnataka's most actively developing land corridors. It is genuinely accessible from Bangalore on a Saturday morning without an overnight stay.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "The Existing Plantation",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Most farmland projects near Bangalore sell you bare land and plant saplings after purchase. At Ecovara there are already 800+ mature coconut and mango trees across the property — 64+ tree varieties in total. You are not buying a future farm. You are buying a functioning one. Income generation, tree shade, biodiversity, and the visual reality of owning green productive land — all of it is there from day one.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "The Amenities",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Ecovara is designed for the investor who also wants to use the land as a lifestyle asset. The project includes a clubhouse, swimming pool, cafeteria, kids play area, jogging track, lotus pond, campfire and rain dance area, organic farming plots, solar street lights, and 24/7 gated security.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "A weekend at Ecovara is not a weekend roughing it in a field. It is a resort experience on land that you own and that is growing in value while you enjoy it.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Plot Sizes and Configuration",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Plots start from 6,000 square feet with 8,000 and 10,000 square feet configurations also available. The layout follows a European-inspired design philosophy with 80% of the project maintained as open green space. Internal roads are paved. The project is fully operational — not under development.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Legal Clarity",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Every plot at Ecovara comes with a legally verified, clear title. Novara Nature Estates conducts thorough due diligence — title search, encumbrance certificate verification, RTC review, and boundary survey — before any plot is offered for sale. The registration process is handled end-to-end by the Novara team with full documentation support for the buyer.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_link",
+        "textBefore": "",
+        "linkText": "Explore Ecovara farm plots",
+        "href": "https://novaranatureestates.com/projects",
+        "textAfter": " or schedule a free site visit to see the project in person.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "How Managed Farmland Differs from Traditional Farmland Purchase",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Many investors have a parent or grandparent who owns agricultural land somewhere in Karnataka or Andhra Pradesh. That experience — the land disputes, the tenant farmer complications, the irregular visits, the absence of infrastructure — is not what managed farmland is.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<b>Traditional agricultural land purchase</b> means buying a parcel from a local seller, usually through a broker, with varying degrees of legal clarity. The land may have existing tenants, unclear boundaries, pending litigation, or no infrastructure whatsoever. After purchase, the responsibility for farming, security, maintenance, and development falls entirely on the buyer. Most urban investors who buy this way end up with land that sits neglected for years because managing it from Bangalore is genuinely difficult.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<b>Managed farmland</b> is a developed product. The legal work is done before sale. Infrastructure exists at purchase. A professional team manages ongoing operations. The buyer receives a functioning asset, not a project. For a Bangalore professional with limited time and no agricultural background, the difference is enormous.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Questions to Ask Any Managed Farmland Developer Before Buying",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The managed farmland space near Bangalore has grown quickly and not all projects are equal. Use these questions to separate serious developers from marketing operations.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What does your management team actually do on the property each month?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": " A credible developer will give you a specific answer — irrigation schedule, pruning calendar, security rotation, maintenance log. Vague answers about \"professional management\" without specifics are a red flag.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Can I visit the property unannounced? ",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Yes should be the immediate answer. If a developer needs to prepare for your visit or discourages drop-in inspections, something is wrong.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "How do you communicate with existing owners?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Ask what format updates come in — WhatsApp group, email report, owner portal — and how frequently. Then ask to speak with two or three existing owners independently.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What happens when I want to sell my plot?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Understand the resale process clearly before buying. Is there a developer buyback option? Can you sell to any third party? Are there transfer fees?",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Show me the title documents for a plot",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Any developer who hesitates to show you an actual title deed, EC, and RTC before you have paid anything is not a developer you should be buying from.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "The Lifestyle Dimension — Why the Weekend Matters",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "There is a part of managed farmland ownership that does not appear in any financial model but ends up being the most talked-about benefit among existing buyers",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Bangalore's professionals spend five days a week in offices, on calls, in traffic. The city is relentless. An Ecovara plot 75 kilometres away on NH44 is a completely different world — open sky, coconut canopy, birdsong, organic produce you grew yourself, your kids running between trees.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Several Ecovara owners who initially bought purely as a financial investment tell us that the weekend experience has become the part they value most. They use the campfire area. They swim in the pool. They pick mangoes from their trees. They sit on their land at sunset and feel something that a mutual fund statement has never given them.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "That is not a small thing. Owning land you can actually enjoy while it appreciates is an asset class in itself.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Frequently Asked Questions About Managed Farmland Near Bangalore",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "h3",
+        "text": "Do I need to visit regularly to keep my investment healthy?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "No. The management team handles all ongoing operations regardless of how often you visit. Some owners visit every month. Others visit twice a year. The farm functions the same either way.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What if I want to grow my own crops on my plot?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Ecovara includes dedicated organic farming plots where owners can cultivate their own produce. The management team can support your growing choices or manage the organic plot on your behalf.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Can I build a farmhouse on my Ecovara plot?",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "This depends on local zoning regulations and conversion permissions. The Novara team can advise on the current regulatory position for your specific plot and the process involved.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Is the agricultural income from my plot really tax-free?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Yes — under Section 10(1) of the Income Tax Act, agricultural income is fully exempt from income tax. However, how this applies to your specific situation depends on your income profile. Consult your CA for personalised advice.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What happens to my investment if the developer stops operating?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "You own the land outright with a registered title in your name. The land is yours regardless of what happens to the management company. You would need to find alternative management arrangements, but your core asset — the land and plantation — remains completely yours.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "How do I get started?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": " The best first step is a site visit. Schedule your free visit to Ecovara through the Novara contact page. See the land in person, meet the team, and walk the plantation before making any financial commitment.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Conclusion",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Suresh — the investor from Koramangala who spent eight months asking who would look after his land — visited Ecovara on a Sunday in March.\nHe met the farm manager. Walked the plantation. Saw the irrigation system running. Sat in the clubhouse with three other plot owners who happened to be visiting the same day. Ate lunch made from produce grown on the farm.\nHe called us on the drive back to Bangalore.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "\"I've been asking the wrong question,\" he said. \"I kept wondering who would take care of the land. The right question was — why did I wait this long?\"\nIf you've been asking the same question Suresh was, you now have the answer.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_link",
+        "textBefore": "",
+        "linkText": "Schedule your free Ecovara site visit",
+        "href": "https://www.novaranatureestates.com/contactus",
+        "textAfter": " Call us: +91-8660200662",
+        "fontWeight": "font-normal"
+      }
+    ]
+  },
+  {
     "id": 1,
     "slug": "farming-techniques-farmlands-near-bangalore",
     "category": "Sustainable Farmland",
