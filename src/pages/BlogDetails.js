@@ -230,7 +230,23 @@ export default function BlogDetail({ vikeSlug }) {
 
   return (
     <section className="w-full bg-white font-urbanist">
-      <Header />
+     <Header />
+
+      {/* Breadcrumb */}
+      <div
+        className="w-full px-6 py-3"
+        style={{
+          background: "linear-gradient(135deg, #6B1A1A 0%, #8B2020 50%, #7A1818 100%)",
+        }}
+      >
+        <div className="max-w-7xl mx-auto flex items-center gap-2 text-[13px] font-medium text-white/80 flex-wrap">
+          <a href="/" className="hover:text-white transition-colors whitespace-nowrap">Home</a>
+          <span className="text-white/50">{">>"}</span>
+          <a href="/blogs" className="hover:text-white transition-colors whitespace-nowrap">Blog</a>
+          <span className="text-white/50">{">>"}</span>
+          <span className="text-white/70 line-clamp-1">{blog.title}</span>
+        </div>
+      </div>
 
       <div className="relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-6 sm:py-10 flex">
