@@ -263,12 +263,9 @@ export default function Blogs() {
       Farmland Investment Insights & Guides.
     </h1>
   </motion.div>
-
-  {/* Breadcrumb — pinned to bottom of banner */}
-  <div
-    className="absolute bottom-0 left-0 right-0 px-8 py-3"
-  >
-    <div className="max-w-8xl mx-auto flex items-center gap-2 text-[14px] font-medium text-white/80">
+  {/* Breadcrumb — pinned to bottom of banner, centered */}
+  <div className="absolute bottom-0 left-0 right-0 px-8 py-3">
+    <div className="flex items-center justify-center gap-2 text-[14px] font-medium text-white/80">
       <a href="/" className="hover:text-white transition-colors">Home</a>
       <span className="text-white/60 text-[11px]">{">>"}</span>
       <span className="text-white font-semibold">Blog</span>
