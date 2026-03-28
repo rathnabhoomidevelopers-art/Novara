@@ -232,21 +232,7 @@ export default function BlogDetail({ vikeSlug }) {
     <section className="w-full bg-white font-urbanist">
      <Header />
 
-      {/* Breadcrumb */}
-      <div
-        className="w-full px-6 py-3"
-        style={{
-          background: "linear-gradient(135deg, #6B1A1A 0%, #8B2020 50%, #7A1818 100%)",
-        }}
-      >
-        <div className="max-w-7xl mx-auto flex items-center gap-2 text-[13px] font-medium text-white/80 flex-wrap">
-          <a href="/" className="hover:text-white transition-colors whitespace-nowrap">Home</a>
-          <span className="text-white/50">{">>"}</span>
-          <a href="/blogs" className="hover:text-white transition-colors whitespace-nowrap">Blog</a>
-          <span className="text-white/50">{">>"}</span>
-          <span className="text-white/70 line-clamp-1">{blog.title}</span>
-        </div>
-      </div>
+     
 
       <div className="relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-6 sm:py-10 flex">
@@ -293,11 +279,16 @@ export default function BlogDetail({ vikeSlug }) {
   <span>{blog.date}</span>
 </div>
 
-<div className="mt-5 rounded-2xl overflow-hidden border border-slate-100 bg-slate-100">             <img
-                src={blog.heroImage || blog.image}
-                alt={blog.title}
-                className="w-full h-[210px] sm:h-full object-cover"
-              />
+{/* Breadcrumb — below author/date, no background */}
+<div className="mt-3 flex items-center gap-1.5 flex-wrap text-[12px] text-slate-400">
+  <a href="/" className="hover:text-[#E3A600] transition-colors">Home</a>
+  <span className="text-slate-300 text-[10px]">{">>"}</span>
+  <a href="/blogs" className="hover:text-[#E3A600] transition-colors">Blog</a>
+  <span className="text-slate-300 text-[10px]">{">>"}</span>
+  <span className="text-slate-500 line-clamp-1 max-w-[420px] sm:max-w-[600px]">{blog.title}</span>
+</div>
+
+<div className="mt-5 rounded-2xl overflow-hidden border border-slate-100 bg-slate-100">
             </div>
 
             {/* ── Content sections ── */}
