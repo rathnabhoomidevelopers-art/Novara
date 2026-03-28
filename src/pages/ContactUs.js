@@ -8,7 +8,6 @@ import { navigate } from "vike/client/router";
 import Chatbot from "../../src/components/Chatbot";
 import FloatingCT from "../components/FloatingCT";
 
-// process.env.REACT_APP_* → import.meta.env.VITE_*
 const API_BASE =
   import.meta.env.VITE_API_BASE_URL || "https://novara-backend-one.vercel.app";
 
@@ -76,7 +75,6 @@ const BrochureModal = ({ isOpen, onClose }) => {
         });
         if (response.ok) {
           const name = `${formData.firstName} ${formData.lastName}`.trim();
-          // Vike navigate doesn't support state — pass via sessionStorage instead
           sessionStorage.setItem(
             "thankyou",
             JSON.stringify({ name, phone: formData.mobile }),
@@ -260,7 +258,6 @@ const BrochureModal = ({ isOpen, onClose }) => {
   );
 };
 
-// ✅ export default function Page() — Vike requires this exact signature
 export default function ContactUs() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -278,7 +275,6 @@ export default function ContactUs() {
           variants={fadeUp}
           className="relative z-10 text-start font-brushelva lg:w-[1070px] text-[#1A614F]"
         >
-          {/* ✅ Plain h1 inside motion.div — always in SSR HTML, crawlers can read it */}
           <h1 className="text-[30px] sm:text-[32px] lg:text-[38px]">
             Get in Touch with Novara
           </h1>
@@ -296,90 +292,93 @@ export default function ContactUs() {
       <div className="lg:h-[180px] font-urbanist bg-[#52A09A] p-[10px]">
         <div className="flex flex-col gap-2 justify-center lg:flex-row">
           <div className="flex gap-2 flex-row">
-            <div className="relative bg-white flex flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[280px]">
+
+            {/* ✅ Email card — single <a> wrapping entire card content */}
+            <a
+              href="mailto:info@novaranatureestates.com"
+              className="relative bg-white flex flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[280px] hover:bg-gray-50 transition no-underline"
+            >
               <img
                 src="/images/mail.svg"
                 alt=""
                 className="h-[60px] w-[60px]"
               />
-              <a
-                href="mailto:info@novaranatureestates.com"
+              <img
+                src="/images/nav.svg"
+                alt=""
                 className="absolute top-2 right-2 lg:top-5 lg:right-5"
-              >
-                <img src="/images/nav.svg" alt="" />
-              </a>
-              <a
-                href="mailto:info@novaranatureestates.com"
-                className="text-[#1A614F] mt-3 p-2 hover:rounded-full hover:bg-gray-200 text-[12px] lg:text-[16px] no-underline font-semibold"
-              >
+              />
+              <span className="text-[#1A614F] mt-3 p-2 text-[12px] lg:text-[16px] font-semibold">
                 info@novaranatureestates.com
-              </a>
-            </div>
+              </span>
+            </a>
 
-            <div className="relative bg-white flex flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[340px]">
+            {/* ✅ Phone card — single <a> wrapping entire card content */}
+            <a
+              href="tel:+918660200662"
+              target="_blank"
+              rel="noreferrer"
+              className="relative bg-white flex flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[340px] hover:bg-gray-50 transition no-underline"
+            >
               <img
                 src="/images/call.svg"
                 alt=""
                 className="h-[60px] w-[60px]"
               />
-              <a
-                target="_blank"
-                href="tel:+918660200662"
+              <img
+                src="/images/nav.svg"
+                alt=""
                 className="absolute top-2 right-2 lg:top-5 lg:right-5"
-              >
-                <img src="/images/nav.svg" alt="" />
-              </a>
-              <a
-                href="tel:+918660200662"
-                target="_blank"
-                className="text-[#1A614F] mt-3 p-2 hover:rounded-full hover:bg-gray-200 text-[12px] lg:text-[16px] no-underline font-semibold"
-              >
+              />
+              <span className="text-[#1A614F] mt-3 p-2 text-[12px] lg:text-[16px] font-semibold">
                 +91-8660200662
-              </a>
-            </div>
+              </span>
+            </a>
           </div>
 
           <div className="flex gap-2 flex-row">
-            <div className="relative bg-white flex flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[340px]">
+
+            {/* ✅ Address card — single <a> wrapping entire card content */}
+            <a
+              href="https://maps.app.goo.gl/cag4aTqXEW5BEZp87"
+              target="_blank"
+              rel="noreferrer"
+              className="relative bg-white flex flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[340px] hover:bg-gray-50 transition no-underline"
+            >
               <img
                 src="/images/address.svg"
                 alt=""
                 className="h-[60px] w-[60px]"
               />
-              <a
-                target="_blank"
-                href="https://maps.app.goo.gl/cag4aTqXEW5BEZp87"
+              <img
+                src="/images/nav.svg"
+                alt=""
                 className="absolute top-5 right-5"
-              >
-                <img src="/images/nav.svg" alt="" />
-              </a>
-              <a
-                href="https://maps.app.goo.gl/cag4aTqXEW5BEZp87"
-                target="_blank"
-                className="text-[#1A614F] mt-3 p-2 hover:rounded-full text-[12px] lg:text-[16px] no-underline font-semibold hover:bg-gray-200"
-              >
+              />
+              <span className="text-[#1A614F] mt-3 p-2 text-[12px] lg:text-[16px] font-semibold">
                 Office Location
-              </a>
-            </div>
+              </span>
+            </a>
 
+            {/* ✅ Social card — nav arrow has no href; each social is one <a> with both image + text inside */}
             <div className="relative bg-white flex flex-wrap lg:flex-col justify-center items-center h-[123px] w-[180px] lg:h-[160px] rounded-lg lg:w-[340px]">
               <img
                 src="/images/meta.svg"
                 alt=""
                 className="h-[60px] w-[60px]"
               />
-              <a href="" className="absolute top-5 right-5">
-                <img src="/images/nav.svg" alt="" />
-              </a>
+              {/* nav arrow removed — it had an empty href which created a junk link */}
               <span className="flex gap-2 lg:gap-3">
                 <a
                   href="https://www.instagram.com/novaranatureestates/"
                   target="_blank"
+                  rel="noreferrer"
                   className="text-[#1A614F] mt-3 p-1 hover:rounded-full hover:bg-gray-200 no-underline font-semibold"
+                  aria-label="Novara Nature Estates Instagram"
                 >
                   <img
                     src="/images/insta.svg"
-                    alt="Novara Nature Estates Instagram"
+                    alt=""
                     className="block lg:hidden w-5 h-5"
                   />
                   <span className="hidden lg:block text-[16px]">Instagram</span>
@@ -387,11 +386,13 @@ export default function ContactUs() {
                 <a
                   href="https://www.youtube.com/@NovaraNatureEstates"
                   target="_blank"
+                  rel="noreferrer"
                   className="text-[#1A614F] mt-3 p-1 hover:rounded-full hover:bg-gray-200 no-underline font-semibold"
+                  aria-label="Novara Nature Estates YouTube"
                 >
                   <img
                     src="/images/yt.svg"
-                    alt="Novara Nature Estates YouTube"
+                    alt=""
                     className="block lg:hidden w-5 h-5"
                   />
                   <span className="hidden lg:block text-[16px]">YouTube</span>
@@ -399,11 +400,13 @@ export default function ContactUs() {
                 <a
                   href="https://www.facebook.com/profile.php?id=61585877764871#"
                   target="_blank"
+                  rel="noreferrer"
                   className="text-[#1A614F] mt-3 p-1 hover:rounded-full hover:bg-gray-200 no-underline font-semibold"
+                  aria-label="Novara Nature Estates Facebook"
                 >
                   <img
                     src="/images/fb.svg"
-                    alt="Novara Nature Estates Facebook"
+                    alt=""
                     className="block lg:hidden w-5 h-5"
                   />
                   <span className="hidden lg:block text-[16px]">Facebook</span>
@@ -411,11 +414,13 @@ export default function ContactUs() {
                 <a
                   href="https://www.linkedin.com/company/novara-nature-estates/"
                   target="_blank"
+                  rel="noreferrer"
                   className="text-[#1A614F] mt-3 p-1 hover:rounded-full hover:bg-gray-200 no-underline font-semibold"
+                  aria-label="Novara Nature Estates LinkedIn"
                 >
                   <img
                     src="/images/linkedin1.svg"
-                    alt="Novara Nature Estates LinkedIn"
+                    alt=""
                     className="block lg:hidden w-5 h-5"
                   />
                   <span className="hidden lg:block text-[16px]">Linked In</span>
@@ -448,7 +453,6 @@ export default function ContactUs() {
         <ContactForm />
       </div>
 
-      {/* Floating WhatsApp + Call */}
       <FloatingCT onBrochureClick={() => setIsModalOpen(true)} />
 
       <BrochureModal
