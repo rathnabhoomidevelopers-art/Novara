@@ -244,26 +244,40 @@ export default function Blogs() {
       <Header />
 
       <motion.div
-        initial="hidden"
-        animate="show"
-        variants={staggerWrap}
-        style={{
-          backgroundImage: "url('/images/blog_banner.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-        className="h-[300px] px-2 lg:h-[400px] flex flex-col items-center justify-center relative"
-      >
-        <motion.div
-          variants={fadeUp}
-          className="relative z-10 text-center text-white font-brushelva lg:w-[700px]"
-        >
-          <h1 className="text-[30px] lg:text-[50px] sm:text-[32px]">
-            Farmland Investment Insights & Guides.
-          </h1>
-        </motion.div>
-      </motion.div>
+  initial="hidden"
+  animate="show"
+  variants={staggerWrap}
+  style={{
+    backgroundImage: "url('/images/blog_banner.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+  className="h-[300px] px-2 lg:h-[400px] flex flex-col items-center justify-center relative"
+>
+  <motion.div
+    variants={fadeUp}
+    className="relative z-10 text-center text-white font-brushelva lg:w-[700px]"
+  >
+    <h1 className="text-[30px] lg:text-[50px] sm:text-[32px]">
+      Farmland Investment Insights & Guides.
+    </h1>
+  </motion.div>
+</motion.div>
+
+{/* Breadcrumb */}
+<div
+  className="w-full px-6 py-3"
+  style={{
+    background: "linear-gradient(135deg, #6B1A1A 0%, #8B2020 50%, #7A1818 100%)",
+  }}
+>
+  <div className="max-w-7xl mx-auto flex items-center gap-2 text-[13px] font-medium text-white/80">
+    <a href="/" className="hover:text-white transition-colors">Home</a>
+    <span className="text-white/50">{">>"}</span>
+    <span className="text-white font-semibold">Blog</span>
+  </div>
+</div>
 
       {/* Cards */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-12">
