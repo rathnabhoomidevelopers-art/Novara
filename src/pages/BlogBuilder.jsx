@@ -1,14 +1,3 @@
-// src/pages/BlogBuilder.jsx
-// Novara Nature Estates — Blog Builder  (upgraded: Skyup feature parity)
-// ✅ h4 / h5 / h6 heading blocks
-// ✅ h2_with_link … h6_with_link blocks
-// ✅ p_with_bold  (inline bold parts)
-// ✅ p_with_link_bold
-// ✅ fontWeight property on paragraphs
-// ✅ Right-side TOC (sticky scrollspy, h2-h6 indent levels)
-// ✅ Create mode  — build a new blog and publish to GitHub
-// ✅ Edit mode    — load an existing blog, mutate it, publish update
-// ✅ Auth-aware   — uses AuthContext; shows login gate if not authenticated
 
 import React, { useState, useMemo, useCallback, useEffect } from "react";
 import {
@@ -537,7 +526,7 @@ function BlogEditor({ editingBlog, onBack }) {
       keywords:    editingBlog.keywords    || "",
       slug:        editingBlog.slug        || "",
       category:    editingBlog.category    || "Managed Farmland",
-      author:      editingBlog.author      || "Novara Nature Estates",
+      author:      editingBlog.author      || "NOVARA NATURE ESTATES",
       date:        editingBlog.date        || "",
       heroImage:   editingBlog.heroImage   || editingBlog.image    || "",
       imageAlt:    editingBlog.imageAlt    || editingBlog.title    || "",
