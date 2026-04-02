@@ -77,7 +77,7 @@ export const BLOGS = [
       },
       {
         "type": "h2",
-        "text": "What Makes Farmland Sustainable.. Why It Matters for Your Investment",
+        "text": "What Makes Farmland Sustainable. Why It Matters for Your Investment ?",
         "fontWeight": "font-bold"
       },
       {
@@ -382,8 +382,310 @@ export const BLOGS = [
         "fontWeight": "font-normal"
       },
       {
-        "type": "p",
+        "type": "h2",
         "text": "The two green investment guides through farmland and green asset investment through farmland look at this opportunity from another perspective.",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "h3",
+        "text": "Smart Farming Technologies. How They Improve Your Investment",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Investing in farmland may sound romantic. The best-managed farms in the Bangalore area are increasingly using technology to improve yields, lower costs and increase the owners understanding of how their investment is performing.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Smart farm technologies are advancing rapidly in India. The adoption of these technologies within managed farmland projects is a differentiator between successful projects and those that are not.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<b>Key Technologies\n</b>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "ul",
+        "text": [
+          "Drip Irrigation and Soil Monitoring",
+          "Remote Monitoring and Owner Updates",
+          "Pest and Disease Management"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Drip irrigation systems water trees at the roots reducing water usage by 30 to 50% compared to traditional flood irrigation. This method can be used with soil moisture sensors to automate watering.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "With GPS-tagged maps of plantations photos of progress records of harvests and communication through platforms Bangalore investors can get a precise view of their property without visiting the location each month.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Early detection of pests and diseases through monitoring allows for intervention before damage occurs. In a managed project monitoring is not a reactive measure .",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Ecovaras Plantation Model. What 64+ Tree Varieties Actually Means",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Ecovaras 64+ tree variety plantation is not a marketing number. It reflects an approach to building a resilient, diverse and productive farm ecosystem.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "The plantation composition at Ecovara includes:",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "ul",
+        "text": [
+          " Primary income species: Coconut and mango",
+          " Timber species: Teak, silver oak and other growing hardwoods",
+          " Medicinal and specialty species: Neem, moringa, tulsi and others",
+          "Fruit variety: Guava, papaya, jackfruit and seasonal fruit varieties",
+          "Shade and support species: Trees chosen to provide canopy cover and support growth"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "This composition means Ecovaras plantation is genuinely diverse. Ecologically, commercially and in terms of investment timelines.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": " Sustainable Farmland vs Other Investment Options",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "h3",
+        "text": "vs Residential Real Estate",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The value of a flat depreciates over time while the land appreciates. In the case of managed plantation farmland plots the land is owned directly. The plantation appreciates over time.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "vs Conventional Agricultural Land",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Agricultural land is often barren, complex and without infrastructure. Sustainable managed farmland is developed, clear infrastructure-ready and improving with farming practices.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": " Financial Green Investments",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Green bonds ESG mutual funds and sustainable investment funds provide exposure to ESG-themed companies. Sustainable plantation farmland provides ownership of a physical asset that sequesters carbon supports biodiversity and produces agricultural income.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Frequently Asked Questions About Sustainable Farmland Investment"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "1. What does \"sustainable farming\" actually mean at a project like Ecovara?"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "For Ecovara it means using inputs where possible drip irrigation, diverse plantations and farming techniques that improve soil quality.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "2. Does the mixed plantation reduce my income compared to a single-crop farm?"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Write your paragraph here…",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "No it diversifies income. The coconut provides an income while the mango provides a concentrated income during the season.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "3. Can I participate in carbon credit schemes as a farmland owner?"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "The voluntary market in India is developing. Landowners with tree covers have good potential to enter this market.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "4. How does organic farming on my plot work practically?"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Organic farming plots are provided at Ecovara. The management team assists in choosing crops provides materials and manages the farming process.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "5. Is sustainable farmland expensive than conventional farmland?*"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "A developed and sustainably managed farmland project commands a premium over raw agricultural land due to legal certainty existing plantations and management services.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "6. What is the first step to owning a plot at Ecovara?"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Schedule your free site visit to Ecovara today"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "A Final Thought on What Sustainable Investment Means",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Deepa, an ESG expert from Bangalore wrote to us six months after purchasing a plot in Ecovara. She said that standing on her plot and feeling the connection to the earth and environment is the tangible connection she has made to environmental investment in her professional life. The coconuts are a bonus.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "This is what sustainable farmland, around Bangalore really is: earth that is growing, producing and improving under your ownership.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Explore Ecovara farm. Schedule your free site visit.",
         "fontWeight": "font-normal"
       }
     ]
