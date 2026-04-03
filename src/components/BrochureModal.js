@@ -1,8 +1,5 @@
 import { useState } from "react";
 import { X } from "lucide-react";
-
-
-
 const DEFAULT_FIELDS = [
   { name: "name",  label: "Full Name",      type: "text",  placeholder: "Your name",        required: true },
   { name: "email", label: "Email Address",  type: "email", placeholder: "you@email.com",    required: true },
