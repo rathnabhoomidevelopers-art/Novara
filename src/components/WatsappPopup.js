@@ -1,57 +1,22 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { X, Send } from "lucide-react";
 
 const WHATSAPP_NUMBER = "8660200662";
 
-export default function WhatsAppPopup({ triggerOpen }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const [hasOpened, setHasOpened] = useState(false);
+export default function WhatsAppPopup({ isOpen, onClose }) {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
     { from: "them", text: "👋 Hello! Welcome to Ecovara.", time: "Now" },
     { from: "them", text: "How can we help you today? Feel free to ask about our sustainable living solutions! 🌱", time: "Now" },
   ]);
   const [typing, setTyping] = useState(false);
-  const [showBadge, setShowBadge] = useState(false);
   const chatRef = useRef(null);
-
-  // Auto-open after 5 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (!hasOpened) {
-        setIsOpen(true);
-        setHasOpened(true);
-      }
-    }, 5000);
-    return () => clearTimeout(timer);
-  }, [hasOpened]);
-
-  // Open when FloatingCT WhatsApp button is clicked
-  useEffect(() => {
-    if (triggerOpen) {
-      setIsOpen(true);
-      setHasOpened(true);
-      setShowBadge(false);
-    }
-  }, [triggerOpen]);
-
-  // Badge logic
-  useEffect(() => {
-    if (!isOpen && hasOpened) {
-      const t = setTimeout(() => setShowBadge(true), 300);
-      return () => clearTimeout(t);
-    } else {
-      setShowBadge(false);
-    }
-  }, [isOpen, hasOpened]);
 
   useEffect(() => {
     if (chatRef.current) {
       chatRef.current.scrollTop = chatRef.current.scrollHeight;
     }
   }, [messages, typing]);
-
-  const closePopup = () => setIsOpen(false);
 
   const sendMessage = () => {
     const text = input.trim();
@@ -69,7 +34,7 @@ export default function WhatsAppPopup({ triggerOpen }) {
 
   return (
     <div
-      className={`fixed bottom-28 right-7 z-50 w-80 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 ${
+      className={`fixed bottom-20 right-4 z-[9999] w-80 rounded-2xl overflow-hidden shadow-2xl transition-all duration-300 ${
         isOpen ? "opacity-100 translate-y-0 scale-100 pointer-events-auto"
                : "opacity-0 translate-y-4 scale-95 pointer-events-none"
       }`}
@@ -88,7 +53,7 @@ export default function WhatsAppPopup({ triggerOpen }) {
             <span className="text-xs" style={{ color: "rgba(255,255,255,0.75)" }}>Online · Replies in minutes</span>
           </div>
         </div>
-        <button onClick={closePopup} className="w-7 h-7 rounded-full flex items-center justify-center"
+        <button onClick={onClose} className="w-7 h-7 rounded-full flex items-center justify-center"
           style={{ background: "rgba(255,255,255,0.15)", color: "#fff" }}>
           <X className="w-4 h-4" />
         </button>
@@ -123,7 +88,8 @@ export default function WhatsAppPopup({ triggerOpen }) {
       </div>
 
       {/* Footer */}
-      <div className="flex items-center gap-2 px-3 py-2.5" style={{ background: "#f0f0f0", borderTop: "1px solid #e0e0e0" }}>
+      <div className="flex items-center gap-2 px-3 py-2.5"
+        style={{ background: "#f0f0f0", borderTop: "1px solid #e0e0e0" }}>
         <input
           className="flex-1 rounded-full px-4 py-2 text-sm outline-none font-urbanist text-gray-700"
           style={{ background: "#fff" }}
@@ -132,7 +98,8 @@ export default function WhatsAppPopup({ triggerOpen }) {
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKey}
         />
-        <button onClick={sendMessage} className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
+        <button onClick={sendMessage}
+          className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0"
           style={{ background: "#25D366" }}>
           <Send className="w-4 h-4 text-white" />
         </button>
