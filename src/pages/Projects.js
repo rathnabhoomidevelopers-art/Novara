@@ -93,6 +93,17 @@ const amenitiesCard = [
   },
 ];
 
+const destinations = [
+  { name: "Lepakshi Temple", time: "10 Mins" },
+  { name: "Hindupuram Town", time: "10 Mins" },
+  { name: "Bagepalli Toll Plaza", time: "20 Mins" },
+  { name: "Penukonda Fort", time: "30 Mins" },
+  { name: "Isha Foundation", time: "50 Mins" },
+  { name: "Nandhi Hills", time: "60 Mins" },
+  { name: "Devanahalli", time: "65 Mins" },
+  { name: "KIA Airport Devanahalli", time: "75 Mins" },
+];
+
 const specRows = [
   [
     {
@@ -263,19 +274,14 @@ export default function Projects() {
         />
         <div className="absolute inset-0 bg-black/35" />
 
-        <motion.p
-          variants={fadeUp}
-          className="relative z-10 text-center text-white/75 font-urbanist text-[18px] lg:w-[850px] sm:text-[20px] lg:text-[30px]"
-        >
-          Introducing
-        </motion.p>
+      
 
         <motion.div
           variants={fadeUp}
           className="relative z-10 text-center text-white font-brushelva lg:w-[1070px]"
         >
-          <h2 className="text-[30px] lg:text-[100px] sm:text-[32px]">
-            ECOVARA
+          <h2 className="text-[30px] lg:text-[50px] sm:text-[32px]">
+          Ecovara - Premium Managed Farmland for Sale Near Lepakshi
           </h2>
         </motion.div>
       </motion.div>
@@ -292,9 +298,7 @@ export default function Projects() {
           </div>
           <div className="lg:w-[610px]">
             <img src="/images/project_icon.svg" alt="" />
-            <h1 className="font-brushelva text-[25px] lg:text-[48px] text-[#000000]">
-              <span className="text-[#1A614F]">Ecovara</span> Premium Managed
-              Farmland Near Lepakshi
+            <h1 className="font-brushelva text-[25px] lg:text-[42px] text-[#000000]"> About Ecovara Premium Farmland Project Near Lepakshi 
             </h1>
             <p className="text-[16px] lg:text-[18px] font-urbanist pt-[14px]">
               Strategic Location, Promising Returns Ecovara by Novara Nature
@@ -504,6 +508,36 @@ export default function Projects() {
               >
                 Download Brochure
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div
+        style={{ backgroundImage: "url('/images/background.webp')" }}
+        className="h-[780px] lg:h-[669px] bg-gradient-to-b from-[#D3FFE5] via-[#D3FFE5] to-[#FEFFFF]"
+      >
+        <div className="flex flex-col items-center justify-center gap-6 lg:gap-0 lg:relative">
+          <div className="order-1 w-full px-[20px] lg:px-[80px]">
+            <div className="font-brushelva pt-10">
+              <img src="/images/updated_icon.svg" alt="sparkle" />
+              <div className="text-[18px] lg:text-[24px] text-[#FFC62C] mt-2">Ecovara Farms</div>
+              <div className="text-[38px] lg:text-[48px] text-white">Location Highlights</div>
+            </div>
+          </div>
+
+          <div className="order-2 relative z-10 lg:left-64 lg:-mt-[160px]">
+            <img src="/images/Map_location.webp" className="w-full max-w-[370px] lg:max-w-[940px]" alt="Location" />
+          </div>
+
+          <div className="order-3 flex items-center font-urbanist mt-[12px] lg:mt-[1px] w-[309px] h-[276px] lg:w-[400px] lg:h-[352px] justify-center lg:absolute lg:left-[80px] lg:top-[220px]">
+            <div className="bg-white/80 rounded-lg shadow-lg py-2 px-3 w-full max-w-md">
+              {destinations.map((destination, index) => (
+                <div key={index} className="grid grid-cols-[1fr_auto_1fr] items-center py-2 border-b border-[#D5FFE6] last:border-b-0">
+                  <span className="text-[#1A614F] text-[12px] lg:text-[16px] font-medium text-left">{destination.name}</span>
+                  <span className="h-5 lg:h-6 w-px ms-3 bg-[#1A614F]"></span>
+                  <span className="text-[#1A614F] text-[12px] lg:text-[16px] font-bold text-right lg:pe-[80px] whitespace-nowrap">{destination.time}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
