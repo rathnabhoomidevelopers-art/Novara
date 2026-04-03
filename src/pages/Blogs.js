@@ -7,6 +7,7 @@ import { useState } from "react";
 import Chatbot from "../components/Chatbot";
 import { navigate } from "vike/client/router";
 import FloatingCT from "../components/FloatingCT";
+import WhatsAppPopup from "../components/WatsappPopup";
 
 const API_BASE =
   import.meta.env.VITE_API_BASE_URL || "https://novara-backend-one.vercel.app";
@@ -218,6 +219,9 @@ const BrochureModal = ({ isOpen, onClose }) => {
 
 export default function Blogs() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [whatsappTrigger, setWhatsappTrigger] = useState(false);
+const [isWhatsAppOpen, setIsWhatsAppOpen] = useState(false);
+const [hasWhatsAppAutoOpened, setHasWhatsAppAutoOpened] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
 
   // Sort by id descending — handles both number and string ids
@@ -359,8 +363,15 @@ export default function Blogs() {
       </div>
 
       {/* Floating WhatsApp + Call */}
-      <FloatingCT onBrochureClick={() => setIsModalOpen(true)} />
-
+       <FloatingCT
+          onBrochureClick={() => setIsModalOpen(true)}
+          onWhatsAppClick={() => setIsWhatsAppOpen(true)}
+          isWhatsAppOpen={isWhatsAppOpen}
+        />
+        <WhatsAppPopup
+          isOpen={isWhatsAppOpen}
+          onClose={() => setIsWhatsAppOpen(false)}
+        />
       <BrochureModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
