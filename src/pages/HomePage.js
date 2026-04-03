@@ -170,7 +170,18 @@ const staggerWrap = {
 export default function HomePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 const [whatsappTrigger, setWhatsappTrigger] = useState(false);
+const [isWhatsAppOpen, setIsWhatsAppOpen] = useState(false);
+const [hasWhatsAppAutoOpened, setHasWhatsAppAutoOpened] = useState(false);
 
+useEffect(() => {
+  const timer = setTimeout(() => {
+    if (!hasWhatsAppAutoOpened) {
+      setIsWhatsAppOpen(true);
+      setHasWhatsAppAutoOpened(true);
+    }
+  }, 5000);
+  return () => clearTimeout(timer);
+}, [hasWhatsAppAutoOpened]);
 
    useEffect(() => {
     const timer = setTimeout(() => setIsModalOpen(true), 20000);
@@ -425,11 +436,15 @@ const [whatsappTrigger, setWhatsappTrigger] = useState(false);
       </div>
 
       {/* Floating WhatsApp + Call */}
-     <FloatingCT
+ <FloatingCT
   onBrochureClick={() => setIsModalOpen(true)}
-  onWhatsAppClick={() => setWhatsappTrigger(prev => !prev)}  
+  onWhatsAppClick={() => setIsWhatsAppOpen(true)}
+  isWhatsAppOpen={isWhatsAppOpen}
 />
-<WhatsAppPopup triggerOpen={whatsappTrigger} />
+<WhatsAppPopup
+  isOpen={isWhatsAppOpen}
+  onClose={() => setIsWhatsAppOpen(false)}
+/>
 
       <BrochureModal
         isOpen={isModalOpen}
