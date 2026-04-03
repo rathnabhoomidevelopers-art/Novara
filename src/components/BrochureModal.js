@@ -1,24 +1,133 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { X } from "lucide-react";
 
-export default function BrochureModal({ isOpen, onClose }) {
-  const [form, setForm] = useState({ name: "", email: "", phone: "" });
+/**
+ * BrochureModal — Reusable lead-capture modal
+ *
+ * Props:
+ * ┌─────────────────┬──────────────────────────────────────────────────────┬─────────────────────────────────┐
+ * │ Prop            │ Type                                                 │ Default                         │
+ * ├─────────────────┼──────────────────────────────────────────────────────┼─────────────────────────────────┤
+ * │ isOpen          │ boolean                                              │ required                        │
+ * │ onClose         │ () => void                                           │ required                        │
+ * │ onSubmit        │ (formData: { name, email, phone }) => Promise | void │ undefined (shows success state) │
+ * │ title           │ string                                               │ "Download Brochure"             │
+ * │ description     │ string                                               │ "Fill in your details…"         │
+ * │ successTitle    │ string                                               │ "Thank You!"                    │
+ * │ successMessage  │ string                                               │ "Your brochure is on its way…"  │
+ * │ submitLabel     │ string                                               │ "Get Brochure"                  │
+ * │ fields          │ FieldConfig[]                                        │ [name, email, phone]            │
+ * │ accentColor     │ string (CSS color)                                   │ "#1A614F"                       │
+ * │ ctaColor        │ string (CSS color)                                   │ "#DCA000"                       │
+ * │ ctaHoverColor   │ string (CSS color)                                   │ "#E3A600"                       │
+ * └─────────────────┴──────────────────────────────────────────────────────┴─────────────────────────────────┘
+ *
+ * FieldConfig shape:
+ * {
+ *   name: string,        // key in form state & HTML name attribute
+ *   label: string,       // visible label text
+ *   type?: string,       // input type (default: "text")
+ *   placeholder?: string,
+ *   required?: boolean,  // default: true
+ * }
+ *
+ * Usage examples:
+ *
+ * // Minimal — defaults handle everything
+ * <BrochureModal isOpen={open} onClose={() => setOpen(false)} />
+ *
+ * // With custom submit handler (e.g. API call)
+ * <BrochureModal
+ *   isOpen={open}
+ *   onClose={() => setOpen(false)}
+ *   onSubmit={async (data) => {
+ *     await api.sendBrochureRequest(data);
+ *   }}
+ *   title="Get the Ecovara Brochure"
+ *   submitLabel="Send Me the PDF"
+ * />
+ *
+ * // Custom fields — e.g. skip phone, add company
+ * <BrochureModal
+ *   isOpen={open}
+ *   onClose={() => setOpen(false)}
+ *   fields={[
+ *     { name: "name",    label: "Full Name",    placeholder: "Jane Doe" },
+ *     { name: "email",   label: "Work Email",   type: "email", placeholder: "jane@company.com" },
+ *     { name: "company", label: "Company Name", placeholder: "Acme Corp" },
+ *   ]}
+ * />
+ */
+
+const DEFAULT_FIELDS = [
+  { name: "name",  label: "Full Name",      type: "text",  placeholder: "Your name",        required: true },
+  { name: "email", label: "Email Address",  type: "email", placeholder: "you@email.com",    required: true },
+  { name: "phone", label: "Phone Number",   type: "tel",   placeholder: "+91 98765 43210",  required: true },
+];
+
+const DEFAULT_PROPS = {
+  title:          "Download Brochure",
+  description:    "Fill in your details and we'll send the brochure to you.",
+  successTitle:   "Thank You!",
+  successMessage: "Your brochure is on its way. Our team will reach out to you shortly.",
+  submitLabel:    "Get Brochure",
+  accentColor:    "#1A614F",
+  ctaColor:       "#DCA000",
+  ctaHoverColor:  "#E3A600",
+};
+
+export default function BrochureModal({
+  isOpen,
+  onClose,
+  onSubmit,
+  title          = DEFAULT_PROPS.title,
+  description    = DEFAULT_PROPS.description,
+  successTitle   = DEFAULT_PROPS.successTitle,
+  successMessage = DEFAULT_PROPS.successMessage,
+  submitLabel    = DEFAULT_PROPS.submitLabel,
+  fields         = DEFAULT_FIELDS,
+  accentColor    = DEFAULT_PROPS.accentColor,
+  ctaColor       = DEFAULT_PROPS.ctaColor,
+  ctaHoverColor  = DEFAULT_PROPS.ctaHoverColor,
+}) {
+  const initialForm = Object.fromEntries(fields.map((f) => [f.name, ""]));
+
+  const [form, setForm]           = useState(initialForm);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading]     = useState(false);
+  const [error, setError]         = useState(null);
 
   if (!isOpen) return null;
 
   const handleChange = (e) =>
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    setSubmitted(true);
+    setError(null);
+    setLoading(true);
+    try {
+      if (onSubmit) await onSubmit({ ...form });
+      setSubmitted(true);
+    } catch (err) {
+      setError(err?.message ?? "Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
+
+  const handleClose = () => {
+    // Reset state when closed so modal is fresh next time
+    setForm(initialForm);
+    setSubmitted(false);
+    setError(null);
+    onClose();
+  };
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4"
-      onClick={onClose}
+      onClick={handleClose}
     >
       <div
         className="relative w-full max-w-md rounded-2xl bg-white p-8 shadow-2xl"
@@ -26,7 +135,7 @@ export default function BrochureModal({ isOpen, onClose }) {
       >
         {/* Close button */}
         <button
-          onClick={onClose}
+          onClick={handleClose}
           className="absolute right-4 top-4 text-gray-400 hover:text-gray-700 transition"
           aria-label="Close"
         >
@@ -34,87 +143,101 @@ export default function BrochureModal({ isOpen, onClose }) {
         </button>
 
         {submitted ? (
-          <div className="text-center py-8">
-            <div className="text-4xl mb-4">🎉</div>
-            <h2 className="font-brushelva text-2xl text-[#1A614F] mb-2">
-              Thank You!
-            </h2>
-            <p className="text-gray-600 font-urbanist">
-              Your brochure is on its way. Our team will reach out to you
-              shortly.
-            </p>
-            <button
-              onClick={onClose}
-              className="mt-6 bg-[#1A614F] text-white px-6 py-2 rounded-lg hover:bg-[#154f3f] transition font-urbanist"
-            >
-              Close
-            </button>
-          </div>
+          <SuccessView
+            title={successTitle}
+            message={successMessage}
+            accentColor={accentColor}
+            onClose={handleClose}
+          />
         ) : (
-          <>
-            <h2 className="font-brushelva text-2xl lg:text-3xl text-[#1A614F] mb-1">
-              Enquire Form
-            </h2>
-            <p className="text-gray-500 font-urbanist text-sm mb-6">
-              Fill in your details and our team will get in touch with you shortly regarding your enquiry.
-            </p>
-
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4 font-urbanist">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  required
-                  value={form.name}
-                  onChange={handleChange}
-                  placeholder="Your name"
-                  className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#1A614F]"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  value={form.email}
-                  onChange={handleChange}
-                  placeholder="you@email.com"
-                  className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#1A614F]"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  required
-                  value={form.phone}
-                  onChange={handleChange}
-                  placeholder="+91 98765 43210"
-                  className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#1A614F]"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="mt-2 bg-[#DCA000] hover:bg-[#E3A600] text-white font-semibold py-3 rounded-lg transition"
-              >
-               Submit
-              </button>
-            </form>
-          </>
+          <FormView
+            title={title}
+            description={description}
+            submitLabel={submitLabel}
+            fields={fields}
+            form={form}
+            loading={loading}
+            error={error}
+            accentColor={accentColor}
+            ctaColor={ctaColor}
+            ctaHoverColor={ctaHoverColor}
+            onChange={handleChange}
+            onSubmit={handleSubmit}
+          />
         )}
       </div>
     </div>
+  );
+}
+
+/* ─── Sub-components ────────────────────────────────────────────────────── */
+
+function SuccessView({ title, message, accentColor, onClose }) {
+  return (
+    <div className="text-center py-8">
+      <div className="text-4xl mb-4">🎉</div>
+      <h2 className="font-brushelva text-2xl mb-2" style={{ color: accentColor }}>
+        {title}
+      </h2>
+      <p className="text-gray-600 font-urbanist">{message}</p>
+      <button
+        onClick={onClose}
+        className="mt-6 text-white px-6 py-2 rounded-lg transition font-urbanist"
+        style={{ backgroundColor: accentColor }}
+      >
+        Close
+      </button>
+    </div>
+  );
+}
+
+function FormView({
+  title, description, submitLabel,
+  fields, form, loading, error,
+  accentColor, ctaColor, ctaHoverColor,
+  onChange, onSubmit,
+}) {
+  return (
+    <>
+      <h2 className="font-brushelva text-2xl lg:text-3xl mb-1" style={{ color: accentColor }}>
+        {title}
+      </h2>
+      <p className="text-gray-500 font-urbanist text-sm mb-6">{description}</p>
+
+      <form onSubmit={onSubmit} className="flex flex-col gap-4 font-urbanist">
+        {fields.map((field) => (
+          <div key={field.name}>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              {field.label}
+            </label>
+            <input
+              type={field.type ?? "text"}
+              name={field.name}
+              required={field.required ?? true}
+              value={form[field.name] ?? ""}
+              onChange={onChange}
+              placeholder={field.placeholder ?? ""}
+              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 transition"
+              style={{ "--tw-ring-color": accentColor }}
+            />
+          </div>
+        ))}
+
+        {error && (
+          <p className="text-sm text-red-500">{error}</p>
+        )}
+
+        <button
+          type="submit"
+          disabled={loading}
+          className="mt-2 text-white font-semibold py-3 rounded-lg transition disabled:opacity-60"
+          style={{ backgroundColor: loading ? ctaColor : ctaColor }}
+          onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = ctaHoverColor)}
+          onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = ctaColor)}
+        >
+          {loading ? "Sending…" : submitLabel}
+        </button>
+      </form>
+    </>
   );
 }
