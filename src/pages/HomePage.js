@@ -8,12 +8,14 @@ import FarmlandSmartChoiceSection from "../components/FarmlandSmartChoiceSection
 import CTAStrip from "../components/CTAStrip";
 import { BLOGS } from "../data/blogs";
 import Footer from "../components/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Chatbot from "../components/Chatbot";
 import { ClientTestimonials } from "../components/Clienttestimonials";
 import ClientFAQ from "../components/ClientFAQ";
 import { navigate } from "vike/client/router"; // ✅ Vike navigation (replaces useNavigate)
 import FloatingCT from "../components/FloatingCT";
+import BrochureModal from "../components/BrochureModal";
+import WhatsAppPopup from "../components/WatsappPopup";
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://novara-backend-one.vercel.app";
 
@@ -34,140 +36,146 @@ const staggerWrap = {
   },
 };
 
-const BrochureModal = ({ isOpen, onClose }) => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    mobile: "",
-    email: "",
-    message: "",
-  });
-  const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
+// const BrochureModal = ({ isOpen, onClose }) => {
+//   const [formData, setFormData] = useState({
+//     firstName: "",
+//     lastName: "",
+//     mobile: "",
+//     email: "",
+//     message: "",
+//   });
+//   const [errors, setErrors] = useState({});
+//   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const validate = (values) => {
-    const newErrors = {};
-    if (!values.firstName.trim()) newErrors.firstName = "First name is required";
-    if (!values.mobile.trim()) {
-      newErrors.mobile = "Mobile number is required";
-    } else if (!/^[0-9]{10}$/.test(values.mobile)) {
-      newErrors.mobile = "Enter a valid 10-digit mobile number";
-    }
-    if (values.email && !/^\S+@\S+\.\S+$/.test(values.email)) {
-      newErrors.email = "Enter a valid email address";
-    }
-    return newErrors;
-  };
+//   const validate = (values) => {
+//     const newErrors = {};
+//     if (!values.firstName.trim()) newErrors.firstName = "First name is required";
+//     if (!values.mobile.trim()) {
+//       newErrors.mobile = "Mobile number is required";
+//     } else if (!/^[0-9]{10}$/.test(values.mobile)) {
+//       newErrors.mobile = "Enter a valid 10-digit mobile number";
+//     }
+//     if (values.email && !/^\S+@\S+\.\S+$/.test(values.email)) {
+//       newErrors.email = "Enter a valid email address";
+//     }
+//     return newErrors;
+//   };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData((prev) => ({ ...prev, [name]: value }));
+//   };
 
-  const handleBlur = () => setErrors(validate(formData));
+//   const handleBlur = () => setErrors(validate(formData));
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const newErrors = validate(formData);
-    setErrors(newErrors);
-    if (Object.keys(newErrors).length === 0) {
-      setIsSubmitting(true);
-      try {
-        const response = await fetch(`${API_BASE}/pop-up`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        });
-        if (response.ok) {
-          const name = `${formData.firstName} ${formData.lastName}`.trim();
-          setFormData({ firstName: "", lastName: "", mobile: "", email: "", message: "" });
-          setErrors({});
-          onClose();
-          // ✅ Vike navigate (replaces useNavigate hook)
-          navigate("/thankyou");
-          return;
-        } else {
-          alert("Something went wrong, please try again.");
-        }
-      } catch (error) {
-        console.error("Error submitting form:", error);
-        alert("There was an error submitting the form.");
-      }
-      setIsSubmitting(false);
-    }
-  };
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     const newErrors = validate(formData);
+//     setErrors(newErrors);
+//     if (Object.keys(newErrors).length === 0) {
+//       setIsSubmitting(true);
+//       try {
+//         const response = await fetch(`${API_BASE}/pop-up`, {
+//           method: "POST",
+//           headers: { "Content-Type": "application/json" },
+//           body: JSON.stringify(formData),
+//         });
+//         if (response.ok) {
+//           const name = `${formData.firstName} ${formData.lastName}`.trim();
+//           setFormData({ firstName: "", lastName: "", mobile: "", email: "", message: "" });
+//           setErrors({});
+//           onClose();
+//           // ✅ Vike navigate (replaces useNavigate hook)
+//           navigate("/thankyou");
+//           return;
+//         } else {
+//           alert("Something went wrong, please try again.");
+//         }
+//       } catch (error) {
+//         console.error("Error submitting form:", error);
+//         alert("There was an error submitting the form.");
+//       }
+//       setIsSubmitting(false);
+//     }
+//   };
 
-  if (!isOpen) return null;
+//   if (!isOpen) return null;
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
-      <div className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl max-h-[90vh] overflow-y-auto">
-        <button onClick={onClose} className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+//   return (
+//     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
+//       <div className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl max-h-[90vh] overflow-y-auto">
+//         <button onClick={onClose} className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition">
+//           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+//             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+//           </svg>
+//         </button>
 
-        <div className="p-6 lg:p-8">
-          <h2 className="text-2xl lg:text-3xl font-bold text-[#1A614F] mb-2">Get Your Brochure</h2>
-          <p className="text-gray-600 text-sm mb-6">Fill in your details and we'll send you our detailed brochure</p>
+//         <div className="p-6 lg:p-8">
+//           <h2 className="text-2xl lg:text-3xl font-bold text-[#1A614F] mb-2">Get Your Brochure</h2>
+//           <p className="text-gray-600 text-sm mb-6">Fill in your details and we'll send you our detailed brochure</p>
 
-          <div className="space-y-4">
-            <div>
-              <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
-              <input id="firstName" name="firstName" type="text" onChange={handleChange} onBlur={handleBlur} value={formData.firstName}
-                className={`w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A614F] transition ${errors.firstName ? "border-red-500" : "border-gray-300"}`}
-                placeholder="Enter your first name" />
-              {errors.firstName && <p className="mt-1 text-xs text-red-500">{errors.firstName}</p>}
-            </div>
+//           <div className="space-y-4">
+//             <div>
+//               <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
+//               <input id="firstName" name="firstName" type="text" onChange={handleChange} onBlur={handleBlur} value={formData.firstName}
+//                 className={`w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A614F] transition ${errors.firstName ? "border-red-500" : "border-gray-300"}`}
+//                 placeholder="Enter your first name" />
+//               {errors.firstName && <p className="mt-1 text-xs text-red-500">{errors.firstName}</p>}
+//             </div>
 
-            <div>
-              <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
-              <input id="lastName" name="lastName" type="text" onChange={handleChange} onBlur={handleBlur} value={formData.lastName}
-                className={`w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A614F] transition ${errors.lastName ? "border-red-500" : "border-gray-300"}`}
-                placeholder="Enter your last name" />
-              {errors.lastName && <p className="mt-1 text-xs text-red-500">{errors.lastName}</p>}
-            </div>
+//             <div>
+//               <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+//               <input id="lastName" name="lastName" type="text" onChange={handleChange} onBlur={handleBlur} value={formData.lastName}
+//                 className={`w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A614F] transition ${errors.lastName ? "border-red-500" : "border-gray-300"}`}
+//                 placeholder="Enter your last name" />
+//               {errors.lastName && <p className="mt-1 text-xs text-red-500">{errors.lastName}</p>}
+//             </div>
 
-            <div>
-              <label htmlFor="mobile" className="block text-sm font-medium text-gray-700 mb-1">Mobile Number *</label>
-              <input id="mobile" name="mobile" type="tel" onChange={handleChange} onBlur={handleBlur} value={formData.mobile}
-                className={`w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A614F] transition ${errors.mobile ? "border-red-500" : "border-gray-300"}`}
-                placeholder="10-digit mobile number" />
-              {errors.mobile && <p className="mt-1 text-xs text-red-500">{errors.mobile}</p>}
-            </div>
+//             <div>
+//               <label htmlFor="mobile" className="block text-sm font-medium text-gray-700 mb-1">Mobile Number *</label>
+//               <input id="mobile" name="mobile" type="tel" onChange={handleChange} onBlur={handleBlur} value={formData.mobile}
+//                 className={`w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A614F] transition ${errors.mobile ? "border-red-500" : "border-gray-300"}`}
+//                 placeholder="10-digit mobile number" />
+//               {errors.mobile && <p className="mt-1 text-xs text-red-500">{errors.mobile}</p>}
+//             </div>
 
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-              <input id="email" name="email" type="email" onChange={handleChange} onBlur={handleBlur} value={formData.email}
-                className={`w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A614F] transition ${errors.email ? "border-red-500" : "border-gray-300"}`}
-                placeholder="your.email@example.com" />
-              {errors.email && <p className="mt-1 text-xs text-red-500">{errors.email}</p>}
-            </div>
+//             <div>
+//               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+//               <input id="email" name="email" type="email" onChange={handleChange} onBlur={handleBlur} value={formData.email}
+//                 className={`w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A614F] transition ${errors.email ? "border-red-500" : "border-gray-300"}`}
+//                 placeholder="your.email@example.com" />
+//               {errors.email && <p className="mt-1 text-xs text-red-500">{errors.email}</p>}
+//             </div>
 
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-              <textarea id="message" name="message" rows="4" onChange={handleChange} onBlur={handleBlur} value={formData.message}
-                className={`w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A614F] transition resize-none ${errors.message ? "border-red-500" : "border-gray-300"}`}
-                placeholder="Tell us what you're interested in..." />
-              {errors.message && <p className="mt-1 text-xs text-red-500">{errors.message}</p>}
-            </div>
+//             <div>
+//               <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+//               <textarea id="message" name="message" rows="4" onChange={handleChange} onBlur={handleBlur} value={formData.message}
+//                 className={`w-full px-4 py-2.5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1A614F] transition resize-none ${errors.message ? "border-red-500" : "border-gray-300"}`}
+//                 placeholder="Tell us what you're interested in..." />
+//               {errors.message && <p className="mt-1 text-xs text-red-500">{errors.message}</p>}
+//             </div>
 
-            <button onClick={handleSubmit} disabled={isSubmitting}
-              className="w-full bg-[#DCA000] hover:bg-[#E3A600] text-white font-semibold py-3 px-6 rounded-lg border border-[#FFCE4C] transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
-              {isSubmitting ? "Submitting..." : "Submit & Download"}
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+//             <button onClick={handleSubmit} disabled={isSubmitting}
+//               className="w-full bg-[#DCA000] hover:bg-[#E3A600] text-white font-semibold py-3 px-6 rounded-lg border border-[#FFCE4C] transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
+//               {isSubmitting ? "Submitting..." : "Submit & Download"}
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 // ✅ Vike requires a named or default export — both work
 export default function HomePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+const [whatsappTrigger, setWhatsappTrigger] = useState(false);
 
+
+   useEffect(() => {
+    const timer = setTimeout(() => setIsModalOpen(true), 20000);
+    return () => clearTimeout(timer);
+  }, []);
   const amenitiesCard = [
     {
       id: 1,
@@ -214,11 +222,12 @@ export default function HomePage() {
   ];
 
   const latestBlogs = BLOGS.slice(0, 3);
+  
 
   return (
     <div className="font-urbanist">
       <Header />
-        <BrochureModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+        {/* <BrochureModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} /> */}
       {/* HERO */}
       <motion.div
         initial="hidden"
@@ -416,7 +425,11 @@ export default function HomePage() {
       </div>
 
       {/* Floating WhatsApp + Call */}
-      <FloatingCT onBrochureClick={() => setIsModalOpen(true)} />
+     <FloatingCT
+  onBrochureClick={() => setIsModalOpen(true)}
+  onWhatsAppClick={() => setWhatsappTrigger(prev => !prev)}  
+/>
+<WhatsAppPopup triggerOpen={whatsappTrigger} />
 
       <BrochureModal
         isOpen={isModalOpen}
@@ -430,7 +443,7 @@ export default function HomePage() {
           ctaText="Book a Farm Visit"
         />
       </div>
-
+       
       <Chatbot />
       <Footer />
     </div>
