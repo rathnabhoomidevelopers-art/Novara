@@ -1,63 +1,7 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 
-/**
- * BrochureModal — Reusable lead-capture modal
- *
- * Props:
- * ┌─────────────────┬──────────────────────────────────────────────────────┬─────────────────────────────────┐
- * │ Prop            │ Type                                                 │ Default                         │
- * ├─────────────────┼──────────────────────────────────────────────────────┼─────────────────────────────────┤
- * │ isOpen          │ boolean                                              │ required                        │
- * │ onClose         │ () => void                                           │ required                        │
- * │ onSubmit        │ (formData: { name, email, phone }) => Promise | void │ undefined (shows success state) │
- * │ title           │ string                                               │ "Download Brochure"             │
- * │ description     │ string                                               │ "Fill in your details…"         │
- * │ successTitle    │ string                                               │ "Thank You!"                    │
- * │ successMessage  │ string                                               │ "Your brochure is on its way…"  │
- * │ submitLabel     │ string                                               │ "Get Brochure"                  │
- * │ fields          │ FieldConfig[]                                        │ [name, email, phone]            │
- * │ accentColor     │ string (CSS color)                                   │ "#1A614F"                       │
- * │ ctaColor        │ string (CSS color)                                   │ "#DCA000"                       │
- * │ ctaHoverColor   │ string (CSS color)                                   │ "#E3A600"                       │
- * └─────────────────┴──────────────────────────────────────────────────────┴─────────────────────────────────┘
- *
- * FieldConfig shape:
- * {
- *   name: string,        // key in form state & HTML name attribute
- *   label: string,       // visible label text
- *   type?: string,       // input type (default: "text")
- *   placeholder?: string,
- *   required?: boolean,  // default: true
- * }
- *
- * Usage examples:
- *
- * // Minimal — defaults handle everything
- * <BrochureModal isOpen={open} onClose={() => setOpen(false)} />
- *
- * // With custom submit handler (e.g. API call)
- * <BrochureModal
- *   isOpen={open}
- *   onClose={() => setOpen(false)}
- *   onSubmit={async (data) => {
- *     await api.sendBrochureRequest(data);
- *   }}
- *   title="Get the Ecovara Brochure"
- *   submitLabel="Send Me the PDF"
- * />
- *
- * // Custom fields — e.g. skip phone, add company
- * <BrochureModal
- *   isOpen={open}
- *   onClose={() => setOpen(false)}
- *   fields={[
- *     { name: "name",    label: "Full Name",    placeholder: "Jane Doe" },
- *     { name: "email",   label: "Work Email",   type: "email", placeholder: "jane@company.com" },
- *     { name: "company", label: "Company Name", placeholder: "Acme Corp" },
- *   ]}
- * />
- */
+
 
 const DEFAULT_FIELDS = [
   { name: "name",  label: "Full Name",      type: "text",  placeholder: "Your name",        required: true },
