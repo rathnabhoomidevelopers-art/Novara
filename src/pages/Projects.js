@@ -286,9 +286,9 @@ const [hasWhatsAppAutoOpened, setHasWhatsAppAutoOpened] = useState(false);
           variants={fadeUp}
           className="relative z-10 text-center text-white font-brushelva lg:w-[1070px]"
         >
-          <h2 className="text-[30px] lg:text-[50px] sm:text-[32px]">
+          <h1 className="text-[30px] lg:text-[50px] sm:text-[32px]">
           Ecovara - Premium Managed Farmland for Sale Near Lepakshi
-          </h2>
+          </h1>
         </motion.div>
       </motion.div>
 
@@ -304,8 +304,8 @@ const [hasWhatsAppAutoOpened, setHasWhatsAppAutoOpened] = useState(false);
           </div>
           <div className="lg:w-[610px]">
             <img src="/images/project_icon.svg" alt="" />
-            <h1 className="font-brushelva text-[25px] lg:text-[42px] text-[#000000]"> About Ecovara Premium Farmland Project Near Lepakshi 
-            </h1>
+            <h2 className="font-brushelva text-[25px] lg:text-[42px] text-[#000000]"> About Ecovara Premium Farmland Project Near Lepakshi 
+            </h2>
             <p className="text-[16px] lg:text-[18px] font-urbanist pt-[14px]">
               Strategic Location, Promising Returns Ecovara by Novara Nature
               Estates is strategically situated near prominent IT hubs and
