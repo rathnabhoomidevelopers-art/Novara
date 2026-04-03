@@ -187,10 +187,10 @@ function ChatbotInner() {
       {/* Floating Toggle Button + Hello Bubble */}
       {!open && (
         <div style={{ position: "fixed", bottom: isMobile ? 140 : 96, left: 28, display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 10, zIndex: 9999 }}>
-          <div style={{ background: "#fff", borderRadius: "16px 16px 16px 4px", padding: "10px 16px", boxShadow: "0 4px 20px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.05)", fontSize: 13.5, fontFamily: "'DM Sans', sans-serif", color: "#1e293b", lineHeight: 1.5, maxWidth: 200, animation: "slideUp 0.35s cubic-bezier(.22,1,.36,1) both", animationDelay: "0.1s" }}>
+          {/* <div style={{ background: "#fff", borderRadius: "16px 16px 16px 4px", padding: "10px 16px", boxShadow: "0 4px 20px rgba(0,0,0,0.12), 0 0 0 1px rgba(0,0,0,0.05)", fontSize: 13.5, fontFamily: "'DM Sans', sans-serif", color: "#1e293b", lineHeight: 1.5, maxWidth: 200, animation: "slideUp 0.35s cubic-bezier(.22,1,.36,1) both", animationDelay: "0.1s" }}>
             👋 Hello!<br />
             <span style={{ color: "#64748b" }}>How can I assist you?</span>
-          </div>
+          </div> */}
 
           <button
             className="chatbot-toggle"
