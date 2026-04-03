@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 
 export default function BrochureModal({ isOpen, onClose }) {
@@ -12,10 +12,9 @@ export default function BrochureModal({ isOpen, onClose }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: wire up to your backend / email service
+    
     setSubmitted(true);
   };
-
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4"
@@ -54,10 +53,10 @@ export default function BrochureModal({ isOpen, onClose }) {
         ) : (
           <>
             <h2 className="font-brushelva text-2xl lg:text-3xl text-[#1A614F] mb-1">
-              Download Brochure
+              Enquire Form
             </h2>
             <p className="text-gray-500 font-urbanist text-sm mb-6">
-              Fill in your details and we'll send the Ecovara brochure to you.
+              Fill in your details and our team will get in touch with you shortly regarding your enquiry.
             </p>
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 font-urbanist">
@@ -110,7 +109,7 @@ export default function BrochureModal({ isOpen, onClose }) {
                 type="submit"
                 className="mt-2 bg-[#DCA000] hover:bg-[#E3A600] text-white font-semibold py-3 rounded-lg transition"
               >
-                Get Brochure
+               Submit
               </button>
             </form>
           </>
