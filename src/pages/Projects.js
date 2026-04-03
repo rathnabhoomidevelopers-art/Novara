@@ -10,6 +10,7 @@ import Chatbot from "../components/Chatbot";
 import ClientFAQ from "../components/ClientFAQ";
 import BrochureModal from "../components/BrochureModal";
 import FloatingCT from "../components/FloatingCT";
+import WhatsAppPopup from "../components/WatsappPopup";
 
 const useIsomorphicLayoutEffect =
   typeof window !== "undefined" ? useLayoutEffect : useEffect;
@@ -193,7 +194,11 @@ export default function Projects() {
   const [animated, setAnimated] = useState(true);
   const cardRef = useRef(null);
   const [step, setStep] = useState(0);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+   const [isModalOpen, setIsModalOpen] = useState(false);
+const [whatsappTrigger, setWhatsappTrigger] = useState(false);
+const [isWhatsAppOpen, setIsWhatsAppOpen] = useState(false);
+const [hasWhatsAppAutoOpened, setHasWhatsAppAutoOpened] = useState(false);
+
 
   const goNext = () => {
     setAnimated(true);
@@ -206,6 +211,7 @@ export default function Projects() {
   };
 
   // When index goes past the original set, silently snap back
+
   useEffect(() => {
     if (index >= slides.length) {
       const t = setTimeout(() => {
@@ -603,7 +609,15 @@ export default function Projects() {
       </div>
 
       {/* ── Shared components ────────────────────────────────────────────── */}
-      <FloatingCT onBrochureClick={() => setIsModalOpen(true)} />
+   <FloatingCT
+    onBrochureClick={() => setIsModalOpen(true)}
+    onWhatsAppClick={() => setIsWhatsAppOpen(true)}
+    isWhatsAppOpen={isWhatsAppOpen}
+  />
+  <WhatsAppPopup
+    isOpen={isWhatsAppOpen}
+    onClose={() => setIsWhatsAppOpen(false)}
+  />
 
       <BrochureModal
         isOpen={isModalOpen}
