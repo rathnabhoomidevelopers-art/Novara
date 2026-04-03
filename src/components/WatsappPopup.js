@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { X, Send } from "lucide-react";
 
-const WHATSAPP_NUMBER = "8431538785";
+const WHATSAPP_NUMBER = "8660200662";
 
 export default function WhatsAppPopup({ triggerOpen }) {
   const [isOpen, setIsOpen] = useState(false);
