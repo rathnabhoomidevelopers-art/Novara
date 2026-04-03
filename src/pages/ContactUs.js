@@ -7,6 +7,7 @@ import Footer from "../../src/components/Footer";
 import { navigate } from "vike/client/router";
 import Chatbot from "../../src/components/Chatbot";
 import FloatingCT from "../components/FloatingCT";
+import WhatsAppPopup from "../components/WatsappPopup";
 
 const API_BASE =
   import.meta.env.VITE_API_BASE_URL || "https://novara-backend-one.vercel.app";
@@ -260,6 +261,9 @@ const BrochureModal = ({ isOpen, onClose }) => {
 
 export default function ContactUs() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [whatsappTrigger, setWhatsappTrigger] = useState(false);
+const [isWhatsAppOpen, setIsWhatsAppOpen] = useState(false);
+const [hasWhatsAppAutoOpened, setHasWhatsAppAutoOpened] = useState(false);
 
   return (
     <div className="font-urbanist">
@@ -453,7 +457,15 @@ export default function ContactUs() {
         <ContactForm />
       </div>
 
-      <FloatingCT onBrochureClick={() => setIsModalOpen(true)} />
+     <FloatingCT
+               onBrochureClick={() => setIsModalOpen(true)}
+               onWhatsAppClick={() => setIsWhatsAppOpen(true)}
+               isWhatsAppOpen={isWhatsAppOpen}
+             />
+             <WhatsAppPopup
+               isOpen={isWhatsAppOpen}
+               onClose={() => setIsWhatsAppOpen(false)}
+             />
 
       <BrochureModal
         isOpen={isModalOpen}
