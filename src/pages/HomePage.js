@@ -172,6 +172,7 @@ export default function HomePage() {
 const [whatsappTrigger, setWhatsappTrigger] = useState(false);
 const [isWhatsAppOpen, setIsWhatsAppOpen] = useState(false);
 const [hasWhatsAppAutoOpened, setHasWhatsAppAutoOpened] = useState(false);
+const [modalVariant, setModalVariant] = useState("brochure");
 
 useEffect(() => {
   const timer = setTimeout(() => {
@@ -184,7 +185,7 @@ useEffect(() => {
 }, [hasWhatsAppAutoOpened]);
 
    useEffect(() => {
-    const timer = setTimeout(() => setIsModalOpen(true), 20000);
+    const timer = setTimeout(() => setIsModalOpen(true), 10000);
     return () => clearTimeout(timer);
   }, []);
   const amenitiesCard = [
@@ -446,10 +447,17 @@ useEffect(() => {
   onClose={() => setIsWhatsAppOpen(false)}
 />
 
-      <BrochureModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
+<BrochureModal
+  isOpen={isModalOpen}
+  onClose={() => setIsModalOpen(false)}
+  title={modalVariant === "brochure" ? "Enquire Us" : "Request a Callback"}
+  description={
+    modalVariant === "brochure"
+      ? "Fill in your details and our team will get in touch with you shortly regarding your enquiry."
+      : "Provide your details below and we’ll connect with you to assist with your enquiry."
+  }
+  submitLabel={modalVariant === "brochure" ? "Submit" : "Request Now"}
+/>
 
       <div className="bg-yellow-50">
         <CTAStrip
