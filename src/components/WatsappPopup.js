@@ -41,9 +41,9 @@ export default function WhatsAppPopup({ isOpen, onClose }) {
       style={{ background: "#fff" }}
     >
       {/* Header */}
-      <div className="flex items-center gap-10  ps-4 py-3" style={{ background: "#1A614F" }}>
+      <div className="flex items-center gap-12  ps-4 py-3" style={{ background: "#1A614F" }}>
       
-  <div className="w-22 h-22 rounded-full overflow-hidden">
+  <div className="w-18 h-18 rounded-full overflow-hidden">
     <img
       src="/images/logo.svg"   // ✅ removed /public
       alt="Ecovara"
