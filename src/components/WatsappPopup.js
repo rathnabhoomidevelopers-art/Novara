@@ -5,10 +5,10 @@ const WHATSAPP_NUMBER = "8660200662";
 
 export default function WhatsAppPopup({ isOpen, onClose }) {
   const [input, setInput] = useState("");
-  const [messages, setMessages] = useState([
-    { from: "them", text: "👋 Hello! Welcome to Ecovara.", time: "Now" },
-    { from: "them", text: "How can we help you today? Feel free to ask about our sustainable living solutions! 🌱", time: "Now" },
-  ]);
+ const [messages, setMessages] = useState([
+  { from: "them", text: "👋 Hello! Welcome to Ecovara.", time: "Now" },
+  { from: "them", text: "How can we help you today? Ask us about our farmland options, locations, and availability! 🌾", time: "Now" },
+]);
   const [typing, setTyping] = useState(false);
   const chatRef = useRef(null);
 
@@ -41,21 +41,19 @@ export default function WhatsAppPopup({ isOpen, onClose }) {
       style={{ background: "#fff" }}
     >
       {/* Header */}
-      <div className="flex items-center gap-3 px-4 py-3" style={{ background: "#1A614F" }}>
-        <div className="w-11 h-11 rounded-full flex items-center justify-center text-xl flex-shrink-0 border-2"
-          style={{ background: "#25D366", borderColor: "rgba(255,255,255,0.25)" }}>
-          🌿
-        </div>
-        <div className="flex-1">
-          <div className="text-white font-semibold text-sm font-urbanist">Ecovara Support</div>
-          <div className="flex items-center gap-1.5 mt-0.5">
-            <span className="w-2 h-2 rounded-full" style={{ background: "#25D366" }} />
-            <span className="text-xs" style={{ color: "rgba(255,255,255,0.75)" }}>Online · Replies in minutes</span>
-          </div>
-        </div>
+      <div className="flex items-center gap-10  ps-4 py-3" style={{ background: "#1A614F" }}>
+      
+  <div className="w-22 h-22 rounded-full overflow-hidden">
+    <img
+      src="/images/logo.svg"   // ✅ removed /public
+      alt="Ecovara"
+      className="w-full h-full object-contain"
+    />
+  </div>
+
         <button onClick={onClose} className="w-7 h-7 rounded-full flex items-center justify-center"
           style={{ background: "rgba(255,255,255,0.15)", color: "#fff" }}>
-          <X className="w-4 h-4" />
+          <X className="w-5 h-5" />
         </button>
       </div>
 
