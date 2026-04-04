@@ -6,7 +6,7 @@ const WHATSAPP_NUMBER = "8660200662";
 export default function WhatsAppPopup({ isOpen, onClose }) {
   const [input, setInput] = useState("");
  const [messages, setMessages] = useState([
-  { from: "them", text: "👋 Hello! Welcome to Ecovara.", time: "Now" },
+  { from: "them", text: "👋 Hello! Welcome to Novara Nature Estates.", time: "Now" },
   { from: "them", text: "How can we help you today? Ask us about our farmland options, locations, and availability! 🌾", time: "Now" },
 ]);
   const [typing, setTyping] = useState(false);
