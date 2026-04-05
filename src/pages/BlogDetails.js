@@ -232,8 +232,6 @@ export default function BlogDetail({ vikeSlug }) {
     <section className="w-full bg-white font-urbanist">
      <Header />
 
-     
-
       <div className="relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-6 sm:py-10 flex">
 
@@ -269,26 +267,32 @@ export default function BlogDetail({ vikeSlug }) {
               </span>
             </div>
 
-           <h1 className="mt-3 text-[22px] sm:text-[28px] font-bold text-[#111827] leading-tight">
-  {blog.headline}
-</h1>
+            <h1 className="mt-3 text-[22px] sm:text-[28px] font-bold text-[#111827] leading-tight">
+              {blog.headline}
+            </h1>
 
-<div className="mt-2 text-[12px] text-slate-500 flex items-center gap-3">
-  <span>{blog.author}</span>
-  <span className="h-1 w-1 rounded-full bg-slate-300" />
-  <span>{blog.date}</span>
-</div>
+            <div className="mt-2 text-[12px] text-slate-500 flex items-center gap-3">
+              <span>{blog.author}</span>
+              <span className="h-1 w-1 rounded-full bg-slate-300" />
+              <span>{blog.date}</span>
+            </div>
 
-{/* Breadcrumb — below author/date, no background */}
-<div className="mt-3 flex items-center gap-1.5 flex-wrap text-[12px] text-slate-400">
-  <a href="/" className="hover:text-[#E3A600] transition-colors font-semibold">Home</a>
-  <span className="text-slate-300 text-[10px]">{">>"}</span>
-  <a href="/blogs" className="hover:text-[#E3A600] transition-colors font-semibold">Blog</a>
-  <span className="text-slate-300 text-[10px]">{">>"}</span>
-  <span className="text-slate-500 line-clamp-1 max-w-[420px] sm:max-w-[600px]">{blog.title}</span>
-</div>
+            {/* Breadcrumb */}
+            <div className="mt-3 flex items-center gap-1.5 flex-wrap text-[12px] text-slate-400">
+              <a href="/" className="hover:text-[#E3A600] transition-colors font-semibold">Home</a>
+              <span className="text-slate-300 text-[10px]">{">>"}</span>
+              <a href="/blogs" className="hover:text-[#E3A600] transition-colors font-semibold">Blog</a>
+              <span className="text-slate-300 text-[10px]">{">>"}</span>
+              <span className="text-slate-500 line-clamp-1 max-w-[420px] sm:max-w-[600px]">{blog.title}</span>
+            </div>
 
-<div className="mt-5 rounded-2xl overflow-hidden border border-slate-100 bg-slate-100">
+            {/* ✅ FIXED: Hero image now actually renders */}
+            <div className="mt-5 rounded-2xl overflow-hidden border border-slate-100 bg-slate-100">
+              <img
+                src={blog.heroImage || blog.image}
+                alt={blog.title}
+                className="w-full h-auto object-cover"
+              />
             </div>
 
             {/* ── Content sections ── */}
@@ -340,7 +344,7 @@ export default function BlogDetail({ vikeSlug }) {
                     );
                   }
 
-                  // ✅ Table — FIXED (was missing)
+                  // Table
                   if (s.type === "table") {
                     return (
                       <div key={i} className="overflow-x-auto rounded-xl border border-slate-200">
@@ -370,7 +374,7 @@ export default function BlogDetail({ vikeSlug }) {
                     );
                   }
 
-                  // ✅ Unordered list
+                  // Unordered list
                   if (s.type === "ul") {
                     return (
                       <ul key={i} className="list-disc list-outside pl-5 space-y-2 text-[13px] sm:text-[14px] text-slate-600">
@@ -381,7 +385,7 @@ export default function BlogDetail({ vikeSlug }) {
                     );
                   }
 
-                  // ✅ Ordered list — FIXED (was missing)
+                  // Ordered list
                   if (s.type === "ol") {
                     return (
                       <ol key={i} className="list-decimal list-outside pl-5 space-y-2 text-[13px] sm:text-[14px] text-slate-600">
@@ -413,7 +417,8 @@ export default function BlogDetail({ vikeSlug }) {
                       </p>
                     );
                   }
-                    if (s.type === "p_with_link_bold") {
+
+                  if (s.type === "p_with_link_bold") {
                     return (
                       <p
                         key={i}
@@ -454,7 +459,8 @@ export default function BlogDetail({ vikeSlug }) {
                       </p>
                     );
                   }
-                  // ✅ Paragraph with link — FIXED (was missing)
+
+                  // Paragraph with link
                   if (s.type === "p_with_link") {
                     return (
                       <p key={i} className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600">
