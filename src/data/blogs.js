@@ -575,12 +575,11 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Schedule your visit, to Ecovara Farms\n\n\n+91-8660200662\n",
+        "text": "Schedule your visit, to Ecovara Farms\n\n\n+91-866020066",
         "fontWeight": "font-bold"
       }
     ]
   },
- 
   {
     "id": 17,
     "slug": "sustainable-plantation-farmland-investment-india",
