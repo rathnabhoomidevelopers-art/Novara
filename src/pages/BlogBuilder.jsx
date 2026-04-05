@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo, useCallback, useEffect } from "react";
 import {
   Trash2, Plus, Image as ImageIcon, Link as LinkIcon, Type, List,
@@ -60,10 +59,8 @@ const compressAndUpload = (file, { maxW = 1400, quality = 0.82 } = {}) =>
 // ─── Section ↔ Element converters ────────────────────────────────────────────
 const sectionToElement = (s) => {
   const base = { id: Date.now() + Math.random() };
-  // headings
   if (["h2","h3","h4","h5","h6"].includes(s.type))
     return { ...base, type: s.type, text: s.text, fontWeight: s.fontWeight || "font-bold" };
-  // headings with link
   if (["h2_with_link","h3_with_link","h4_with_link","h5_with_link","h6_with_link"].includes(s.type))
     return { ...base, type: s.type, textBefore: s.textBefore || "", linkText: s.linkText || "", href: s.href || "", textAfter: s.textAfter || "", fontWeight: s.fontWeight || "font-bold" };
   if (s.type === "p")          return { ...base, type: "p",          text: s.text, fontWeight: s.fontWeight || "font-normal" };
@@ -200,9 +197,8 @@ const ELEMENT_TYPES = [
   { type: "p_with_link_bold",icon: LinkIcon,  label: "P+Lnk+Bold" },
 ];
 
-// ─── Preview section renderer (mirrors BlogDetail output) ─────────────────────
+// ─── Preview section renderer ─────────────────────────────────────────────────
 function PreviewSection({ s, usedH3 }) {
-  // Plain headings h2-h6
   if (["h2","h3","h4","h5","h6"].includes(s.type)) {
     const tag = s.type;
     const base = slugify(s.text || "");
@@ -217,7 +213,6 @@ function PreviewSection({ s, usedH3 }) {
     });
   }
 
-  // Headings with link
   if (["h2_with_link","h3_with_link","h4_with_link","h5_with_link","h6_with_link"].includes(s.type)) {
     const tag = getHeadingTag(s.type);
     const base = slugify(s.linkText || "");
@@ -332,7 +327,6 @@ function PreviewSection({ s, usedH3 }) {
       </p>
     );
 
-  // default paragraph
   return <p className={`text-[13px] sm:text-[14px] leading-relaxed text-slate-600 ${s.fontWeight || ""}`} dangerouslySetInnerHTML={{ __html: s.text }} />;
 }
 
@@ -497,7 +491,6 @@ function BlogEditor({ editingBlog, onBack }) {
   const { token, user, logout } = useAuth();
   const [isEditMode] = useState(!!editingBlog);
 
-
   const [elements, setElements]             = useState([]);
   const [selectedId, setSelectedId]         = useState(null);
   const [showAddMenu, setShowAddMenu]       = useState(false);
@@ -515,7 +508,15 @@ function BlogEditor({ editingBlog, onBack }) {
     date: new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }),
     heroImage: "", imageAlt: "", tags: "",
   });
-  const editingBlogId = React.useRef(editingBlog?.id ?? null);
+
+  // ── FIX: use a ref that syncs with editingBlog via useEffect ──────────────
+  const editingBlogId = React.useRef(null);
+
+  useEffect(() => {
+    if (editingBlog?.id != null) {
+      editingBlogId.current = editingBlog.id;
+    }
+  }, [editingBlog]);
 
   useEffect(() => {
     if (!editingBlog) return;
@@ -538,7 +539,7 @@ function BlogEditor({ editingBlog, onBack }) {
 
   const selectedEl = elements.find((el) => el.id === selectedId) || null;
 
-  // ── TOC computation (h2-h6 + with_link variants) ──────────────────────────
+  // ── TOC computation ───────────────────────────────────────────────────────
   const toc = useMemo(() => {
     const used = new Map();
     return elements
@@ -554,7 +555,6 @@ function BlogEditor({ editingBlog, onBack }) {
       });
   }, [elements]);
 
-  // ── Scrollspy for preview TOC ─────────────────────────────────────────────
   const [activeId, setActiveId] = useState("");
   useEffect(() => {
     if (!previewMode || !toc.length) return;
@@ -617,12 +617,10 @@ function BlogEditor({ editingBlog, onBack }) {
   const updateItem     = (id, idx, val) => updateEl(id, { text: elements.find((e) => e.id === id).text.map((t, i) => i === idx ? val : t) });
   const deleteItem     = (id, idx) => updateEl(id, { text: elements.find((e) => e.id === id).text.filter((_, i) => i !== idx) });
 
-  // p_with_bold helpers
   const addBoldPart    = (id) => updateEl(id, { parts: [...(elements.find((e) => e.id === id)?.parts || []), { bold: false, text: "New part" }] });
   const updatePart     = (id, idx, patch) => updateEl(id, { parts: elements.find((e) => e.id === id).parts.map((p, i) => i === idx ? { ...p, ...patch } : p) });
   const deletePart     = (id, idx) => updateEl(id, { parts: elements.find((e) => e.id === id).parts.filter((_, i) => i !== idx) });
 
-  // p_with_link_bold helpers
   const addPartBefore  = (id) => updateEl(id, { partsBefore: [...(elements.find((e) => e.id === id)?.partsBefore || []), { bold: false, text: "New part" }] });
   const updatePartB    = (id, idx, patch) => updateEl(id, { partsBefore: elements.find((e) => e.id === id).partsBefore.map((p, i) => i === idx ? { ...p, ...patch } : p) });
   const deletePartB    = (id, idx) => updateEl(id, { partsBefore: elements.find((e) => e.id === id).partsBefore.filter((_, i) => i !== idx) });
@@ -659,7 +657,7 @@ function BlogEditor({ editingBlog, onBack }) {
     const slug     = meta.slug || slugify(title) || `blog-${Date.now()}`;
     const tagsArr  = meta.tags ? meta.tags.split(",").map((t) => t.trim()).filter(Boolean) : [];
     return {
-     id: isEditMode ? editingBlogId.current : Date.now(),
+      id:          isEditMode ? editingBlogId.current : Date.now(),
       slug,
       category:    meta.category,
       title:       meta.title || title,
@@ -723,18 +721,31 @@ function BlogEditor({ editingBlog, onBack }) {
       // eslint-disable-next-line no-new-func
       const blogsArray = new Function(`return ${stripped}`)();
 
-      const nextId = Math.max(0, ...blogsArray.map(b => Number(b.id) || 0)) + 1;
       const blogData = exportBlogData();
 
       let newBlogsArray;
       if (isEditMode) {
         setPublishMsg("Updating existing blog entry…");
-        const idx = blogsArray.findIndex(b => String(b.id) === String(editingBlogId.current));
-        if (idx === -1) throw new Error(`Could not find blog with id ${editingBlogId.current} in blogs.js`);
-         newBlogsArray = [...blogsArray];
-        newBlogsArray[idx] = { ...blogData, id: editingBlogId.current };
+
+        // ── FIX: robust match by id (string or number) with slug fallback ──
+        const idx = blogsArray.findIndex(
+          (b) =>
+            String(b.id) === String(editingBlogId.current) ||
+            b.slug === (editingBlog?.slug || "")
+        );
+
+        if (idx === -1) {
+          throw new Error(
+            `Could not find blog with id "${editingBlogId.current}" or slug "${editingBlog?.slug}" in blogs.js`
+          );
+        }
+
+        newBlogsArray = [...blogsArray];
+        // Preserve the original id exactly as stored
+        newBlogsArray[idx] = { ...blogData, id: blogsArray[idx].id };
       } else {
         setPublishMsg("Inserting new blog entry…");
+        const nextId = Math.max(0, ...blogsArray.map(b => Number(b.id) || 0)) + 1;
         newBlogsArray = [{ ...blogData, id: nextId }, ...blogsArray];
       }
 
@@ -986,7 +997,6 @@ function BlogEditor({ editingBlog, onBack }) {
           </div>
         </div>
 
-        {/* fontWeight for headings & paragraphs */}
         {(isHeading || isHeadingLink || ["p","p_with_link","p_with_bold","p_with_link_bold"].includes(el.type)) && (
           <div>
             <Label>Font weight</Label>
@@ -1004,7 +1014,6 @@ function BlogEditor({ editingBlog, onBack }) {
           </div>
         )}
 
-        {/* Plain headings h2-h6 */}
         {isHeading && (
           <div>
             <Label>Heading text</Label>
@@ -1014,7 +1023,6 @@ function BlogEditor({ editingBlog, onBack }) {
           </div>
         )}
 
-        {/* Heading with link */}
         {isHeadingLink && (
           <div className="space-y-3">
             <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg text-[11px] text-amber-800">
@@ -1029,7 +1037,6 @@ function BlogEditor({ editingBlog, onBack }) {
           </div>
         )}
 
-        {/* Plain paragraph & quote */}
         {["quote"].includes(el.type) && (
           <div>
             <Label>Content</Label>
@@ -1059,7 +1066,6 @@ function BlogEditor({ editingBlog, onBack }) {
           </div>
         )}
 
-        {/* p_with_link */}
         {el.type === "p_with_link" && (
           <div className="space-y-3">
             <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg text-[11px] text-amber-800">
@@ -1074,7 +1080,6 @@ function BlogEditor({ editingBlog, onBack }) {
           </div>
         )}
 
-        {/* p_with_bold */}
         {el.type === "p_with_bold" && (
           <div className="space-y-3">
             <Label>Text parts (toggle bold per part)</Label>
@@ -1102,7 +1107,6 @@ function BlogEditor({ editingBlog, onBack }) {
           </div>
         )}
 
-        {/* p_with_link_bold */}
         {el.type === "p_with_link_bold" && (
           <div className="space-y-3">
             <SectionDivider>Parts before link</SectionDivider>
@@ -1151,7 +1155,6 @@ function BlogEditor({ editingBlog, onBack }) {
           </div>
         )}
 
-        {/* Image */}
         {el.type === "image" && (
           <div className="space-y-3">
             <div>
@@ -1174,7 +1177,6 @@ function BlogEditor({ editingBlog, onBack }) {
           </div>
         )}
 
-        {/* Table */}
         {el.type === "table" && (
           <div className="space-y-3">
             <div className="flex items-center justify-between p-3 rounded-lg border border-slate-100 bg-slate-50">
@@ -1240,7 +1242,6 @@ function BlogEditor({ editingBlog, onBack }) {
           </div>
         )}
 
-        {/* Lists */}
         {(el.type === "ul" || el.type === "ol") && (
           <div>
             <Label>List items</Label>
@@ -1606,7 +1607,7 @@ function BlogEditor({ editingBlog, onBack }) {
                   </div>
                 </div>
 
-                {/* ── RIGHT TABLE OF CONTENTS (preview mode only) ── */}
+                {/* RIGHT TOC (preview only) */}
                 {previewMode && toc.length > 0 && (
                   <aside className="hidden lg:block w-[280px] ml-8 flex-shrink-0">
                     <div className="sticky top-36">
