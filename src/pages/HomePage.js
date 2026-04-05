@@ -56,7 +56,7 @@ useEffect(() => {
 }, [hasWhatsAppAutoOpened]);
 
    useEffect(() => {
-    const timer = setTimeout(() => setIsModalOpen(true), 10000);
+    const timer = setTimeout(() => setIsModalOpen(true), 25000);
     return () => clearTimeout(timer);
   }, []);
   const amenitiesCard = [
