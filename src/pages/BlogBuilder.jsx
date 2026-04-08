@@ -508,9 +508,14 @@ function BlogEditor({ editingBlog, onBack }) {
     date: new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }),
     heroImage: "", imageAlt: "", tags: "",
   });
-
+    const [drafts, setDrafts] = useState([]);
+const [currentDraftKey, setCurrentDraftKey] = useState(null);
   // ── FIX: use a ref that syncs with editingBlog via useEffect ──────────────
   const editingBlogId = React.useRef(null);
+
+  useEffect(() => {
+  loadDrafts();
+}, []);
 
   useEffect(() => {
     if (editingBlog?.id != null) {
@@ -685,6 +690,8 @@ function BlogEditor({ editingBlog, onBack }) {
     a.click(); URL.revokeObjectURL(a.href);
   };
 
+
+
   // ── GitHub config ─────────────────────────────────────────────────────────
   const GH_TOKEN  = import.meta.env.VITE_GH_TOKEN;
   const GH_REPO   = "rathnabhoomidevelopers-art/Novara";
@@ -794,6 +801,53 @@ function BlogEditor({ editingBlog, onBack }) {
       setPublishMsg(e.message || "Unknown error occurred.");
     }
   };
+  // Load all drafts
+const loadDrafts = () => {
+  const allDrafts = Object.keys(localStorage)
+    .filter(key => key.startsWith("draft_"))
+    .map(key => ({
+      key,
+      data: JSON.parse(localStorage.getItem(key))
+    }));
+
+  setDrafts(allDrafts);
+};
+
+// Save draft
+const saveDraft = () => {
+  const key = currentDraftKey || `draft_${Date.now()}`;
+
+  const draftData = {
+    meta,
+    elements,
+    savedAt: new Date().toISOString(),
+  };
+
+  localStorage.setItem(key, JSON.stringify(draftData));
+  setCurrentDraftKey(key);
+
+  loadDrafts(); // 🔥 refresh UI
+
+  setPublishStatus("success");
+  setPublishMsg("Draft saved successfully ✅");
+};
+
+// Load one draft into editor
+const loadDraft = (key) => {
+  const draft = JSON.parse(localStorage.getItem(key));
+
+  setMeta(draft.meta);
+  setElements(draft.elements);
+  setCurrentDraftKey(key);
+
+  setPublishMsg("Draft loaded ✏️");
+};
+
+// Delete draft
+const deleteDraft = (key) => {
+  localStorage.removeItem(key);
+  loadDrafts();
+};
 
   const progress = [
     { label: "Headline",    done: !!(meta.headline || meta.title) },
@@ -1441,9 +1495,45 @@ function BlogEditor({ editingBlog, onBack }) {
                     <Input value={meta.imageAlt} placeholder="Farmland near Bangalore"
                       onChange={(e) => setMeta((p) => ({ ...p, imageAlt: e.target.value }))} /></div>
                 </div>
+                  <SectionDivider>My Drafts</SectionDivider>
 
+<div className="space-y-2 max-h-60 overflow-auto">
+  {drafts.length === 0 && (
+    <p className="text-sm opacity-60">No drafts yet</p>
+  )}
+
+  {drafts.map(d => (
+    <div
+      key={d.key}
+      className="p-3 border rounded-lg flex justify-between items-center"
+    >
+      <div>
+        <h4 className="font-medium">
+          {d.data.meta.headline || "Untitled"}
+        </h4>
+        <p className="text-xs opacity-60">
+          {new Date(d.data.savedAt).toLocaleString()}
+        </p>
+      </div>
+
+      <div className="flex gap-2">
+        <button
+          onClick={() => loadDraft(d.key)}
+          className="btn-ghost" >
+          Edit
+        </button>
+          <button onClick={() => deleteDraft(d.key)} className="btn-danger">
+                                         Delete
+                                   </button>
+                             </div>
+                                  </div>
+                                 ))}
+                </div>
                 <div className="px-5 py-4 border-t border-slate-100 space-y-3">
                   <SectionDivider>Save & Publish</SectionDivider>
+                  <button onClick={saveDraft} className="btn-ghost w-full">
+                    💾 Save as Draft
+                  </button>
                   <button onClick={downloadJSON} className="btn-ghost w-full"><Upload size={12} /> Download JSON</button>
                   <button onClick={publishBlog} disabled={publishStatus === "loading"} className="btn-publish">
                     {publishStatus === "loading"
@@ -1608,7 +1698,7 @@ function BlogEditor({ editingBlog, onBack }) {
                 </div>
 
                 {/* RIGHT TOC (preview only) */}
-                {previewMode && toc.length > 0 && (
+                {/* {previewMode && toc.length > 0 && (
                   <aside className="hidden lg:block w-[280px] ml-8 flex-shrink-0">
                     <div className="sticky top-36">
                       <div className="rounded-2xl border border-slate-100 bg-white shadow-[0_12px_35px_rgba(0,0,0,0.06)] p-4">
@@ -1646,7 +1736,7 @@ function BlogEditor({ editingBlog, onBack }) {
                       </div>
                     </div>
                   </aside>
-                )}
+                )} */}
               </div>
             </div>
           </section>
