@@ -1495,31 +1495,29 @@ const deleteDraft = (key) => {
                     <Input value={meta.imageAlt} placeholder="Farmland near Bangalore"
                       onChange={(e) => setMeta((p) => ({ ...p, imageAlt: e.target.value }))} /></div>
                 </div>
+                 <div className="px-5 py-4 border-t border-slate-100 space-y-3">
                   <SectionDivider>My Drafts</SectionDivider>
+                  <div className="space-y-2 max-h-60 overflow-auto">
+                {drafts.length === 0 && (
+                  <p className="text-sm opacity-60">No drafts yet</p>
+                   )}
+                 {drafts.map(d => (
+               <div
+                 key={d.key}
+                  className="p-3 border rounded-lg flex justify-between items-center">
+                   <div>
+                 <h4 className="font-medium">
+                 {d.data.meta.headline || "Untitled"}
+                     </h4>
+                      <p className="text-xs opacity-60">
+                       {new Date(d.data.savedAt).toLocaleString()}
+                           </p>
+                          </div>
 
-<div className="space-y-2 max-h-60 overflow-auto">
-  {drafts.length === 0 && (
-    <p className="text-sm opacity-60">No drafts yet</p>
-  )}
-
-  {drafts.map(d => (
-    <div
-      key={d.key}
-      className="p-3 border rounded-lg flex justify-between items-center"
-    >
-      <div>
-        <h4 className="font-medium">
-          {d.data.meta.headline || "Untitled"}
-        </h4>
-        <p className="text-xs opacity-60">
-          {new Date(d.data.savedAt).toLocaleString()}
-        </p>
-      </div>
-
-      <div className="flex gap-2">
-        <button
-          onClick={() => loadDraft(d.key)}
-          className="btn-ghost" >
+                       <div className="flex gap-2">
+                         <button
+                        onClick={() => loadDraft(d.key)}
+                       className="btn-ghost" >
           Edit
         </button>
           <button onClick={() => deleteDraft(d.key)} className="btn-danger">
@@ -1528,6 +1526,7 @@ const deleteDraft = (key) => {
                              </div>
                                   </div>
                                  ))}
+                </div>
                 </div>
                 <div className="px-5 py-4 border-t border-slate-100 space-y-3">
                   <SectionDivider>Save & Publish</SectionDivider>
