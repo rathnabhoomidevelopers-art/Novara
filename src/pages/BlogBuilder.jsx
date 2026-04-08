@@ -1495,8 +1495,6 @@ const deleteDraft = (key) => {
                     <Input value={meta.imageAlt} placeholder="Farmland near Bangalore"
                       onChange={(e) => setMeta((p) => ({ ...p, imageAlt: e.target.value }))} /></div>
                 </div>
-                                 <div className="px-5 py-4 border-t border-slate-100 space-y-3">
-
                   <SectionDivider>My Drafts</SectionDivider>
 
 <div className="space-y-2 max-h-60 overflow-auto">
