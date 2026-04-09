@@ -47,7 +47,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Write your paragraph here…The airport is also close by. Lepakshi is 75 kilometres from Kempegowda International Airport, which makes it a great place to invest in the North Bangalore area. For the ten years the area around the airport has been getting more valuable because of the airport. Land near the airport tends to increase in value than farms that are farther away.. Because the airport is still growing this trend is even stronger now than it was five years ago.\n",
+        "text": "The airport is also close by. Lepakshi is 75 kilometres from Kempegowda International Airport, which makes it a great place to invest in the North Bangalore area. For the ten years the area around the airport has been getting more valuable because of the airport. Land near the airport tends to increase in value than farms that are farther away.. Because the airport is still growing this trend is even stronger now than it was five years ago.\n",
         "fontWeight": "font-normal"
       },
       {
