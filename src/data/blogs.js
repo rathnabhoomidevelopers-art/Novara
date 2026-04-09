@@ -4070,6 +4070,7 @@ export const BLOGS = [
     "image": "/images/Blog 5_11zon.webp",
     "heroImage": "/images/Blog 5_11zon.webp",
     "coverImage": "/images/Blog 5_11zon.webp",
+    "imageAlt": "Passive Income from Farmland Near Bangalore",
     "tags": [
       "Passive Income",
       "Farmland Investment",
@@ -4082,167 +4083,208 @@ export const BLOGS = [
         "textBefore": "Farmland is more than just a plot of land — it’s an investment that can work for you. Whether you’re an aspiring farmer or someone looking to diversify your income streams, generating passive income from ",
         "linkText": "farmland near Bangalore",
         "href": "https://www.novaranatureestates.com",
-        "textAfter": " can be a rewarding opportunity. With the growing interest in sustainable farming, organic produce, and agro-tourism, there are plenty of ways to turn your land into a reliable source of income. Let’s dive into how you can make the most of farmland near Bangalore and create a passive income that works year-round."
+        "textAfter": " can be a rewarding opportunity. With the growing interest in sustainable farming, organic produce, and agro-tourism, there are plenty of ways to turn your land into a reliable source of income. Let’s dive into how you can make the most of farmland near Bangalore and create a passive income that works year-round.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "1. Lease Your Farmland for Agricultural Use"
+        "text": "1. Lease Your Farmland for Agricultural Use",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "One of the easiest ways to generate passive income from farmland near Bangalore is by leasing your land to farmers. Renting out your property allows you to earn a steady stream of income without actively working the land yourself."
+        "text": "One of the easiest ways to generate passive income from farmland near Bangalore is by leasing your land to farmers. Renting out your property allows you to earn a steady stream of income without actively working the land yourself.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "This option is particularly appealing if you own fertile farmland but aren’t interested in farming it yourself. Local farmers or agricultural businesses are often looking for land to lease, and you can negotiate a fixed rent or a share of the profits in exchange for letting them farm your land."
+        "text": "This option is particularly appealing if you own fertile farmland but aren’t interested in farming it yourself. Local farmers or agricultural businesses are often looking for land to lease, and you can negotiate a fixed rent or a share of the profits in exchange for letting them farm your land.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Leasing is a win-win situation: you get a reliable income while allowing someone else to make use of the land, and the farmer gets the opportunity to work on land without having to buy it."
+        "text": "Leasing is a win-win situation: you get a reliable income while allowing someone else to make use of the land, and the farmer gets the opportunity to work on land without having to buy it.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "2. Start a Farm-to-Table Business"
+        "text": "2. Start a Farm-to-Table Business",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "The demand for organic, locally grown produce is on the rise, especially in urban areas like Bangalore. If your farmland is located near the city, you have a unique opportunity to tap into the growing market for fresh, farm-to-table produce."
+        "text": "The demand for organic, locally grown produce is on the rise, especially in urban areas like Bangalore. If your farmland is located near the city, you have a unique opportunity to tap into the growing market for fresh, farm-to-table produce.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Starting a small-scale farm where you grow vegetables, fruits, or herbs, and selling them directly to local markets, restaurants, or through subscription boxes, can provide a lucrative income. While this isn’t 100% passive, it can be made relatively low-maintenance by outsourcing parts of the process, like hiring farmhands or setting up automation systems for irrigation and harvesting."
+        "text": "Starting a small-scale farm where you grow vegetables, fruits, or herbs, and selling them directly to local markets, restaurants, or through subscription boxes, can provide a lucrative income. While this isn’t 100% passive, it can be made relatively low-maintenance by outsourcing parts of the process, like hiring farmhands or setting up automation systems for irrigation and harvesting.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "By focusing on organic farming or specialty crops, you can command higher prices for your produce and build a steady revenue stream. And if you don’t have the time or resources to manage it full-time, you can always lease the land to a farming business that will handle the day-to-day operations."
+        "text": "By focusing on organic farming or specialty crops, you can command higher prices for your produce and build a steady revenue stream. And if you don’t have the time or resources to manage it full-time, you can always lease the land to a farming business that will handle the day-to-day operations.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "3. Create an Agro-Tourism Destination"
+        "text": "3. Create an Agro-Tourism Destination",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Another great way to generate passive income from farmland near Bangalore is by turning it into an agro-tourism destination. With the rise of eco-tourism and people seeking rural experiences, you can make your farmland a place for city dwellers to escape, learn about farming, and enjoy nature."
+        "text": "Another great way to generate passive income from farmland near Bangalore is by turning it into an agro-tourism destination. With the rise of eco-tourism and people seeking rural experiences, you can make your farmland a place for city dwellers to escape, learn about farming, and enjoy nature.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Farm Stays:"
+        "text": "Farm Stays:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Rent out a portion of your land with a small guesthouse or farm stay experience. Guests can enjoy the peaceful surroundings while learning about farming, picking fresh produce, or even participating in farm activities."
+        "text": "Rent out a portion of your land with a small guesthouse or farm stay experience. Guests can enjoy the peaceful surroundings while learning about farming, picking fresh produce, or even participating in farm activities.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Workshops & Farm Tours:"
+        "text": "Workshops & Farm Tours:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Host workshops on sustainable farming, organic gardening, or cooking with fresh produce. You can charge guests for the experience and offer them a chance to connect with the land."
+        "text": "Host workshops on sustainable farming, organic gardening, or cooking with fresh produce. You can charge guests for the experience and offer them a chance to connect with the land.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Seasonal Events:"
+        "text": "Seasonal Events:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Host seasonal events like fruit-picking festivals, flower shows, or even farm-to-table dinners. These events can generate additional income, especially during peak seasons when people are looking for weekend getaways."
+        "text": "Host seasonal events like fruit-picking festivals, flower shows, or even farm-to-table dinners. These events can generate additional income, especially during peak seasons when people are looking for weekend getaways.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Agro-tourism allows you to turn your land into a profitable venture while offering people a unique way to experience farm life. Plus, it aligns with the growing demand for sustainable and immersive travel experiences."
+        "text": "Agro-tourism allows you to turn your land into a profitable venture while offering people a unique way to experience farm life. Plus, it aligns with the growing demand for sustainable and immersive travel experiences.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "4. Grow Specialty Crops for High-Value Markets"
+        "text": "4. Grow Specialty Crops for High-Value Markets",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "If you’re looking to make the most of your land and generate a steady income with relatively low effort, growing specialty crops could be the answer. Crops like ginseng, saffron, organic herbs, or even flowers can be highly profitable and don’t require the same level of maintenance as traditional crops like rice or wheat."
+        "text": "If you’re looking to make the most of your land and generate a steady income with relatively low effort, growing specialty crops could be the answer. Crops like ginseng, saffron, organic herbs, or even flowers can be highly profitable and don’t require the same level of maintenance as traditional crops like rice or wheat.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "These types of crops are usually in demand by high-end restaurants, local markets, or specialty stores. Growing and selling niche produce that’s hard to find elsewhere can ensure a consistent premium price for your crops, allowing you to generate passive income over time. Once you’ve planted these crops, it’s mostly a matter of waiting for them to grow and harvesting them when the time is right."
+        "text": "These types of crops are usually in demand by high-end restaurants, local markets, or specialty stores. Growing and selling niche produce that’s hard to find elsewhere can ensure a consistent premium price for your crops, allowing you to generate passive income over time. Once you’ve planted these crops, it’s mostly a matter of waiting for them to grow and harvesting them when the time is right.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "If you don’t want to manage this yourself, you can lease the land to someone who specializes in growing specialty crops while still receiving a return on your land."
+        "text": "If you don’t want to manage this yourself, you can lease the land to someone who specializes in growing specialty crops while still receiving a return on your land.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "5. Install Solar Panels for Clean Energy Generation"
+        "text": "5. Install Solar Panels for Clean Energy Generation",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "An often overlooked but highly profitable option is to install solar panels on your farmland. As India pushes toward cleaner energy solutions, the government is offering attractive incentives and subsidies for landowners who choose to generate solar power on their properties."
+        "text": "An often overlooked but highly profitable option is to install solar panels on your farmland. As India pushes toward cleaner energy solutions, the government is offering attractive incentives and subsidies for landowners who choose to generate solar power on their properties.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "If your farmland has a good amount of open space and receives plenty of sunlight, you can generate electricity through solar panels and either use it for your own needs or sell it to the grid. Depending on the size of your land and installation, you could earn a steady income from the electricity produced. This is a completely passive income stream — once the system is installed, there’s little to no maintenance, and you can enjoy regular payouts for the power you generate."
+        "text": "If your farmland has a good amount of open space and receives plenty of sunlight, you can generate electricity through solar panels and either use it for your own needs or sell it to the grid. Depending on the size of your land and installation, you could earn a steady income from the electricity produced. This is a completely passive income stream — once the system is installed, there’s little to no maintenance, and you can enjoy regular payouts for the power you generate.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "6. Lease Land for Recreational Purposes"
+        "text": "6. Lease Land for Recreational Purposes",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "If your farmland is located in a scenic area near Bangalore, you might want to consider leasing it for recreational use. Farmlands in picturesque locations can be attractive to outdoor enthusiasts, weekend campers, or photographers looking for a beautiful natural setting."
+        "text": "If your farmland is located in a scenic area near Bangalore, you might want to consider leasing it for recreational use. Farmlands in picturesque locations can be attractive to outdoor enthusiasts, weekend campers, or photographers looking for a beautiful natural setting.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "For example, you can lease out your land for:"
+        "text": "For example, you can lease out your land for:",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Camping sites"
+        "text": "Camping sites",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "During weekends and holidays."
+        "text": "During weekends and holidays.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Photography shoots"
+        "text": "Photography shoots",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "For couples, families, or nature photographers."
+        "text": "For couples, families, or nature photographers.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Nature trails or bird-watching activities for tourists."
+        "text": "Nature trails or bird-watching activities for tourists.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "This type of leasing can offer a steady income with little involvement on your part, especially if you’re not directly managing the events. Simply set up agreements for the land to be used for recreational purposes, and collect payments when the area is booked."
+        "text": "This type of leasing can offer a steady income with little involvement on your part, especially if you’re not directly managing the events. Simply set up agreements for the land to be used for recreational purposes, and collect payments when the area is booked.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "7. Rent Out Your Land for Infrastructure Development"
+        "text": "7. Rent Out Your Land for Infrastructure Development",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "If your land is located near a growing urban area or important infrastructure projects, you might be able to rent or lease it for infrastructure development. Builders, construction companies, or even utility providers are always looking for land to set up roads, telecommunication towers, or storage facilities."
+        "text": "If your land is located near a growing urban area or important infrastructure projects, you might be able to rent or lease it for infrastructure development. Builders, construction companies, or even utility providers are always looking for land to set up roads, telecommunication towers, or storage facilities.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "By leasing your land for such uses, you can earn consistent passive income while your land appreciates over time. This option is especially attractive for farmland near developing regions around Bangalore, where urban sprawl is happening rapidly."
+        "text": "By leasing your land for such uses, you can earn consistent passive income while your land appreciates over time. This option is especially attractive for farmland near developing regions around Bangalore, where urban sprawl is happening rapidly.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Conclusion: Your Farmland Can Work for You"
+        "text": "Conclusion: Your Farmland Can Work for You",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Generating passive income from farmland near Bangalore isn’t just about sitting back and hoping for the best. It’s about being smart with your land and exploring the many opportunities available. Whether you’re leasing it out, starting a farm-to-table business, or setting up an agro-tourism venture, farmland can be a reliable and profitable asset that works for you year-round."
+        "text": "Generating passive income from farmland near Bangalore isn’t just about sitting back and hoping for the best. It’s about being smart with your land and exploring the many opportunities available. Whether you’re leasing it out, starting a farm-to-table business, or setting up an agro-tourism venture, farmland can be a reliable and profitable asset that works for you year-round.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "If you’re new to the idea, start small and experiment with different options. With Bangalore’s booming real estate market and increasing interest in sustainable living, owning farmland near the city can offer you the financial freedom and lifestyle that so many people are searching for."
+        "text": "If you’re new to the idea, start small and experiment with different options. With Bangalore’s booming real estate market and increasing interest in sustainable living, owning farmland near the city can offer you the financial freedom and lifestyle that so many people are searching for.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Ready to explore passive income opportunities on your farmland? The possibilities are endless — and the rewards are waiting."
+        "text": "Ready to explore passive income opportunities on your farmland? The possibilities are endless — and the rewards are waiting.",
+        "fontWeight": "font-normal"
       }
     ]
   },
