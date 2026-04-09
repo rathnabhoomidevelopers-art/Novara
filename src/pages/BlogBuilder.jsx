@@ -699,6 +699,37 @@ const [currentDraftKey, setCurrentDraftKey] = useState(null);
   const GH_FILE   = "src/data/blogs.js";
 
   // ── Publish ───────────────────────────────────────────────────────────────
+
+  // Fetch the current blogs.js from GitHub and return { sha, blogsArray }
+  // Always uses cache:no-store so we never get a stale SHA from the browser.
+  const fetchCurrentFile = async () => {
+    const res = await fetch(
+      `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}?ref=${GH_BRANCH}&t=${Date.now()}`,
+      {
+        headers: {
+          Authorization: `token ${GH_TOKEN}`,
+          Accept: "application/vnd.github.v3+json",
+        },
+        cache: "no-store",
+      }
+    );
+    if (!res.ok) throw new Error(`GitHub fetch failed: ${res.status} ${res.statusText}`);
+    const fileData = await res.json();
+    const sha = fileData.sha;
+    const binary = atob(fileData.content.replace(/\n/g, ""));
+    const bytes = Uint8Array.from(binary, (c) => c.charCodeAt(0));
+    const currentContent = new TextDecoder("utf-8").decode(bytes);
+
+    const stripped = currentContent
+      .replace(/^[\s\S]*?export\s+const\s+BLOGS\s*=\s*/, "")
+      .replace(/;?\s*$/, "")
+      .trim();
+
+    // eslint-disable-next-line no-new-func
+    const blogsArray = new Function(`return ${stripped}`)();
+    return { sha, blogsArray };
+  };
+
   const publishBlog = async () => {
     if (!meta.headline && !meta.title) {
       alert("Please add a headline first (open ⚙ Settings)."); setShowSettings(true); return;
@@ -706,99 +737,103 @@ const [currentDraftKey, setCurrentDraftKey] = useState(null);
     if (elements.length === 0) { alert("Please add at least one content block."); return; }
 
     setPublishStatus("loading");
-    setPublishMsg("Fetching blogs.js from GitHub…");
+    setPublishMsg("Fetching latest blogs.js from GitHub…");
 
-    try {
-      const fileRes = await fetch(
-        `https://api.github.com/repos/${GH_REPO}/contents/src/data/blogs.js?ref=${GH_BRANCH}`,
-        { headers: { Authorization: `token ${GH_TOKEN}`, Accept: "application/vnd.github.v3+json" } }
-      );
-      if (!fileRes.ok) throw new Error(`GitHub fetch failed: ${fileRes.status} ${fileRes.statusText}`);
-      const fileData = await fileRes.json();
-      const sha = fileData.sha;
-      const binary = atob(fileData.content.replace(/\n/g, ""));
-      const bytes = Uint8Array.from(binary, c => c.charCodeAt(0));
-      const currentContent = new TextDecoder("utf-8").decode(bytes);
+    const MAX_RETRIES = 3;
 
-      const stripped = currentContent
-        .replace(/^[\s\S]*?export\s+const\s+BLOGS\s*=\s*/, "")
-        .replace(/;?\s*$/, "")
-        .trim();
+    for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+      try {
+        // ── Always re-fetch SHA immediately before the PUT ──────────────────
+        setPublishMsg(`Fetching latest SHA from GitHub… (attempt ${attempt}/${MAX_RETRIES})`);
+        const { sha, blogsArray } = await fetchCurrentFile();
 
-      // eslint-disable-next-line no-new-func
-      const blogsArray = new Function(`return ${stripped}`)();
+        const blogData = exportBlogData();
+        let newBlogsArray;
 
-      const blogData = exportBlogData();
+        if (isEditMode) {
+          setPublishMsg("Updating existing blog entry…");
+          const idx = blogsArray.findIndex(
+            (b) =>
+              String(b.id) === String(editingBlogId.current) ||
+              b.slug === (editingBlog?.slug || "")
+          );
+          if (idx === -1) {
+            throw new Error(
+              `Could not find blog with id "${editingBlogId.current}" or slug "${editingBlog?.slug}" in blogs.js`
+            );
+          }
+          newBlogsArray = [...blogsArray];
+          newBlogsArray[idx] = { ...blogData, id: blogsArray[idx].id };
+        } else {
+          setPublishMsg("Inserting new blog entry…");
+          const nextId = Math.max(0, ...blogsArray.map((b) => Number(b.id) || 0)) + 1;
+          newBlogsArray = [{ ...blogData, id: nextId }, ...blogsArray];
+        }
 
-      let newBlogsArray;
-      if (isEditMode) {
-        setPublishMsg("Updating existing blog entry…");
+        const entriesStr = newBlogsArray
+          .map((b) => "  " + JSON.stringify(b, null, 2).replace(/\n/g, "\n  "))
+          .join(",\n");
+        const newContent = `export const BLOGS = [\n${entriesStr}\n];\n`;
 
-        // ── FIX: robust match by id (string or number) with slug fallback ──
-        const idx = blogsArray.findIndex(
-          (b) =>
-            String(b.id) === String(editingBlogId.current) ||
-            b.slug === (editingBlog?.slug || "")
+        setPublishMsg("Committing to GitHub…");
+        const commitMessage = isEditMode
+          ? `update blog: ${blogData.slug}`
+          : `add blog: ${blogData.slug}`;
+
+        const putRes = await fetch(
+          `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`,
+          {
+            method: "PUT",
+            headers: {
+              Authorization: `token ${GH_TOKEN}`,
+              Accept: "application/vnd.github.v3+json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              message: commitMessage,
+              content: btoa(unescape(encodeURIComponent(newContent))),
+              sha,          // ← freshly fetched just above — never stale
+              branch: GH_BRANCH,
+            }),
+          }
         );
 
-        if (idx === -1) {
+        // ── 409 = SHA race: GitHub received our PUT but the SHA was already
+        //    superseded by a concurrent write.  Re-fetch and retry.
+        if (putRes.status === 409) {
+          if (attempt < MAX_RETRIES) {
+            setPublishMsg(`SHA conflict — retrying… (${attempt}/${MAX_RETRIES})`);
+            await new Promise((r) => setTimeout(r, 800 * attempt)); // back-off
+            continue; // go back to top of for-loop
+          }
           throw new Error(
-            `Could not find blog with id "${editingBlogId.current}" or slug "${editingBlog?.slug}" in blogs.js`
+            "SHA conflict: GitHub rejected the update 3 times. " +
+            "Another process may be writing to blogs.js simultaneously. Please try again."
           );
         }
 
-        newBlogsArray = [...blogsArray];
-        // Preserve the original id exactly as stored
-        newBlogsArray[idx] = { ...blogData, id: blogsArray[idx].id };
-      } else {
-        setPublishMsg("Inserting new blog entry…");
-        const nextId = Math.max(0, ...blogsArray.map(b => Number(b.id) || 0)) + 1;
-        newBlogsArray = [{ ...blogData, id: nextId }, ...blogsArray];
-      }
-
-      const entriesStr = newBlogsArray
-        .map(b => "  " + JSON.stringify(b, null, 2).replace(/\n/g, "\n  "))
-        .join(",\n");
-      const newContent = `export const BLOGS = [\n${entriesStr}\n];\n`;
-
-      setPublishMsg("Committing to GitHub…");
-      const commitMessage = isEditMode
-        ? `update blog: ${blogData.slug}`
-        : `add blog: ${blogData.slug}`;
-
-      const putRes = await fetch(
-        `https://api.github.com/repos/${GH_REPO}/contents/src/data/blogs.js`,
-        {
-          method: "PUT",
-          headers: {
-            Authorization: `token ${GH_TOKEN}`,
-            Accept: "application/vnd.github.v3+json",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            message: commitMessage,
-            content: btoa(unescape(encodeURIComponent(newContent))),
-            sha,
-            branch: GH_BRANCH,
-          }),
+        if (!putRes.ok) {
+          const err = await putRes.json().catch(() => ({}));
+          throw new Error(err.message || `Commit failed: HTTP ${putRes.status}`);
         }
-      );
 
-      if (!putRes.ok) {
-        const err = await putRes.json();
-        throw new Error(err.message || `Commit failed: ${putRes.status}`);
+        setPublishStatus("success");
+        setPublishMsg(
+          isEditMode
+            ? "✅ Blog updated on GitHub! Vercel will redeploy shortly."
+            : "✅ Blog published to GitHub! Vercel will redeploy shortly."
+        );
+        return; // success — exit the retry loop
+
+      } catch (e) {
+        // Only throw on the last attempt (or for non-retryable errors)
+        if (attempt === MAX_RETRIES || !e.message?.includes("SHA conflict")) {
+          console.error("Full publish error:", e);
+          setPublishStatus("error");
+          setPublishMsg(e.message || "Unknown error occurred.");
+          return;
+        }
       }
-
-      setPublishStatus("success");
-      setPublishMsg(
-        isEditMode
-          ? `✅ Blog updated on GitHub! Vercel will redeploy shortly.`
-          : `✅ Blog published to GitHub! Vercel will redeploy shortly.`
-      );
-    } catch (e) {
-      console.error("Full publish error:", e);
-      setPublishStatus("error");
-      setPublishMsg(e.message || "Unknown error occurred.");
     }
   };
   // Load all drafts
