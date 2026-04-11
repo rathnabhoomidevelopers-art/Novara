@@ -625,11 +625,6 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Ecovara Farm Plots is a project where people can buy farm land. This project is made by Novara Nature Estates. They are a company that makes farmland. They are based in Bangalore. The Ecovara Farm Plots are near Lepakshi Temple on the road that goes from Bangalore to Hyderabad.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
         "text": "The Ecovara Farm Plots is not a place where you can buy a house. It is not a project where you can build a house on your land. It is a place where you can buy land to grow things. This project is for people who live in Bangalore and want to own a farm but do not want to take care of it themselves.\n",
         "fontWeight": "font-normal"
       },
@@ -742,21 +737,6 @@ export const BLOGS = [
         "type": "p",
         "text": "From visiting the site and hearing from buyers here's how things stand:",
         "fontWeight": "font-normal"
-      },
-      {
-        "type": "ul",
-        "text": [
-          " The swimming pool is not filled with water.",
-          "The clubhouse is not finished yet.",
-          "The cafeteria is not serving food.",
-          "The jogging track is not clear.",
-          "The kids play area is not set up.",
-          "The lotus pond is empty",
-          " The campfire area is not used.",
-          "The rain dance zone is not used.",
-          "The solar street lights are not working.",
-          " The 24/7 security is not always there."
-        ]
       },
       {
         "type": "p",
