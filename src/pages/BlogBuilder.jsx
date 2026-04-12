@@ -512,13 +512,11 @@ function BlogEditor({ editingBlog, onBack }) {
   const [drafts, setDrafts] = useState([]);
   const [currentDraftKey, setCurrentDraftKey] = useState(null);
 
-  // ── FIX: initialise refs immediately from the prop so they are never null ──
   const editingBlogId   = React.useRef(editingBlog?.id   ?? null);
   const editingBlogSlug = React.useRef(editingBlog?.slug ?? "");
 
   useEffect(() => { loadDrafts(); }, []);
 
-  // Keep refs in sync if the prop ever changes
   useEffect(() => {
     if (editingBlog) {
       editingBlogId.current   = editingBlog.id;
@@ -699,7 +697,6 @@ function BlogEditor({ editingBlog, onBack }) {
   const GH_BRANCH = "main";
   const GH_FILE   = "src/data/blogs.js";
 
-  // ── Fetch the current blogs.js from GitHub ────────────────────────────────
   const fetchCurrentFile = async () => {
     const res = await fetch(
       `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}?ref=${GH_BRANCH}&t=${Date.now()}`,
@@ -728,7 +725,6 @@ function BlogEditor({ editingBlog, onBack }) {
     return { sha, blogsArray };
   };
 
-  // ── Publish ───────────────────────────────────────────────────────────────
   const publishBlog = async () => {
     if (!meta.headline && !meta.title) {
       alert("Please add a headline first (open ⚙ Settings)."); setShowSettings(true); return;
@@ -751,7 +747,6 @@ function BlogEditor({ editingBlog, onBack }) {
         if (isEditMode) {
           setPublishMsg("Updating existing blog entry…");
 
-          // ── FIX: match by id OR by the original slug stored in the ref ──
           const idx = blogsArray.findIndex(
             (b) =>
               String(b.id) === String(editingBlogId.current) ||
@@ -766,8 +761,6 @@ function BlogEditor({ editingBlog, onBack }) {
           }
 
           newBlogsArray = [...blogsArray];
-          // ── FIX: preserve the original id AND slug so the entry is
-          //    never accidentally treated as a new blog ──────────────────────
           newBlogsArray[idx] = {
             ...blogData,
             id:   blogsArray[idx].id,
@@ -1489,16 +1482,19 @@ function BlogEditor({ editingBlog, onBack }) {
                   <SectionDivider>Blog Details</SectionDivider>
                   <div>
                     <Label>Headline (H1 on page)</Label>
+                    {/* ✅ FIX: Removed auto-slug generation from headline onChange */}
                     <Input value={meta.headline} placeholder="Your compelling headline…"
                       onChange={(e) => setMeta((p) => ({
                         ...p, headline: e.target.value,
-                        slug: p.slug || slugify(e.target.value),
                       }))} />
                   </div>
                   <div className="grid grid-cols-2 gap-2">
-                    <div><Label>URL Slug</Label>
+                    <div>
+                      <Label>URL Slug</Label>
+                      {/* ✅ FIX: Removed slugify() wrapper — slug is now freely editable */}
                       <Input value={meta.slug} placeholder="my-blog-post"
-                        onChange={(e) => setMeta((p) => ({ ...p, slug: slugify(e.target.value) }))} /></div>
+                        onChange={(e) => setMeta((p) => ({ ...p, slug: e.target.value }))} />
+                    </div>
                     <div><Label>Category</Label>
                       <Input value={meta.category}
                         onChange={(e) => setMeta((p) => ({ ...p, category: e.target.value }))} /></div>
