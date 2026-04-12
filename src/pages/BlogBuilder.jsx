@@ -508,18 +508,21 @@ function BlogEditor({ editingBlog, onBack }) {
     date: new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }),
     heroImage: "", imageAlt: "", tags: "",
   });
-    const [drafts, setDrafts] = useState([]);
-const [currentDraftKey, setCurrentDraftKey] = useState(null);
-  // ── FIX: use a ref that syncs with editingBlog via useEffect ──────────────
-  const editingBlogId = React.useRef(null);
 
-  useEffect(() => {
-  loadDrafts();
-}, []);
+  const [drafts, setDrafts] = useState([]);
+  const [currentDraftKey, setCurrentDraftKey] = useState(null);
 
+  // ── FIX: initialise refs immediately from the prop so they are never null ──
+  const editingBlogId   = React.useRef(editingBlog?.id   ?? null);
+  const editingBlogSlug = React.useRef(editingBlog?.slug ?? "");
+
+  useEffect(() => { loadDrafts(); }, []);
+
+  // Keep refs in sync if the prop ever changes
   useEffect(() => {
-    if (editingBlog?.id != null) {
-      editingBlogId.current = editingBlog.id;
+    if (editingBlog) {
+      editingBlogId.current   = editingBlog.id;
+      editingBlogSlug.current = editingBlog.slug || "";
     }
   }, [editingBlog]);
 
@@ -690,18 +693,13 @@ const [currentDraftKey, setCurrentDraftKey] = useState(null);
     a.click(); URL.revokeObjectURL(a.href);
   };
 
-
-
   // ── GitHub config ─────────────────────────────────────────────────────────
   const GH_TOKEN  = import.meta.env.VITE_GH_TOKEN;
   const GH_REPO   = "rathnabhoomidevelopers-art/Novara";
   const GH_BRANCH = "main";
   const GH_FILE   = "src/data/blogs.js";
 
-  // ── Publish ───────────────────────────────────────────────────────────────
-
-  // Fetch the current blogs.js from GitHub and return { sha, blogsArray }
-  // Always uses cache:no-store so we never get a stale SHA from the browser.
+  // ── Fetch the current blogs.js from GitHub ────────────────────────────────
   const fetchCurrentFile = async () => {
     const res = await fetch(
       `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}?ref=${GH_BRANCH}&t=${Date.now()}`,
@@ -730,6 +728,7 @@ const [currentDraftKey, setCurrentDraftKey] = useState(null);
     return { sha, blogsArray };
   };
 
+  // ── Publish ───────────────────────────────────────────────────────────────
   const publishBlog = async () => {
     if (!meta.headline && !meta.title) {
       alert("Please add a headline first (open ⚙ Settings)."); setShowSettings(true); return;
@@ -743,7 +742,6 @@ const [currentDraftKey, setCurrentDraftKey] = useState(null);
 
     for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
       try {
-        // ── Always re-fetch SHA immediately before the PUT ──────────────────
         setPublishMsg(`Fetching latest SHA from GitHub… (attempt ${attempt}/${MAX_RETRIES})`);
         const { sha, blogsArray } = await fetchCurrentFile();
 
@@ -752,18 +750,29 @@ const [currentDraftKey, setCurrentDraftKey] = useState(null);
 
         if (isEditMode) {
           setPublishMsg("Updating existing blog entry…");
+
+          // ── FIX: match by id OR by the original slug stored in the ref ──
           const idx = blogsArray.findIndex(
             (b) =>
               String(b.id) === String(editingBlogId.current) ||
-              b.slug === (editingBlog?.slug || "")
+              b.slug === editingBlogSlug.current
           );
+
           if (idx === -1) {
             throw new Error(
-              `Could not find blog with id "${editingBlogId.current}" or slug "${editingBlog?.slug}" in blogs.js`
+              `Could not find blog with id "${editingBlogId.current}" or slug "${editingBlogSlug.current}" in blogs.js. ` +
+              `Available ids: ${blogsArray.map((b) => b.id).join(", ")}`
             );
           }
+
           newBlogsArray = [...blogsArray];
-          newBlogsArray[idx] = { ...blogData, id: blogsArray[idx].id };
+          // ── FIX: preserve the original id AND slug so the entry is
+          //    never accidentally treated as a new blog ──────────────────────
+          newBlogsArray[idx] = {
+            ...blogData,
+            id:   blogsArray[idx].id,
+            slug: blogsArray[idx].slug,
+          };
         } else {
           setPublishMsg("Inserting new blog entry…");
           const nextId = Math.max(0, ...blogsArray.map((b) => Number(b.id) || 0)) + 1;
@@ -792,19 +801,17 @@ const [currentDraftKey, setCurrentDraftKey] = useState(null);
             body: JSON.stringify({
               message: commitMessage,
               content: btoa(unescape(encodeURIComponent(newContent))),
-              sha,          // ← freshly fetched just above — never stale
+              sha,
               branch: GH_BRANCH,
             }),
           }
         );
 
-        // ── 409 = SHA race: GitHub received our PUT but the SHA was already
-        //    superseded by a concurrent write.  Re-fetch and retry.
         if (putRes.status === 409) {
           if (attempt < MAX_RETRIES) {
             setPublishMsg(`SHA conflict — retrying… (${attempt}/${MAX_RETRIES})`);
-            await new Promise((r) => setTimeout(r, 800 * attempt)); // back-off
-            continue; // go back to top of for-loop
+            await new Promise((r) => setTimeout(r, 800 * attempt));
+            continue;
           }
           throw new Error(
             "SHA conflict: GitHub rejected the update 3 times. " +
@@ -823,10 +830,9 @@ const [currentDraftKey, setCurrentDraftKey] = useState(null);
             ? "✅ Blog updated on GitHub! Vercel will redeploy shortly."
             : "✅ Blog published to GitHub! Vercel will redeploy shortly."
         );
-        return; // success — exit the retry loop
+        return;
 
       } catch (e) {
-        // Only throw on the last attempt (or for non-retryable errors)
         if (attempt === MAX_RETRIES || !e.message?.includes("SHA conflict")) {
           console.error("Full publish error:", e);
           setPublishStatus("error");
@@ -836,53 +842,40 @@ const [currentDraftKey, setCurrentDraftKey] = useState(null);
       }
     }
   };
-  // Load all drafts
-const loadDrafts = () => {
-  const allDrafts = Object.keys(localStorage)
-    .filter(key => key.startsWith("draft_"))
-    .map(key => ({
-      key,
-      data: JSON.parse(localStorage.getItem(key))
-    }));
 
-  setDrafts(allDrafts);
-};
-
-// Save draft
-const saveDraft = () => {
-  const key = currentDraftKey || `draft_${Date.now()}`;
-
-  const draftData = {
-    meta,
-    elements,
-    savedAt: new Date().toISOString(),
+  // ── Drafts ────────────────────────────────────────────────────────────────
+  const loadDrafts = () => {
+    const allDrafts = Object.keys(localStorage)
+      .filter((key) => key.startsWith("draft_"))
+      .map((key) => ({
+        key,
+        data: JSON.parse(localStorage.getItem(key)),
+      }));
+    setDrafts(allDrafts);
   };
 
-  localStorage.setItem(key, JSON.stringify(draftData));
-  setCurrentDraftKey(key);
+  const saveDraft = () => {
+    const key = currentDraftKey || `draft_${Date.now()}`;
+    const draftData = { meta, elements, savedAt: new Date().toISOString() };
+    localStorage.setItem(key, JSON.stringify(draftData));
+    setCurrentDraftKey(key);
+    loadDrafts();
+    setPublishStatus("success");
+    setPublishMsg("Draft saved successfully ✅");
+  };
 
-  loadDrafts(); // 🔥 refresh UI
+  const loadDraft = (key) => {
+    const draft = JSON.parse(localStorage.getItem(key));
+    setMeta(draft.meta);
+    setElements(draft.elements);
+    setCurrentDraftKey(key);
+    setPublishMsg("Draft loaded ✏️");
+  };
 
-  setPublishStatus("success");
-  setPublishMsg("Draft saved successfully ✅");
-};
-
-// Load one draft into editor
-const loadDraft = (key) => {
-  const draft = JSON.parse(localStorage.getItem(key));
-
-  setMeta(draft.meta);
-  setElements(draft.elements);
-  setCurrentDraftKey(key);
-
-  setPublishMsg("Draft loaded ✏️");
-};
-
-// Delete draft
-const deleteDraft = (key) => {
-  localStorage.removeItem(key);
-  loadDrafts();
-};
+  const deleteDraft = (key) => {
+    localStorage.removeItem(key);
+    loadDrafts();
+  };
 
   const progress = [
     { label: "Headline",    done: !!(meta.headline || meta.title) },
@@ -1389,6 +1382,13 @@ const deleteDraft = (key) => {
           transition: all .2s; font-family: 'Urbanist', sans-serif; flex: 1;
         }
         .btn-ghost:hover { border-color: #1A614F; color: #1A614F; background: #E9FFF3; }
+        .btn-danger {
+          background: white; color: #dc2626; border: 1.5px solid #fecaca;
+          padding: 8px 12px; border-radius: 8px; font-size: 12px; font-weight: 600;
+          cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;
+          transition: all .2s; font-family: 'Urbanist', sans-serif; flex: 1;
+        }
+        .btn-danger:hover { border-color: #dc2626; background: #fef2f2; }
         .chip {
           background: white; border: 1.5px solid #e2e8f0; color: #475569;
           padding: 6px 4px; border-radius: 8px; font-size: 10px; font-weight: 600;
@@ -1530,44 +1530,31 @@ const deleteDraft = (key) => {
                     <Input value={meta.imageAlt} placeholder="Farmland near Bangalore"
                       onChange={(e) => setMeta((p) => ({ ...p, imageAlt: e.target.value }))} /></div>
                 </div>
-                 <div className="px-5 py-4 border-t border-slate-100 space-y-3">
+
+                <div className="px-5 py-4 border-t border-slate-100 space-y-3">
                   <SectionDivider>My Drafts</SectionDivider>
                   <div className="space-y-2 max-h-60 overflow-auto">
-                {drafts.length === 0 && (
-                  <p className="text-sm opacity-60">No drafts yet</p>
-                   )}
-                 {drafts.map(d => (
-               <div
-                 key={d.key}
-                  className="p-3 border rounded-lg flex justify-between items-center">
-                   <div>
-                 <h4 className="font-medium">
-                 {d.data.meta.headline || "Untitled"}
-                     </h4>
-                      <p className="text-xs opacity-60">
-                       {new Date(d.data.savedAt).toLocaleString()}
-                           </p>
-                          </div>
+                    {drafts.length === 0 && (
+                      <p className="text-sm opacity-60">No drafts yet</p>
+                    )}
+                    {drafts.map((d) => (
+                      <div key={d.key} className="p-3 border rounded-lg flex justify-between items-center">
+                        <div>
+                          <h4 className="font-medium text-sm">{d.data.meta.headline || "Untitled"}</h4>
+                          <p className="text-xs opacity-60">{new Date(d.data.savedAt).toLocaleString()}</p>
+                        </div>
+                        <div className="flex gap-2">
+                          <button onClick={() => loadDraft(d.key)} className="btn-ghost">Edit</button>
+                          <button onClick={() => deleteDraft(d.key)} className="btn-danger">Delete</button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
-                       <div className="flex gap-2">
-                         <button
-                        onClick={() => loadDraft(d.key)}
-                       className="btn-ghost" >
-          Edit
-        </button>
-          <button onClick={() => deleteDraft(d.key)} className="btn-danger">
-                                         Delete
-                                   </button>
-                             </div>
-                                  </div>
-                                 ))}
-                </div>
-                </div>
                 <div className="px-5 py-4 border-t border-slate-100 space-y-3">
                   <SectionDivider>Save & Publish</SectionDivider>
-                  <button onClick={saveDraft} className="btn-ghost w-full">
-                    💾 Save as Draft
-                  </button>
+                  <button onClick={saveDraft} className="btn-ghost w-full">💾 Save as Draft</button>
                   <button onClick={downloadJSON} className="btn-ghost w-full"><Upload size={12} /> Download JSON</button>
                   <button onClick={publishBlog} disabled={publishStatus === "loading"} className="btn-publish">
                     {publishStatus === "loading"
@@ -1730,47 +1717,6 @@ const deleteDraft = (key) => {
                     }
                   </div>
                 </div>
-
-                {/* RIGHT TOC (preview only) */}
-                {/* {previewMode && toc.length > 0 && (
-                  <aside className="hidden lg:block w-[280px] ml-8 flex-shrink-0">
-                    <div className="sticky top-36">
-                      <div className="rounded-2xl border border-slate-100 bg-white shadow-[0_12px_35px_rgba(0,0,0,0.06)] p-4">
-                        <div className="text-[13px] font-bold text-slate-900 tracking-wide uppercase mb-3">
-                          Table of Contents
-                        </div>
-                        <div className="space-y-0.5 max-h-[60vh] overflow-auto toc-scroll pr-1">
-                          {toc.map((t) => {
-                            const isActive = t.id === activeId;
-                            const indentClass =
-                              t.level === "h3" ? "pl-4" :
-                              t.level === "h4" ? "pl-7" :
-                              t.level === "h5" ? "pl-10" :
-                              t.level === "h6" ? "pl-12 text-[11px]" : "";
-                            return (
-                              <button
-                                key={t.id}
-                                onClick={() => scrollToId(t.id)}
-                                className={[
-                                  "w-full text-left rounded-lg px-2 py-1.5 text-[12px] leading-snug transition-all",
-                                  indentClass,
-                                  isActive
-                                    ? "bg-[#E9FFF3] text-[#1A614F] font-semibold"
-                                    : "text-slate-600 hover:bg-slate-50 hover:text-slate-900",
-                                ].join(" ")}
-                              >
-                                {t.text}
-                              </button>
-                            );
-                          })}
-                        </div>
-                        <div className="mt-3 text-[10px] text-slate-400 border-t border-slate-100 pt-2">
-                          Tip: Click a heading to jump.
-                        </div>
-                      </div>
-                    </div>
-                  </aside>
-                )} */}
               </div>
             </div>
           </section>
