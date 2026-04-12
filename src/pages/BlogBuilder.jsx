@@ -761,10 +761,10 @@ function BlogEditor({ editingBlog, onBack }) {
           }
 
           newBlogsArray = [...blogsArray];
+          // ✅ FIX: Only preserve the original id — allow slug to be updated freely
           newBlogsArray[idx] = {
             ...blogData,
-            id:   blogsArray[idx].id,
-            slug: blogsArray[idx].slug,
+            id: blogsArray[idx].id,
           };
         } else {
           setPublishMsg("Inserting new blog entry…");
@@ -1482,7 +1482,6 @@ function BlogEditor({ editingBlog, onBack }) {
                   <SectionDivider>Blog Details</SectionDivider>
                   <div>
                     <Label>Headline (H1 on page)</Label>
-                    {/* ✅ FIX: Removed auto-slug generation from headline onChange */}
                     <Input value={meta.headline} placeholder="Your compelling headline…"
                       onChange={(e) => setMeta((p) => ({
                         ...p, headline: e.target.value,
@@ -1491,7 +1490,6 @@ function BlogEditor({ editingBlog, onBack }) {
                   <div className="grid grid-cols-2 gap-2">
                     <div>
                       <Label>URL Slug</Label>
-                      {/* ✅ FIX: Removed slugify() wrapper — slug is now freely editable */}
                       <Input value={meta.slug} placeholder="my-blog-post"
                         onChange={(e) => setMeta((p) => ({ ...p, slug: e.target.value }))} />
                     </div>
