@@ -1,7 +1,7 @@
 export const BLOGS = [
   {
     "id": 21,
-    "slug": "a-complete-2026-guide-to-farmland-near-devanahalli-airport-proximity-kiadb-zones-investment-potential-locations-and-what-to-check-before-buying",
+    "slug": "farmland-near-devanahalli-guide",
     "category": "Managed Farmland",
     "title": "Farmland Near Devanahalli — 2026 Buyer's Guide | Novara",
     "headline": "About Thinking About Farmland Near Devanahalli? Here Is What the Airport Zone Actually Means for Investors.",
