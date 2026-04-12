@@ -4,7 +4,7 @@ export const BLOGS = [
     "slug": "a-complete-2026-guide-to-farmland-near-devanahalli-airport-proximity-kiadb-zones-investment-potential-locations-and-what-to-check-before-buying",
     "category": "Managed Farmland",
     "title": "Farmland Near Devanahalli — 2026 Buyer's Guide | Novara",
-    "headline": " Thinking About Farmland Near Devanahalli? Here Is What the Airport Zone Actually Means for Investors.",
+    "headline": "About Thinking About Farmland Near Devanahalli? Here Is What the Airport Zone Actually Means for Investors.",
     "description": "A complete 2026 guide to farmland near Devanahalli — airport proximity, KIADB zones, investment potential, locations, and what to check before buying.",
     "date": "Apr 12, 2026",
     "keywords": "",
@@ -418,7 +418,6 @@ export const BLOGS = [
       }
     ]
   },
- 
   {
     "id": 20,
     "slug": "farmland-near-lepakshi-temple",
