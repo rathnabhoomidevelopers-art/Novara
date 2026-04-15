@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const testimonials = [
+// Fallback reviews shown if Google API fails or is loading
+const fallbackTestimonials = [
   {
     name: "Sridhar",
     text: "My experience at ECOVARA Farm, located near Lepakshi Temple towards Bangalore North, was truly amazing. What started as a casual discussion with a friend about weekend getaways and investment options turned into a confident decision after visiting the farm.Thank you to the entire Novara Nature Estate team for such a wonderful experience.",
@@ -19,24 +20,24 @@ const testimonials = [
   },
   {
     name: "Nidhi",
-    text: "Thank you so much for visiting us and sharing your wonderful review. We’re delighted to know that you enjoyed the lunch—it truly made our day! Your kind words mean a lot to us and motivate our team to do even better. Please feel free to get in touch with us anytime; we always welcome your suggestions. We look forward to welcoming you again soon.",
+    text: "Thank you so much for visiting us and sharing your wonderful review. We're delighted to know that you enjoyed the lunch—it truly made our day! Your kind words mean a lot to us and motivate our team to do even better. Please feel free to get in touch with us anytime; we always welcome your suggestions. We look forward to welcoming you again soon.",
     rating: 5,
   },
   {
     name: "Vikas",
-    text: "Novara Nature Estate is truly revolutionizing farm ownership. I appreciate their transparent business model and professional approach. I’ve been a customer for over a year now and my experience has been excellent. Highly satisfied—thank you.",
+    text: "Novara Nature Estate is truly revolutionizing farm ownership. I appreciate their transparent business model and professional approach. I've been a customer for over a year now and my experience has been excellent. Highly satisfied—thank you.",
     rating: 5,
   },
   {
-    name : "Harish",
-    text:"Ecovara Farm offers a serene and well-maintained environment, ideal for those seeking a peaceful retreat amidst nature. Conveniently located near the renowned Lepakshi Temple, the property provides the experience of a spacious, green farm setting.Ecovara Farm is a suitable option for budget-conscious families looking for a calm and nature-oriented experience.",
+    name: "Harish",
+    text: "Ecovara Farm offers a serene and well-maintained environment, ideal for those seeking a peaceful retreat amidst nature. Conveniently located near the renowned Lepakshi Temple, the property provides the experience of a spacious, green farm setting.Ecovara Farm is a suitable option for budget-conscious families looking for a calm and nature-oriented experience.",
     rating: 5,
   },
   {
-    name : "Nirmala",
-    text : "Ecovara Farm itself is a lovely retreat ,peaceful, close to nature, with a fireplace to cozy up by. The cook specializes in North Indian cuisine, and the food was decent and satisfying. The nearest market is about 3–4 km away. Overall, a perfect spot for a relaxing, nature-oriented stay.Thank you, Novara Nature Estate Team.",
+    name: "Nirmala",
+    text: "Ecovara Farm itself is a lovely retreat ,peaceful, close to nature, with a fireplace to cozy up by. The cook specializes in North Indian cuisine, and the food was decent and satisfying. The nearest market is about 3–4 km away. Overall, a perfect spot for a relaxing, nature-oriented stay.Thank you, Novara Nature Estate Team.",
     rating: 5,
-  }
+  },
 ];
 
 const StarRating = ({ count }) => (
@@ -55,7 +56,21 @@ const StarRating = ({ count }) => (
 );
 
 export function ClientTestimonials() {
+  const [testimonials, setTestimonials] = useState(fallbackTestimonials);
   const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    fetch("https://novara-backend.vercel.app/api/reviews")
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data) && data.length > 0) {
+          setTestimonials(data);
+        }
+      })
+      .catch(() => {
+        // silently fall back to hardcoded reviews if API fails
+      });
+  }, []);
 
   const visible = [
     testimonials[current % testimonials.length],
@@ -108,7 +123,7 @@ export function ClientTestimonials() {
               <StarRating count={t.rating} />
               <p
                 className="text-sm text-[16px] font-urbanist"
-                style={{ color: "#374151", lineHeight:"2thek 0px" }}
+                style={{ color: "#374151", lineHeight: "20px" }}
               >
                 {t.text.split(" ").map((word, i) =>
                   [
@@ -129,7 +144,7 @@ export function ClientTestimonials() {
             </div>
             <div className=" flex flex-col">
               <span className="font-bold text-sm text-gray-900">{t.name}</span>
-              <span className="text-[10px] text-gray-400">{t.title}</span>
+              <span className="text-[10px] text-gray-400">{t.time}</span>
             </div>
           </div>
         ))}
