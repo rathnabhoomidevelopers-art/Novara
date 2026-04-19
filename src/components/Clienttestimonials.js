@@ -105,7 +105,7 @@ export function ClientTestimonials() {
                   : "0 4px 20px rgba(0,0,0,0.0)",
             }}
           >
-            {/* ✅ Google Badge — top right corner of card */}
+            {/* Google Badge — top right corner of card */}
             <div className="absolute top-3 right-3">
               <GoogleBadge />
             </div>
@@ -128,9 +128,35 @@ export function ClientTestimonials() {
           </div>
         ))}
       </div>
+      {/* View More Reviews Button */}
+      <div className="mt-8 flex justify-center">
+        <a
+          href="https://www.google.com/maps/place/Novara+Nature+Estates+-+Managed+Farmlands/@13.0623637,77.5886113,17z/data=!4m8!3m7!1s0x6c0f66896b98bf8d:0xee5555d3f98a6e9b!8m2!3d13.0623637!4d77.5886113!9m1!1b1!16s%2Fg%2F11y_v5mfjs?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm transition-all hover:shadow-lg active:scale-95"
+          style={{
+            background: "#ffffff",
+            color: "#1a5c44",
+            border: "1.5px solid #1a5c44",
+            letterSpacing: "0.02em",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = "#1a5c44";
+            e.currentTarget.style.color = "#ffffff";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = "#ffffff";
+            e.currentTarget.style.color = "#1a5c44";
+          }}
+        >
+          <GoogleLogo />
+          View More Reviews
+        </a>
+      </div>
 
       {/* Navigation Toggle */}
-      <div className="mt-12 flex items-center">
+      <div className="mt-6 flex items-center">
         <div
           className="flex items-center rounded-full p-1.5 gap-2 cursor-pointer"
           style={{ background: "#1a5c44", width: "108px", height: "52px" }}
@@ -153,6 +179,8 @@ export function ClientTestimonials() {
           </button>
         </div>
       </div>
+
+      
 
     </section>
   );
