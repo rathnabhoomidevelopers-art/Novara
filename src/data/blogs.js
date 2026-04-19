@@ -1,5 +1,678 @@
 export const BLOGS = [
   {
+    "id": 22,
+    "slug": "farmland-investment-devanahalli",
+    "category": "Managed Farmland",
+    "title": "Why Devanahalli is a Fast-Growing Farmland Hub | Novara 2026",
+    "headline": "Why Bangalore Investors Are Watching Devanahalli — And Where Smart Money Is Moving Next",
+    "description": "Why is Devanahalli a fast-growing farmland investment hub near Bangalore? Airport growth, KIADB zones, NH44 infrastructure — and what it means for investors in 2026.\n",
+    "date": "Apr 19, 2026",
+    "keywords": "",
+    "author": "Novara Nature Estates",
+    "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1776584037/lzwbxme1ncqwdg5qikc5.webp",
+    "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1776584037/lzwbxme1ncqwdg5qikc5.webp",
+    "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1776584037/lzwbxme1ncqwdg5qikc5.webp",
+    "imageAlt": "Farmland Near Devanahalli",
+    "tags": [],
+    "sections": [
+      {
+        "type": "p",
+        "text": "This guide explains whats driving Devanahallis growth what it means for farmland investment in the corridor and where the best remaining opportunity is in 2026.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "What Is Actually Happening in Devanahalli",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Devanahalli is not a town that became important because of the airport. The airport was the starting point.. Whats grown around it over the past 15 years is a real regional economic hub with many independent growth drivers.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Understanding each of these drivers is key for any investor who wants to know why land in this corridor has increased in value.. Why its likely to keep increasing in 2026.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Kempegowda International Airport. Still Expanding",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Kempegowda International Airport opened in 2008. Quickly became one of South Asias busiest airports. By 2024 it was handling over 37 million passengers a year.. That number is still growing with new international routes being added every year.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "The second terminal. Terminal 2. Has been built to handle this growing capacity. Each phase of airport expansion adds weight to the surrounding area: more jobs, more commercial activity more demand for land, housing and services across the North Bangalore corridor",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "For farmland investors the key point is that the airports expansion is not finished. The growth driver thats been operating on this corridor since 2008 is still active. Which means the increase in value its generating is also still happening.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": " KIADB Industrial and Aerospace Zones",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The Karnataka Industrial Areas Development Board has developed industrial zones in the Devanahalli area because of its proximity to the airport. The most significant being the Aerospace and Defence Special Economic Zone.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "This SEZ has attracted precision manufacturing, defence component production and aerospace maintenance operations that create high-value jobs and sustained demand for land across the corridor. Unlike development, which can be built anywhere aerospace and defence manufacturing requires proximity to the airport. Which makes this demand driver structurally tied to the Devanahalli location.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "IT Investment Region",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "A designated IT Investment Region spanning thousands of acres of Bangalore has been planned and partially developed with specific infrastructure. Power, connectivity, roads and utilities. Designed to attract technology companies seeking campus space beyond Bangalores saturated inner ring.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "As Bangalores IT companies continue to grow and run out of space in Whitefield, Electronic City and Marathahalli the North Bangalore IT Investment Region becomes a practical alternative. Each company that establishes a campus there brings thousands of employees.. Each employee creates housing demand, retail demand and services demand that ripples outward through the corridor.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": " Logistics and Warehousing",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "NH44s direct connectivity between Bangalore and Hyderabad makes the Devanahalli corridor one of South Indias attractive locations for large-scale logistics operations. Multiple national and international logistics companies have. Announced facilities along this stretch. Drawn by highway access, land availability and proximity to both Bangalores consumption market and the airport for air freight.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Each logistics facility that establishes itself along NH44 increases the weight of the surrounding land. Truck drivers, warehouse workers, management staff. All of them need housing, food, services. All of that activity drives land demand.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "The NH44 Corridor Effect. Why Devanahallis Story Is Bigger Than Devanahalli",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "This is the insight that most investors. Including Sanjay. Take time to understand.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "The economic forces driving Devanahalli do not stop at the Devanahalli town boundary. They radiate outward along NH44 in both directions. Creating an appreciation corridor that extends beyond the airports immediate vicinity.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Think of it as a wave moving along the highway. The wave was generated at Devanahalli. The airport, the KIADB zones, the IT Investment Region. But the waves energy travels along the corridor. Land that sat ahead of the wave ten years ago now sits within it. Land that currently sits 50 to 75 kilometres further along NH44 is where the wave is heading.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "This is why farmland in the Lepakshi corridor. 75 Kilometres from Devanahalli on the NH44. Carries a genuine appreciation thesis in 2026. Not because Lepakshi has the infrastructure as Devanahalli today but because the same economic force that drove Devanahallis appreciation is actively moving along the corridor toward it.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "What Farmland Investment Near Devanahalli Actually Looks Like",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "For investors specifically focused on the Devanahalli zone. The area within 20 to 30 kilometres of the airport. Here's what the farmland market actually looks like in 2026.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Entry Prices Have Moved\n",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "A decade of airport-driven appreciation has moved agricultural land prices in the immediate Devanahalli zone to levels that reflect a significant portion of the infrastructure premium already. Investors who entered in 2013 to 2016 bought ahead of most of that appreciation. Investors entering today are paying prices that already incorporate the airports established impact.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Land Classification Complexity",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Not all land near Devanahalli is genuinely agricultural. As urban development has advanced some agricultural land has been converted. Formally or informally. To -agricultural use. Converted land has a tax status, different development restrictions and different investment characteristics.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": " KIADB Notification Risk",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The Karnataka Industrial Areas Development Board has powers to notify and acquire land for industrial development. Land within or adjacent to KIADB-notified zones is at risk of government acquisition. Which while compensated disrupts the investment thesis entirely and may not deliver the appreciation returns you are seeking.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Development Pressure on the Farm Character",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Devanahallis urbanisation means that agricultural land in the immediate zone is increasingly surrounded by construction activity. Residential developments, commercial buildings, warehouse facilities. For an investor who wants the farmland experience. Countryside, plantation environment, peaceful weekends. This development pressure is a real consideration.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "The Smarter Play in 2026. The Lepakshi NH44 Corridor",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Given the entry price levels KIADB risk considerations and development pressure in the Devanahalli zone many investors who specifically want airport-corridor appreciation are choosing to position further along NH44. In the 50 to 75 kilometre band where the airports economic influence is real but not yet fully priced into land values.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "The Lepakshi corridor at 75 kilometres from Devanahalli on NH44 sits in this zone.",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The same structural forces that drove Devanahalli. Airport growth, NH44 infrastructure investment, northward Bangalore expansion. Are active in the Lepakshi corridor. The airport is still expanding. The highway is still being developed. The urban boundary is still moving northward. These forces are the engine of appreciation regardless of which point on the NH44 corridor you enter at.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": " Lower entry price -"
+          },
+          {
+            "bold": false,
+            "text": "Land in the Lepakshi corridor is priced at levels that reflect earlier-stage positioning within the airport influence zone. Than prices that already incorporate a decade of documented airport-driven appreciation."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "  More appreciation ahead -"
+          },
+          {
+            "bold": false,
+            "text": " If the Devanahalli zone has moved from X to 5X over 15 years as the airport infrastructure built, land at 75 kilometres on the corridor has a longer runway ahead of it within the same trend."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Genuine agricultural character -"
+          },
+          {
+            "bold": false,
+            "text": " The Lepakshi corridor is rural. Open countryside, plantation landscape, minimal urban development pressure within any relevant investment timeline. The farm experience is real and sustainable."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "   Heritage premium -"
+          },
+          {
+            "bold": false,
+            "text": "The Lepakshi Temple 10 minutes from Ecovara adds a tourism and economic dimension that purely infrastructure-driven locations on NH44 do not have."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": " Ecovara. The Managed Project in the Airport Corridor",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "For investors who understand the Devanahalli growth story and want to invest in the airport corridor at a position that offers genuine remaining appreciation potential. Ecovara by Novara Nature Estates is the project to evaluate.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Location:"
+          },
+          {
+            "bold": false,
+            "text": " NH44, near Lepakshi Temple, 75 kilometres from Kempegowda International Airport at Devanahalli."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Plantation:"
+          },
+          {
+            "bold": false,
+            "text": " 800+ coconut and mango trees across 15 acres. 64+ Tree varieties, productive from day one."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": " "
+          },
+          {
+            "bold": true,
+            "text": "Plot sizes:"
+          },
+          {
+            "bold": false,
+            "text": " Starting from 6,000 feet with 8,000 and 10,000 square foot options."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Legal: "
+          },
+          {
+            "bold": false,
+            "text": "Clear title, registered sale deed, clean EC, RTC in order, registration support."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": " Management:"
+          },
+          {
+            "bold": false,
+            "text": " Full estate management, by Novara Nature Estates. Plantation care, irrigation, security, owner communication."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "This is a working farm. Not a project that is still being developed. The plantation is already here the infrastructure is in place. The management team is working today.\n\nExplore Ecovara farm. Plan a free visit to see the project yourself.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Comparing Investment Options in the Devanahalli Area",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "For investors comparing locations here is how the key areas in this region compare in 2026.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": " Position 1. Right by Devanahalli (0 to 20km from airport)",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "What you get: "
+          },
+          {
+            "bold": false,
+            "text": "Very close to the airport established areas, a history of increasing in value."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": " What you pay: "
+          },
+          {
+            "bold": false,
+            "text": "The prices in the area because of the past increases in value."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": " The risk:"
+          },
+          {
+            "bold": false,
+            "text": " The Karnataka Industrial Areas Development Board (KIADB) might acquire some land, development pressure on land, limited potential for further increases in value."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Best for:"
+          },
+          {
+            "bold": false,
+            "text": " Investors who want established infrastructure. Are okay with paying more for it."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": " Position 2. Middle of the Corridor (20 to 50km from airport)\n",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "What you get:"
+          },
+          {
+            "bold": false,
+            "text": " in the airport influence zone improving infrastructure lower prices than right by Devanahalli."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "What you pay:"
+          },
+          {
+            "bold": false,
+            "text": " than right by Devanahalli but more than the outer area. Reflecting some of the past increases in value."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Best for: "
+          },
+          {
+            "bold": false,
+            "text": "Investors looking for a balance between established infrastructure and potential for increases in value."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Position 3. Lepakshi NH44 Corridor (75km from airport)\n",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "What you get :"
+          },
+          {
+            "bold": false,
+            "text": " In the airport influence zone lower prices because its earlier-stage longer potential for increases in value, genuine agricultural character and a heritage tourism boost from Lepakshi Temple"
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "What you pay:"
+          },
+          {
+            "bold": false,
+            "text": " prices than both other positions."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Best for:"
+          },
+          {
+            "bold": false,
+            "text": " Investors with a 7 to 15 year plan who want the potential for increases in value within the airport corridor at a good price. This is where Ecovara is located."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Frequently Asked Questions About Buying Farmland Near Devanahalli",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "h3",
+        "text": " Is Devanahalli farmland still worth buying in 2026?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Yes. But the best time to buy in the airport zone was 5 to 10 years ago. For investors who want to benefit from the airport corridor at a price in 2026 the 50 to 75 kilometre band along NH44. Specifically the Lepakshi corridor. Offers better value than already-priced land in the immediate Devanahalli zone.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What is the. Should I be worried about it?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The Karnataka Industrial Areas Development Board can acquire land for development in certain zones. Before buying farmland near Devanahalli have your lawyer check if your specific plot is within or adjacent to a KIADB-notified zone. This is a risk for some parcels in the immediate airport area and should be checked as part of standard due diligence.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": " How far is Devanahalli from Bangalore?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "40 to 50 kilometres from central Bangalore. Roughly 45 to 60 minutes on NH44 from Hebbal depending on traffic.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Why should I consider Lepakshi of Devanahalli?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Lower entry price, potential for increases in value, genuine agricultural character, heritage tourism boost from Lepakshi Temple and no KIADB acquisition risk within the Ecovara project. The same airport-corridor story. At an more efficient entry point.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What is the minimum investment to get started near the Devanahalli corridor?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "At Ecovara in the Lepakshi corridor plots start from 6,000 feet. Contact the Novara team directly for pricing. +91-8660200662.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": " How do I verify that farmland near Devanahalli has a title?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Get a lawyer to do a 30-year title search verify the encumbrance certificate check the RTC for correct land classification confirm mutation records are current and physically verify boundaries. For a legal checklist read our guide to buying farmland in Karnataka.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What is the first step to investing in this corridor?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Visit the land. Schedule your free site visit to Ecovara. See the NH44 corridor in person walk the plantation and understand the location story on the ground than on a screen.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Schedule your free site visit to Ecovara +91-8660200662"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
+        "fontWeight": "font-normal"
+      }
+    ]
+  },
+  {
     "id": 21,
     "slug": "farmland-near-devanahalli-guide",
     "category": "Managed Farmland",
