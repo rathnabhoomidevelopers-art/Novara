@@ -747,12 +747,9 @@ function BlogEditor({ editingBlog, onBack }) {
         if (isEditMode) {
           setPublishMsg("Updating existing blog entry…");
 
-          const idx = blogsArray.findIndex(
-            (b) =>
-              String(b.id) === String(editingBlogId.current) ||
-              b.slug === editingBlogSlug.current
-          );
-
+         const idx = blogsArray.findIndex(
+  (b) => String(b.id) === String(editingBlogId.current)
+);
           if (idx === -1) {
             throw new Error(
               `Could not find blog with id "${editingBlogId.current}" or slug "${editingBlogSlug.current}" in blogs.js. ` +
