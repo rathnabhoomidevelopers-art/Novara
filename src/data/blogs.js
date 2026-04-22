@@ -1,5 +1,598 @@
 export const BLOGS = [
   {
+    "id": 24,
+    "slug": "farmland-near-bangalore-airport",
+    "category": "Managed Farmland",
+    "title": "Farmland Near Bangalore Airport — Complete Guide 2026",
+    "headline": "Farmland Near Bangalore Airport — What Every Investor Needs to Know Before Buying",
+    "description": "A complete 2026 guide to farmland near Bangalore airport — why airport proximity drives land values, which locations benefit most, and what to check before buying.",
+    "date": "Apr 22, 2026",
+    "keywords": "",
+    "author": "Novara Nature Estates",
+    "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1776852713/qli1z5yaijuf0057pe7r.webp",
+    "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1776852713/qli1z5yaijuf0057pe7r.webp",
+    "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1776852713/qli1z5yaijuf0057pe7r.webp",
+    "imageAlt": "Farmland near airport",
+    "tags": [],
+    "sections": [
+      {
+        "type": "p",
+        "text": "Farmland near Bangalore airport is one of the most searched real estate queries in Karnataka right now. The question behind that search is always the same: does airport proximity actually drive land appreciation — and if so, which locations benefit most? This guide answers both.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Why Airports Drive Land Values — The Mechanism Explained",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The relationship between airports and land appreciation is one of the most consistently documented patterns in real estate economics globally. But understanding why it happens — not just that it happens — is what allows an investor to position correctly within it.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Airports generate economic activity that radiates outward from the facility itself. This activity takes several forms and each form creates demand for land in a specific way.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Employment concentration :"
+          },
+          {
+            "bold": false,
+            "text": "A major international airport is one of the largest single employment centres in its region. Kempegowda International Airport directly employs tens of thousands of people — airline staff, ground handling, cargo, hospitality, retail, security, administration. Each of these employees needs housing within commutable distance. That housing demand creates sustained residential land demand in a broad radius around the airport."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Commercial clustering :"
+          },
+          {
+            "bold": false,
+            "text": " Businesses that benefit from airport proximity — logistics, cargo, aviation services, hotels, conference facilities — cluster around airports because their operations require it. This clustering creates demand for commercial and industrial land in the airport's vicinity. As more businesses cluster, the economic weight of the area increases, which in turn attracts more businesses and residents, which drives further land demand."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Infrastructure investment :"
+          },
+          {
+            "bold": false,
+            "text": " Governments invest disproportionately in infrastructure connecting airports to city centres and regional markets — highways, metro lines, roads, utilities. These infrastructure investments increase the connectivity and accessibility of land near the airport, making it more valuable for every use category simultaneously."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Land price signalling :"
+          },
+          {
+            "bold": false,
+            "text": ". Once an airport's economic impact on surrounding land values becomes documented and visible, investor demand adds a speculative premium on top of the fundamental demand. This self-reinforcing dynamic has characterised every major airport corridor in India over the past twenty years — from Chhatrapati Shivaji Airport's influence on Mumbai's western suburbs to Hyderabad's Rajiv Gandhi International Airport's impact on the Outer Ring Road corridor."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Kempegowda International Airport has been operating these mechanisms on North Bangalore's land market since 2008. The fundamental and speculative premiums it has generated along the NH44 corridor are real, documented, and still actively building.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "The Bangalore Airport Influence Zone — Which Land Actually Benefits",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Not all land near Bangalore airport benefits equally from airport proximity. Understanding the geographic shape of the influence zone — and where different types of land sit within it — is the starting point for any location decision.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Zone 1 — Immediate Airport Vicinity (0 to 15km)",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "This zone encompasses Devanahalli town, the KIADB industrial zones, the IT Investment Region, and the immediately adjacent residential and commercial development.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Land in this zone is directly subject to airport-driven commercial and residential demand. It has experienced the most significant appreciation over the past fifteen years and continues to appreciate — but at prices that already reflect a substantial portion of the total airport premium. Entry costs for agricultural land in this zone are the highest in the broader corridor and the remaining appreciation runway is shorter relative to what has already been captured.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Additionally, land in this zone faces specific risks — KIADB acquisition potential for plots within notified industrial zones, rapid urbanisation pressure that affects the agricultural character of the land, and water table stress from intensive development activity.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Zone 2 — Inner Corridor (15 to 50km)",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "This zone encompasses the area along NH44 between Devanahalli and the midpoint of the highway corridor — roughly the area around Doddaballapur, Vijayapura, and extending toward Bagepalli.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Land here has experienced meaningful appreciation from airport influence but remains in an earlier stage than Zone 1. Entry prices are lower and the appreciation runway is longer. ",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Infrastructure from the airport zone — road quality, connectivity, commercial activity — is visible and improving but not yet fully mature.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Zone 3 — Outer Corridor (50 to 100km)",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "This zone encompasses the area from roughly 50 kilometres from the airport along NH44 to the 100-kilometre mark — including the Lepakshi belt at 75 kilometres.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Land in this zone is within the documented airport influence radius but at the earliest stage of appreciation within the trend. Entry prices reflect earlier-stage positioning. The same structural drivers operating in Zones 1 and 2 are present here — airport expansion, NH44 infrastructure investment, northward Bangalore growth — but working on a longer timeline.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "For investors with a 7 to 15 year horizon, Zone 3 consistently offers the strongest value proposition in terms of remaining appreciation potential relative to entry price. This is the zone where Ecovara Farm Plots near Lepakshi is positioned.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "What Has Happened to Land Prices Near Bangalore Airport — A Framework",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Understanding the trajectory of land appreciation near Kempegowda International Airport requires looking at the pattern over time rather than at a single point.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": "This is regular text, and "
+          },
+          {
+            "bold": true,
+            "text": "this part is bold"
+          },
+          {
+            "bold": false,
+            "text": ", then regular again."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "2008 to 2012 — Foundation phase."
+          },
+          {
+            "bold": false,
+            "text": " The airport opened, establishing the fundamental demand driver. Land in the immediate vicinity — Devanahalli, the airport zone — began its appreciation cycle. Investors who entered in this phase captured the earliest and largest portion of the appreciation premium."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "2012 to 2018 — Expansion phase :"
+          },
+          {
+            "bold": false,
+            "text": " KIADB industrial zones were established and began filling with tenants. The IT Investment Region was announced. Residential development moved progressively outward from the airport. Appreciation spread along NH44 as the corridor's economic weight increased. Land in the 15 to 50 kilometre band experienced significant appreciation during this period."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "2018 to 2024 — Maturation phase :"
+          },
+          {
+            "bold": false,
+            "text": " The immediate airport zone reached near-urban density in parts. Infrastructure projects — road widening, flyovers, new interchanges — consolidated the corridor's connectivity. Second terminal development at the airport signalled continued expansion. The appreciation wave continued moving outward along NH44."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "2024 to present — Active expansion."
+          },
+          {
+            "bold": false,
+            "text": "The corridor is still actively developing. The airport's second terminal is operational. New airline routes continue to be added. KIADB zones continue to develop. The 50 to 100 kilometre band on NH44 — including the Lepakshi corridor — is now experiencing the active appreciation that earlier zones experienced in earlier phases."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "This is not a speculative framework. It is the documented pattern of infrastructure-driven land appreciation that has characterised every major airport corridor in India — and it describes where the Lepakshi corridor sits within the Bangalore airport story in 2026.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Farmland Near Bangalore Airport — The Specific Investment Case",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "For a farmland investor specifically — as opposed to a commercial or residential real estate buyer — airport proximity creates a particular investment case that differs from pure infrastructure plays.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Appreciation Without Conversion Risk",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Agricultural land that sits within an airport influence zone appreciates as the zone develops — but unlike residential or commercial land, it does not require conversion to realise that appreciation. You can sell agricultural land at appreciated prices without converting it to non-agricultural use, as long as the buyer is also purchasing for agricultural use.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "This means the appreciation benefit of airport proximity is available to farmland investors without the regulatory complexity and cost of land conversion.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Tax-Free Income While You Wait",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The 7 to 15 year appreciation timeline for airport-corridor farmland means you hold the land for a meaningful period before realising capital gains. During that holding period, a productive plantation generates agricultural income — fully exempt from income tax under Section 10(1) of the Income Tax Act.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "You are not simply holding a land parcel and waiting for appreciation. You are earning tax-free income from the plantation while the land's underlying value grows. This dual return profile — income plus appreciation — is what makes airport-corridor agricultural land a compelling investment class rather than a speculative land banking exercise.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Managed Farm Model Removes the Management Problem",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The reason most urban investors have not historically participated in agricultural land near airports is the management requirement — owning farmland 75 kilometres from Bangalore without any farming knowledge or local contacts seemed impractical.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "The managed farmland model eliminates this barrier entirely. You own the land and the plantation. Novara Nature Estates' professional team manages everything on the ground — plantation care, irrigation, security, and regular communication with you as the owner.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "The airport proximity creates the appreciation opportunity. The managed farmland model makes it accessible to a Bangalore investor without agricultural background or local presence.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Location Checklist — Evaluating Farmland Near Bangalore Airport",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "For investors specifically evaluating farmland within the airport influence zone, here is the checklist that separates locations with genuine investment merit from those with marketing claims.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Distance and Connectivity — Verify Specifically",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "\"Near the airport\" means different things from different starting points. Confirm:\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "ul",
+        "text": [
+          "What is the exact distance in kilometres from Kempegowda International Airport?",
+          "What is the specific route — is it on NH44 directly or via secondary roads?",
+          "What is the realistic drive time from your home location in Bangalore?"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ecovara Farm Plots near Lepakshi is 75 kilometres from the airport on NH44 — direct highway, no secondary road detour. From Hebbal or Yelahanka the total drive is approximately 90 minutes. From Electronic City or Whitefield add 30 to 45 minutes.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Land Classification — Agricultural Confirmed",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Verify that the land is classified as agricultural in the current RTC records. Near the airport, some land has been converted to non-agricultural use — either formally or informally. Converted land does not qualify for agricultural income tax exemption and has a different investment profile.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "KIADB Notification Status",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "For land within approximately 30 kilometres of the airport, verify with your independent lawyer whether the specific survey number of your plot is within or adjacent to a KIADB-notified zone. This check is specific to the immediate airport corridor — it is less relevant for land at 50 to 75 kilometres along NH44.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Water Access and Borewell Status",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Airport-corridor land faces increasing water demand from residential and commercial development. Verify borewell depth and yield, drip irrigation infrastructure, and the water management approach for your specific plot.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Title Verification — Standard 30-Year Minimum",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The standard title verification applies here as everywhere. Engage your own independent lawyer. 30-year title search, clean EC, current RTC, mutation in the seller's name, physical boundary verification. Our complete legal guide to buying farmland in Karnataka walks through every step.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Ecovara — Airport-Corridor Farmland You Can Visit This Weekend",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "Ecovara Farm Plots by Novara Nature Estates sits 75 kilometres from Kempegowda International Airport on NH44 — within the documented airport influence zone, at a position that offers genuine remaining appreciation potential at an efficient entry price.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "What is already there:"
+          },
+          {
+            "bold": false,
+            "text": " 800+ mature coconut and mango trees across 15 acres. A functioning plantation that generates agricultural income from day one. 64+ tree varieties including timber species that build long-term capital value."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "What surrounds it: "
+          },
+          {
+            "bold": false,
+            "text": "NH44 directly accessible. Lepakshi Temple 10 minutes away — over two lakh annual visitors. Hindupuram town 10 minutes away with full civic infrastructure. Nandi Hills 60 minutes. Isha Foundation 50 minutes."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "What you own:"
+          },
+          {
+            "bold": false,
+            "text": " A registered sale deed in your name. Clear title verified by legal professionals. A demarcated plot with physical boundary markers and a specific survey number. An asset that generates income while you hold it and appreciates as the airport corridor continues to develop."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "What you don't need to manage: "
+          },
+          {
+            "bold": false,
+            "text": "Anything. Novara's estate team handles the plantation, the irrigation, the security, and the communication. You visit when you want to. The farm works the rest of the time."
+          }
+        ],
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "Explore Ecovara farm plots and see current plot availability. Or schedule your free site visit and see the corridor in person.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Frequently Asked Questions About Farmland Near Bangalore Airport",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "h3",
+        "text": "How far is the best farmland near Bangalore airport?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The strongest value proposition in 2026 is in the 50 to 75 kilometre band along NH44 — far enough from the airport that entry prices have not fully reflected the infrastructure premium, close enough to benefit from the ongoing appreciation wave moving along the corridor. Ecovara at 75 kilometres is in this zone.",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Does being near the airport affect the farm environment — noise, traffic?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "At 75 kilometres from the airport, Ecovara is well beyond any noise or traffic impact from airport operations. The farm environment is genuinely rural — open countryside, plantation landscape, minimal development pressure within any relevant investment timeline. The airport proximity is an investment advantage, not a lifestyle disadvantage.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Is the land near Bangalore airport safe from government acquisition?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": " Land at 75 kilometres from the airport is not within KIADB notification zones for industrial development. The government acquisition risk is specific to land within approximately 20 to 30 kilometres of the airport in designated industrial zones. Ecovara's legal documentation confirms the project land is outside any such notification.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What is the tax treatment for farmland near Bangalore airport?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "The same as all agricultural land in India — income from agricultural operations is fully exempt from income tax under Section 10(1), capital gains enjoy exemptions under Section 54B, and wealth tax does not apply. The airport proximity does not change the tax treatment. Consult your CA for advice specific to your situation.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "How do I know if a farmland project near the airport has genuine title?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": " Engage an independent lawyer to verify the title deed, encumbrance certificate, RTC, and mutation records. Do not rely solely on the developer's documentation. Any developer who discourages independent legal review is a developer to avoid. Novara Nature Estates facilitates independent legal review for all Ecovara buyers without hesitation.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "What is the first step?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": " Visit the site. Schedule your free farm visit to Ecovara — it costs nothing and takes a morning. Driving the NH44 corridor from Bangalore to Lepakshi, seeing the airport zone at 40 kilometres, watching the landscape shift at 75 kilometres, and walking the plantation at Ecovara — that 90-minute drive is the most useful research you can do.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Schedule your free site visit to Ecovara +91-8660200662"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
+        "fontWeight": "font-normal"
+      }
+    ]
+  },
+  {
     "id": 23,
     "slug": "farmland-near-bangalore-airport-what-every-investor-needs-to-know-before-buying",
     "category": "Managed Farmland",
