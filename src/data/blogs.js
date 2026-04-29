@@ -394,8 +394,11 @@ export const BLOGS = [
     "tags": [],
     "sections": [
       {
-        "type": "p",
-        "text": "Farmland near Bangalore airport is one of the most searched real estate queries in Karnataka right now. The question behind that search is always the same: does airport proximity actually drive land appreciation — and if so, which locations benefit most? This guide answers both.",
+        "type": "p_with_link",
+        "textBefore": "",
+        "linkText": "Farmland near Bangalore",
+        "href": "https://www.novaranatureestates.com/blogs/farmland-investment-near-bangalore",
+        "textAfter": " airport is one of the most searched real estate queries in Karnataka right now. The question behind that search is always the same: does airport proximity actually drive land appreciation — and if so, which locations benefit most? This guide answers both.",
         "fontWeight": "font-normal"
       },
       {
@@ -568,24 +571,6 @@ export const BLOGS = [
       {
         "type": "p",
         "text": "Understanding the trajectory of land appreciation near Kempegowda International Airport requires looking at the pattern over time rather than at a single point.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": "This is regular text, and "
-          },
-          {
-            "bold": true,
-            "text": "this part is bold"
-          },
-          {
-            "bold": false,
-            "text": ", then regular again."
-          }
-        ],
         "fontWeight": "font-normal"
       },
       {
