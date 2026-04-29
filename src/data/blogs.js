@@ -80,11 +80,6 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Write your paragraph here…",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
         "text": "Farm plots in this zone sit within or adjacent to commercial and industrial development. The investment case here is appreciation driven by established infrastructure demand.. Entry prices already reflect a significant portion of the airport premium.\n\nThe farm experience in this zone is increasingly compromised by surrounding development.\n",
         "fontWeight": "font-normal"
       },
@@ -257,14 +252,17 @@ export const BLOGS = [
         "fontWeight": "font-normal"
       },
       {
-        "type": "h2",
-        "text": "Ecovara  Farm Plots in the Airport Corridor Worth Visiting",
-        "fontWeight": "font-bold"
-      },
-      {
         "type": "p",
         "text": "For investors who have been evaluating farm plots near Bangalore airport and want to see a project that has addressed every item on the checklist above. Ecovara by Novara Nature Estates is the starting point.",
         "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2_with_link",
+        "textBefore": "",
+        "linkText": "Ecovara Farm Plots ",
+        "href": "https://novaranatureestates.com/projects",
+        "textAfter": "   in the Airport Corridor Worth Visiting",
+        "fontWeight": "font-bold"
       },
       {
         "type": "ul",
@@ -370,21 +368,11 @@ export const BLOGS = [
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Schedule your free site visit, to Ecovara +91-8660200662"
-          },
-          {
-            "bold": false,
-            "text": ""
-          }
-        ],
+        "type": "p_with_link",
+        "textBefore": "",
+        "linkText": "Schedule your free site visit",
+        "href": "https://novaranatureestates.com/contactus",
+        "textAfter": " to Ecovara +91-8660200662",
         "fontWeight": "font-normal"
       }
     ]
