@@ -7,7 +7,7 @@ export const BLOGS = [
     "headline": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
     "description": "A complete investor guide to farmland near Hindupur on the NH44 corridor — location advantages, connectivity, investment potential, and what to check before buying.",
     "date": "May 3, 2026",
-    "keywords": "Farmland near Hindupur",
+    "keywords": "Farmland near Hindupuram",
     "author": "Novara Nature Estates",
     "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1777790220/kf9tclbzzxclsz3gl0cd.webp",
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1777790220/kf9tclbzzxclsz3gl0cd.webp",
