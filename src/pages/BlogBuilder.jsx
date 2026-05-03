@@ -512,15 +512,17 @@ function BlogEditor({ editingBlog, onBack }) {
   const [drafts, setDrafts] = useState([]);
   const [currentDraftKey, setCurrentDraftKey] = useState(null);
 
-  const editingBlogId   = React.useRef(editingBlog?.id   ?? null);
-  const editingBlogSlug = React.useRef(editingBlog?.slug ?? "");
+  // ── FIX: store both the original id AND the original slug so we can
+  //         match the entry in blogs.js even after the user edits the slug.
+  const editingBlogId          = React.useRef(editingBlog?.id   ?? null);
+  const editingBlogOriginalSlug = React.useRef(editingBlog?.slug ?? "");
 
   useEffect(() => { loadDrafts(); }, []);
 
   useEffect(() => {
     if (editingBlog) {
-      editingBlogId.current   = editingBlog.id;
-      editingBlogSlug.current = editingBlog.slug || "";
+      editingBlogId.current           = editingBlog.id;
+      editingBlogOriginalSlug.current = editingBlog.slug || "";
     }
   }, [editingBlog]);
 
@@ -747,18 +749,24 @@ function BlogEditor({ editingBlog, onBack }) {
         if (isEditMode) {
           setPublishMsg("Updating existing blog entry…");
 
-         const idx = blogsArray.findIndex(
-  (b) => String(b.id) === String(editingBlogId.current)
-);
+          // ── FIX: match by id first (robust to type coercion), then fall
+          //         back to the ORIGINAL slug (captured at mount time) so that
+          //         editing the slug field doesn't cause a new blog to be created.
+          const idx = blogsArray.findIndex(
+            (b) =>
+              String(b.id) === String(editingBlogId.current) ||
+              b.slug === editingBlogOriginalSlug.current
+          );
+
           if (idx === -1) {
             throw new Error(
-              `Could not find blog with id "${editingBlogId.current}" or slug "${editingBlogSlug.current}" in blogs.js. ` +
+              `Could not find blog with id "${editingBlogId.current}" or original slug "${editingBlogOriginalSlug.current}" in blogs.js. ` +
               `Available ids: ${blogsArray.map((b) => b.id).join(", ")}`
             );
           }
 
           newBlogsArray = [...blogsArray];
-          // ✅ FIX: Only preserve the original id — allow slug to be updated freely
+          // Preserve original numeric id; allow all other fields (incl. slug) to update freely.
           newBlogsArray[idx] = {
             ...blogData,
             id: blogsArray[idx].id,
@@ -812,6 +820,13 @@ function BlogEditor({ editingBlog, onBack }) {
         if (!putRes.ok) {
           const err = await putRes.json().catch(() => ({}));
           throw new Error(err.message || `Commit failed: HTTP ${putRes.status}`);
+        }
+
+        // ── FIX: After a successful publish, update the stored original slug
+        //         so subsequent saves in the same session use the new slug as
+        //         the fallback identifier.
+        if (isEditMode) {
+          editingBlogOriginalSlug.current = blogData.slug;
         }
 
         setPublishStatus("success");
