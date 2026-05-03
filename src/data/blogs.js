@@ -1,7 +1,7 @@
 export const BLOGS = [
   {
     "id": 26,
-    "slug": "farmland-near-hindupur",
+    "slug": "farmland-near-hindupur-guide",
     "category": "Managed Farmland",
     "title": "Farmland Near Hindupur — Investor Guide ",
     "headline": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
