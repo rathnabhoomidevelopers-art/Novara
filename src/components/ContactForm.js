@@ -66,6 +66,15 @@ export default function ContactForm() {
         }
 
         resetForm();
+         window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event:        "crm_lead",
+      form_name:    `${values.firstName} ${values.lastName || ""}`.trim(),
+      form_mobile:  values.phone,
+      form_email:   values.email,
+      form_message: values.message,
+      form_source:  "Novara Website",
+    });
         // Vike navigate — pass state via query params or a global store
         navigate(`/thankyou?name=${encodeURIComponent(`${values.firstName} ${values.lastName || ""}`.trim())}&phone=${encodeURIComponent(values.phone)}`);
       } catch (error) {
