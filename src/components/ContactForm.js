@@ -65,7 +65,6 @@ export default function ContactForm() {
           return;
         }
 
-        resetForm();
          window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event:        "crm_lead",
@@ -75,8 +74,13 @@ export default function ContactForm() {
       form_message: values.message,
       form_source:  "Novara Website",
     });
+        resetForm();
         // Vike navigate — pass state via query params or a global store
-        navigate(`/thankyou?name=${encodeURIComponent(`${values.firstName} ${values.lastName || ""}`.trim())}&phone=${encodeURIComponent(values.phone)}`);
+       setTimeout(() => {
+  navigate(`/thankyou?name=${encodeURIComponent(
+    `${values.firstName} ${values.lastName || ""}`.trim()
+  )}&phone=${encodeURIComponent(values.phone)}`);
+}, 500);
       } catch (error) {
         console.error("Error submitting form:", error);
         alert("There was an error submitting the form.");
