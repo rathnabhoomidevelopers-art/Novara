@@ -22,7 +22,7 @@ const DEFAULT_PROPS = {
 
 /** Default submit handler — POSTs to /brochure and pushes a GTM event */
 async function defaultOnSubmit(formData) {
-  const response = await fetch(`${API_BASE}/pop-up`, {
+  const response = await fetch(`${API_BASE}/brochure`, {
     method:  "POST",
     headers: { "Content-Type": "application/json" },
     body:    JSON.stringify(formData),
