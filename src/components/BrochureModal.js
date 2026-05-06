@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { X } from "lucide-react";
+
+const API_BASE = import.meta.env.VITE_API_BASE || "https://novara-backend-one.vercel.app";
+
 const DEFAULT_FIELDS = [
   { name: "name",  label: "Full Name",      type: "text",  placeholder: "Your name",        required: true },
   { name: "email", label: "Email Address",  type: "email", placeholder: "you@email.com",    required: true },
@@ -17,10 +20,32 @@ const DEFAULT_PROPS = {
   ctaHoverColor:  "#E3A600",
 };
 
+/** Default submit handler — POSTs to /brochure and pushes a GTM event */
+async function defaultOnSubmit(formData) {
+  const response = await fetch(`${API_BASE}/brochure`, {
+    method:  "POST",
+    headers: { "Content-Type": "application/json" },
+    body:    JSON.stringify(formData),
+  });
+
+  const text = await response.text();
+  if (!response.ok) throw new Error(text || "Something went wrong. Please try again.");
+
+  // GTM / dataLayer event (mirrors ContactForm pattern)
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event:       "brochure_lead",
+    form_name:   formData.name,
+    form_mobile: formData.phone,
+    form_email:  formData.email,
+    form_source: "Novara Website – Brochure Modal",
+  });
+}
+
 export default function BrochureModal({
   isOpen,
   onClose,
-  onSubmit,
+  onSubmit = defaultOnSubmit,
   title          = DEFAULT_PROPS.title,
   description    = DEFAULT_PROPS.description,
   successTitle   = DEFAULT_PROPS.successTitle,
