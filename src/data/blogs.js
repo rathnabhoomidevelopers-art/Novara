@@ -1903,7 +1903,7 @@ export const BLOGS = [
     "id": 21,
     "slug": "farmland-near-devanahalli-guide",
     "category": "Managed Farmland",
-    "title": "Farmland Near Devanahalli — 2026 Buyer's Guide | Novara",
+    "title": "Farmland Near Devanahalli — 2026 Buyer's Guide",
     "headline": "Thinking About Farmland Near Devanahalli? Here Is What the Airport Zone Actually Means for Investors.",
     "description": "A complete 2026 guide to farmland near Devanahalli — airport proximity, KIADB zones, investment potential, locations, and what to check before buying.",
     "date": "Apr 12, 2026",
@@ -2227,7 +2227,7 @@ export const BLOGS = [
       },
       {
         "type": "h2",
-        "text": "Ecovara. The managed farmland project in this corridor.",
+        "text": "Ecovara. - The managed farmland project in this corridor.",
         "fontWeight": "font-bold"
       },
       {
