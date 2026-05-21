@@ -2898,7 +2898,7 @@ export const BLOGS = [
         "type": "p_with_link",
         "textBefore": "You can schedule a visit, to Ecovara to see it for yourself. You can call them at ",
         "linkText": "+91-8660200662",
-        "href": "tel: +91-8660200662",
+        "href": "tel: +91 8660200662",
         "textAfter": "",
         "fontWeight": "font-normal"
       }
