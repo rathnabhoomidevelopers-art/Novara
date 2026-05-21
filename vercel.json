@@ -1,6 +1,6 @@
 {
   "trailingSlash": false,
-  "buildCommand": "npm run build",
+  "buildCommand": "vite build && printf 'export * from \"./entry.mjs\";' > build/server/index.js",
   "outputDirectory": "build/client",
   "framework": null,
   "redirects": [
