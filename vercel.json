@@ -1,6 +1,6 @@
 {
   "trailingSlash": false,
-  "buildCommand": "vite build",
+  "buildCommand": "npm run build",
   "outputDirectory": "build/client",
   "framework": null,
   "redirects": [
@@ -15,10 +15,6 @@
     {
       "source": "/api/(.*)",
       "destination": "https://novara-backend-one.vercel.app/api/$1"
-    },
-    {
-      "source": "/((?!api/).*)",
-      "destination": "/index.html"
     }
   ],
   "headers": [
