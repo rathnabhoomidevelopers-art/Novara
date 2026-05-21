@@ -2895,8 +2895,11 @@ export const BLOGS = [
         "fontWeight": "font-normal"
       },
       {
-        "type": "p",
-        "text": "You can schedule a visit, to Ecovara to see it for yourself.\n\nYou can call them at +91-8660200662\n\n",
+        "type": "p_with_link",
+        "textBefore": "You can schedule a visit, to Ecovara to see it for yourself. You can call them at ",
+        "linkText": "+91-8660200662",
+        "href": "tel: +91-8660200662",
+        "textAfter": "",
         "fontWeight": "font-normal"
       }
     ]
