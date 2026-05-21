@@ -5,7 +5,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [
-    vike({ prerender: true }),  // ← tell Vike all pages are pre-rendered (static)
+    vike(),
     react(),
   ],
   resolve: {
@@ -18,12 +18,10 @@ export default defineConfig({
   },
   build: {
     outDir: 'build',
-    // cssCodeSplit: false  ← REMOVE THIS — Vike explicitly forbids it
     cssMinify: true,
   },
   define: {
-    // 'development' fallback was causing the NODE_ENV warning
-    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production'),
+    'process.env.NODE_ENV': JSON.stringify('production'),
   },
   esbuild: {
     loader: 'jsx',
