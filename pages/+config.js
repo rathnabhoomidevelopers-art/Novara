@@ -5,6 +5,12 @@ export default {
   prerender: true,
   clientRouting: true,
 
+  redirects:{
+    "/whynovara":"/why-novara",
+    "/contactus":"/contact-us",
+    "/privacypolicy":"/privacy-policy",
+    "/termscondition":"/terms-conditions"
+  },
   meta: {
     keywords: {
       env: { server: true, client: true }
