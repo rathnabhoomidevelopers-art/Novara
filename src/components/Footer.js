@@ -3,12 +3,12 @@ import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 export default function Footer() {
   const resources = [
     { label: "Home", to: "/" },
-    { label: "Why Novara", to: "/whynovara" },
+    { label: "Why Novara", to: "/why-novara" },
     { label: "Projects", to: "/projects" },
     { label: "Blogs", to: "/blogs" },
-    { label: "Contact Us", to: "/contactus" },
-    { label: "Privacy Policy", to: "/privacypolicy" },
-    { label: "Terms & Conditions", to: "/termscondition" },
+    { label: "Contact Us", to: "/contact-us" },
+    { label: "Privacy Policy", to: "/privacy-policy" },
+    { label: "Terms & Conditions", to: "/terms-conditions" },
   ];
 
   const socialLinks = [

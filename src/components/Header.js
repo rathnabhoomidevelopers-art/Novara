@@ -9,10 +9,10 @@ export default function Header() {
 
   const links = [
     { to: "/", label: "Home" },
-    { to: "/whynovara", label: "Why Novara" },
+    { to: "/why-novara", label: "Why Novara" },
     { to: "/projects", label: "Projects" },
     { to: "/blogs", label: "Blogs" },
-    { to: "/contactus", label: "Contact Us" },
+    { to: "/contact-us", label: "Contact Us" },
   ];
 
   const social = [
