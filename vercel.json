@@ -9,6 +9,18 @@
       "has": [{ "type": "host", "value": "novaranatureestates.com" }],
       "destination": "https://www.novaranatureestates.com/:path*",
       "permanent": true
+    },
+    { "source": "/whynovara", "destination": "/why-novara", "permanent": true },
+    { "source": "/contactus", "destination": "/contact-us", "permanent": true },
+    {
+      "source": "/privacypolicy",
+      "destination": "/privacy-policy",
+      "permanent": true
+    },
+    {
+      "source": "/termscondition",
+      "destination": "/terms-conditions",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -24,7 +36,9 @@
     },
     {
       "source": "/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "no-cache, must-revalidate" }]
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, must-revalidate" }
+      ]
     }
   ]
 }
