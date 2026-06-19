@@ -53,7 +53,6 @@ export function AuthProvider({ children }) {
 
   // ── login ─────────────────────────────────────────────────────────────────
   const login = async (email, password) => {
-    // Merge hardcoded users + users created via the Users panel (users.js)
     const allUsers = [...HARDCODED_USERS, ...(Array.isArray(DB_USERS) ? DB_USERS : [])];
     const match = allUsers.find(
       (u) => u.email === email.trim() && u.password === password
@@ -89,7 +88,6 @@ export function AuthProvider({ children }) {
     login,
     logout,
     isAuthenticated:    !!token && !!user,
-    // Role flags
     isAdmin:            role === "admin",
     isEditor:           role === "editor" || role === "admin",
     isViewer:           role === "viewer",
