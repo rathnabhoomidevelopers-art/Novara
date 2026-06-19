@@ -1230,8 +1230,8 @@ function BlogEditor({ editingBlog, onBack }) {
 
   // ─────────────────────────────────────────────────────────────────────────
   const navItems = [
-    { id: "home_blank", label: "Home",      Icon: Home,       onClick: () => setActiveNav("home_blank") },
-    { id: "home",      label: "Blogs",     Icon: FileText,   onClick: onBack },
+    { id: "home",      label: "Home",      Icon: Home,       onClick: () => setActiveNav("home") },
+    { id: "blog",      label: "Blogs",     Icon: FileText,   onClick: onBack },
     { id: "media",     label: "Media",     Icon: MediaIcon,  onClick: () => setActiveNav("media") },
     ...(canManageRedirects ? [{ id: "redirects", label: "Redirects", Icon: ArrowRight, onClick: () => setActiveNav("redirects") }] : []),
     ...(isAdmin ? [{ id: "users", label: "Users", Icon: UsersIcon, onClick: () => setActiveNav("users") }] : []),
@@ -1410,7 +1410,7 @@ function BlogEditor({ editingBlog, onBack }) {
 
           <div className="flex-1 flex gap-6 px-6 py-7 items-start" style={{ background: "#F7F4EB" }}>
             {/* CONTENT COLUMN */}
-            {activeNav === "home_blank" ? (
+            {activeNav === "home" ? (
               <div className="flex-1 min-w-0" />
             ) : activeNav === "media" ? (
               <div className="flex-1 min-w-0">
@@ -1875,7 +1875,7 @@ function BlogEditor({ editingBlog, onBack }) {
 
             {/* RIGHT SIDEBAR — meta boxes */}
             <div className="w-[280px] shrink-0">
-              {activeNav !== "redirects" && activeNav !== "users" && activeNav !== "media" && activeNav !== "home_blank" && canEdit && (<>
+              {activeNav !== "redirects" && activeNav !== "users" && activeNav !== "media" && activeNav !== "home" && canEdit && (<>
               {/* PUBLISH BOX (matches reference) */}
               <div className="meta-box">
                 <div className="meta-box-head">
