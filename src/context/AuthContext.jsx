@@ -1,19 +1,18 @@
 // src/context/AuthContext.jsx
 // Novara Nature Estates — Auth Context
-// Hardcoded credentials (no backend required)
 
 import { createContext, useContext, useState, useEffect } from "react";
+import { USERS as DB_USERS } from "../data/users";
 
 const TOKEN_KEY = "novaraAuthToken";
 
-// ── Hardcoded users ───────────────────────────────────────────────────────────
-// Default hardcoded admin; additional users loaded from src/data/users.js at runtime (via AuthProvider)
+// ── Hardcoded fallback admin ──────────────────────────────────────────────────
 const HARDCODED_USERS = [
   {
     id: "admin",
     email: "admin@gmail.com",
     password: "admin@123",
-    role: "editor",   // editor = view + edit; viewer = view only
+    role: "admin",
     name: "Novara Admin",
   },
 ];
@@ -41,16 +40,9 @@ const clearStoredSession = () => {
 const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
-  // We start logged-OUT on both the server and the very first client render.
-  // This keeps SSR markup and the first hydration pass identical (no mismatch),
-  // and — crucially — the login screen is shown immediately instead of being
-  // hidden behind a "loading" spinner that depends on an effect firing.
   const [user, setUser]   = useState(null);
   const [token, setToken] = useState(null);
 
-  // After mount, restore any saved session. If this effect is delayed or never
-  // runs, the worst case is that the user simply sees the login screen (and can
-  // log in normally) — never an endless spinner.
   useEffect(() => {
     const session = getStoredSession();
     if (session?.user && session?.token) {
@@ -59,10 +51,10 @@ export function AuthProvider({ children }) {
     }
   }, []);
 
-  // ── login — checks hardcoded USERS list, no backend call ─────────────────
+  // ── login ─────────────────────────────────────────────────────────────────
   const login = async (email, password) => {
-    // Check both hardcoded and dynamically loaded users
-    const allUsers = [...HARDCODED_USERS, ...(window.__novara_users__ || [])];
+    // Merge hardcoded users + users created via the Users panel (users.js)
+    const allUsers = [...HARDCODED_USERS, ...(Array.isArray(DB_USERS) ? DB_USERS : [])];
     const match = allUsers.find(
       (u) => u.email === email.trim() && u.password === password
     );
@@ -88,17 +80,24 @@ export function AuthProvider({ children }) {
     setUser(null);
   };
 
+  const role = user?.role;
+
   const value = {
     user,
     token,
     loading: false,
     login,
     logout,
-    isAuthenticated: !!token && !!user,
-    isAdmin:         user?.role === "admin" || user?.role === "editor",
-    isBlogger:       user?.role === "blogger" || user?.role === "admin" || user?.role === "editor",
-    canEdit:         user?.role === "editor" || user?.role === "admin" || user?.role === "blogger",
-    canView:         !!user,
+    isAuthenticated:    !!token && !!user,
+    // Role flags
+    isAdmin:            role === "admin",
+    isEditor:           role === "editor" || role === "admin",
+    isViewer:           role === "viewer",
+    canEdit:            role === "editor" || role === "admin",
+    canPublish:         role === "editor" || role === "admin",
+    canManageUsers:     role === "admin",
+    canManageRedirects: role === "editor" || role === "admin",
+    canView:            !!user,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

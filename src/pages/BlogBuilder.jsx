@@ -329,7 +329,7 @@ function LoginScreen() {
 // BLOG PICKER
 // ═════════════════════════════════════════════════════════════════════════════
 function BlogPicker({ onSelect }) {
-  const { user, logout } = useAuth();
+  const { user, logout, canEdit, isAdmin, canManageRedirects } = useAuth();
   const [query, setQuery] = useState("");
   const filtered = BLOGS.filter((b) =>
     b.headline?.toLowerCase().includes(query.toLowerCase()) ||
@@ -342,8 +342,8 @@ function BlogPicker({ onSelect }) {
     { id: "home",      label: "Home",      Icon: Home,       active: false, onClick: () => onSelect(null) },
     { id: "blog",      label: "Blogs",     Icon: FileText,   active: true,  onClick: () => {} },
     { id: "media",     label: "Media",     Icon: MediaIcon,  active: false, onClick: () => onSelect(null) },
-    { id: "redirects", label: "Redirects", Icon: ArrowRight, active: false, onClick: () => onSelect(null) },
-    { id: "users",     label: "Users",     Icon: UsersIcon,  active: false, onClick: () => onSelect(null) },
+    ...(canManageRedirects ? [{ id: "redirects", label: "Redirects", Icon: ArrowRight, active: false, onClick: () => onSelect(null) }] : []),
+    ...(isAdmin ? [{ id: "users", label: "Users", Icon: UsersIcon, active: false, onClick: () => onSelect(null) }] : []),
   ];
 
   return (
@@ -393,6 +393,7 @@ function BlogPicker({ onSelect }) {
         <div className="max-w-4xl mx-auto w-full px-6 py-10">
           <h2 className="text-2xl font-bold text-[#111827] mb-2">What would you like to do?</h2>
           <p className="text-sm text-slate-500 mb-8">Create a new blog post, or open an existing one to edit.</p>
+          {canEdit ? (
           <button onClick={() => onSelect(null)}
             className="w-full mb-8 flex items-center gap-4 p-5 rounded-2xl border-2 border-dashed border-[#1A614F]/30 bg-[#F0FDF4] hover:border-[#1A614F] hover:bg-[#E9FFF3] transition-all group text-left">
             <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform" style={{ background: "linear-gradient(135deg,#1A614F,#0d3d30)" }}>
@@ -403,6 +404,12 @@ function BlogPicker({ onSelect }) {
               <div className="text-sm text-slate-500 mt-0.5">Start fresh with a blank post</div>
             </div>
           </button>
+          ) : (
+          <div className="w-full mb-8 flex items-center gap-4 p-5 rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50 cursor-not-allowed">
+            <div className="w-12 h-12 rounded-xl bg-slate-200 flex items-center justify-center flex-shrink-0"><Plus size={22} className="text-slate-400" /></div>
+            <div><div className="font-bold text-slate-400 text-base">Create new blog</div><div className="text-sm text-slate-400 mt-0.5">Viewer role — no create access</div></div>
+          </div>
+          )}
           <div className="mb-4 flex items-center justify-between">
             <h3 className="font-bold text-slate-700 text-sm uppercase tracking-wider">Edit existing ({BLOGS.length} blogs)</h3>
             <div className="relative">
@@ -440,10 +447,11 @@ function BlogPicker({ onSelect }) {
                         <div className="font-semibold text-slate-800 text-sm" style={{ display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>{blog.headline || blog.title}</div>
                         <div className="text-[11px] text-[#1A614F] font-mono truncate mt-0.5 opacity-70">https://www.novaranatureestates.com/blog/{blog.slug}</div>
                       </div>
+                      {canEdit && (
                       <button onClick={() => onSelect(blog)} title="Edit blog"
                         className="w-8 h-8 rounded-lg flex items-center justify-center border border-slate-200 text-slate-400 hover:border-[#E3A600] hover:text-[#E3A600] hover:bg-[#FFF8E6] transition-all flex-shrink-0">
                         <Edit3 size={14} />
-                      </button>
+                      </button>)}
                     </div>
                   ))}
                 </div>
@@ -1225,8 +1233,8 @@ function BlogEditor({ editingBlog, onBack }) {
     { id: "home_blank", label: "Home",      Icon: Home,       onClick: () => setActiveNav("home_blank") },
     { id: "home",      label: "Blogs",     Icon: FileText,   onClick: onBack },
     { id: "media",     label: "Media",     Icon: MediaIcon,  onClick: () => setActiveNav("media") },
-    { id: "redirects", label: "Redirects", Icon: ArrowRight, onClick: () => setActiveNav("redirects") },
-    { id: "users",     label: "Users",     Icon: UsersIcon,  onClick: () => setActiveNav("users") },
+    ...(canManageRedirects ? [{ id: "redirects", label: "Redirects", Icon: ArrowRight, onClick: () => setActiveNav("redirects") }] : []),
+    ...(isAdmin ? [{ id: "users", label: "Users", Icon: UsersIcon, onClick: () => setActiveNav("users") }] : []),
   ];
 
   return (
@@ -1441,6 +1449,12 @@ function BlogEditor({ editingBlog, onBack }) {
                 className="w-full bg-white border border-[#ECE6D6] rounded-2xl px-5 py-4 text-[1.7em] font-extrabold text-[#15302A] placeholder:text-[#aab0a8] placeholder:font-semibold focus:outline-none focus:border-[#1A614F] focus:shadow-[0_0_0_3px_rgba(26,97,79,.12)] shadow-sm"
               />
 
+              {/* Viewer read-only banner */}
+              {!canEdit && (
+                <div className="mb-4 flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#FBF1D2] border border-[#E3A600]/40 text-[13px] text-[#9a6b00] font-semibold">
+                  <ViewIcon size={15} /> You have <strong>view-only</strong> access. Contact an admin to request edit permissions.
+                </div>
+              )}
               {/* Permalink / slug */}
               <div className="mt-2 flex items-center flex-wrap gap-2 text-[13px] text-[#5B6B63]">
                 <span className="font-semibold">Permalink:</span>
@@ -1468,26 +1482,26 @@ function BlogEditor({ editingBlog, onBack }) {
               </div>
 
               {/* Add Media */}
-              <div className="mt-4 flex items-center gap-2">
+              {canEdit && <div className="mt-4 flex items-center gap-2">
                 <button onClick={onImageClick} className="wp-secondary flex items-center gap-1.5">
                   {imageUploading ? <Loader size={13} className="animate-spin" /> : <ImageIcon size={13} />} Add Media
                 </button>
                 <span className="text-[11px] text-[#646970]">Insert an image at your cursor</span>
-              </div>
+              </div>}
 
               {/* Editor box */}
               <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm overflow-hidden">
-                <Toolbar
+                {canEdit && <Toolbar
                   exec={exec}
                   onLink={onLink} onUnlink={onUnlink} onImage={onImageClick}
                   format={format} setFormat={handleFormatChange}
                   color={color} setColor={setColor}
                   imageUploading={imageUploading}
-                />
+                />}
                 <div
                   ref={bodyRef}
                   className="wp-editor px-5 py-4 text-[15px] min-h-[440px]"
-                  contentEditable
+                  contentEditable={canEdit}
                   suppressContentEditableWarning
                   data-placeholder="Start writing your post…"
                   onFocus={onEditorFocus}
@@ -1861,7 +1875,7 @@ function BlogEditor({ editingBlog, onBack }) {
 
             {/* RIGHT SIDEBAR — meta boxes */}
             <div className="w-[280px] shrink-0">
-              {activeNav !== "redirects" && activeNav !== "users" && activeNav !== "media" && activeNav !== "home_blank" && (<>
+              {activeNav !== "redirects" && activeNav !== "users" && activeNav !== "media" && activeNav !== "home_blank" && canEdit && (<>
               {/* PUBLISH BOX (matches reference) */}
               <div className="meta-box">
                 <div className="meta-box-head">
@@ -1903,9 +1917,13 @@ function BlogEditor({ editingBlog, onBack }) {
 
                   <div className="mt-4 pt-3 border-t border-[#E6E1D3] flex items-center justify-between">
                     <button onClick={onBack} className="text-[12px] text-[#b32d2e] hover:text-[#8a2424] hover:underline">Move to Trash</button>
+                    {canPublish ? (
                     <button onClick={publishBlog} disabled={publishStatus === "loading"} className="wp-primary flex items-center gap-1.5">
                       {publishStatus === "loading" ? <><Loader size={13} className="animate-spin" /> Updating…</> : <><Send size={13} /> {isEditMode ? "Update" : "Publish"}</>}
                     </button>
+                    ) : (
+                    <span className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-400 text-[12px] font-semibold flex items-center gap-1.5"><ViewIcon size={13}/> View only</span>
+                    )}
                   </div>
                 </div>
               </div>
