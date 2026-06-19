@@ -4,7 +4,7 @@ export const REDIRECTS = [
     "from": "www.manasi.com",
     "to": "www.srinivvas.com",
     "type": "301",
-    "status": true,
+    "status": false,
     "date": "19/06/2026"
   }
 ];
