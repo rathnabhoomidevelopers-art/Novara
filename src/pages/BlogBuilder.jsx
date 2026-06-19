@@ -436,18 +436,29 @@ function BlogPicker({ onSelect }) {
         <h2 className="text-2xl font-bold text-[#111827] mb-2">What would you like to do?</h2>
         <p className="text-sm text-slate-500 mb-8">Create a new blog post, or select an existing one to edit.</p>
         {canEdit ? (
-        <button onClick={() => onSelect(null)}
-          className="w-full mb-8 flex items-center gap-4 p-5 rounded-2xl border-2 border-dashed border-[#1A614F]/30
-            bg-[#F0FDF4] hover:border-[#1A614F] hover:bg-[#E9FFF3] transition-all group text-left">
-          <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform"
-            style={{ background: "linear-gradient(135deg,#1A614F,#0d3d30)" }}>
-            <Plus size={22} className="text-white" />
+          <button onClick={() => onSelect(null)}
+            className="w-full mb-8 flex items-center gap-4 p-5 rounded-2xl border-2 border-dashed border-[#1A614F]/30
+              bg-[#F0FDF4] hover:border-[#1A614F] hover:bg-[#E9FFF3] transition-all group text-left">
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform"
+              style={{ background: "linear-gradient(135deg,#1A614F,#0d3d30)" }}>
+              <Plus size={22} className="text-white" />
+            </div>
+            <div>
+              <div className="font-bold text-[#1A614F] text-base">Create new blog</div>
+              <div className="text-sm text-slate-500 mt-0.5">Start fresh with a blank canvas</div>
+            </div>
+          </button>
+        ) : (
+          <div className="w-full mb-8 flex items-center gap-4 p-5 rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50 cursor-not-allowed">
+            <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 bg-slate-200">
+              <Plus size={22} className="text-slate-400" />
+            </div>
+            <div>
+              <div className="font-bold text-slate-400 text-base">Create new blog</div>
+              <div className="text-sm text-slate-400 mt-0.5">Viewers cannot create blogs</div>
+            </div>
           </div>
-          <div>
-            <div className="font-bold text-[#1A614F] text-base">Create new blog</div>
-            <div className="text-sm text-slate-500 mt-0.5">Start fresh with a blank canvas</div>
-          </div>
-        </button>
+        )}
         <div className="mb-4 flex items-center justify-between">
           <h3 className="font-bold text-slate-700 text-sm uppercase tracking-wider">Edit existing ({BLOGS.length} blogs)</h3>
           <div className="relative">
@@ -458,8 +469,7 @@ function BlogPicker({ onSelect }) {
         </div>
         <div className="space-y-2">
           {filtered.map((blog) => (
-            {canEdit && <button key={blog.id} onClick={() => onSelect(blog)}
-              className="w-full flex items-center gap-4 p-4 rounded-xl bg-white border border-slate-200 hover:border-[#E3A600] hover:shadow-md transition-all group text-left">
+            <div key={blog.id} className="w-full flex items-center gap-4 p-4 rounded-xl bg-white border border-slate-200 hover:border-[#E3A600] hover:shadow-md transition-all group text-left">
               <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-slate-100 border border-slate-100">
                 {blog.heroImage || blog.image
                   ? <img src={blog.heroImage || blog.image} alt={blog.title} className="w-full h-full object-cover" />
@@ -473,8 +483,12 @@ function BlogPicker({ onSelect }) {
                   <span className="text-[11px] text-slate-400 truncate">{blog.slug}</span>
                 </div>
               </div>
-              <Edit3 size={14} className="text-slate-300 group-hover:text-[#E3A600] flex-shrink-0 transition-colors" />
-            </button>
+              {canEdit && (
+                <button onClick={() => onSelect(blog)} className="shrink-0 w-8 h-8 rounded-lg border border-slate-200 flex items-center justify-center text-slate-400 hover:border-[#E3A600] hover:text-[#E3A600] hover:bg-[#FFF8E6] transition-all">
+                  <Edit3 size={14} />
+                </button>
+              )}
+            </div>
           ))}
           {filtered.length === 0 && (
             <div className="text-center py-10 text-slate-400 text-sm">No blogs match "{query}"</div>
@@ -491,7 +505,6 @@ function BlogPicker({ onSelect }) {
 function BlogEditor({ editingBlog, onBack }) {
   const { token, user, logout, canEdit, canPublish, isAdmin } = useAuth();
   const [isEditMode] = useState(!!editingBlog);
-  // viewer banner shown below title
 
   const [elements, setElements]             = useState([]);
   const [selectedId, setSelectedId]         = useState(null);
@@ -1571,6 +1584,9 @@ function BlogEditor({ editingBlog, onBack }) {
                       : <><Send size={14} /> {isEditMode ? "Update Blog on GitHub" : "Publish to GitHub"}</>
                     }
                   </button>
+                  ) : (
+                  <span className="inline-flex items-center gap-1.5 w-full justify-center px-4 py-2 rounded-xl bg-slate-100 text-slate-400 text-[13px] font-semibold">View only</span>
+                  )}
                   {publishStatus === "success" && (
                     <div className="flex items-center gap-2 text-[#1B9A63] bg-[#E9FFF3] border border-green-200 rounded-lg px-3 py-2 text-xs font-medium">
                       <CheckCircle size={13} /> {publishMsg}
