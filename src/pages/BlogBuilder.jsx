@@ -347,11 +347,11 @@ function BlogPicker({ onSelect }) {
   ];
 
   return (
-    <div className="min-h-screen flex" style={{ fontFamily: "'Urbanist', sans-serif" }}>
+    <div className="h-screen flex overflow-hidden" style={{ fontFamily: "'Urbanist', sans-serif" }}>
       <style>{`@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap');`}</style>
 
       {/* ── LEFT SIDEBAR ── */}
-      <aside className="w-[184px] shrink-0 flex flex-col text-[#EAF4EF]" style={{ background: "linear-gradient(180deg,#1A614F 0%,#10463782 60%,#0d3d30 100%)" }}>
+      <aside className="w-[184px] shrink-0 flex flex-col text-[#EAF4EF] h-screen sticky top-0" style={{ background: "linear-gradient(180deg,#1A614F 0%,#10463782 60%,#0d3d30 100%)" }}>
         <div className="flex items-center gap-2.5 px-5 h-16 border-b border-white/10">
           <div className="w-8 h-8 rounded-xl flex items-center justify-center shadow-md" style={{ background: "#E3A600" }}><Leaf size={16} className="text-[#15302A]" /></div>
           <div className="leading-tight">
@@ -359,7 +359,7 @@ function BlogPicker({ onSelect }) {
             <div className="text-[9px] font-semibold uppercase tracking-[0.18em] text-[#E3A600]">Nature Estates</div>
           </div>
         </div>
-        <nav className="py-3 px-2.5 flex-1 space-y-1">
+        <nav className="py-3 px-2.5 flex-1 space-y-1 overflow-y-auto">
           {pickerNavItems.map(({ id, label, Icon, active, onClick }) => (
             <button key={id} onClick={onClick}
               className="w-full flex items-center gap-2.5 px-3 py-2.5 text-[13px] rounded-xl transition-all"
@@ -381,7 +381,7 @@ function BlogPicker({ onSelect }) {
       </aside>
 
       {/* MAIN CONTENT */}
-      <div className="flex-1 min-w-0 flex flex-col" style={{ background: "#F4F1E8" }}>
+      <div className="flex-1 min-w-0 flex flex-col overflow-y-auto" style={{ background: "#F4F1E8" }}>
         {/* top bar */}
         <div className="h-16 bg-white border-b border-[#ECE6D6] flex items-center justify-between px-6 shadow-sm">
           <h1 className="text-[19px] font-extrabold text-[#15302A] tracking-tight">Blog Builder</h1>
@@ -1362,9 +1362,9 @@ function BlogEditor({ editingBlog, onBack }) {
         );
       })()}
 
-      <div className="flex min-h-screen nv-root">
+      <div className="flex h-screen overflow-hidden nv-root">
         {/* ── LEFT NAV (Novara) ──────────────────────────────── */}
-        <aside className="w-[184px] shrink-0 flex flex-col text-[#EAF4EF]" style={{ background: "linear-gradient(180deg,#1A614F 0%,#10463782 60%,#0d3d30 100%)" }}>
+        <aside className="w-[184px] shrink-0 flex flex-col text-[#EAF4EF] h-screen sticky top-0" style={{ background: "linear-gradient(180deg,#1A614F 0%,#10463782 60%,#0d3d30 100%)" }}>
           <div className="flex items-center gap-2.5 px-5 h-16 border-b border-white/10">
             <div className="w-8 h-8 rounded-xl flex items-center justify-center shadow-md" style={{ background: "#E3A600" }}><Leaf size={16} className="text-[#15302A]" /></div>
             <div className="leading-tight">
@@ -1372,7 +1372,7 @@ function BlogEditor({ editingBlog, onBack }) {
               <div className="text-[9px] font-semibold uppercase tracking-[0.18em] text-[#E3A600]">Nature Estates</div>
             </div>
           </div>
-          <nav className="py-3 px-2.5 flex-1 space-y-1">
+          <nav className="py-3 px-2.5 flex-1 space-y-1 overflow-y-auto">
             {navItems.map(({ id, label, Icon, onClick }) => {
               const active = activeNav === id;
               return (
@@ -1397,7 +1397,7 @@ function BlogEditor({ editingBlog, onBack }) {
         </aside>
 
         {/* ── MAIN ────────────────────────────────────────────────────── */}
-        <div className="flex-1 min-w-0 flex flex-col">
+        <div className="flex-1 min-w-0 flex flex-col overflow-y-auto">
           {/* top bar */}
           <div className="h-16 bg-white border-b border-[#ECE6D6] flex items-center justify-between px-6">
             <div className="flex items-center gap-3">
