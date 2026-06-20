@@ -1440,14 +1440,18 @@ function BlogEditor({ editingBlog, onBack }) {
                 </div>
               </div>
             ) : (
-            <div className="flex-1 min-w-0 overflow-y-auto h-full">
-              {/* Title (H1) */}
-              <input
-                value={meta.title}
-                onChange={(e) => setMeta((p) => ({ ...p, slug: (p.slug || ""), title: e.target.value }))}
-                placeholder="Add title"
-                className="w-full bg-white border border-[#ECE6D6] rounded-2xl px-5 py-4 text-[1.7em] font-extrabold text-[#15302A] placeholder:text-[#aab0a8] placeholder:font-semibold focus:outline-none focus:border-[#1A614F] focus:shadow-[0_0_0_3px_rgba(26,97,79,.12)] shadow-sm"
-              />
+            <div className="flex-1 min-w-0 flex flex-col h-full overflow-hidden">
+              {/* Title (H1) — fixed, does not scroll */}
+              <div className="shrink-0 pb-3" style={{ background: "#F7F4EB" }}>
+                <input
+                  value={meta.title}
+                  onChange={(e) => setMeta((p) => ({ ...p, slug: (p.slug || ""), title: e.target.value }))}
+                  placeholder="Add title"
+                  className="w-full bg-white border border-[#ECE6D6] rounded-2xl px-5 py-4 text-[1.7em] font-extrabold text-[#15302A] placeholder:text-[#aab0a8] placeholder:font-semibold focus:outline-none focus:border-[#1A614F] focus:shadow-[0_0_0_3px_rgba(26,97,79,.12)] shadow-sm"
+                />
+              </div>
+              {/* Scrollable content below title */}
+              <div className="flex-1 overflow-y-auto">
 
               {!canEdit && (
                 <div className="mb-4 flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#FBF1D2] border border-[#E3A600]/40 text-[13px] text-[#9a6b00] font-semibold">
@@ -1869,6 +1873,7 @@ function BlogEditor({ editingBlog, onBack }) {
                     </div>
                   </div>
                 )}
+              </div>
               </div>
             </div>
             )}
