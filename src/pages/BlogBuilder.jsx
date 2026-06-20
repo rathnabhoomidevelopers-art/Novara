@@ -1493,18 +1493,23 @@ function BlogEditor({ editingBlog, onBack }) {
                 <span className="text-[11px] text-[#646970]">Insert an image at your cursor</span>
               </div>)}
 
-              {/* Editor box */}
-              <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm overflow-hidden">
-                {canEdit && <Toolbar
-                  exec={exec}
-                  onLink={onLink} onUnlink={onUnlink} onImage={onImageClick}
-                  format={format} setFormat={handleFormatChange}
-                  color={color} setColor={setColor}
-                  imageUploading={imageUploading}
-                />}
+              {/* Editor box — Toolbar fixed, body scrolls */}
+              <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm overflow-hidden flex flex-col">
+                {/* Toolbar — fixed, never scrolls */}
+                {canEdit && <div className="shrink-0">
+                  <Toolbar
+                    exec={exec}
+                    onLink={onLink} onUnlink={onUnlink} onImage={onImageClick}
+                    format={format} setFormat={handleFormatChange}
+                    color={color} setColor={setColor}
+                    imageUploading={imageUploading}
+                  />
+                </div>}
+                {/* Body — scrollable */}
                 <div
                   ref={bodyRef}
-                  className="wp-editor px-5 py-4 text-[15px] min-h-[440px]"
+                  className="wp-editor px-5 py-4 text-[15px] overflow-y-auto"
+                  style={{ minHeight: "440px" }}
                   contentEditable={canEdit}
                   suppressContentEditableWarning
                   data-placeholder="Start writing your post…"
