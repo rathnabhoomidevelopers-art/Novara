@@ -3,7 +3,7 @@ export const BLOGS = [
     "id": 25,
     "slug": "farmland-near-hindupur-guide",
     "category": "Managed Farmland",
-    "title": "Farmland Near Hindupur — Investor Guide ",
+    "title": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
     "headline": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
     "description": "A complete investor guide to farmland near Hindupur on the NH44 corridor — location advantages, connectivity, investment potential, and what to check before buying.",
     "date": "May 3, 2026",
@@ -13,6 +13,10 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1777790220/kf9tclbzzxclsz3gl0cd.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1777790220/kf9tclbzzxclsz3gl0cd.webp",
     "imageAlt": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
+    "imageTitle": "",
+    "imageCaption": "",
+    "imageDescription": "",
+    "videoUrl": "",
     "tags": [],
     "sections": [
       {
@@ -22,12 +26,12 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "This is not because Hindupur is not a place to invest. It is just that people do not talk about it much.. Hindupuram is very important for the whole Lepakshi farmland area. It has hospitals, banks, fuel stations, markets and other things that people need. This makes it a good place to own land.\n",
+        "text": "This is not because Hindupur is not a place to invest. It is just that people do not talk about it much.. Hindupuram is very important for the whole Lepakshi farmland area. It has hospitals, banks, fuel stations, markets and other things that people need. This makes it a good place to own land.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Hindupuram is a place to invest in farmland because it has direct access to NH44. It also has local businesses and is near the Bangalore airport. This guide will explain what Hindupuram has to offer for people who want to invest in farmland & how it fits into the picture of the NH44 corridor and what to check before making a decision.\n",
+        "text": "Hindupuram is a place to invest in farmland because it has direct access to NH44. It also has local businesses and is near the Bangalore airport. This guide will explain what Hindupuram has to offer for people who want to invest in farmland &amp; how it fits into the picture of the NH44 corridor and what to check before making a decision.",
         "fontWeight": "font-normal"
       },
       {
@@ -37,17 +41,17 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "\nHindupur is a town in the Anantapur district of Andhra Pradesh. It is on NH44, 130 kilometers north of Bangalore and 10 minutes from Ecovara Farm Plots near Lepakshi.\n",
+        "text": "Hindupur is a town in the Anantapur district of Andhra Pradesh. It is on NH44, 130 kilometers north of Bangalore and 10 minutes from Ecovara Farm Plots near Lepakshi.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "The fact that Hindupuram is on NH44 is a plus for investors. The highway connects Hindupuram to Bangalore and Hyderabad making it an important part of an infrastructure corridor. The road is good and getting better all the time.\n",
+        "text": "The fact that Hindupuram is on NH44 is a plus for investors. The highway connects Hindupuram to Bangalore and Hyderabad making it an important part of an infrastructure corridor. The road is good and getting better all the time.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "From Kempegowda International Airport at Devanahalli Hindupuram is 85 kilometers away. This is a bit farther than Lepakshi. Still close enough to be convenient.\n",
+        "text": "From Kempegowda International Airport at Devanahalli Hindupuram is 85 kilometers away. This is a bit farther than Lepakshi. Still close enough to be convenient.",
         "fontWeight": "font-normal"
       },
       {
@@ -56,57 +60,18 @@ export const BLOGS = [
         "fontWeight": "font-bold"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "First :"
-          },
-          {
-            "bold": false,
-            "text": " it is the center of services for the Lepakshi farmland area. Every farm owner who visits Ecovara or other managed farmland projects in the area goes through or near Hindupuram to get the things they need. This makes it a practical hub for the region."
-          }
-        ],
+        "type": "p",
+        "text": "<strong>First :</strong> it is the center of services for the Lepakshi farmland area. Every farm owner who visits Ecovara or other managed farmland projects in the area goes through or near Hindupuram to get the things they need. This makes it a practical hub for the region.",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Second  :"
-          },
-          {
-            "bold": false,
-            "text": "Hindupur has its local economy. It is not a small town that depends on Bangalore growth. It has its businesses and serves a big population in the Anantapur district. This means that there is demand for land that is not just based on Bangalore expansion."
-          }
-        ],
+        "type": "p",
+        "text": "<strong>Second  :</strong>Hindupur has its local economy. It is not a small town that depends on Bangalore growth. It has its businesses and serves a big population in the Anantapur district. This means that there is demand for land that is not just based on Bangalore expansion.",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Third :"
-          },
-          {
-            "bold": false,
-            "text": "Hindupur is on the NH44 corridor as Lepakshi and Devanahalli. This means that land in and around Hindupuram will increase in value as the infrastructure in the area gets better."
-          }
-        ],
+        "type": "p",
+        "text": "<strong>Third :</strong>Hindupur is on the NH44 corridor as Lepakshi and Devanahalli. This means that land in and around Hindupuram will increase in value as the infrastructure in the area gets better.",
         "fontWeight": "font-normal"
       },
       {
@@ -116,17 +81,17 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "The reasons to invest in farmland near Hindupur are different from those for Lepakshi or Devanahalli.. They are just as good.\n",
+        "text": "The reasons to invest in farmland near Hindupur are different from those for Lepakshi or Devanahalli.. They are just as good.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Hindupuram has been the commercial center for a big agricultural area for a long time. It has hospitals, markets, banks and other important services. This means that the value of land in and around Hindupuram is based on local economic activity, not just speculation or Bangalore growth.\n",
+        "text": "Hindupuram has been the commercial center for a big agricultural area for a long time. It has hospitals, markets, banks and other important services. This means that the value of land in and around Hindupuram is based on local economic activity, not just speculation or Bangalore growth.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "The fact that Hindupuram is on NH44 also means that land there benefits from the infrastructure premium. As the highway gets better and more businesses move into the area the value of the land will go up.\nAnother advantage of Hindupuram is that the price of land is lower than in the Lepakshi area. This makes it an affordable option for people who want to invest in farmland in the NH44 corridor.\n",
+        "text": "The fact that Hindupuram is on NH44 also means that land there benefits from the infrastructure premium. As the highway gets better and more businesses move into the area the value of the land will go up.\nAnother advantage of Hindupuram is that the price of land is lower than in the Lepakshi area. This makes it an affordable option for people who want to invest in farmland in the NH44 corridor.",
         "fontWeight": "font-normal"
       },
       {
@@ -135,11 +100,8 @@ export const BLOGS = [
         "fontWeight": "font-bold"
       },
       {
-        "type": "p_with_link",
-        "textBefore": "For people who buy land at",
-        "linkText": "Ecovara Farm Plots  ",
-        "href": "https://novaranatureestates.com/projects",
-        "textAfter": " being close to Hindupur is a plus. It means that they have access to a town with services and amenities. If they need help they can go to Hindupuram. If they need supplies for their farm they can go to Hindupuram. This makes it a practical and enjoyable experience to own farmland in the area.",
+        "type": "p",
+        "text": "For people who buy land at <a href=\"https://novaranatureestates.com/projects\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">Ecovara Farm Plots  </a>  being close to Hindupur is a plus. It means that they have access to a town with services and amenities. If they need help they can go to Hindupuram. If they need supplies for their farm they can go to Hindupuram. This makes it a practical and enjoyable experience to own farmland in the area.",
         "fontWeight": "font-normal"
       },
       {
@@ -149,12 +111,12 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "When people look at the NH44 corridor they often consider both Lepakshi and Hindupuram. Here is how the two areas compare.\n\nLepakshi has the temple, which is a big draw for tourists. This means that land near the temple is more valuable. Lepakshi is also closer to Bangalore and the airport, which makes it more convenient for some people.\n",
+        "text": "When people look at the NH44 corridor they often consider both Lepakshi and Hindupuram. Here is how the two areas compare.\n\nLepakshi has the temple, which is a big draw for tourists. This means that land near the temple is more valuable. Lepakshi is also closer to Bangalore and the airport, which makes it more convenient for some people.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Hindupuram has its own advantages. It has a developed commercial center, with better services and amenities. It is also more affordable than Lepakshi, which makes it a good option for people who want to invest in farmland but do not want to spend much.\n\nThe best argument for investing in this corridor is that Lepakshi and Hindupuram are both options and they are close to each other. This means that people who invest in farmland in the area can get the benefits of both locations.\n",
+        "text": "Hindupuram has its own advantages. It has a developed commercial center, with better services and amenities. It is also more affordable than Lepakshi, which makes it a good option for people who want to invest in farmland but do not want to spend much.\n\nThe best argument for investing in this corridor is that Lepakshi and Hindupuram are both options and they are close to each other. This means that people who invest in farmland in the area can get the benefits of both locations.",
         "fontWeight": "font-normal"
       },
       {
@@ -164,7 +126,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "The area around Hindupuram is semi-arid which means that it does not get a lot of rain. The main crops grown in the area are groundnuts, coconuts, mangoes, tomatoes and vegetables.\n\nFor people who invest in managed farmland projects the regional agricultural context is important. The crops that are grown in the area are well suited to the climate. They can be profitable with the right management.\n",
+        "text": "The area around Hindupuram is semi-arid which means that it does not get a lot of rain. The main crops grown in the area are groundnuts, coconuts, mangoes, tomatoes and vegetables.\n\nFor people who invest in managed farmland projects the regional agricultural context is important. The crops that are grown in the area are well suited to the climate. They can be profitable with the right management.",
         "fontWeight": "font-normal"
       },
       {
@@ -174,15 +136,12 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "When people buy farmland near Hindupuram there are a things they should check.\n\nFirst they should make sure they understand which state the land is in, Karnataka or Andhra Pradesh. This is because the laws and regulations for farmland are different in each state.\n\nSecond they should check the water situation. In a -arid area water is very important for farming. They should make sure that the land has a borewell and a drip irrigation system.\n",
+        "text": "When people buy farmland near Hindupuram there are a things they should check.\n\nFirst they should make sure they understand which state the land is in, Karnataka or Andhra Pradesh. This is because the laws and regulations for farmland are different in each state.\n\nSecond they should check the water situation. In a -arid area water is very important for farming. They should make sure that the land has a borewell and a drip irrigation system.",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_link",
-        "textBefore": "Our",
-        "linkText": "legal guide to buying farmland in Karnataka",
-        "href": "https://www.novaranatureestates.com/blogs/how-to-buy-farmland-karnataka-legal-guide",
-        "textAfter": "Third they should check the title and revenue records for the land. This is to make sure that the land is legally owned and that there are no problems with the title.",
+        "type": "p",
+        "text": "Our <a href=\"https://www.novaranatureestates.com/blogs/how-to-buy-farmland-karnataka-legal-guide\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">legal guide to buying farmland in Karnataka</a> Third they should check the title and revenue records for the land. This is to make sure that the land is legally owned and that there are no problems with the title.",
         "fontWeight": "font-normal"
       },
       {
@@ -192,57 +151,57 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Being close, to Hindupuram is not just practical it also enhances the lifestyle of people who invest in farmland in the area. They can visit their farm on the weekends. Enjoy the local culture and amenities. This makes it an enjoyable and rewarding experience to own farmland in the NH44 corridor.\n",
+        "text": "Being close, to Hindupuram is not just practical it also enhances the lifestyle of people who invest in farmland in the area. They can visit their farm on the weekends. Enjoy the local culture and amenities. This makes it an enjoyable and rewarding experience to own farmland in the NH44 corridor.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "The area between Lepakshi and Hindupuram on NH44 is really rural. You see fields, some hills and the special kind of plants that grow in the Anantapur plateau. It feels very different from the area around Bangalore. Many people who visit for the time say this is the first thing they notice.\n\n",
+        "text": "The area between Lepakshi and Hindupuram on NH44 is really rural. You see fields, some hills and the special kind of plants that grow in the Anantapur plateau. It feels very different from the area around Bangalore. Many people who visit for the time say this is the first thing they notice.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "If you drive from Ecovara to Hindupuram it only takes 10 minutes on a road. You go through this landscape. The town of Hindupuram has a market where people sell produce, street food and other everyday things. It is not a place for tourists. It is a town where people live and work. This makes the experience of visiting Ecovara feel real not fake.\n",
+        "text": "If you drive from Ecovara to Hindupuram it only takes 10 minutes on a road. You go through this landscape. The town of Hindupuram has a market where people sell produce, street food and other everyday things. It is not a place for tourists. It is a town where people live and work. This makes the experience of visiting Ecovara feel real not fake.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Some people who own land at Ecovara like to visit the market in Hindupuram every weekend. They buy groundnuts, vegetables and other local produce before going back to their farm for lunch. This is the kind of thing you can do when you have a farm near a town. You cannot do this if your farm is in a remote area.\n\nEcovara is a project, just 10 minutes from Hindupuram. If you are thinking of investing in the area between Hindupuram and Lepakshi you should visit Ecovara first.\n",
+        "text": "Some people who own land at Ecovara like to visit the market in Hindupuram every weekend. They buy groundnuts, vegetables and other local produce before going back to their farm for lunch. This is the kind of thing you can do when you have a farm near a town. You cannot do this if your farm is in a remote area.\n\nEcovara is a project, just 10 minutes from Hindupuram. If you are thinking of investing in the area between Hindupuram and Lepakshi you should visit Ecovara first.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "It is located on NH44 near the Lepakshi Temple, 10 minutes from Hindupuram town and 75 kilometers from Kempegowda International Airport. The farm has mature coconut and mango trees. Over 800 trees on 15 acres of land. There are 64 kinds of trees and they are all producing fruit. The farm also has a working drip irrigation system, which is managed by the people at Novara. They have a borewell. There is always water.\n\nYou can buy plots of land in sizes: 6,000, 8,000 or 10,000 square feet. The land is legally clear. You get a registered sale deed. The people at Novara help with all the paperwork.\n\n",
+        "text": "It is located on NH44 near the Lepakshi Temple, 10 minutes from Hindupuram town and 75 kilometers from Kempegowda International Airport. The farm has mature coconut and mango trees. Over 800 trees on 15 acres of land. There are 64 kinds of trees and they are all producing fruit. The farm also has a working drip irrigation system, which is managed by the people at Novara. They have a borewell. There is always water.\n\nYou can buy plots of land in sizes: 6,000, 8,000 or 10,000 square feet. The land is legally clear. You get a registered sale deed. The people at Novara help with all the paperwork.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "There are amenities at Ecovara like a clubhouse swimming pool, cafeteria organic farming plots, a kids play area, a lotus pond, a campfire area and 24/7 security. The people at Novara take care of everything, including the plants, irrigation, security and communicating with the owners.\n\nYou can visit Ecovara. See the available plots.. You can schedule a free site visit. Many investors like the 10-minute drive from the project to Hindupuram town and back. It gives them a feeling about the place.\n",
+        "text": "There are amenities at Ecovara like a clubhouse swimming pool, cafeteria organic farming plots, a kids play area, a lotus pond, a campfire area and 24/7 security. The people at Novara take care of everything, including the plants, irrigation, security and communicating with the owners.\n\nYou can visit Ecovara. See the available plots.. You can schedule a free site visit. Many investors like the 10-minute drive from the project to Hindupuram town and back. It gives them a feeling about the place.",
         "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "Frequently Asked Questions About Farmland Near Hindupuram ",
+        "text": "Frequently Asked Questions About Farmland Near Hindupuram",
         "fontWeight": "font-bold"
       },
       {
         "type": "h3",
-        "text": "People often ask questions about buying farmland near Hindupuram. Is it a place to invest? \n",
+        "text": "People often ask questions about buying farmland near Hindupuram. Is it a place to invest?",
         "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Yes it is, if you choose the project. The town has infrastructure and it is connected to NH44. It is also near the Bangalore airport. But the climate is semi-arid so you need to have an irrigation system.\n",
+        "text": "Yes it is, if you choose the project. The town has infrastructure and it is connected to NH44. It is also near the Bangalore airport. But the climate is semi-arid so you need to have an irrigation system.",
         "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "How far is Hindupuram from Bangalore?\n",
+        "text": "How far is Hindupuram from Bangalore?",
         "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": " It is 130 kilometers from central Bangalore and it takes around 2 to 2.5 hours to drive there depending on traffic. From the airport it is 85 kilometers and it takes around 90 minutes.",
+        "text": "It is 130 kilometers from central Bangalore and it takes around 2 to 2.5 hours to drive there depending on traffic. From the airport it is 85 kilometers and it takes around 90 minutes.",
         "fontWeight": "font-normal"
       },
       {
@@ -252,7 +211,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": " It is in Andhra Pradeshs Anantapur district. You need to make sure you know which state the land is in because it affects the registration process and the taxes you pay.",
+        "text": "It is in Andhra Pradeshs Anantapur district. You need to make sure you know which state the land is in because it affects the registration process and the taxes you pay.",
         "fontWeight": "font-normal"
       },
       {
@@ -262,12 +221,12 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": " The Hindupuram region is semi-arid. It does not get much rain. So you need to have a borewell and a drip irrigation system to grow crops. You should check the water situation carefully before buying any land.\n",
+        "text": "The Hindupuram region is semi-arid. It does not get much rain. So you need to have a borewell and a drip irrigation system to grow crops. You should check the water situation carefully before buying any land.",
         "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "What kind of crops can you grow near Hindupuram? ",
+        "text": "What kind of crops can you grow near Hindupuram?",
         "fontWeight": "font-bold"
       },
       {
@@ -282,7 +241,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": " You should visit Ecovara first. It is 10 minutes from Hindupuram town so you can see the farm and the town in one visit. You can schedule a free site visit through the Novara website.\n",
+        "text": "You should visit Ecovara first. It is 10 minutes from Hindupuram town so you can see the farm and the town in one visit. You can schedule a free site visit through the Novara website.",
         "fontWeight": "font-normal"
       },
       {
@@ -291,14 +250,135 @@ export const BLOGS = [
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_link",
-        "textBefore": " You can call them at +91-8660200662 to",
-        "linkText": " schedule a site visit.",
-        "href": "https://novaranatureestates.com/contactus",
-        "textAfter": "",
+        "type": "p",
+        "text": "You can call them at +91-8660200662 to <font color=\"#e3a600\"><a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\"> schedule a site visit</a></font><a href=\"https://novaranatureestates.com/contactus\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">.</a>",
         "fontWeight": "font-normal"
       }
-    ]
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "",
+              "text": ""
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": ""
+          },
+          "headline": "",
+          "image": "",
+          "author": {
+            "@type": "Organization",
+            "name": "",
+            "url": ""
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "",
+            "logo": {
+              "@type": "ImageObject",
+              "url": ""
+            }
+          },
+          "datePublished": "",
+          "dateModified": ""
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "",
+              "item": ""
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "reviewCount": "",
+            "bestRating": "",
+            "worstRating": ""
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
   },
   {
     "id": 24,
