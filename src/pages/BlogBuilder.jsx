@@ -1684,6 +1684,7 @@ function BlogEditor({ editingBlog, onBack }) {
                   </div>
                 </div>
               )}
+              </div>{/* end scrollable editor area */}
 
               {/* POST SETTINGS / SEO BOX */}
               <div className="meta-box mt-5">
@@ -1873,7 +1874,6 @@ function BlogEditor({ editingBlog, onBack }) {
                     </div>
                   </div>
                 )}
-              </div>
               </div>
             </div>
             )}
