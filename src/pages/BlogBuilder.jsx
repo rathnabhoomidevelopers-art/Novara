@@ -1397,7 +1397,7 @@ function BlogEditor({ editingBlog, onBack }) {
         </aside>
 
         {/* ── MAIN ────────────────────────────────────────────────────── */}
-        <div className="flex-1 min-w-0 flex flex-col overflow-y-auto">
+        <div className="flex-1 min-w-0 flex flex-col overflow-hidden">
           {/* top bar */}
           <div className="h-16 bg-white border-b border-[#ECE6D6] flex items-center justify-between px-6">
             <div className="flex items-center gap-3">
@@ -1408,20 +1408,20 @@ function BlogEditor({ editingBlog, onBack }) {
             <button onClick={() => { if (pendingImageUrl) insertContentImage(); setTimeout(() => { const html = bodyRef.current ? bodyRef.current.innerHTML : ""; setBodySnapshot(html); setPreviewMode(true); }, 20); }} className="wp-secondary flex items-center gap-1.5"><Eye size={13} /> Preview</button>
           </div>
 
-          <div className="flex-1 flex gap-6 px-6 py-7 items-start" style={{ background: "#F7F4EB" }}>
+          <div className="flex-1 flex gap-6 px-6 py-7 items-start overflow-hidden" style={{ background: "#F7F4EB" }}>
             {/* CONTENT COLUMN */}
             {activeNav === "home_blank" ? (
-              <div className="flex-1 min-w-0" />
+              <div className="flex-1 min-w-0 overflow-y-auto h-full" />
             ) : activeNav === "media" ? (
-              <div className="flex-1 min-w-0">
+              <div className="flex-1 min-w-0 overflow-y-auto h-full">
                 <MediaLibraryPage meta={meta} bodyRef={bodyRef} />
               </div>
             ) : activeNav === "users" ? (
-              <div className="flex-1 min-w-0">
+              <div className="flex-1 min-w-0 overflow-y-auto h-full">
                 <UsersPanel ghToken={GH_TOKEN} ghRepo={GH_REPO} ghBranch={GH_BRANCH} />
               </div>
             ) : activeNav === "redirects" ? (
-              <div className="flex-1 min-w-0">
+              <div className="flex-1 min-w-0 overflow-y-auto h-full">
                 <div className="bg-white border border-[#ECE6D6] rounded-2xl shadow-sm p-6">
                   <div className="flex items-center gap-2 mb-4">
                     <ArrowRight size={18} className="text-[#1A614F]" />
@@ -1440,7 +1440,7 @@ function BlogEditor({ editingBlog, onBack }) {
                 </div>
               </div>
             ) : (
-            <div className="flex-1 min-w-0">
+            <div className="flex-1 min-w-0 overflow-y-auto h-full">
               {/* Title (H1) */}
               <input
                 value={meta.title}
@@ -1874,7 +1874,7 @@ function BlogEditor({ editingBlog, onBack }) {
             )}
 
             {/* RIGHT SIDEBAR — meta boxes */}
-            <div className="w-[280px] shrink-0">
+            <div className="w-[280px] shrink-0 sticky top-0 h-full overflow-y-auto">
               {activeNav !== "redirects" && activeNav !== "users" && activeNav !== "media" && activeNav !== "home_blank" && canEdit && (<>
               {/* PUBLISH BOX (matches reference) */}
               <div className="meta-box">
