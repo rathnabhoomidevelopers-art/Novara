@@ -1450,7 +1450,8 @@ function BlogEditor({ editingBlog, onBack }) {
                   className="w-full bg-white border border-[#ECE6D6] rounded-2xl px-5 py-4 text-[1.7em] font-extrabold text-[#15302A] placeholder:text-[#aab0a8] placeholder:font-semibold focus:outline-none focus:border-[#1A614F] focus:shadow-[0_0_0_3px_rgba(26,97,79,.12)] shadow-sm"
                 />
               </div>
-              {/* Fixed controls below title */}
+              {/* Scrollable content below title */}
+              <div className="flex-1 overflow-y-auto">
 
               {!canEdit && (
                 <div className="mb-4 flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#FBF1D2] border border-[#E3A600]/40 text-[13px] text-[#9a6b00] font-semibold">
@@ -1492,25 +1493,18 @@ function BlogEditor({ editingBlog, onBack }) {
                 <span className="text-[11px] text-[#646970]">Insert an image at your cursor</span>
               </div>)}
 
-              {/* Toolbar — fixed, never scrolls */}
-              {canEdit && (
-                <div className="mt-3 shrink-0 bg-white border border-[#ECE6D6] rounded-t-2xl shadow-sm">
-                  <Toolbar
-                    exec={exec}
-                    onLink={onLink} onUnlink={onUnlink} onImage={onImageClick}
-                    format={format} setFormat={handleFormatChange}
-                    color={color} setColor={setColor}
-                    imageUploading={imageUploading}
-                  />
-                </div>
-              )}
-
-              {/* Scrollable content below toolbar */}
-              <div className="flex-1 overflow-y-auto bg-white border-x border-b border-[#ECE6D6] rounded-b-2xl shadow-sm">
+              {/* Editor box */}
+              <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm overflow-hidden">
+                {canEdit && <Toolbar
+                  exec={exec}
+                  onLink={onLink} onUnlink={onUnlink} onImage={onImageClick}
+                  format={format} setFormat={handleFormatChange}
+                  color={color} setColor={setColor}
+                  imageUploading={imageUploading}
+                />}
                 <div
                   ref={bodyRef}
-                  className="wp-editor px-5 py-4 text-[15px]"
-                  style={{ minHeight: "440px" }}
+                  className="wp-editor px-5 py-4 text-[15px] min-h-[440px]"
                   contentEditable={canEdit}
                   suppressContentEditableWarning
                   data-placeholder="Start writing your post…"
@@ -1690,6 +1684,7 @@ function BlogEditor({ editingBlog, onBack }) {
                   </div>
                 </div>
               )}
+
               {/* POST SETTINGS / SEO BOX */}
               <div className="meta-box mt-5">
                 <button className="meta-box-head w-full" onClick={() => setShowSettings((v) => !v)}>
@@ -1878,6 +1873,7 @@ function BlogEditor({ editingBlog, onBack }) {
                     </div>
                   </div>
                 )}
+              </div>
               </div>
             </div>
             )}
