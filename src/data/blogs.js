@@ -167,17 +167,13 @@ export const BLOGS = [
       },
       {
         "type": "h2",
-        "text": "Frequently Asked QuestionsWhere is the Ecovara Farmplot located?",
+        "text": "Frequently Asked Questions",
         "fontWeight": "font-bold"
       },
       {
-        "type": "ol",
-        "text": [
-          "What sizes are the Ecovara farm plots?\nThe Ecovara farm plots are available in 6,000, 8,000 and 10,000 sq.ft configurations, all within a gated 15-acre community.",
-          "What is the Ecovara Farmplot price?\nThe Ecovara Farmplot price is shared on enquiry. You can unlock per-configuration pricing by downloading the brochure or contacting the Novara team for the latest rates and offers.",
-          "Is Ecovara a managed farmland project?\nYes. The plantation and ongoing maintenance are professionally managed, which makes it a low-hassle managed farmland near Bangalore that you can simply enjoy.",
-          "What amenities does Ecovara offer?\nEcovara amenities include a 64-plus variety tree plantation, a cafeteria, a jogging and pet route, solar street lights and 24/7 security."
-        ]
+        "type": "h2",
+        "text": "Where is the Ecovara Farmplot located?Ecovara is located near Lepakshi on the Bengaluru–Hyderabad National Highway, roughly 10 minutes from the Lepakshi Temple and about 75 minutes from Kempegowda International Airport, Devanahalli.What sizes are the Ecovara farm plots?The Ecovara farm plots are available in 6,000, 8,000 and 10,000 sq.ft configurations, all within a gated 15-acre community.What is the Ecovara Farmplot price?The Ecovara Farmplot price is shared on enquiry. You can unlock per-configuration pricing by downloading the brochure or contacting the Novara team for the latest rates and offers.Is Ecovara a managed farmland project?Yes. The plantation and ongoing maintenance are professionally managed, which makes it a low-hassle managed farmland near Bangalore that you can simply enjoy.What amenities does Ecovara offer?Ecovara amenities include a 64-plus variety tree plantation, a cafeteria, a jogging and pet route, solar street lights and 24/7 security.",
+        "fontWeight": "font-bold"
       }
     ],
     "schemas": {
@@ -187,8 +183,8 @@ export const BLOGS = [
         "data": {
           "items": [
             {
-              "name": "What sizes are the Ecovara farm plots?",
-              "text": "The Ecovara farm plots are available in 6,000, 8,000 and 10,000 sq.ft configurations, all within a gated 15-acre community."
+              "name": "Where is the Ecovara Farmplot located?",
+              "text": "Ecovara is located near Lepakshi on the Bengaluru–Hyderabad National Highway, roughly 10 minutes from the Lepakshi Temple and about 75 minutes from Kempegowda International Airport, Devanahalli."
             },
             {
               "name": "What sizes are the Ecovara farm plots?",
