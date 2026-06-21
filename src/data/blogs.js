@@ -614,7 +614,7 @@ export const BLOGS = [
           },
           "publisher": {
             "@type": "Organization",
-            "name": "",
+            "name": "Novara Nature Estates",
             "logo": {
               "@type": "ImageObject",
               "url": "https://www.novaranatureestates.com/blogs/farmland-near-hindupur-guide"
