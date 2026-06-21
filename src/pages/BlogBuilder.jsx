@@ -1494,17 +1494,22 @@ function BlogEditor({ editingBlog, onBack }) {
               </div>)}
 
               {/* Editor box */}
-              <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm overflow-hidden">
-                {canEdit && <Toolbar
-                  exec={exec}
-                  onLink={onLink} onUnlink={onUnlink} onImage={onImageClick}
-                  format={format} setFormat={handleFormatChange}
-                  color={color} setColor={setColor}
-                  imageUploading={imageUploading}
-                />}
+              <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm overflow-hidden flex flex-col" style={{ maxHeight: "60vh" }}>
+                {/* Toolbar — fixed */}
+                {canEdit && <div className="shrink-0 border-b border-[#ECE6D6]">
+                  <Toolbar
+                    exec={exec}
+                    onLink={onLink} onUnlink={onUnlink} onImage={onImageClick}
+                    format={format} setFormat={handleFormatChange}
+                    color={color} setColor={setColor}
+                    imageUploading={imageUploading}
+                  />
+                </div>}
+                {/* Body — scrollable */}
                 <div
                   ref={bodyRef}
-                  className="wp-editor px-5 py-4 text-[15px] min-h-[440px]"
+                  className="wp-editor px-5 py-4 text-[15px] overflow-y-auto flex-1"
+                  style={{ minHeight: "300px" }}
                   contentEditable={canEdit}
                   suppressContentEditableWarning
                   data-placeholder="Start writing your post…"
