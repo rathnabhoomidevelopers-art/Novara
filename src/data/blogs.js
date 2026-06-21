@@ -1030,13 +1030,21 @@ export const BLOGS = [
         "json": ""
       },
       "breadcrumb": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "items": [
             {
-              "name": "",
-              "item": ""
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blog Page",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Farm Plots Near Bangalore Airport — The Investment Case Examined Honestly",
+              "item": "https://www.novaranatureestates.com/blogs/farm-plots-near-bangalore-airport"
             }
           ]
         },
