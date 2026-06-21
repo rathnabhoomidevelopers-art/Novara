@@ -1494,7 +1494,7 @@ function BlogEditor({ editingBlog, onBack }) {
               </div>)}
 
               {/* Editor box */}
-              <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm overflow-hidden flex flex-col" style={{ maxHeight: "60vh" }}>
+              <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm overflow-hidden flex flex-col" style={{ maxHeight: "120vh" }}>
                 {/* Toolbar — fixed */}
                 {canEdit && <div className="shrink-0 border-b border-[#ECE6D6]">
                   <Toolbar
@@ -1509,7 +1509,7 @@ function BlogEditor({ editingBlog, onBack }) {
                 <div
                   ref={bodyRef}
                   className="wp-editor px-5 py-4 text-[15px] overflow-y-auto flex-1"
-                  style={{ minHeight: "300px" }}
+                  style={{ minHeight: "600px" }}
                   contentEditable={canEdit}
                   suppressContentEditableWarning
                   data-placeholder="Start writing your post…"
