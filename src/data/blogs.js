@@ -171,9 +171,13 @@ export const BLOGS = [
         "fontWeight": "font-bold"
       },
       {
-        "type": "p",
-        "text": "<p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:7pt;margin-bottom:2pt;\"></p><ol><li><span style=\"background-color: transparent; font-variant: normal; vertical-align: baseline; text-wrap-mode: wrap;\"><span style=\"color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; font-weight: 700; white-space-collapse: preserve;\">What sizes are the Ecovara farm plots?</span><span style=\"color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 14.6667px; font-weight: 700; white-space-collapse: preserve;\">\n</span></span>The Ecovara farm plots are available in 6,000, 8,000 and 10,000 sq.ft configurations, all within a gated 15-acre community.</li><li><span style=\"background-color: transparent; text-wrap-mode: wrap;\"><span style=\"color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; font-weight: 700; white-space-collapse: preserve;\">What is the Ecovara Farmplot price?</span><span style=\"color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 14.6667px; font-weight: 700; white-space-collapse: preserve;\">\n</span></span>The Ecovara Farmplot price is shared on enquiry. You can unlock per-configuration pricing by downloading the brochure or contacting the Novara team for the latest rates and offers.</li><li><span style=\"background-color: transparent; text-wrap-mode: wrap;\"><span style=\"color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; font-weight: 700; white-space-collapse: preserve;\">Is Ecovara a managed farmland project?</span><span style=\"color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 14.6667px; font-weight: 700; white-space-collapse: preserve;\">\n</span></span>Yes. The plantation and ongoing maintenance are professionally managed, which makes it a low-hassle managed farmland near Bangalore that you can simply enjoy.</li><li><span style=\"background-color: transparent; text-wrap-mode: wrap;\"><span style=\"color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; font-weight: 700; white-space-collapse: preserve;\">What amenities does Ecovara offer?</span><span style=\"color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 14.6667px; font-weight: 700; white-space-collapse: preserve;\">\n</span></span>Ecovara amenities include a 64-plus variety tree plantation, a cafeteria, a jogging and pet route, solar street lights and 24/7 security.</li></ol><p></p>",
-        "fontWeight": "font-normal"
+        "type": "ol",
+        "text": [
+          "What sizes are the Ecovara farm plots?\nThe Ecovara farm plots are available in 6,000, 8,000 and 10,000 sq.ft configurations, all within a gated 15-acre community.",
+          "What is the Ecovara Farmplot price?\nThe Ecovara Farmplot price is shared on enquiry. You can unlock per-configuration pricing by downloading the brochure or contacting the Novara team for the latest rates and offers.",
+          "Is Ecovara a managed farmland project?\nYes. The plantation and ongoing maintenance are professionally managed, which makes it a low-hassle managed farmland near Bangalore that you can simply enjoy.",
+          "What amenities does Ecovara offer?\nEcovara amenities include a 64-plus variety tree plantation, a cafeteria, a jogging and pet route, solar street lights and 24/7 security."
+        ]
       }
     ],
     "schemas": {
@@ -214,21 +218,21 @@ export const BLOGS = [
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": ""
+            "@id": "https://www.novaranatureestates.com/blogs/ecovara-farmplot-near-bangalore"
           },
           "headline": "Ecovara Farmplot Near Bangalore | Novara Estates",
-          "image": "",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782025339/xfy2orbwhpalbtdb7v3x.webp",
           "author": {
             "@type": "Organization",
             "name": "Novara Nature Estates",
-            "url": ""
+            "url": "https://www.novaranatureestates.com/blogs/ecovara-farmplot-near-bangalore"
           },
           "publisher": {
             "@type": "Organization",
-            "name": "",
+            "name": "Ecovara Farmplot Near Bangalore | Novara Estates",
             "logo": {
               "@type": "ImageObject",
-              "url": ""
+              "url": "https://www.novaranatureestates.com/blogs/ecovara-farmplot-near-bangalore"
             }
           },
           "datePublished": "21-06-2026",
