@@ -167,7 +167,12 @@ export const BLOGS = [
       },
       {
         "type": "h2",
-        "text": "Frequently Asked QuestionsWhere is the Ecovara Farmplot located?",
+        "text": "Frequently Asked Questions",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "h2",
+        "text": "Where is the Ecovara Farmplot located?",
         "fontWeight": "font-bold"
       },
       {
