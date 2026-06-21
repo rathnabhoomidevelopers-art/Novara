@@ -596,43 +596,51 @@ export const BLOGS = [
         "json": ""
       },
       "blog": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": ""
+            "@id": "https://www.novaranatureestates.com/blogs/farmland-near-hindupur-guide"
           },
-          "headline": "",
-          "image": "",
+          "headline": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1777790220/kf9tclbzzxclsz3gl0cd.webp",
           "author": {
             "@type": "Organization",
-            "name": "",
-            "url": ""
+            "name": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
+            "url": "https://www.novaranatureestates.com/"
           },
           "publisher": {
             "@type": "Organization",
             "name": "",
             "logo": {
               "@type": "ImageObject",
-              "url": ""
+              "url": "https://www.novaranatureestates.com/blogs/farmland-near-hindupur-guide"
             }
           },
-          "datePublished": "",
-          "dateModified": ""
+          "datePublished": "May 3, 2026",
+          "dateModified": "May 3, 2026"
         },
         "json": ""
       },
       "breadcrumb": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "items": [
             {
-              "name": "",
-              "item": ""
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blog Page",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
+              "item": "https://www.novaranatureestates.com/blogs/farmland-near-hindupur-guide"
             }
           ]
         },
