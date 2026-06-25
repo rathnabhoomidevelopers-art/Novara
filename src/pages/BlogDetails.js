@@ -239,6 +239,10 @@ export default function BlogDetail({ vikeSlug }) {
 
   return (
     <section className="w-full bg-white font-urbanist">
+     <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap');
+        .blog-content, .blog-content * { font-family: 'Urbanist', 'Poppins', sans-serif !important; }
+     `}</style>
      <Header />
 
       <div className="relative">
