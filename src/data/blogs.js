@@ -499,7 +499,7 @@ export const BLOGS = [
             "@id": "https://www.novaranatureestates.com/blogs/why-investors-are-choosing-ecovara-farmplot"
           },
           "headline": "Why Investors Are Choosing Ecovara Farmplot",
-          "image": "hbjebxybu7ydwxhuxd",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782366951/citglebevrm0bcrcnr5n.webp",
           "author": {
             "@type": "Organization",
             "name": "Why Investors Are Choosing Ecovara Farmplot",
