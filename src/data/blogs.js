@@ -149,7 +149,12 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Looking for farmland near Bangalore with highway connectivity and weekend usability?</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"><br></span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Book a site visit to Ecovara Farmplot and experience the location in person.</span>",
+        "text": "<span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap;\">Looking for farmland near Bangalore with highway connectivity and weekend usability?</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<p style=\"text-align: justify;\"><span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt;\">Book a site visit to Ecovara Farmplot and experience the location in person.</span></p>",
         "fontWeight": "font-normal"
       },
       {
@@ -249,7 +254,12 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Want land that gives you more than ownership?</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"><br></span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Visit Ecovara Farmplot and experience plantations, open space, lifestyle amenities, and peaceful surroundings near Lepakshi.</span>",
+        "text": "<span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap;\">Want land that gives you more than ownership?</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<p style=\"text-align: justify;\"><span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt;\">Visit Ecovara Farmplot and experience plantations, open space, lifestyle amenities, and peaceful surroundings near Lepakshi.</span></p>",
         "fontWeight": "font-normal"
       },
       {
@@ -404,7 +414,12 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Interested in exploring Ecovara?</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"><br></span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Come and visit the site today and see for yourself the greenery, plot sizes and investment potential within the site.</span>",
+        "text": "<span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; font-weight: 700; white-space: pre-wrap;\">Interested in exploring Ecovara?</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<p style=\"text-align: justify;\"><span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt;\">Come and visit the site today and see for yourself the greenery, plot sizes and investment potential within the site.</span></p>",
         "fontWeight": "font-normal"
       },
       {
