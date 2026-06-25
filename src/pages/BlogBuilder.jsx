@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, useCallback, useMemo } from "react"
 import {
   Bold, Italic, Underline, Link as LinkIcon, Unlink, List, ListOrdered,
   AlignLeft, AlignCenter, AlignRight, AlignJustify, Image as ImageIcon,
-  Palette, ChevronDown, Eye, EyeOff, Home, FileText, Image as MediaIcon,
+  Palette, ChevronDown, Eye, EyeOff, Home, FileText, Image as MediaIcon, Table,
   Leaf, LogIn, LogOut, Loader, AlertCircle, CheckCircle, Send, Search,
   Edit3, ArrowLeft, Plus, Upload, Settings, Calendar, Globe,
   CircleDot, ChevronsUpDown, Code2, ArrowRight, Users as UsersIcon, Shield, Eye as ViewIcon,
@@ -117,7 +117,18 @@ const sectionsToHtml = (sections = []) =>
     if (s.type === "image")
       return `<figure${s.videoUrl ? ` data-video-url="${escapeHtml(s.videoUrl)}"` : ""}><img src="${escapeHtml(s.src || "")}" alt="${escapeHtml(s.caption || "")}" />${s.caption ? `<figcaption>${escapeHtml(s.caption)}</figcaption>` : ""}</figure>`;
 
-    if (s.type === "table") {
+    if (s.type === "faq")
+    return (
+      <div className="space-y-3">
+        {(s.items || []).map((item, i) => (
+          <div key={i} className="rounded-xl border border-[#E6E1D3] overflow-hidden">
+            <div className="px-4 py-3 font-semibold text-[14px] text-[#15302A] bg-[#F4F1E8]">{item.q}</div>
+            <div className="px-4 py-3 text-[14px] text-slate-600 leading-relaxed">{item.a}</div>
+          </div>
+        ))}
+      </div>
+    );
+  if (s.type === "table") {
       const head = `<thead><tr>${(s.headers || []).map((h) => `<th>${escapeHtml(h)}</th>`).join("")}</tr></thead>`;
       const body = `<tbody>${(s.rows || []).map((r) => `<tr>${r.map((c) => `<td>${escapeHtml(c)}</td>`).join("")}</tr>`).join("")}</tbody>`;
       return `<table data-themed="${s.themed ? "1" : "0"}">${head}${body}</table>`;
@@ -175,6 +186,18 @@ const htmlToSections = (html = "") => {
       const fileFormat = (tag === "figure" ? node.getAttribute("data-format") : null) || "";
       const fileSize = (tag === "figure" ? node.getAttribute("data-filesize") : null) || "";
       if (src) out.push({ type: "image", src, alt, title, caption: cap, videoUrl, alignment, imgWidth, imgHeight, filename, fileFormat, fileSize });
+      return;
+    }
+    if (tag === "dl") {
+      // FAQ — definition list: dt=question, dd=answer
+      const items = [];
+      let cur = null;
+      node.childNodes.forEach((ch) => {
+        const t = ch.tagName?.toLowerCase();
+        if (t === "dt") { cur = { q: ch.textContent.trim(), a: "" }; items.push(cur); }
+        else if (t === "dd" && cur) { cur.a = ch.textContent.trim(); }
+      });
+      if (items.length) out.push({ type: "faq", items });
       return;
     }
     if (tag === "table") {
@@ -251,6 +274,17 @@ function PreviewSection({ s, usedH3, onPlayVideo }) {
     return <ul className="list-disc list-outside pl-5 space-y-2 text-[14px] text-slate-600">{(s.text || []).map((i, k) => <li key={k}>{i}</li>)}</ul>;
   if (s.type === "ol")
     return <ol className="list-decimal list-outside pl-5 space-y-2 text-[14px] text-slate-600">{(s.text || []).map((i, k) => <li key={k}>{i}</li>)}</ol>;
+  if (s.type === "faq")
+    return (
+      <div className="space-y-3">
+        {(s.items || []).map((item, i) => (
+          <div key={i} className="rounded-xl border border-[#E6E1D3] overflow-hidden">
+            <div className="px-4 py-3 font-semibold text-[14px] text-[#15302A] bg-[#F4F1E8]">{item.q}</div>
+            <div className="px-4 py-3 text-[14px] text-slate-600 leading-relaxed">{item.a}</div>
+          </div>
+        ))}
+      </div>
+    );
   if (s.type === "table")
     return (
       <div className="overflow-x-auto rounded-xl border border-slate-200">
@@ -479,7 +513,7 @@ function ToolbarButton({ title, onClick, active, children }) {
   );
 }
 
-function Toolbar({ exec, onLink, onUnlink, onImage, format, setFormat, color, setColor, imageUploading }) {
+function Toolbar({ exec, onLink, onUnlink, onImage, onTable, format, setFormat, color, setColor, imageUploading }) {
   const [colorOpen, setColorOpen] = useState(false);
   const sep = <span className="mx-0.5 w-px self-stretch my-1 bg-[#E6E1D3]" />;
 
@@ -551,6 +585,15 @@ function Toolbar({ exec, onLink, onUnlink, onImage, format, setFormat, color, se
 
       <ToolbarButton title="Insert image" onClick={onImage}>
         {imageUploading ? <Loader size={16} className="animate-spin" /> : <ImageIcon size={16} />}
+      </ToolbarButton>
+      <ToolbarButton title="Insert table" onClick={onTable}><Table size={16} /></ToolbarButton>
+      <ToolbarButton title="Insert FAQ block (Q&amp;A)" onClick={() => {
+        const faqHtml = '<dl><dt><strong>Question 1?</strong></dt><dd>Answer goes here.</dd><dt><strong>Question 2?</strong></dt><dd>Answer goes here.</dd></dl><p><br/></p>';
+        const sel = window.getSelection();
+        if (savedSelection.current) { try { sel.removeAllRanges(); sel.addRange(savedSelection.current); } catch(_) {} }
+        document.execCommand("insertHTML", false, faqHtml);
+      }}>
+        <span className="text-[10px] font-bold leading-none">FAQ</span>
       </ToolbarButton>
     </div>
   );
@@ -817,6 +860,19 @@ function BlogEditor({ editingBlog, onBack }) {
   };
 
   // ── Image insert (content) ──────────────────────────────────────────────────
+  const insertTable = () => {
+    // Default 3x3 table
+    const rows = 3; const cols = 3;
+    const headerRow = Array(cols).fill("<th style=\"border:1px solid #ddd;padding:8px;background:#f5f5f5\">Header</th>").join("");
+    const bodyRow   = Array(cols).fill("<td style=\"border:1px solid #ddd;padding:8px\">Cell</td>").join("");
+    const bodyRows  = Array(rows - 1).fill(`<tr>${bodyRow}</tr>`).join("");
+    const tableHtml = `<table style="border-collapse:collapse;width:100%;margin:1em 0"><thead><tr>${headerRow}</tr></thead><tbody>${bodyRows}</tbody></table><p><br/></p>`;
+    const sel = window.getSelection();
+    if (savedSelection.current) { try { sel.removeAllRanges(); sel.addRange(savedSelection.current); } catch(_) {} }
+    document.execCommand("insertHTML", false, tableHtml);
+    if (bodyRef.current) setBodySnapshot(bodyRef.current.innerHTML);
+  };
+
   const onImageClick = () => {
     // remember caret so the image lands where the user was typing
     const sel = window.getSelection();
@@ -1299,6 +1355,22 @@ function BlogEditor({ editingBlog, onBack }) {
               <EyeOff size={13} /> Back to editor
             </button>
           </div>
+          {/* Schema JSON-LD injected into preview */}
+          {jsonLdPreview && (
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLdPreview }} />
+          )}
+          {/* Schema visual badge in preview */}
+          {schemas && Object.values(schemas).some((s) => s.enabled) && (
+            <div className="max-w-3xl mx-auto px-6 pt-4">
+              <div className="flex flex-wrap gap-2">
+                {Object.entries(schemas).filter(([,s]) => s.enabled).map(([id]) => (
+                  <span key={id} className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-[#E9FFF3] text-[#1B9A63] border border-[#1B9A63]/20">
+                    ✓ Schema: {id}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
           <article className="max-w-3xl mx-auto px-6 py-10">
             <span className="inline-flex rounded-full px-3 py-1 text-[11px] font-semibold" style={{ background: "#E9FFF3", color: "#1B9A63" }}>{meta.category}</span>
             <h1 className="mt-3 text-[26px] sm:text-[34px] font-bold text-[#111827] leading-tight">{meta.title || "Untitled post"}</h1>
@@ -1499,7 +1571,7 @@ function BlogEditor({ editingBlog, onBack }) {
                 {canEdit && <div className="shrink-0 border-b border-[#ECE6D6]">
                   <Toolbar
                     exec={exec}
-                    onLink={onLink} onUnlink={onUnlink} onImage={onImageClick}
+                    onLink={onLink} onUnlink={onUnlink} onImage={onImageClick} onTable={insertTable}
                     format={format} setFormat={handleFormatChange}
                     color={color} setColor={setColor}
                     imageUploading={imageUploading}
@@ -1701,23 +1773,22 @@ function BlogEditor({ editingBlog, onBack }) {
                     <div>
                       <div className="flex items-center justify-between mb-1">
                         <label className="text-[11px] font-semibold text-[#5B6B63]">Meta title (&lt;title&gt;)</label>
-                        <span className={`text-[11px] font-semibold ${meta.title.length > 60 ? "text-red-500" : meta.title.length > 50 ? "text-[#E3A600]" : "text-[#9FC1B5]"}`}>{meta.title.length}/60</span>
+                        <span className="text-[11px] font-semibold text-[#9FC1B5]">{meta.title.trim().split(/\s+/).filter(Boolean).length} words</span>
                       </div>
-                      <input maxLength={60} value={meta.title} onChange={(e) => setMeta((p) => ({ ...p, title: e.target.value }))} placeholder="Project Name | Location" className="wp-input" />
+                      <input value={meta.title} onChange={(e) => setMeta((p) => ({ ...p, title: e.target.value }))} placeholder="Project Name | Location" className="wp-input" />
                     </div>
                     <div>
                       <div className="flex items-center justify-between mb-1">
                         <label className="text-[11px] font-semibold text-[#5B6B63]">Meta description</label>
-                        <span className={`text-[11px] font-semibold ${meta.description.length > 160 ? "text-red-500" : meta.description.length > 140 ? "text-[#E3A600]" : "text-[#9FC1B5]"}`}>{meta.description.length}/160</span>
+                        <span className="text-[11px] font-semibold text-[#9FC1B5]">{meta.description.trim().split(/\s+/).filter(Boolean).length} words</span>
                       </div>
-                      <textarea rows={3} maxLength={160} value={meta.description} onChange={(e) => setMeta((p) => ({ ...p, description: e.target.value }))} placeholder="Brief description for search results…" className="wp-input resize-none" />
+                      <textarea rows={3} value={meta.description} onChange={(e) => setMeta((p) => ({ ...p, description: e.target.value }))} placeholder="Brief description for search results…" className="wp-input resize-none" />
                     </div>
                     <Field label="Focus keyword(s)"><input value={meta.keywords} onChange={(e) => setMeta((p) => ({ ...p, keywords: e.target.value }))} placeholder="farmland near bangalore" className="wp-input" /></Field>
                     <div className="grid grid-cols-2 gap-2">
                       <Field label="Category"><input value={meta.category} onChange={(e) => setMeta((p) => ({ ...p, category: e.target.value }))} className="wp-input" /></Field>
                       <Field label="Author"><input value={meta.author} onChange={(e) => setMeta((p) => ({ ...p, author: e.target.value }))} className="wp-input" /></Field>
                     </div>
-                    <Field label="Tags (comma-separated)"><input value={meta.tags} onChange={(e) => setMeta((p) => ({ ...p, tags: e.target.value }))} placeholder="Organic, Eco" className="wp-input" /></Field>
                   </div>
                 )}
               </div>
