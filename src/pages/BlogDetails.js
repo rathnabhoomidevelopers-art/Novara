@@ -405,12 +405,35 @@ export default function BlogDetail({ vikeSlug }) {
 
                   // Image
                   if (s.type === "image") {
+                    const figAlign = s.alignment === "left" ? "mr-auto ml-0" : s.alignment === "right" ? "ml-auto mr-0" : "mx-auto";
+                    const figMaxW = s.imgWidth ? { maxWidth: s.imgWidth + "px" } : {};
+                    const imgStyle = {};
+                    if (s.imgWidth) imgStyle.width = s.imgWidth + "px";
+                    if (s.imgHeight) { imgStyle.height = s.imgHeight + "px"; imgStyle.objectFit = "cover"; }
+                    const ytMatch = s.videoUrl?.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&
+?#]+)/);
+                    const ytId = ytMatch ? ytMatch[1] : null;
                     return (
-                      <figure key={i} className="rounded-2xl overflow-hidden border border-slate-100 bg-slate-50">
-                        <img src={s.src} alt={s.caption || "Blog image"} className="w-full h-auto" />
-                        {s.caption && (
-                          <figcaption className="px-4 py-3 text-[12px] text-slate-500">{s.caption}</figcaption>
-                        )}
+                      <figure key={i} className={`rounded-2xl overflow-hidden border border-slate-100 bg-slate-50 ${figAlign}`} style={figMaxW}>
+                        <div className="relative group">
+                          <img
+                            src={s.src}
+                            alt={s.alt || s.caption || "Blog image"}
+                            title={s.title || undefined}
+                            className={s.imgWidth ? "" : "w-full h-auto"}
+                            style={imgStyle}
+                          />
+                          {ytId && (
+                            <button type="button" aria-label="Play video"
+                              onClick={() => window.open(`https://www.youtube.com/watch?v=${ytId}`, "_blank")}
+                              className="absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/35 transition-colors">
+                              <span className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
+                                <svg viewBox="0 0 24 24" fill="#E3A600" width="26" height="26"><path d="M8 5v14l11-7z"/></svg>
+                              </span>
+                            </button>
+                          )}
+                        </div>
+                        {s.caption && <figcaption className="px-4 py-3 text-[12px] text-slate-500">{s.caption}</figcaption>}
                       </figure>
                     );
                   }
@@ -441,6 +464,20 @@ export default function BlogDetail({ vikeSlug }) {
                             ))}
                           </tbody>
                         </table>
+                      </div>
+                    );
+                  }
+
+                  // FAQ
+                  if (s.type === "faq") {
+                    return (
+                      <div key={i} className="space-y-3">
+                        {(s.items || []).map((item, fi) => (
+                          <div key={fi} className="rounded-xl border border-[#E6E1D3] overflow-hidden">
+                            <div className="px-4 py-3 font-semibold text-[14px] text-[#15302A] bg-[#F4F1E8]">{item.q}</div>
+                            <div className="px-4 py-3 text-[14px] text-slate-600 leading-relaxed">{item.a}</div>
+                          </div>
+                        ))}
                       </div>
                     );
                   }
