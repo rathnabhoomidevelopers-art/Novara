@@ -114,8 +114,32 @@ const sectionsToHtml = (sections = []) =>
     if (s.type === "ol")
       return `<ol>${(s.text || []).map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ol>`;
 
-    if (s.type === "image")
-      return `<figure${s.videoUrl ? ` data-video-url="${escapeHtml(s.videoUrl)}"` : ""}><img src="${escapeHtml(s.src || "")}" alt="${escapeHtml(s.caption || "")}" />${s.caption ? `<figcaption>${escapeHtml(s.caption)}</figcaption>` : ""}</figure>`;
+    if (s.type === "image") {
+      const alignStyle = s.alignment === "left" ? "margin-right:auto;margin-left:0;" : s.alignment === "right" ? "margin-left:auto;margin-right:0;" : "margin-left:auto;margin-right:auto;";
+      const figWidth = s.imgWidth ? `max-width:${s.imgWidth}px;` : "";
+      const figAttrs = [
+        s.videoUrl   ? ` data-video-url="${escapeHtml(s.videoUrl)}"` : "",
+        s.alignment  ? ` data-alignment="${escapeHtml(s.alignment)}"` : "",
+        s.filename   ? ` data-filename="${escapeHtml(s.filename)}"` : "",
+        s.fileFormat ? ` data-format="${escapeHtml(s.fileFormat)}"` : "",
+        s.fileSize   ? ` data-filesize="${escapeHtml(s.fileSize)}"` : "",
+        ` style="${alignStyle}${figWidth}"`,
+      ].join("");
+      const imgStyle = [
+        s.imgWidth  ? `width:${s.imgWidth}px;` : "",
+        s.imgHeight ? `height:${s.imgHeight}px;` : "",
+        (s.imgWidth || s.imgHeight) ? "object-fit:cover;" : "",
+      ].join("");
+      const imgAttrs = [
+        ` src="${escapeHtml(s.src || "")}"`,
+        ` alt="${escapeHtml(s.alt || s.caption || "")}"`,
+        s.title     ? ` title="${escapeHtml(s.title)}"` : "",
+        s.imgWidth  ? ` data-width="${escapeHtml(s.imgWidth)}"` : "",
+        s.imgHeight ? ` data-height="${escapeHtml(s.imgHeight)}"` : "",
+        imgStyle    ? ` style="${imgStyle}"` : "",
+      ].join("");
+      return `<figure${figAttrs}><img${imgAttrs} />${s.caption ? `<figcaption>${escapeHtml(s.caption)}</figcaption>` : ""}</figure>`;
+    }
 
     if (s.type === "faq")
     return (
@@ -266,7 +290,7 @@ function PreviewSection({ s, usedH3, onPlayVideo }) {
             )}
           </div>
         ) : null}
-
+        {s.caption && <figcaption className="px-4 py-3 text-[12px] text-slate-500 text-center">{s.caption}</figcaption>}
       </figure>
     );
   }
@@ -1316,7 +1340,8 @@ function BlogEditor({ editingBlog, onBack }) {
   // ── Preview sections ──────────────────────────────────────────────────────
   // Always keep sections computed — preview reads them the moment it opens
   const computeSections = useCallback(() => {
-    const html = (bodyRef.current ? bodyRef.current.innerHTML : "") || bodySnapshot;
+    // Always prefer live DOM; fall back to snapshot only when ref is unavailable
+    const html = bodyRef.current?.innerHTML || bodySnapshot;
     const sections = htmlToSections(html);
     return sections.map((s) => {
       if (s.type === "image" && s.src) {
@@ -1329,8 +1354,10 @@ function BlogEditor({ editingBlog, onBack }) {
 
   const previewSections = useMemo(() => {
     if (!previewMode) return [];
+    // Force fresh read every time preview is open so newly inserted images appear
     return computeSections();
-  }, [previewMode, computeSections]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [previewMode, computeSections, bodySnapshot]);
 
   // ─────────────────────────────────────────────────────────────────────────
   const navItems = [
@@ -1574,10 +1601,10 @@ function BlogEditor({ editingBlog, onBack }) {
               <h1 className="text-[19px] font-extrabold text-[#15302A] tracking-tight">{isEditMode ? "Edit Post" : "Add New Post"}</h1>
               {isEditMode && <span className="text-[11px] font-bold px-2.5 py-1 rounded-full" style={{ background: "#FBF1D2", color: "#9a6b00" }}>Editing</span>}
             </div>
-            <button onClick={() => { if (pendingImageUrl) insertContentImage(); setTimeout(() => { const html = bodyRef.current ? bodyRef.current.innerHTML : ""; setBodySnapshot(html); setPreviewMode(true); }, 20); }} className="wp-secondary flex items-center gap-1.5"><Eye size={13} /> Preview</button>
+            <button onClick={() => { if (pendingImageUrl) insertContentImage(); const html = bodyRef.current ? bodyRef.current.innerHTML : ""; setBodySnapshot(html); setPreviewMode(true); }} className="wp-secondary flex items-center gap-1.5"><Eye size={13} /> Preview</button>
           </div>
 
-          <div className="flex-1 flex gap-6 px-6 py-7 items-start overflow-hidden" style={{ background: "#F7F4EB" }}>
+          <div className="flex-1 flex gap-6 px-6 py-7 items-start overflow-y-auto" style={{ background: "#F7F4EB" }}>
             {/* CONTENT COLUMN */}
             {activeNav === "home_blank" ? (
               <div className="flex-1 min-w-0 overflow-y-auto h-full" />
@@ -1609,8 +1636,8 @@ function BlogEditor({ editingBlog, onBack }) {
                 </div>
               </div>
             ) : (
-            <div className="flex-1 min-w-0 flex flex-col h-full overflow-hidden">
-              {/* Title (H1) — fixed, does not scroll */}
+            <div className="flex-1 min-w-0 flex flex-col">
+              {/* Title (H1) */}
               <div className="shrink-0 pb-3" style={{ background: "#F7F4EB" }}>
                 <input
                   value={meta.title}
@@ -1619,8 +1646,7 @@ function BlogEditor({ editingBlog, onBack }) {
                   className="w-full bg-white border border-[#ECE6D6] rounded-2xl px-5 py-4 text-[1.7em] font-extrabold text-[#15302A] placeholder:text-[#aab0a8] placeholder:font-semibold focus:outline-none focus:border-[#1A614F] focus:shadow-[0_0_0_3px_rgba(26,97,79,.12)] shadow-sm"
                 />
               </div>
-              {/* Scrollable content below title */}
-              <div className="flex-1 overflow-y-auto">
+              <div>
 
               {!canEdit && (
                 <div className="mb-4 flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#FBF1D2] border border-[#E3A600]/40 text-[13px] text-[#9a6b00] font-semibold">
@@ -1663,7 +1689,7 @@ function BlogEditor({ editingBlog, onBack }) {
               </div>)}
 
               {/* Editor box */}
-              <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm overflow-hidden flex flex-col" style={{ maxHeight: "120vh" }}>
+              <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm overflow-hidden flex flex-col">
                 {/* Toolbar — fixed */}
                 {canEdit && <div className="shrink-0 border-b border-[#ECE6D6]">
                   <Toolbar
@@ -1677,7 +1703,7 @@ function BlogEditor({ editingBlog, onBack }) {
                 {/* Body — scrollable */}
                 <div
                   ref={bodyRef}
-                  className="wp-editor px-5 py-4 text-[15px] overflow-y-auto flex-1"
+                  className="wp-editor px-5 py-4 text-[15px] flex-1"
                   style={{ minHeight: "600px" }}
                   contentEditable={canEdit}
                   suppressContentEditableWarning
@@ -2060,7 +2086,7 @@ function BlogEditor({ editingBlog, onBack }) {
             )}
 
             {/* RIGHT SIDEBAR — meta boxes */}
-            <div className="w-[280px] shrink-0 sticky top-0 h-full overflow-y-auto">
+            <div className="w-[280px] shrink-0">
               {activeNav !== "redirects" && activeNav !== "users" && activeNav !== "media" && activeNav !== "home_blank" && canEdit && (<>
               {/* PUBLISH BOX (matches reference) */}
               <div className="meta-box">
@@ -2070,7 +2096,7 @@ function BlogEditor({ editingBlog, onBack }) {
                 </div>
                 <div className="p-3">
                   <div className="flex justify-end mb-3">
-                    <button onClick={() => { if (pendingImageUrl) insertContentImage(); setTimeout(() => { const html = bodyRef.current ? bodyRef.current.innerHTML : ""; setBodySnapshot(html); setPreviewMode(true); }, 20); }} className="wp-secondary">Preview Changes</button>
+                    <button onClick={() => { if (pendingImageUrl) insertContentImage(); const html = bodyRef.current ? bodyRef.current.innerHTML : ""; setBodySnapshot(html); setPreviewMode(true); }} className="wp-secondary">Preview Changes</button>
                   </div>
                   <ul className="space-y-2.5 text-[13px] text-[#5B6B63]">
                     <li className="flex items-center gap-2">
