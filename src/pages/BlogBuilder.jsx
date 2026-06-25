@@ -153,7 +153,7 @@ const sectionsToHtml = (sections = []) =>
       </div>
     );
   if (s.type === "table") {
-      const head = `<thead><tr>${(s.headers || []).map((h) => `<th>${escapeHtml(h)}</th>`).join("")}</tr></thead>`;
+      const head = `<thead><tr>${(s.headers || []).map((h) => `<th style="font-weight:700">${escapeHtml(h)}</th>`).join("")}</tr></thead>`;
       const body = `<tbody>${(s.rows || []).map((r) => `<tr>${r.map((c) => `<td>${escapeHtml(c)}</td>`).join("")}</tr>`).join("")}</tbody>`;
       return `<table data-themed="${s.themed ? "1" : "0"}">${head}${body}</table>`;
     }
@@ -1413,7 +1413,8 @@ function BlogEditor({ editingBlog, onBack }) {
         .wp-editor figure.selected-for-edit { outline:2.5px solid #1A614F; border-radius:16px; box-shadow:0 0 0 4px #1A614F22; }
         .wp-editor figcaption { font-size:12px; color:#64748b; padding:6px 2px; }
         .wp-editor table { border-collapse:collapse; width:100%; margin:0 0 1em; }
-        .wp-editor th, .wp-editor td { border:2px solid #1A614F; padding:10px 12px; text-align:left; }
+        .wp-editor th { border:2px solid #1A614F; padding:10px 12px; text-align:left; font-weight:700; }
+        .wp-editor td { border:2px solid #1A614F; padding:10px 12px; text-align:left; }
         .wp-editor:empty:before { content:attr(data-placeholder); color:#9aa39d; }
         .wp-editor:focus { outline:none; }
         input[type="file"] { font-size:12px; color:#5B6B63; border:1.5px dashed #CBBF9E; border-radius:12px; padding:9px 12px; width:100%; background:#FCFBF6; cursor:pointer; }
