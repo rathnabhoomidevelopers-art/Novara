@@ -1340,7 +1340,6 @@ function BlogEditor({ editingBlog, onBack }) {
   // ── Preview sections ──────────────────────────────────────────────────────
   // Always keep sections computed — preview reads them the moment it opens
   const computeSections = useCallback(() => {
-    // Always prefer live DOM; fall back to snapshot only when ref is unavailable
     const html = bodyRef.current?.innerHTML || bodySnapshot;
     const sections = htmlToSections(html);
     return sections.map((s) => {
@@ -1354,9 +1353,7 @@ function BlogEditor({ editingBlog, onBack }) {
 
   const previewSections = useMemo(() => {
     if (!previewMode) return [];
-    // Force fresh read every time preview is open so newly inserted images appear
     return computeSections();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [previewMode, computeSections, bodySnapshot]);
 
   // ─────────────────────────────────────────────────────────────────────────
@@ -1416,6 +1413,8 @@ function BlogEditor({ editingBlog, onBack }) {
         .nv-toolbtn:hover { background:#EAF4EF; }
         .nv-toolbtn.active { background:#1A614F; color:#fff; }
         .row-scroll::-webkit-scrollbar { width:6px; } .row-scroll::-webkit-scrollbar-thumb { background:#cfc8b4; border-radius:4px; }
+        .nv-sidebar-right::-webkit-scrollbar { display:none; }
+        .wp-editor, .wp-editor * { font-family:'Urbanist','Poppins',sans-serif !important; }
       `}</style>
 
       {/* ── PREVIEW OVERLAY ───────────────────────────────────────────── */}
@@ -1604,7 +1603,7 @@ function BlogEditor({ editingBlog, onBack }) {
             <button onClick={() => { if (pendingImageUrl) insertContentImage(); const html = bodyRef.current ? bodyRef.current.innerHTML : ""; setBodySnapshot(html); setPreviewMode(true); }} className="wp-secondary flex items-center gap-1.5"><Eye size={13} /> Preview</button>
           </div>
 
-          <div className="flex-1 flex gap-6 px-6 py-7 items-start overflow-y-auto" style={{ background: "#F7F4EB" }}>
+          <div className="flex-1 flex gap-6 px-6 py-7 items-start overflow-hidden" style={{ background: "#F7F4EB" }}>
             {/* CONTENT COLUMN */}
             {activeNav === "home_blank" ? (
               <div className="flex-1 min-w-0 overflow-y-auto h-full" />
@@ -1636,8 +1635,8 @@ function BlogEditor({ editingBlog, onBack }) {
                 </div>
               </div>
             ) : (
-            <div className="flex-1 min-w-0 flex flex-col">
-              {/* Title (H1) */}
+            <div className="flex-1 min-w-0 flex flex-col h-full overflow-hidden">
+              {/* Title (H1) — fixed, does not scroll */}
               <div className="shrink-0 pb-3" style={{ background: "#F7F4EB" }}>
                 <input
                   value={meta.title}
@@ -1646,7 +1645,8 @@ function BlogEditor({ editingBlog, onBack }) {
                   className="w-full bg-white border border-[#ECE6D6] rounded-2xl px-5 py-4 text-[1.7em] font-extrabold text-[#15302A] placeholder:text-[#aab0a8] placeholder:font-semibold focus:outline-none focus:border-[#1A614F] focus:shadow-[0_0_0_3px_rgba(26,97,79,.12)] shadow-sm"
                 />
               </div>
-              <div>
+              {/* Scrollable content below title */}
+              <div className="flex-1 overflow-y-auto">
 
               {!canEdit && (
                 <div className="mb-4 flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#FBF1D2] border border-[#E3A600]/40 text-[13px] text-[#9a6b00] font-semibold">
@@ -1689,7 +1689,7 @@ function BlogEditor({ editingBlog, onBack }) {
               </div>)}
 
               {/* Editor box */}
-              <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm overflow-hidden flex flex-col">
+              <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm overflow-hidden flex flex-col" style={{ maxHeight: "120vh" }}>
                 {/* Toolbar — fixed */}
                 {canEdit && <div className="shrink-0 border-b border-[#ECE6D6]">
                   <Toolbar
@@ -1703,7 +1703,7 @@ function BlogEditor({ editingBlog, onBack }) {
                 {/* Body — scrollable */}
                 <div
                   ref={bodyRef}
-                  className="wp-editor px-5 py-4 text-[15px] flex-1"
+                  className="wp-editor px-5 py-4 text-[15px] overflow-y-auto flex-1"
                   style={{ minHeight: "600px" }}
                   contentEditable={canEdit}
                   suppressContentEditableWarning
@@ -2086,7 +2086,7 @@ function BlogEditor({ editingBlog, onBack }) {
             )}
 
             {/* RIGHT SIDEBAR — meta boxes */}
-            <div className="w-[280px] shrink-0">
+            <div className="nv-sidebar-right w-[280px] shrink-0 sticky top-0" style={{ maxHeight: "100vh", overflowY: "auto", scrollbarWidth: "none", msOverflowStyle: "none" }}>
               {activeNav !== "redirects" && activeNav !== "users" && activeNav !== "media" && activeNav !== "home_blank" && canEdit && (<>
               {/* PUBLISH BOX (matches reference) */}
               <div className="meta-box">
