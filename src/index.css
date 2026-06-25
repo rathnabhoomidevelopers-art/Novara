@@ -28,3 +28,8 @@
 /* html, body {
   overflow-x: hidden;
 } */
+
+/* Blog builder: inline link colors override Tailwind base reset */
+.blog-content a[style*="color"] { color: revert; }
+.blog-content span[style*="color"] { color: revert; }
+.blog-content font[color] { color: revert; }
