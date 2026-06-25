@@ -348,7 +348,7 @@ export default function BlogDetail({ vikeSlug }) {
             )}
 
             {/* ── Content sections ── */}
-            <div className="mt-6 space-y-5">
+            <div className="mt-6 space-y-5 blog-content">
               {(() => {
                 const used = new Map();
                 return sections.map((s, i) => {
@@ -588,11 +588,16 @@ export default function BlogDetail({ vikeSlug }) {
                   }
 
                   // Default paragraph (supports bold HTML)
+                  // Convert <font color="X"> to <span style="color:X"> for reliable rendering
+                  const cleanHtml = (s.text || "").replace(
+                    /<font([^>]*)color=["']([^"']+)["']([^>]*)>/gi,
+                    (_, pre, col, post) => `<span${pre}${post} style="color:${col}">`
+                  ).replace(/<\/font>/gi, "</span>");
                   return (
                     <p
                       key={i}
                       className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600"
-                      dangerouslySetInnerHTML={{ __html: s.text }}
+                      dangerouslySetInnerHTML={{ __html: cleanHtml }}
                     />
                   );
                 });
