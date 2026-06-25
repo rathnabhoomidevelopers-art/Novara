@@ -458,7 +458,7 @@ export default function BlogDetail({ vikeSlug }) {
                               {(s.headers || []).map((h, hi) => (
                                 <th key={hi}
                                   className="text-left px-4 py-3 font-bold border border-[#1A614F] text-[#111827]"
-                                  style={{ background: s.themed ? "#e8dfa8" : "#ffffff" }}>
+                                  style={{ background: s.themed ? "#e8dfa8" : "#EAF7F0" }}>
                                   {h}
                                 </th>
                               ))}
@@ -466,9 +466,12 @@ export default function BlogDetail({ vikeSlug }) {
                           </thead>
                           <tbody>
                             {(s.rows || []).map((row, ri) => (
-                              <tr key={ri} style={{ background: s.themed ? (ri % 2 === 0 ? "#faf7ec" : "#f5f0d8") : "#ffffff" }}>
+                              <tr key={ri} style={{ background: s.themed ? (ri % 2 === 0 ? "#faf7ec" : "#f5f0d8") : (ri === 0 && !s.headers?.length ? "#EAF7F0" : "#ffffff") }}>
                                 {row.map((cell, ci) => (
-                                  <td key={ci} className="px-4 py-2.5 border border-[#1A614F]">{cell}</td>
+                                  // First row bold if no thead headers
+                                  ri === 0 && !s.headers?.length
+                                    ? <td key={ci} className="px-4 py-2.5 border border-[#1A614F] font-bold text-[#111827]">{cell}</td>
+                                    : <td key={ci} className="px-4 py-2.5 border border-[#1A614F]">{cell}</td>
                                 ))}
                               </tr>
                             ))}
