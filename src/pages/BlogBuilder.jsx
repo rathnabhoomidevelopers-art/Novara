@@ -513,7 +513,7 @@ function ToolbarButton({ title, onClick, active, children }) {
   );
 }
 
-function Toolbar({ exec, onLink, onUnlink, onImage, onTable, format, setFormat, color, setColor, imageUploading }) {
+function Toolbar({ exec, onLink, onUnlink, onImage, onTable, onFaq, format, setFormat, color, setColor, imageUploading }) {
   const [colorOpen, setColorOpen] = useState(false);
   const sep = <span className="mx-0.5 w-px self-stretch my-1 bg-[#E6E1D3]" />;
 
@@ -587,12 +587,7 @@ function Toolbar({ exec, onLink, onUnlink, onImage, onTable, format, setFormat, 
         {imageUploading ? <Loader size={16} className="animate-spin" /> : <ImageIcon size={16} />}
       </ToolbarButton>
       <ToolbarButton title="Insert table" onClick={onTable}><Table size={16} /></ToolbarButton>
-      <ToolbarButton title="Insert FAQ block (Q&amp;A)" onClick={() => {
-        const faqHtml = '<dl><dt><strong>Question 1?</strong></dt><dd>Answer goes here.</dd><dt><strong>Question 2?</strong></dt><dd>Answer goes here.</dd></dl><p><br/></p>';
-        const sel = window.getSelection();
-        if (savedSelection.current) { try { sel.removeAllRanges(); sel.addRange(savedSelection.current); } catch(_) {} }
-        document.execCommand("insertHTML", false, faqHtml);
-      }}>
+      <ToolbarButton title="Insert FAQ block (Q&A)" onClick={onFaq}>
         <span className="text-[10px] font-bold leading-none">FAQ</span>
       </ToolbarButton>
     </div>
@@ -881,6 +876,14 @@ function BlogEditor({ editingBlog, onBack }) {
     const sel = window.getSelection();
     if (savedSelection.current) { try { sel.removeAllRanges(); sel.addRange(savedSelection.current); } catch(_) {} }
     document.execCommand("insertHTML", false, tableHtml);
+    if (bodyRef.current) setBodySnapshot(bodyRef.current.innerHTML);
+  };
+
+  const insertFaq = () => {
+    const faqHtml = '<dl><dt><strong>Question?</strong></dt><dd>Answer goes here.</dd></dl><p><br/></p>';
+    const sel = window.getSelection();
+    if (savedSelection.current) { try { sel.removeAllRanges(); sel.addRange(savedSelection.current); } catch(_) {} }
+    document.execCommand("insertHTML", false, faqHtml);
     if (bodyRef.current) setBodySnapshot(bodyRef.current.innerHTML);
   };
 
@@ -1636,7 +1639,7 @@ function BlogEditor({ editingBlog, onBack }) {
                 {canEdit && <div className="shrink-0 border-b border-[#ECE6D6]">
                   <Toolbar
                     exec={exec}
-                    onLink={onLink} onUnlink={onUnlink} onImage={onImageClick} onTable={openTablePicker}
+                    onLink={onLink} onUnlink={onUnlink} onImage={onImageClick} onTable={openTablePicker} onFaq={insertFaq}
                     format={format} setFormat={handleFormatChange}
                     color={color} setColor={setColor}
                     imageUploading={imageUploading}
