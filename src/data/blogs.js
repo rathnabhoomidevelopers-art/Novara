@@ -45,20 +45,6 @@ export const BLOGS = [
         "fontWeight": "font-normal"
       },
       {
-        "type": "image",
-        "src": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782384019/zflwrxhysl3ntwnotdsz.webp",
-        "alt": "hhkjksjfh",
-        "title": "fsffdhfjkds",
-        "caption": "fdslffjdskfd",
-        "videoUrl": "https://www.youtube.com/watch?v=a-HEb1vJhQ0&list=RDSBOwcGnwuKM&index=20",
-        "alignment": "left",
-        "imgWidth": "405",
-        "imgHeight": "231",
-        "filename": "demo.jpg",
-        "fileFormat": "JPEG",
-        "fileSize": "51.3 KB"
-      },
-      {
         "type": "p",
         "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">Ecovara is a high-end managed farmland project by <a href=\"https://www.novaranatureestates.com/\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\"><b style=\"\"><u>Novara Nature Estates</u></b></a> which is situated near Lepakshi on the Bengaluru – Hyderabad National Highway. It has been designed as a gated community of farmland, where nature-inspired designs meet modern lifestyle amenities.</span>",
         "fontWeight": "font-normal"
