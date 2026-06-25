@@ -311,10 +311,10 @@ function PreviewSection({ s, usedH3, onPlayVideo }) {
     );
   if (s.type === "table")
     return (
-      <div className="overflow-x-auto rounded-xl border border-slate-200">
+      <div className="overflow-x-auto rounded-xl border border-[#1A614F]">
         <table className="w-full text-[14px] text-slate-700 border-collapse">
-          <thead><tr>{(s.headers || []).map((h, i) => <th key={i} className="text-left px-4 py-3 font-bold border border-slate-200" style={{ background: s.themed ? "#e8dfa8" : "#fff" }}>{h}</th>)}</tr></thead>
-          <tbody>{(s.rows || []).map((r, ri) => <tr key={ri} style={{ background: s.themed ? (ri % 2 ? "#f5f0d8" : "#faf7ec") : "#fff" }}>{r.map((c, ci) => <td key={ci} className="px-4 py-2.5 border border-slate-200">{c}</td>)}</tr>)}</tbody>
+          <thead><tr>{(s.headers || []).map((h, i) => <th key={i} className="text-left px-4 py-3 font-bold border border-[#1A614F]" style={{ background: s.themed ? "#e8dfa8" : "#fff" }}>{h}</th>)}</tr></thead>
+          <tbody>{(s.rows || []).map((r, ri) => <tr key={ri} style={{ background: s.themed ? (ri % 2 ? "#f5f0d8" : "#faf7ec") : "#fff" }}>{r.map((c, ci) => <td key={ci} className="px-4 py-2.5 border border-[#1A614F]">{c}</td>)}</tr>)}</tbody>
         </table>
       </div>
     );
