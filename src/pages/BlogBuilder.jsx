@@ -1120,6 +1120,9 @@ function BlogEditor({ editingBlog, onBack }) {
     const html = bodyRef.current ? bodyRef.current.innerHTML : "";
     if (!htmlToSections(html).length) { alert("Add some content before publishing."); return; }
 
+    // Prevent double-publish if button clicked multiple times
+    if (publishStatus === "loading") return;
+
     setPublishStatus("loading");
     setPublishMsg("Fetching latest blogs.js…");
     const MAX_RETRIES = 3;
@@ -1140,8 +1143,10 @@ function BlogEditor({ editingBlog, onBack }) {
           newBlogsArray[idx] = { ...blogData, id: blogsArray[idx].id };
         } else {
           setPublishMsg("Adding new post…");
-          const nextId = Math.max(0, ...blogsArray.map((b) => Number(b.id) || 0)) + 1;
-          newBlogsArray = [{ ...blogData, id: nextId }, ...blogsArray];
+          // Guard: remove any existing entry with the same slug to prevent duplicates on retry
+          const filtered = blogsArray.filter((b) => b.slug !== blogData.slug);
+          const nextId = Math.max(0, ...filtered.map((b) => Number(b.id) || 0)) + 1;
+          newBlogsArray = [{ ...blogData, id: nextId }, ...filtered];
         }
 
         const entriesStr = newBlogsArray.map((b) => "  " + JSON.stringify(b, null, 2).replace(/\n/g, "\n  ")).join(",\n");
