@@ -21,7 +21,7 @@ export const BLOGS = [
     "sections": [
       {
         "type": "p",
-        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#161f19;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Today's investors are seeking more out of crowded apartments and high density city properties. There are a lot of people who would like to have something that is tangible, peaceful and useful, and has a long-term value. That's why there's been a rise in interest in farmlands around Bangalore among working professionals, families and land-based investors.</span>",
+        "text": "<span style=\"color: rgb(22, 31, 25); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap;\">Today's investors are seeking more out of crowded apartments and high density city properties. There are a lot of people who would like to have something that is tangible, peaceful and useful, and has a long-term value. That's why there's been a rise in interest in farmlands around Bangalore among working professionals, families and land-based investors.</span>",
         "fontWeight": "font-normal"
       },
       {
