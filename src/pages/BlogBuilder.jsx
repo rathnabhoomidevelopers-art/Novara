@@ -869,8 +869,8 @@ function BlogEditor({ editingBlog, onBack }) {
     setShowTablePicker(false);
     const r = Math.max(1, Number(rows) || 3);
     const cl = Math.max(1, Number(cols) || 3);
-    const headerRow = Array(cl).fill('<th style="border:1px solid #ddd;padding:8px;background:#f5f5f5">Header</th>').join("");
-    const bodyRow   = Array(cl).fill('<td style="border:1px solid #ddd;padding:8px">Cell</td>').join("");
+    const headerRow = Array(cl).fill('<th style="border:2px solid #1A614F;padding:10px 12px;background:#EAF7F0;font-weight:700">Header</th>').join("");
+    const bodyRow   = Array(cl).fill('<td style="border:2px solid #1A614F;padding:10px 12px">Cell</td>').join("");
     const bodyRows  = r > 1 ? Array(r - 1).fill(`<tr>${bodyRow}</tr>`).join("") : "";
     const tableHtml = `<table style="border-collapse:collapse;width:100%;margin:1em 0"><thead><tr>${headerRow}</tr></thead><tbody>${bodyRows}</tbody></table><p><br/></p>`;
     const sel = window.getSelection();
@@ -1217,7 +1217,36 @@ function BlogEditor({ editingBlog, onBack }) {
   const deleteDraft = (key) => { localStorage.removeItem(key); loadDrafts(); };
 
   // ── Schema config helpers ─────────────────────────────────────────────────
-  const setSchemaCfg   = (id, patch) => setSchemas((p) => ({ ...p, [id]: { ...p[id], ...patch } }));
+  // Extract FAQ Q&A pairs from <dl><dt><dd> blocks in the editor
+  const extractFaqFromBody = () => {
+    if (!bodyRef.current) return [];
+    const dlEls = bodyRef.current.querySelectorAll("dl");
+    const items = [];
+    dlEls.forEach((dl) => {
+      let cur = null;
+      dl.childNodes.forEach((ch) => {
+        const tag = ch.tagName?.toLowerCase();
+        if (tag === "dt") { cur = { name: ch.textContent.trim(), text: "" }; items.push(cur); }
+        else if (tag === "dd" && cur) { cur.text = ch.textContent.trim(); }
+      });
+    });
+    return items;
+  };
+
+  const setSchemaCfg = (id, patch) => {
+    // When enabling FAQ schema, auto-populate items from editor FAQ blocks
+    if (id === "faq" && patch.enabled === true) {
+      const faqItems = extractFaqFromBody();
+      if (faqItems.length > 0) {
+        setSchemas((p) => ({
+          ...p,
+          [id]: { ...p[id], ...patch, data: { ...p[id].data, items: faqItems } },
+        }));
+        return;
+      }
+    }
+    setSchemas((p) => ({ ...p, [id]: { ...p[id], ...patch } }));
+  };
   const setSchemaField = (id, key, val) =>
     setSchemas((p) => ({ ...p, [id]: { ...p[id], data: { ...p[id].data, [key]: val } } }));
   const setSchemaItem  = (id, idx, key, val) =>
@@ -1337,7 +1366,7 @@ function BlogEditor({ editingBlog, onBack }) {
         .wp-editor figure.selected-for-edit { outline:2.5px solid #1A614F; border-radius:16px; box-shadow:0 0 0 4px #1A614F22; }
         .wp-editor figcaption { font-size:12px; color:#64748b; padding:6px 2px; }
         .wp-editor table { border-collapse:collapse; width:100%; margin:0 0 1em; }
-        .wp-editor th, .wp-editor td { border:1px solid #E6E1D3; padding:8px 12px; text-align:left; }
+        .wp-editor th, .wp-editor td { border:2px solid #1A614F; padding:10px 12px; text-align:left; }
         .wp-editor:empty:before { content:attr(data-placeholder); color:#9aa39d; }
         .wp-editor:focus { outline:none; }
         input[type="file"] { font-size:12px; color:#5B6B63; border:1.5px dashed #CBBF9E; border-radius:12px; padding:9px 12px; width:100%; background:#FCFBF6; cursor:pointer; }
@@ -1971,7 +2000,6 @@ function BlogEditor({ editingBlog, onBack }) {
                                 </div>
                                 </div>
                               ) : (
-                                /* ── Default mode: repeatable items (FAQ / breadcrumb) ── */
                                 <div className="space-y-2">
                                   {schemaSavedId === def.id && (
                                     <p className="text-[11px] text-[#1B9A63] font-semibold">✓ Saved — values loaded, edit as needed.</p>
@@ -1996,6 +2024,15 @@ function BlogEditor({ editingBlog, onBack }) {
                                       ))}
                                     </div>
                                   ))}
+                                  {def.id === "faq" && (
+                                    <button type="button" onClick={() => {
+                                      const items = extractFaqFromBody();
+                                      if (!items.length) { alert("No FAQ blocks found in the editor. Insert Q&A using the FAQ button in the toolbar first."); return; }
+                                      setSchemaData(def.id, "items", items);
+                                    }} className="wp-secondary flex items-center gap-1">
+                                      ↺ Sync from editor
+                                    </button>
+                                  )}
                                   <button onClick={() => addSchemaItem(def.id, def)} className="wp-secondary flex items-center gap-1">
                                     <Plus size={12} /> {def.addLabel}
                                   </button>
