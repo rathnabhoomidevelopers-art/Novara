@@ -451,13 +451,13 @@ export default function BlogDetail({ vikeSlug }) {
                   // Table
                   if (s.type === "table") {
                     return (
-                      <div key={i} className="overflow-x-auto rounded-xl border border-slate-200">
+                      <div key={i} className="overflow-x-auto rounded-xl border border-[#1A614F]">
                         <table className="w-full text-[13px] sm:text-[14px] text-slate-700 border-collapse">
                           <thead>
                             <tr>
                               {(s.headers || []).map((h, hi) => (
                                 <th key={hi}
-                                  className="text-left px-4 py-3 font-bold border border-slate-200 text-[#111827]"
+                                  className="text-left px-4 py-3 font-bold border border-[#1A614F] text-[#111827]"
                                   style={{ background: s.themed ? "#e8dfa8" : "#ffffff" }}>
                                   {h}
                                 </th>
@@ -468,7 +468,7 @@ export default function BlogDetail({ vikeSlug }) {
                             {(s.rows || []).map((row, ri) => (
                               <tr key={ri} style={{ background: s.themed ? (ri % 2 === 0 ? "#faf7ec" : "#f5f0d8") : "#ffffff" }}>
                                 {row.map((cell, ci) => (
-                                  <td key={ci} className="px-4 py-2.5 border border-slate-200">{cell}</td>
+                                  <td key={ci} className="px-4 py-2.5 border border-[#1A614F]">{cell}</td>
                                 ))}
                               </tr>
                             ))}
