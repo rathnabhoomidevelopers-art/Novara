@@ -628,6 +628,9 @@ function BlogEditor({ editingBlog, onBack }) {
   const [schemas, setSchemas] = useState(() => initSchemas());
   const [imageVideoPopup, setImageVideoPopup] = useState(null); // { videoUrl } for content image lightbox
   const [slugEditing, setSlugEditing] = useState(false);
+  const [showTablePicker, setShowTablePicker] = useState(false);
+  const [tableRows, setTableRows] = useState(3);
+  const [tableCols, setTableCols] = useState(3);
 
   // ── Media library (persisted in localStorage) ─────────────────────────────
   const MEDIA_KEY = "novara_media_library";
@@ -860,12 +863,20 @@ function BlogEditor({ editingBlog, onBack }) {
   };
 
   // ── Image insert (content) ──────────────────────────────────────────────────
-  const insertTable = () => {
-    // Default 3x3 table
-    const rows = 3; const cols = 3;
-    const headerRow = Array(cols).fill("<th style=\"border:1px solid #ddd;padding:8px;background:#f5f5f5\">Header</th>").join("");
-    const bodyRow   = Array(cols).fill("<td style=\"border:1px solid #ddd;padding:8px\">Cell</td>").join("");
-    const bodyRows  = Array(rows - 1).fill(`<tr>${bodyRow}</tr>`).join("");
+  const openTablePicker = () => {
+    // Save caret before opening popup
+    const sel = window.getSelection();
+    if (sel && sel.rangeCount) savedSelection.current = sel.getRangeAt(0).cloneRange();
+    setTableRows(3); setTableCols(3); setShowTablePicker(true);
+  };
+
+  const insertTable = (rows, cols) => {
+    setShowTablePicker(false);
+    const r = Math.max(1, Number(rows) || 3);
+    const cl = Math.max(1, Number(cols) || 3);
+    const headerRow = Array(cl).fill('<th style="border:1px solid #ddd;padding:8px;background:#f5f5f5">Header</th>').join("");
+    const bodyRow   = Array(cl).fill('<td style="border:1px solid #ddd;padding:8px">Cell</td>').join("");
+    const bodyRows  = r > 1 ? Array(r - 1).fill(`<tr>${bodyRow}</tr>`).join("") : "";
     const tableHtml = `<table style="border-collapse:collapse;width:100%;margin:1em 0"><thead><tr>${headerRow}</tr></thead><tbody>${bodyRows}</tbody></table><p><br/></p>`;
     const sel = window.getSelection();
     if (savedSelection.current) { try { sel.removeAllRanges(); sel.addRange(savedSelection.current); } catch(_) {} }
@@ -1400,6 +1411,55 @@ function BlogEditor({ editingBlog, onBack }) {
         </div>
       )}
 
+      {/* ── TABLE PICKER POPUP ── */}
+      {showTablePicker && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm" onClick={() => setShowTablePicker(false)}>
+          <div className="bg-white rounded-2xl shadow-2xl w-80 p-6 space-y-4" onClick={(e) => e.stopPropagation()}>
+            <h3 className="text-[16px] font-extrabold text-[#15302A] flex items-center gap-2">
+              <Table size={16} className="text-[#1A614F]" /> Insert Table
+            </h3>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="block text-[11px] font-semibold text-[#5B6B63] mb-1">Rows</label>
+                <input type="number" min="1" max="20" value={tableRows}
+                  onChange={(e) => setTableRows(e.target.value)}
+                  className="w-full px-3 py-2 text-[14px] rounded-lg border border-[#DDD7C7] focus:outline-none focus:border-[#1A614F] text-center font-bold" />
+              </div>
+              <div>
+                <label className="block text-[11px] font-semibold text-[#5B6B63] mb-1">Columns</label>
+                <input type="number" min="1" max="10" value={tableCols}
+                  onChange={(e) => setTableCols(e.target.value)}
+                  className="w-full px-3 py-2 text-[14px] rounded-lg border border-[#DDD7C7] focus:outline-none focus:border-[#1A614F] text-center font-bold" />
+              </div>
+            </div>
+            {/* Visual grid preview */}
+            <div className="flex flex-col gap-0.5">
+              {Array.from({ length: Math.min(Number(tableRows) || 1, 6) }).map((_, ri) => (
+                <div key={ri} className="flex gap-0.5">
+                  {Array.from({ length: Math.min(Number(tableCols) || 1, 6) }).map((_, ci) => (
+                    <div key={ci} className="flex-1 h-5 rounded-sm" style={{ background: ri === 0 ? "#1A614F" : "#E9FFF3", border: "1px solid #1A614F33" }} />
+                  ))}
+                </div>
+              ))}
+              {(Number(tableRows) > 6 || Number(tableCols) > 6) && (
+                <p className="text-[10px] text-[#9FC1B5] text-center mt-1">Preview shows up to 6×6</p>
+              )}
+            </div>
+            <div className="flex gap-2 pt-1">
+              <button onClick={() => insertTable(tableRows, tableCols)}
+                className="flex-1 py-2.5 rounded-xl text-white font-bold text-[14px] flex items-center justify-center gap-2"
+                style={{ background: "#1A614F" }}>
+                <Table size={14} /> Insert {tableRows}×{tableCols} table
+              </button>
+              <button onClick={() => setShowTablePicker(false)}
+                className="px-4 py-2.5 rounded-xl border border-[#DDD7C7] text-[#5B6B63] font-semibold text-[13px] hover:bg-[#F4F1E8]">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* ── CONTENT IMAGE VIDEO LIGHTBOX ──────────────────────────── */}
       {imageVideoPopup && (() => {
         const vid = getYouTubeId(imageVideoPopup.videoUrl);
@@ -1576,7 +1636,7 @@ function BlogEditor({ editingBlog, onBack }) {
                 {canEdit && <div className="shrink-0 border-b border-[#ECE6D6]">
                   <Toolbar
                     exec={exec}
-                    onLink={onLink} onUnlink={onUnlink} onImage={onImageClick} onTable={insertTable}
+                    onLink={onLink} onUnlink={onUnlink} onImage={onImageClick} onTable={openTablePicker}
                     format={format} setFormat={handleFormatChange}
                     color={color} setColor={setColor}
                     imageUploading={imageUploading}
