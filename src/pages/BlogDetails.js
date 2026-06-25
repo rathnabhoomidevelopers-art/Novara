@@ -410,9 +410,15 @@ export default function BlogDetail({ vikeSlug }) {
                     const imgStyle = {};
                     if (s.imgWidth) imgStyle.width = s.imgWidth + "px";
                     if (s.imgHeight) { imgStyle.height = s.imgHeight + "px"; imgStyle.objectFit = "cover"; }
-                    const ytMatch = s.videoUrl?.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&
-?#]+)/);
-                    const ytId = ytMatch ? ytMatch[1] : null;
+                    const ytId = (() => {
+                      const url = s.videoUrl || "";
+                      if (!url) return null;
+                      const vi = url.indexOf("v=");
+                      if (vi !== -1) return url.slice(vi + 2).split("&")[0];
+                      const parts = url.split("/");
+                      const last = parts[parts.length - 1].split("?")[0];
+                      return last.length === 11 ? last : null;
+                    })();
                     return (
                       <figure key={i} className={`rounded-2xl overflow-hidden border border-slate-100 bg-slate-50 ${figAlign}`} style={figMaxW}>
                         <div className="relative group">
