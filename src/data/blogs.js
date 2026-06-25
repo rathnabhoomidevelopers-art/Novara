@@ -154,7 +154,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "<p style=\"text-align: justify;\"><span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt;\">Book a site visit to Ecovara Farmplot and experience the location in person.</span></p>",
+        "text": "<span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt;\">Book a site visit to Ecovara Farmplot and experience the location in person.</span>",
         "fontWeight": "font-normal"
       },
       {
@@ -259,7 +259,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "<p style=\"text-align: justify;\"><span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt;\">Visit Ecovara Farmplot and experience plantations, open space, lifestyle amenities, and peaceful surroundings near Lepakshi.</span></p>",
+        "text": "<span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt;\">Visit Ecovara Farmplot and experience plantations, open space, lifestyle amenities, and peaceful surroundings near Lepakshi.</span>",
         "fontWeight": "font-normal"
       },
       {
@@ -419,7 +419,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "<p style=\"text-align: justify;\"><span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt;\">Come and visit the site today and see for yourself the greenery, plot sizes and investment potential within the site.</span></p>",
+        "text": "<span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt;\">Come and visit the site today and see for yourself the greenery, plot sizes and investment potential within the site.</span>",
         "fontWeight": "font-normal"
       },
       {
