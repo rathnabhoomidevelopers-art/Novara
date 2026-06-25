@@ -443,7 +443,7 @@ export default function BlogDetail({ vikeSlug }) {
                             </button>
                           )}
                         </div>
-                        {s.caption && <figcaption className="px-4 py-3 text-[12px] text-slate-500">{s.caption}</figcaption>}
+
                       </figure>
                     );
                   }
