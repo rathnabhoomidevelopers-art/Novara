@@ -503,11 +503,34 @@ export default function BlogDetail({ vikeSlug }) {
                     );
                   }
 
-                  // Ordered list
+                  // Ordered list — detect FAQ-style items (question?answer concatenated) and render as cards
                   if (s.type === "ol") {
+                    const items = s.text || [];
+                    // Check if items look like concatenated Q+A (each contains a "?" not at the very end)
+                    const isFaqStyle = items.length > 0 && items.every((item) => {
+                      const qi = item.indexOf("?");
+                      return qi > 0 && qi < item.length - 1;
+                    });
+                    if (isFaqStyle) {
+                      return (
+                        <div key={i} className="space-y-3">
+                          {items.map((item, idx) => {
+                            const qi = item.indexOf("?");
+                            const q = item.slice(0, qi + 1).trim();
+                            const a = item.slice(qi + 1).trim();
+                            return (
+                              <div key={idx} className="rounded-xl border border-[#E6E1D3] overflow-hidden">
+                                <div className="px-4 py-3 font-semibold text-[14px] text-[#15302A] bg-[#F4F1E8]">{q}</div>
+                                <div className="px-4 py-3 text-[14px] text-slate-600 leading-relaxed">{a}</div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      );
+                    }
                     return (
                       <ol key={i} className="list-decimal list-outside pl-5 space-y-2 text-[13px] sm:text-[14px] text-slate-600">
-                        {(s.text || []).map((item, idx) => (
+                        {items.map((item, idx) => (
                           <li key={idx} className="leading-relaxed">{item}</li>
                         ))}
                       </ol>
