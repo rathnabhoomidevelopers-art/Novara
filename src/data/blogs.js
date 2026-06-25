@@ -1,5 +1,560 @@
 export const BLOGS = [
   {
+    "id": 31,
+    "slug": "why-investors-are-choosing-ecovara-farmplot",
+    "category": "Investment Guide",
+    "title": "Invest in Ecovara Farmland Near Bangalore",
+    "headline": "Invest in Ecovara Farmland Near Bangalore",
+    "description": "Ecovara Farmplot by Novara Nature Estates offers planned farmland near Lepakshi with open spaces, amenities, and long-term land value.",
+    "date": "Jun 25, 2026",
+    "keywords": "",
+    "author": "Novara Nature Estates",
+    "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782367807/tvxtwkkjpl42ubviwvlx.webp",
+    "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782367807/tvxtwkkjpl42ubviwvlx.webp",
+    "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782367807/tvxtwkkjpl42ubviwvlx.webp",
+    "imageAlt": "Why Investors Are Choosing Ecovara Farmplot",
+    "imageTitle": "Why Investors Are Choosing Ecovara Farmplot",
+    "imageCaption": "",
+    "imageDescription": "Why Investors Are Choosing Ecovara Farmplot",
+    "videoUrl": "",
+    "tags": [],
+    "sections": [
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#161f19;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Today's investors are seeking more out of crowded apartments and high density city properties. There are a lot of people who would like to have something that is tangible, peaceful and useful, and has a long-term value. That's why there's been a rise in interest in farmlands around Bangalore among working professionals, families and land-based investors.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(22, 31, 25); background-color: rgb(255, 255, 255); font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\"><a href=\"https://www.novaranatureestates.com/projects\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\"><b style=\"\"><u>Ecovara Farmplot</u></b></a> by Novara Nature Estates is for those who desire a land ownership with greenery, weekend comfort and convenient management. Ecovara is situated close to the historic temple Lepakshi on the National Highway connecting Bengaluru and Hyderabad which combines the serene ambiance of the countryside with the convenience of the city.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#161f19;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For those looking for Farm Land for Sale Near Bangalore or farmland for sale near Bangalore, Ecovara is more than just land. It provides a planned farmplot community of open spaces, plantations, lifestyle facilities and a quiet weekend getaway.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#161f19;background-color:#ffffff;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">So, why are investors opting for Ecovara instead of traditional real estate investment? Let's take a look at the main reasons.</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">&nbsp;</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:17pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">What Is Ecovara?</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">Ecovara is a high-end managed farmland project by <a href=\"https://www.novaranatureestates.com/\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\"><b style=\"\"><u>Novara Nature Estates</u></b></a> which is situated near Lepakshi on the Bengaluru – Hyderabad National Highway. It has been designed as a gated community of farmland, where nature-inspired designs meet modern lifestyle amenities.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara is spread over 15 acres with farm plot size flexibility beginning from 6,000 sq. ft. onwards. The project is ideal for those who wish to opt for a tranquil weekend getaway, a bigger land plot for agricultural pursuits, and a long-term investment with a land asset near Bengaluru.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara Farmplot will be designed to accommodate large plots, European planning of farming, fruit-producing plantations and specific spaces in the organic garden. These are features which make Ecovara managed farmland appealing to buyers who would like to experience the ownership of farmland without also having to deal with all the development and maintenance aspects.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The project also involves the provision of lifestyle-related facilities like lotus pond or fish pond, campfire and rain dance area, solar street lights, a cafe, jogging track, pet route and 24/7 security check.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara provides an optimum combination of farm ownership, nature, accessibility and managed farmland convenience for those looking for farm land near Bangalore.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Location Advantage: Why the Place Matters",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">One of the major factors attracting investors to Ecovara is its location. The project is near Lepakshi Temple on the National Highway connecting Bengaluru &amp; Hyderabad &amp; is near the farmland available for sale on the NH in Bangalore.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The location offers convenient access to important nearby destinations. Lepakshi Temple and Hindupuram Town are around 10 minutes away. Bagepalli Toll Plaza is around 20 minutes away. Penukonda Fort is around 30 minutes away. Isha Foundation is around 50 minutes away, while Nandi Hills is around 60 minutes away.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For buyers looking for farmland near Bangalore airport, Ecovara’s location is also worth considering. Devanahalli is around 65 minutes away, and Kempegowda International Airport is approximately 75 minutes away.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">This location gives Ecovara a strong mix of connectivity, weekend usability, tourism appeal, and peaceful surroundings. It is close enough for planned weekend visits while still offering the calmness of a countryside environment.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">That is why Ecovara is relevant for people searching for Farm Plots Near Bangalore Airport, farm plots near Bangalore, and farmland near Bangalore with highway connectivity.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h3",
+        "text": "Ecovara Location Snapshot",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "<table style=\"border:none;border-collapse:collapse;\"><colgroup><col width=\"240\"><col width=\"192\"></colgroup><tbody><tr style=\"height:25pt\"><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Nearby Destination</span></p></td><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Approximate Travel Time</span></p></td></tr><tr style=\"height:25pt\"><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Lepakshi Temple</span></p></td><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">10 minutes</span></p></td></tr><tr style=\"height:25pt\"><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Hindupuram Town</span></p></td><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">10 minutes</span></p></td></tr><tr style=\"height:25pt\"><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Bagepalli Toll Plaza</span></p></td><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">20 minutes</span></p></td></tr><tr style=\"height:25pt\"><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Penukonda Fort</span></p></td><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">30 minutes</span></p></td></tr><tr style=\"height:25pt\"><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Isha Foundation</span></p></td><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">50 minutes</span></p></td></tr><tr style=\"height:25pt\"><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Nandi Hills</span></p></td><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">60 minutes</span></p></td></tr><tr style=\"height:25pt\"><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Devanahalli</span></p></td><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">65 minutes</span></p></td></tr><tr style=\"height:25pt\"><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Kempegowda International Airport</span></p></td><td style=\"vertical-align:top;padding:5pt 5pt 5pt 5pt;overflow:hidden;overflow-wrap:break-word;\"><p dir=\"ltr\" style=\"line-height:1.38;text-align: justify;margin-top:0pt;margin-bottom:0pt;\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">75 minutes</span></p></td></tr></tbody></table>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Looking for farmland near Bangalore with highway connectivity and weekend usability?</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"><br></span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Book a site visit to Ecovara Farmplot and experience the location in person.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Land as a Long-Term Asset",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Land has long been an attractive investment option due to its scarcity, physicality, and simplicity. Unlike built properties, land never gets \"out of style\" like apartments do or commercial spaces do. That's why many investors are still looking into farming land around Bangalore for long-term investment.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara farmland investment is drawing in buyers that desire to own farmland that offers lifestyle value. The project offers buyers ample plot of land, green environment, fruit-bearing plantation, planned amenities and a regulated community environment.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara is more than just a plot of land for those looking to buy farmland around Bangalore; it's a choice that provides a sense of community. It provides a planned farmplot experience, combining land, nature and weekend usability.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">But, the investment in land must always be done on a realistic basis. It is impossible to guarantee appreciation, or guaranteed returns, on any project. Location, documents, access, quality of the development, maintenance terms and long-term usability should be considered prior to making an investment decision.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara can be recommended to those who are interested in investing in Best Farmland Investment Near Bangalore as it offers location benefit, managed farmland attributes, open greenery and life style appeal.&nbsp;</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Managed Farmland: Investment Without Daily Hassle",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The thought of having a farm is a good one, but the actual operation that requires daily care is not the one many want. For working professionals living in Bengaluru, regular visits, plantation care, security, water management, cleaning and maintenance can turn out to be challenging.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">This is where the use of Ecovara farmland is useful. The project will provide a managed farmland experience whereby there is a possibility for investors to own a farm that they don't have to undertake everything themselves.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara features: large plot sizes, continental style farms, fruit trees, organic garden plots. These features are aimed at providing a greener, more sustainable ownership experience.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The fruit bearing plantation provides natural beauty and enhances the \"green\" brand of the project. The organic garden space promotes a better life and relationship with nature. The overall planning creates a sense of a private farm holding in an organised community for buyers.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The managed approach is a great benefit for investors who are interested in investing their money in the farm plots near Bangalore. Suitable for working together land ownership, farming potential, open space, lifestyle and professional assistance; without the problems that can arise from unmanaged farmland.&nbsp;</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">This makes Ecovara especially suitable for people who want a peaceful farm experience but cannot personally manage a farm every day.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Nature, Lifestyle, and Weekend Value",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara is not only about investment. It is also about how the land can be experienced.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The open green spaces, plantation areas and lifestyle elements are all planned to provide relaxation at the weekends. Ecovara's tree plantations are made up of more than 64 varieties providing a greener environment for the preservation of shade, biodiversity and peaceful nature.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Amenities like lotus pond, fish pond add calmness to the environment. Campfire &amp; rain dance areas provide room for family meetings, celebrations and weekend memories. The solar street lights promote sustainable living and the security check 24/7 ensures a safer and more comfortable environment.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The cafeteria is a comfortable area for visiting and spending time with family. The project is appropriate for joggers, leisure-seekers and nature lovers.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">These lifestyle attributes are important to buyers considering farm property in Bangalore. A farm plot ought to not just stay on paper. It should be a venue for families to spend time, fresh air, open spaces, and make memories.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Want land that gives you more than ownership?</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"><br></span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Visit Ecovara Farmplot and experience plantations, open space, lifestyle amenities, and peaceful surroundings near Lepakshi.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:17pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Why Ecovara Appeals to Modern Investors</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Today's investors expect more than just returns. They are also searching for assets which have flexibility, emotional value, lifestyle application, and long-term relevance.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">That's why Ecovara Farmplot is ideal for working professionals, families, first-time land buyers and those who wish to invest in a land asset supported by nature in the vicinity of Bengaluru. It provides them an opportunity to get ownership of land, greenery and a weekend getaway for their family.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Those who want to invest in something other than traditional apartments are drawn to ecovar farmland investments as well. Convenience is one thing provided by apartments, but limited open space and higher density are also associated with them. The farmland, on the other hand, has openness and natural environment, with a better emotional impression.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The project is also ideal for individuals looking for farmland close to Bangalore airport as it provides access to a developing area and provides a serene countryside ambiance.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For buyers who want land ownership, weekend lifestyle, managed farmland convenience, and location advantage, Ecovara creates a strong value proposition.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">That is why many investors see Ecovara not only as a plot purchase, but as a long-term lifestyle asset.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:17pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara vs Conventional Real Estate</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">It's easy to see the advantage when investors choose Ecovara real estate over traditional real estate investment.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Apartments are spaces that are ready to inhabit, but may have low open space, high density, and high maintenance costs. The city plots could be bought at the price of land but cannot be peaceful for the lifestyle environment. The income received from commercial properties can be rental income but typically requires a higher investment and has market risks.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Untreated farmland can be a beautiful sight, but it can come with its own set of challenges, security risks, and undeveloped land.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The balance is different at Ecovara. It provides an access to farm land lots around Bangalore which have planned layouts, plantations, lifestyle amenities and a managed community environment.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For the people looking for farm lands for sale in Bangalore, it's not only the land that's attractive. It is the mix of open space, trees, weekend usability and organized project planning.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara is not available for all real estate. Rather, it is for investors who wish for land ownership that incorporates nature, peace, and lifestyle value.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "What Investors Should Check Before Buying",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Before investing in any farmland project, proper due diligence is important. A good investment decision should not be based only on brochures, images, advertisements, or promises.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Some points investors should look at are the title documents, land classification, access road, layout plan, plot dimensions, water availability, maintenance terms, payment schedule and long term management support. Please ensure that all legal checks are carried out prior to any purchase.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">It is also recommended that buyers go to the site in person to check it out. A site visit will enable you to experience the approach to the project, the environment, the location of key premises, the development stage, the quality of the plantation, the amenities and the overall sense of the project.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">This checklist is a must have while considering Farm Land For Sale Near Bangalore. It aids in comparing projects appropriately and prevents emotional choices.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For example, with Ecovara, they need to ensure they check out project information, plot sizes, amenities, advantages of the location, management terms, documentation, pricing, etc., before they book any plots.&nbsp;</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Is Ecovara Right for You?",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">If you are seeking farmland in Bangalore, with open space, greenery, weekend usability, and managed convenience, then you may want to consider Ecovara.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">It's a suitable choice if you prefer a quiet weekend getaway, a property with some natural beauty, a bigger parcel for farming or if you're looking for a long term investment that isn't in the middle of the city. Additionally, it could be ideal for families who are looking for an outdoor venue for their children to enjoy nature, plantations, outdoor activities and open air.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara farmland can also be appropriate for busy professionals who wish to have land and do not want to experience the hassle each day of maintaining an unmanaged farm.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">It may not be the best option if you want so much as instant rental income, instant access to the city or a home that you can move into right away. The best farmland investors are those who grasp the principles of long-term holding, lifestyle use and land-based value.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara is worth exploring if you are looking for a more peaceful place to own, weekend value and a planned community for farming near Bengaluru.&nbsp;</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "Conclusion",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Investors are choosing Ecovara because it brings together land ownership, managed farmland convenience, location advantage, greenery, lifestyle amenities, and weekend value.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For people searching for farmland near Bangalore, farm plots near Bangalore, or Farm Plots Near Bangalore Airport, Ecovara Farmplot offers a premium farmland experience near Lepakshi along the Bengaluru-Hyderabad highway corridor.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara is for the purchaser who desires more in a property than you will find with an ordinary property. It provides space, nature, plantations, amenities and value of the land with a long term perspective.&nbsp;</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Interested in exploring Ecovara?</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"><br></span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Come and visit the site today and see for yourself the greenery, plot sizes and investment potential within the site.</span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\"><a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\"><b style=\"\"><u>Book a Site Visit</u></b></a></span>",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "h2",
+        "text": "FAQs",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "ol",
+        "text": [
+          "Where is Ecovara Farmplot located?Ecovara Farmplot by Novara Nature Estates is located near Lepakshi Temple along the Bengaluru-Hyderabad National Highway. The location offers access to Hindupuram, Bagepalli Toll Plaza, Penukonda Fort, Nandi Hills, Devanahalli, and Kempegowda International Airport.",
+          "Is Ecovara suitable for people searching for farmland near Bangalore?Yes. Ecovara is suitable for buyers looking for farmland near Bangalore with open green spaces, managed farmland features, plantations, lifestyle amenities, and weekend usability.",
+          "What plot sizes are available at Ecovara?Ecovara offers flexible plot sizes starting from 6,000 sq. ft. onwards. Available configurations include 6,000 sq. ft., 8,000 sq. ft., and 10,000 sq. ft., subject to availability.",
+          "Is Ecovara close to Bangalore airport?Ecovara is approximately 75 minutes from Kempegowda International Airport, Devanahalli. This makes it relevant for buyers searching for farmland near Bangalore airport and Farm Plots Near Bangalore Airport.",
+          "What makes Ecovara managed farmland different?Ecovara managed farmland offers land ownership with planned farmland features such as spacious plots, fruit-bearing plantations, organic garden spaces, lifestyle amenities, security, and community development.",
+          "Is Ecovara a good option for farmland investment?Ecovara can be considered by buyers exploring Ecovara farmland investment because it combines location advantage, managed farmland planning, greenery, weekend usability, and long-term land-backed value. However, buyers should complete legal and financial due diligence before investing.",
+          "What should I check before buying farmland for sale near Bangalore?Before buying farmland for sale near Bangalore, check title documents, land classification, access road, layout plan, water availability, maintenance terms, payment schedule, legal verification, and long-term management support.",
+          "Is Ecovara suitable as a weekend getaway?Yes. Ecovara is designed for weekend use with open spaces, plantations, a lotus pond or fish pond, campfire and rain dance area, cafeteria, jogging track, pet route, and peaceful countryside surroundings."
+        ]
+      }
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Where is Ecovara Farmplot located?",
+              "text": "Ecovara Farmplot by Novara Nature Estates is located near Lepakshi Temple along the Bengaluru-Hyderabad National Highway. The location offers access to Hindupuram, Bagepalli Toll Plaza, Penukonda Fort, Nandi Hills, Devanahalli, and Kempegowda International Airport."
+            },
+            {
+              "name": "Is Ecovara suitable for people searching for farmland near Bangalore?",
+              "text": "Yes. Ecovara is suitable for buyers looking for farmland near Bangalore with open green spaces, managed farmland features, plantations, lifestyle amenities, and weekend usability."
+            },
+            {
+              "name": "What plot sizes are available at Ecovara?",
+              "text": "Ecovara offers flexible plot sizes starting from 6,000 sq. ft. onwards. Available configurations include 6,000 sq. ft., 8,000 sq. ft., and 10,000 sq. ft., subject to availability."
+            },
+            {
+              "name": "Is Ecovara close to Bangalore airport?",
+              "text": "Ecovara is approximately 75 minutes from Kempegowda International Airport, Devanahalli. This makes it relevant for buyers searching for farmland near Bangalore airport and Farm Plots Near Bangalore Airport."
+            },
+            {
+              "name": "What makes Ecovara managed farmland different?",
+              "text": "Ecovara managed farmland offers land ownership with planned farmland features such as spacious plots, fruit-bearing plantations, organic garden spaces, lifestyle amenities, security, and community development."
+            },
+            {
+              "name": "Is Ecovara a good option for farmland investment?",
+              "text": "Ecovara can be considered by buyers exploring Ecovara farmland investment because it combines location advantage, managed farmland planning, greenery, weekend usability, and long-term land-backed value. However, buyers should complete legal and financial due diligence before investing."
+            },
+            {
+              "name": "What should I check before buying farmland for sale near Bangalore?",
+              "text": "Before buying farmland for sale near Bangalore, check title documents, land classification, access road, layout plan, water availability, maintenance terms, payment schedule, legal verification, and long-term management support."
+            },
+            {
+              "name": "Is Ecovara suitable as a weekend getaway?",
+              "text": "Yes. Ecovara is designed for weekend use with open spaces, plantations, a lotus pond or fish pond, campfire and rain dance area, cafeteria, jogging track, pet route, and peaceful countryside surroundings."
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novaranatureestates.com/blogs/why-investors-are-choosing-ecovara-farmplot"
+          },
+          "headline": "Why Investors Are Choosing Ecovara Farmplot",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782367807/tvxtwkkjpl42ubviwvlx.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "Why Investors Are Choosing Ecovara Farmplot",
+            "url": "https://www.novaranatureestates.com/blogs/why-investors-are-choosing-ecovara-farmplot"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/blogs/why-investors-are-choosing-ecovara-farmplot"
+            }
+          },
+          "datePublished": "25-06-2026",
+          "dateModified": "25-06-2026"
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blogs",
+              "item": "https://www.novaranatureestates.com/blogs"
+            },
+            {
+              "name": "Why Investors Are Choosing Ecovara Farmplot",
+              "item": "https://www.novaranatureestates.com/blogs/why-investors-are-choosing-ecovara-farmplot"
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Why Investors Are Choosing Ecovara Farmplot",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "2341",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
+  },
+  {
     "id": 30,
     "slug": "why-investors-are-choosing-ecovara-farmplot",
     "category": "Investment Guide",
