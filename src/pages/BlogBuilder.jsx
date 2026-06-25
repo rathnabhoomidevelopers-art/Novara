@@ -296,8 +296,31 @@ function PreviewSection({ s, usedH3, onPlayVideo }) {
   }
   if (s.type === "ul")
     return <ul className="list-disc list-outside pl-5 space-y-2 text-[14px] text-slate-600">{(s.text || []).map((i, k) => <li key={k}>{i}</li>)}</ul>;
-  if (s.type === "ol")
-    return <ol className="list-decimal list-outside pl-5 space-y-2 text-[14px] text-slate-600">{(s.text || []).map((i, k) => <li key={k}>{i}</li>)}</ol>;
+  if (s.type === "ol") {
+    const items = s.text || [];
+    const isFaqStyle = items.length > 0 && items.every((item) => {
+      const qi = item.indexOf("?");
+      return qi > 0 && qi < item.length - 1;
+    });
+    if (isFaqStyle) {
+      return (
+        <div className="space-y-3">
+          {items.map((item, idx) => {
+            const qi = item.indexOf("?");
+            const q = item.slice(0, qi + 1).trim();
+            const a = item.slice(qi + 1).trim();
+            return (
+              <div key={idx} className="rounded-xl border border-[#E6E1D3] overflow-hidden">
+                <div className="px-4 py-3 font-semibold text-[14px] text-[#15302A] bg-[#F4F1E8]">{q}</div>
+                <div className="px-4 py-3 text-[14px] text-slate-600 leading-relaxed">{a}</div>
+              </div>
+            );
+          })}
+        </div>
+      );
+    }
+    return <ol className="list-decimal list-outside pl-5 space-y-2 text-[14px] text-slate-600">{items.map((i, k) => <li key={k}>{i}</li>)}</ol>;
+  }
   if (s.type === "faq")
     return (
       <div className="space-y-3">
