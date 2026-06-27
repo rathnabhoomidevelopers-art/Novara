@@ -67,8 +67,8 @@ export const SCHEMA_DEFS = [
       mainEntityOfPage: { "@type": "WebPage", "@id": "" },
       headline: "",
       image: "",
-      author: { "@type": "Organization", name: "", url: "" },
-      publisher: { "@type": "Organization", name: "", logo: { "@type": "ImageObject", url: "" } },
+      author: { "@type": "Organization", name: "Novara Nature Estates", url: "https://www.novaranatureestates.com/" },
+      publisher: { "@type": "Organization", name: "Novara Nature Estates", logo: { "@type": "ImageObject", url: "https://www.novaranatureestates.com/images/logo.svg" } },
       datePublished: "",
       dateModified: "",
     },
@@ -226,9 +226,10 @@ export function buildBlogSchema(blog = {}) {
     headline: blog.headline || blog.title || "",
     description: blog.description || "",
     ...((blog.heroImage || blog.image) ? {
-    image: [blog.heroImage || blog.image].map((u) =>
-      u.startsWith("http") ? u : `https://www.novaranatureestates.com${u}`
-    )
+    image: (() => {
+      const u = blog.heroImage || blog.image;
+      return u.startsWith("http") ? u : `https://www.novaranatureestates.com${u}`;
+    })()
   } : {}),
     ...(date ? { datePublished: date, dateModified: date } : {}),
     author: { "@type": "Organization", name: blog.author || "Novara Nature Estates" },
