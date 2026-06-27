@@ -1292,6 +1292,17 @@ function BlogEditor({ editingBlog, onBack }) {
         return;
       }
     }
+    // When enabling Blog schema, auto-fill image with hero image (Cloudinary URL only)
+    if (id === "blog" && patch.enabled === true) {
+      const heroUrl = meta.heroImage || "";
+      if (heroUrl) {
+        setSchemas((p) => ({
+          ...p,
+          [id]: { ...p[id], ...patch, data: { ...p[id].data, image: heroUrl } },
+        }));
+        return;
+      }
+    }
     setSchemas((p) => ({ ...p, [id]: { ...p[id], ...patch } }));
   };
   const setSchemaField = (id, key, val) =>

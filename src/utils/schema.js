@@ -225,7 +225,11 @@ export function buildBlogSchema(blog = {}) {
     "@type": "BlogPosting",
     headline: blog.headline || blog.title || "",
     description: blog.description || "",
-    ...((blog.heroImage || blog.image) ? { image: [blog.heroImage || blog.image] } : {}),
+    ...((blog.heroImage || blog.image) ? {
+    image: [blog.heroImage || blog.image].map((u) =>
+      u.startsWith("http") ? u : `https://www.novaranatureestates.com${u}`
+    )
+  } : {}),
     ...(date ? { datePublished: date, dateModified: date } : {}),
     author: { "@type": "Organization", name: blog.author || "Novara Nature Estates" },
     publisher: {
