@@ -16,7 +16,7 @@ const API_BASE =
   import.meta.env.VITE_API_BASE_URL ||
   "https://novara-backend-one.vercel.app";
 
-const SITE_BASE = "https://www.novaranatureestates.com/blog/";
+const SITE_BASE = "https://www.novaranatureestates.com/blogs/";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 const slugify = (str = "") =>
@@ -526,7 +526,7 @@ function BlogPicker({ onSelect }) {
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="font-semibold text-slate-800 text-sm" style={{ display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>{blog.headline || blog.title}</div>
-                        <div className="text-[11px] text-[#1A614F] font-mono truncate mt-0.5 opacity-70">https://www.novaranatureestates.com/blog/{blog.slug}</div>
+                        <div className="text-[11px] text-[#1A614F] font-mono truncate mt-0.5 opacity-70">https://www.novaranatureestates.com/blogs/{blog.slug}</div>
                       </div>
                       {canEdit && (
                       <button onClick={() => onSelect(blog)} title="Edit blog"
@@ -1920,14 +1920,14 @@ function BlogEditor({ editingBlog, onBack }) {
                     <div>
                       <div className="flex items-center justify-between mb-1">
                         <label className="text-[11px] font-semibold text-[#5B6B63]">Meta title (&lt;title&gt;)</label>
-                        <span className="text-[11px] font-semibold text-[#9FC1B5]">{meta.title.trim().split(/\s+/).filter(Boolean).length} words</span>
+                        <span className="text-[11px] font-semibold text-[#9FC1B5]">{meta.title.length} chars</span>
                       </div>
                       <input value={meta.title} onChange={(e) => setMeta((p) => ({ ...p, title: e.target.value }))} placeholder="Project Name | Location" className="wp-input" />
                     </div>
                     <div>
                       <div className="flex items-center justify-between mb-1">
                         <label className="text-[11px] font-semibold text-[#5B6B63]">Meta description</label>
-                        <span className="text-[11px] font-semibold text-[#9FC1B5]">{meta.description.trim().split(/\s+/).filter(Boolean).length} words</span>
+                        <span className="text-[11px] font-semibold text-[#9FC1B5]">{meta.description.length} chars</span>
                       </div>
                       <textarea rows={3} value={meta.description} onChange={(e) => setMeta((p) => ({ ...p, description: e.target.value }))} placeholder="Brief description for search results…" className="wp-input resize-none" />
                     </div>
