@@ -228,7 +228,7 @@ export function buildBlogSchema(blog = {}) {
     ...((blog.heroImage || blog.image) ? {
     image: (() => {
       const u = blog.heroImage || blog.image;
-      return u.startsWith("http") ? u : `https://www.novaranatureestates.com${u}`;
+      return u.startsWith("http") ? u : `${u}`;
     })()
   } : {}),
     ...(date ? { datePublished: date, dateModified: date } : {}),
