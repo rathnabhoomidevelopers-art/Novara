@@ -510,7 +510,7 @@ export const BLOGS = [
           "name": "Novara Nature Estates",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://www.novaranatureestates.com/images/logo.svg"
+            "url": "/images/logo.svg"
           }
         },
         "datePublished": "2026-06-25T11:25:35+05:30",
@@ -884,8 +884,8 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/blogs/ecovara-farmplot-near-bangalore"
             }
           },
-          "datePublished": "2026-06-21T00:00:00+05:30",
-          "dateModified": "2026-06-21T00:00:00+05:30"
+          "datePublished": "21-06-2026",
+          "dateModified": "21-06-2026"
         },
         "json": ""
       },
@@ -1273,8 +1273,8 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/blogs/farmland-near-hindupur-guide"
             }
           },
-          "datePublished": "2026-05-03T00:00:00+05:30",
-          "dateModified": "2026-05-03T00:00:00+05:30"
+          "datePublished": "May 3, 2026",
+          "dateModified": "May 3, 2026"
         },
         "json": ""
       },
@@ -1677,8 +1677,8 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/blogs/farm-plots-near-bangalore-airport"
             }
           },
-          "datePublished": "2026-04-25T00:00:00+05:30",
-          "dateModified": "2026-04-25T00:00:00+05:30"
+          "datePublished": "Apr 25, 2026",
+          "dateModified": "Apr 25, 2026"
         },
         "json": ""
       },
