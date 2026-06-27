@@ -513,8 +513,8 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/blogs/why-investors-are-choosing-ecovara-farmplot"
             }
           },
-          "datePublished": "25-06-2026",
-          "dateModified": "25-06-2026"
+          "datePublished": "2026-06-25T11:25:35+05:30",
+          "dateModified": "2026-06-25T11:25:35+05:30"
         },
         "json": ""
       },
