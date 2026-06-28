@@ -300,7 +300,7 @@ const [hasWhatsAppAutoOpened, setHasWhatsAppAutoOpened] = useState(false);
                   </span>
                   <div className="mt-3 flex items-start justify-between gap-4">
                     <h3 className="text-[16px] lg:text-[20px] font-semibold leading-snug text-[#0F172A]">
-                      {blog.title}
+                      {blog.headline || blog.title}
                     </h3>
                     <a
                       href={`/blogs/${blog.slug}`}
