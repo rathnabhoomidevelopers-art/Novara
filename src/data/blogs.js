@@ -3,7 +3,7 @@ export const BLOGS = [
   "id": 27,
   "slug": "why-investors-are-choosing-ecovara-farmplot",
   "category": "Managed Farmland",
-  "title": "Invest in Ecovara Farmland Near Bangalore",
+  "title": "Invest in Ecovara Farmland Near Bangalore | Novara Estates",
   "headline": "Why Investors Are Choosing Ecovara Farmplot",
   "description": "Ecovara Farmplot by Novara Nature Estates offers planned farmland near Lepakshi with open spaces, amenities, and long-term land value.",
   "date": "Jun 25, 2026",
