@@ -699,7 +699,7 @@ function BlogEditor({ editingBlog, onBack }) {
   const [currentDraftKey, setCurrentDraftKey] = useState(null);
 
   const [meta, setMeta] = useState({
-    title: "", description: "", keywords: "", slug: "",
+    title: "", metaTitle: "", description: "", keywords: "", slug: "",
     category: "Managed Farmland", author: "Novara Nature Estates",
     date: new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }),
     heroImage: "", imageAlt: "", imageTitle: "", imageCaption: "", imageDescription: "", videoUrl: "", tags: "",
@@ -722,6 +722,7 @@ function BlogEditor({ editingBlog, onBack }) {
     editingBlogOriginalSlug.current = editingBlog.slug || "";
     setMeta({
       title:            editingBlog.headline       || editingBlog.title || "",
+      metaTitle:        editingBlog.title          || "",
       description:      editingBlog.description    || "",
       keywords:         editingBlog.keywords       || "",
       slug:             editingBlog.slug           || "",
@@ -1139,7 +1140,7 @@ function BlogEditor({ editingBlog, onBack }) {
     return {
       id:          isEditMode ? editingBlogId.current : Date.now(),
       slug, category: meta.category,
-      title: meta.title || title, headline: title,
+      title: meta.metaTitle || meta.title, headline: meta.title,
       description: meta.description, date: meta.date,
       keywords: meta.keywords, author: meta.author,
       image: meta.heroImage, heroImage: meta.heroImage, coverImage: meta.heroImage,
@@ -1931,9 +1932,9 @@ function BlogEditor({ editingBlog, onBack }) {
                     <div>
                       <div className="flex items-center justify-between mb-1">
                         <label className="text-[11px] font-semibold text-[#5B6B63]">Meta title (&lt;title&gt;)</label>
-                        <span className="text-[11px] font-semibold text-[#9FC1B5]">{meta.title.length} chars</span>
+                        <span className="text-[11px] font-semibold text-[#9FC1B5]">{meta.metaTitle.length} chars</span>
                       </div>
-                      <input value={meta.title} onChange={(e) => setMeta((p) => ({ ...p, title: e.target.value }))} placeholder="Project Name | Location" className="wp-input" />
+                      <input value={meta.metaTitle} onChange={(e) => setMeta((p) => ({ ...p, metaTitle: e.target.value }))} placeholder="Project Name | Location" className="wp-input" />
                     </div>
                     <div>
                       <div className="flex items-center justify-between mb-1">
