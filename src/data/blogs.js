@@ -395,7 +395,7 @@ export const BLOGS = [
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "Farmland Near Lepakshi: What Makes It Attractive for Bangalore-Based Families"
+            "@id": "https://www.novaranatureestates.com/blogs/farmland-near-lepakshi-bangalore-families"
           },
           "headline": "Farmland Near Lepakshi: What Makes It Attractive for Bangalore-Based Families",
           "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782633873/bgjbueesqerody2enpf4.webp",
