@@ -1,10 +1,10 @@
 export const BLOGS = [
- {
+   {
   "id": 27,
   "slug": "why-investors-are-choosing-ecovara-farmplot",
   "category": "Managed Farmland",
   "title": "Invest in Ecovara Farmland Near Bangalore",
-  "headline": "Invest in Ecovara Farmland Near Bangalore",
+  "headline": "Why Investors Are Choosing Ecovara Farmplot",
   "description": "Ecovara Farmplot by Novara Nature Estates offers planned farmland near Lepakshi with open spaces, amenities, and long-term land value.",
   "date": "Jun 25, 2026",
   "keywords": "",
@@ -612,7 +612,7 @@ export const BLOGS = [
     "slug": "ecovara-farmplot-near-bangalore",
     "category": "Managed Farmland",
     "title": "Ecovara Farmplot Near Bangalore | Novara Estates",
-    "headline": "Ecovara Farmplot Near Bangalore | Novara Estates",
+    "headline": "Ecovara Farmplot: 15 Acres of Managed Farmland Near Bangalore",
     "description": "Explore Ecovara Farmplot, a 15-acre managed farmland near Bangalore with gated farm plots, amenities, greenery and site visit options.",
     "date": "Jun 21, 2026",
     "keywords": "Ecovara Farmplots",
@@ -982,7 +982,7 @@ export const BLOGS = [
     "id": 25,
     "slug": "farmland-near-hindupur-guide",
     "category": "Managed Farmland",
-    "title": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
+    "title": "Farmland Near Hindupur — Investor Guide ",
     "headline": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
     "description": "A complete investor guide to farmland near Hindupur on the NH44 corridor — location advantages, connectivity, investment potential, and what to check before buying.",
     "date": "May 3, 2026",
@@ -992,10 +992,6 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1777790220/kf9tclbzzxclsz3gl0cd.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1777790220/kf9tclbzzxclsz3gl0cd.webp",
     "imageAlt": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
-    "imageTitle": "",
-    "imageCaption": "",
-    "imageDescription": "",
-    "videoUrl": "",
     "tags": [],
     "sections": [
       {
@@ -1005,12 +1001,12 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "This is not because Hindupur is not a place to invest. It is just that people do not talk about it much.. Hindupuram is very important for the whole Lepakshi farmland area. It has hospitals, banks, fuel stations, markets and other things that people need. This makes it a good place to own land.",
+        "text": "This is not because Hindupur is not a place to invest. It is just that people do not talk about it much.. Hindupuram is very important for the whole Lepakshi farmland area. It has hospitals, banks, fuel stations, markets and other things that people need. This makes it a good place to own land.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Hindupuram is a place to invest in farmland because it has direct access to NH44. It also has local businesses and is near the Bangalore airport. This guide will explain what Hindupuram has to offer for people who want to invest in farmland &amp; how it fits into the picture of the NH44 corridor and what to check before making a decision.",
+        "text": "Hindupuram is a place to invest in farmland because it has direct access to NH44. It also has local businesses and is near the Bangalore airport. This guide will explain what Hindupuram has to offer for people who want to invest in farmland & how it fits into the picture of the NH44 corridor and what to check before making a decision.\n",
         "fontWeight": "font-normal"
       },
       {
@@ -1020,17 +1016,17 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Hindupur is a town in the Anantapur district of Andhra Pradesh. It is on NH44, 130 kilometers north of Bangalore and 10 minutes from Ecovara Farm Plots near Lepakshi.",
+        "text": "\nHindupur is a town in the Anantapur district of Andhra Pradesh. It is on NH44, 130 kilometers north of Bangalore and 10 minutes from Ecovara Farm Plots near Lepakshi.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "The fact that Hindupuram is on NH44 is a plus for investors. The highway connects Hindupuram to Bangalore and Hyderabad making it an important part of an infrastructure corridor. The road is good and getting better all the time.",
+        "text": "The fact that Hindupuram is on NH44 is a plus for investors. The highway connects Hindupuram to Bangalore and Hyderabad making it an important part of an infrastructure corridor. The road is good and getting better all the time.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "From Kempegowda International Airport at Devanahalli Hindupuram is 85 kilometers away. This is a bit farther than Lepakshi. Still close enough to be convenient.",
+        "text": "From Kempegowda International Airport at Devanahalli Hindupuram is 85 kilometers away. This is a bit farther than Lepakshi. Still close enough to be convenient.\n",
         "fontWeight": "font-normal"
       },
       {
@@ -1039,18 +1035,57 @@ export const BLOGS = [
         "fontWeight": "font-bold"
       },
       {
-        "type": "p",
-        "text": "<strong>First :</strong> it is the center of services for the Lepakshi farmland area. Every farm owner who visits Ecovara or other managed farmland projects in the area goes through or near Hindupuram to get the things they need. This makes it a practical hub for the region.",
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "First :"
+          },
+          {
+            "bold": false,
+            "text": " it is the center of services for the Lepakshi farmland area. Every farm owner who visits Ecovara or other managed farmland projects in the area goes through or near Hindupuram to get the things they need. This makes it a practical hub for the region."
+          }
+        ],
         "fontWeight": "font-normal"
       },
       {
-        "type": "p",
-        "text": "<strong>Second  :</strong>Hindupur has its local economy. It is not a small town that depends on Bangalore growth. It has its businesses and serves a big population in the Anantapur district. This means that there is demand for land that is not just based on Bangalore expansion.",
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Second  :"
+          },
+          {
+            "bold": false,
+            "text": "Hindupur has its local economy. It is not a small town that depends on Bangalore growth. It has its businesses and serves a big population in the Anantapur district. This means that there is demand for land that is not just based on Bangalore expansion."
+          }
+        ],
         "fontWeight": "font-normal"
       },
       {
-        "type": "p",
-        "text": "<strong>Third :</strong>Hindupur is on the NH44 corridor as Lepakshi and Devanahalli. This means that land in and around Hindupuram will increase in value as the infrastructure in the area gets better.",
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Third :"
+          },
+          {
+            "bold": false,
+            "text": "Hindupur is on the NH44 corridor as Lepakshi and Devanahalli. This means that land in and around Hindupuram will increase in value as the infrastructure in the area gets better."
+          }
+        ],
         "fontWeight": "font-normal"
       },
       {
@@ -1060,17 +1095,17 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "The reasons to invest in farmland near Hindupur are different from those for Lepakshi or Devanahalli.. They are just as good.",
+        "text": "The reasons to invest in farmland near Hindupur are different from those for Lepakshi or Devanahalli.. They are just as good.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Hindupuram has been the commercial center for a big agricultural area for a long time. It has hospitals, markets, banks and other important services. This means that the value of land in and around Hindupuram is based on local economic activity, not just speculation or Bangalore growth.",
+        "text": "Hindupuram has been the commercial center for a big agricultural area for a long time. It has hospitals, markets, banks and other important services. This means that the value of land in and around Hindupuram is based on local economic activity, not just speculation or Bangalore growth.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "The fact that Hindupuram is on NH44 also means that land there benefits from the infrastructure premium. As the highway gets better and more businesses move into the area the value of the land will go up.\nAnother advantage of Hindupuram is that the price of land is lower than in the Lepakshi area. This makes it an affordable option for people who want to invest in farmland in the NH44 corridor.",
+        "text": "The fact that Hindupuram is on NH44 also means that land there benefits from the infrastructure premium. As the highway gets better and more businesses move into the area the value of the land will go up.\nAnother advantage of Hindupuram is that the price of land is lower than in the Lepakshi area. This makes it an affordable option for people who want to invest in farmland in the NH44 corridor.\n",
         "fontWeight": "font-normal"
       },
       {
@@ -1079,8 +1114,11 @@ export const BLOGS = [
         "fontWeight": "font-bold"
       },
       {
-        "type": "p",
-        "text": "For people who buy land at <a href=\"https://novaranatureestates.com/projects\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">Ecovara Farm Plots  </a>  being close to Hindupur is a plus. It means that they have access to a town with services and amenities. If they need help they can go to Hindupuram. If they need supplies for their farm they can go to Hindupuram. This makes it a practical and enjoyable experience to own farmland in the area.",
+        "type": "p_with_link",
+        "textBefore": "For people who buy land at",
+        "linkText": "Ecovara Farm Plots  ",
+        "href": "https://novaranatureestates.com/projects",
+        "textAfter": " being close to Hindupur is a plus. It means that they have access to a town with services and amenities. If they need help they can go to Hindupuram. If they need supplies for their farm they can go to Hindupuram. This makes it a practical and enjoyable experience to own farmland in the area.",
         "fontWeight": "font-normal"
       },
       {
@@ -1090,12 +1128,12 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "When people look at the NH44 corridor they often consider both Lepakshi and Hindupuram. Here is how the two areas compare.\n\nLepakshi has the temple, which is a big draw for tourists. This means that land near the temple is more valuable. Lepakshi is also closer to Bangalore and the airport, which makes it more convenient for some people.",
+        "text": "When people look at the NH44 corridor they often consider both Lepakshi and Hindupuram. Here is how the two areas compare.\n\nLepakshi has the temple, which is a big draw for tourists. This means that land near the temple is more valuable. Lepakshi is also closer to Bangalore and the airport, which makes it more convenient for some people.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Hindupuram has its own advantages. It has a developed commercial center, with better services and amenities. It is also more affordable than Lepakshi, which makes it a good option for people who want to invest in farmland but do not want to spend much.\n\nThe best argument for investing in this corridor is that Lepakshi and Hindupuram are both options and they are close to each other. This means that people who invest in farmland in the area can get the benefits of both locations.",
+        "text": "Hindupuram has its own advantages. It has a developed commercial center, with better services and amenities. It is also more affordable than Lepakshi, which makes it a good option for people who want to invest in farmland but do not want to spend much.\n\nThe best argument for investing in this corridor is that Lepakshi and Hindupuram are both options and they are close to each other. This means that people who invest in farmland in the area can get the benefits of both locations.\n",
         "fontWeight": "font-normal"
       },
       {
@@ -1105,7 +1143,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "The area around Hindupuram is semi-arid which means that it does not get a lot of rain. The main crops grown in the area are groundnuts, coconuts, mangoes, tomatoes and vegetables.\n\nFor people who invest in managed farmland projects the regional agricultural context is important. The crops that are grown in the area are well suited to the climate. They can be profitable with the right management.",
+        "text": "The area around Hindupuram is semi-arid which means that it does not get a lot of rain. The main crops grown in the area are groundnuts, coconuts, mangoes, tomatoes and vegetables.\n\nFor people who invest in managed farmland projects the regional agricultural context is important. The crops that are grown in the area are well suited to the climate. They can be profitable with the right management.\n",
         "fontWeight": "font-normal"
       },
       {
@@ -1115,12 +1153,15 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "When people buy farmland near Hindupuram there are a things they should check.\n\nFirst they should make sure they understand which state the land is in, Karnataka or Andhra Pradesh. This is because the laws and regulations for farmland are different in each state.\n\nSecond they should check the water situation. In a -arid area water is very important for farming. They should make sure that the land has a borewell and a drip irrigation system.",
+        "text": "When people buy farmland near Hindupuram there are a things they should check.\n\nFirst they should make sure they understand which state the land is in, Karnataka or Andhra Pradesh. This is because the laws and regulations for farmland are different in each state.\n\nSecond they should check the water situation. In a -arid area water is very important for farming. They should make sure that the land has a borewell and a drip irrigation system.\n",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p",
-        "text": "Our <a href=\"https://www.novaranatureestates.com/blogs/how-to-buy-farmland-karnataka-legal-guide\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">legal guide to buying farmland in Karnataka</a> Third they should check the title and revenue records for the land. This is to make sure that the land is legally owned and that there are no problems with the title.",
+        "type": "p_with_link",
+        "textBefore": "Our",
+        "linkText": "legal guide to buying farmland in Karnataka",
+        "href": "https://www.novaranatureestates.com/blogs/how-to-buy-farmland-karnataka-legal-guide",
+        "textAfter": "Third they should check the title and revenue records for the land. This is to make sure that the land is legally owned and that there are no problems with the title.",
         "fontWeight": "font-normal"
       },
       {
@@ -1130,57 +1171,57 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Being close, to Hindupuram is not just practical it also enhances the lifestyle of people who invest in farmland in the area. They can visit their farm on the weekends. Enjoy the local culture and amenities. This makes it an enjoyable and rewarding experience to own farmland in the NH44 corridor.",
+        "text": "Being close, to Hindupuram is not just practical it also enhances the lifestyle of people who invest in farmland in the area. They can visit their farm on the weekends. Enjoy the local culture and amenities. This makes it an enjoyable and rewarding experience to own farmland in the NH44 corridor.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "The area between Lepakshi and Hindupuram on NH44 is really rural. You see fields, some hills and the special kind of plants that grow in the Anantapur plateau. It feels very different from the area around Bangalore. Many people who visit for the time say this is the first thing they notice.",
+        "text": "The area between Lepakshi and Hindupuram on NH44 is really rural. You see fields, some hills and the special kind of plants that grow in the Anantapur plateau. It feels very different from the area around Bangalore. Many people who visit for the time say this is the first thing they notice.\n\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "If you drive from Ecovara to Hindupuram it only takes 10 minutes on a road. You go through this landscape. The town of Hindupuram has a market where people sell produce, street food and other everyday things. It is not a place for tourists. It is a town where people live and work. This makes the experience of visiting Ecovara feel real not fake.",
+        "text": "If you drive from Ecovara to Hindupuram it only takes 10 minutes on a road. You go through this landscape. The town of Hindupuram has a market where people sell produce, street food and other everyday things. It is not a place for tourists. It is a town where people live and work. This makes the experience of visiting Ecovara feel real not fake.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Some people who own land at Ecovara like to visit the market in Hindupuram every weekend. They buy groundnuts, vegetables and other local produce before going back to their farm for lunch. This is the kind of thing you can do when you have a farm near a town. You cannot do this if your farm is in a remote area.\n\nEcovara is a project, just 10 minutes from Hindupuram. If you are thinking of investing in the area between Hindupuram and Lepakshi you should visit Ecovara first.",
+        "text": "Some people who own land at Ecovara like to visit the market in Hindupuram every weekend. They buy groundnuts, vegetables and other local produce before going back to their farm for lunch. This is the kind of thing you can do when you have a farm near a town. You cannot do this if your farm is in a remote area.\n\nEcovara is a project, just 10 minutes from Hindupuram. If you are thinking of investing in the area between Hindupuram and Lepakshi you should visit Ecovara first.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "It is located on NH44 near the Lepakshi Temple, 10 minutes from Hindupuram town and 75 kilometers from Kempegowda International Airport. The farm has mature coconut and mango trees. Over 800 trees on 15 acres of land. There are 64 kinds of trees and they are all producing fruit. The farm also has a working drip irrigation system, which is managed by the people at Novara. They have a borewell. There is always water.\n\nYou can buy plots of land in sizes: 6,000, 8,000 or 10,000 square feet. The land is legally clear. You get a registered sale deed. The people at Novara help with all the paperwork.",
+        "text": "It is located on NH44 near the Lepakshi Temple, 10 minutes from Hindupuram town and 75 kilometers from Kempegowda International Airport. The farm has mature coconut and mango trees. Over 800 trees on 15 acres of land. There are 64 kinds of trees and they are all producing fruit. The farm also has a working drip irrigation system, which is managed by the people at Novara. They have a borewell. There is always water.\n\nYou can buy plots of land in sizes: 6,000, 8,000 or 10,000 square feet. The land is legally clear. You get a registered sale deed. The people at Novara help with all the paperwork.\n\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "There are amenities at Ecovara like a clubhouse swimming pool, cafeteria organic farming plots, a kids play area, a lotus pond, a campfire area and 24/7 security. The people at Novara take care of everything, including the plants, irrigation, security and communicating with the owners.\n\nYou can visit Ecovara. See the available plots.. You can schedule a free site visit. Many investors like the 10-minute drive from the project to Hindupuram town and back. It gives them a feeling about the place.",
+        "text": "There are amenities at Ecovara like a clubhouse swimming pool, cafeteria organic farming plots, a kids play area, a lotus pond, a campfire area and 24/7 security. The people at Novara take care of everything, including the plants, irrigation, security and communicating with the owners.\n\nYou can visit Ecovara. See the available plots.. You can schedule a free site visit. Many investors like the 10-minute drive from the project to Hindupuram town and back. It gives them a feeling about the place.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "Frequently Asked Questions About Farmland Near Hindupuram",
+        "text": "Frequently Asked Questions About Farmland Near Hindupuram ",
         "fontWeight": "font-bold"
       },
       {
         "type": "h3",
-        "text": "People often ask questions about buying farmland near Hindupuram. Is it a place to invest?",
+        "text": "People often ask questions about buying farmland near Hindupuram. Is it a place to invest? \n",
         "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Yes it is, if you choose the project. The town has infrastructure and it is connected to NH44. It is also near the Bangalore airport. But the climate is semi-arid so you need to have an irrigation system.",
+        "text": "Yes it is, if you choose the project. The town has infrastructure and it is connected to NH44. It is also near the Bangalore airport. But the climate is semi-arid so you need to have an irrigation system.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "How far is Hindupuram from Bangalore?",
+        "text": "How far is Hindupuram from Bangalore?\n",
         "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "It is 130 kilometers from central Bangalore and it takes around 2 to 2.5 hours to drive there depending on traffic. From the airport it is 85 kilometers and it takes around 90 minutes.",
+        "text": " It is 130 kilometers from central Bangalore and it takes around 2 to 2.5 hours to drive there depending on traffic. From the airport it is 85 kilometers and it takes around 90 minutes.",
         "fontWeight": "font-normal"
       },
       {
@@ -1190,7 +1231,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "It is in Andhra Pradeshs Anantapur district. You need to make sure you know which state the land is in because it affects the registration process and the taxes you pay.",
+        "text": " It is in Andhra Pradeshs Anantapur district. You need to make sure you know which state the land is in because it affects the registration process and the taxes you pay.",
         "fontWeight": "font-normal"
       },
       {
@@ -1200,12 +1241,12 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "The Hindupuram region is semi-arid. It does not get much rain. So you need to have a borewell and a drip irrigation system to grow crops. You should check the water situation carefully before buying any land.",
+        "text": " The Hindupuram region is semi-arid. It does not get much rain. So you need to have a borewell and a drip irrigation system to grow crops. You should check the water situation carefully before buying any land.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "What kind of crops can you grow near Hindupuram?",
+        "text": "What kind of crops can you grow near Hindupuram? ",
         "fontWeight": "font-bold"
       },
       {
@@ -1220,7 +1261,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "You should visit Ecovara first. It is 10 minutes from Hindupuram town so you can see the farm and the town in one visit. You can schedule a free site visit through the Novara website.",
+        "text": " You should visit Ecovara first. It is 10 minutes from Hindupuram town so you can see the farm and the town in one visit. You can schedule a free site visit through the Novara website.\n",
         "fontWeight": "font-normal"
       },
       {
@@ -1229,151 +1270,22 @@ export const BLOGS = [
         "fontWeight": "font-normal"
       },
       {
-        "type": "p",
-        "text": "You can call them at +91-8660200662 to <font color=\"#e3a600\"><a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\"> schedule a site visit</a></font><a href=\"https://novaranatureestates.com/contactus\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">.</a>",
+        "type": "p_with_link",
+        "textBefore": " You can call them at +91-8660200662 to",
+        "linkText": " schedule a site visit.",
+        "href": "https://novaranatureestates.com/contactus",
+        "textAfter": "",
         "fontWeight": "font-normal"
       }
-    ],
-    "schemas": {
-      "faq": {
-        "enabled": false,
-        "mode": "default",
-        "data": {
-          "items": [
-            {
-              "name": "",
-              "text": ""
-            }
-          ]
-        },
-        "json": ""
-      },
-      "blog": {
-        "enabled": true,
-        "mode": "default",
-        "data": {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://www.novaranatureestates.com/blogs/farmland-near-hindupur-guide"
-          },
-          "headline": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
-          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1777790220/kf9tclbzzxclsz3gl0cd.webp",
-          "author": {
-            "@type": "Organization",
-            "name": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
-            "url": "https://www.novaranatureestates.com/"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Novara Nature Estates",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://www.novaranatureestates.com/blogs/farmland-near-hindupur-guide"
-            }
-          },
-          "datePublished": "May 3, 2026",
-          "dateModified": "May 3, 2026"
-        },
-        "json": ""
-      },
-      "breadcrumb": {
-        "enabled": true,
-        "mode": "default",
-        "data": {
-          "items": [
-            {
-              "name": "Novara Nature Estates",
-              "item": "https://www.novaranatureestates.com/"
-            },
-            {
-              "name": "Blog Page",
-              "item": "https://www.novaranatureestates.com/blogs/"
-            },
-            {
-              "name": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
-              "item": "https://www.novaranatureestates.com/blogs/farmland-near-hindupur-guide"
-            }
-          ]
-        },
-        "json": ""
-      },
-      "review": {
-        "enabled": false,
-        "mode": "default",
-        "data": {
-          "@context": "https://schema.org",
-          "@type": "Product",
-          "name": "",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "",
-            "reviewCount": "",
-            "bestRating": "",
-            "worstRating": ""
-          }
-        },
-        "json": ""
-      },
-      "video": {
-        "enabled": false,
-        "mode": "default",
-        "data": {
-          "@context": "https://schema.org",
-          "@type": "VideoObject",
-          "name": "",
-          "description": "",
-          "thumbnailUrl": "",
-          "uploadDate": "",
-          "duration": "",
-          "contentUrl": "",
-          "embedUrl": ""
-        },
-        "json": ""
-      },
-      "product": {
-        "enabled": false,
-        "mode": "default",
-        "data": {
-          "@context": "https://schema.org/",
-          "@type": "Product",
-          "name": "",
-          "image": "",
-          "description": "",
-          "brand": {
-            "@type": "Brand",
-            "name": ""
-          },
-          "sku": "",
-          "offers": {
-            "@type": "Offer",
-            "url": "",
-            "priceCurrency": "",
-            "price": "",
-            "priceValidUntil": "",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "",
-            "bestRating": "",
-            "worstRating": "",
-            "ratingCount": ""
-          }
-        },
-        "json": ""
-      }
-    }
+    ]
   },
   {
     "id": 24,
     "slug": "farm-plots-near-bangalore-airport",
     "category": "Managed Farmland",
-    "title": "Farm Plots Near Bangalore Airport — The Investment Case Examined Honestly",
+    "title": "Is Farmland Near Bangalore Airport a Smart Investment?",
     "headline": "Farm Plots Near Bangalore Airport — The Investment Case Examined Honestly",
-    "description": "Are farm plots near Bangalore airport worth investing in? An honest breakdown of the investment case, appreciation zones, what to check, and where the best value sits.",
+    "description": "Are farm plots near Bangalore airport worth investing in? An honest breakdown of the investment case, appreciation zones, what to check, and where the best value sits.\n",
     "date": "Apr 25, 2026",
     "keywords": "",
     "author": "Novara Nature Estates",
@@ -1381,20 +1293,16 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1777098210/cay2ur9d7baee04tx5ea.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1777098210/cay2ur9d7baee04tx5ea.webp",
     "imageAlt": "Farm Plots Near Bangalore Airport — The Investment Case Examined Honestly",
-    "imageTitle": "",
-    "imageCaption": "",
-    "imageDescription": "",
-    "videoUrl": "",
     "tags": [],
     "sections": [
       {
         "type": "p",
-        "text": "The airport question comes up in every conversation with a serious farmland investor near Bangalore.\n\nNot \"should I buy near the airport?”. That part feels obvious. People are actually asking if the airport story is already fully priced in. Are they paying a premium for appreciation that has already happened?. Is there still a genuine opportunity within the airport influence zone?",
+        "text": "The airport question comes up in every conversation with a serious farmland investor near Bangalore.\n\nNot \"should I buy near the airport?”. That part feels obvious. People are actually asking if the airport story is already fully priced in. Are they paying a premium for appreciation that has already happened?. Is there still a genuine opportunity within the airport influence zone?\n\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "These are the questions.. They have specific answers. Depending on which part of the airport corridor you are evaluating and what your investment timeline looks like.",
+        "text": "These are the questions.. They have specific answers. Depending on which part of the airport corridor you are evaluating and what your investment timeline looks like.\n",
         "fontWeight": "font-normal"
       },
       {
@@ -1404,12 +1312,12 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "The short answer is yes. The useful answer explains why. And why the location of your plot within the airport corridor matters as much as the proximity itself.",
+        "text": "The short answer is yes. The useful answer explains why. And why the location of your plot within the airport corridor matters as much as the proximity itself.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Kempegowda International Airport has been generating activity and land appreciation along the NH44 corridor since 2008. The appreciation wave has moved outward from the airport. From Devanahalli to the mid-corridor to the 50 to 75 kilometre zone.",
+        "text": "Kempegowda International Airport has been generating activity and land appreciation along the NH44 corridor since 2008. The appreciation wave has moved outward from the airport. From Devanahalli to the mid-corridor to the 50 to 75 kilometre zone.\n",
         "fontWeight": "font-normal"
       },
       {
@@ -1433,38 +1341,77 @@ export const BLOGS = [
         "fontWeight": "font-normal"
       },
       {
-        "type": "p",
-        "text": "<strong>Immediate Airport Zone - 0 To 20 Kilometres</strong>",
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Immediate Airport Zone - 0 To 20 Kilometres"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Farm plots in this zone sit within or adjacent to commercial and industrial development. The investment case here is appreciation driven by established infrastructure demand.. Entry prices already reflect a significant portion of the airport premium.\n\nThe farm experience in this zone is increasingly compromised by surrounding development.",
+        "text": "Farm plots in this zone sit within or adjacent to commercial and industrial development. The investment case here is appreciation driven by established infrastructure demand.. Entry prices already reflect a significant portion of the airport premium.\n\nThe farm experience in this zone is increasingly compromised by surrounding development.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Mid-Corridor -  20 To 50 Kilometres"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "<strong>Mid-Corridor -  20 To 50 Kilometres</strong>",
+        "text": "Farm plots in this range offer entry prices than the immediate airport zone with meaningful infrastructure development visible along the corridor.\n\nFor investors who want established infrastructure alongside some remaining appreciation potential the mid-corridor offers a balance.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Outer Corridor -  50 To 75 Kilometres"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Farm plots in this range offer entry prices than the immediate airport zone with meaningful infrastructure development visible along the corridor.\n\nFor investors who want established infrastructure alongside some remaining appreciation potential the mid-corridor offers a balance.",
+        "text": "This is where the strongest value proposition currently sits for investors with a 7 to 15 year horizon.\n\nFarm plots in this zone. The Lepakshi belt on NH44. Are within the documented airport influence zone but at earlier stage pricing.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "<strong>Outer Corridor -  50 To 75 Kilometres</strong>",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "This is where the strongest value proposition currently sits for investors with a 7 to 15 year horizon.\n\nFarm plots in this zone. The Lepakshi belt on NH44. Are within the documented airport influence zone but at earlier stage pricing.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "The structural drivers that produced appreciation in zones are actively operating here. Airport expansion, NH44 infrastructure investment, northward Bangalore growth.\n\nThis is the zone where Ecovara Farm Plots by Novara Nature Estates is positioned.",
+        "text": "The structural drivers that produced appreciation in zones are actively operating here. Airport expansion, NH44 infrastructure investment, northward Bangalore growth.\n\nThis is the zone where Ecovara Farm Plots by Novara Nature Estates is positioned.\n",
         "fontWeight": "font-normal"
       },
       {
@@ -1474,7 +1421,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "There is a difference between purchasing a farm plot within a managed farmland project and purchasing raw agricultural land near the airport corridor.\n\nA farm plot within a managed project like Ecovara gives you something that raw land cannot: a functioning asset from day one",
+        "text": "There is a difference between purchasing a farm plot within a managed farmland project and purchasing raw agricultural land near the airport corridor.\n\nA farm plot within a managed project like Ecovara gives you something that raw land cannot: a functioning asset from day one\n",
         "fontWeight": "font-normal"
       },
       {
@@ -1484,7 +1431,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "A farm plot within a managed project generates income from the existing plantation throughout your holding period.\n\nThis income is tax-free under Section 10(1) of the Income Tax Act.",
+        "text": "A farm plot within a managed project generates income from the existing plantation throughout your holding period.\n\nThis income is tax-free under Section 10(1) of the Income Tax Act.\n",
         "fontWeight": "font-normal"
       },
       {
@@ -1494,7 +1441,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Owning agricultural land requires either regular personal visits to oversee farming activity, a trusted local contact to manage the land or accepting that the land sits unmanaged and unproductive.\n\nA managed farm plot eliminates this entirely.",
+        "text": "Owning agricultural land requires either regular personal visits to oversee farming activity, a trusted local contact to manage the land or accepting that the land sits unmanaged and unproductive.\n\nA managed farm plot eliminates this entirely.\n",
         "fontWeight": "font-normal"
       },
       {
@@ -1504,32 +1451,84 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Any specific return projection from any developer should be viewed with scepticism.\n\nThe appreciation is best captured over 7 to 15 years.",
+        "text": "Any specific return projection from any developer should be viewed with scepticism.\n\nThe appreciation is best captured over 7 to 15 years.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "The Checklist Before Buying Farm Plots Near Bangalore Airport",
+        "text": "The Checklist Before Buying Farm Plots Near Bangalore Airport\n",
         "fontWeight": "font-bold"
       },
       {
-        "type": "p",
-        "text": "<strong>Location precision - </strong> Confirm the distance in kilometres from Kempegowda International Airport and the specific route.",
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Location precision - "
+          },
+          {
+            "bold": false,
+            "text": " Confirm the distance in kilometres from Kempegowda International Airport and the specific route."
+          }
+        ],
         "fontWeight": "font-normal"
       },
       {
-        "type": "p",
-        "text": "<strong>Land classification -</strong>  Confirm the plot is classified as agricultural in the RTC records.",
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "Land classification -"
+          },
+          {
+            "bold": false,
+            "text": "  Confirm the plot is classified as agricultural in the RTC records."
+          }
+        ],
         "fontWeight": "font-normal"
       },
       {
-        "type": "p",
-        "text": "<strong>KIADB notification status - </strong> For plots within 30 kilometres of the airport verify with your lawyer whether the specific survey number falls within or adjacent to a KIADB-notified industrial zone.",
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "KIADB notification status - "
+          },
+          {
+            "bold": false,
+            "text": " For plots within 30 kilometres of the airport verify with your lawyer whether the specific survey number falls within or adjacent to a KIADB-notified industrial zone."
+          }
+        ],
         "fontWeight": "font-normal"
       },
       {
-        "type": "p",
-        "text": "<strong> Title verification -</strong>  Engage your independent lawyer. Not the developers. To conduct a 30-year title search verify the encumbrance certificate check the RTC for ownership and land classification and confirm mutation records are current.",
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": " Title verification -"
+          },
+          {
+            "bold": false,
+            "text": "  Engage your independent lawyer. Not the developers. To conduct a 30-year title search verify the encumbrance certificate check the RTC for ownership and land classification and confirm mutation records are current."
+          }
+        ],
         "fontWeight": "font-normal"
       },
       {
@@ -1538,8 +1537,11 @@ export const BLOGS = [
         "fontWeight": "font-normal"
       },
       {
-        "type": "h2",
-        "text": "Ecovara Farm Plots     in the Airport Corridor Worth Visiting",
+        "type": "h2_with_link",
+        "textBefore": "",
+        "linkText": "Ecovara Farm Plots ",
+        "href": "https://novaranatureestates.com/projects",
+        "textAfter": "   in the Airport Corridor Worth Visiting",
         "fontWeight": "font-bold"
       },
       {
@@ -1547,19 +1549,19 @@ export const BLOGS = [
         "text": [
           "75 kilometres from Kempegowda International Airport. NH44 access, no secondary road detour.",
           "800+ coconut and mango trees. 64+ Tree varieties, productive from day one.",
-          "Title on every plot. 30-Year title search, clean encumbrance certificate RTC verified, mutation in Novaras name, before resale.",
+          " Title on every plot. 30-Year title search, clean encumbrance certificate RTC verified, mutation in Novaras name, before resale.",
           "Full amenities. Clubhouse, swimming pool, cafeteria organic farming plots kids play area, lotus pond, campfire area, solar street lights, 24/7 gated security.",
-          "Complete farm management. Novara Nature Estates manages the plantation, irrigation, security and owner communication."
+          " Complete farm management. Novara Nature Estates manages the plantation, irrigation, security and owner communication."
         ]
       },
       {
         "type": "p",
-        "text": "Plot sizes start at 6,000 feet. You can also find plots that're 8,000 and 10,000 square feet.\nCheck out Ecovara farm plots to see what plots are available and learn more about the project.\nSchedule a free visit to the site and see the airport corridor for yourself.\nWhen you drive from Bangalore to Ecovara on NH44 you get an idea of what the corridor looks like what the farm is and if its a good investment for you",
+        "text": "Plot sizes start at 6,000 feet. You can also find plots that're 8,000 and 10,000 square feet.\nCheck out Ecovara farm plots to see what plots are available and learn more about the project.\nSchedule a free visit to the site and see the airport corridor for yourself.\nWhen you drive from Bangalore to Ecovara on NH44 you get an idea of what the corridor looks like what the farm is and if its a good investment for you\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "Frequently Asked Questions About Farm Plots Near Bangalore Airport",
+        "text": " Frequently Asked Questions About Farm Plots Near Bangalore Airport",
         "fontWeight": "font-bold"
       },
       {
@@ -1569,207 +1571,91 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "In the area around the airport. 0 To 20 kilometres. Prices have already gone up.\n\nIn the area. 50 To 75 kilometres along NH44. Prices are still low.\n\nFor investors who can wait 7 to 15 years the outer area offers the value.",
+        "text": "In the area around the airport. 0 To 20 kilometres. Prices have already gone up.\n\nIn the area. 50 To 75 kilometres along NH44. Prices are still low.\n\nFor investors who can wait 7 to 15 years the outer area offers the value.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "What is the smallest plot size available near Bangalore airport?",
+        "text": " What is the smallest plot size available near Bangalore airport?",
         "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "At Ecovara plots start at 6,000 feet.\n\nCall the Novara team for prices. +91-8660200662.",
+        "text": "At Ecovara plots start at 6,000 feet.\n\nCall the Novara team for prices. +91-8660200662.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Do farm plots near the airport make money?",
+        "text": " Do farm plots near the airport make money?",
         "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Yes. If there are already trees planted.\n\nAt Ecovara there are over 800 trees that make money from day one.\n\nRaw land near the airport doesn't make money unless you farm it or rent it to a farmer.",
+        "text": "Yes. If there are already trees planted.\n\nAt Ecovara there are over 800 trees that make money from day one.\n\nRaw land near the airport doesn't make money unless you farm it or rent it to a farmer.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Is a managed farm plot better than buying land near the airport?",
+        "text": " Is a managed farm plot better than buying land near the airport?",
         "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "For investors in Bangalore who don't know farming yes.\n\nA managed farm plot is a working asset with ownership existing income and professional management from day one.\n\nRaw land requires you to handle all those things yourself.",
+        "text": "For investors in Bangalore who don't know farming yes.\n\nA managed farm plot is a working asset with ownership existing income and professional management from day one.\n\nRaw land requires you to handle all those things yourself.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "How do I verify that a farm plot near the airport has ownership?",
+        "text": " How do I verify that a farm plot near the airport has ownership?",
         "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Hire a lawyer who's n't with the developer.\n\nCheck the ownership papers, certificates and records independently.\n\nAny developer who doesn't let you do this is one to avoid.",
+        "text": "Hire a lawyer who's n't with the developer.\n\nCheck the ownership papers, certificates and records independently.\n\nAny developer who doesn't let you do this is one to avoid.\n",
         "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Can I visit Ecovara before deciding?",
+        "text": " Can I visit Ecovara before deciding?",
         "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Yes.. This is recommended.\n\nSchedule a visit through the Novara contact page.\n\nThe visit is free no strings attached and most investors find that walking the land answers questions that no guide can.",
+        "text": "Yes.. This is recommended.\n\nSchedule a visit through the Novara contact page.\n\nThe visit is free no strings attached and most investors find that walking the land answers questions that no guide can.\n",
+        "fontWeight": "font-normal"
+      },
+      {
+        "type": "p_with_bold",
+        "parts": [
+          {
+            "bold": false,
+            "text": ""
+          },
+          {
+            "bold": true,
+            "text": "The Airport Corridor Explained"
+          },
+          {
+            "bold": false,
+            "text": ""
+          }
+        ],
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "<strong>The Airport Corridor Explained</strong>",
+        "text": "The airport question has an answer.\n\nAirports bring activity.\n\nEconomic activity brings demand for land.\n\nDemand for land brings appreciation in value.\n\nThis has been happening on the NH44 corridor since 2008. Is still happening.\n\nThe question for investors is not if they should be in the airport corridor.\n\nIt's where in the corridor to invest.. At what stage of appreciation.\n\nThe outer NH44 corridor at 75 kilometres from the airport is where appreciation is happening in 2026.\n\nThat's where Ecovara is.\n\nThat's why smart investors are looking here.\n",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p",
-        "text": "The airport question has an answer.\n\nAirports bring activity.\n\nEconomic activity brings demand for land.\n\nDemand for land brings appreciation in value.\n\nThis has been happening on the NH44 corridor since 2008. Is still happening.\n\nThe question for investors is not if they should be in the airport corridor.\n\nIt's where in the corridor to invest.. At what stage of appreciation.\n\nThe outer NH44 corridor at 75 kilometres from the airport is where appreciation is happening in 2026.\n\nThat's where Ecovara is.\n\nThat's why smart investors are looking here.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "<a href=\"https://novaranatureestates.com/contactus\" style=\"color:#E3A600\">Schedule your free site visit</a>  to Ecovara +91-8660200662",
+        "type": "p_with_link",
+        "textBefore": "",
+        "linkText": "Schedule your free site visit",
+        "href": "https://novaranatureestates.com/contactus",
+        "textAfter": " to Ecovara +91-8660200662",
         "fontWeight": "font-normal"
       }
-    ],
-    "schemas": {
-      "faq": {
-        "enabled": false,
-        "mode": "default",
-        "data": {
-          "items": [
-            {
-              "name": "",
-              "text": ""
-            }
-          ]
-        },
-        "json": ""
-      },
-      "blog": {
-        "enabled": true,
-        "mode": "default",
-        "data": {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": ""
-          },
-          "headline": "",
-          "image": "",
-          "author": {
-            "@type": "Organization",
-            "name": "",
-            "url": "https://www.novaranatureestates.com/"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://www.novaranatureestates.com/blogs/farm-plots-near-bangalore-airport"
-            }
-          },
-          "datePublished": "Apr 25, 2026",
-          "dateModified": "Apr 25, 2026"
-        },
-        "json": ""
-      },
-      "breadcrumb": {
-        "enabled": true,
-        "mode": "default",
-        "data": {
-          "items": [
-            {
-              "name": "Novara Nature Estates",
-              "item": "https://www.novaranatureestates.com/"
-            },
-            {
-              "name": "Blog Page",
-              "item": "https://www.novaranatureestates.com/blogs/"
-            },
-            {
-              "name": "Farm Plots Near Bangalore Airport — The Investment Case Examined Honestly",
-              "item": "https://www.novaranatureestates.com/blogs/farm-plots-near-bangalore-airport"
-            }
-          ]
-        },
-        "json": ""
-      },
-      "review": {
-        "enabled": false,
-        "mode": "default",
-        "data": {
-          "@context": "https://schema.org",
-          "@type": "Product",
-          "name": "",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "",
-            "reviewCount": "",
-            "bestRating": "",
-            "worstRating": ""
-          }
-        },
-        "json": ""
-      },
-      "video": {
-        "enabled": false,
-        "mode": "default",
-        "data": {
-          "@context": "https://schema.org",
-          "@type": "VideoObject",
-          "name": "",
-          "description": "",
-          "thumbnailUrl": "",
-          "uploadDate": "",
-          "duration": "",
-          "contentUrl": "",
-          "embedUrl": ""
-        },
-        "json": ""
-      },
-      "product": {
-        "enabled": false,
-        "mode": "default",
-        "data": {
-          "@context": "https://schema.org/",
-          "@type": "Product",
-          "name": "",
-          "image": "",
-          "description": "",
-          "brand": {
-            "@type": "Brand",
-            "name": ""
-          },
-          "sku": "",
-          "offers": {
-            "@type": "Offer",
-            "url": "",
-            "priceCurrency": "",
-            "price": "",
-            "priceValidUntil": "",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "",
-            "bestRating": "",
-            "worstRating": "",
-            "ratingCount": ""
-          }
-        },
-        "json": ""
-      }
-    }
+    ]
   },
   {
     "id": 23,
