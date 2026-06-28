@@ -432,7 +432,7 @@ export const BLOGS = [
             },
             {
               "name": "Farmland Near Lepakshi: What Makes It Attractive for Bangalore-Based Families",
-              "item": "Farmland Investment Insights & Guides."
+              "item": "https://www.novaranatureestates.com/blogs/farmland-near-lepakshi-bangalore-families"
             }
           ]
         },
