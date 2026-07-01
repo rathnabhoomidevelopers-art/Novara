@@ -2421,9 +2421,9 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1776852713/qli1z5yaijuf0057pe7r.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1776852713/qli1z5yaijuf0057pe7r.webp",
     "imageAlt": "Farmland near airport",
-    "imageTitle": "",
+    "imageTitle": "Farmland near airport",
     "imageCaption": "",
-    "imageDescription": "",
+    "imageDescription": "Farmland near airport",
     "videoUrl": "",
     "tags": [],
     "sections": [
