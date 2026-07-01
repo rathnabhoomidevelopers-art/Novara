@@ -22,10 +22,14 @@ const getSchema = (urlPathname, blog = null) => {
       ? new Date(blog.date).toISOString()
       : "2026-01-01T00:00:00.000Z";
     const normDate = (v, fb) => {
-      if (typeof v === "string" && v.trim() && !Number.isNaN(Date.parse(v))) {
-        return /T\d{2}:\d{2}/.test(v) ? v : new Date(v).toISOString();
-      }
-      return fb;
+      if (typeof v !== "string" || !v.trim()) return fb;
+      // Repair "YYYY-MM-DD:HH:MM:SS…" (colon separator) → valid ISO "…T…".
+      let d = v.trim().replace(/^(\d{4}-\d{2}-\d{2}):(\d{2}:\d{2})/, "$1T$2");
+      if (Number.isNaN(Date.parse(d))) return fb;
+      // Already a full datetime → keep verbatim so the timezone (e.g. +05:30) is preserved.
+      if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/.test(d)) return d;
+      // Date-only or other parseable form → normalise to ISO.
+      return new Date(d).toISOString();
     };
     const datePublished = normDate(schemaData.datePublished, fallbackDate);
     const dateModified = normDate(schemaData.dateModified, datePublished);

@@ -222,12 +222,14 @@ function fixMediaValue(v) {
 }
 
 // Turn "2026-01-01" / "Apr 8, 2026" into a valid ISO 8601 datetime with a zone.
+// Also repairs a colon typed where ISO wants a "T" ("2026-06-28:13:41:25+05:30").
 function fixSchemaDate(d) {
   if (typeof d !== "string" || !d.trim()) return d;
-  if (/T\d{2}:\d{2}/.test(d)) return d;            // already has a time component
-  const t = Date.parse(d);
-  if (Number.isNaN(t)) return d;                   // leave unparseable values alone
-  return new Date(t).toISOString();                // e.g. 2026-01-01T00:00:00.000Z
+  let s = d.trim().replace(/^(\d{4}-\d{2}-\d{2}):(\d{2}:\d{2})/, "$1T$2");
+  if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/.test(s)) return s;  // full datetime → keep (preserves timezone)
+  const t = Date.parse(s);
+  if (Number.isNaN(t)) return d;                           // leave unparseable values alone
+  return new Date(t).toISOString();                        // e.g. 2026-01-01T00:00:00.000Z
 }
 
 export function sanitizeSchema(node) {
