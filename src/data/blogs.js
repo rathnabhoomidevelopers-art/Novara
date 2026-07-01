@@ -5236,9 +5236,9 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775042323/jo056gchoqrdgamt8prw.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775042323/jo056gchoqrdgamt8prw.webp",
     "imageAlt": "Sustainable Farmland ",
-    "imageTitle": "",
+    "imageTitle": "Sustainable Farmland ",
     "imageCaption": "",
-    "imageDescription": "",
+    "imageDescription": "Sustainable Farmland ",
     "videoUrl": "",
     "tags": [],
     "sections": [
@@ -5801,17 +5801,17 @@ export const BLOGS = [
         "json": ""
       },
       "blog": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": ""
+            "@id": "https://www.novaranatureestates.com/blogs/sustainable-plantation-farmland-investment-india"
           },
-          "headline": "",
-          "image": "",
+          "headline": "Sustainable Plantation Farmland Investment Near Bangalore for Long-Term Income & Growth.",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775042323/jo056gchoqrdgamt8prw.webp",
           "author": {
             "@type": "Organization",
             "name": "Novara Nature Estates",
@@ -5825,8 +5825,8 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/images/logo.svg"
             }
           },
-          "datePublished": "",
-          "dateModified": ""
+          "datePublished": "2026-03-31T18:30:46+05:30",
+          "dateModified": "2026-03-31T18:30:46+05:30"
         },
         "json": ""
       },
@@ -5835,6 +5835,10 @@ export const BLOGS = [
         "mode": "default",
         "data": {
           "items": [
+            {
+              "name": "",
+              "item": ""
+            },
             {
               "name": "",
               "item": ""
