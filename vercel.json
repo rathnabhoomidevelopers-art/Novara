@@ -1,6 +1,6 @@
 {
   "trailingSlash": false,
-  "buildCommand": "vite build && printf 'export * from \"./entry.mjs\";' > build/server/index.js",
+  "buildCommand": "(node scripts/generate-sitemap.js || echo 'sitemap generation failed — continuing build without blocking the site') && vite build && printf 'export * from \"./entry.mjs\";' > build/server/index.js",
   "outputDirectory": "build/client",
   "framework": null,
   "redirects": [

@@ -8,7 +8,7 @@
  *
  * What it generates:
  *   public/sitemap.xml          → index of all sub-sitemaps
- *   public/sitemap-blog.xml     → one <url> per blog slug (from src/data/blogs.js)
+ *   public/sitemap-blogs.xml     → one <url> per blog slug (from src/data/blogs.js)
  *   public/sitemap-pages.xml    → static pages
  *   public/sitemap-projects.xml → project pages (edit PROJECTS array below)
  */
@@ -134,7 +134,7 @@ ${urls}
 
 function generateSitemapIndex() {
   const now = nowIST()
-  const sitemaps = ['sitemap-pages.xml', 'sitemap-blog.xml', 'sitemap-projects.xml']
+  const sitemaps = ['sitemap-pages.xml', 'sitemap-blogs.xml', 'sitemap-projects.xml']
   const entries = sitemaps.map((name) => `  <sitemap>
     <loc>${BASE_URL}/${name}</loc>
     <lastmod>${now}</lastmod>
@@ -150,7 +150,7 @@ ${entries}
 
 console.log(`\n🗺️  Generating sitemaps from ${BLOGS.length} blog(s) and ${PROJECTS.length} project(s)...\n`)
 
-writeFile('sitemap-blog.xml',     generateBlogSitemap())
+writeFile('sitemap-blogs.xml',    generateBlogSitemap())
 writeFile('sitemap-pages.xml',    generatePagesSitemap())
 writeFile('sitemap-projects.xml', generateProjectsSitemap())
 writeFile('sitemap.xml',          generateSitemapIndex())
