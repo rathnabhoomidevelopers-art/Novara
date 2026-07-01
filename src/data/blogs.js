@@ -4147,9 +4147,9 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775630823/vmxyoimnafupdmtwgdne.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775630823/vmxyoimnafupdmtwgdne.webp",
     "imageAlt": "Looking for Farmland Near Lepakshi Temple? Here Is What Every Buyer Should Know Before Deciding.",
-    "imageTitle": "",
+    "imageTitle": "Looking for Farmland Near Lepakshi Temple? Here Is What Every Buyer Should Know Before Deciding.",
     "imageCaption": "",
-    "imageDescription": "",
+    "imageDescription": "Looking for Farmland Near Lepakshi Temple? Here Is What Every Buyer Should Know Before Deciding.",
     "videoUrl": "",
     "tags": [],
     "sections": [
