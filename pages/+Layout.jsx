@@ -14,10 +14,21 @@ const getSchema = (urlPathname, blog = null) => {
     // only prefix the site domain for site-relative paths.
     const rawImg = blog.heroImage || blog.image || "";
     const blogImage = /^https?:\/\//i.test(rawImg) ? rawImg : `${www}${rawImg}`;
-    // Valid ISO 8601 datetime (with timezone) from the post's date.
-    const blogDate = blog.date && !Number.isNaN(Date.parse(blog.date))
+    // Prefer the dates saved in the Blog Builder's Blog Schema; fall back to the
+    // post's own date. Builder values that already carry a time/timezone are kept
+    // verbatim (so +05:30 etc. is preserved); date-only values are normalised.
+    const schemaData = (blog.schemas && blog.schemas.blog && blog.schemas.blog.data) || {};
+    const fallbackDate = blog.date && !Number.isNaN(Date.parse(blog.date))
       ? new Date(blog.date).toISOString()
       : "2026-01-01T00:00:00.000Z";
+    const normDate = (v, fb) => {
+      if (typeof v === "string" && v.trim() && !Number.isNaN(Date.parse(v))) {
+        return /T\d{2}:\d{2}/.test(v) ? v : new Date(v).toISOString();
+      }
+      return fb;
+    };
+    const datePublished = normDate(schemaData.datePublished, fallbackDate);
+    const dateModified = normDate(schemaData.dateModified, datePublished);
     return [
       {
         "@context": "https://schema.org",
@@ -27,8 +38,8 @@ const getSchema = (urlPathname, blog = null) => {
         description: blog.description,
         image: blogImage,
         url: `${base}/blogs/${blog.slug}`,
-        datePublished: blogDate,
-        dateModified: blogDate,
+        datePublished: datePublished,
+        dateModified: dateModified,
         author: { "@type": "Organization", name: "Novara Nature Estates", url: `${www}/` },
         publisher: { "@id": `${base}/#organization` },
         keywords: blog.keywords || "",
