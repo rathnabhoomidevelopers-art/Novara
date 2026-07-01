@@ -282,8 +282,8 @@ export default function BlogDetail({ vikeSlug }) {
         .blog-content, .blog-content * { font-family: 'Urbanist', 'Poppins', sans-serif !important; }
         .blog-content p,
         .blog-content ul li,
-        .blog-content ol li { color: #374151 !important; font-size: 14px !important; font-weight: 400 !important; line-height: 1.7 !important; }
-        .blog-content ul, .blog-content ol { color: #374151 !important; }
+        .blog-content ol li { color: #475569 !important; font-size: 14px !important; font-weight: 400 !important; line-height: 1.7 !important; }
+        .blog-content ul, .blog-content ol { color: #475569 !important; }
      `}</style>
      <Header />
 
@@ -531,9 +531,9 @@ export default function BlogDetail({ vikeSlug }) {
                   // Unordered list
                   if (s.type === "ul") {
                     return (
-                      <ul key={i} className="list-disc list-outside pl-5 space-y-2 text-[13px] sm:text-[14px] text-slate-600">
+                      <ul key={i} className="list-disc list-outside pl-5 space-y-1.5 text-[13px] sm:text-[14px] leading-relaxed text-slate-600">
                         {(s.text || []).map((item, idx) => (
-                          <li key={idx} className="leading-relaxed">{item}</li>
+                          <li key={idx}>{item}</li>
                         ))}
                       </ul>
                     );
@@ -555,9 +555,9 @@ export default function BlogDetail({ vikeSlug }) {
                       return <FaqAccordion key={i} items={faqItems} />;
                     }
                     return (
-                      <ol key={i} className="list-decimal list-outside pl-5 space-y-2 text-[13px] sm:text-[14px] text-slate-600">
+                      <ol key={i} className="list-decimal list-outside pl-5 space-y-1.5 text-[13px] sm:text-[14px] leading-relaxed text-slate-600">
                         {items.map((item, idx) => (
-                          <li key={idx} className="leading-relaxed">{item}</li>
+                          <li key={idx}>{item}</li>
                         ))}
                       </ol>
                     );
