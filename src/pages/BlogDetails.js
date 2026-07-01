@@ -495,12 +495,12 @@ export default function BlogDetail({ vikeSlug }) {
                   if (s.type === "table") {
                     return (
                       <div key={i} className="overflow-x-auto rounded-xl border border-[#1A614F]">
-                        <table className="w-full text-[13px] sm:text-[14px] text-[#111827] border-collapse">
+                        <table className="w-full text-[13px] sm:text-[14px] text-slate-600 leading-relaxed border-collapse">
                           <thead>
                             <tr>
                               {(s.headers || []).map((h, hi) => (
                                 <th key={hi}
-                                  className="text-left px-4 py-3 font-bold border border-[#1A614F] text-[#111827]"
+                                  className="text-left px-4 py-3 font-bold border border-[#1A614F] text-[#15302A]"
                                   style={{ background: s.themed ? "#e8dfa8" : "#EAF7F0" }}>
                                   {h}
                                 </th>
@@ -513,8 +513,8 @@ export default function BlogDetail({ vikeSlug }) {
                                 {row.map((cell, ci) => (
                                   // First row bold if no thead headers
                                   ri === 0 && !s.headers?.length
-                                    ? <td key={ci} className="px-4 py-2.5 border border-[#1A614F] font-bold text-[#111827]">{cell}</td>
-                                    : <td key={ci} className="px-4 py-2.5 border border-[#1A614F]">{cell}</td>
+                                    ? <td key={ci} className="px-4 py-2.5 border border-[#1A614F] font-bold text-[#15302A]">{cell}</td>
+                                    : <td key={ci} className="px-4 py-2.5 border border-[#1A614F] text-slate-600">{cell}</td>
                                 ))}
                               </tr>
                             ))}
