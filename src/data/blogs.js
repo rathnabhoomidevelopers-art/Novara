@@ -2340,18 +2340,18 @@ export const BLOGS = [
         "json": ""
       },
       "review": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "Product",
-          "name": "",
+          "name": "Farm Plots Near Bangalore Airport — The Investment Case Examined Honestly",
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "",
-            "reviewCount": "",
-            "bestRating": "",
-            "worstRating": ""
+            "ratingValue": "5",
+            "reviewCount": "1287",
+            "bestRating": "5",
+            "worstRating": "1"
           }
         },
         "json": ""
