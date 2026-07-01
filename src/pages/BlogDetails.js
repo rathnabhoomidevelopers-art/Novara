@@ -30,6 +30,44 @@ const slugify = (str = "") =>
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-");
 
+// ─── FAQ Accordion (click a question to expand its answer) ────────────────────
+function FaqAccordion({ items = [] }) {
+  const [open, setOpen] = useState(0);
+  return (
+    <div className="space-y-2.5">
+      {items.map((item, i) => {
+        const isOpen = open === i;
+        return (
+          <div key={i} className="rounded-xl border border-[#E6E1D3] overflow-hidden bg-white">
+            <button
+              type="button"
+              onClick={() => setOpen(isOpen ? -1 : i)}
+              aria-expanded={isOpen}
+              className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-semibold text-[14px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors"
+            >
+              <span>{item.q}</span>
+              <svg
+                viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5"
+                className={`shrink-0 text-[#1A614F] transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div
+              className="grid transition-all duration-200 ease-in-out"
+              style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
+            >
+              <div className="overflow-hidden">
+                <div className="px-4 py-3 text-[14px] text-slate-600 leading-relaxed">{item.a}</div>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 // Modal Component
 const BrochureModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
@@ -360,7 +398,7 @@ export default function BlogDetail({ vikeSlug }) {
                   // H2
                   if (s.type === "h2") {
                     return (
-                      <h2 key={i} className="scroll-mt-28 text-[20px] sm:text-[24px] font-bold mt-4">
+                      <h2 key={i} className="scroll-mt-28 text-[20px] sm:text-[24px] font-bold mt-4" style={{ textAlign: s.align || undefined }}>
                         {s.text}
                       </h2>
                     );
@@ -373,7 +411,7 @@ export default function BlogDetail({ vikeSlug }) {
                     used.set(base, count);
                     const id = count === 1 ? base : `${base}-${count}`;
                     return (
-                      <h3 key={i} id={id} className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]">
+                      <h3 key={i} id={id} className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]" style={{ textAlign: s.align || undefined }}>
                         {s.text}
                       </h3>
                     );
@@ -393,7 +431,7 @@ export default function BlogDetail({ vikeSlug }) {
                     const id = count === 1 ? base : `${base}-${count}`;
                     return createElement(
                       s.type,
-                      { key: i, id, className: `scroll-mt-28 ${size} font-bold text-[#111827] mt-4` },
+                      { key: i, id, className: `scroll-mt-28 ${size} font-bold text-[#111827] mt-4`, style: { textAlign: s.align || undefined } },
                       s.text,
                     );
                   }
@@ -409,10 +447,9 @@ export default function BlogDetail({ vikeSlug }) {
 
                   // Image
                   if (s.type === "image") {
-                    const figAlign = s.alignment === "left" ? "mr-auto ml-0" : s.alignment === "right" ? "ml-auto mr-0" : "mx-auto";
-                    const figMaxW = s.imgWidth ? { maxWidth: s.imgWidth + "px" } : {};
-                    const imgStyle = {};
-                    if (s.imgWidth) imgStyle.width = s.imgWidth + "px";
+                    const justify = s.alignment === "left" ? "flex-start" : s.alignment === "right" ? "flex-end" : "center";
+                    const figStyle = { maxWidth: "100%", ...(s.imgWidth ? { width: s.imgWidth + "px" } : {}) };
+                    const imgStyle = { width: "100%", height: "auto", display: "block" };
                     if (s.imgHeight) { imgStyle.height = s.imgHeight + "px"; imgStyle.objectFit = "cover"; }
                     const ytId = (() => {
                       const url = s.videoUrl || "";
@@ -424,27 +461,28 @@ export default function BlogDetail({ vikeSlug }) {
                       return last.length === 11 ? last : null;
                     })();
                     return (
-                      <figure key={i} className={`rounded-2xl overflow-hidden border border-slate-100 bg-slate-50 ${figAlign}`} style={figMaxW}>
-                        <div className="relative group">
-                          <img
-                            src={s.src}
-                            alt={s.alt || s.caption || "Blog image"}
-                            title={s.title || undefined}
-                            className={s.imgWidth ? "" : "w-full h-auto"}
-                            style={imgStyle}
-                          />
-                          {ytId && (
-                            <button type="button" aria-label="Play video"
-                              onClick={() => window.open(`https://www.youtube.com/watch?v=${ytId}`, "_blank")}
-                              className="absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/35 transition-colors">
-                              <span className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
-                                <svg viewBox="0 0 24 24" fill="#E3A600" width="26" height="26"><path d="M8 5v14l11-7z"/></svg>
-                              </span>
-                            </button>
-                          )}
-                        </div>
-
-                      </figure>
+                      <div key={i} style={{ display: "flex", justifyContent: justify }}>
+                        <figure className="rounded-2xl overflow-hidden border border-slate-100 bg-slate-50" style={figStyle}>
+                          <div className="relative group">
+                            <img
+                              src={s.src}
+                              alt={s.alt || s.caption || "Blog image"}
+                              title={s.title || undefined}
+                              style={imgStyle}
+                            />
+                            {ytId && (
+                              <button type="button" aria-label="Play video"
+                                onClick={() => window.open(`https://www.youtube.com/watch?v=${ytId}`, "_blank")}
+                                className="absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/35 transition-colors">
+                                <span className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
+                                  <svg viewBox="0 0 24 24" fill="#E3A600" width="26" height="26"><path d="M8 5v14l11-7z"/></svg>
+                                </span>
+                              </button>
+                            )}
+                          </div>
+                          {s.caption && <figcaption className="px-4 py-3 text-[12px] text-slate-500 text-center">{s.caption}</figcaption>}
+                        </figure>
+                      </div>
                     );
                   }
 
@@ -483,16 +521,7 @@ export default function BlogDetail({ vikeSlug }) {
 
                   // FAQ
                   if (s.type === "faq") {
-                    return (
-                      <div key={i} className="space-y-3">
-                        {(s.items || []).map((item, fi) => (
-                          <div key={fi} className="rounded-xl border border-[#E6E1D3] overflow-hidden">
-                            <div className="px-4 py-3 font-semibold text-[14px] text-[#15302A] bg-[#F4F1E8]">{item.q}</div>
-                            <div className="px-4 py-3 text-[14px] text-slate-600 leading-relaxed">{item.a}</div>
-                          </div>
-                        ))}
-                      </div>
-                    );
+                    return <FaqAccordion key={i} items={s.items || []} />;
                   }
 
                   // Unordered list
@@ -515,21 +544,11 @@ export default function BlogDetail({ vikeSlug }) {
                       return qi > 0 && qi < item.length - 1;
                     });
                     if (isFaqStyle) {
-                      return (
-                        <div key={i} className="space-y-3">
-                          {items.map((item, idx) => {
-                            const qi = item.indexOf("?");
-                            const q = item.slice(0, qi + 1).trim();
-                            const a = item.slice(qi + 1).trim();
-                            return (
-                              <div key={idx} className="rounded-xl border border-[#E6E1D3] overflow-hidden">
-                                <div className="px-4 py-3 font-semibold text-[14px] text-[#15302A] bg-[#F4F1E8]">{q}</div>
-                                <div className="px-4 py-3 text-[14px] text-slate-600 leading-relaxed">{a}</div>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      );
+                      const faqItems = items.map((item) => {
+                        const qi = item.indexOf("?");
+                        return { q: item.slice(0, qi + 1).trim(), a: item.slice(qi + 1).trim() };
+                      });
+                      return <FaqAccordion key={i} items={faqItems} />;
                     }
                     return (
                       <ol key={i} className="list-decimal list-outside pl-5 space-y-2 text-[13px] sm:text-[14px] text-slate-600">
@@ -627,6 +646,7 @@ export default function BlogDetail({ vikeSlug }) {
                     <p
                       key={i}
                       className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600"
+                      style={{ textAlign: s.align || undefined }}
                       dangerouslySetInnerHTML={{ __html: cleanHtml }}
                     />
                   );

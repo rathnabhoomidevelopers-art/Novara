@@ -85,8 +85,9 @@ const partsToHtml = (parts = []) =>
 
 const sectionsToHtml = (sections = []) =>
   sections.map((s) => {
+    const alignStyle = s.align ? ` style="text-align:${escapeHtml(s.align)}"` : "";
     if (["h1","h2","h3","h4","h5","h6"].includes(s.type))
-      return `<${s.type}>${escapeHtml(s.text || "")}</${s.type}>`;
+      return `<${s.type}${alignStyle}>${escapeHtml(s.text || "")}</${s.type}>`;
 
     if (["h1_with_link","h2_with_link","h3_with_link","h4_with_link","h5_with_link","h6_with_link"].includes(s.type)) {
       const tag = s.type.replace("_with_link", "");
@@ -94,7 +95,7 @@ const sectionsToHtml = (sections = []) =>
     }
 
     if (s.type === "p")
-      return `<p>${s.text || ""}</p>`; // text may already contain inline HTML
+      return `<p${alignStyle}>${s.text || ""}</p>`; // text may already contain inline HTML
 
     if (s.type === "p_with_bold")
       return `<p>${partsToHtml(s.parts)}</p>`;
@@ -184,7 +185,10 @@ const htmlToSections = (html = "") => {
     const img = node.querySelector ? node.querySelector("img") : null;
 
     if (/^h[1-6]$/.test(tag)) {
-      if (hasRealText(node)) out.push({ type: tag, text: node.textContent.trim(), fontWeight: "font-bold" });
+      if (hasRealText(node)) {
+        const align = (node.style && node.style.textAlign) || "";
+        out.push({ type: tag, text: node.textContent.trim(), fontWeight: "font-bold", ...(align && align !== "left" ? { align } : {}) });
+      }
       return;
     }
     if (tag === "ul" || tag === "ol") {
@@ -237,7 +241,8 @@ const htmlToSections = (html = "") => {
       if (img && !hasRealText(node)) {
         out.push({ type: "image", src: img.getAttribute("src") || "", caption: "" });
       } else {
-        out.push({ type: "p", text: node.innerHTML.trim(), fontWeight: "font-normal" });
+        const align = (node.style && node.style.textAlign) || "";
+        out.push({ type: "p", text: node.innerHTML.trim(), fontWeight: "font-normal", ...(align && align !== "left" ? { align } : {}) });
       }
     }
   });
@@ -246,6 +251,34 @@ const htmlToSections = (html = "") => {
 };
 
 // ─── Preview renderer (mirrors BlogDetails) ───────────────────────────────────
+function PreviewFaqAccordion({ items = [] }) {
+  const [open, setOpen] = React.useState(0);
+  return (
+    <div className="space-y-2.5">
+      {items.map((item, i) => {
+        const isOpen = open === i;
+        return (
+          <div key={i} className="rounded-xl border border-[#E6E1D3] overflow-hidden bg-white">
+            <button type="button" onClick={() => setOpen(isOpen ? -1 : i)} aria-expanded={isOpen}
+              className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-semibold text-[14px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors">
+              <span>{item.q}</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5"
+                className={`shrink-0 text-[#1A614F] transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+            <div className="grid transition-all duration-200 ease-in-out" style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}>
+              <div className="overflow-hidden">
+                <div className="px-4 py-3 text-[14px] text-slate-600 leading-relaxed">{item.a}</div>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 function PreviewSection({ s, usedH3, onPlayVideo }) {
   if (["h1","h2","h3","h4","h5","h6"].includes(s.type)) {
     const base = slugify(s.text || "");
@@ -255,43 +288,43 @@ function PreviewSection({ s, usedH3, onPlayVideo }) {
       h1: "text-[24px] sm:text-[30px]", h2: "text-[20px] sm:text-[24px]", h3: "text-[16px] sm:text-[18px]",
       h4: "text-[15px] sm:text-[16px]", h5: "text-[13px] sm:text-[14px]", h6: "text-[12px] sm:text-[13px]",
     }[s.type];
-    return React.createElement(s.type, { id, className: `scroll-mt-28 ${size} font-bold text-[#111827]` }, s.text);
+    return React.createElement(s.type, { id, className: `scroll-mt-28 ${size} font-bold text-[#111827]`, style: { textAlign: s.align || undefined } }, s.text);
   }
   if (s.type === "quote")
     return <div className="rounded-xl border border-[#F2E6C9] bg-[#FFF8E8] px-4 py-4 text-[14px] text-slate-700"><div className="border-l-4 border-[#E3A600] pl-3 italic leading-relaxed">{s.text}</div></div>;
   if (s.type === "image") {
-    const figAlign = s.alignment === "left" ? "mr-auto ml-0" : s.alignment === "right" ? "ml-auto mr-0" : "mx-auto";
-    const figMaxW = s.imgWidth ? { maxWidth: s.imgWidth + "px" } : {};
-    const imgStyle = {};
-    if (s.imgWidth) { imgStyle.width = s.imgWidth + "px"; }
+    const justify = s.alignment === "left" ? "flex-start" : s.alignment === "right" ? "flex-end" : "center";
+    const figStyle = { maxWidth: "100%", ...(s.imgWidth ? { width: s.imgWidth + "px" } : {}) };
+    const imgStyle = { width: "100%", height: "auto", display: "block" };
     if (s.imgHeight) { imgStyle.height = s.imgHeight + "px"; imgStyle.objectFit = "cover"; }
     return (
-      <figure className={`rounded-2xl overflow-hidden border border-slate-100 bg-slate-50 relative group ${figAlign}`} style={figMaxW}>
-        {s.src ? (
-          <div className="relative">
-            <img
-              src={s.src}
-              alt={s.alt || s.caption || ""}
-              title={s.title || undefined}
-              className={s.imgWidth ? "" : "w-full h-auto"}
-              style={imgStyle}
-            />
-            {s.videoUrl && getYouTubeId(s.videoUrl) && (
-              <button
-                type="button"
-                onClick={() => onPlayVideo && onPlayVideo(s.videoUrl)}
-                className="absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/35 transition-colors"
-                aria-label="Play video"
-              >
-                <span className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                  <svg viewBox="0 0 24 24" fill="#E3A600" width="26" height="26"><path d="M8 5v14l11-7z" /></svg>
-                </span>
-              </button>
-            )}
-          </div>
-        ) : null}
-        {s.caption && <figcaption className="px-4 py-3 text-[12px] text-slate-500 text-center">{s.caption}</figcaption>}
-      </figure>
+      <div style={{ display: "flex", justifyContent: justify }}>
+        <figure className="rounded-2xl overflow-hidden border border-slate-100 bg-slate-50 relative group" style={figStyle}>
+          {s.src ? (
+            <div className="relative">
+              <img
+                src={s.src}
+                alt={s.alt || s.caption || ""}
+                title={s.title || undefined}
+                style={imgStyle}
+              />
+              {s.videoUrl && getYouTubeId(s.videoUrl) && (
+                <button
+                  type="button"
+                  onClick={() => onPlayVideo && onPlayVideo(s.videoUrl)}
+                  className="absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/35 transition-colors"
+                  aria-label="Play video"
+                >
+                  <span className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                    <svg viewBox="0 0 24 24" fill="#E3A600" width="26" height="26"><path d="M8 5v14l11-7z" /></svg>
+                  </span>
+                </button>
+              )}
+            </div>
+          ) : null}
+          {s.caption && <figcaption className="px-4 py-3 text-[12px] text-slate-500 text-center">{s.caption}</figcaption>}
+        </figure>
+      </div>
     );
   }
   if (s.type === "ul")
@@ -303,35 +336,16 @@ function PreviewSection({ s, usedH3, onPlayVideo }) {
       return qi > 0 && qi < item.length - 1;
     });
     if (isFaqStyle) {
-      return (
-        <div className="space-y-3">
-          {items.map((item, idx) => {
-            const qi = item.indexOf("?");
-            const q = item.slice(0, qi + 1).trim();
-            const a = item.slice(qi + 1).trim();
-            return (
-              <div key={idx} className="rounded-xl border border-[#E6E1D3] overflow-hidden">
-                <div className="px-4 py-3 font-semibold text-[14px] text-[#15302A] bg-[#F4F1E8]">{q}</div>
-                <div className="px-4 py-3 text-[14px] text-slate-600 leading-relaxed">{a}</div>
-              </div>
-            );
-          })}
-        </div>
-      );
+      const faqItems = items.map((item) => {
+        const qi = item.indexOf("?");
+        return { q: item.slice(0, qi + 1).trim(), a: item.slice(qi + 1).trim() };
+      });
+      return <PreviewFaqAccordion items={faqItems} />;
     }
     return <ol className="list-decimal list-outside pl-5 space-y-2 text-[14px] text-slate-600">{items.map((i, k) => <li key={k}>{i}</li>)}</ol>;
   }
   if (s.type === "faq")
-    return (
-      <div className="space-y-3">
-        {(s.items || []).map((item, i) => (
-          <div key={i} className="rounded-xl border border-[#E6E1D3] overflow-hidden">
-            <div className="px-4 py-3 font-semibold text-[14px] text-[#15302A] bg-[#F4F1E8]">{item.q}</div>
-            <div className="px-4 py-3 text-[14px] text-slate-600 leading-relaxed">{item.a}</div>
-          </div>
-        ))}
-      </div>
-    );
+    return <PreviewFaqAccordion items={s.items || []} />;
   if (s.type === "table")
     return (
       <div className="overflow-x-auto rounded-xl border border-[#1A614F]">
@@ -341,7 +355,7 @@ function PreviewSection({ s, usedH3, onPlayVideo }) {
         </table>
       </div>
     );
-  return <p className="text-[14px] leading-relaxed text-slate-600" dangerouslySetInnerHTML={{ __html: s.text }} />;
+  return <p className="text-[14px] leading-relaxed text-slate-600" style={{ textAlign: s.align || undefined }} dangerouslySetInnerHTML={{ __html: s.text }} />;
 }
 
 // ═════════════════════════════════════════════════════════════════════════════
@@ -1114,6 +1128,8 @@ function BlogEditor({ editingBlog, onBack }) {
     try {
       const url = await compressAndUpload(file, { maxW: 1400, quality: 0.82 });
       setMeta((p) => ({ ...p, heroImage: url }));
+      // Keep the Blog schema's image in sync with the featured image
+      setSchemas((p) => (p.blog?.enabled ? { ...p, blog: { ...p.blog, data: { ...p.blog.data, image: url } } } : p));
       addToMediaLib({ url, type: "featured", name: file.name, addedAt: Date.now(), size: file.size });
     } catch (e) { alert("Featured image upload failed: " + e.message); }
     finally {
@@ -1265,18 +1281,27 @@ function BlogEditor({ editingBlog, onBack }) {
   const deleteDraft = (key) => { localStorage.removeItem(key); loadDrafts(); };
 
   // ── Schema config helpers ─────────────────────────────────────────────────
-  // Extract FAQ Q&A pairs from <dl><dt><dd> blocks in the editor
+  // Extract FAQ Q&A pairs from the editor. Supports two authoring styles:
+  //   • <dl><dt>question</dt><dd>answer</dd></dl>  (FAQ toolbar block)
+  //   • <ol><li>Question? Answer text</li></ol>    (ordered-list FAQ)
   const extractFaqFromBody = () => {
     if (!bodyRef.current) return [];
-    const dlEls = bodyRef.current.querySelectorAll("dl");
     const items = [];
-    dlEls.forEach((dl) => {
+    bodyRef.current.querySelectorAll("dl").forEach((dl) => {
       let cur = null;
       dl.childNodes.forEach((ch) => {
         const tag = ch.tagName?.toLowerCase();
         if (tag === "dt") { cur = { name: ch.textContent.trim(), text: "" }; items.push(cur); }
         else if (tag === "dd" && cur) { cur.text = ch.textContent.trim(); }
       });
+    });
+    // Ordered lists whose items are "Question? Answer" pairs
+    bodyRef.current.querySelectorAll("ol").forEach((ol) => {
+      const lis = Array.from(ol.querySelectorAll(":scope > li")).map((li) => li.textContent.trim()).filter(Boolean);
+      const isFaqStyle = lis.length > 0 && lis.every((t) => { const qi = t.indexOf("?"); return qi > 0 && qi < t.length - 1; });
+      if (isFaqStyle) {
+        lis.forEach((t) => { const qi = t.indexOf("?"); items.push({ name: t.slice(0, qi + 1).trim(), text: t.slice(qi + 1).trim() }); });
+      }
     });
     return items;
   };
@@ -1293,16 +1318,33 @@ function BlogEditor({ editingBlog, onBack }) {
         return;
       }
     }
-    // When enabling Blog schema, auto-fill image with hero image (Cloudinary URL only)
+    // When enabling Blog schema, auto-connect its fields to this post
+    // (headline, page URL, image, and dates) so the schema matches the content.
     if (id === "blog" && patch.enabled === true) {
-      const heroUrl = meta.heroImage || "";
-      if (heroUrl) {
-        setSchemas((p) => ({
+      const SITE = "https://www.novaranatureestates.com";
+      const slug = meta.slug || slugify(meta.title || "");
+      const iso = meta.date && !Number.isNaN(Date.parse(meta.date))
+        ? new Date(meta.date).toISOString() : "";
+      setSchemas((p) => {
+        const prev = p[id].data || {};
+        return {
           ...p,
-          [id]: { ...p[id], ...patch, data: { ...p[id].data, image: heroUrl } },
-        }));
-        return;
-      }
+          [id]: {
+            ...p[id], ...patch,
+            data: {
+              ...prev,
+              headline: meta.title || prev.headline || "",
+              image: meta.heroImage || prev.image || "",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": slug ? `${SITE}/blogs/${slug}` : (prev.mainEntityOfPage?.["@id"] || ""),
+              },
+              ...(iso ? { datePublished: iso, dateModified: iso } : {}),
+            },
+          },
+        };
+      });
+      return;
     }
     setSchemas((p) => ({ ...p, [id]: { ...p[id], ...patch } }));
   };
@@ -1780,6 +1822,21 @@ function BlogEditor({ editingBlog, onBack }) {
                     {/* File info strip */}
                     <div className="rounded-xl border border-[#E6E1D3] bg-[#FAFAF8] p-3 space-y-2">
                       <p className="text-[11px] font-bold text-[#5B6B63] uppercase tracking-wider">File information</p>
+                      {/* Image URL (read-only, copyable) */}
+                      <div>
+                        <span className="block text-[10px] font-semibold text-[#9FC1B5] mb-0.5">Image URL</span>
+                        <div className="flex items-center gap-1.5">
+                          <input readOnly value={pendingImageUrl || ""}
+                            onFocus={(e) => e.target.select()}
+                            className="flex-1 min-w-0 px-2 py-1 text-[11px] font-mono rounded border border-[#DDD7C7] bg-[#F4F1E8] text-[#1A614F] focus:outline-none focus:border-[#1A614F]"
+                          />
+                          <button type="button" title="Copy URL"
+                            onClick={() => { try { navigator.clipboard.writeText(pendingImageUrl || ""); } catch (_) {} }}
+                            className="shrink-0 px-2 py-1 text-[11px] font-semibold rounded border border-[#DDD7C7] text-[#1A614F] hover:bg-[#EAF4EF] transition-colors">
+                            Copy
+                          </button>
+                        </div>
+                      </div>
                       <div className="grid grid-cols-2 gap-2">
                         {/* Filename */}
                         <div>
