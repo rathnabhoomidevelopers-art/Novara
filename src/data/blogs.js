@@ -4147,26 +4147,30 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775630823/vmxyoimnafupdmtwgdne.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775630823/vmxyoimnafupdmtwgdne.webp",
     "imageAlt": "Looking for Farmland Near Lepakshi Temple? Here Is What Every Buyer Should Know Before Deciding.",
+    "imageTitle": "",
+    "imageCaption": "",
+    "imageDescription": "",
+    "videoUrl": "",
     "tags": [],
     "sections": [
       {
         "type": "p",
-        "text": "This guide will tell you what that means for people who want to buy farmland.. Everything else you need to know before you decide to buy farmland in the Lepakshi area.\n",
+        "text": "This guide will tell you what that means for people who want to buy farmland.. Everything else you need to know before you decide to buy farmland in the Lepakshi area.",
         "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "Where is Lepakshi and Why is it Important for Farmland Investment?\n",
+        "text": "Where is Lepakshi and Why is it Important for Farmland Investment?",
         "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Lepakshi is a town in Andhra Pradesh. It is on the Bangalore–Hyderabad National Highway, 120 kilometres north of Bangalore city and 75 kilometres from Kempegowda International Airport.\n",
+        "text": "Lepakshi is a town in Andhra Pradesh. It is on the Bangalore–Hyderabad National Highway, 120 kilometres north of Bangalore city and 75 kilometres from Kempegowda International Airport.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "For someone investing in farmland, where it is located is important, for three reasons.\n",
+        "text": "For someone investing in farmland, where it is located is important, for three reasons.",
         "fontWeight": "font-normal"
       },
       {
@@ -4176,22 +4180,22 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Getting to the place is easy because of the highway access. NH44 is an important highway in India that is always being improved. The roads are always good. When you come from Bangalore you do not have to deal with a lot of traffic on small roads. The highway is getting better and better with logistics parks, industrial zones and more lanes for cars. This makes the area around NH44 a good place for businesses to grow. If you have a farm on or near NH44 it is an advantage because of all the new developments happening there. Farms that are not near the highway do not get to benefit from all these things.\n",
+        "text": "Getting to the place is easy because of the highway access. NH44 is an important highway in India that is always being improved. The roads are always good. When you come from Bangalore you do not have to deal with a lot of traffic on small roads. The highway is getting better and better with logistics parks, industrial zones and more lanes for cars. This makes the area around NH44 a good place for businesses to grow. If you have a farm on or near NH44 it is an advantage because of all the new developments happening there. Farms that are not near the highway do not get to benefit from all these things.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "The airport is also close by. Lepakshi is 75 kilometres from Kempegowda International Airport, which makes it a great place to invest in the North Bangalore area. For the ten years the area around the airport has been getting more valuable because of the airport. Land near the airport tends to increase in value than farms that are farther away.. Because the airport is still growing this trend is even stronger now than it was five years ago.\n",
+        "text": "The airport is also close by. Lepakshi is 75 kilometres from Kempegowda International Airport, which makes it a great place to invest in the North Bangalore area. For the ten years the area around the airport has been getting more valuable because of the airport. Land near the airport tends to increase in value than farms that are farther away.. Because the airport is still growing this trend is even stronger now than it was five years ago.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Lepakshi is also lucky to be near the border of Andhra Pradesh. This means it is connected to two states and their economies. To the south there is Bangalore with its IT and services sector. To the north there is Andhra Pradesh with its growing manufacturing and industrial sector. So the land in Lepakshi is special because it can serve both of these economies at the time. NH44 and the airport are both reasons why Lepakshi is a good place to invest. The fact that it is near the Andhra Pradesh border is also an advantage, for people who want to buy land in this area.\n",
+        "text": "Lepakshi is also lucky to be near the border of Andhra Pradesh. This means it is connected to two states and their economies. To the south there is Bangalore with its IT and services sector. To the north there is Andhra Pradesh with its growing manufacturing and industrial sector. So the land in Lepakshi is special because it can serve both of these economies at the time. NH44 and the airport are both reasons why Lepakshi is a good place to invest. The fact that it is near the Andhra Pradesh border is also an advantage, for people who want to buy land in this area.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "The Lepakshi Temple is a cool place. When people think about buying farmland they usually consider things like how it is from the city and if it is near a highway or airport.. The Lepakshi Temple is special because it adds something new to the idea of buying farmland near Bangalore.\n",
+        "text": "The Lepakshi Temple is a cool place. When people think about buying farmland they usually consider things like how it is from the city and if it is near a highway or airport.. The Lepakshi Temple is special because it adds something new to the idea of buying farmland near Bangalore.",
         "fontWeight": "font-normal"
       },
       {
@@ -4205,57 +4209,18 @@ export const BLOGS = [
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Heritage tourism generates sustained economic activity  -"
-          },
-          {
-            "bold": false,
-            "text": " Hotels, restaurants and transport services are some of the things that tourists use when they visit Lepakshi every year. Around two lakh people visit Lepakshi annually. All these businesses help create jobs for locals. They also make people want to buy land in the area. This makes Lepakshi different from towns, on NH44 that mainly depend on farming."
-          }
-        ],
+        "type": "p",
+        "text": "<strong>Heritage tourism generates sustained economic activity  -</strong> Hotels, restaurants and transport services are some of the things that tourists use when they visit Lepakshi every year. Around two lakh people visit Lepakshi annually. All these businesses help create jobs for locals. They also make people want to buy land in the area. This makes Lepakshi different from towns, on NH44 that mainly depend on farming.",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Tourism acts as a price floor for land values -"
-          },
-          {
-            "bold": false,
-            "text": " In places where a lot of people come to see things the price of land does not go down even when other properties in the area are not doing well. This is because people still want to build things like hotels and restaurants near these places. The Lepakshi Temple is going to stay right where it is. People will keep on visiting. The good things it does, for the economy will always be there. The Lepakshi Temple has an impact and that is not going to change. The people who come to see the Lepakshi Temple will always be around."
-          }
-        ],
+        "type": "p",
+        "text": "<strong>Tourism acts as a price floor for land values -</strong> In places where a lot of people come to see things the price of land does not go down even when other properties in the area are not doing well. This is because people still want to build things like hotels and restaurants near these places. The Lepakshi Temple is going to stay right where it is. People will keep on visiting. The good things it does, for the economy will always be there. The Lepakshi Temple has an impact and that is not going to change. The people who come to see the Lepakshi Temple will always be around.",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Future agro-tourism potential - "
-          },
-          {
-            "bold": false,
-            "text": "For people who own farmland in the Lepakshi area the fact that there are already tourists and places for them to stay is a plus. This means that farmland owners in the Lepakshi area can think about doing things like farm stays, where people can come and stay on the farm or farm-to-table experiences, where people can eat food that is grown there on the farm. They can also have weekend nature programs. This is something that farmland owners in the Lepakshi area can really do because many people are already coming to visit. It is not a thing that they will make money from this but it is a real possibility when you own land in a place that is already popular with tourists, like the Lepakshi area."
-          }
-        ],
+        "type": "p",
+        "text": "<strong>Future agro-tourism potential - </strong>For people who own farmland in the Lepakshi area the fact that there are already tourists and places for them to stay is a plus. This means that farmland owners in the Lepakshi area can think about doing things like farm stays, where people can come and stay on the farm or farm-to-table experiences, where people can eat food that is grown there on the farm. They can also have weekend nature programs. This is something that farmland owners in the Lepakshi area can really do because many people are already coming to visit. It is not a thing that they will make money from this but it is a real possibility when you own land in a place that is already popular with tourists, like the Lepakshi area.",
         "fontWeight": "font-normal"
       },
       {
@@ -4375,12 +4340,12 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "The system for keeping track of land ownership and revenue records like the RTC, khata and mutation is different in Karnataka and Andhra Pradesh.Some people who are buying people from other countries and investors who want to take advantage of Karnatakas rules about farm income may have preferences for one state, over the other.\n\nThe rates for stamp duty are also different in the two states.\n\nThe office where you go to register your property the Sub-Registrars office depends on which state the property's in.\n",
+        "text": "The system for keeping track of land ownership and revenue records like the RTC, khata and mutation is different in Karnataka and Andhra Pradesh.Some people who are buying people from other countries and investors who want to take advantage of Karnatakas rules about farm income may have preferences for one state, over the other.\n\nThe rates for stamp duty are also different in the two states.\n\nThe office where you go to register your property the Sub-Registrars office depends on which state the property's in.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Always confirm which state your plot falls under before proceeding.\n\nFirst I ask for the survey number.\n\nThen I verify which district and state it belongs to.\n\nFor example Ecovara Farm Plots, by Novara Nature Estates have documents.\n\nThey confirm the jurisdiction.\n\nYou should do the same for any project you evaluate.\n\nConfirm the state for your plot.\n",
+        "text": "Always confirm which state your plot falls under before proceeding.\n\nFirst I ask for the survey number.\n\nThen I verify which district and state it belongs to.\n\nFor example Ecovara Farm Plots, by Novara Nature Estates have documents.\n\nThey confirm the jurisdiction.\n\nYou should do the same for any project you evaluate.\n\nConfirm the state for your plot.",
         "fontWeight": "font-normal"
       },
       {
@@ -4395,7 +4360,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Make sure the RTC does not have any tenant records before you buy.\n\nGet your lawyer to check the title deed, encumbrance certificate and RTC. Not just the developers lawyers.\n\nA trustworthy developer will be okay, with you getting a check.\n\nIf a developer does not want you to do this it is best to avoid them.\n\nFor a list of legal things to check when buying farmland in Karnataka read our special guide on buying farmland in Karnataka.\n",
+        "text": "Make sure the RTC does not have any tenant records before you buy.\n\nGet your lawyer to check the title deed, encumbrance certificate and RTC. Not just the developers lawyers.\n\nA trustworthy developer will be okay, with you getting a check.\n\nIf a developer does not want you to do this it is best to avoid them.\n\nFor a list of legal things to check when buying farmland in Karnataka read our special guide on buying farmland in Karnataka.",
         "fontWeight": "font-normal"
       },
       {
@@ -4425,22 +4390,22 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "One big difference between farmland projects near Lepakshi is if the plantation is already there when you buy or if its promised for later.\n",
+        "text": "One big difference between farmland projects near Lepakshi is if the plantation is already there when you buy or if its promised for later.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "One big difference between farmland projects near Lepakshi is if the plantation is already there when you buy or if its promised for later.\n\n* A project that shows a plantation map and says they will plant trees after you buy it is asking you to trust that they will do it.\n\nYou do not know if it will really happen or not.\n\n",
+        "text": "One big difference between farmland projects near Lepakshi is if the plantation is already there when you buy or if its promised for later.\n\n* A project that shows a plantation map and says they will plant trees after you buy it is asking you to trust that they will do it.\n\nYou do not know if it will really happen or not.",
         "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": " A project with a plantation. Where trees are already grown and you can see and check that they are doing well. Is more certain.\n\nWhen you visit the land\n\n, See the trees for yourself.\n\n, Check what is on your plot and what is on areas.\n\n,  Ask for records of harvests from areas that are already planted.\n\nThis way you get proof of just promises.\n\nYou should verify the plantation for yourself.\n\nFarmland, with existing plantation is more reliable.\n\nCheck the plantation before you buy.\n",
+        "text": "A project with a plantation. Where trees are already grown and you can see and check that they are doing well. Is more certain.\n\nWhen you visit the land\n\n, See the trees for yourself.\n\n, Check what is on your plot and what is on areas.\n\n,  Ask for records of harvests from areas that are already planted.\n\nThis way you get proof of just promises.\n\nYou should verify the plantation for yourself.\n\nFarmland, with existing plantation is more reliable.\n\nCheck the plantation before you buy.",
         "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Management Credibility\n",
+        "text": "Management Credibility",
         "fontWeight": "font-bold"
       },
       {
@@ -4465,7 +4430,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Here is what a typical weekend at Ecovara looks like.\n",
+        "text": "Here is what a typical weekend at Ecovara looks like.",
         "fontWeight": "font-normal"
       },
       {
@@ -4504,129 +4469,38 @@ export const BLOGS = [
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Location: "
-          },
-          {
-            "bold": false,
-            "text": "NH44, 10 minutes from Lepakshi Temple, 75 kilometres from Kempegowda International Airport."
-          }
-        ],
+        "type": "p",
+        "text": "<strong>Location: </strong>NH44, 10 minutes from Lepakshi Temple, 75 kilometres from Kempegowda International Airport.",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Plantation:"
-          },
-          {
-            "bold": false,
-            "text": " 800+ mature coconut and mango trees across 15 acres. 64+ tree varieties. Income generation from day one."
-          }
-        ],
+        "type": "p",
+        "text": "<strong>Plantation:</strong> 800+ mature coconut and mango trees across 15 acres. 64+ tree varieties. Income generation from day one.",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Plot sizes:"
-          },
-          {
-            "bold": false,
-            "text": " 6,000, 8,000, and 10,000 square feet configurations available."
-          }
-        ],
+        "type": "p",
+        "text": "<strong>Plot sizes:</strong> 6,000, 8,000, and 10,000 square feet configurations available.",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": "This is regular text, and "
-          },
-          {
-            "bold": true,
-            "text": "this part is bold"
-          },
-          {
-            "bold": false,
-            "text": ", then regular again."
-          }
-        ],
+        "type": "p",
+        "text": "This is regular text, and <strong>this part is bold</strong>, then regular again.",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Amenities:"
-          },
-          {
-            "bold": false,
-            "text": " Clubhouse, swimming pool, cafeteria, kids play area, jogging track, lotus pond, campfire area, organic farming plots, solar street lights, 24/7 gated security."
-          }
-        ],
+        "type": "p",
+        "text": "<strong>Amenities:</strong> Clubhouse, swimming pool, cafeteria, kids play area, jogging track, lotus pond, campfire area, organic farming plots, solar street lights, 24/7 gated security.",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": " "
-          },
-          {
-            "bold": true,
-            "text": "Legal:"
-          },
-          {
-            "bold": false,
-            "text": " Clear title, registered sale deed, EC verified, RTC in order, full registration and post-registration mutation support."
-          }
-        ],
+        "type": "p",
+        "text": "<strong>Legal:</strong> Clear title, registered sale deed, EC verified, RTC in order, full registration and post-registration mutation support.",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Management:"
-          },
-          {
-            "bold": false,
-            "text": " Full estate management by Novara Nature Estates — plantation care, irrigation, security, owner communication."
-          }
-        ],
+        "type": "p",
+        "text": "<strong>Management:</strong> Full estate management by Novara Nature Estates — plantation care, irrigation, security, owner communication.",
         "fontWeight": "font-normal"
       },
       {
@@ -4706,18 +4580,159 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "The thing about farmland near Lepakshi Temple is that it offers something that's really hard to find in other places near Bangalore. You get a piece of land that's worth money. You also get to be near something that is really important and will always be there just ten minutes away from your land.\n\nThis is a deal. For people who buy land this is what makes them decide to buy it.\n",
+        "text": "The thing about farmland near Lepakshi Temple is that it offers something that's really hard to find in other places near Bangalore. You get a piece of land that's worth money. You also get to be near something that is really important and will always be there just ten minutes away from your land.\n\nThis is a deal. For people who buy land this is what makes them decide to buy it.",
         "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_link",
-        "textBefore": "You can schedule a visit, to Ecovara to see it for yourself. You can call them at ",
-        "linkText": "+91-8660200662",
-        "href": "tel: +91 8660200662",
-        "textAfter": "",
+        "type": "p",
+        "text": "You can schedule a visit, to Ecovara to see it for yourself. You can call them at  <a href=\"tel: +91 8660200662\" style=\"color:#E3A600\">+91-8660200662</a>",
         "fontWeight": "font-normal"
       }
-    ]
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "How far is Lepakshi Temple from Bangalore?",
+              "text": "Lepakshi Temple is 120 kilometres from the center of Bangalore and 75 kilometres from Kempegowda International Airport at Devanahalli. It takes 90 minutes to 2 hours to get to Lepakshi Temple from most places in Bangalore by car on NH44."
+            },
+            {
+              "name": "Is farmland near Lepakshi in Karnataka or Andhra Pradesh?",
+              "text": "Lepakshi town is located in Andhra Pradeshs Anantapur district. Some farmland projects near Lepakshi Temple are in Karnataka. Some are in Andhra Pradesh. So it is an idea to find out which state and district the plot you are interested in is located in because it affects the revenue records system and the registration process and stamp duty."
+            },
+            {
+              "name": "What kind of crops can be grown near Lepakshi Temple?",
+              "text": "Coconut and mango are the crops that are grown near Lepakshi Temple for selling. The soil and weather near Lepakshi Temple are also good for growing groundnut and sunflower and different kinds of vegetables. Since it does not rain much near Lepakshi Temple it is necessary to have a way to water the crops like a borewell and a drip irrigation system."
+            },
+            {
+              "name": "Is the land near Lepakshi Temple protected?",
+              "text": "The Lepakshi Temple complex is a protected heritage site by the Archaeological Survey of India. This protection is for the temple complex itself. The agricultural land near Lepakshi Temple is not directly affected by this protection. It is a good idea to find out how close the plot you are interested in is to the temple and if there are any rules that apply to the area around it."
+            },
+            {
+              "name": "Can I visit Ecovara and Lepakshi Temple on the day?",
+              "text": "Yes you can visit Ecovara and Lepakshi Temple on the day. In fact we think it is an idea to do so. Most people who buy land at Ecovara visit the farm and the temple on the day. Lepakshi Temple is 10 minutes away from Ecovara. Many families visit Lepakshi Temple regularly when they come to their farm at Ecovara on the weekends."
+            },
+            {
+              "name": "What is the first step to buying farmland near Lepakshi Temple?",
+              "text": "The first step is to visit the site before making any decision. You can schedule a visit to Ecovara and walk around the land to get a better idea of what it is, like. This will help you answer any questions you may have and make an informed decision."
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": ""
+          },
+          "headline": "",
+          "image": "",
+          "author": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "url": "https://www.novaranatureestates.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/images/logo.svg"
+            }
+          },
+          "datePublished": "",
+          "dateModified": ""
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "",
+              "item": ""
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Looking for Farmland Near Lepakshi Temple? Here Is What Every Buyer Should Know Before Deciding.",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "1980",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
   },
   {
     "id": 19,
