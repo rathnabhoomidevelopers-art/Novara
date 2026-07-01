@@ -1441,8 +1441,8 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/blogs/ecovara-farmplot-near-bangalore"
             }
           },
-          "datePublished": "21-06-2026",
-          "dateModified": "21-06-2026"
+          "datePublished": "2026-06-21T14:29:49+05:30",
+          "dateModified": "2026-06-21T14:29:49+05:30"
         },
         "json": ""
       },
