@@ -10,6 +10,14 @@ const getSchema = (urlPathname, blog = null) => {
 
   // Blog detail page
   if (blog) {
+    // Use the image as-is when it's already an absolute URL (e.g. Cloudinary);
+    // only prefix the site domain for site-relative paths.
+    const rawImg = blog.heroImage || blog.image || "";
+    const blogImage = /^https?:\/\//i.test(rawImg) ? rawImg : `${www}${rawImg}`;
+    // Valid ISO 8601 datetime (with timezone) from the post's date.
+    const blogDate = blog.date && !Number.isNaN(Date.parse(blog.date))
+      ? new Date(blog.date).toISOString()
+      : "2026-01-01T00:00:00.000Z";
     return [
       {
         "@context": "https://schema.org",
@@ -17,10 +25,11 @@ const getSchema = (urlPathname, blog = null) => {
         "@id": `${base}/blogs/${blog.slug}/#blogposting`,
         headline: blog.title,
         description: blog.description,
-        image: `${www}${blog.heroImage || blog.image}`,
+        image: blogImage,
         url: `${base}/blogs/${blog.slug}`,
-        datePublished: "2026-01-01",
-        author: { "@type": "Organization", name: "Novara Nature Estates" },
+        datePublished: blogDate,
+        dateModified: blogDate,
+        author: { "@type": "Organization", name: "Novara Nature Estates", url: `${www}/` },
         publisher: { "@id": `${base}/#organization` },
         keywords: blog.keywords || "",
         mainEntityOfPage: {
