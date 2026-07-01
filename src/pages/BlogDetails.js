@@ -284,6 +284,7 @@ export default function BlogDetail({ vikeSlug }) {
         .blog-content ul li,
         .blog-content ol li { color: #111827 !important; font-size: 14px !important; font-weight: 400 !important; line-height: 1.7 !important; }
         .blog-content ul, .blog-content ol { color: #111827 !important; }
+        .blog-content table td, .blog-content table th { color: #111827 !important; }
      `}</style>
      <Header />
 
@@ -494,7 +495,7 @@ export default function BlogDetail({ vikeSlug }) {
                   if (s.type === "table") {
                     return (
                       <div key={i} className="overflow-x-auto rounded-xl border border-[#1A614F]">
-                        <table className="w-full text-[13px] sm:text-[14px] text-slate-700 border-collapse">
+                        <table className="w-full text-[13px] sm:text-[14px] text-[#111827] border-collapse">
                           <thead>
                             <tr>
                               {(s.headers || []).map((h, hi) => (
