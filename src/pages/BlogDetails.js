@@ -280,10 +280,10 @@ export default function BlogDetail({ vikeSlug }) {
      <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap');
         .blog-content, .blog-content * { font-family: 'Urbanist', 'Poppins', sans-serif !important; }
-        /* Keep paragraph text and bullet/number list text visually identical */
-        .blog-content > p,
-        .blog-content > ul > li,
-        .blog-content > ol > li { color: #475569 !important; font-weight: 400 !important; }
+        .blog-content p,
+        .blog-content ul li,
+        .blog-content ol li { color: #374151 !important; font-size: 14px !important; font-weight: 400 !important; line-height: 1.7 !important; }
+        .blog-content ul, .blog-content ol { color: #374151 !important; }
      `}</style>
      <Header />
 
@@ -394,7 +394,7 @@ export default function BlogDetail({ vikeSlug }) {
             )}
 
             {/* ── Content sections ── */}
-            <div className="mt-6 space-y-4 blog-content">
+            <div className="mt-6 space-y-3 blog-content">
               {(() => {
                 const used = new Map();
                 return sections.map((s, i) => {
