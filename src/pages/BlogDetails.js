@@ -394,7 +394,7 @@ export default function BlogDetail({ vikeSlug }) {
             )}
 
             {/* ── Content sections ── */}
-            <div className="mt-6 space-y-5 blog-content">
+            <div className="mt-6 space-y-4 blog-content">
               {(() => {
                 const used = new Map();
                 return sections.map((s, i) => {
