@@ -3651,9 +3651,9 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775986218/eejozxgmexoab1vrvnss.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775986218/eejozxgmexoab1vrvnss.webp",
     "imageAlt": "Farmland near Devanahalli",
-    "imageTitle": "Farmland near Devanahalli",
+    "imageTitle": "",
     "imageCaption": "",
-    "imageDescription": "Farmland near Devanahalli",
+    "imageDescription": "",
     "videoUrl": "",
     "tags": [],
     "sections": [
@@ -4075,7 +4075,7 @@ export const BLOGS = [
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "5",
-            "reviewCount": "2908",
+            "reviewCount": "1098",
             "bestRating": "5",
             "worstRating": "1"
           }
