@@ -1623,9 +1623,9 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1777790220/kf9tclbzzxclsz3gl0cd.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1777790220/kf9tclbzzxclsz3gl0cd.webp",
     "imageAlt": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
-    "imageTitle": "",
+    "imageTitle": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
     "imageCaption": "",
-    "imageDescription": "",
+    "imageDescription": "Farmland Near Hindupur — What Investors Need to Know About This NH44 Corridor",
     "videoUrl": "",
     "tags": [],
     "sections": [
