@@ -5848,18 +5848,18 @@ export const BLOGS = [
         "json": ""
       },
       "review": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "Product",
-          "name": "",
+          "name": "Sustainable Plantation Farmland Investment Near Bangalore for Long-Term Income & Growth.",
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "",
-            "reviewCount": "",
-            "bestRating": "",
-            "worstRating": ""
+            "ratingValue": "4.9",
+            "reviewCount": "2130",
+            "bestRating": "5",
+            "worstRating": "1"
           }
         },
         "json": ""
