@@ -4835,9 +4835,9 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775379164/vqzfetqfofnidh7qmkdp.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775379164/vqzfetqfofnidh7qmkdp.webp",
     "imageAlt": "Ecovara Farmland Project Near Lepakshi Review",
-    "imageTitle": "Ecovara Farmland Project Near Lepakshi Review",
+    "imageTitle": "",
     "imageCaption": "",
-    "imageDescription": "Ecovara Farmland Project Near Lepakshi Review",
+    "imageDescription": "",
     "videoUrl": "",
     "tags": [],
     "sections": [
@@ -5369,29 +5369,13 @@ export const BLOGS = [
     ],
     "schemas": {
       "faq": {
-        "enabled": true,
+        "enabled": false,
         "mode": "default",
         "data": {
           "items": [
             {
-              "name": "Is Ecovara Farms a project that I can trust?",
-              "text": "Yes you can trust Ecovara Farms. You should do your own research. They have all the papers, like clear title and registered sale deeds. They also have a working plantation and a professional team. It is an idea to get your own lawyer to check all the documents before you buy."
-            },
-            {
-              "name": "How is Ecovara Farms different from farm projects near Bangalore?",
-              "text": "The big difference is that Ecovara Farms already has a mature plantation. Most other projects in this price range are just selling you a promise of a plantation.. Ecovara Farms is selling you a plantation that already exists. You can see the difference soon as you visit the property"
-            },
-            {
-              "name": "Can I build a house on the land I buy from Ecovara Farms?",
-              "text": "This depends on the rules and regulations. You should talk to the Novara team to get an understanding of what is allowed on your specific plot."
-            },
-            {
-              "name": "Is the distance from Bangalore a problem?",
-              "text": "If you are planning to visit on the weekend it is not a problem.. If you want to visit in the evening the distance might be a issue. Just plan ahead. It will be fine."
-            },
-            {
-              "name": "What is the first step to buying a plot from Ecovara Farms?",
-              "text": "You should visit the site first. Everything else will follow after that."
+              "name": "",
+              "text": ""
             }
           ]
         },
@@ -5441,18 +5425,18 @@ export const BLOGS = [
         "json": ""
       },
       "review": {
-        "enabled": true,
+        "enabled": false,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "Product",
-          "name": "Ecovara Farms Near Lepakshi — An Honest Review From People Who Actually Bought",
+          "name": "",
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "690",
-            "bestRating": "5",
-            "worstRating": "1"
+            "ratingValue": "",
+            "reviewCount": "",
+            "bestRating": "",
+            "worstRating": ""
           }
         },
         "json": ""
