@@ -194,6 +194,60 @@ export function normalizeSchemas(saved) {
   return base;
 }
 
+// ── Sanitizer ─────────────────────────────────────────────────────────────────
+// Cleans JSON-LD right before it's injected, fixing three common problems that
+// crept into stored schema data:
+//   • image/url doubled with the site domain
+//     ("https://www.novaranatureestates.comhttps://res.cloudinary.com/…")
+//   • dates without a time/timezone ("2026-01-01" → full ISO 8601)
+//   • Organization/Person author missing a "url"
+const SANITIZE_SITE = "https://www.novaranatureestates.com";
+
+// Strip an accidentally-prepended site domain from an otherwise-absolute URL.
+function fixSchemaUrl(u) {
+  if (typeof u !== "string") return u;
+  const m = u.trim().match(/^https?:\/\/(?:www\.)?novaranatureestates\.com(https?:\/\/.+)$/i);
+  return m ? m[1] : u.trim();
+}
+
+function fixMediaValue(v) {
+  if (typeof v === "string") return fixSchemaUrl(v);
+  if (Array.isArray(v)) return v.map(fixMediaValue);
+  if (v && typeof v === "object") {
+    const o = {};
+    for (const [k, val] of Object.entries(v)) o[k] = k === "url" ? fixSchemaUrl(val) : sanitizeSchema(val);
+    return o;
+  }
+  return v;
+}
+
+// Turn "2026-01-01" / "Apr 8, 2026" into a valid ISO 8601 datetime with a zone.
+function fixSchemaDate(d) {
+  if (typeof d !== "string" || !d.trim()) return d;
+  if (/T\d{2}:\d{2}/.test(d)) return d;            // already has a time component
+  const t = Date.parse(d);
+  if (Number.isNaN(t)) return d;                   // leave unparseable values alone
+  return new Date(t).toISOString();                // e.g. 2026-01-01T00:00:00.000Z
+}
+
+export function sanitizeSchema(node) {
+  if (Array.isArray(node)) return node.map(sanitizeSchema);
+  if (!node || typeof node !== "object") return node;
+  const out = {};
+  for (const [k, v] of Object.entries(node)) {
+    if (["image", "logo", "thumbnailUrl", "contentUrl"].includes(k)) out[k] = fixMediaValue(v);
+    else if (["datePublished", "dateModified", "uploadDate"].includes(k)) out[k] = fixSchemaDate(v);
+    else if (["url", "@id", "item"].includes(k) && typeof v === "string") out[k] = fixSchemaUrl(v);
+    else out[k] = sanitizeSchema(v);
+  }
+  // Recommended-but-missing author url (removes Google's "Missing field url").
+  if (out.author && typeof out.author === "object" && !Array.isArray(out.author) &&
+      !out.author.url && (out.author["@type"] === "Organization" || out.author["@type"] === "Person")) {
+    out.author = { ...out.author, url: `${SANITIZE_SITE}/` };
+  }
+  return out;
+}
+
 // Turn the editor config into an array of JSON-LD objects (enabled schemas only).
 export function buildSchemaGraph(schemas = {}) {
   const out = [];
@@ -207,7 +261,7 @@ export function buildSchemaGraph(schemas = {}) {
       try { out.push(buildSchemaObject(def, cfg.data || {})); } catch { /* skip */ }
     }
   }
-  return out;
+  return out.map(sanitizeSchema);
 }
 
 // Live-page entry point. New posts use blog.schemas; old posts get a minimal
@@ -225,21 +279,16 @@ export function buildBlogSchema(blog = {}) {
     "@type": "BlogPosting",
     headline: blog.headline || blog.title || "",
     description: blog.description || "",
-    ...((blog.heroImage || blog.image) ? {
-    image: (() => {
-      const u = blog.heroImage || blog.image;
-      return u.startsWith("http") ? u : `${u}`;
-    })()
-  } : {}),
+    ...((blog.heroImage || blog.image) ? { image: fixSchemaUrl(blog.heroImage || blog.image) } : {}),
     ...(date ? { datePublished: date, dateModified: date } : {}),
-    author: { "@type": "Organization", name: blog.author || "Novara Nature Estates" },
+    author: { "@type": "Organization", name: blog.author || "Novara Nature Estates", url: `${SITE}/` },
     publisher: {
       "@type": "Organization",
       name: "Novara Nature Estates",
       logo: { "@type": "ImageObject", url: `${SITE}/images/logo.svg` },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE}/blogs/${blog.slug || ""}` },
-  }];
+  }].map(sanitizeSchema);
 }
 
 export function schemaGraphToString(schemas) {
