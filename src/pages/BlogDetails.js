@@ -282,8 +282,8 @@ export default function BlogDetail({ vikeSlug }) {
         .blog-content, .blog-content * { font-family: 'Urbanist', 'Poppins', sans-serif !important; }
         .blog-content p,
         .blog-content ul li,
-        .blog-content ol li { color: #475569 !important; font-size: 14px !important; font-weight: 400 !important; line-height: 1.7 !important; }
-        .blog-content ul, .blog-content ol { color: #475569 !important; }
+        .blog-content ol li { color: #111827 !important; font-size: 14px !important; font-weight: 400 !important; line-height: 1.7 !important; }
+        .blog-content ul, .blog-content ol { color: #111827 !important; }
      `}</style>
      <Header />
 
@@ -531,7 +531,7 @@ export default function BlogDetail({ vikeSlug }) {
                   // Unordered list
                   if (s.type === "ul") {
                     return (
-                      <ul key={i} className="list-disc list-outside pl-5 space-y-1.5 text-[13px] sm:text-[14px] leading-relaxed text-slate-600">
+                      <ul key={i} className="list-disc list-outside pl-5 space-y-1.5 text-[13px] sm:text-[14px] leading-relaxed text-[#111827]">
                         {(s.text || []).map((item, idx) => (
                           <li key={idx}>{item}</li>
                         ))}
@@ -555,7 +555,7 @@ export default function BlogDetail({ vikeSlug }) {
                       return <FaqAccordion key={i} items={faqItems} />;
                     }
                     return (
-                      <ol key={i} className="list-decimal list-outside pl-5 space-y-1.5 text-[13px] sm:text-[14px] leading-relaxed text-slate-600">
+                      <ol key={i} className="list-decimal list-outside pl-5 space-y-1.5 text-[13px] sm:text-[14px] leading-relaxed text-[#111827]">
                         {items.map((item, idx) => (
                           <li key={idx}>{item}</li>
                         ))}
@@ -567,7 +567,7 @@ export default function BlogDetail({ vikeSlug }) {
                     return (
                       <p
                         key={i}
-                        className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600"
+                        className="text-[13px] sm:text-[14px] leading-relaxed text-[#111827]"
                       >
                         {s.parts.map((part, idx) =>
                           part.bold ? (
@@ -589,7 +589,7 @@ export default function BlogDetail({ vikeSlug }) {
                     return (
                       <p
                         key={i}
-                        className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600"
+                        className="text-[13px] sm:text-[14px] leading-relaxed text-[#111827]"
                       >
                         {s.partsBefore?.map((part, idx) =>
                           part.bold ? (
@@ -630,7 +630,7 @@ export default function BlogDetail({ vikeSlug }) {
                   // Paragraph with link
                   if (s.type === "p_with_link") {
                     return (
-                      <p key={i} className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600">
+                      <p key={i} className="text-[13px] sm:text-[14px] leading-relaxed text-[#111827]">
                         {s.textBefore && <span>{s.textBefore} </span>}
                         <a href={s.href} className="text-[#E3A600] font-semibold underline underline-offset-2 hover:opacity-80">
                           {s.linkText}
@@ -649,7 +649,7 @@ export default function BlogDetail({ vikeSlug }) {
                   return (
                     <p
                       key={i}
-                      className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600"
+                      className="text-[13px] sm:text-[14px] leading-relaxed text-[#111827]"
                       style={{ textAlign: s.align || undefined }}
                       dangerouslySetInnerHTML={{ __html: cleanHtml }}
                     />
