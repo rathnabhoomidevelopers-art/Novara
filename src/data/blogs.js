@@ -5825,8 +5825,8 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/images/logo.svg"
             }
           },
-          "datePublished": "2026-03-31T18:30:46+05:30",
-          "dateModified": "2026-03-31T18:30:46+05:30"
+          "datePublished": "2026-04-01T18:30:46+05:30",
+          "dateModified": "2026-04-01T18:30:46+05:30"
         },
         "json": ""
       },
