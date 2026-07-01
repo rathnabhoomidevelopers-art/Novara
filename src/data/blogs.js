@@ -3651,286 +3651,341 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775986218/eejozxgmexoab1vrvnss.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775986218/eejozxgmexoab1vrvnss.webp",
     "imageAlt": "Farmland near Devanahalli",
-    "imageTitle": "",
+    "imageTitle": "Farmland near Devanahalli",
     "imageCaption": "",
-    "imageDescription": "",
+    "imageDescription": "Farmland near Devanahalli",
     "videoUrl": "",
     "tags": [],
     "sections": [
       {
         "type": "p",
         "text": "This guide explains what the Devanahalli farmland corridor actually is, what drives it and what an investor needs to know before buying in 2026. Devanahalli is not simply the town where Bangalore airport sits. It is the centre of one of South India’s most actively developing regional corridors. Understanding what is actually happening in Devanahalli is the starting point for any farmland investor evaluating this zone.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The Kempegowda International Airport opened in 2008. In the years the economic effects have moved progressively outward from the airport itself. First, to the surrounding area then to Devanahalli town then to the 50 to 100 kilometre radius along NH44. Here is what has been established in and around Devanahalli in that period.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Why Devanahalli Is the Engine of North Bangalore's Growth",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong>KIADB Aerospace Park: </strong>The Karnataka Industrial Areas Development Board has developed an aerospace and defence manufacturing zone adjacent to the airport attracting companies serving the aviation and defence sectors.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong>IT Investment Region:</strong> A designated IT and ITES investment zone spanning thousands of acres of Bangalore with planned infrastructure, utilities and connectivity to attract technology companies seeking expansion space beyond Bangalore congested inner ring.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong> Logistics and warehousing hubs: </strong>NH44s direct connectivity from Devanahalli to both Bangalore and Hyderabad makes this corridor one of South Indias attractive locations for large-scale logistics operations. Multiple national and international logistics companies have. Announced facilities in this belt.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong>Residential spillover:</strong> As each of these developments brings employment residential demand follows. Doddaballapur, Vijayapura and the areas surrounding Devanahalli are absorbing demand that cannot be accommodated in Bangalores increasingly expensive inner suburbs.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "For a farmland investor all of this matters for one reason: economic activity drives land demand and land demand drives appreciation. The Devanahalli corridor has genuine verifiable economic activity driving land demand than almost any other location within 100 kilometres of Bangalore.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "The Airport Proximity Advantage — What It Actually Means",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The airport proximity advantage is often mentioned,. What does it actually mean? \"Near the airport\" is the overused phrase in Bangalore real estate marketing. Every developer within 60 kilometres of Kempegowda International Airport uses it. Understanding what airport proximity actually means and which locations genuinely benefit requires precision.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The influence zone concept is key. Airport influence zones are the areas within which land values respond directly to airport-driven economic activity. This zone is not a fixed radius it depends on the airport the infrastructure connecting it to surrounding areas and the type of economic development it attracts. For Kempegowda International Airport the primary influence zone runs along NH44 between the airport and 100 kilometres in both directions. Land within this corridor connected to the airport by a major highway, with active infrastructure development benefits directly from airport-driven economic activity. Devanahalli sits at the centre of this influence zone and Lepakshi 75 kilometres along NH44 sits at the outer edge of it. Both benefit,The nature of the benefit differs.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "What to Look for When Buying Farmland Near Devanahalli",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "What does this mean for locations? Let us look at Devanahalli, which's 0 to 20 kilometers from the airport. This area has the demand and the current prices are also very high. There is a lot of development happening here. The price of land is going up very fast.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "People who want to buy land for residential use are ready to pay a high price for it. The price of land in this area is also very high because of the high demand.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Now let us look at the NH44 corridor, which's 20 to 75 kilometers from the airport. This area is still close to the airport. It is not as developed as Devanahalli. The price of land here is lower than in Devanahalli. However this area also has the potential for growth because of the airport and the highway.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "For people who are planning to invest in land for a time 7 to 15 years this area could be a good option. The price of land here is lower. It has the potential to grow in the future.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "If we go beyond 75 kilometers from the airport the influence of the airport becomes weaker. The price of land is determined by other factors such as the local economy, agricultural productivity and government initiatives.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Ecovara Farm Plots near Lepakshi is located at 75 kilometers from the airport, which's the outer edge of the influence zone. The price of land here is lower. It still has the potential for growth.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "What to look for when buying farmland near Devanahalli? The market for farmland in Devanahalli has grown a lot in the past decade. Many developers are interested in buying land so it is very important to be careful when buying farmland.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Here are some things to check when buying farmland:",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong> Land classification:</strong> Is the land classified as agricultural or non-agricultural? This can affect the price and the rules that apply to it.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong>KIADB notification and acquisition risk:</strong> Is the land located in an area that has been notified for development? If yes then there is a risk that the government may acquire the land.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong> Water access:</strong> Is there a source of water for irrigation? This is very important for land.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong> Buffer zone from development:</strong> Is the land located near commercial development? This can affect the farm experience and the price of the land.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong>Title and legal checks:</strong> It is very important to check the title of the land and ensure that it is clear and free of any complications.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "It is always an idea to work with a good property lawyer who can help you with these checks and ensure that the transaction is smooth and safe.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Search for farmland in Karnataka involves verifying the encumbrance certificate for the period and confirms mutation records are current and accurate. Our <a href=\"https://www.novaranatureestates.com/blogs/how-to-buy-farmland-karnataka-legal-guide\" style=\"color:#E3A600\"> complete legal guide to buying farmland in Karnataka</a>  walks through every document in the verification process.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Farmland Near Devanahalli vs the Lepakshi Corridor — An Honest Comparison",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Most investors researching farmland in the North Bangalore airport zone end up comparing Devanahalli- farmland with the Lepakshi NH44 corridor. Here is the honest version of that comparison.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Entry price",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Entry price for farmland adjacent to Devanahalli and the airport zone commands a significant premium over land further along NH44. The premium reflects realised appreciation from a decade of airport-driven development. For investors seeking the remaining appreciation potential rather than paying for appreciation that has already happened the Lepakshi corridor often presents better value.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Appreciation stage for Devanahalli.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The major infrastructure catalysts are established significant appreciation has already occurred and future gains depend on continued development momentum rather than the initial infrastructure premium. The Lepakshi-NH44 corridor at 75 kilometres from the airport is in a stage. The structural drivers are present and active but the full appreciation they will produce over the next 10 to 15 years is not yet reflected in land prices. For a long-horizon investor this positioning is more attractive",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Lifestyle Experience",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The verdict for investors who prioritise established infrastructure and are comfortable paying an entry price Devanahalli-adjacent farmland has a credible case. For investors who want the airport influence zone appreciation story at an entry price and a more genuine farm lifestyle experience, the Lepakshi corridor. Where Ecovara is located. Is the more compelling choice in 2026.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "The NH44 Link — Why the Highway Connects Both Zones",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "One of the practically useful things about the Devanahalli-Lepakshi corridor is that NH44 connects both zones without interruption. This means an investor in the Lepakshi corridor is not choosing a different market. They are choosing a different position within the same airport-connected infrastructure corridor. The same highway that runs past Kempegowda International Airport at Devanahalli runs past Ecovara Farm Plots near Lepakshi 75 kilometres later.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The economic activity building along NH44. Logistics parks, industrial zones, commercial hubs. Benefits the corridor not just the section closest to the airport. As Devanahallis immediate zone continues to urbanise the pressure of development and economic activity moves progressively along NH44. Exactly as urban expansion has moved northward from Bangalores ring for the past twenty years. Investors who positioned themselves ahead of that movement benefited. The NH44 corridor beyond Devanahalli is where that positioning opportunity currently exists.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Ecovara. - The managed farmland project in this corridor.",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "For investors who have evaluated the Devanahalli farmland market and are looking for a managed operational project within the broader airport corridor. Ecovara by Novara Nature Estates is the project to visit. Located 75 kilometres from Kempegowda International Airport on NH44 Ecovara sits within the airport influence zone at a position that combines appreciation potential with an affordable entry point and a functioning farm experience. 800+ Mature coconut and mango trees. Productive from day one not planted saplings awaiting maturity. Plot sizes, from 6,000 feet. With 8,000 and 10,000 square foot configurations available. Amenities. Clubhouse, swimming pool, cafeteria organic farming plots lotus ponds",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "We have a farm with a pond, a campfire area and 24/7 security.\n\nOur farm has title and complete legal documentation. Registered sale deed, clean EC, RTC in order and full registration support.\n\nWe also have a team that handles farm management, including plantation care, irrigation, security and communication with the owner.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "You can explore  <a href=\"https://novaranatureestates.com/projects\" style=\"color:#E3A600\">Ecovara farm plots</a>  or schedule a free site visit to see the project in person.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Frequently Asked Questions About Farmland Near Devanahalli",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Is farmland near Devanahalli still an investment in 2026?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Yes, but the significant early appreciation in the immediate airport zone has already occurred.\nFor investors looking for the remaining appreciation potential in the broader airport corridor locations further along NH44. Like the Lepakshi belt. Often present stronger value at this stage of the cycle.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "What is the difference between KIADB land and agricultural farmland?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "KIADB land is specifically. Developed by the Karnataka Industrial Areas Development Board for industrial use.\n\nAgricultural farmland is privately held land with a different legal status, tax treatment and development trajectory.\n\nConfirm which category your specific plot falls under before purchasing.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "How far is Devanahalli from Bangalore?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "It is 40 to 50 kilometres from central Bangalore. 45 To 60 minutes by road depending on traffic.\n\nThe NH44 approach from Hebbal is generally the route.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "What are the risks of buying farmland near a development zone?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The primary risks are KIADB acquisition potential for land within notified zones, water table pressure from increased development activity and potential change in the character of the surrounding area.\n\nAll of these can be addressed through legal due diligence and location-specific verification.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "What is the best farmland investment in the Devanahalli airport corridor?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "This depends on your budget, time horizon and whether you prioritise infrastructure or remaining appreciation potential.For most investors evaluating the corridor in 2026 the Lepakshi–NH44 zone offers an entry point for long-term returns than already-priced Devanahalli-adjacent land",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "How do I start evaluating farmland in this corridor?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Begin with a site visit. <a href=\"https://www.novaranatureestates.com/contactus\" style=\"color:#E3A600\">Schedule your visit to Ecovara</a>  See the land ,meet the team , understand the management model and assess the NH44 corridor drive from Bangalore firsthand.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       }
     ],
     "schemas": {
