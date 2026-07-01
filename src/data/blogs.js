@@ -22,67 +22,80 @@ export const BLOGS = [
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Many Bangalore-based families are now looking beyond apartments, resorts and short holiday stays. They want open space, cleaner surroundings, nature exposure for children and a peaceful place outside the city. This is why farmland near Lepakshi is gaining attention from Bangalore buyers.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara by Novara Nature Estates is a managed farmland project near Lepakshi, planned for families looking for farmplot ownership, weekend usability and nature-connected lifestyle.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Book a Free Farm Visit Today</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Why Bangalore Families Are Exploring Farmland Near Lepakshi",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">Bangalore city life is becoming busier and more crowded. While city homes offer convenience, they often lack open space, greenery and a calm outdoor environment. Because of this, many families are exploring <a href=\"https://www.novaranatureestates.com/blogs/ecovara-farmplot-near-bangalore\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">farmland near Bangalore</a> and nearby locations such as Lepakshi.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Farmland near Lepakshi gives families a chance to enjoy a slower weekend lifestyle. Children can spend time around trees, soil, gardens and open spaces instead of only screens and indoor activities. Parents can use the farmplot as a weekend escape, family gathering space or ownership option.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Lepakshi also adds cultural value because of the historic Lepakshi Temple. For families who want nature, heritage, access and ownership, this location offers a practical balance.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "About Ecovara Premium Managed Farmland Near Lepakshi",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\"><a href=\"https://www.novaranatureestates.com/projects\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Ecovara by Novara Nature Estates</a> is a premium managed farmland project near the historic Lepakshi Temple and Bengaluru-Hyderabad National Highway. The project is planned as a gated farmland community that combines countryside calmness with modern lifestyle features.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Spread across 15 acres, Ecovara offers a peaceful retreat for families who want a weekend escape, farmplots ownership or a larger plot for farming-related use. The project offers flexible unit sizes starting from 6,000 sq. ft onwards.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For families exploring farmland near Lepakshi, Ecovara creates an organized farmland experience with planned plots, plantation features, lifestyle amenities and site visit support.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Location Advantage of Ecovara Near Lepakshi",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Location is one of the biggest reasons families consider Ecovara. The project is close to Lepakshi and offers access to nearby destinations, towns and travel points.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "table",
@@ -129,47 +142,56 @@ export const BLOGS = [
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">This location makes Ecovara suitable for families who want farmland near Lepakshi with access to heritage places, nearby towns, highway routes and airport-side connectivity.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 17pt; font-weight: 700; white-space: pre-wrap;\">What Makes Farmland Near Lepakshi Attractive for Families</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Farmland near Lepakshi is attractive because it supports both emotional and practical needs of families.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">First, it gives families open space away from city crowding. A farmplot can become a peaceful place for weekend visits, small gatherings and outdoor activities.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Second, children can connect with nature through plantations, trees, gardens and farmland surroundings. This creates a different experience compared to regular city living.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Third, farmland ownership gives families a long-term asset that can also be used for lifestyle purposes. Many families see farmland as a place they can visit, use and emotionally connect with.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Fourth, managed farmland makes the experience easier. Families may not have time to maintain land daily, so a planned farmland project with maintenance and plantation support becomes more practical.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Ecovara Plot Specifications",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara offers farmplots planned for space, greenery and usability.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "ul",
@@ -183,12 +205,14 @@ export const BLOGS = [
       {
         "type": "h2",
         "text": "Project Highlights at Ecovara",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara includes lifestyle and nature-focused amenities suitable for family visits.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "ul",
@@ -205,17 +229,20 @@ export const BLOGS = [
       {
         "type": "h2",
         "text": "What Families Should Check Before Buying Farmland Near Lepakshi",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Before choosing farmland near Lepakshi, families should not decide only based on price or brochure images. A proper site visit and checklist are important.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Check these points before booking:</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "ul",
@@ -234,97 +261,116 @@ export const BLOGS = [
       {
         "type": "p",
         "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\"><span style=\"text-decoration-line: none; font-weight: 700;\">Get </span><a href=\"https://maps.app.goo.gl/pGwLz5eaTXDZ7QeL6\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); text-decoration-line: underline; font-weight: bold;\">Ecovara location</a><span style=\"text-decoration-line: none; font-weight: 700;\"> details on WhatsApp before planning your visit.</span></span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Legal Documents to Verify Before Buying",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Legal clarity is one of the most important factors when buying farmland. Families should ask the project team to explain the document process clearly before making a decision.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Important documents to check include sale deed, RTC or land record, mutation record, Encumbrance Certificate, survey number details, plot demarcation details, agreement terms and registration process.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">A transparent document review gives buyers more confidence and helps them avoid confusion later.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Why Managed Farmland Works for Bangalore Families",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Many Bangalore families like the idea of owning farmland, but they may not have time to manage plantation, watering, maintenance and regular supervision. This is where managed farmland becomes useful.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">A managed farmland project like Ecovara offers a more structured ownership experience. Its planning, plantation features, common amenities and support system make farmland ownership easier for families.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Also link to </span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">managed farmland near Bangalore</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">, </span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">farm plots near Lepakshi</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"> and </span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">farmland near Lepakshi Temple</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Why Ecovara Is a Good Fit for Bangalore Families",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara is suitable for families exploring farmland near Lepakshi for weekend use, nature living and long-term ownership. The project combines open farmland surroundings with planned features such as tree plantations, organic garden space, lotus pond, cafeteria, jogging track, pet route, solar street lights and security.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For Bangalore-based families, Ecovara offers a balanced farmland experience. It is peaceful enough for weekend relaxation and structured enough for buyers who want a managed farmplot instead of raw land.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The 6,000, 8,000 and 10,000 sq.ft plot options give families flexibility.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Download Brochure or Unlock Price Details</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Common Mistakes Families Should Avoid",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Families should avoid buying farmland only because the price looks attractive. Low price alone does not make a project suitable.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Common mistakes include not visiting the site, ignoring road access, skipping legal document verification, not checking water availability and not understanding maintenance responsibilities. Buyers should also avoid believing unrealistic return promises.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">A good farmland decision should be based on location, access, legal clarity, usability and maintenance support.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "FAQs",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "ol",
@@ -339,22 +385,26 @@ export const BLOGS = [
       {
         "type": "h2",
         "text": "Book a Farm Visit at Ecovara",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">If your family is exploring farmland near Lepakshi for weekend living, nature experiences and long-term ownership, Ecovara by Novara Nature Estates can be a suitable managed farmland option to consider.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Visit the project, check the location, review plot sizes, understand the documents and speak to the team.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">CTA:</span><span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\"> <a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\"><b style=\"\"><u>Book Your Farm Visit Today</u></b></a></span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       }
     ],
     "schemas": {
