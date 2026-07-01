@@ -4147,9 +4147,9 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775630823/vmxyoimnafupdmtwgdne.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775630823/vmxyoimnafupdmtwgdne.webp",
     "imageAlt": "Looking for Farmland Near Lepakshi Temple? Here Is What Every Buyer Should Know Before Deciding.",
-    "imageTitle": "Looking for Farmland Near Lepakshi Temple? Here Is What Every Buyer Should Know Before Deciding.",
+    "imageTitle": "",
     "imageCaption": "",
-    "imageDescription": "Looking for Farmland Near Lepakshi Temple? Here Is What Every Buyer Should Know Before Deciding.",
+    "imageDescription": "",
     "videoUrl": "",
     "tags": [],
     "sections": [
@@ -4678,33 +4678,13 @@ export const BLOGS = [
     ],
     "schemas": {
       "faq": {
-        "enabled": true,
+        "enabled": false,
         "mode": "default",
         "data": {
           "items": [
             {
-              "name": "How far is Lepakshi Temple from Bangalore?",
-              "text": "Lepakshi Temple is 120 kilometres from the center of Bangalore and 75 kilometres from Kempegowda International Airport at Devanahalli. It takes 90 minutes to 2 hours to get to Lepakshi Temple from most places in Bangalore by car on NH44."
-            },
-            {
-              "name": "Is farmland near Lepakshi in Karnataka or Andhra Pradesh?",
-              "text": "Lepakshi town is located in Andhra Pradeshs Anantapur district. Some farmland projects near Lepakshi Temple are in Karnataka. Some are in Andhra Pradesh. So it is an idea to find out which state and district the plot you are interested in is located in because it affects the revenue records system and the registration process and stamp duty."
-            },
-            {
-              "name": "What kind of crops can be grown near Lepakshi Temple?",
-              "text": "Coconut and mango are the crops that are grown near Lepakshi Temple for selling. The soil and weather near Lepakshi Temple are also good for growing groundnut and sunflower and different kinds of vegetables. Since it does not rain much near Lepakshi Temple it is necessary to have a way to water the crops like a borewell and a drip irrigation system."
-            },
-            {
-              "name": "Is the land near Lepakshi Temple protected?",
-              "text": "The Lepakshi Temple complex is a protected heritage site by the Archaeological Survey of India. This protection is for the temple complex itself. The agricultural land near Lepakshi Temple is not directly affected by this protection. It is a good idea to find out how close the plot you are interested in is to the temple and if there are any rules that apply to the area around it."
-            },
-            {
-              "name": "Can I visit Ecovara and Lepakshi Temple on the day?",
-              "text": "Yes you can visit Ecovara and Lepakshi Temple on the day. In fact we think it is an idea to do so. Most people who buy land at Ecovara visit the farm and the temple on the day. Lepakshi Temple is 10 minutes away from Ecovara. Many families visit Lepakshi Temple regularly when they come to their farm at Ecovara on the weekends."
-            },
-            {
-              "name": "What is the first step to buying farmland near Lepakshi Temple?",
-              "text": "The first step is to visit the site before making any decision. You can schedule a visit to Ecovara and walk around the land to get a better idea of what it is, like. This will help you answer any questions you may have and make an informed decision."
+              "name": "",
+              "text": ""
             }
           ]
         },
@@ -4754,18 +4734,18 @@ export const BLOGS = [
         "json": ""
       },
       "review": {
-        "enabled": true,
+        "enabled": false,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "Product",
-          "name": "Looking for Farmland Near Lepakshi Temple? Here Is What Every Buyer Should Know Before Deciding.",
+          "name": "",
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "1908",
-            "bestRating": "5",
-            "worstRating": "1"
+            "ratingValue": "",
+            "reviewCount": "",
+            "bestRating": "",
+            "worstRating": ""
           }
         },
         "json": ""
