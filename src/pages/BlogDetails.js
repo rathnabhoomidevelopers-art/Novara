@@ -280,6 +280,10 @@ export default function BlogDetail({ vikeSlug }) {
      <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap');
         .blog-content, .blog-content * { font-family: 'Urbanist', 'Poppins', sans-serif !important; }
+        /* Keep paragraph text and bullet/number list text visually identical */
+        .blog-content > p,
+        .blog-content > ul > li,
+        .blog-content > ol > li { color: #475569 !important; font-weight: 400 !important; }
      `}</style>
      <Header />
 
