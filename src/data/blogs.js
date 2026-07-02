@@ -8514,17 +8514,17 @@ export const BLOGS = [
         "json": ""
       },
       "blog": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": ""
+            "@id": "https://www.novaranatureestates.com/blogs/farming-techniques-farmlands-near-bangalore"
           },
-          "headline": "",
-          "image": "",
+          "headline": "Top Farming Techniques for Farmlands Near Bangalore: From Organic to High-Tech",
+          "image": "https://www.novaranatureestates.com/images/Blog%201_11zon.webp",
           "author": {
             "@type": "Organization",
             "name": "Novara Nature Estates",
@@ -8538,19 +8538,27 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/images/logo.svg"
             }
           },
-          "datePublished": "",
-          "dateModified": ""
+          "datePublished": "2026-01-27T13:24:39+05:30",
+          "dateModified": "2026-01-27T13:24:39+05:30"
         },
         "json": ""
       },
       "breadcrumb": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "items": [
             {
-              "name": "",
-              "item": ""
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blog Page",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Top Farming Techniques for Farmlands Near Bangalore: From Organic to High-Tech",
+              "item": "https://www.novaranatureestates.com/blogs/farming-techniques-farmlands-near-bangalore"
             }
           ]
         },
