@@ -43,7 +43,7 @@ function FaqAccordion({ items = [] }) {
               type="button"
               onClick={() => setOpen(isOpen ? -1 : i)}
               aria-expanded={isOpen}
-              className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-semibold text-[14px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors"
+              className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-bold text-[16px] sm:text-[18px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors"
             >
               <span>{item.q}</span>
               <svg

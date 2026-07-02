@@ -260,7 +260,7 @@ function PreviewFaqAccordion({ items = [] }) {
         return (
           <div key={i} className="rounded-xl border border-[#E6E1D3] overflow-hidden bg-white">
             <button type="button" onClick={() => setOpen(isOpen ? -1 : i)} aria-expanded={isOpen}
-              className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-semibold text-[14px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors">
+              className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-bold text-[16px] sm:text-[18px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors">
               <span>{item.q}</span>
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5"
                 className={`shrink-0 text-[#1A614F] transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}>
