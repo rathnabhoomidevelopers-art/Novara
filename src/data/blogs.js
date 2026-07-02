@@ -7152,7 +7152,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Lepakshi sits in Andhra Pradesh's Anantapur district near the Karnataka border - which means some land in this area may fall under Andhra Pradesh revenue jurisdiction rather than Karnataka. Confirm which state's records apply to your specific plot and verify documents accordingly. The complete guide to farmland near Lepakshi covers this geography in detail.",
+        "text": "Lepakshi sits in Andhra Pradesh's Anantapur district near the Karnataka border - which means some land in this area may fall under Andhra Pradesh revenue jurisdiction rather than Karnataka. Confirm which state's records apply to your specific plot and verify documents accordingly. The complete guide to <a href=\"https://www.novaranatureestates.com/blogs/farm-plots-near-lepakshi\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">farmland near Lepakshi</a> covers this geography in detail.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -7194,7 +7194,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "The reason most Bangalore investors choose managed farmland projects like Ecovara is that this entire process has already been done - by the developer's legal team, before any plot is offered for sale.",
+        "text": "The reason most Bangalore investors choose <a href=\"https://www.novaranatureestates.com/blogs/managed-farmland-near-bangalore-guide\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">managed farmland projects</a> like Ecovara is that this entire process has already been done - by the developer's legal team, before any plot is offered for sale.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -7224,7 +7224,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "<a href=\"https://novaranatureestates.com/projects\" style=\"color:#E3A600\">Explore Ecovara farm plots</a> Explore Ecovara farm plots or get in touch with the Novara team for a detailed document review before your purchase.",
+        "text": "<a href=\"https://novaranatureestates.com/projects\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">Explore Ecovara farm plots</a> Explore Ecovara farm plots or get in touch with the Novara team for a detailed document review before your purchase.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -7386,7 +7386,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "<a href=\"https://novaranatureestates.com/contactus\" style=\"color:#E3A600\">Schedule your free site visit to Ecovara </a> +91-8660200662",
+        "text": "<span style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\"><a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\">Schedule your free site visit to Ecovara</a></span><a href=\"https://novaranatureestates.com/contactus\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\"> </a> +91-8660200662",
         "fontWeight": "font-normal",
         "align": "justify"
       }
