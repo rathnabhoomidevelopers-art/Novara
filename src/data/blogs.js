@@ -5286,9 +5286,9 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775379164/vqzfetqfofnidh7qmkdp.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775379164/vqzfetqfofnidh7qmkdp.webp",
     "imageAlt": "Ecovara Farmland Project Near Lepakshi Review",
-    "imageTitle": "",
+    "imageTitle": "Ecovara Farmland Project Near Lepakshi Review",
     "imageCaption": "",
-    "imageDescription": "",
+    "imageDescription": "Ecovara Farmland Project Near Lepakshi Review",
     "videoUrl": "",
     "tags": [],
     "sections": [
