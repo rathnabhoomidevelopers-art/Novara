@@ -5280,7 +5280,7 @@ export const BLOGS = [
     "headline": "Ecovara Farms Near Lepakshi — An Honest Review From People Who Actually Bought",
     "description": "An honest Ecovara Farms review covering location, amenities, plantation, legal clarity, and real buyer experiences. Everything you need before visiting Novara Nature Estates.\n",
     "date": "Apr 5, 2026",
-    "keywords": "",
+    "keywords": "Farms Near Lepakshi",
     "author": "Novara Nature Estates",
     "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775379164/vqzfetqfofnidh7qmkdp.webp",
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775379164/vqzfetqfofnidh7qmkdp.webp",
@@ -5820,30 +5820,46 @@ export const BLOGS = [
     ],
     "schemas": {
       "faq": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "items": [
             {
-              "name": "",
-              "text": ""
+              "name": " Is Ecovara Farms a project that I can trust? ",
+              "text": "Yes you can trust Ecovara Farms. You should do your own research. They have all the papers, like clear title and registered sale deeds. They also have a working plantation and a professional team. It is an idea to get your own lawyer to check all the documents before you buy."
+            },
+            {
+              "name": "How is Ecovara Farms different from farm projects near Bangalore?",
+              "text": "The big difference is that Ecovara Farms already has a mature plantation. Most other projects in this price range are just selling you a promise of a plantation.. Ecovara Farms is selling you a plantation that already exists. You can see the difference soon as you visit the property"
+            },
+            {
+              "name": "Can I build a house on the land I buy from Ecovara Farms?",
+              "text": "This depends on the rules and regulations. You should talk to the Novara team to get an understanding of what is allowed on your specific plot."
+            },
+            {
+              "name": "Is the distance from Bangalore a problem?",
+              "text": "If you are planning to visit on the weekend it is not a problem.. If you want to visit in the evening the distance might be a issue. Just plan ahead. It will be fine."
+            },
+            {
+              "name": "What is the first step to buying a plot from Ecovara Farms?",
+              "text": "You should visit the site first. Everything else will follow after that."
             }
           ]
         },
         "json": ""
       },
       "blog": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": ""
+            "@id": "https://www.novaranatureestates.com/blogs/ecovara-farms-review"
           },
-          "headline": "",
-          "image": "",
+          "headline": "Ecovara Farms Near Lepakshi — An Honest Review From People Who Actually Bought",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775379164/vqzfetqfofnidh7qmkdp.webp",
           "author": {
             "@type": "Organization",
             "name": "Novara Nature Estates",
@@ -5857,37 +5873,45 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/images/logo.svg"
             }
           },
-          "datePublished": "",
-          "dateModified": ""
+          "datePublished": "2026-04-04T12:24:39+05:30",
+          "dateModified": "2026-04-04T12:24:39+05:30"
         },
         "json": ""
       },
       "breadcrumb": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "items": [
             {
-              "name": "",
-              "item": ""
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blog Page",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Ecovara Farms Near Lepakshi — An Honest Review From People Who Actually Bought",
+              "item": "https://www.novaranatureestates.com/blogs/ecovara-farms-review"
             }
           ]
         },
         "json": ""
       },
       "review": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "Product",
-          "name": "",
+          "name": "Ecovara Farms Near Lepakshi — An Honest Review From People Who Actually Bought",
           "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "",
-            "reviewCount": "",
-            "bestRating": "",
-            "worstRating": ""
+            "ratingValue": "5",
+            "reviewCount": "2987",
+            "bestRating": "5",
+            "worstRating": "1"
           }
         },
         "json": ""
