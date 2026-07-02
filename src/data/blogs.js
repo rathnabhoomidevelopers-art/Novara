@@ -5687,7 +5687,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "This is why the price of Ecovara Farm Plots is a little higher.. It is worth it.\n\n\nWhat you should do is contact the Novara team to find out the current price of Ecovara Farm Plots. You can call them at +91-8660200662.",
+        "text": "This is why the price of Ecovara Farm Plots is a little higher.. It is worth it.\n\n\nWhat you should do is contact the Novara team to find out the current price of Ecovara Farm Plots. You can call them at <a href=\"tel: +91 86602 00662\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\">+91-8660200662</a>.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
