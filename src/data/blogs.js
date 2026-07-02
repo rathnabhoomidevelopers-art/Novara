@@ -6658,756 +6658,551 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1774594332/ocsuiacacxdgg8vntjf1.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1774594332/ocsuiacacxdgg8vntjf1.webp",
     "imageAlt": "Farmland In Karnataka",
+    "imageTitle": "",
+    "imageCaption": "",
+    "imageDescription": "",
+    "videoUrl": "",
     "tags": [],
     "sections": [
       {
         "type": "p",
-        "text": "Anand had been sitting on the same decision for seven months.\nHe had the money. He had found a project he liked near Lepakshi. He had visited the site twice. But every time he got ready to move forward, a new question appeared.\n",
-        "fontWeight": "font-normal"
+        "text": "Anand had been sitting on the same decision for seven months.\nHe had the money. He had found a project he liked near Lepakshi. He had visited the site twice. But every time he got ready to move forward, a new question appeared.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Is the title really clean? What is an encumbrance certificate and do I need one? What is khata and why does everyone keep mentioning it? What happens at registration? What if something goes wrong after I pay?\n",
-        "fontWeight": "font-normal"
+        "text": "Is the title really clean? What is an encumbrance certificate and do I need one? What is khata and why does everyone keep mentioning it? What happens at registration? What if something goes wrong after I pay?",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "His brother-in-law - a property lawyer in Chennai , gave him the clearest advice he received in those seven months.\n\"The farmland investment itself is not complicated. The legal process is not complicated either. What makes it feel complicated is not knowing the sequence. Learn the sequence and the whole thing becomes straightforward.\"\n",
-        "fontWeight": "font-normal"
+        "text": "His brother-in-law - a property lawyer in Chennai , gave him the clearest advice he received in those seven months.\n\"The farmland investment itself is not complicated. The legal process is not complicated either. What makes it feel complicated is not knowing the sequence. Learn the sequence and the whole thing becomes straightforward.\"",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "This guide is the sequence. Written specifically for urban investors buying agricultural land in Karnataka — step by step, document by document, question by question.\n",
-        "fontWeight": "font-normal"
+        "text": "This guide is the sequence. Written specifically for urban investors buying agricultural land in Karnataka — step by step, document by document, question by question.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Why the Legal Process for Agricultural Land Is Different",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Most Bangalore investors have bought a flat or know someone who has. The legal process for residential property - sale agreement, home loan, registration is reasonably familiar.\n",
-        "fontWeight": "font-normal"
+        "text": "Most Bangalore investors have bought a flat or know someone who has. The legal process for residential property - sale agreement, home loan, registration is reasonably familiar.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Agricultural land works differently. The documents are different. The revenue records system is different. The authorities involved are different. And the checks you need to do before buying are more specific than most developers will proactively walk you through.\n",
-        "fontWeight": "font-normal"
+        "text": "Agricultural land works differently. The documents are different. The revenue records system is different. The authorities involved are different. And the checks you need to do before buying are more specific than most developers will proactively walk you through.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "This is not a reason to avoid farmland. It is a reason to understand the process before you start , which is exactly what this guide gives you.\n",
-        "fontWeight": "font-normal"
+        "text": "This is not a reason to avoid farmland. It is a reason to understand the process before you start , which is exactly what this guide gives you.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The good news: for buyers purchasing within a professionally managed project like Ecovara by Novara Nature Estates, most of this process is handled by the developer's legal team with full transparency. You still need to understand it — so you can verify that it has been done correctly and ask the right questions.\n",
-        "fontWeight": "font-normal"
+        "text": "The good news: for buyers purchasing within a professionally managed project like Ecovara by Novara Nature Estates, most of this process is handled by the developer's legal team with full transparency. You still need to understand it — so you can verify that it has been done correctly and ask the right questions.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Step 1 — Understand What You Are Buying",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Before any document check, clarify exactly what the purchase includes.\n",
-        "fontWeight": "font-normal"
+        "text": "Before any document check, clarify exactly what the purchase includes.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "<b>The land parcel </b>— a specific survey number with defined boundaries, area in square feet or guntas, and a location within the project layout. Confirm the survey number matches across all documents.\n",
-        "fontWeight": "font-normal"
+        "text": "<b>The land parcel </b>— a specific survey number with defined boundaries, area in square feet or guntas, and a location within the project layout. Confirm the survey number matches across all documents.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<b>The trees and plantation </b>-  in a managed farmland project, the trees on your plot are part of your purchase. Confirm this is explicitly stated in the sale agreement.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<b>Infrastructure and amenities</b> - roads, water supply, security, common areas. Understand what is included in your purchase and what the ongoing maintenance arrangement covers.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<b>Management services </b>- confirm the specific services included in farm management, the duration of the management agreement, and what happens at the end of the agreement period.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "At Ecovara, all of this is clearly documented before any payment is made. The legal guide on how to buy agricultural land in Karnataka walks through each element in detail.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Step 2 -  The 6 Documents Every Farmland Buyer Must Verify",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "This is the core of farmland due diligence in Karnataka. Every serious buyer - regardless of which project they are purchasing from -must verify these six documents before signing anything.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Document 1 - Title Deed (Sale Deed)",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The title deed is the most important document in any land transaction. It establishes who legally owns the land and traces the ownership history.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<b>What to check:</b> Obtain the chain of title deeds going back a minimum of 30 years. Each transfer of ownership should be documented through a registered sale deed. Look for any gaps in the ownership chain — periods where the land appears to have changed hands without a registered document. Gaps are serious red flags.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Confirm that the person currently selling the land is the registered owner as per the most recent title deed. Confirm they have the legal right to sell - that there is no joint ownership dispute, no court order restricting sale, and no mortgage or lien on the property",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "<b>Who to get it from: </b>The seller provides the original. Cross-verify at the Sub-Registrar's office where the land is registered.\n",
-        "fontWeight": "font-normal"
+        "text": "<b>Who to get it from: </b>The seller provides the original. Cross-verify at the Sub-Registrar's office where the land is registered.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<b>Red flag:</b> Any reluctance to provide original title documents for your lawyer's review before payment.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Document 2 - Encumbrance Certificate (EC)",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The encumbrance certificate is a record of all registered transactions on a property - purchases, mortgages, leases, and legal charges - over a specific period.\n",
-        "fontWeight": "font-normal"
+        "text": "The encumbrance certificate is a record of all registered transactions on a property - purchases, mortgages, leases, and legal charges - over a specific period.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<b>What to check:</b> Obtain the EC for a minimum of 15 years, ideally 30. A clean EC shows only the current ownership and no other registered transactions. Any mortgage, lien, or pending legal charge will appear here. These must be resolved before purchase.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<b>Who to get it from:</b> The Sub-Registrar's office covering the jurisdiction where the land is located. You can apply in person or through online portals in Karnataka",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<b>Why it matters</b>: A clean EC is your confirmation that the land has no financial or legal encumbrances that could affect your ownership after purchase. It is non-negotiable.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Document 3 - RTC (Record of Rights, Tenancy and Crops)",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The RTC - commonly called the pahani - is the revenue department's master record for agricultural land in Karnataka. It is the single most information-rich document in the farmland buying process.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "What to check: "
-          },
-          {
-            "bold": false,
-            "text": "The RTC shows the survey number, total extent of land, current owner's name, land classification — whether it is agricultural, converted, or forest land — nature of possession, and current crop or plantation details."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>What to check: </strong>The RTC shows the survey number, total extent of land, current owner's name, land classification — whether it is agricultural, converted, or forest land — nature of possession, and current crop or plantation details.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Verify that the owner's name on the RTC matches the name on the title deed exactly. Verify that the extent of land matches the sale agreement. Verify that the land classification is agricultural - not converted or forest land. Confirm there are no tenant entries that could complicate your ownership.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Who to get it from:"
-          },
-          {
-            "bold": false,
-            "text": " The Village Accountant (VA) or Tahsildar's office for the village where the land is located. Also available through the Bhoomi portal - Karnataka's online land records system."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Who to get it from:</strong> The Village Accountant (VA) or Tahsildar's office for the village where the land is located. Also available through the Bhoomi portal - Karnataka's online land records system.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Why it matters:"
-          },
-          {
-            "bold": false,
-            "text": " The RTC is the government's official record of who owns what land and how it is classified. Discrepancies between the RTC and the title deed are serious issues that must be resolved before purchase."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Why it matters:</strong> The RTC is the government's official record of who owns what land and how it is classified. Discrepancies between the RTC and the title deed are serious issues that must be resolved before purchase.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Document 4 -  Khata Certificate and Khata Extract",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The khata is the local body's record of a property for taxation purposes. It identifies who is responsible for paying property tax on a piece of land.\n",
-        "fontWeight": "font-normal"
+        "text": "The khata is the local body's record of a property for taxation purposes. It identifies who is responsible for paying property tax on a piece of land.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "What to check:"
-          },
-          {
-            "bold": false,
-            "text": " Confirm the seller holds an A-Khata — which indicates the property is properly registered and approved. A B-Khata indicates the property has not received formal approval and may have regulatory issues. For agricultural land in panchayat areas, the khata is maintained by the Gram Panchayat."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>What to check:</strong> Confirm the seller holds an A-Khata — which indicates the property is properly registered and approved. A B-Khata indicates the property has not received formal approval and may have regulatory issues. For agricultural land in panchayat areas, the khata is maintained by the Gram Panchayat.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Confirm the khata is in the seller's name. Confirm all property taxes are paid up to the current date -  ask for tax paid receipts for the past three years. Unpaid taxes become the new owner's liability.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": " "
-          },
-          {
-            "bold": true,
-            "text": "Who to get it from :"
-          },
-          {
-            "bold": false,
-            "text": " The relevant Gram Panchayat or local body office for the area where the land is located"
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Who to get it from :</strong> The relevant Gram Panchayat or local body office for the area where the land is located",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Document 5 -  Mutation Register (Pahani)",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Mutation is the process of updating revenue records when land changes hands. After any sale or inheritance, the new owner's name must be updated in the revenue records - this update is recorded in the Mutation Register.\n",
-        "fontWeight": "font-normal"
+        "text": "Mutation is the process of updating revenue records when land changes hands. After any sale or inheritance, the new owner's name must be updated in the revenue records - this update is recorded in the Mutation Register.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "What to check:"
-          },
-          {
-            "bold": false,
-            "text": " Verify that the current seller's name has been correctly mutated in the revenue records after they acquired the land. If the name in the revenue records does not match the current seller's name, the mutation has not been completed — which means the seller's ownership is not fully recognised in the government's records."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>What to check:</strong> Verify that the current seller's name has been correctly mutated in the revenue records after they acquired the land. If the name in the revenue records does not match the current seller's name, the mutation has not been completed — which means the seller's ownership is not fully recognised in the government's records.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": " "
-          },
-          {
-            "bold": true,
-            "text": "Why it matters:"
-          },
-          {
-            "bold": false,
-            "text": " Incomplete mutation is one of the most common issues in Karnataka agricultural land transactions and can significantly complicate your own registration and future sale."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Why it matters:</strong> Incomplete mutation is one of the most common issues in Karnataka agricultural land transactions and can significantly complicate your own registration and future sale.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Document 6 - Survey Sketch and Boundary Verification",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The survey sketch shows the physical boundaries of the land parcel - its shape, dimensions, and relationship to neighbouring parcels.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "What to check :"
-          },
-          {
-            "bold": false,
-            "text": " Compare the survey sketch with the physical boundaries of the land during your site visit. The actual boundaries should match the documented boundaries. Look for boundary stones at the corners of the plot. Confirm there are no encroachments from neighbouring land."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>What to check :</strong> Compare the survey sketch with the physical boundaries of the land during your site visit. The actual boundaries should match the documented boundaries. Look for boundary stones at the corners of the plot. Confirm there are no encroachments from neighbouring land.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "For projects like Ecovara where individual plots are carved out of a larger survey number, confirm that the layout plan has been properly approved and that your specific plot dimensions are documented.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Who to get it from:"
-          },
-          {
-            "bold": false,
-            "text": " The Survey Settlement and Land Records department of Karnataka. A licensed surveyor can also conduct a physical boundary survey."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Who to get it from:</strong> The Survey Settlement and Land Records department of Karnataka. A licensed surveyor can also conduct a physical boundary survey.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Step 3 - Stamp Duty and Registration in Karnataka",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Once due diligence is complete and you are ready to proceed, the transaction is formalised through stamp duty payment and registration.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Stamp Duty Rates for Agricultural Land",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Agricultural land in Karnataka attracts lower stamp duty rates than residential or commercial property — typically in the range of 3% to 5% of the guidance value or sale consideration, whichever is higher. The exact rate depends on the location of the land and the current Karnataka government schedule",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Additionally, a registration fee of 1% of the property value is applicable at the time of registration.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Important: "
-          },
-          {
-            "bold": false,
-            "text": "Stamp duty rates are revised periodically by the Karnataka government. Confirm the current applicable rate with a local property lawyer or the Sub-Registrar's office before finalising your budget."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Important: </strong>Stamp duty rates are revised periodically by the Karnataka government. Confirm the current applicable rate with a local property lawyer or the Sub-Registrar's office before finalising your budget.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "The Registration Process",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Registration is the legal act that transfers ownership from seller to buyer and creates a public record of the transaction.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": " "
-          },
-          {
-            "bold": true,
-            "text": "Step 1 - Stamp paper purchase:"
-          },
-          {
-            "bold": false,
-            "text": " Stamp paper of the applicable value is purchased — either as physical stamp paper from licensed vendors or through the Karnataka government's online e-stamp system"
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Step 1 - Stamp paper purchase:</strong> Stamp paper of the applicable value is purchased — either as physical stamp paper from licensed vendors or through the Karnataka government's online e-stamp system",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Step 2 - Sale deed drafting:"
-          },
-          {
-            "bold": false,
-            "text": " The sale deed is drafted by a lawyer incorporating all agreed terms — buyer and seller details, property description, survey number, consideration amount, and transfer of rights."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Step 2 - Sale deed drafting:</strong> The sale deed is drafted by a lawyer incorporating all agreed terms — buyer and seller details, property description, survey number, consideration amount, and transfer of rights.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Step 3 — Appointment at Sub-Registrar's office:"
-          },
-          {
-            "bold": false,
-            "text": " Both buyer and seller - or their authorised representatives — appear at the Sub-Registrar's office with original documents and two witnesses."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Step 3 — Appointment at Sub-Registrar's office:</strong> Both buyer and seller - or their authorised representatives — appear at the Sub-Registrar's office with original documents and two witnesses.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": " "
-          },
-          {
-            "bold": true,
-            "text": "Step 4 - Biometric verification:"
-          },
-          {
-            "bold": false,
-            "text": " Karnataka requires biometric verification — fingerprint and photograph — of both buyer and seller at the time of registration."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Step 4 - Biometric verification:</strong> Karnataka requires biometric verification — fingerprint and photograph — of both buyer and seller at the time of registration.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Step 5 -  Registration and receipt:"
-          },
-          {
-            "bold": false,
-            "text": " The Sub-Registrar registers the sale deed and returns the original registered document to the buyer. This registered sale deed is your proof of ownership."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Step 5 -  Registration and receipt:</strong> The Sub-Registrar registers the sale deed and returns the original registered document to the buyer. This registered sale deed is your proof of ownership.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "At Ecovara, Novara Nature Estates handles the entire registration process - document preparation, stamp paper, Sub-Registrar appointment, and post-registration support. Buyers are guided through every step with complete transparency.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Step 4 - Post-Registration: Mutation in Your Name\n",
-        "fontWeight": "font-bold"
+        "text": "Step 4 - Post-Registration: Mutation in Your Name",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Registration transfers legal ownership. But the revenue records — the RTC, khata, and mutation register — still show the previous owner's name until mutation is completed.\n",
-        "fontWeight": "font-normal"
+        "text": "Registration transfers legal ownership. But the revenue records — the RTC, khata, and mutation register — still show the previous owner's name until mutation is completed.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Mutation in your name is a separate process that must be completed after registration.\n",
-        "fontWeight": "font-normal"
+        "text": "Mutation in your name is a separate process that must be completed after registration.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "How to apply:"
-          },
-          {
-            "bold": false,
-            "text": " Submit the registered sale deed along with a mutation application to the Tahsildar's office of the taluk where the land is located. In Karnataka this can also be done through the Bhoomi portal for certain categories."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>How to apply:</strong> Submit the registered sale deed along with a mutation application to the Tahsildar's office of the taluk where the land is located. In Karnataka this can also be done through the Bhoomi portal for certain categories.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Timeline:"
-          },
-          {
-            "bold": false,
-            "text": " Mutation typically takes 30 to 90 days depending on the office and any pending queries."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Timeline:</strong> Mutation typically takes 30 to 90 days depending on the office and any pending queries.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Why it matters: "
-          },
-          {
-            "bold": false,
-            "text": "Until your name appears in the revenue records, you are the legal owner but the government's records do not reflect this. This creates complications for future transactions, succession, and any government schemes you may want to access as a landowner."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Why it matters: </strong>Until your name appears in the revenue records, you are the legal owner but the government's records do not reflect this. This creates complications for future transactions, succession, and any government schemes you may want to access as a landowner.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Novara Nature Estates supports buyers through the mutation process after registration - this is part of the end-to-end legal support included in every Ecovara purchase.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Step 5 - Documents You Receive as a Buyer",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "At the end of the legal process you should hold the following documents:",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Original registered sale deed"
-          },
-          {
-            "bold": false,
-            "text": " — your primary proof of ownership, with the Sub-Registrar's stamp and registration number"
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Original registered sale deed</strong> — your primary proof of ownership, with the Sub-Registrar's stamp and registration number",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Encumbrance certificate"
-          },
-          {
-            "bold": false,
-            "text": " — updated after registration to show the new transaction. Obtain a fresh EC after your sale deed is registered to confirm your ownership is recorded."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Encumbrance certificate</strong> — updated after registration to show the new transaction. Obtain a fresh EC after your sale deed is registered to confirm your ownership is recorded.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Updated RTC"
-          },
-          {
-            "bold": false,
-            "text": " — after mutation, request a fresh RTC from the Bhoomi portal or Tahsildar's office. It should now show your name as the owner."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Updated RTC</strong> — after mutation, request a fresh RTC from the Bhoomi portal or Tahsildar's office. It should now show your name as the owner.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Khata in your name "
-          },
-          {
-            "bold": false,
-            "text": "- after mutation, apply for khata transfer to your name at the relevant Gram Panchayat. The khata certificate and extract should reflect your ownership."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Khata in your name </strong>- after mutation, apply for khata transfer to your name at the relevant Gram Panchayat. The khata certificate and extract should reflect your ownership.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Survey sketch "
-          },
-          {
-            "bold": false,
-            "text": "- the physical boundary map of your plot for your records."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Survey sketch </strong>- the physical boundary map of your plot for your records.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Keep all original documents in a safe location. Maintain digital copies. Share copies with your lawyer for safekeeping.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "The Locations Where These Legal Checks Matter Most Near Bangalore",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Karnataka's revenue records system applies across all districts but implementation quality varies by location. Here are the key areas near Bangalore where most managed farmland investment happens - and what to know about each.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Lepakshi -  Anantapur District, Andhra Pradesh Border",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Lepakshi sits in Andhra Pradesh's Anantapur district near the Karnataka border - which means some land in this area may fall under Andhra Pradesh revenue jurisdiction rather than Karnataka. Confirm which state's records apply to your specific plot and verify documents accordingly. The complete guide to farmland near Lepakshi covers this geography in detail.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Devanahalli -  Bangalore Rural District",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Devanahalli falls under Bangalore Rural district and its revenue records are generally well-maintained given the area's high transaction volume driven by airport proximity. The farmland near Devanahalli guide covers this location specifically.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "NH44 Corridor - Bangalore Rural to Chikkaballapur",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The NH44 belt passes through both Bangalore Rural and Chikkaballapur districts. Confirm the specific taluk and hobli your land falls under - this determines which Sub-Registrar's office handles registration and which Tahsildar's office handles mutation.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Why Buying Within a Verified Project Simplifies Everything",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Every document check described in this guide can be done independently by a buyer purchasing raw agricultural land from an individual seller. It is time-consuming, requires local knowledge, and demands engagement with multiple government offices in a specific jurisdiction.\n",
-        "fontWeight": "font-normal"
+        "text": "Every document check described in this guide can be done independently by a buyer purchasing raw agricultural land from an individual seller. It is time-consuming, requires local knowledge, and demands engagement with multiple government offices in a specific jurisdiction.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The reason most Bangalore investors choose managed farmland projects like Ecovara is that this entire process has already been done - by the developer's legal team, before any plot is offered for sale.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "At Ecovara, every plot has been through:",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "ul",
@@ -7424,220 +7219,334 @@ export const BLOGS = [
       {
         "type": "p",
         "text": "The buyer's due diligence then becomes verification rather than discovery — confirming that what the developer says has been done has actually been done. This is significantly faster, less complicated, and more reliable than starting from scratch on raw land.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_link",
-        "textBefore": "",
-        "linkText": "Explore Ecovara farm plots",
-        "href": "https://novaranatureestates.com/projects",
-        "textAfter": "Explore Ecovara farm plots or get in touch with the Novara team for a detailed document review before your purchase.",
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<a href=\"https://novaranatureestates.com/projects\" style=\"color:#E3A600\">Explore Ecovara farm plots</a> Explore Ecovara farm plots or get in touch with the Novara team for a detailed document review before your purchase.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Common Mistakes Buyers Make - and How to Avoid Them",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": " "
-          },
-          {
-            "bold": true,
-            "text": "Relying only on the developer's lawyer"
-          },
-          {
-            "bold": false,
-            "text": ". The developer's legal team is working for the developer. Engage your own independent lawyer to review all documents — even in a reputable project. This is not a sign of distrust — it is standard practice in any serious property transaction."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Relying only on the developer's lawyer</strong>. The developer's legal team is working for the developer. Engage your own independent lawyer to review all documents — even in a reputable project. This is not a sign of distrust — it is standard practice in any serious property transaction.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Skipping the physical site visit."
-          },
-          {
-            "bold": false,
-            "text": " Documents can be verified on paper. The physical reality of the land — its boundaries, plantation condition, infrastructure, access — can only be verified in person. Visit before you pay anything."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Skipping the physical site visit.</strong> Documents can be verified on paper. The physical reality of the land — its boundaries, plantation condition, infrastructure, access — can only be verified in person. Visit before you pay anything.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Not checking for tenant entries in the RTC."
-          },
-          {
-            "bold": false,
-            "text": " Agricultural land in Karnataka may have tenant records — entries showing farmers who have been cultivating the land under various historical tenancy arrangements. These entries can complicate your ownership. A clean RTC should have no tenant entries"
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Not checking for tenant entries in the RTC.</strong> Agricultural land in Karnataka may have tenant records — entries showing farmers who have been cultivating the land under various historical tenancy arrangements. These entries can complicate your ownership. A clean RTC should have no tenant entries",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": ""
-          },
-          {
-            "bold": true,
-            "text": "Paying before registration."
-          },
-          {
-            "bold": false,
-            "text": " Full payment should be linked to registration — not before. The sale deed should be registered at the Sub-Registrar's office before or simultaneously with final payment."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Paying before registration.</strong> Full payment should be linked to registration — not before. The sale deed should be registered at the Sub-Registrar's office before or simultaneously with final payment.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "bold": false,
-            "text": " "
-          },
-          {
-            "bold": true,
-            "text": "Not completing mutation. "
-          },
-          {
-            "bold": false,
-            "text": "Many buyers treat registration as the end of the process. It is not. Mutation in your name is essential and should be completed within 90 days of registration."
-          }
-        ],
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<strong>Not completing mutation. </strong>Many buyers treat registration as the end of the process. It is not. Mutation in your name is essential and should be completed within 90 days of registration.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Frequently Asked Questions About Buying Farmland in Karnataka",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Can a non-farmer buy agricultural land in Karnataka? ",
-        "fontWeight": "font-bold"
+        "text": "Can a non-farmer buy agricultural land in Karnataka?",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": " Yes. Karnataka does not restrict agricultural land purchase to farmers. Any Indian citizen can purchase agricultural land in Karnataka subject to applicable laws. Confirm the current position with a local property lawyer as regulations can vary.",
-        "fontWeight": "font-normal"
+        "text": "Yes. Karnataka does not restrict agricultural land purchase to farmers. Any Indian citizen can purchase agricultural land in Karnataka subject to applicable laws. Confirm the current position with a local property lawyer as regulations can vary.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "What is the difference between A-Khata and B-Khata?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "A-Khata indicates the property is properly registered and approved by the local authority. B-Khata indicates the property lacks formal approval — often because it was built on converted or unauthorised land. For agricultural farmland purchases always confirm A-Khata status.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "How long does the entire purchase process take?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "From decision to registered sale deed — typically 30 to 60 days for a straightforward transaction with clear documents. At Ecovara the process is streamlined by the developer's legal support — most buyers complete registration within 30 days of committing.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "What documents do I need as the buyer?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Aadhaar card, PAN card, and address proof. Two passport-sized photographs. Bank details for transaction records. The seller and developer provide all land-related documents.\n",
-        "fontWeight": "font-normal"
+        "text": "Aadhaar card, PAN card, and address proof. Two passport-sized photographs. Bank details for transaction records. The seller and developer provide all land-related documents.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Is RERA applicable to farmland projects in Karnataka?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "RERA primarily applies to residential and commercial real estate projects. Agricultural farmland projects typically fall outside RERA's scope. This makes independent legal due diligence on the title and project documents even more important — there is no regulatory authority specifically overseeing farmland developer compliance. Our guide on RERA vs non-RERA farmland covers this distinction in detail.\n",
-        "fontWeight": "font-normal"
+        "text": "RERA primarily applies to residential and commercial real estate projects. Agricultural farmland projects typically fall outside RERA's scope. This makes independent legal due diligence on the title and project documents even more important — there is no regulatory authority specifically overseeing farmland developer compliance. Our guide on RERA vs non-RERA farmland covers this distinction in detail.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "What happens to my land if I want to sell it later?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "You sell it as you would any property — through a registered sale deed. The buyer does their own due diligence on the documents you hold. A clean title, updated RTC in your name, current khata, and clean EC make your plot significantly easier to sell and command better pricing.\n",
-        "fontWeight": "font-normal"
+        "text": "You sell it as you would any property — through a registered sale deed. The buyer does their own due diligence on the documents you hold. A clean title, updated RTC in your name, current khata, and clean EC make your plot significantly easier to sell and command better pricing.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "What is the farmland investment checklist before buying?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Our complete farmland investment checklist before buying covers every document, every question, and every site visit checklist item in one place.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Closing Thought",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Anand completed his purchase at Ecovara three months after that conversation with his brother-in-law.\n",
-        "fontWeight": "font-normal"
+        "text": "Anand completed his purchase at Ecovara three months after that conversation with his brother-in-law.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Not because the process was complicated — it wasn't. But because he took the time to understand what he was buying, verified the documents independently, visited the site twice, and asked every question he had until he had clear answers.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "\"The legal process was actually the easiest part,\" he told us after registration. \"The hardest part was convincing myself to stop researching and start deciding.\"\n",
-        "fontWeight": "font-normal"
+        "text": "\"The legal process was actually the easiest part,\" he told us after registration. \"The hardest part was convincing myself to stop researching and start deciding.\"",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "If you're at the research stage — this guide has given you the framework. If you're at the decision stage — the Novara team is ready to walk you through every document for Ecovara before you commit to anything.\n",
-        "fontWeight": "font-normal"
+        "text": "If you're at the research stage — this guide has given you the framework. If you're at the decision stage — the Novara team is ready to walk you through every document for Ecovara before you commit to anything.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_link",
-        "textBefore": "",
-        "linkText": "Schedule your free site visit to Ecovara ",
-        "href": "https://novaranatureestates.com/contactus",
-        "textAfter": "+91-8660200662",
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<a href=\"https://novaranatureestates.com/contactus\" style=\"color:#E3A600\">Schedule your free site visit to Ecovara </a> +91-8660200662",
+        "fontWeight": "font-normal",
+        "align": "justify"
       }
-    ]
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Can a non-farmer buy agricultural land in Karnataka?",
+              "text": "Yes. Karnataka does not restrict agricultural land purchase to farmers. Any Indian citizen can purchase agricultural land in Karnataka subject to applicable laws. Confirm the current position with a local property lawyer as regulations can vary."
+            },
+            {
+              "name": "What is the difference between A-Khata and B-Khata?",
+              "text": "A-Khata indicates the property is properly registered and approved by the local authority. B-Khata indicates the property lacks formal approval — often because it was built on converted or unauthorised land. For agricultural farmland purchases always confirm A-Khata status."
+            },
+            {
+              "name": "How long does the entire purchase process take?",
+              "text": "From decision to registered sale deed — typically 30 to 60 days for a straightforward transaction with clear documents. At Ecovara the process is streamlined by the developer's legal support — most buyers complete registration within 30 days of committing."
+            },
+            {
+              "name": "What documents do I need as the buyer?",
+              "text": "Aadhaar card, PAN card, and address proof. Two passport-sized photographs. Bank details for transaction records. The seller and developer provide all land-related documents."
+            },
+            {
+              "name": "Is RERA applicable to farmland projects in Karnataka?",
+              "text": "RERA primarily applies to residential and commercial real estate projects. Agricultural farmland projects typically fall outside RERA's scope. This makes independent legal due diligence on the title and project documents even more important — there is no regulatory authority specifically overseeing farmland developer compliance. Our guide on RERA vs non-RERA farmland covers this distinction in detail."
+            },
+            {
+              "name": "What happens to my land if I want to sell it later?",
+              "text": "You sell it as you would any property — through a registered sale deed. The buyer does their own due diligence on the documents you hold. A clean title, updated RTC in your name, current khata, and clean EC make your plot significantly easier to sell and command better pricing."
+            },
+            {
+              "name": "What is the farmland investment checklist before buying?",
+              "text": "Our complete farmland investment checklist before buying covers every document, every question, and every site visit checklist item in one place."
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novaranatureestates.com/blogs/how-to-buy-farmland-karnataka-legal-guide"
+          },
+          "headline": "How to Buy Farmland in Karnataka — Step-by-Step Guide",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1774594332/ocsuiacacxdgg8vntjf1.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "url": "https://www.novaranatureestates.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/images/logo.svg"
+            }
+          },
+          "datePublished": "2026-03-26T13:05:59+05:30",
+          "dateModified": "2026-03-26T13:05:59+05:30"
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blog Page",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "How to Buy Farmland in Karnataka — Step-by-Step Guide",
+              "item": "https://www.novaranatureestates.com/blogs/how-to-buy-farmland-karnataka-legal-guide"
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "How to Buy Farmland in Karnataka — Step-by-Step Guide",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "939",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
   },
   {
     "id": 15,
