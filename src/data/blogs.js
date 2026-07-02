@@ -9,9 +9,9 @@ export const BLOGS = [
     "date": "Jul 2, 2026",
     "keywords": "Farmland Near Lepakshi",
     "author": "Novara Nature Estates",
-    "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782971101/xxtbpw6yjt6ezwyh2fwq.webp",
-    "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782971101/xxtbpw6yjt6ezwyh2fwq.webp",
-    "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782971101/xxtbpw6yjt6ezwyh2fwq.webp",
+    "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782972359/whb4axci6ng12x3xlbdu.webp",
+    "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782972359/whb4axci6ng12x3xlbdu.webp",
+    "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782972359/whb4axci6ng12x3xlbdu.webp",
     "imageAlt": "Farmland Near Lepakshi Location Benefits for Bangalore-Based Buyers",
     "imageTitle": "Farmland Near Lepakshi Location Benefits for Bangalore-Based Buyers",
     "imageCaption": "",
@@ -342,7 +342,7 @@ export const BLOGS = [
             "@id": "https://www.novaranatureestates.com/blogs/farmland-near-lepakshi-location-benefits"
           },
           "headline": "Farmland Near Lepakshi: Location Benefits for Bangalore-Based Buyers",
-          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782971101/xxtbpw6yjt6ezwyh2fwq.webp",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782972359/whb4axci6ng12x3xlbdu.webp",
           "author": {
             "@type": "Organization",
             "name": "Novara Nature Estates",
