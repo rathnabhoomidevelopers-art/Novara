@@ -1,6 +1,7 @@
 import { usePageContext } from "vike-react/usePageContext";
 import { useEffect } from "react";
 import { BLOGS } from "../src/data/blogs";
+import { buildSchemaGraph } from "../src/utils/schema";
 
 // Schema definitions per page
 
@@ -33,6 +34,32 @@ const getSchema = (urlPathname, blog = null) => {
     };
     const datePublished = normDate(schemaData.datePublished, fallbackDate);
     const dateModified = normDate(schemaData.dateModified, datePublished);
+
+    // New posts saved from the Builder carry a full "schemas" config (Blog,
+    // FAQ, Breadcrumb, Review, Video, Product — whatever was enabled there).
+    // Use that as the source of truth so the live page matches what was
+    // configured, instead of only ever emitting a fixed BlogPosting shape.
+    const builderGraph = blog.schemas ? buildSchemaGraph(blog.schemas) : [];
+    if (builderGraph.length) {
+      // Guarantee a breadcrumb is always present for SEO, even if the author
+      // didn't toggle on the Breadcrumb Schema block in the Builder.
+      const hasBreadcrumb = builderGraph.some((n) => n && n["@type"] === "BreadcrumbList");
+      if (!hasBreadcrumb) {
+        builderGraph.push({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: `${base}/` },
+            { "@type": "ListItem", position: 2, name: "Blog", item: `${base}/blogs` },
+            { "@type": "ListItem", position: 3, name: blog.title, item: `${base}/blogs/${blog.slug}` },
+          ],
+        });
+      }
+      return builderGraph;
+    }
+
+    // Legacy posts with no "schemas" config keep the exact output they've
+    // always had, so nothing changes for older blogs.
     return [
       {
         "@context": "https://schema.org",

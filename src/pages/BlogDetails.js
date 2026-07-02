@@ -68,6 +68,41 @@ function FaqAccordion({ items = [] }) {
   );
 }
 
+// ─── Q&A toggle for older posts (question stored as h3, answer as the next p) ──
+// Keeps the h3 as the clickable header (so its id/anchor still works for the
+// Table of Contents) but collapses the answer, matching the new FaqAccordion look.
+function FaqQaItem({ id, question, answerHtml, align }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="rounded-xl border border-[#E6E1D3] overflow-hidden bg-white">
+      <button
+        type="button"
+        id={id}
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        className="scroll-mt-28 w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-bold text-[16px] sm:text-[18px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors"
+        style={{ textAlign: align || undefined }}
+      >
+        <span>{question}</span>
+        <svg
+          viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5"
+          className={`shrink-0 text-[#1A614F] transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
+        </svg>
+      </button>
+      <div className="grid transition-all duration-200 ease-in-out" style={{ gridTemplateRows: open ? "1fr" : "0fr" }}>
+        <div className="overflow-hidden">
+          <div
+            className="px-4 py-3 text-[13px] sm:text-[14px] leading-relaxed text-slate-600"
+            dangerouslySetInnerHTML={{ __html: answerHtml }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // Modal Component
 const BrochureModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
@@ -398,7 +433,20 @@ export default function BlogDetail({ vikeSlug }) {
             <div className="mt-6 space-y-3 blog-content">
               {(() => {
                 const used = new Map();
+                // Detect old-style FAQ pairs: an h3 question (ending in "?")
+                // immediately followed by a plain p answer. Mark the answer's
+                // index so it's rendered inside the toggle instead of twice.
+                const qaSkip = new Set();
+                for (let idx = 0; idx < sections.length - 1; idx++) {
+                  const cur = sections[idx];
+                  const nxt = sections[idx + 1];
+                  if (cur?.type === "h3" && (cur.text || "").trim().endsWith("?") && nxt?.type === "p") {
+                    qaSkip.add(idx + 1);
+                  }
+                }
                 return sections.map((s, i) => {
+                  // Skip an answer paragraph already absorbed into the Q&A toggle above it
+                  if (s.type === "p" && qaSkip.has(i)) return null;
 
                   // H2
                   if (s.type === "h2") {
@@ -415,6 +463,15 @@ export default function BlogDetail({ vikeSlug }) {
                     const count = (used.get(base) || 0) + 1;
                     used.set(base, count);
                     const id = count === 1 ? base : `${base}-${count}`;
+                    // Old-style FAQ: this question's answer is the next section
+                    if (qaSkip.has(i + 1)) {
+                      const answer = sections[i + 1];
+                      const cleanAnswer = (answer.text || "").replace(
+                        /<font([^>]*)color=["']([^"']+)["']([^>]*)>/gi,
+                        (_, pre, col, post) => `<span${pre}${post} style="color:${col}">`
+                      ).replace(/<\/font>/gi, "</span>");
+                      return <FaqQaItem key={i} id={id} question={s.text} answerHtml={cleanAnswer} align={s.align} />;
+                    }
                     return (
                       <h3 key={i} id={id} className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]" style={{ textAlign: s.align || undefined }}>
                         {s.text}
