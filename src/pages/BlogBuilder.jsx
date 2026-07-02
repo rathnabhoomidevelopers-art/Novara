@@ -110,10 +110,10 @@ const sectionsToHtml = (sections = []) =>
       return `<blockquote>${escapeHtml(s.text || "")}</blockquote>`;
 
     if (s.type === "ul")
-      return `<ul>${(s.text || []).map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ul>`;
+      return `<ul>${(s.text || []).map((i) => `<li>${i}</li>`).join("")}</ul>`;
 
     if (s.type === "ol")
-      return `<ol>${(s.text || []).map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ol>`;
+      return `<ol>${(s.text || []).map((i) => `<li>${i}</li>`).join("")}</ol>`;
 
     if (s.type === "image") {
       const alignStyle = s.alignment === "left" ? "margin-right:auto;margin-left:0;" : s.alignment === "right" ? "margin-left:auto;margin-right:0;" : "margin-left:auto;margin-right:auto;";
@@ -192,7 +192,9 @@ const htmlToSections = (html = "") => {
       return;
     }
     if (tag === "ul" || tag === "ol") {
-      const items = Array.from(node.querySelectorAll(":scope > li")).map((li) => li.textContent.trim()).filter(Boolean);
+      const items = Array.from(node.querySelectorAll(":scope > li"))
+        .map((li) => li.innerHTML.trim())
+        .filter((html) => hasRealText({ textContent: html.replace(/<[^>]+>/g, "") }));
       if (items.length) out.push({ type: tag, text: items });
       return;
     }
@@ -300,7 +302,7 @@ function PreviewSection({ s, usedH3, onPlayVideo }) {
     );
   }
   if (s.type === "ul")
-    return <ul className="list-disc list-outside pl-5 space-y-2 text-[14px] text-slate-600">{(s.text || []).map((i, k) => <li key={k}>{i}</li>)}</ul>;
+    return <ul className="list-disc list-outside pl-5 space-y-2 text-[14px] text-slate-600">{(s.text || []).map((i, k) => <li key={k} dangerouslySetInnerHTML={{ __html: i }} />)}</ul>;
   if (s.type === "ol") {
     const items = s.text || [];
     const isFaqStyle = items.length > 0 && items.every((item) => {
@@ -316,14 +318,14 @@ function PreviewSection({ s, usedH3, onPlayVideo }) {
         <div className="space-y-3">
           {faqItems.map((item, fi) => (
             <div key={fi}>
-              <h3 className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]">{`${fi + 1}. ${item.q}`}</h3>
-              <p className="text-[14px] leading-relaxed text-slate-600">{item.a}</p>
+              <h3 className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]">{`${fi + 1}. `}<span dangerouslySetInnerHTML={{ __html: item.q }} /></h3>
+              <p className="text-[14px] leading-relaxed text-slate-600" dangerouslySetInnerHTML={{ __html: item.a }} />
             </div>
           ))}
         </div>
       );
     }
-    return <ol className="list-decimal list-outside pl-5 space-y-2 text-[14px] text-slate-600">{items.map((i, k) => <li key={k}>{i}</li>)}</ol>;
+    return <ol className="list-decimal list-outside pl-5 space-y-2 text-[14px] text-slate-600">{items.map((i, k) => <li key={k} dangerouslySetInnerHTML={{ __html: i }} />)}</ol>;
   }
   if (s.type === "faq")
     return (

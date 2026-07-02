@@ -118,7 +118,7 @@ export function AuthProvider({ children }) {
     canEdit:            role === "editor" || role === "admin",
     canPublish:         role === "editor" || role === "admin",
     canManageUsers:     role === "admin",
-    canManageRedirects: role === "editor" || role === "admin",
+    canManageRedirects: role === "admin",
     canView:            !!user,
   };
 

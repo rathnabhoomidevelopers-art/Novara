@@ -244,7 +244,7 @@ export default function BlogDetail({ vikeSlug }) {
         .blog-content, .blog-content * { font-family: 'Urbanist', 'Poppins', sans-serif !important; }
         .blog-content p,
         .blog-content ul li,
-        .blog-content ol li { color: #111827 !important; font-size: 14px !important; font-weight: 400 !important; line-height: 1.7 !important; }
+        .blog-content ol li { color: #111827 !important; font-size: 14px !important; line-height: 1.7 !important; }
         .blog-content ul, .blog-content ol { color: #111827 !important; }
         .blog-content table td, .blog-content table th { color: #111827 !important; }
      `}</style>
@@ -571,7 +571,7 @@ export default function BlogDetail({ vikeSlug }) {
                     return (
                       <ul key={i} className="list-disc list-outside pl-5 space-y-1.5 text-[13px] sm:text-[14px] leading-relaxed text-[#111827]">
                         {(s.text || []).map((item, idx) => (
-                          <li key={idx}>{item}</li>
+                          <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
                         ))}
                       </ul>
                     );
@@ -596,9 +596,9 @@ export default function BlogDetail({ vikeSlug }) {
                           {faqItems.map((item, fi) => (
                             <div key={fi}>
                               <h3 className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]">
-                                {`${startNum + fi}. ${stripManualNum(item.q)}`}
+                                {`${startNum + fi}. `}<span dangerouslySetInnerHTML={{ __html: stripManualNum(item.q) }} />
                               </h3>
-                              <p className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600">{item.a}</p>
+                              <p className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600" dangerouslySetInnerHTML={{ __html: item.a }} />
                             </div>
                           ))}
                         </div>
@@ -607,7 +607,7 @@ export default function BlogDetail({ vikeSlug }) {
                     return (
                       <ol key={i} className="list-decimal list-outside pl-5 space-y-1.5 text-[13px] sm:text-[14px] leading-relaxed text-[#111827]">
                         {items.map((item, idx) => (
-                          <li key={idx}>{item}</li>
+                          <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
                         ))}
                       </ol>
                     );
