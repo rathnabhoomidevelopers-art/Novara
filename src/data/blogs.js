@@ -5294,7 +5294,7 @@ export const BLOGS = [
     "sections": [
       {
         "type": "p",
-        "text": "When you see pictures of farmland projects near Bangalore they look really great. The plants and trees look healthy and green. The extra things they offer like a resort look very nice. The money you can make from it looks good too.. When you actually go there it is not the same as what you saw in the pictures.",
+        "text": "When you see pictures of <a href=\"https://www.novaranatureestates.com/projects\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">farmland projects near Bangalore</a> they look really great. The plants and trees look healthy and green. The extra things they offer like a resort look very nice. The money you can make from it looks good too.. When you actually go there it is not the same as what you saw in the pictures.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -5813,7 +5813,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Schedule your visit, to Ecovara Farms\n\n\n+91-8660200662",
+        "text": "<a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Schedule your visit, to Ecovara Farms</a>\n\n\n+91-8660200662",
         "fontWeight": "font-normal",
         "align": "justify"
       }
