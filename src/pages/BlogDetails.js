@@ -43,7 +43,7 @@ function FaqAccordion({ items = [] }) {
               type="button"
               onClick={() => setOpen(isOpen ? -1 : i)}
               aria-expanded={isOpen}
-              className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-bold text-[16px] sm:text-[18px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors"
+              className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-bold text-[13px] sm:text-[14px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors"
             >
               <span>{item.q}</span>
               <svg
@@ -80,7 +80,7 @@ function FaqQaItem({ id, question, answerHtml, align }) {
         id={id}
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
-        className="scroll-mt-28 w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-bold text-[16px] sm:text-[18px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors"
+        className="scroll-mt-28 w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-bold text-[13px] sm:text-[14px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors"
         style={{ textAlign: align || undefined }}
       >
         <span>{question}</span>
@@ -473,7 +473,7 @@ export default function BlogDetail({ vikeSlug }) {
                       return <FaqQaItem key={i} id={id} question={s.text} answerHtml={cleanAnswer} align={s.align} />;
                     }
                     return (
-                      <h3 key={i} id={id} className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]" style={{ textAlign: s.align || undefined }}>
+                      <h3 key={i} id={id} className="scroll-mt-28 text-[13px] sm:text-[14px] font-bold text-[#111827]" style={{ textAlign: s.align || undefined }}>
                         {s.text}
                       </h3>
                     );
