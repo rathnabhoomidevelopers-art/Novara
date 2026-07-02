@@ -30,79 +30,6 @@ const slugify = (str = "") =>
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-");
 
-// ─── FAQ Accordion (click a question to expand its answer) ────────────────────
-function FaqAccordion({ items = [] }) {
-  const [open, setOpen] = useState(0);
-  return (
-    <div className="space-y-2.5">
-      {items.map((item, i) => {
-        const isOpen = open === i;
-        return (
-          <div key={i} className="rounded-xl border border-[#E6E1D3] overflow-hidden bg-white">
-            <button
-              type="button"
-              onClick={() => setOpen(isOpen ? -1 : i)}
-              aria-expanded={isOpen}
-              className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-bold text-[13px] sm:text-[14px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors"
-            >
-              <span>{item.q}</span>
-              <svg
-                viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5"
-                className={`shrink-0 text-[#1A614F] transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
-              </svg>
-            </button>
-            <div
-              className="grid transition-all duration-200 ease-in-out"
-              style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
-            >
-              <div className="overflow-hidden">
-                <div className="px-4 py-3 text-[14px] text-slate-600 leading-relaxed">{item.a}</div>
-              </div>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
-// ─── Q&A toggle for older posts (question stored as h3, answer as the next p) ──
-// Keeps the h3 as the clickable header (so its id/anchor still works for the
-// Table of Contents) but collapses the answer, matching the new FaqAccordion look.
-function FaqQaItem({ id, question, answerHtml, align }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="rounded-xl border border-[#E6E1D3] overflow-hidden bg-white">
-      <button
-        type="button"
-        id={id}
-        onClick={() => setOpen((o) => !o)}
-        aria-expanded={open}
-        className="scroll-mt-28 w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-bold text-[13px] sm:text-[14px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors"
-        style={{ textAlign: align || undefined }}
-      >
-        <span>{question}</span>
-        <svg
-          viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5"
-          className={`shrink-0 text-[#1A614F] transition-transform duration-200 ${open ? "rotate-180" : ""}`}
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
-        </svg>
-      </button>
-      <div className="grid transition-all duration-200 ease-in-out" style={{ gridTemplateRows: open ? "1fr" : "0fr" }}>
-        <div className="overflow-hidden">
-          <div
-            className="px-4 py-3 text-[13px] sm:text-[14px] leading-relaxed text-slate-600"
-            dangerouslySetInnerHTML={{ __html: answerHtml }}
-          />
-        </div>
-      </div>
-    </div>
-  );
-}
-
 // Modal Component
 const BrochureModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
@@ -433,23 +360,71 @@ export default function BlogDetail({ vikeSlug }) {
             <div className="mt-6 space-y-3 blog-content">
               {(() => {
                 const used = new Map();
-                // Detect old-style FAQ pairs: an h3 question (ending in "?")
-                // immediately followed by a plain p answer. Mark the answer's
-                // index so it's rendered inside the toggle instead of twice.
-                const qaSkip = new Set();
-                for (let idx = 0; idx < sections.length - 1; idx++) {
-                  const cur = sections[idx];
-                  const nxt = sections[idx + 1];
-                  if (cur?.type === "h3" && (cur.text || "").trim().endsWith("?") && nxt?.type === "p") {
-                    qaSkip.add(idx + 1);
+                // Strip any manual numbering an author already typed into a
+                // question ("Q1. ", "1. ", "1) ") so every blog shows the
+                // same clean "N. " prefix, no matter how it was authored.
+                const stripManualNum = (t = "") => t.replace(/^\s*Q?\.?\s*\d+\s*[.):]\s*/i, "").trim();
+
+                // Only treat an h2/h3 ending in "?" as an FAQ question once we're
+                // past a real "FAQ" / "Frequently Asked Questions" heading —
+                // otherwise an unrelated subheading that happens to end in "?"
+                // would get mistaken for one.
+                let faqLandmark = -1;
+                sections.forEach((s, idx) => {
+                  if ((s.type === "h2" || s.type === "h3") && /^(faqs?|frequently asked questions)/i.test((s.text || "").trim())) {
+                    faqLandmark = idx;
                   }
-                }
+                });
+
+                // One pass, in document order, numbering every FAQ item from
+                // whichever format it was authored in (heading+paragraph pairs,
+                // an "ol" list of concatenated Q&A, or a schema-style "faq" block).
+                let faqCount = 0;
+                const questionNumbers = new Map(); // h2/h3 index -> number
+                const olFaqStart = new Map();       // ol index -> starting number
+                const faqTypeStart = new Map();     // faq-type index -> starting number
+                sections.forEach((cur, idx) => {
+                  if (!cur || faqLandmark === -1 || idx <= faqLandmark) return;
+                  if (cur.type === "h2" || cur.type === "h3") {
+                    const nxt = sections[idx + 1];
+                    if ((cur.text || "").trim().endsWith("?") && nxt?.type === "p") {
+                      faqCount += 1;
+                      questionNumbers.set(idx, faqCount);
+                    }
+                  } else if (cur.type === "ol") {
+                    const items = cur.text || [];
+                    const isFaqStyle = items.length > 0 && items.every((item) => {
+                      const qi = item.indexOf("?");
+                      return qi > 0 && qi < item.length - 1;
+                    });
+                    if (isFaqStyle) {
+                      olFaqStart.set(idx, faqCount + 1);
+                      faqCount += items.length;
+                    }
+                  } else if (cur.type === "faq") {
+                    const items = cur.items || [];
+                    faqTypeStart.set(idx, faqCount + 1);
+                    faqCount += items.length;
+                  }
+                });
+
                 return sections.map((s, i) => {
-                  // Skip an answer paragraph already absorbed into the Q&A toggle above it
-                  if (s.type === "p" && qaSkip.has(i)) return null;
 
                   // H2
                   if (s.type === "h2") {
+                    const faqNum = questionNumbers.get(i);
+                    if (faqNum) {
+                      const cleanText = stripManualNum(s.text || "");
+                      const base = slugify(cleanText);
+                      const count = (used.get(base) || 0) + 1;
+                      used.set(base, count);
+                      const id = count === 1 ? base : `${base}-${count}`;
+                      return (
+                        <h3 key={i} id={id} className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]" style={{ textAlign: s.align || undefined }}>
+                          {`${faqNum}. ${cleanText}`}
+                        </h3>
+                      );
+                    }
                     return (
                       <h2 key={i} className="scroll-mt-28 text-[20px] sm:text-[24px] font-bold mt-4" style={{ textAlign: s.align || undefined }}>
                         {s.text}
@@ -459,22 +434,15 @@ export default function BlogDetail({ vikeSlug }) {
 
                   // H3
                   if (s.type === "h3") {
-                    const base = slugify(s.text || "");
+                    const faqNum = questionNumbers.get(i);
+                    const cleanText = faqNum ? stripManualNum(s.text || "") : (s.text || "");
+                    const base = slugify(cleanText);
                     const count = (used.get(base) || 0) + 1;
                     used.set(base, count);
                     const id = count === 1 ? base : `${base}-${count}`;
-                    // Old-style FAQ: this question's answer is the next section
-                    if (qaSkip.has(i + 1)) {
-                      const answer = sections[i + 1];
-                      const cleanAnswer = (answer.text || "").replace(
-                        /<font([^>]*)color=["']([^"']+)["']([^>]*)>/gi,
-                        (_, pre, col, post) => `<span${pre}${post} style="color:${col}">`
-                      ).replace(/<\/font>/gi, "</span>");
-                      return <FaqQaItem key={i} id={id} question={s.text} answerHtml={cleanAnswer} align={s.align} />;
-                    }
                     return (
-                      <h3 key={i} id={id} className="scroll-mt-28 text-[13px] sm:text-[14px] font-bold text-[#111827]" style={{ textAlign: s.align || undefined }}>
-                        {s.text}
+                      <h3 key={i} id={id} className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]" style={{ textAlign: s.align || undefined }}>
+                        {faqNum ? `${faqNum}. ${cleanText}` : cleanText}
                       </h3>
                     );
                   }
@@ -581,9 +549,21 @@ export default function BlogDetail({ vikeSlug }) {
                     );
                   }
 
-                  // FAQ
+                  // FAQ (schema-style block) — plain numbered Q&A, same style as every other FAQ format
                   if (s.type === "faq") {
-                    return <FaqAccordion key={i} items={s.items || []} />;
+                    const startNum = faqTypeStart.get(i) || 1;
+                    return (
+                      <div key={i} className="space-y-3">
+                        {(s.items || []).map((item, fi) => (
+                          <div key={fi}>
+                            <h3 className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]">
+                              {`${startNum + fi}. ${stripManualNum(item.q || item.name || "")}`}
+                            </h3>
+                            <p className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600">{item.a || item.text}</p>
+                          </div>
+                        ))}
+                      </div>
+                    );
                   }
 
                   // Unordered list
@@ -606,11 +586,23 @@ export default function BlogDetail({ vikeSlug }) {
                       return qi > 0 && qi < item.length - 1;
                     });
                     if (isFaqStyle) {
+                      const startNum = olFaqStart.get(i) || 1;
                       const faqItems = items.map((item) => {
                         const qi = item.indexOf("?");
                         return { q: item.slice(0, qi + 1).trim(), a: item.slice(qi + 1).trim() };
                       });
-                      return <FaqAccordion key={i} items={faqItems} />;
+                      return (
+                        <div key={i} className="space-y-3">
+                          {faqItems.map((item, fi) => (
+                            <div key={fi}>
+                              <h3 className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]">
+                                {`${startNum + fi}. ${stripManualNum(item.q)}`}
+                              </h3>
+                              <p className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600">{item.a}</p>
+                            </div>
+                          ))}
+                        </div>
+                      );
                     }
                     return (
                       <ol key={i} className="list-decimal list-outside pl-5 space-y-1.5 text-[13px] sm:text-[14px] leading-relaxed text-[#111827]">

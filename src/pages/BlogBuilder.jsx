@@ -251,34 +251,6 @@ const htmlToSections = (html = "") => {
 };
 
 // ─── Preview renderer (mirrors BlogDetails) ───────────────────────────────────
-function PreviewFaqAccordion({ items = [] }) {
-  const [open, setOpen] = React.useState(0);
-  return (
-    <div className="space-y-2.5">
-      {items.map((item, i) => {
-        const isOpen = open === i;
-        return (
-          <div key={i} className="rounded-xl border border-[#E6E1D3] overflow-hidden bg-white">
-            <button type="button" onClick={() => setOpen(isOpen ? -1 : i)} aria-expanded={isOpen}
-              className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left font-bold text-[16px] sm:text-[18px] text-[#15302A] bg-[#F4F1E8] hover:bg-[#EFEAD9] transition-colors">
-              <span>{item.q}</span>
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5"
-                className={`shrink-0 text-[#1A614F] transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 9l6 6 6-6" />
-              </svg>
-            </button>
-            <div className="grid transition-all duration-200 ease-in-out" style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}>
-              <div className="overflow-hidden">
-                <div className="px-4 py-3 text-[14px] text-slate-600 leading-relaxed">{item.a}</div>
-              </div>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
 function PreviewSection({ s, usedH3, onPlayVideo }) {
   if (["h1","h2","h3","h4","h5","h6"].includes(s.type)) {
     const base = slugify(s.text || "");
@@ -340,12 +312,30 @@ function PreviewSection({ s, usedH3, onPlayVideo }) {
         const qi = item.indexOf("?");
         return { q: item.slice(0, qi + 1).trim(), a: item.slice(qi + 1).trim() };
       });
-      return <PreviewFaqAccordion items={faqItems} />;
+      return (
+        <div className="space-y-3">
+          {faqItems.map((item, fi) => (
+            <div key={fi}>
+              <h3 className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]">{`${fi + 1}. ${item.q}`}</h3>
+              <p className="text-[14px] leading-relaxed text-slate-600">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      );
     }
     return <ol className="list-decimal list-outside pl-5 space-y-2 text-[14px] text-slate-600">{items.map((i, k) => <li key={k}>{i}</li>)}</ol>;
   }
   if (s.type === "faq")
-    return <PreviewFaqAccordion items={s.items || []} />;
+    return (
+      <div className="space-y-3">
+        {(s.items || []).map((item, fi) => (
+          <div key={fi}>
+            <h3 className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]">{`${fi + 1}. ${item.q || item.name}`}</h3>
+            <p className="text-[14px] leading-relaxed text-slate-600">{item.a || item.text}</p>
+          </div>
+        ))}
+      </div>
+    );
   if (s.type === "table")
     return (
       <div className="overflow-x-auto rounded-xl border border-[#1A614F]">
@@ -1691,7 +1681,7 @@ function BlogEditor({ editingBlog, onBack }) {
               </div>
             ) : activeNav === "users" ? (
               <div className="flex-1 min-w-0 overflow-y-auto h-full">
-                <UsersPanel ghToken={GH_TOKEN} ghRepo={GH_REPO} ghBranch={GH_BRANCH} />
+                <UsersPanel />
               </div>
             ) : activeNav === "redirects" ? (
               <div className="flex-1 min-w-0 overflow-y-auto h-full">
@@ -2497,9 +2487,10 @@ function MediaLibraryPage({ meta, bodyRef }) {
 }
 
 // ─── Users Panel ──────────────────────────────────────────────────────────────
-const USERS_FILE = "src/data/users.js";
-
-function UsersPanel({ ghToken, ghRepo, ghBranch }) {
+// Reads/writes real accounts in MongoDB ("blog_users" collection) via the
+// backend's /api/users endpoints, instead of committing a GitHub file.
+function UsersPanel() {
+  const { token } = useAuth();
   const [users, setUsers]     = useState([]);
   const [loading, setLoading] = useState(true);
   const [busy, setBusy]       = useState(false);
@@ -2520,62 +2511,53 @@ function UsersPanel({ ghToken, ghRepo, ghBranch }) {
   const [editRole, setEditRole]       = useState("viewer");
   const [showEditPw, setShowEditPw]   = useState(false);
 
-  const ghHeaders = { Authorization: `token ${ghToken}`, Accept: "application/vnd.github.v3+json" };
+  const authHeaders = { Authorization: `Bearer ${token}`, "Content-Type": "application/json" };
 
   const fetchUsers = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`https://api.github.com/repos/${ghRepo}/contents/src/data/users.js?ref=${ghBranch}&t=${Date.now()}`,
-        { headers: ghHeaders, cache: "no-store" });
-      if (res.status === 404) { setUsers([]); setLoading(false); return; }
-      if (!res.ok) throw new Error(`Fetch failed: HTTP ${res.status}`);
-      const fd = await res.json();
-      const binary = atob(fd.content.replace(/\n/g, ""));
-      const text = new TextDecoder("utf-8").decode(Uint8Array.from(binary, (ch) => ch.charCodeAt(0)));
-      const stripped = text.replace(/^[\s\S]*?export\s+const\s+USERS\s*=\s*/, "").replace(/;?\s*$/, "").trim();
-      // eslint-disable-next-line no-new-func
-      const arr = new Function(`return ${stripped}`)();
-      setUsers(Array.isArray(arr) ? arr : []);
+      const res = await fetch(`${API_BASE}/api/users`, { headers: authHeaders });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.success) throw new Error(data.message || `Fetch failed: HTTP ${res.status}`);
+      setUsers(Array.isArray(data.users) ? data.users : []);
     } catch (e) { setBanner({ type: "err", msg: e.message }); }
     finally { setLoading(false); }
   };
 
   useEffect(() => { fetchUsers(); /* eslint-disable-next-line */ }, []);
 
-  const commitUsers = async (nextArr, msg) => {
-    setBusy(true); setBanner(null);
-    try {
-      let sha;
-      const head = await fetch(`https://api.github.com/repos/${ghRepo}/contents/src/data/users.js?ref=${ghBranch}&t=${Date.now()}`,
-        { headers: ghHeaders, cache: "no-store" });
-      if (head.ok) { const d = await head.json(); sha = d.sha; }
-      const entriesStr = nextArr.map((u) => "  " + JSON.stringify(u, null, 2).replace(/\n/g, "\n  ")).join(",\n");
-      const content = `export const USERS = [\n${entriesStr}\n];\n`;
-      const putRes = await fetch(`https://api.github.com/repos/${ghRepo}/contents/src/data/users.js`, {
-        method: "PUT",
-        headers: { ...ghHeaders, "Content-Type": "application/json" },
-        body: JSON.stringify({ message: msg, content: btoa(unescape(encodeURIComponent(content))), branch: ghBranch, ...(sha ? { sha } : {}) }),
-      });
-      if (!putRes.ok) { const err = await putRes.json().catch(() => ({})); throw new Error(err.message || "Commit failed"); }
-      setUsers(nextArr);
-      setBanner({ type: "ok", msg: "Saved!" });
-      setTimeout(() => setBanner(null), 2500);
-      return true;
-    } catch (e) { setBanner({ type: "err", msg: e.message || "Save failed" }); return false; }
-    finally { setBusy(false); }
-  };
-
   const addUser = async () => {
     if (!newEmail.trim() || !newName.trim() || !newPassword.trim()) { setBanner({ type: "err", msg: "All fields are required" }); return; }
     if (users.find((u) => u.email === newEmail.trim())) { setBanner({ type: "err", msg: "Email already exists" }); return; }
-    const nu = { id: Date.now(), email: newEmail.trim(), name: newName.trim(), password: newPassword.trim(), role: newRole, addedOn: new Date().toLocaleDateString("en-GB") };
-    const ok = await commitUsers([...users, nu], `add user: ${newEmail.trim()} (${newRole})`);
-    if (ok) { setNewEmail(""); setNewName(""); setNewPassword(""); setNewRole("viewer"); }
+    setBusy(true); setBanner(null);
+    try {
+      const res = await fetch(`${API_BASE}/api/users`, {
+        method: "POST",
+        headers: authHeaders,
+        body: JSON.stringify({ name: newName.trim(), email: newEmail.trim(), password: newPassword.trim(), role: newRole }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.success) throw new Error(data.message || "Could not add user");
+      setUsers((prev) => [data.user, ...prev]);
+      setNewEmail(""); setNewName(""); setNewPassword(""); setNewRole("viewer");
+      setBanner({ type: "ok", msg: "Saved!" });
+      setTimeout(() => setBanner(null), 2500);
+    } catch (e) { setBanner({ type: "err", msg: e.message }); }
+    finally { setBusy(false); }
   };
 
   const deleteUser = async (u) => {
     if (!window.confirm(`Remove ${u.email}?`)) return;
-    await commitUsers(users.filter((x) => x.id !== u.id), `remove user: ${u.email}`);
+    setBusy(true); setBanner(null);
+    try {
+      const res = await fetch(`${API_BASE}/api/users/${u._id}`, { method: "DELETE", headers: authHeaders });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.success) throw new Error(data.message || "Could not remove user");
+      setUsers((prev) => prev.filter((x) => x._id !== u._id));
+      setBanner({ type: "ok", msg: "Saved!" });
+      setTimeout(() => setBanner(null), 2500);
+    } catch (e) { setBanner({ type: "err", msg: e.message }); }
+    finally { setBusy(false); }
   };
 
   const openEdit = (u) => {
@@ -2585,12 +2567,26 @@ function UsersPanel({ ghToken, ghRepo, ghBranch }) {
 
   const saveEdit = async () => {
     if (!editEmail.trim() || !editName.trim()) { setBanner({ type: "err", msg: "Name and email are required" }); return; }
-    const next = users.map((x) => x.id === editUser.id
-      ? { ...x, name: editName.trim(), email: editEmail.trim(), password: editPassword.trim() || x.password, role: editRole }
-      : x
-    );
-    const ok = await commitUsers(next, `update user: ${editUser.email}`);
-    if (ok) setEditUser(null);
+    setBusy(true); setBanner(null);
+    try {
+      const res = await fetch(`${API_BASE}/api/users/${editUser._id}`, {
+        method: "PUT",
+        headers: authHeaders,
+        body: JSON.stringify({
+          name: editName.trim(),
+          email: editEmail.trim(),
+          role: editRole,
+          ...(editPassword.trim() && editPassword.trim() !== editUser.password ? { password: editPassword.trim() } : {}),
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.success) throw new Error(data.message || "Could not update user");
+      setUsers((prev) => prev.map((x) => (x._id === editUser._id ? data.user : x)));
+      setEditUser(null);
+      setBanner({ type: "ok", msg: "Saved!" });
+      setTimeout(() => setBanner(null), 2500);
+    } catch (e) { setBanner({ type: "err", msg: e.message }); }
+    finally { setBusy(false); }
   };
 
   const ROLE_CONFIG = {
@@ -2599,7 +2595,7 @@ function UsersPanel({ ghToken, ghRepo, ghBranch }) {
     admin:  { label: "Admin",  color: "#5B6B63", bg: "#F4F1E8" },
   };
 
-  const exportUsersExcel=()=>{const rows=[["ID","Name","Email","Role","Added On"]];users.forEach((u)=>rows.push([u.id,u.name,u.email,u.role,u.addedOn||""]));const csv=rows.map(r=>r.map(v=>`"${String(v).replace(/"/g,'""')}"`).join(",")).join("\n");const blob=new Blob([csv],{type:"text/csv;charset=utf-8;"});const a=Object.assign(document.createElement("a"),{href:URL.createObjectURL(blob),download:"users.csv"});a.click();URL.revokeObjectURL(a.href);};
+  const exportUsersExcel=()=>{const rows=[["ID","Name","Email","Role","Added On"]];users.forEach((u)=>rows.push([u._id,u.name,u.email,u.role,u.addedOn||""]));const csv=rows.map(r=>r.map(v=>`"${String(v).replace(/"/g,'""')}"`).join(",")).join("\n");const blob=new Blob([csv],{type:"text/csv;charset=utf-8;"});const a=Object.assign(document.createElement("a"),{href:URL.createObjectURL(blob),download:"users.csv"});a.click();URL.revokeObjectURL(a.href);};
   return (
     <div className="bg-white border border-[#ECE6D6] rounded-2xl shadow-sm p-6 space-y-6">
       {/* Header */}
@@ -2669,7 +2665,7 @@ function UsersPanel({ ghToken, ghRepo, ghBranch }) {
             {users.map((u) => {
               const roleCfg = ROLE_CONFIG[u.role] || ROLE_CONFIG.viewer;
               return (
-                <div key={u.id} className="grid grid-cols-[1fr_1fr_80px_120px_90px_80px] gap-2 px-4 py-3 items-center bg-white text-[13px]">
+                <div key={u._id} className="grid grid-cols-[1fr_1fr_80px_120px_90px_80px] gap-2 px-4 py-3 items-center bg-white text-[13px]">
                   <span className="font-semibold text-[#15302A] truncate">{u.name}</span>
                   <span className="text-[#646970] truncate">{u.email}</span>
                   <span className="font-mono text-[12px] text-[#9FC1B5] tracking-widest">••••••</span>

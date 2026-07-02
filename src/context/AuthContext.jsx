@@ -1,21 +1,17 @@
 // src/context/AuthContext.jsx
 // Novara Nature Estates — Auth Context
+//
+// Authenticates against the real backend (MongoDB "blog_users" collection)
+// instead of a client-side/GitHub-committed user list. The backend still has
+// its own built-in fallback admin (admin@gmail.com), so that login continues
+// to work even if the database is briefly empty.
 
 import { createContext, useContext, useState, useEffect } from "react";
-import { USERS as DB_USERS } from "../data/users";
+
+const API_BASE =
+  import.meta.env.VITE_API_BASE_URL || "https://novara-backend-one.vercel.app";
 
 const TOKEN_KEY = "novaraAuthToken";
-
-// ── Hardcoded fallback admin ──────────────────────────────────────────────────
-const HARDCODED_USERS = [
-  {
-    id: "admin",
-    email: "admin@gmail.com",
-    password: "admin@123",
-    role: "admin",
-    name: "Novara Admin",
-  },
-];
 
 // ── SSR-safe localStorage helpers ────────────────────────────────────────────
 const getStoredSession = () => {
@@ -45,31 +41,59 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     const session = getStoredSession();
-    if (session?.user && session?.token) {
-      setUser(session.user);
-      setToken(session.token);
-    }
+    if (!session?.user || !session?.token) return;
+
+    // Optimistically sign in from the cached session first (so there's no
+    // login flash), then confirm with the server. Only sign the person out
+    // if the server explicitly rejects the token (expired/invalid) — a
+    // network hiccup or the API being briefly unreachable should not log
+    // someone out.
+    setUser(session.user);
+    setToken(session.token);
+
+    fetch(`${API_BASE}/api/auth/me`, {
+      headers: { Authorization: `Bearer ${session.token}` },
+    })
+      .then((res) => (res.status === 401 ? Promise.reject(new Error("invalid")) : res.json()))
+      .then((data) => {
+        if (data?.success && data.user) {
+          setUser(data.user);
+          setStoredSession({ user: data.user, token: session.token });
+        }
+      })
+      .catch((e) => {
+        if (e.message === "invalid") {
+          clearStoredSession();
+          setUser(null);
+          setToken(null);
+        }
+        // any other error (offline, backend cold-starting, etc.) — keep the
+        // cached session as-is rather than logging the person out.
+      });
   }, []);
 
   // ── login ─────────────────────────────────────────────────────────────────
   const login = async (email, password) => {
-    const allUsers = [...HARDCODED_USERS, ...(Array.isArray(DB_USERS) ? DB_USERS : [])];
-    const match = allUsers.find(
-      (u) => u.email === email.trim() && u.password === password
-    );
+    try {
+      const res = await fetch(`${API_BASE}/api/auth/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.trim(), password }),
+      });
+      const data = await res.json().catch(() => ({}));
 
-    if (!match) {
-      return { success: false, message: "Invalid email or password." };
+      if (!res.ok || !data.success) {
+        return { success: false, message: data.message || "Invalid email or password." };
+      }
+
+      setStoredSession({ user: data.user, token: data.token });
+      setUser(data.user);
+      setToken(data.token);
+
+      return { success: true, user: data.user };
+    } catch (e) {
+      return { success: false, message: "Could not reach the server. Please try again." };
     }
-
-    const sessionUser  = { email: match.email, role: match.role, name: match.name };
-    const sessionToken = btoa(`${match.email}:${match.role}:${Date.now()}`);
-
-    setStoredSession({ user: sessionUser, token: sessionToken });
-    setUser(sessionUser);
-    setToken(sessionToken);
-
-    return { success: true, user: sessionUser };
   };
 
   // ── logout ────────────────────────────────────────────────────────────────
