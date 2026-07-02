@@ -8227,7 +8227,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "In this blog, we'll take a deep dive into some of the most effective and popular farming techniques that are perfect for  <a href=\"https://www.novaranatureestates.com\" style=\"color:#E3A600\">farmlands near Bangalore</a> — from organic practices that respect the land to high-tech solutions that maximize yield. Let’s explore the best ways to grow and thrive on your farmland.",
+        "text": "In this blog, we'll take a deep dive into some of the most effective and popular farming techniques that are perfect for  <a href=\"https://www.novaranatureestates.com\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\"><b><u>farmlands near Bangalore</u></b></a> — from organic practices that respect the land to high-tech solutions that maximize yield. Let’s explore the best ways to grow and thrive on your farmland.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -8245,7 +8245,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Organic farming has seen a huge surge in popularity, not just in Bangalore, but across India. More consumers are demanding chemical-free, organic produce, and the demand for organic farming is only set to increase. If your farmland near Bangalore is suited for organic farming, you're in the perfect spot to meet this growing demand.",
+        "text": "Organic farming has seen a huge surge in popularity, not just in Bangalore, but across India. More consumers are demandinwg chemical-free, organic produce, and the demand for organic farming is only set to increase. If your farmland near Bangalore is suited for organic farming, you're in the perfect spot to meet this growing demand.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -8384,7 +8384,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Agroforestry is a  <a href=\"https://www.novaranatureestates.com/whynovara\" style=\"color:#E3A600\">sustainable farming</a>  technique that integrates trees with traditional crop production. By planting trees alongside crops, you create a more diverse farming ecosystem that benefits the land and the crops. This technique is gaining popularity near Bangalore, where farmers are looking to improve the biodiversity of their farms while still generating income from crops.",
+        "text": "Agroforestry is a  <font color=\"#e3a600\"><a href=\"https://www.novaranatureestates.com/why-novara\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\"><b><u>sustainable farming</u></b></a></font>  technique that integrates trees with traditional crop production. By planting trees alongside crops, you create a more diverse farming ecosystem that benefits the land and the crops. This technique is gaining popularity near Bangalore, where farmers are looking to improve the biodiversity of their farms while still generating income from crops.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
