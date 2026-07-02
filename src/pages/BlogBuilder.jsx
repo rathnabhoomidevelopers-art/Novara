@@ -1767,9 +1767,9 @@ function BlogEditor({ editingBlog, onBack }) {
               </div>)}
 
               {/* Editor box */}
-              <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm overflow-hidden flex flex-col">
-                {/* Toolbar — fixed */}
-                {canEdit && <div className="shrink-0 border-b border-[#ECE6D6]">
+              <div className="mt-3 bg-white border border-[#ECE6D6] rounded-2xl shadow-sm flex flex-col">
+                {/* Toolbar — sticks to the top of the page scroll while you scroll the content below */}
+                {canEdit && <div className="sticky top-0 z-10 shrink-0 border-b border-[#ECE6D6] rounded-t-2xl overflow-hidden">
                   <Toolbar
                     exec={exec}
                     onLink={onLink} onUnlink={onUnlink} onImage={onImageClick} onTable={openTablePicker} onFaq={insertFaq}
