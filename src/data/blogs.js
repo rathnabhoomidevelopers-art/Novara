@@ -1638,32 +1638,38 @@ export const BLOGS = [
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">What if your weekend didn't mean another mall, another traffic jam, another hour lost to your phone - but 6,000 sq. ft of your own green land, just 10 minutes from the Lepakshi Temple? That's the idea behind the Ecovara Farmplot by Novara Nature Estates: a 15-acre gated managed farmland community along the Bengaluru–Hyderabad National Highway. For anyone hunting for managed farmland near Bangalore, here is the full breakdown of the Ecovara project by Novara: location, farm plots, amenities, pricing, and reviews.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "About the Ecovara Farmplot Project",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\"><span style=\"color: rgb(0, 0, 0);\">Ecovara is a premium managed farmland project by </span><a href=\"https://www.novaranatureestates.com/\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"font-weight: bold; text-decoration-line: underline; color: rgb(17, 24, 39);\">Novara Nature Estates</a><span style=\"color: rgb(0, 0, 0);\">, spread across 15 acres of a gated community. Inspired by nature and designed for weekend living, the Novara Ecovara community blends rustic charm with modern comforts. Each Ecovara Farmplot sits within a thoughtfully planned layout with spacious plot dimensions, a fruit-bearing plantation, and dedicated organic garden space - so you own a productive, living asset rather than just an empty patch of land.</span></span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Whether you want a peaceful weekend home or a larger plot, the Ecovara farm plots come in flexible sizes starting from 6,000 sq.ft onwards. It is a farm plot designed for people who want the calm, without giving up the convenience of a well-planned, secure community.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Ecovara Location & Connectivity",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The Ecovara location is one of its biggest strengths. Set near Lepakshi along the Bengaluru–Hyderabad National Highway (NH-44), the project keeps you close to nature while staying well connected to the city. Typical drive times from Ecovara near Lepakshi:</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "ul",
@@ -1681,17 +1687,20 @@ export const BLOGS = [
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Nearby attractions include Nandi Hills, Gudibande Fort, Penukonda Fort, the Isha Foundation, Puttaparthi Sai Baba Temple and Vidhurashwatha Temple - making this a managed farmland near Bangalore with genuine weekend and tourism appeal, not just a remote plot of land.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Ecovara Farm Plots: Sizes & Configurations",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The Ecovara farm plots are designed to suit different needs and budgets. Available configurations are:</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "ul",
@@ -1704,17 +1713,20 @@ export const BLOGS = [
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Every Ecovara Farmplot offers spacious dimensions with room to build a cottage, plant your own trees, or simply enjoy open green surroundings. The farmland planning gives the community a clean, scenic character that sets these farm plots near Bangalore apart from ordinary land parcels.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Ecovara Amenities & Project Highlights",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara amenities are built around relaxed, secure and community-focused living. Project highlights include:</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "ul",
@@ -1729,112 +1741,84 @@ export const BLOGS = [
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Together, these Ecovara amenities turn each Ecovara Farmplot into a lifestyle destination rather than just a line on a property document.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Why Choose Ecovara Managed Farmland Near Bangalore?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Buying raw land sounds appealing until you realise someone has to plant, water, fence and maintain it. Ecovara managed farmland solves this completely: the plantation and upkeep are handled for you, so you own a growing asset without becoming a full-time farmer.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\"><span style=\"color: rgb(0, 0, 0);\">For a busy professional, that is the real value of managed farmland near Bangalore - and one of the reasons buyers comparing managed farmland in Bangalore shortlist the </span><a href=\"https://www.novaranatureestates.com/projects\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"font-weight: bold; text-decoration-line: underline; color: rgb(17, 24, 39);\">Ecovara project by Novara</a><span style=\"color: rgb(0, 0, 0);\">. You get the asset, the weekend escape and the convenience, all inside one gated community.</span></span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Ecovara Farmplot Price",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The Ecovara Farmplot price depends on the configuration you choose - 6,000, 8,000 or 10,000 sq.ft. As current pricing is shared directly with serious buyers, you can unlock the Ecovara Farmplot price for each size by enquiring or downloading the brochure.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">This also lets the Novara team share the latest offers, payment plans and plot availability for the size you prefer, so you get accurate, up-to-date numbers rather than an outdated quote.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Ecovara Reviews: How to Evaluate Before You Buy",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Looking up Ecovara reviews before booking? The smartest way to evaluate any managed farmland project is a site visit - walk the Ecovara farm plots, see the 64-plus variety tree plantation and amenities, and judge the location for yourself.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For independent Ecovara reviews, check Google and trusted real estate listing portals, and ask the Novara team to connect you with existing plot owners who can share their experience first-hand.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<span style=\"font-family: &quot;Times New Roman&quot;, serif; background-color: transparent; color: rgb(0, 0, 0); font-size: 11pt; white-space: pre-wrap;\">Ecovara Farmplot by Novara Nature Estates brings together a strong location near Lepakshi, well-planned farm plots near Bangalore, and a full set of lifestyle amenities inside a secure 15-acre gated community. Whether you are investing for the long term or simply want your own green weekend retreat, the best next step is to see it in person. Download the brochure or book a free site visit to explore the Ecovara project by Novara today.</span>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Frequently Asked Questions",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
-        "type": "h2",
-        "text": "Where is the Ecovara Farmplot located?",
-        "fontWeight": "font-bold"
-      },
-      {
-        "type": "p",
-        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">Ecovara is located near Lepakshi on the Bengaluru–Hyderabad National Highway, roughly 10 minutes from the Lepakshi Temple and about 75 minutes from Kempegowda International Airport, Devanahalli.</span>",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">What sizes are the Ecovara farm plots?</span>",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">The Ecovara farm plots are available in 6,000, 8,000 and 10,000 sq.ft configurations, all within a gated 15-acre community.</span>",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">What is the Ecovara Farmplot price?</span>",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">The Ecovara Farmplot price is shared on enquiry. You can unlock per-configuration pricing by downloading the brochure or contacting the Novara team for the latest rates and offers.</span>",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">Is Ecovara a managed farmland project?</span>",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">Yes. The plantation and ongoing maintenance are professionally managed, which makes it a low-hassle managed farmland near Bangalore that you can simply enjoy.</span>",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">What amenities does Ecovara offer?</span>",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">Ecovara amenities include a 64-plus variety tree plantation, a cafeteria, a jogging and pet route, solar street lights and 24/7 security.</span>",
-        "fontWeight": "font-normal"
+        "type": "ol",
+        "text": [
+          "Where is the Ecovara Farmplot located?Ecovara is located near Lepakshi on the Bengaluru–Hyderabad National Highway, roughly 10 minutes from the Lepakshi Temple and about 75 minutes from Kempegowda International Airport, Devanahalli.",
+          "What sizes are the Ecovara farm plots?The Ecovara farm plots are available in 6,000, 8,000 and 10,000 sq.ft configurations, all within a gated 15-acre community.",
+          "What is the Ecovara Farmplot price?The Ecovara Farmplot price is shared on enquiry. You can unlock per-configuration pricing by downloading the brochure or contacting the Novara team for the latest rates and offers.",
+          "Is Ecovara a managed farmland project?Yes. The plantation and ongoing maintenance are professionally managed, which makes it a low-hassle managed farmland near Bangalore that you can simply enjoy.",
+          "What amenities does Ecovara offer?Ecovara amenities include a 64-plus variety tree plantation, a cafeteria, a jogging and pet route, solar street lights and 24/7 security."
+        ]
       }
     ],
     "schemas": {
