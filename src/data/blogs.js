@@ -9906,6 +9906,11 @@ export const BLOGS = [
     "image": "/images/blog_8.webp",
     "heroImage": "/images/blog_8.webp",
     "coverImage": "/images/blog_8.webp",
+    "imageAlt": "Lepakshi is Bangalore’s Best Farmland Investment Location",
+    "imageTitle": "Lepakshi is Bangalore’s Best Farmland Investment Location",
+    "imageCaption": "",
+    "imageDescription": "Lepakshi is Bangalore’s Best Farmland Investment Location",
+    "videoUrl": "",
     "tags": [
       "Sustainable Farming",
       "Eco Farmland",
@@ -9915,258 +9920,463 @@ export const BLOGS = [
     "sections": [
       {
         "type": "h2",
-        "text": "Introduction"
+        "text": "Over the past few years, farmland investment has become increasingly popular among urban investors looking for stable and sustainable assets. Many professionals from Bangalore are exploring agricultural land as a long-term investment option, and one location that is gaining significant attention is Lepakshi.",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Over the past few years, farmland investment has become increasingly popular among urban investors looking for stable and sustainable assets. Many professionals from Bangalore are exploring agricultural land as a long-term investment option, and one location that is gaining significant attention is Lepakshi."
-      },
-      {
-        "type": "p_with_link",
-        "textBefore": "Located along the Bangalore–Hyderabad highway (NH44), Lepakshi offers the perfect balance between accessibility and peaceful rural surroundings. With improving infrastructure, tourism growth, and increasing interest in managed farmland projects, the region is emerging as one of the most promising destinations for ",
-        "linkText": "farmland investment near Bangalore.",
-        "href": "https://www.novaranatureestates.com/",
-        "textAfter": ""
+        "text": "Located along the Bangalore–Hyderabad highway (NH44), Lepakshi offers the perfect balance between accessibility and peaceful rural surroundings. With improving infrastructure, tourism growth, and increasing interest in managed farmland projects, the region is emerging as one of the most promising destinations for  <a href=\"https://www.novaranatureestates.com/\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">farmland investment near Bangalore.</a>",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For investors seeking long-term appreciation, a weekend retreat, or an environmentally friendly asset, farmland investment in Lepakshi presents a unique opportunity. This guide explains why Lepakshi is becoming one of the best farmland investment locations for Bangalore buyers."
+        "text": "For investors seeking long-term appreciation, a weekend retreat, or an environmentally friendly asset, farmland investment in Lepakshi presents a unique opportunity. This guide explains why Lepakshi is becoming one of the best farmland investment locations for Bangalore buyers.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Strategic Location Near Bangalore"
+        "text": "Strategic Location Near Bangalore",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "One of the biggest reasons behind the growing interest in farmland investment in Lepakshi is its strategic location. Lepakshi lies close to the Karnataka–Andhra Pradesh border and is easily accessible from Bangalore via the Bangalore–Hyderabad National Highway (NH44)."
+        "text": "One of the biggest reasons behind the growing interest in farmland investment in Lepakshi is its strategic location. Lepakshi lies close to the Karnataka–Andhra Pradesh border and is easily accessible from Bangalore via the Bangalore–Hyderabad National Highway (NH44).",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For many investors, proximity to a major city is an important factor when choosing farmland. Lepakshi offers the advantage of being reachable from Bangalore within a few hours while still providing a peaceful countryside environment away from the city’s congestion."
+        "text": "For many investors, proximity to a major city is an important factor when choosing farmland. Lepakshi offers the advantage of being reachable from Bangalore within a few hours while still providing a peaceful countryside environment away from the city’s congestion.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_link",
-        "textBefore": "Because of this convenient connectivity, many people from Bangalore prefer Lepakshi when looking for ",
-        "linkText": "farmland investments",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": " or weekend agricultural retreats."
+        "type": "p",
+        "text": "Because of this convenient connectivity, many people from Bangalore prefer Lepakshi when looking for  <a href=\"https://www.novaranatureestates.com/projects\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">farmland investments</a>  or weekend agricultural retreats.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Connectivity Through the NH44 Corridor"
+        "text": "Connectivity Through the NH44 Corridor",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The Bangalore–Hyderabad highway (NH44) is one of the most important transportation corridors in South India. This highway has significantly improved connectivity between major cities and smaller towns along its route."
+        "text": "The Bangalore–Hyderabad highway (NH44) is one of the most important transportation corridors in South India. This highway has significantly improved connectivity between major cities and smaller towns along its route.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Lepakshi’s location along NH44 makes travel smooth and convenient for farmland owners visiting from Bangalore. Easy highway access also contributes to the long-term investment potential of the region because infrastructure development often drives land appreciation."
+        "text": "Lepakshi’s location along NH44 makes travel smooth and convenient for farmland owners visiting from Bangalore. Easy highway access also contributes to the long-term investment potential of the region because infrastructure development often drives land appreciation.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "As more infrastructure projects are planned along this corridor, farmland investment in Lepakshi is expected to become even more attractive in the coming years."
+        "text": "As more infrastructure projects are planned along this corridor, farmland investment in Lepakshi is expected to become even more attractive in the coming years.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Growing Interest from Bangalore Investors"
+        "text": "Growing Interest from Bangalore Investors",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Urban investors are increasingly looking for alternatives to traditional real estate investments such as apartments and commercial properties. Rising property prices and limited open spaces in cities have encouraged many buyers to consider farmland ownership."
+        "text": "Urban investors are increasingly looking for alternatives to traditional real estate investments such as apartments and commercial properties. Rising property prices and limited open spaces in cities have encouraged many buyers to consider farmland ownership.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Lepakshi has become particularly appealing for Bangalore investors because it offers a combination of affordability, accessibility, and natural surroundings. Owning farmland in this region allows investors to enjoy a peaceful environment while still remaining connected to the city."
+        "text": "Lepakshi has become particularly appealing for Bangalore investors because it offers a combination of affordability, accessibility, and natural surroundings. Owning farmland in this region allows investors to enjoy a peaceful environment while still remaining connected to the city.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Additionally, farmland investments are often viewed as long-term assets that can appreciate gradually as infrastructure and development expand in surrounding areas."
+        "text": "Additionally, farmland investments are often viewed as long-term assets that can appreciate gradually as infrastructure and development expand in surrounding areas.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Tourism and Cultural Significance"
+        "text": "Tourism and Cultural Significance",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Lepakshi is widely known for the famous Veerabhadra Temple, a historic temple that attracts visitors and tourists throughout the year. The temple’s architectural beauty and cultural significance make Lepakshi a well-known destination in the region."
+        "text": "Lepakshi is widely known for the famous Veerabhadra Temple, a historic temple that attracts visitors and tourists throughout the year. The temple’s architectural beauty and cultural significance make Lepakshi a well-known destination in the region.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Tourism activity contributes to local development and infrastructure improvements, which can indirectly increase the attractiveness of farmland investments nearby. As the area continues to receive visitors, supporting facilities such as roads and services gradually improve."
+        "text": "Tourism activity contributes to local development and infrastructure improvements, which can indirectly increase the attractiveness of farmland investments nearby. As the area continues to receive visitors, supporting facilities such as roads and services gradually improve.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For investors, locations with cultural and tourism importance often have strong long-term potential."
+        "text": "For investors, locations with cultural and tourism importance often have strong long-term potential.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Managed Farmland Projects in Lepakshi"
+        "text": "Managed Farmland Projects in Lepakshi",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "One of the reasons farmland investment has become easier for urban investors is the rise of managed farmland projects. These projects allow buyers to own farmland while professional teams handle plantation, irrigation, and maintenance."
+        "text": "One of the reasons farmland investment has become easier for urban investors is the rise of managed farmland projects. These projects allow buyers to own farmland while professional teams handle plantation, irrigation, and maintenance.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Managed farmland eliminates many of the challenges associated with traditional farming. Investors can enjoy the benefits of farmland ownership without needing to manage agricultural operations themselves."
+        "text": "Managed farmland eliminates many of the challenges associated with traditional farming. Investors can enjoy the benefits of farmland ownership without needing to manage agricultural operations themselves.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_link",
-        "textBefore": "Companies such as ",
-        "linkText": "Novara Nature Estates",
-        "href": "https://www.novaranatureestates.com/whynovara",
-        "textAfter": " are offering managed farmland opportunities where investors can purchase farmland in well-planned agricultural communities. These projects typically include plantation management, irrigation systems, and maintenance services, making farmland investment more accessible for city-based investors."
+        "type": "p",
+        "text": "Companies such as  <span style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\"><a href=\"https://www.novaranatureestates.com/why-novara\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\">Novara Nature Estates</a></span>  are offering managed farmland opportunities where investors can purchase farmland in well-planned agricultural communities. These projects typically include plantation management, irrigation systems, and maintenance services, making farmland investment more accessible for city-based investors.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Benefits of Investing in Farmland in Lepakshi"
+        "text": "Benefits of Investing in Farmland in Lepakshi",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Farmland investment in Lepakshi offers several advantages for buyers seeking long-term value."
+        "text": "Farmland investment in Lepakshi offers several advantages for buyers seeking long-term value.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Long-Term Land Appreciation"
+        "text": "Long-Term Land Appreciation",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Land is a finite resource, and as infrastructure development expands near major cities, nearby rural areas often experience gradual price appreciation. Lepakshi’s location along an important highway corridor increases its potential for future growth."
+        "text": "Land is a finite resource, and as infrastructure development expands near major cities, nearby rural areas often experience gradual price appreciation. Lepakshi’s location along an important highway corridor increases its potential for future growth.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Weekend Retreat Lifestyle"
+        "text": "Weekend Retreat Lifestyle",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Many farmland owners use their land as a weekend retreat where they can relax and reconnect with nature. Owning farmland near Lepakshi allows investors to escape the busy city life and enjoy peaceful countryside surroundings."
+        "text": "Many farmland owners use their land as a weekend retreat where they can relax and reconnect with nature. Owning farmland near Lepakshi allows investors to escape the busy city life and enjoy peaceful countryside surroundings.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Sustainable and Eco-Friendly Investment"
+        "text": "Sustainable and Eco-Friendly Investment",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Farmland ownership is often associated with sustainable living and environmentally friendly investments. Plantation-based farming and agroforestry projects help create green landscapes while supporting agricultural activities."
+        "text": "Farmland ownership is often associated with sustainable living and environmentally friendly investments. Plantation-based farming and agroforestry projects help create green landscapes while supporting agricultural activities.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Key Factors to Consider Before Investing"
+        "text": "Key Factors to Consider Before Investing",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Before purchasing farmland in Lepakshi, investors should carefully evaluate a few important aspects."
+        "text": "Before purchasing farmland in Lepakshi, investors should carefully evaluate a few important aspects.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Land Title and Documentation"
+        "text": "Land Title and Documentation",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Ensure that the farmland has a clear title and proper legal documentation. Verifying ownership records helps prevent legal complications."
+        "text": "Ensure that the farmland has a clear title and proper legal documentation. Verifying ownership records helps prevent legal complications.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Water Resources"
+        "text": "Water Resources",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Water availability is essential for agricultural activities. Investors should check irrigation systems, borewells, or nearby water sources."
+        "text": "Water availability is essential for agricultural activities. Investors should check irrigation systems, borewells, or nearby water sources.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Accessibility"
+        "text": "Accessibility",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Good road connectivity ensures that farmland owners can easily visit and maintain their property."
+        "text": "Good road connectivity ensures that farmland owners can easily visit and maintain their property.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Soil Quality"
+        "text": "Soil Quality",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Understanding the soil condition helps determine the agricultural potential of the land and suitability for plantations."
+        "text": "Understanding the soil condition helps determine the agricultural potential of the land and suitability for plantations.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Future Growth Potential of Lepakshi"
+        "text": "Future Growth Potential of Lepakshi",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The growing interest in farmland investment near Bangalore is likely to continue as more investors seek sustainable and nature-based assets. Lepakshi’s strategic location, improving connectivity, and natural surroundings make it an attractive region for agricultural land ownership."
+        "text": "The growing interest in farmland investment near Bangalore is likely to continue as more investors seek sustainable and nature-based assets. Lepakshi’s strategic location, improving connectivity, and natural surroundings make it an attractive region for agricultural land ownership.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "As infrastructure development progresses along the NH44 corridor and nearby areas continue to grow, farmland investment in Lepakshi could offer promising long-term value for investors."
+        "text": "As infrastructure development progresses along the NH44 corridor and nearby areas continue to grow, farmland investment in Lepakshi could offer promising long-term value for investors.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Conclusion"
+        "text": "Conclusion",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Lepakshi is emerging as one of the most attractive farmland investment destinations for buyers from Bangalore. Its strategic location along the Bangalore–Hyderabad highway, cultural significance, and peaceful environment make it a compelling choice for those seeking agricultural land."
+        "text": "Lepakshi is emerging as one of the most attractive farmland investment destinations for buyers from Bangalore. Its strategic location along the Bangalore–Hyderabad highway, cultural significance, and peaceful environment make it a compelling choice for those seeking agricultural land.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "With the increasing popularity of managed farmland projects and the growing interest in sustainable investments, Lepakshi is likely to remain an important farmland investment location in the coming years."
+        "text": "With the increasing popularity of managed farmland projects and the growing interest in sustainable investments, Lepakshi is likely to remain an important farmland investment location in the coming years.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For investors looking to explore farmland ownership near Bangalore, managed farmland projects offered by Novara Nature Estates provide an opportunity to experience agricultural land investment while benefiting from professional farm management."
+        "text": "For investors looking to explore farmland ownership near Bangalore, managed farmland projects offered by Novara Nature Estates provide an opportunity to experience agricultural land investment while benefiting from professional farm management.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Scheduling a farm visit can help potential buyers understand the location, environment, and investment potential of farmland in Lepakshi."
+        "text": "Scheduling a farm visit can help potential buyers understand the location, environment, and investment potential of farmland in Lepakshi.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "FAQs"
+        "text": "FAQs",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
-        "type": "h3",
-        "text": "1. Why is Lepakshi popular for farmland investment?"
-      },
-      {
-        "type": "p",
-        "text": " Lepakshi offers good connectivity to Bangalore, peaceful surroundings, and increasing interest from urban investors looking for farmland ownership."
-      },
-      {
-        "type": "h3",
-        "text": "2. Is farmland investment in Lepakshi suitable for weekend retreats?"
-      },
-      {
-        "type": "p",
-        "text": " Yes, many investors use farmland near Lepakshi as a weekend retreat where they can enjoy nature and relaxation."
-      },
-      {
-        "type": "h3",
-        "text": "3. What is managed farmland?"
-      },
-      {
-        "type": "p",
-        "text": "Managed farmland allows investors to own farmland while professional teams handle plantation, irrigation, and maintenance."
-      },
-      {
-        "type": "h3",
-        "text": "4. How does infrastructure affect farmland investment?"
-      },
-      {
-        "type": "p",
-        "text": "Improving roads, highways, and connectivity often increase the long-term value of agricultural land."
-      },
-      {
-        "type": "h3",
-        "text": "5. What should investors check before buying farmland?"
-      },
-      {
-        "type": "p",
-        "text": " Buyers should verify land titles, water availability, soil quality, and road accessibility."
+        "type": "ol",
+        "text": [
+          "Why isLepakshi popular for farmland investment?Lepakshi offers good connectivity to Bangalore, peaceful surroundings, and increasing interest from urban investors looking for farmland ownership.",
+          "Is farmland investment in Lepakshi suitable for weekend retreats?Yes, many investors use farmland near Lepakshi as a weekend retreat where they can enjoy nature and relaxation.",
+          "What is managed farmland?Managed farmland allows investors to own farmland while professional teams handle plantation, irrigation, and maintenance.",
+          "How does infrastructure affect farmland investment?Improving roads, highways, and connectivity often increase the long-term value of agricultural land.",
+          "What should investors check before buying farmland?Buyers should verify land titles, water availability, soil quality, and road accessibility."
+        ]
       }
-    ]
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Why is Lepakshi popular for farmland investment?",
+              "text": "Lepakshi offers good connectivity to Bangalore, peaceful surroundings, and increasing interest from urban investors looking for farmland ownership."
+            },
+            {
+              "name": "Is farmland investment in Lepakshi suitable for weekend retreats?",
+              "text": "Yes, many investors use farmland near Lepakshi as a weekend retreat where they can enjoy nature and relaxation."
+            },
+            {
+              "name": "What is managed farmland?",
+              "text": "Managed farmland allows investors to own farmland while professional teams handle plantation, irrigation, and maintenance."
+            },
+            {
+              "name": "How does infrastructure affect farmland investment?",
+              "text": "Improving roads, highways, and connectivity often increase the long-term value of agricultural land."
+            },
+            {
+              "name": "What should investors check before buying farmland?",
+              "text": "Buyers should verify land titles, water availability, soil quality, and road accessibility."
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novaranatureestates.com/blogs/farmland-investment-lepakshi"
+          },
+          "headline": "Why Lepakshi is Bangalore's Best Farmland Investment Location",
+          "image": "https://www.novaranatureestates.com/images/blog_8.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "url": "https://www.novaranatureestates.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/images/logo.svg"
+            }
+          },
+          "datePublished": "2026-03-01T15:23:29+05:30",
+          "dateModified": "2026-03-01T15:23:29+05:30"
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Novara Nature Etates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blog Page",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Why Lepakshi is Bangalore's Best Farmland Investment Location",
+              "item": "https://www.novaranatureestates.com/blogs/farmland-investment-lepakshi"
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Why Lepakshi is Bangalore's Best Farmland Investment Location",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "982",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
   },
   {
     "id": 9,
