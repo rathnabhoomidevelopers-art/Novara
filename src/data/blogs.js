@@ -8222,57 +8222,58 @@ export const BLOGS = [
       {
         "type": "p",
         "text": "Farmlands near Bangalore are a treasure trove of opportunities. Whether you're a new landowner, an aspiring farmer, or an experienced investor, the region offers fertile soil, a great climate, and the right resources to grow a variety of crops. As we move towards a future focused on sustainability, efficiency, and innovation, the farming techniques available are evolving. Whether you're into traditional farming methods or excited by the potential of cutting-edge technology, there's something for everyone.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "In this blog, we'll take a deep dive into some of the most effective and popular farming techniques that are perfect for  <a href=\"https://www.novaranatureestates.com\" style=\"color:#E3A600\">farmlands near Bangalore</a> — from organic practices that respect the land to high-tech solutions that maximize yield. Let’s explore the best ways to grow and thrive on your farmland.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "In this blog, we'll take a deep dive into some of the most effective and popular farming techniques that are perfect for farmlands near Bangalore — from organic practices that respect the land to high-tech solutions that maximize yield. Let’s explore the best ways to grow and thrive on your farmland.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "1. Organic Farming: Cultivating the Land with Care",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Organic farming has seen a huge surge in popularity, not just in Bangalore, but across India. More consumers are demanding chemical-free, organic produce, and the demand for organic farming is only set to increase. If your farmland near Bangalore is suited for organic farming, you're in the perfect spot to meet this growing demand.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Why choose organic farming?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
-        "type": "p",
-        "text": "Healthier Produce: Organic methods avoid synthetic fertilizers and pesticides, ensuring that the food grown is healthier for both consumers and the environment.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "Soil Health: By rotating crops, using organic compost, and reducing chemical use, organic farming helps maintain the long-term health of the soil.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "Sustainability: Organic farming reduces the carbon footprint, as it typically involves less energy consumption and promotes biodiversity.",
-        "fontWeight": "font-normal"
+        "type": "ul",
+        "text": [
+          "Healthier Produce: Organic methods avoid synthetic fertilizers and pesticides, ensuring that the food grown is healthier for both consumers and the environment.",
+          "Soil Health: By rotating crops, using organic compost, and reducing chemical use, organic farming helps maintain the long-term health of the soil.",
+          "Sustainability: Organic farming reduces the carbon footprint, as it typically involves less energy consumption and promotes biodiversity."
+        ]
       },
       {
         "type": "p",
         "text": "For farmlands near Bangalore, where the demand for organic fruits, vegetables, and grains is high, organic farming can be a rewarding and profitable choice. You can grow anything from organic tomatoes, leafy greens, to spices and herbs.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Key Practices:",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "ul",
@@ -8286,42 +8287,40 @@ export const BLOGS = [
       {
         "type": "h2",
         "text": "2. Hydroponics: Farming Without Soil",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "While organic farming focuses on using natural processes and soil health, hydroponics takes a completely different approach. If you have a small plot of land near Bangalore or are limited by soil quality, hydroponics might be an ideal solution. This soil-less farming technique uses nutrient-rich water to grow plants, often in specially designed systems that are easy to manage.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Why hydroponics?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
-        "type": "p",
-        "text": "Water Efficiency: Hydroponics uses up to 90% less water compared to traditional soil-based farming. This is especially useful in areas near Bangalore where water conservation is a key concern.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "Faster Growth: Since plants get a direct supply of nutrients, they often grow faster than those in soil.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "Space-Saving: Hydroponic systems can be stacked or placed in small spaces, making them ideal for urban farming or areas with limited land.",
-        "fontWeight": "font-normal"
+        "type": "ul",
+        "text": [
+          "Water Efficiency: Hydroponics uses up to 90% less water compared to traditional soil-based farming. This is especially useful in areas near Bangalore where water conservation is a key concern.",
+          "Faster Growth: Since plants get a direct supply of nutrients, they often grow faster than those in soil.",
+          "Space-Saving: Hydroponic systems can be stacked or placed in small spaces, making them ideal for urban farming or areas with limited land."
+        ]
       },
       {
         "type": "p",
         "text": "In hydroponic farming, you can grow high-value crops like lettuce, herbs, and even tomatoes. These crops often have a shorter growth cycle and can generate higher returns in less space.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Key Practices:",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "ul",
@@ -8334,42 +8333,40 @@ export const BLOGS = [
       {
         "type": "h2",
         "text": "3. Drip Irrigation: Maximizing Water Efficiency",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "With the increasing scarcity of water in many parts of India, including the areas around Bangalore, it’s important to adopt water-efficient farming methods. Drip irrigation is one of the most effective techniques to use water efficiently, ensuring your crops get exactly what they need without wasting a drop.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Why drip irrigation?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
-        "type": "p",
-        "text": "Water Conservation: Drip irrigation delivers water directly to the plant’s roots, reducing evaporation and water waste.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "Cost-Effective: Though the initial installation might be an investment, the savings on water bills and improved crop yields over time make it a great long-term solution.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "Targeted Feeding: Nutrients and water are delivered precisely where they’re needed, leading to better growth and healthier plants.",
-        "fontWeight": "font-normal"
+        "type": "ul",
+        "text": [
+          "Water Conservation: Drip irrigation delivers water directly to the plant’s roots, reducing evaporation and water waste.",
+          "Cost-Effective: Though the initial installation might be an investment, the savings on water bills and improved crop yields over time make it a great long-term solution.",
+          "Targeted Feeding: Nutrients and water are delivered precisely where they’re needed, leading to better growth and healthier plants."
+        ]
       },
       {
         "type": "p",
         "text": "For farmlands near Bangalore, especially if you're cultivating crops like paddy, vegetables, or fruits, drip irrigation can increase productivity while conserving valuable water resources.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Key Practices:",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "ul",
@@ -8382,47 +8379,46 @@ export const BLOGS = [
       {
         "type": "h2",
         "text": "4. Agroforestry: Combining Trees with Crops",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Agroforestry is a  <a href=\"https://www.novaranatureestates.com/whynovara\" style=\"color:#E3A600\">sustainable farming</a>  technique that integrates trees with traditional crop production. By planting trees alongside crops, you create a more diverse farming ecosystem that benefits the land and the crops. This technique is gaining popularity near Bangalore, where farmers are looking to improve the biodiversity of their farms while still generating income from crops.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "sustainable farming technique that integrates trees with traditional crop production. By planting trees alongside crops, you create a more diverse farming ecosystem that benefits the land and the crops. This technique is gaining popularity near Bangalore, where farmers are looking to improve the biodiversity of their farms while still generating income from crops.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Why agroforestry?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
-        "type": "p",
-        "text": "Improved Soil Fertility: The roots of trees help improve soil structure, and decaying leaves provide organic matter that nourishes the soil.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "Income Diversification: Trees like tamarind, mango, or neem can provide additional income, while crops grow in between.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "Environmental Benefits: Trees help absorb carbon dioxide, improve water retention, and provide habitats for wildlife.",
-        "fontWeight": "font-normal"
+        "type": "ul",
+        "text": [
+          "Improved Soil Fertility: The roots of trees help improve soil structure, and decaying leaves provide organic matter that nourishes the soil.",
+          "Income Diversification: Trees like tamarind, mango, or neem can provide additional income, while crops grow in between.",
+          "Environmental Benefits: Trees help absorb carbon dioxide, improve water retention, and provide habitats for wildlife."
+        ]
       },
       {
         "type": "p",
         "text": "For farmlands near Bangalore, agroforestry offers a great way to grow fruit trees alongside crops, making the land more sustainable while improving overall productivity.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Key Practices:",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "ul",
@@ -8435,42 +8431,40 @@ export const BLOGS = [
       {
         "type": "h2",
         "text": "5. Precision Farming: Technology-Powered Efficiency",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "As technology continues to shape agriculture, precision farming is transforming how farmers manage their crops. Precision farming uses data, sensors, and technology to monitor every aspect of farming — from soil health to weather conditions to water usage.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Why precision farming?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
-        "type": "p",
-        "text": "Data-Driven Decisions: Precision farming uses sensors to monitor variables like soil moisture, temperature, and crop health, allowing farmers to make informed decisions.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "Improved Efficiency: This method maximizes the use of inputs (like water, fertilizers, and pesticides) to minimize waste and increase productivity.",
-        "fontWeight": "font-normal"
-      },
-      {
-        "type": "p",
-        "text": "Yield Prediction: With the help of AI and machine learning, farmers can predict crop yields, making it easier to plan ahead and ensure profitability.",
-        "fontWeight": "font-normal"
+        "type": "ul",
+        "text": [
+          "Data-Driven Decisions: Precision farming uses sensors to monitor variables like soil moisture, temperature, and crop health, allowing farmers to make informed decisions.",
+          "Improved Efficiency: This method maximizes the use of inputs (like water, fertilizers, and pesticides) to minimize waste and increase productivity.",
+          "Yield Prediction: With the help of AI and machine learning, farmers can predict crop yields, making it easier to plan ahead and ensure profitability."
+        ]
       },
       {
         "type": "p",
         "text": "For those looking to invest in farmlands near Bangalore, incorporating precision farming could greatly increase efficiency and profitability by making use of real-time data and advanced technology.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Key Practices:",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "ul",
@@ -8482,23 +8476,27 @@ export const BLOGS = [
       },
       {
         "type": "h3",
-        "text": "Conclusion: Embrace the Future of Farming",
-        "fontWeight": "font-bold"
+        "text": "Embrace the Future of Farming",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Whether you’re just starting out or have been farming for years, farmlands near Bangalore offer a world of possibilities. From organic farming that nurtures the earth to high-tech precision farming that maximizes efficiency, the options are endless. The farming landscape is changing, and adopting the right farming techniques can make a huge difference in the success of your land.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "As we look ahead to the future, sustainable and innovative farming practices will continue to grow in importance. Whether it’s through organic methods, technology integration, or water-saving systems, these techniques not only help improve your farm’s profitability but also contribute to a more sustainable and eco-friendly future for everyone.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Ready to take the next step with your farmland near Bangalore? Embrace these farming techniques, and watch your land thrive for years to come.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       }
     ],
     "schemas": {
