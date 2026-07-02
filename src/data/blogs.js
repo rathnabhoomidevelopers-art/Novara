@@ -1,5 +1,456 @@
 export const BLOGS = [
   {
+    "id": 29,
+    "slug": "farmland-near-lepakshi-location-benefits",
+    "category": "Managed Farmland",
+    "title": "Farmland Near Lepakshi | Ecovara Managed Farmplots",
+    "headline": "Farmland Near Lepakshi: Location Benefits for Bangalore-Based Buyers",
+    "description": "Explore farmland near Lepakshi at Ecovara Farmplot with managed farmland features, plantations, amenities, connectivity, and weekend lifestyle value.",
+    "date": "Jul 2, 2026",
+    "keywords": "Farmland Near Lepakshi",
+    "author": "Novara Nature Estates",
+    "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782971101/xxtbpw6yjt6ezwyh2fwq.webp",
+    "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782971101/xxtbpw6yjt6ezwyh2fwq.webp",
+    "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782971101/xxtbpw6yjt6ezwyh2fwq.webp",
+    "imageAlt": "Farmland Near Lepakshi Location Benefits for Bangalore-Based Buyers",
+    "imageTitle": "Farmland Near Lepakshi Location Benefits for Bangalore-Based Buyers",
+    "imageCaption": "",
+    "imageDescription": "Farmland Near Lepakshi Location Benefits for Bangalore-Based Buyers",
+    "videoUrl": "",
+    "tags": [],
+    "sections": [
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Bangalore buyers are now looking beyond crowded city spaces for land that offers peace, open surroundings, and long-term lifestyle value. For professionals, families, and land buyers, </span><span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap; font-weight: bold; text-decoration-line: underline;\"><a href=\"https://www.novaranatureestates.com/projects\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\">farmland near Lepakshi</a></span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"> is becoming an attractive option because it offers a balance of nature, accessibility, and weekend usability.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap; text-decoration: none; font-weight: 400;\">Ecovara by Novara Nature Estates is a premium managed farmland project near Lepakshi, located along the Bengaluru-Hyderabad National Highway belt. It brings together countryside calm, planned farmland living, spacious plots, plantations, lifestyle amenities, and managed farmland features.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For Bangalore-based buyers looking for farmland near Lepakshi, Ecovara offers a peaceful land ownership experience with better connectivity and weekend lifestyle value.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">Book a Free <a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Site Visit at Ecovara Farmplot</a></span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Why Choose Farmland Near Lepakshi?",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Choosing farmland near Lepakshi gives Bangalore buyers the benefit of open land, peaceful surroundings, and access to a location known for heritage and natural calm. Unlike compact city real estate, farmland gives buyers more space and a closer connection with nature.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Lepakshi is also known for the historic Lepakshi Temple, making the region suitable for weekend trips, family visits, and peaceful farm experiences. For buyers searching for </span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">farmland near Lepakshi</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">, the location offers a strong mix of lifestyle value, nature, connectivity, and long-term land ownership appeal.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "About Ecovara Farmplot by Novara Nature Estates",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">Ecovara by Novara Nature Estates is a premium <a href=\"https://www.novaranatureestates.com/blogs/managed-farmland-lepakshi\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">managed farmland project near Lepakshi</a>, spread across 15 acres. The project is designed as a gated farmland community where nature-inspired planning blends with modern comfort.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The project offers flexible plot sizes starting from 6,000 sq. ft., with options such as 8,000 sq. ft. and 10,000 sq. ft. This makes Ecovara suitable for buyers looking for a peaceful weekend escape, larger farm plots, or nature-focused land ownership.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara includes spacious plot dimensions, fruit-bearing plantations, organic garden space, planned infrastructure, and shared lifestyle amenities. For Bangalore-based buyers who want farmland without the stress of daily maintenance, Ecovara offers a more practical ownership experience.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Strategic Location and Connectivity Advantage",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">One of the biggest benefits of Ecovara is its location near Lepakshi along the Bengaluru-Hyderabad National Highway belt. For Bangalore buyers, road connectivity is an important factor when choosing farmland.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">A farmland project should be peaceful, but it should not be so remote that visiting becomes difficult. Ecovara offers a balance between countryside living and access to important landmarks.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">As per the project location highlights, Ecovara is close to:</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "ol",
+        "text": [
+          "Lepakshi Temple — around 10 minutes",
+          "Hindupuram Town — around 10 minutes",
+          "Bagepalli Toll Plaza — around 20 minutes",
+          "Penukonda Fort — around 30 minutes",
+          "Isha Foundation — around 50 minutes",
+          "Nandi Hills — around 60 minutes",
+          "Devanahalli — around 65 minutes",
+          "Kempegowda International Airport, Devanahalli — around 75 minutes"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">These location advantages make Ecovara suitable for weekend visits, family trips, and planned farm experiences.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Spacious Plot Options for Different Buyer Needs",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara offers plot configurations starting from 6,000 sq. ft., with options such as 8,000 sq. ft. and 10,000 sq. ft. This gives buyers flexibility based on their requirement and budget.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">A 6,000 sq. ft. farm plot may suit buyers looking for a manageable weekend farmland space. Larger plot sizes may suit buyers who want more room for plantations, gardens, leisure spaces, or future farm planning, subject to applicable rules and project guidelines.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Unlike compact city properties, farmland gives buyers breathing space and a more open way of living.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Managed Farmland for Busy Bangalore Buyers",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Many people like the idea of owning farmland, but they worry about maintenance. Regular upkeep, plantation care, security, water management, and basic farm activity can be difficult for busy professionals and families living in Bangalore.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">This is where managed farmland becomes valuable.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara is designed to offer a managed farmland experience with planned infrastructure, plantation features, security, and lifestyle amenities. Buyers can enjoy the benefits of farmland ownership without handling everything on their own.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For Bangalore-based buyers, managed farmland near Lepakshi offers convenience, peace of mind, and better usability.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Project Specifications and Amenities",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara includes several project specifications that improve the farmland experience. The spacious plot dimensions give buyers ample open space to build, grow, and enjoy green surroundings. The European-style farmland planning adds a scenic and organized feel to the project.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The fruit-bearing plantation concept enhances greenery and supports a nature-connected lifestyle. Organic garden space encourages healthy living and gives buyers a closer connection with farming.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara also offers amenities such as 64+ tree plantations, lotus pond or fish pond, campfire and rain dance area, 24/7 security check, solar street lights, cafeteria, jogging track, and pet route.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">These amenities make Ecovara suitable for families, weekend users, nature lovers, and buyers looking for a peaceful gated farmland experience near Lepakshi.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Nearby Attractions Add Lifestyle Value",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Another benefit of farmland near Lepakshi is access to nearby attractions. Ecovara is close to places such as Lepakshi Temple, Gudibande Fort, Isha Foundation, Nandi Hills, Penukonda Fort, Puttaparthi Sai Baba Temple, Vidhurashwatha Temple, and Kempegowda International Airport.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For families, this creates more reasons to visit the farmland regularly. A weekend trip can include farm time, temple visits, nature outings, sightseeing, and peaceful relaxation.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Why Ecovara Is Suitable for Bangalore-Based Buyers",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara is suitable for Bangalore-based buyers because it offers a combination of location, nature, accessibility, and managed farmland features.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For working professionals, it can be a weekend escape from city life. For families, it offers open space, greenery, and outdoor experiences. For long-term land buyers, it provides land ownership in a peaceful location near Lepakshi.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The project is especially relevant for buyers searching for farmland near Lepakshi, farm plots near Bangalore, managed farmland near Bangalore, or farmland near the Bengaluru-Hyderabad corridor.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Conclusion",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Farmland near Lepakshi is becoming a strong choice for Bangalore-based buyers who want open space, peaceful surroundings, weekend usability, and a nature-focused lifestyle.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">Ecovara by <a href=\"https://www.novaranatureestates.com/\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Novara Nature Estates</a> brings these benefits together through a premium managed farmland project near Lepakshi. With flexible plot sizes starting from 6,000 sq. ft., plantations, organic garden space, security, solar street lights, cafeteria, jogging track, pet route, and nearby attractions, Ecovara offers a complete farmland experience.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\"><span style=\"color: rgb(0, 0, 0);\">Looking for farmland near Lepakshi with better connectivity, managed features, and peaceful surroundings? Explore </span><a href=\"https://www.novaranatureestates.com/blogs/ecovara-farmplot-near-bangalore\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Ecovara Farmplot</a><span style=\"color: rgb(0, 0, 0);\"> by </span><span style=\"color: rgb(17, 24, 39);\">Novara Nature Estates</span><span style=\"color: rgb(0, 0, 0);\"> and schedule a site visit today.</span></span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Book a Free Site Visit</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "FAQs",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "ol",
+        "text": [
+          "Is farmland near Lepakshi good for Bangalore-based buyers?Yes. Farmland near Lepakshi can be suitable for Bangalore-based buyers because it offers peaceful surroundings, road connectivity, weekend usability, and access to nearby attractions.",
+          "What makes Ecovara a managed farmland project?Ecovara offers planned farmland features such as spacious plots, plantations, organic garden space, security, common amenities, and a managed ownership experience.",
+          "What are the plot sizes available at Ecovara?Ecovara offers flexible plot sizes starting from 6,000 sq. ft., with options such as 8,000 sq. ft. and 10,000 sq. ft.",
+          "Is Ecovara close to Lepakshi Temple?Yes. As per the project location highlights, Lepakshi Temple is around 10 minutes from Ecovara.",
+          "What should I check before buying farmland near Lepakshi?You should check title documents, access road, water availability, approvals, maintenance model, security, fencing, developer credibility, and distance from major roads."
+        ]
+      }
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Is farmland near Lepakshi good for Bangalore-based buyers?",
+              "text": "Yes. Farmland near Lepakshi can be suitable for Bangalore-based buyers because it offers peaceful surroundings, road connectivity, weekend usability, and access to nearby attractions."
+            },
+            {
+              "name": "What makes Ecovara a managed farmland project?",
+              "text": "Ecovara offers planned farmland features such as spacious plots, plantations, organic garden space, security, common amenities, and a managed ownership experience."
+            },
+            {
+              "name": "What are the plot sizes available at Ecovara?",
+              "text": "Ecovara offers flexible plot sizes starting from 6,000 sq. ft., with options such as 8,000 sq. ft. and 10,000 sq. ft."
+            },
+            {
+              "name": "Is Ecovara close to Lepakshi Temple?",
+              "text": "Yes. As per the project location highlights, Lepakshi Temple is around 10 minutes from Ecovara."
+            },
+            {
+              "name": "What should I check before buying farmland near Lepakshi?",
+              "text": "You should check title documents, access road, water availability, approvals, maintenance model, security, fencing, developer credibility, and distance from major roads."
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novaranatureestates.com/blogs/farmland-near-lepakshi-location-benefits"
+          },
+          "headline": "Farmland Near Lepakshi: Location Benefits for Bangalore-Based Buyers",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1782971101/xxtbpw6yjt6ezwyh2fwq.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "url": "https://www.novaranatureestates.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/images/logo.svg"
+            }
+          },
+          "datePublished": "2026-07-02T11:02:29+05:30",
+          "dateModified": "2026-07-02T11:02:29+05:30"
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blogs",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Farmland Near Lepakshi: Location Benefits for Bangalore-Based Buyers",
+              "item": "https://www.novaranatureestates.com/blogs/farmland-near-lepakshi-location-benefits"
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Farmland Near Lepakshi: Location Benefits for Bangalore-Based Buyers",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "498",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
+  },
+  {
     "id": 28,
     "slug": "farmland-near-lepakshi-bangalore-families",
     "category": "Managed Farmland",
