@@ -923,22 +923,48 @@ function BlogEditor({ editingBlog, onBack }) {
     focusBody();
     restoreSelection();
     const sel = window.getSelection();
-    if (sel && sel.rangeCount) {
-      // If the caret is just inside a link (nothing highlighted), select the
-      // whole <a> first so execCommand("unlink") has something to remove.
-      let node = sel.anchorNode;
-      let a = node ? (node.nodeType === 1 ? node : node.parentElement) : null;
-      while (a && a !== bodyRef.current && a.tagName !== "A") a = a.parentElement;
-      if (a && a.tagName === "A") {
-        const range = document.createRange();
-        range.selectNode(a);
-        sel.removeAllRanges();
-        sel.addRange(range);
-      }
+    if (!sel || !sel.rangeCount || !bodyRef.current) return;
+
+    // Find the <a> the caret/selection is inside of.
+    let node = sel.anchorNode;
+    let a = node ? (node.nodeType === 1 ? node : node.parentElement) : null;
+    while (a && a !== bodyRef.current && a.tagName !== "A") a = a.parentElement;
+
+    if (!a || a.tagName !== "A") {
+      // Selection isn't inside a single link (e.g. spans several) — fall back
+      // to the browser's own command for that case.
+      document.execCommand("unlink");
+      saveSelection();
+      syncFormatState();
+      syncActiveFormats();
+      return;
     }
-    document.execCommand("unlink");
-    saveSelection();
+
+    // Manually unwrap the <a>: replace it with its own contents. This is more
+    // reliable than execCommand("unlink"), which can silently do nothing
+    // depending on exactly how the selection sits relative to the link.
+    const parent = a.parentNode;
+    const frag = document.createDocumentFragment();
+    let lastNode = null;
+    while (a.firstChild) {
+      lastNode = a.firstChild;
+      frag.appendChild(lastNode);
+    }
+    parent.replaceChild(frag, a);
+
+    // Put the caret at the end of the unwrapped text so typing continues normally.
+    if (lastNode) {
+      const range = document.createRange();
+      range.selectNodeContents(lastNode);
+      range.collapse(false);
+      sel.removeAllRanges();
+      sel.addRange(range);
+      savedSelection.current = range.cloneRange();
+    }
+
+    if (bodyRef.current) setBodySnapshot(bodyRef.current.innerHTML);
     syncFormatState();
+    syncActiveFormats();
   };
 
   // ── Image insert (content) ──────────────────────────────────────────────────
