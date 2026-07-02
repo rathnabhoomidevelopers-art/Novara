@@ -11103,6 +11103,10 @@ export const BLOGS = [
     "heroImage": "/images/blog12.webp",
     "coverImage": "/images/blog12.webp",
     "imageAlt": "Farmland Investment Near Bangalore — Is It Worth It in 2026? ",
+    "imageTitle": "Farmland Investment Near Bangalore — Is It Worth It in 2026? ",
+    "imageCaption": "",
+    "imageDescription": "Farmland Investment Near Bangalore — Is It Worth It in 2026? ",
+    "videoUrl": "",
     "tags": [
       "Sustainable Farming",
       "Eco Farmland",
@@ -11112,540 +11116,788 @@ export const BLOGS = [
     "sections": [
       {
         "type": "p",
-        "text": "Radhika is a senior product manager at a Bangalore tech firm. She earns well, invests regularly, and spends more time than she'd like thinking about whether her money is actually working.\n",
-        "fontWeight": "font-normal"
+        "text": "Radhika is a senior product manager at a Bangalore tech firm. She earns well, invests regularly, and spends more time than she'd like thinking about whether her money is actually working.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Last year she sat across from her CA and asked a question she'd been holding for months.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_link",
-        "textBefore": "\"Is\"",
-        "linkText": "farmland near Bangalore",
-        "href": "https://www.novaranatureestates.com/blogs/farmland-investment-near-bangalore",
-        "textAfter": "\"a serious investment — or just something people do to feel connected to the land?\"",
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "\"Is\" <span style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\"><a href=\"https://www.novaranatureestates.com/projects\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\">farmland near Bangalore</a></span> \"a serious investment — or just something people do to feel connected to the land?\"",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Her CA paused, then said something she didn't expect.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "'For someone in your tax bracket, it might be the most efficient investment you're not making.'",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "That conversation sent Radhika down a six-week research spiral. This guide is the short version of what she found — written for investors who are past the \"what is farmland\" stage and genuinely trying to decide whether to buy.\n",
-        "fontWeight": "font-normal"
+        "text": "That conversation sent Radhika down a six-week research spiral. This guide is the short version of what she found — written for investors who are past the \"what is farmland\" stage and genuinely trying to decide whether to buy.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "The Investment Case — Why Farmland Near Bangalore Is Different from Most Assets",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Most investments give you one thing. A fixed deposit gives you safety. Equities give you growth potential. Gold gives you a store of value. Rarely does a single asset class give you appreciation, income, and tax efficiency simultaneously — without requiring active management.\n",
-        "fontWeight": "font-normal"
+        "text": "Most investments give you one thing. A fixed deposit gives you safety. Equities give you growth potential. Gold gives you a store of value. Rarely does a single asset class give you appreciation, income, and tax efficiency simultaneously — without requiring active management.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Farmland near Bangalore does all three. And understanding why each of those three things works in this specific geography is the core of the investment thesis.\n",
-        "fontWeight": "font-normal"
+        "text": "Farmland near Bangalore does all three. And understanding why each of those three things works in this specific geography is the core of the investment thesis.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Capital Appreciation",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Land is finite. Bangalore is not slowing down. The city's northward expansion — toward Devanahalli, the NH44 corridor, and the Lepakshi belt — has been consistent for over a decade and the infrastructure investment driving it keeps growing. A new terminal at Kempegowda International Airport. KIADB industrial zones expanding. Logistics parks establishing themselves along NH44.\n",
-        "fontWeight": "font-normal"
+        "text": "Land is finite. Bangalore is not slowing down. The city's northward expansion — toward Devanahalli, the NH44 corridor, and the Lepakshi belt — has been consistent for over a decade and the infrastructure investment driving it keeps growing. A new terminal at Kempegowda International Airport. KIADB industrial zones expanding. Logistics parks establishing themselves along NH44.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Agricultural land sitting in the path of this expansion does not appreciate because of speculation. It appreciates because of genuine structural demand — the same force that has driven land prices in every urbanising corridor in India for the past thirty years. The Lepakshi–Devanahalli belt in 2026 looks a lot like the Whitefield belt looked in 2005. The investors who moved early in Whitefield did not regret it.\n",
-        "fontWeight": "font-normal"
+        "text": "Agricultural land sitting in the path of this expansion does not appreciate because of speculation. It appreciates because of genuine structural demand — the same force that has driven land prices in every urbanising corridor in India for the past thirty years. The Lepakshi–Devanahalli belt in 2026 looks a lot like the Whitefield belt looked in 2005. The investors who moved early in Whitefield did not regret it.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Agricultural Income",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "A productive coconut plantation in Karnataka yields approximately 80 to 100 coconuts per tree annually under managed conditions. Mango trees contribute seasonal harvest income. A plot within a managed project like Ecovara — which has 800+ mature trees already established across 15 acres — starts generating income from the day of purchase rather than years later when newly planted saplings mature.\n",
-        "fontWeight": "font-normal"
+        "text": "A productive coconut plantation in Karnataka yields approximately 80 to 100 coconuts per tree annually under managed conditions. Mango trees contribute seasonal harvest income. A plot within a managed project like Ecovara — which has 800+ mature trees already established across 15 acres — starts generating income from the day of purchase rather than years later when newly planted saplings mature.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "This income does not require your involvement. A professional management team handles cultivation, harvest, and operations. You receive income from land you own — without farming it yourself.\n",
-        "fontWeight": "font-normal"
+        "text": "This income does not require your involvement. A professional management team handles cultivation, harvest, and operations. You receive income from land you own — without farming it yourself.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Tax Efficiency",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "This is the part most Bangalore investors underestimate until they actually sit with the numbers.\n",
-        "fontWeight": "font-normal"
+        "text": "This is the part most Bangalore investors underestimate until they actually sit with the numbers.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Agricultural income in India is fully exempt from income tax under Section 10(1) of the Income Tax Act. Every rupee generated from farming activity on your land arrives in your hands untouched by tax. For a professional in the 30% bracket, this transforms the effective return materially — ₹1 lakh of farm income is worth ₹1 lakh, not ₹70,000.\n",
-        "fontWeight": "font-normal"
+        "text": "Agricultural income in India is fully exempt from income tax under Section 10(1) of the Income Tax Act. Every rupee generated from farming activity on your land arrives in your hands untouched by tax. For a professional in the 30% bracket, this transforms the effective return materially — ₹1 lakh of farm income is worth ₹1 lakh, not ₹70,000.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Capital gains on the eventual sale of agricultural land enjoy specific exemptions under Section 54B. Wealth tax does not apply to agricultural land regardless of its market value. Stamp duty at purchase is lower than on residential or commercial property.\n",
-        "fontWeight": "font-normal"
+        "text": "Capital gains on the eventual sale of agricultural land enjoy specific exemptions under Section 54B. Wealth tax does not apply to agricultural land regardless of its market value. Stamp duty at purchase is lower than on residential or commercial property.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Taken together, the tax architecture around agricultural land ownership in India is more favourable than any other common investment class available to the individual investor. This is not a loophole — it is deliberate policy designed to encourage land ownership and agricultural activity. It has existed for decades and shows no sign of changing.\n",
-        "fontWeight": "font-normal"
+        "text": "Taken together, the tax architecture around agricultural land ownership in India is more favourable than any other common investment class available to the individual investor. This is not a loophole — it is deliberate policy designed to encourage land ownership and agricultural activity. It has existed for decades and shows no sign of changing.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Always consult your Chartered Accountant for advice specific to your situation before making investment decisions based on tax provisions.\n",
-        "fontWeight": "font-normal"
+        "text": "Always consult your Chartered Accountant for advice specific to your situation before making investment decisions based on tax provisions.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "What Returns Can You Realistically Expect ?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Any developer who quotes you a specific guaranteed return figure is either projecting optimistically or being deliberately misleading. Neither is useful.\n",
-        "fontWeight": "font-normal"
+        "text": "Any developer who quotes you a specific guaranteed return figure is either projecting optimistically or being deliberately misleading. Neither is useful.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "What the economic fundamentals support — honestly and without embellishment — is this framework.\n",
-        "fontWeight": "font-normal"
+        "text": "What the economic fundamentals support — honestly and without embellishment — is this framework.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Land Appreciation Timeline",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Farmland near Bangalore is a 7 to 15 year asset. Within that horizon, investors who entered the Lepakshi and Devanahalli corridors between 2015 and 2018 experienced the full compounding effect of infrastructure-driven appreciation. The drivers that produced that appreciation — airport development, KIADB expansion, NH44 upgrades — are larger and more active in 2026 than they were in 2015.\n",
-        "fontWeight": "font-normal"
+        "text": "Farmland near Bangalore is a 7 to 15 year asset. Within that horizon, investors who entered the Lepakshi and Devanahalli corridors between 2015 and 2018 experienced the full compounding effect of infrastructure-driven appreciation. The drivers that produced that appreciation — airport development, KIADB expansion, NH44 upgrades — are larger and more active in 2026 than they were in 2015.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Within 100 kilometres of Kempegowda International Airport, adjacent to NH44, in an active KIADB zone, with clear title — land meeting all four criteria has historically outpaced fixed deposit returns and tracked or exceeded suburban residential real estate appreciation in comparable corridors.\n",
-        "fontWeight": "font-normal"
+        "text": "Within 100 kilometres of Kempegowda International Airport, adjacent to NH44, in an active KIADB zone, with clear title — land meeting all four criteria has historically outpaced fixed deposit returns and tracked or exceeded suburban residential real estate appreciation in comparable corridors.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Plantation Income Trajectory",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Year 1 to 3 — income from existing mature trees begins immediately in a project like Ecovara where the plantation is already established. Newly planted trees on individual plots reach productive maturity progressively over this period.\n",
-        "fontWeight": "font-normal"
+        "text": "Year 1 to 3 — income from existing mature trees begins immediately in a project like Ecovara where the plantation is already established. Newly planted trees on individual plots reach productive maturity progressively over this period.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Year 3 to 7 — full plantation productivity. All trees mature, yield stabilises, income becomes predictable. The management team's track record becomes visible and verifiable.\n",
-        "fontWeight": "font-normal"
+        "text": "Year 3 to 7 — full plantation productivity. All trees mature, yield stabilises, income becomes predictable. The management team's track record becomes visible and verifiable.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Year 7 onwards — full compounding of land appreciation plus accumulated plantation income. This is the period where the total return picture becomes most compelling.\n",
-        "fontWeight": "font-normal"
+        "text": "Year 7 onwards — full compounding of land appreciation plus accumulated plantation income. This is the period where the total return picture becomes most compelling.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Future Income Optionality",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Beyond the core appreciation and plantation income, managed farmland plots near Bangalore carry genuine optionality that most investors don't price in when buying.\n",
-        "fontWeight": "font-normal"
+        "text": "Beyond the core appreciation and plantation income, managed farmland plots near Bangalore carry genuine optionality that most investors don't price in when buying.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Agro-tourism is growing rapidly as a category — Bangalore families paying to spend weekends on working farms. Solar energy leasing under schemes like PM Kusum allows agricultural land to generate additional income from solar panel installation. Specialty crop cultivation — dragon fruit, turmeric, organic vegetables — can generate premium income on managed plots. None of these are guaranteed, but all are real possibilities that come with owning agricultural land in a professionally managed community.\n",
-        "fontWeight": "font-normal"
+        "text": "Agro-tourism is growing rapidly as a category — Bangalore families paying to spend weekends on working farms. Solar energy leasing under schemes like PM Kusum allows agricultural land to generate additional income from solar panel installation. Specialty crop cultivation — dragon fruit, turmeric, organic vegetables — can generate premium income on managed plots. None of these are guaranteed, but all are real possibilities that come with owning agricultural land in a professionally managed community.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "The 5 Investor Profiles — Who This Investment Is Actually Right For",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Farmland near Bangalore is not the right investment for everyone. Here is an honest breakdown of the profiles where the fit is genuinely strong.\n",
-        "fontWeight": "font-normal"
+        "text": "Farmland near Bangalore is not the right investment for everyone. Here is an honest breakdown of the profiles where the fit is genuinely strong.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "IT Professionals and Senior Salaried Employees",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The strongest fit — and the core Ecovara buyer profile.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "High income creates high tax liability. The agricultural income exemption is materially valuable at the 30% bracket — more so than most investors realise before they run the numbers. A demanding work schedule makes the managed farmland model essential — there is no version of this investment that requires you to be in Lepakshi every weekend. And after years of watching wealth accumulate as numbers on a screen, there is something genuinely different about owning a piece of land you can drive to, stand on, and show your family.\n",
-        "fontWeight": "font-normal"
+        "text": "High income creates high tax liability. The agricultural income exemption is materially valuable at the 30% bracket — more so than most investors realise before they run the numbers. A demanding work schedule makes the managed farmland model essential — there is no version of this investment that requires you to be in Lepakshi every weekend. And after years of watching wealth accumulate as numbers on a screen, there is something genuinely different about owning a piece of land you can drive to, stand on, and show your family.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The financial case: for someone earning above ₹15 lakhs annually, the tax-adjusted effective return on farmland investment frequently outperforms headline returns on fixed deposits, REITs, and even many equity mutual funds over a 10-year horizon — particularly when land appreciation is included.\n",
-        "fontWeight": "font-normal"
+        "text": "The financial case: for someone earning above ₹15 lakhs annually, the tax-adjusted effective return on farmland investment frequently outperforms headline returns on fixed deposits, REITs, and even many equity mutual funds over a 10-year horizon — particularly when land appreciation is included.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "NRI Investors",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For NRIs, farmland ownership in India carries both financial logic and emotional weight that are difficult to separate — and probably shouldn't be.\n",
-        "fontWeight": "font-normal"
+        "text": "For NRIs, farmland ownership in India carries both financial logic and emotional weight that are difficult to separate — and probably shouldn't be.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Financially it is a hedge against currency risk, a rupee-denominated asset that appreciates in line with Indian infrastructure growth, and a tax-efficient vehicle for deploying India-origin wealth. Emotionally it is a connection to home that a demat account cannot replicate — land with your name on a registered title, in a country you care about, that your children can inherit.\n",
-        "fontWeight": "font-normal"
+        "text": "Financially it is a hedge against currency risk, a rupee-denominated asset that appreciates in line with Indian infrastructure growth, and a tax-efficient vehicle for deploying India-origin wealth. Emotionally it is a connection to home that a demat account cannot replicate — land with your name on a registered title, in a country you care about, that your children can inherit.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The regulatory framework under FEMA and RBI around NRI purchase of agricultural land requires proper legal structuring. The pathway exists and is navigable — our detailed NRI farmland investment guide covers the current regulatory position clearly.\n",
-        "fontWeight": "font-normal"
+        "text": "The regulatory framework under FEMA and RBI around NRI purchase of agricultural land requires proper legal structuring. The pathway exists and is navigable — our detailed NRI farmland investment guide covers the current regulatory position clearly.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Pre-Retirees Planning for the Next Chapter",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For investors approaching retirement and thinking about where to deploy capital that they won't need liquid access to, managed farmland presents a compelling case that most retirement planning conversations miss.\n",
-        "fontWeight": "font-normal"
+        "text": "For investors approaching retirement and thinking about where to deploy capital that they won't need liquid access to, <a href=\"https://www.novaranatureestates.com/blogs/managed-farmland-near-bangalore-guide\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">managed farmland</a> presents a compelling case that most retirement planning conversations miss.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "It generates tax-free income without demanding active management. It does not require quarterly portfolio reviews. It does not drop 30% when global markets correct. It can be visited and enjoyed rather than just monitored. It can be willed or gifted as part of estate planning with genuine emotional meaning attached.\n",
-        "fontWeight": "font-normal"
+        "text": "It generates tax-free income without demanding active management. It does not require quarterly portfolio reviews. It does not drop 30% when global markets correct. It can be visited and enjoyed rather than just monitored. It can be willed or gifted as part of estate planning with genuine emotional meaning attached.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The specific financial case for this profile — income requirements, tax treatment in retirement, estate planning considerations — is explored in our retirement planning with farmland guide.\n",
-        "fontWeight": "font-normal"
+        "text": "The specific financial case for this profile — income requirements, tax treatment in retirement, estate planning considerations — is explored in our retirement planning with farmland guide.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Families Building Multi-Generational Wealth",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Land has been India's primary vehicle for passing wealth across generations for centuries. The reasons are not just cultural — they are practical. Land cannot be accidentally liquidated by heirs. It cannot become worthless. It cannot be misunderstood. A plot at Ecovara is something your children can stand on, identify, and make decisions about — which is more than most financial instruments offer.\n",
-        "fontWeight": "font-normal"
+        "text": "Land has been India's primary vehicle for passing wealth across generations for centuries. The reasons are not just cultural — they are practical. Land cannot be accidentally liquidated by heirs. It cannot become worthless. It cannot be misunderstood. A plot at Ecovara is something your children can stand on, identify, and make decisions about — which is more than most financial instruments offer.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The generational wealth through land guide explores how farmland fits into a long-term family wealth architecture.\n",
-        "fontWeight": "font-normal"
+        "text": "The generational wealth through land guide explores how farmland fits into a long-term family wealth architecture.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Diversification-Seeking Investors Overexposed Elsewhere",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "If your current portfolio is heavy in Bangalore residential real estate, equities, or fixed income — farmland offers genuine portfolio diversification that adding another flat or another mutual fund simply cannot.\n",
-        "fontWeight": "font-normal"
+        "text": "If your current portfolio is heavy in Bangalore residential real estate, equities, or fixed income — farmland offers genuine portfolio diversification that adding another flat or another mutual fund simply cannot.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Agricultural land has near-zero correlation with stock market performance. When the Sensex falls 20%, your coconut plantation keeps producing coconuts. When residential real estate in a specific micro-market corrects, agricultural land in a different geography is unaffected. And the inflation hedge argument is strong — land prices in urbanising corridors have historically tracked or exceeded inflation over meaningful time periods.\n",
-        "fontWeight": "font-normal"
+        "text": "Agricultural land has near-zero correlation with stock market performance. When the Sensex falls 20%, your coconut plantation keeps producing coconuts. When residential real estate in a specific micro-market corrects, agricultural land in a different geography is unaffected. And the inflation hedge argument is strong — land prices in urbanising corridors have historically tracked or exceeded inflation over meaningful time periods.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The detailed comparisons — farmland as an inflation hedge, farmland vs apartment — are both worth reading for this profile specifically.\n",
-        "fontWeight": "font-normal"
+        "text": "The detailed comparisons — farmland as an inflation hedge, farmland vs apartment — are both worth reading for this profile specifically.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Farmland vs Everything Else — The Honest Comparisons",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Most Bangalore investors arrive at farmland by elimination — they've looked at the alternatives and found something missing. Here is the comparison they usually run.\n",
-        "fontWeight": "font-normal"
+        "text": "Most Bangalore investors arrive at farmland by elimination — they've looked at the alternatives and found something missing. Here is the comparison they usually run.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Farmland vs Apartment",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Apartment advantages: Higher liquidity, urban location, rental income potential from day one in the right micro-market.\n",
-        "fontWeight": "font-normal"
+        "text": "Apartment advantages: Higher liquidity, urban location, rental income potential from day one in the right micro-market.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Farmland advantages: Zero maintenance cost in a managed model, tax-free agricultural income, land that appreciates as a finite resource rather than a built structure that depreciates, no builder risk, no association disputes, no sinking fund contributions.\n",
-        "fontWeight": "font-normal"
+        "text": "Farmland advantages: Zero maintenance cost in a managed model, tax-free agricultural income, land that appreciates as a finite resource rather than a built structure that depreciates, no builder risk, no association disputes, no sinking fund contributions.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The honest verdict: For someone who already owns a primary residence and is looking for their second investment asset, a farmland plot frequently makes more financial sense than a second apartment — particularly when tax efficiency is factored in. The full farmland vs apartment comparison covers both sides without bias.\n",
-        "fontWeight": "font-normal"
+        "text": "The honest verdict: For someone who already owns a primary residence and is looking for their second investment asset, a farmland plot frequently makes more financial sense than a second apartment — particularly when tax efficiency is factored in. The full farmland vs apartment comparison covers both sides without bias.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Farmland vs Gold",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Gold advantages: Highly liquid, culturally familiar, globally recognised store of value.\n",
-        "fontWeight": "font-normal"
+        "text": "Gold advantages: Highly liquid, culturally familiar, globally recognised store of value.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Farmland advantages: Generates income, serves an economic purpose, appreciates based on real structural demand rather than global commodity sentiment, and cannot be stolen from a locker.\n",
-        "fontWeight": "font-normal"
+        "text": "Farmland advantages: Generates income, serves an economic purpose, appreciates based on real structural demand rather than global commodity sentiment, and cannot be stolen from a locker.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The honest verdict: Gold has a legitimate role in a portfolio as a liquidity buffer and crisis hedge. But for an investor with a 10-year horizon looking to build wealth rather than store it, farmland's income generation and appreciation potential make it the stronger long-term bet. Farmland vs gold — the full comparison.\n",
-        "fontWeight": "font-normal"
+        "text": "The honest verdict: Gold has a legitimate role in a portfolio as a liquidity buffer and crisis hedge. But for an investor with a 10-year horizon looking to build wealth rather than store it, farmland's income generation and appreciation potential make it the stronger long-term bet. Farmland vs gold — the full comparison.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Farmland vs Stock Market",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Equity advantages: Potentially higher returns over long periods, high liquidity, low entry cost, easy diversification.\n",
-        "fontWeight": "font-normal"
+        "text": "Equity advantages: Potentially higher returns over long periods, high liquidity, low entry cost, easy diversification.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Farmland advantages: Near-zero volatility, no correlation with market sentiment, tax-free income, tangible asset that exists in the physical world.\n",
-        "fontWeight": "font-normal"
+        "text": "Farmland advantages: Near-zero volatility, no correlation with market sentiment, tax-free income, tangible asset that exists in the physical world.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The honest verdict: These are not competing investments — they serve different purposes in a portfolio. Equities provide growth and liquidity. Farmland provides stability, diversification, and tax efficiency. The investor who has significant equity exposure and adds farmland is not replacing one with the other — they are completing a portfolio that was missing a genuinely uncorrelated asset. Farmland vs stock market returns.\n",
-        "fontWeight": "font-normal"
+        "text": "The honest verdict: These are not competing investments — they serve different purposes in a portfolio. Equities provide growth and liquidity. Farmland provides stability, diversification, and tax efficiency. The investor who has significant equity exposure and adds farmland is not replacing one with the other — they are completing a portfolio that was missing a genuinely uncorrelated asset. Farmland vs stock market returns.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Farmland vs Second Home",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Second home advantages: Personal use, potential rental income, emotional satisfaction of ownership.\n",
-        "fontWeight": "font-normal"
+        "text": "Second home advantages: Personal use, potential rental income, emotional satisfaction of ownership.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Farmland advantages: No ongoing maintenance cost, income generation whether you visit or not, appreciation as land rather than as a depreciating built structure, tax-free agricultural income.\n",
-        "fontWeight": "font-normal"
+        "text": "Farmland advantages: No ongoing maintenance cost, income generation whether you visit or not, appreciation as land rather than as a depreciating built structure, tax-free agricultural income.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The honest verdict: A second home costs money every month whether you use it or not — maintenance, security, property tax, often a loan. A managed farmland plot generates income while you're at your desk in Bangalore. For most investors the financial case for farmland over a second home is clear. Second home vs farmland investment.\n",
-        "fontWeight": "font-normal"
+        "text": "The honest verdict: A second home costs money every month whether you use it or not — maintenance, security, property tax, often a loan. A managed farmland plot generates income while you're at your desk in Bangalore. For most investors the financial case for farmland over a second home is clear. Second home vs farmland investment.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "The Tax Section — Because Your CA Will Ask",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "We covered the headline tax provisions earlier. Here is the complete picture for an investor who is getting ready to have a serious conversation with their CA.\n",
-        "fontWeight": "font-normal"
+        "text": "We covered the headline tax provisions earlier. Here is the complete picture for an investor who is getting ready to have a serious conversation with their CA.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Section 10(1) — Agricultural income exemption Income from agricultural operations is fully exempt from income tax. This includes produce income from your plantation, income from farming activities on your land, and certain categories of processing income from farm produce. It does not cover income from non-agricultural activities conducted on agricultural land.\n",
-        "fontWeight": "font-normal"
+        "text": "Section 10(1) — Agricultural income exemption Income from agricultural operations is fully exempt from income tax. This includes produce income from your plantation, income from farming activities on your land, and certain categories of processing income from farm produce. It does not cover income from non-agricultural activities conducted on agricultural land.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Section 54B — Capital gains reinvestment exemption If you sell agricultural land and reinvest the proceeds in other agricultural land within two years of the sale date, the capital gains from the sale are fully exempt. The new land must be used for agricultural purposes. This provision makes farmland an efficient vehicle for wealth rotation without triggering large tax events.\n",
-        "fontWeight": "font-normal"
+        "text": "Section 54B — Capital gains reinvestment exemption If you sell agricultural land and reinvest the proceeds in other agricultural land within two years of the sale date, the capital gains from the sale are fully exempt. The new land must be used for agricultural purposes. This provision makes farmland an efficient vehicle for wealth rotation without triggering large tax events.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Wealth Tax Act exclusion Agricultural land is explicitly excluded from the definition of assets under the Wealth Tax Act. It does not contribute to your wealth tax liability regardless of its current market value.\n",
-        "fontWeight": "font-normal"
+        "text": "Wealth Tax Act exclusion Agricultural land is explicitly excluded from the definition of assets under the Wealth Tax Act. It does not contribute to your wealth tax liability regardless of its current market value.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Stamp duty Agricultural land in Karnataka attracts lower stamp duty rates than residential or commercial property at the time of purchase. This reduces your upfront transaction cost compared to buying a flat or commercial plot.\n",
-        "fontWeight": "font-normal"
+        "text": "Stamp duty Agricultural land in Karnataka attracts lower stamp duty rates than residential or commercial property at the time of purchase. This reduces your upfront transaction cost compared to buying a flat or commercial plot.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Important caveat: Tax treatment depends on how you hold the asset, your overall income profile, the specific classification of your land, and other individual factors. The provisions above are the framework — your CA applies them to your specific situation.\n",
-        "fontWeight": "font-normal"
+        "text": "Important caveat: Tax treatment depends on how you hold the asset, your overall income profile, the specific classification of your land, and other individual factors. The provisions above are the framework — your CA applies them to your specific situation.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "How to Evaluate a Farmland Investment Project",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The managed farmland space near Bangalore has grown rapidly and the gap between the best and worst projects is enormous. Before you make any financial commitment, run through this checklist.\n",
-        "fontWeight": "font-normal"
+        "text": "The managed farmland space near Bangalore has grown rapidly and the gap between the best and worst projects is enormous. Before you make any financial commitment, run through this checklist.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Verify the title independently. Not through the developer's lawyer — through yours. A clean title means unbroken ownership for at least 30 years, no encumbrances on the EC, correct name on the RTC, and physical boundaries that match the documents. Non-negotiable.\n",
-        "fontWeight": "font-normal"
+        "text": "Verify the title independently. Not through the developer's lawyer — through yours. A clean title means unbroken ownership for at least 30 years, no encumbrances on the EC, correct name on the RTC, and physical boundaries that match the documents. Non-negotiable.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Visit the site before paying anything. Walk the land. Confirm the roads, water supply, security, and plantation are real and operational — not promised. If the developer is reluctant to show you a functioning property before payment, that reluctance is your answer.\n",
-        "fontWeight": "font-normal"
+        "text": "Visit the site before paying anything. Walk the land. Confirm the roads, water supply, security, and plantation are real and operational — not promised. If the developer is reluctant to show you a functioning property before payment, that reluctance is your answer.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Ask exactly what management means. What does the team do on the property each month? How are owners updated? Can you visit unannounced? What is the process when you want to sell? Specific answers indicate a real operation. Vague language about \"professional management\" indicates a marketing concept.\n",
-        "fontWeight": "font-normal"
+        "text": "Ask exactly what management means. What does the team do on the property each month? How are owners updated? Can you visit unannounced? What is the process when you want to sell? Specific answers indicate a real operation. Vague language about \"professional management\" indicates a marketing concept.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Speak with existing buyers. A phone call with two or three plot owners who bought six months or a year ago gives you information no brochure can provide. Any developer worth dealing with will facilitate this without hesitation.\n",
-        "fontWeight": "font-normal"
+        "text": "Speak with existing buyers. A phone call with two or three plot owners who bought six months or a year ago gives you information no brochure can provide. Any developer worth dealing with will facilitate this without hesitation.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Understand the exit process. Before you buy, understand how you sell. Is there a secondary market for plots? Does the developer have a buyback mechanism? Are there transfer fees? The entry is the exciting part — the exit is what matters financially.\n",
-        "fontWeight": "font-normal"
+        "text": "Understand the exit process. Before you buy, understand how you sell. Is there a secondary market for plots? Does the developer have a buyback mechanism? Are there transfer fees? The entry is the exciting part — the exit is what matters financially.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Our detailed farmland investment checklist before buying and guide on how to evaluate a farmland project walk through each of these points in full.\n",
-        "fontWeight": "font-normal"
+        "text": "Our detailed farmland investment checklist before buying and guide on how to evaluate a farmland project walk through each of these points in full.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Frequently Asked Questions",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Is farmland near Bangalore actually a good investment or is it just hype? For investors with a genuine 7 to 15 year horizon, the fundamentals are real — structural land appreciation driven by infrastructure, tax-free income from an established plantation, and portfolio diversification that no other common asset class provides simultaneously. The hype comes from developers overpromising returns. The underlying investment case is sound.\n",
-        "fontWeight": "font-normal"
+        "text": "Is farmland near Bangalore actually a good investment or is it just hype? For investors with a genuine 7 to 15 year horizon, the fundamentals are real — structural land appreciation driven by infrastructure, tax-free income from an established plantation, and portfolio diversification that no other common asset class provides simultaneously. The hype comes from developers overpromising returns. The underlying investment case is sound.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "What is the realistic minimum I need to invest? ",
-        "fontWeight": "font-bold"
+        "text": "What is the realistic minimum I need to invest?",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "This varies by project. At Ecovara, plots start from 6,000 square feet. Contact the Novara team directly for current pricing — +91-8660200662 — as availability changes.\n",
-        "fontWeight": "font-normal"
+        "text": "This varies by project. At Ecovara, plots start from 6,000 square feet. Contact the Novara team directly for current pricing — +91-8660200662 — as availability changes.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "What if I need to access my money before 10 years?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": " Farmland is illiquid compared to equities or gold. A sale typically takes a few months rather than a few days. Do not invest capital you may need quick access to. For the right investor with the right time horizon, the illiquidity is a feature — it prevents panic selling during short-term noise.\n",
-        "fontWeight": "font-normal"
+        "text": "Farmland is illiquid compared to equities or gold. A sale typically takes a few months rather than a few days. Do not invest capital you may need quick access to. For the right investor with the right time horizon, the illiquidity is a feature — it prevents panic selling during short-term noise.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "How do I know the income projections I'm being shown are real?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": " Ask to see the harvest records from the existing plantation. Ask how produce income is calculated and distributed. Ask existing owners what income they have actually received. Numbers on a brochure are projections — harvest records and owner testimonials are evidence.\n",
-        "fontWeight": "font-normal"
+        "text": "Ask to see the harvest records from the existing plantation. Ask how produce income is calculated and distributed. Ask existing owners what income they have actually received. Numbers on a brochure are projections — harvest records and owner testimonials are evidence.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "If I'm already invested in real estate and equities, does farmland add anything? \n",
-        "fontWeight": "font-bold"
+        "text": "If I'm already invested in real estate and equities, does farmland add anything?",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Yes — genuine diversification. Agricultural land has near-zero correlation with equity markets and a fundamentally different appreciation driver from urban residential real estate. Adding farmland to a portfolio heavy in both gives you an uncorrelated asset that behaves differently in every market condition.\n",
-        "fontWeight": "font-normal"
+        "text": "Yes — genuine diversification. Agricultural land has near-zero correlation with equity markets and a fundamentally different appreciation driver from urban residential real estate. Adding farmland to a portfolio heavy in both gives you an uncorrelated asset that behaves differently in every market condition.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "What is the first practical step? ",
-        "fontWeight": "font-bold"
+        "text": "What is the first practical step?",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Visit Ecovara in person. Schedule your free site visit through the Novara contact page. Walking 15 acres of established plantation near Lepakshi on a clear morning does more for your decision-making than any financial model.\n",
-        "fontWeight": "font-normal"
+        "text": "Visit Ecovara in person. Schedule your free site visit through the Novara contact page. Walking 15 acres of established plantation near Lepakshi on a clear morning does more for your decision-making than any financial model.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The Decision Radhika Made\nSix weeks after that conversation with her CA, Radhika visited Ecovara on a Saturday morning with her husband.\n",
-        "fontWeight": "font-normal"
+        "text": "The Decision Radhika Made\nSix weeks after that conversation with her CA, Radhika visited Ecovara on a Saturday morning with her husband.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "They walked the plantation. They saw the swimming pool, the organic farming plots, the campfire area. They met two other plot owners who happened to be visiting. They had lunch made from produce grown on the farm. They drove back to Bangalore that evening.\n",
-        "fontWeight": "font-normal"
+        "text": "They walked the plantation. They saw the swimming pool, the organic farming plots, the campfire area. They met two other plot owners who happened to be visiting. They had lunch made from produce grown on the farm. They drove back to Bangalore that evening.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "By Sunday night Radhika had sent an enquiry.\n",
-        "fontWeight": "font-normal"
+        "text": "By Sunday night Radhika had sent an enquiry.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "\"My CA was right,\" she said. \"The question was never whether farmland made financial sense. The question was why I waited.\"\n",
-        "fontWeight": "font-normal"
+        "text": "\"My CA was right,\" she said. \"The question was never whether farmland made financial sense. The question was why I waited.\"",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "If you've been sitting on the same question — the answer is probably the same.\n",
-        "fontWeight": "font-normal"
+        "text": "If you've been sitting on the same question — the answer is probably the same.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_link",
-        "textBefore": "",
-        "linkText": "Schedule your free Ecovara site visit",
-        "href": "https://www.novaranatureestates.com/contactus",
-        "textAfter": "today +91-8660200662",
-        "fontWeight": "font-normal"
+        "type": "p",
+        "text": "<span style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\"><a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\">Schedule your free Ecovara site visit</a></span> today +91-8660200662",
+        "fontWeight": "font-normal",
+        "align": "justify"
       }
-    ]
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "What is the realistic minimum I need to invest?",
+              "text": "This varies by project. At Ecovara, plots start from 6,000 square feet. Contact the Novara team directly for current pricing — +91-8660200662 — as availability changes."
+            },
+            {
+              "name": "What if I need to access my money before 10 years?",
+              "text": "Farmland is illiquid compared to equities or gold. A sale typically takes a few months rather than a few days. Do not invest capital you may need quick access to. For the right investor with the right time horizon, the illiquidity is a feature — it prevents panic selling during short-term noise."
+            },
+            {
+              "name": "How do I know the income projections I'm being shown are real?",
+              "text": "Ask to see the harvest records from the existing plantation. Ask how produce income is calculated and distributed. Ask existing owners what income they have actually received. Numbers on a brochure are projections — harvest records and owner testimonials are evidence."
+            },
+            {
+              "name": "If I'm already invested in real estate and equities, does farmland add anything?",
+              "text": "Yes — genuine diversification. Agricultural land has near-zero correlation with equity markets and a fundamentally different appreciation driver from urban residential real estate. Adding farmland to a portfolio heavy in both gives you an uncorrelated asset that behaves differently in every market condition."
+            },
+            {
+              "name": "What is the first practical step?",
+              "text": "Visit Ecovara in person. Schedule your free site visit through the Novara contact page. Walking 15 acres of established plantation near Lepakshi on a clear morning does more for your decision-making than any financial model."
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novaranatureestates.com/blogs/farmland-investment-near-bangalore"
+          },
+          "headline": "Farmland Investment Near Bangalore — Everything You Need to Decide in 2026",
+          "image": "https://www.novaranatureestates.com/images/blog12.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "url": "https://www.novaranatureestates.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/images/logo.svg"
+            }
+          },
+          "datePublished": "2026-03-22T11:52:29+05:30",
+          "dateModified": "2026-03-22T11:52:29+05:30"
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blog Page",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Farmland Investment Near Bangalore — Everything You Need to Decide in 2026",
+              "item": "https://www.novaranatureestates.com/blogs/farmland-investment-near-bangalore"
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Farmland Investment Near Bangalore — Everything You Need to Decide in 2026",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "2894",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
   }
 ];
