@@ -564,8 +564,9 @@ function ToolbarButton({ title, onClick, active, children }) {
   );
 }
 
-function Toolbar({ exec, onLink, onUnlink, onImage, onTable, onFaq, format, setFormat, color, setColor, imageUploading }) {
+function Toolbar({ exec, onLink, onUnlink, onImage, onTable, onFaq, format, setFormat, color, setColor, imageUploading, activeFormats }) {
   const [colorOpen, setColorOpen] = useState(false);
+  const af = activeFormats || { bold: false, italic: false, underline: false, link: false };
   const sep = <span className="mx-0.5 w-px self-stretch my-1 bg-[#E6E1D3]" />;
 
   return (
@@ -590,9 +591,9 @@ function Toolbar({ exec, onLink, onUnlink, onImage, onTable, onFaq, format, setF
       </div>
       {sep}
 
-      <ToolbarButton title="Bold (Ctrl+B)" onClick={() => exec("bold")}><Bold size={16} /></ToolbarButton>
-      <ToolbarButton title="Italic (Ctrl+I)" onClick={() => exec("italic")}><Italic size={16} /></ToolbarButton>
-      <ToolbarButton title="Underline (Ctrl+U)" onClick={() => exec("underline")}><Underline size={16} /></ToolbarButton>
+      <ToolbarButton title="Bold (Ctrl+B)" active={af.bold} onClick={() => exec("bold")}><Bold size={16} /></ToolbarButton>
+      <ToolbarButton title="Italic (Ctrl+I)" active={af.italic} onClick={() => exec("italic")}><Italic size={16} /></ToolbarButton>
+      <ToolbarButton title="Underline (Ctrl+U)" active={af.underline} onClick={() => exec("underline")}><Underline size={16} /></ToolbarButton>
       {sep}
 
       <ToolbarButton title="Bulleted list" onClick={() => exec("insertUnorderedList")}><List size={16} /></ToolbarButton>
@@ -605,7 +606,7 @@ function Toolbar({ exec, onLink, onUnlink, onImage, onTable, onFaq, format, setF
       <ToolbarButton title="Justify" onClick={() => exec("justifyFull")}><AlignJustify size={16} /></ToolbarButton>
       {sep}
 
-      <ToolbarButton title="Insert link" onClick={onLink}><LinkIcon size={16} /></ToolbarButton>
+      <ToolbarButton title="Insert link" active={af.link} onClick={onLink}><LinkIcon size={16} /></ToolbarButton>
       <ToolbarButton title="Remove link" onClick={onUnlink}><Unlink size={16} /></ToolbarButton>
       {sep}
 
@@ -659,6 +660,7 @@ function BlogEditor({ editingBlog, onBack }) {
 
   const [format, setFormat] = useState("p");
   const [color, setColor] = useState("#111827");
+  const [activeFormats, setActiveFormats] = useState({ bold: false, italic: false, underline: false, link: false });
   const [imageUploading, setImageUploading] = useState(false);
   const [heroUploading, setHeroUploading] = useState(false);
   const [heroPreview, setHeroPreview] = useState("");
@@ -782,6 +784,7 @@ function BlogEditor({ editingBlog, onBack }) {
       const sel = window.getSelection();
       if (sel && sel.rangeCount && selectionInsideBody(sel.getRangeAt(0))) {
         savedSelection.current = sel.getRangeAt(0).cloneRange();
+        syncActiveFormats();
       }
     };
     document.addEventListener("selectionchange", handler);
@@ -795,12 +798,41 @@ function BlogEditor({ editingBlog, onBack }) {
     document.execCommand(cmd, false, value);
     saveSelection();
     syncFormatState();
+    syncActiveFormats();
   }, []);
 
   const syncFormatState = () => {
     try {
       const block = (document.queryCommandValue("formatBlock") || "p").toLowerCase();
       setFormat(/^h[1-6]$/.test(block) ? block : "p");
+    } catch (_) {}
+  };
+
+  // Does the current selection sit inside an <a> tag? (queryCommandState has
+  // no reliable built-in "link" command, so this walks up the DOM instead.)
+  const isSelectionInLink = () => {
+    const sel = window.getSelection();
+    if (!sel || !sel.anchorNode || !bodyRef.current) return false;
+    let node = sel.anchorNode;
+    if (node.nodeType === 3) node = node.parentElement; // text node -> element
+    while (node && node !== bodyRef.current) {
+      if (node.tagName === "A") return true;
+      node = node.parentElement;
+    }
+    return false;
+  };
+
+  // Reflects the formatting under the current caret/selection (bold, italic,
+  // underline, link) so the toolbar buttons show as "active" whenever the
+  // cursor is on text that already has that formatting.
+  const syncActiveFormats = () => {
+    try {
+      setActiveFormats({
+        bold: document.queryCommandState("bold"),
+        italic: document.queryCommandState("italic"),
+        underline: document.queryCommandState("underline"),
+        link: isSelectionInLink(),
+      });
     } catch (_) {}
   };
 
@@ -1766,6 +1798,7 @@ function BlogEditor({ editingBlog, onBack }) {
                     format={format} setFormat={handleFormatChange}
                     color={color} setColor={setColor}
                     imageUploading={imageUploading}
+                    activeFormats={activeFormats}
                   />
                 </div>}
                 {/* Body — grows with content; scrolls with the outer page, not on its own */}
