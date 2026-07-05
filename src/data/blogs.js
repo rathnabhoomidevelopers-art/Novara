@@ -274,18 +274,18 @@ export const BLOGS = [
       {
         "type": "ol",
         "text": [
-          "<span style=\"background-color: transparent; font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap; text-align: justify;\">What is the total project extent?</span>",
-          "<span style=\"background-color: transparent; font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap; text-align: justify;\">What plot sizes are available?</span>",
-          "<span style=\"background-color: transparent; font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap; text-align: justify;\">Are the documents legally verified?</span>",
-          "<span style=\"background-color: transparent; font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap; text-align: justify;\">Is the plot clearly demarcated?</span>",
-          "<span style=\"background-color: transparent; font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap; text-align: justify;\">What is included in the price?</span>",
-          "<span style=\"background-color: transparent; font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap; text-align: justify;\">What are the maintenance charges?</span>",
-          "<span style=\"background-color: transparent; font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap; text-align: justify;\">Who manages plantation care?</span>",
-          "<span style=\"background-color: transparent; font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap; text-align: justify;\">What is the water source?</span>",
-          "<span style=\"background-color: transparent; font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap; text-align: justify;\">What amenities are completed?</span>",
-          "<span style=\"background-color: transparent; font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap; text-align: justify;\">What is the registration process?</span>",
-          "<span style=\"background-color: transparent; font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap; text-align: justify;\">Are there any usage restrictions?</span>",
-          "<span style=\"background-color: transparent; font-family: &quot;Times New Roman&quot;, serif; font-size: 11pt; white-space: pre-wrap; text-align: justify;\">How soon can the buyer start using the plot?</span>"
+          "What is the total project extent?",
+          "What plot sizes are available?",
+          "Are the documents legally verified?",
+          "Is the plot clearly demarcated?",
+          "What is included in the price?",
+          "What are the maintenance charges?",
+          "Who manages plantation care?",
+          "What is the water source?",
+          "What amenities are completed?",
+          "What is the registration process?",
+          "Are there any usage restrictions?",
+          "How soon can the buyer start using the plot?"
         ]
       },
       {
@@ -357,11 +357,11 @@ export const BLOGS = [
       {
         "type": "ol",
         "text": [
-          "<p style=\"text-align: justify;\"><span style=\"color: rgb(0, 0, 0); font-size: 13pt; font-weight: 700; white-space: pre-wrap; background-color: transparent;\">What should I check before buying farmland near Bangalore?</span></p><p style=\"text-align: justify;\">You should check location, legal documents, access road, water availability, land usage rules, plot size, maintenance model, security, and developer credibility.</p>",
-          "<p style=\"text-align: justify;\"><span style=\"color: rgb(0, 0, 0); font-size: 13pt; font-weight: 700; white-space: pre-wrap; background-color: transparent;\">Is a farm visit necessary before booking farmland?</span></p><p style=\"text-align: justify;\">Yes. A farm visit helps you understand the actual location, road access, surroundings, amenities, plot layout, and overall project quality.</p>",
-          "<p style=\"text-align: justify;\"><span style=\"color: rgb(0, 0, 0); font-size: 13pt; font-weight: 700; white-space: pre-wrap; background-color: transparent;\">What is managed farmland near Bangalore?</span></p><p style=\"text-align: justify;\">Managed farmland is land where maintenance, plantation care, security, and common area management are handled professionally for buyers.</p>",
-          "<p style=\"text-align: justify;\"><span style=\"background-color: transparent; color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;, serif; font-size: 13pt; font-weight: 700; white-space: pre-wrap;\">Is farmland near Bangalore good for weekend use?</span></p><p style=\"text-align: justify;\">Yes, farmland near Bangalore can be suitable for weekend visits if the location has good road connectivity, peaceful surroundings, and basic infrastructure.</p>",
-          "<p style=\"text-align: justify;\"><span style=\"color: rgb(0, 0, 0); font-size: 13pt; font-weight: 700; white-space: pre-wrap; background-color: transparent;\">Why should I visit Ecovara Farmplot?</span></p><p style=\"text-align: justify;\">Ecovara Farmplot offers managed farmland near Lepakshi with spacious plots, plantations, organic garden space, security, amenities, and weekend lifestyle value for Bangalore-based buyers.</p>"
+          "What should I check before buying farmland near Bangalore?\nYou should check location, legal documents, access road, water availability, land usage rules, plot size, maintenance model, security, and developer credibility.",
+          "Is a farm visit necessary before booking farmland?\nYes. A farm visit helps you understand the actual location, road access, surroundings, amenities, plot layout, and overall project quality.",
+          "What is managed farmland near Bangalore?\nManaged farmland is land where maintenance, plantation care, security, and common area management are handled professionally for buyers.",
+          "Is farmland near Bangalore good for weekend use?\nYes, farmland near Bangalore can be suitable for weekend visits if the location has good road connectivity, peaceful surroundings, and basic infrastructure.",
+          "Why should I visit Ecovara Farmplot?\nEcovara Farmplot offers managed farmland near Lepakshi with spacious plots, plantations, organic garden space, security, amenities, and weekend lifestyle value for Bangalore-based buyers."
         ]
       }
     ],
