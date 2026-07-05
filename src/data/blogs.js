@@ -1,5 +1,518 @@
 export const BLOGS = [
   {
+    "id": 30,
+    "slug": "farmland-near-bangalore-farm-visit-checklist",
+    "category": "Managed Farmland",
+    "title": "Farmland Near Bangalore: Things to Check Before a Farm Visit",
+    "headline": "Farmland Near Bangalore: Key Things to Check Before Booking a Farm Visit",
+    "description": "Planning to visit farmland near Bangalore? Check location, legal documents, access roads, water, amenities, maintenance, and developer credibility before booking a farm visit.",
+    "date": "Jul 5, 2026",
+    "keywords": "",
+    "author": "Novara Nature Estates",
+    "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783242797/lyasz2wjcad0zmecxcxw.webp",
+    "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783242797/lyasz2wjcad0zmecxcxw.webp",
+    "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783242797/lyasz2wjcad0zmecxcxw.webp",
+    "imageAlt": "Farmland Near Bangalore Key Things to Check Before Booking a Farm Visit",
+    "imageTitle": "Farmland Near Bangalore Key Things to Check Before Booking a Farm Visit",
+    "imageCaption": "",
+    "imageDescription": "Farmland Near Bangalore Key Things to Check Before Booking a Farm Visit",
+    "videoUrl": "",
+    "tags": [],
+    "sections": [
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Buying </span><span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap; font-weight: bold; text-decoration-line: underline;\"><a href=\"https://www.novaranatureestates.com/projects\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\">farmland near Bangalore</a></span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"> is becoming a popular choice for people who want open space, peaceful surroundings, weekend living, plantations, and long-term land ownership. But before making any decision, a farm visit is one of the most important steps.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">A farm visit helps you understand the real location, road access, surroundings, plot layout, amenities, and project quality. Photos and brochures can create interest, but only a site visit shows whether the farmland is actually suitable for your needs.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">If you are planning to explore farmland near Bangalore, here are the key things you should check before booking a farm visit.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Check the Exact Location and Travel Time",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Location is the first thing to check before visiting any farmland project. A good farmland location should be peaceful, but it should not be too difficult to reach.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For Bangalore-based buyers, travel time matters because farmland is usually used for weekend visits, family outings, plantation activities, or nature-based relaxation. Check how long it takes to reach the project from areas like Hebbal, Yelahanka, Devanahalli, Whitefield, Electronic City, or your home location.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">Ecovara by <a href=\"https://www.novaranatureestates.com/\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Novara Nature Estates is located near Lepakshi</a> along the Bengaluru-Hyderabad National Highway belt. The project location offers access to key landmarks such as Lepakshi Temple, Hindupuram Town, Bagepalli Toll Plaza, Devanahalli, and Kempegowda International Airport.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Verify Road Access to the Farmland",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Before booking a farm visit, ask whether the property has proper road access. A farmland project may look attractive, but if the approach road is poor, narrow, or difficult during the rainy season, regular visits may become inconvenient.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">During the site visit, check whether cars can reach the project comfortably. Also observe whether the entry is clearly marked and whether internal roads are planned properly.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Good access improves the usability of farmland. It makes weekend visits, maintenance, family travel, and future usage much easier.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Check Legal Documents Before Making Any Payment",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Legal clarity is one of the most important parts of buying farmland near Bangalore. Do not book farmland only based on photos, brochure designs, or verbal promises.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Before paying the booking amount, check the basic legal documents such as title documents, RTC or land records, Encumbrance Certificate, sale deed history, land ownership details, approvals, and layout information.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">It is always better to get the documents verified by a qualified legal expert. A proper legal check protects buyers from future disputes and gives more confidence before moving ahead with booking or registration.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Understand the Land Type and Usage Rules",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Before buying or booking farmland, understand what type of land it is and what you are allowed to do with it.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ask whether the land is agricultural land, managed farmland, or part of a planned gated farmland community. Also clarify usage rules related to plantations, weekend stays, farm structures, cottages, gardens, fencing, and common areas.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For any farmhouse, cottage, or construction-related plan, buyers should check applicable rules, approvals, and project guidelines. This avoids confusion after booking.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Check Water Availability and Plantation Planning",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Water is very important in any farmland project. During your farm visit, ask about the water source, borewell availability, water management system, rainwater harvesting, and plantation support.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">If you are interested in fruit-bearing trees, organic gardening, or plantation-based farmland, water planning becomes even more important.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara includes fruit-bearing plantations and organic garden space, giving buyers a closer connection with nature and farming. These features are useful for people who want farmland not just as land, but as a green lifestyle experience.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Review Project Infrastructure and Amenities",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">A planned farmland project should offer more than just land. During the farm visit, observe the internal roads, fencing, security, lighting, common areas, plantation layout, and maintenance arrangements.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara is designed as a premium managed farmland project spread across 15 acres. The project includes spacious plot dimensions, European-style farmland planning, fruit-bearing plantations, and organic garden space.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">It also offers lifestyle amenities such as 64+ tree plantations, lotus pond or fish pond, campfire and rain dance area, 24/7 security check, solar street lights, cafeteria, jogging track, and pet route.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">These features make the project suitable for weekend visits, family time, outdoor activity, and peaceful nature-based living.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Understand the Managed Farmland Model",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Many Bangalore buyers like the idea of owning farmland, but they may not have the time to manage it personally. This is where managed farmland becomes useful.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">A managed farmland model usually includes support for plantation care, security, common area maintenance, basic infrastructure, and overall project upkeep. Before booking, ask what is included in the maintenance model and what the buyer is responsible for.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara offers a managed farmland experience, making it suitable for busy professionals, families, and buyers who want farmland near Bangalore without handling every daily maintenance activity themselves.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Check Plot Size and Configuration Options",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Plot size is another important factor before booking a farm visit. Buyers should understand how much space they need and whether the available plot sizes match their purpose.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara offers flexible plot sizes starting from 6,000 sq. ft., with options such as 8,000 sq. ft. and 10,000 sq. ft. A 6,000 sq. ft. plot may be suitable for a manageable weekend farmland experience, while larger plots may suit buyers who want more space for plantations, garden areas, or future farm planning.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">During the visit, ask for the plot layout, demarcation, facing, access, and exact usable area.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Observe the Surroundings and Nearby Attractions",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The surroundings of a farmland project matter. Good farmland should feel peaceful, safe, accessible, and usable for regular visits.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara is close to several nearby attractions and landmarks, including Lepakshi Temple, Gudibande Fort, Isha Foundation, Nandi Hills, Penukonda Fort, Puttaparthi Sai Baba Temple, Vidhurashwatha Temple, and Kempegowda International Airport.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">These nearby attractions add lifestyle value. A weekend visit can include farm time, temple visits, sightseeing, family outings, and peaceful relaxation.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Questions to Ask During a Farm Visit",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Before booking farmland near Bangalore, ask the right questions during the visit:</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "ol",
+        "text": [
+          "<p dir=\"ltr\" style=\"text-align: justify; line-height: 1.38; margin-top: 12pt; margin-bottom: 0pt;\" role=\"presentation\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">What is the total project extent?</span></p>",
+          "<p dir=\"ltr\" style=\"text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" role=\"presentation\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">What plot sizes are available?</span></p>",
+          "<p dir=\"ltr\" style=\"text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" role=\"presentation\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Are the documents legally verified?</span></p>",
+          "<p dir=\"ltr\" style=\"text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" role=\"presentation\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Is the plot clearly demarcated?</span></p>",
+          "<p dir=\"ltr\" style=\"text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" role=\"presentation\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">What is included in the price?</span></p>",
+          "<p dir=\"ltr\" style=\"text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" role=\"presentation\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">What are the maintenance charges?</span></p>",
+          "<p dir=\"ltr\" style=\"text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" role=\"presentation\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Who manages plantation care?</span></p>",
+          "<p dir=\"ltr\" style=\"text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" role=\"presentation\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">What is the water source?</span></p>",
+          "<p dir=\"ltr\" style=\"text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" role=\"presentation\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">What amenities are completed?</span></p>",
+          "<p dir=\"ltr\" style=\"text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" role=\"presentation\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">What is the registration process?</span></p>",
+          "<p dir=\"ltr\" style=\"text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\" role=\"presentation\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Are there any usage restrictions?</span></p>",
+          "<p dir=\"ltr\" style=\"text-align: justify; line-height: 1.38; margin-top: 0pt; margin-bottom: 12pt;\" role=\"presentation\"><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">How soon can the buyer start using the plot?</span></p>"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">These questions help you compare projects properly and avoid confusion later.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Why Choose a Planned Farmland Project Near Bangalore?",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">A planned farmland project can offer a better experience than buying random individual agricultural land. It may provide better access, planned layout, security, maintenance support, common amenities, and a more organized ownership experience.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For Bangalore-based buyers, this matters because farmland is often used for weekends, family visits, and relaxation. A planned project makes the experience easier and more enjoyable.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara by Novara Nature Estates is designed for buyers who want a premium managed farmland experience near Lepakshi with greenery, lifestyle amenities, and better connectivity.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Conclusion",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Booking a farm visit is an important step before buying farmland near Bangalore. It helps you check the location, access road, legal documents, water availability, plot size, amenities, maintenance model, and overall project quality.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara by Novara Nature Estates offers a premium managed farmland experience near Lepakshi, with plot sizes starting from 6,000 sq. ft., fruit-bearing plantations, organic garden space, 64+ tree plantations, security, solar street lights, pond, cafeteria, jogging track, pet route, and nearby attractions.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Planning to explore farmland near Bangalore? Book a farm visit with Novara Nature Estates and experience Ecovara Farmplot — a peaceful managed farmland project designed for weekend living and nature-focused land ownership.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap; font-size: 11pt;\"><a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\"><b style=\"\"><u>Book a Free Farm Visit</u></b></a></span><br>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "FAQs",
+        "fontWeight": "font-bold"
+      },
+      {
+        "type": "h3",
+        "text": "What should I check before buying farmland near Bangalore?\nYou should check location, legal documents, access road, water availability, land usage rules, plot size, maintenance model, security, and developer credibility.Is a farm visit necessary before booking farmland?\nYes. A farm visit helps you understand the actual location, road access, surroundings, amenities, plot layout, and overall project quality.What is managed farmland near Bangalore?\nManaged farmland is land where maintenance, plantation care, security, and common area management are handled professionally for buyers.Is farmland near Bangalore good for weekend use?\nYes, farmland near Bangalore can be suitable for weekend visits if the location has good road connectivity, peaceful surroundings, and basic infrastructure.What documents should I verify before booking farmland?\nYou should verify title documents, RTC, Encumbrance Certificate, sale deed history, approvals, land usage status, and registration details.Why should I visit Ecovara Farmplot?\nEcovara Farmplot offers managed farmland near Lepakshi with spacious plots, plantations, organic garden space, security, amenities, and weekend lifestyle value for Bangalore-based buyers.",
+        "fontWeight": "font-bold"
+      }
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "What should I check before buying farmland near Bangalore?",
+              "text": "You should check location, legal documents, access road, water availability, land usage rules, plot size, maintenance model, security, and developer credibility."
+            },
+            {
+              "name": "Is a farm visit necessary before booking farmland?",
+              "text": "Yes. A farm visit helps you understand the actual location, road access, surroundings, amenities, plot layout, and overall project quality."
+            },
+            {
+              "name": "What is managed farmland near Bangalore?",
+              "text": "Managed farmland is land where maintenance, plantation care, security, and common area management are handled professionally for buyers."
+            },
+            {
+              "name": "Is farmland near Bangalore good for weekend use?",
+              "text": "Yes, farmland near Bangalore can be suitable for weekend visits if the location has good road connectivity, peaceful surroundings, and basic infrastructure."
+            },
+            {
+              "name": "What documents should I verify before booking farmland?",
+              "text": "You should verify title documents, RTC, Encumbrance Certificate, sale deed history, approvals, land usage status, and registration details."
+            },
+            {
+              "name": "Why should I visit Ecovara Farmplot?",
+              "text": "Ecovara Farmplot offers managed farmland near Lepakshi with spacious plots, plantations, organic garden space, security, amenities, and weekend lifestyle value for Bangalore-based buyers."
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novaranatureestates.com/blogs/farmland-near-bangalore-farm-visit-checklist"
+          },
+          "headline": "Farmland Near Bangalore: Key Things to Check Before Booking a Farm Visit",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783242797/lyasz2wjcad0zmecxcxw.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "Novara Nature Estaes",
+            "url": "https://www.novaranatureestates.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/images/logo.svg"
+            }
+          },
+          "datePublished": "2026-07-04T12:05:39+05:30",
+          "dateModified": "2026-07-04T12:05:39+05:30"
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Novara Nature Etates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blogs",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Farmland Near Bangalore: Key Things to Check Before Booking a Farm Visit",
+              "item": "https://www.novaranatureestates.com/blogs/farmland-near-bangalore-farm-visit-checklist"
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Farmland Near Bangalore: Key Things to Check Before Booking a Farm Visit",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "987",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
+  },
+  {
     "id": 29,
     "slug": "farmland-near-lepakshi-location-benefits",
     "category": "Managed Farmland",
