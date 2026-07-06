@@ -5819,17 +5819,17 @@ export const BLOGS = [
         "json": ""
       },
       "blog": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": ""
+            "@id": "https://www.novaranatureestates.com/blogs/farmland-near-lepakshi-temple"
           },
-          "headline": "",
-          "image": "",
+          "headline": "Looking for Farmland Near Lepakshi Temple? Here Is What Every Buyer Should Know Before Deciding.",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775630823/vmxyoimnafupdmtwgdne.webp",
           "author": {
             "@type": "Organization",
             "name": "Novara Nature Estates",
@@ -5843,19 +5843,27 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/images/logo.svg"
             }
           },
-          "datePublished": "",
-          "dateModified": ""
+          "datePublished": "2026-04-07T18:30:00.000Z",
+          "dateModified": "2026-04-07T18:30:00.000Z"
         },
         "json": ""
       },
       "breadcrumb": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "items": [
             {
-              "name": "",
-              "item": ""
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blogs",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Looking for Farmland Near Lepakshi Temple? Here Is What Every Buyer Should Know Before Deciding.",
+              "item": "https://www.novaranatureestates.com/blogs/farmland-near-lepakshi-temple"
             }
           ]
         },
