@@ -9164,6 +9164,11 @@ export const BLOGS = [
     "image": "/images/Blog 2_11zon.webp",
     "heroImage": "/images/Blog 2_11zon.webp",
     "coverImage": "/images/Blog 2_11zon.webp",
+    "imageAlt": "Top 5 Benefits of Farmland Investment Near Bangalore",
+    "imageTitle": "",
+    "imageCaption": "",
+    "imageDescription": "",
+    "videoUrl": "",
     "tags": [
       "Farmland Investment",
       "Wealth Management",
@@ -9173,87 +9178,251 @@ export const BLOGS = [
     "sections": [
       {
         "type": "p",
-        "text": "When most people think about investments, their minds usually jump to stocks, bonds, or real estate. But there's another type of investment that’s often overlooked: farmland. Owning farmland is not only a smart financial decision, but it can also be a rewarding experience in many ways. Let's take a closer look at why farmland ownership is such a great investment and why more people are starting to consider it."
+        "text": "When most people think about investments, their minds usually jump to stocks, bonds, or real estate. But there's another type of investment that’s often overlooked: farmland. Owning farmland is not only a smart financial decision, but it can also be a rewarding experience in many ways. Let's take a closer look at why farmland ownership is such a great investment and why more people are starting to consider it.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "1. Steady, Reliable Income from Agriculture"
+        "text": "1. Steady, Reliable Income from Agriculture",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "One of the top reasons people invest in farmland is the potential for steady income. Farmland isn’t just a piece of land sitting idle — it’s a source of income that can generate money year after year. By farming the land, you can grow crops, raise livestock, or even sell organic produce, all of which can create a regular income stream."
+        "text": "One of the top reasons people invest in farmland is the potential for steady income. Farmland isn’t just a piece of land sitting idle — it’s a source of income that can generate money year after year. By farming the land, you can grow crops, raise livestock, or even sell organic produce, all of which can create a regular income stream.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Not only can you sell crops, but you also have options like renting the land to farmers, setting up agro-tourism ventures (think farm stays or farm-to-table experiences), or even growing specialty crops that can fetch a higher price in niche markets. This means your farmland can work for you, and you get to reap the rewards."
+        "text": "Not only can you sell crops, but you also have options like renting the land to farmers, setting up agro-tourism ventures (think farm stays or farm-to-table experiences), or even growing specialty crops that can fetch a higher price in niche markets. This means your farmland can work for you, and you get to reap the rewards.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "2. Long-Term Appreciation in Value"
+        "text": "2. Long-Term Appreciation in Value",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Farmland tends to increase in value over time. Unlike other investments that can fluctuate with market conditions, land generally appreciates in value because it’s a finite resource. As the demand for food increases globally, especially with growing populations and urban expansion, the value of productive agricultural land continues to rise."
+        "text": "Farmland tends to increase in value over time. Unlike other investments that can fluctuate with market conditions, land generally appreciates in value because it’s a finite resource. As the demand for food increases globally, especially with growing populations and urban expansion, the value of productive agricultural land continues to rise.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "What’s more, owning farmland near developing areas (like Ecovara near Lepakshi) can add even more value, as the surrounding land becomes more desirable over time. Location matters, and if your farmland is in a growing region, it can experience significant value growth over the years."
+        "text": "What’s more, owning farmland near developing areas (like Ecovara near Lepakshi) can add even more value, as the surrounding land becomes more desirable over time. Location matters, and if your farmland is in a growing region, it can experience significant value growth over the years.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "3. Diversification for Your Investment Portfolio"
+        "text": "3. Diversification for Your Investment Portfolio",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "As the old saying goes, “Don’t put all your eggs in one basket.” That’s exactly why farmland is such a valuable addition to any investment portfolio. By owning farmland, you’re diversifying your assets in a way that can weather economic downturns. While stock markets and real estate can be unpredictable, farmland tends to hold its ground, providing a stable investment even during uncertain times."
+        "text": "As the old saying goes, “Don’t put all your eggs in one basket.” That’s exactly why farmland is such a valuable addition to any investment portfolio. By owning farmland, you’re diversifying your assets in a way that can weather economic downturns. While stock markets and real estate can be unpredictable, farmland tends to hold its ground, providing a stable investment even during uncertain times.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Plus, farmland is a tangible asset. You can see it, touch it, and use it. It’s something real that you can make use of, unlike stocks or bonds which are more abstract. So, whether you're looking to secure wealth for the future or balance your portfolio, farmland offers an excellent hedge against market volatility."
+        "text": "Plus, farmland is a tangible asset. You can see it, touch it, and use it. It’s something real that you can make use of, unlike stocks or bonds which are more abstract. So, whether you're looking to secure wealth for the future or balance your portfolio, farmland offers an excellent hedge against market volatility.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "4. Farmland’s Tax Benefits and Government Incentives"
-      },
-      {
-        "type": "p_with_link",
-        "textBefore": "When you ",
-        "linkText": "invest in farmland",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": " you can take advantage of several tax incentives that make it an even smarter investment. In many countries, farmers receive tax breaks for implementing sustainable farming practices or maintaining certain types of land. Additionally, there are often tax deductions for landowners who engage in farming or forestry activities, such as equipment purchases or property maintenance costs."
+        "text": "4. Farmland’s Tax Benefits and Government Incentives",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Depending on where your farmland is located, you might also be eligible for government grants or subsidies for organic farming, environmentally friendly practices, or renewable energy initiatives (like solar-powered irrigation). These incentives can make owning farmland even more financially attractive, giving you additional financial support as you grow your investment."
+        "text": "When you  <span style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\"><a href=\"https://www.novaranatureestates.com/blogs/how-to-invest-in-farmland-india\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\">invest in farmland</a></span>  you can take advantage of several tax incentives that make it an even smarter investment. In many countries, farmers receive tax breaks for implementing sustainable farming practices or maintaining certain types of land. Additionally, there are often tax deductions for landowners who engage in farming or forestry activities, such as equipment purchases or property maintenance costs.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "Depending on where your farmland is located, you might also be eligible for government grants or subsidies for organic farming, environmentally friendly practices, or renewable energy initiatives (like solar-powered irrigation). These incentives can make owning farmland even more financially attractive, giving you additional financial support as you grow your investment.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "5. A Legacy to Pass Down"
+        "text": "5. A Legacy to Pass Down",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Farmland isn’t just a short-term investment; it’s also an asset you can pass down through generations. There’s something deeply rewarding about owning a piece of land that can continue to provide for your family, generation after generation. Whether you’re growing crops, running a small farm, or simply holding onto the land, it can serve as a long-term financial safety net for your children or grandchildren."
+        "text": "Farmland isn’t just a short-term investment; it’s also an asset you can pass down through generations. There’s something deeply rewarding about owning a piece of land that can continue to provide for your family, generation after generation. Whether you’re growing crops, running a small farm, or simply holding onto the land, it can serve as a long-term financial safety net for your children or grandchildren.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Owning farmland also allows you to instill values of hard work, sustainability, and connection to nature in your family. For many, it’s not just about the financial returns — it’s about creating a legacy that future generations can be proud of."
+        "text": "Owning farmland also allows you to instill values of hard work, sustainability, and connection to nature in your family. For many, it’s not just about the financial returns — it’s about creating a legacy that future generations can be proud of.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Conclusion: Farmland as an Investment – More Than Just a Piece of Land"
+        "text": "Conclusion: Farmland as an Investment – More Than Just a Piece of Land",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Owning farmland as an investment offers a wealth of benefits that go beyond just financial returns. From generating reliable income and increasing in value over time to providing tax incentives and creating a lasting legacy, farmland is a smart choice for any investor looking to diversify their portfolio and secure their financial future."
+        "text": "Owning farmland as an investment offers a wealth of benefits that go beyond just financial returns. From generating reliable income and increasing in value over time to providing tax incentives and creating a lasting legacy, farmland is a smart choice for any investor looking to diversify their portfolio and secure their financial future.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_link",
-        "textBefore": "If you’re considering adding farmland to your investment portfolio, Ecovara’s ",
-        "linkText": "sustainable farming",
-        "href": "https://www.novaranatureestates.com/whynovara",
-        "textAfter": " community near Lepakshi offers a unique opportunity to reap the benefits of owning land while living a sustainable, eco-friendly lifestyle. So why not take the leap into farmland investment? It’s more than just land — it’s a chance to grow your wealth, your lifestyle, and your legacy."
+        "type": "p",
+        "text": "If you’re considering adding farmland to your investment portfolio, <a href=\"https://www.novaranatureestates.com/why-novara\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Ecovara’s  <span style=\"color: rgb(227, 166, 0);\">sustainable farming</span></a>  community near Lepakshi offers a unique opportunity to reap the benefits of owning land while living a sustainable, eco-friendly lifestyle. So why not take the leap into farmland investment? It’s more than just land — it’s a chance to grow your wealth, your lifestyle, and your legacy.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       }
-    ]
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "",
+              "text": ""
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novaranatureestates.com/blogs/benefits-of-farmland-investment-near-bangalore"
+          },
+          "headline": "Top 5 Benefits of Owning Farmland as an Investment",
+          "image": "https://www.novaranatureestates.com/images/Blog%202_11zon.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "url": "https://www.novaranatureestates.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/images/logo.svg"
+            }
+          },
+          "datePublished": "2026-01-27T18:30:00.000Z",
+          "dateModified": "2026-01-27T18:30:00.000Z"
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blogs",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Top 5 Benefits of Owning Farmland as an Investment",
+              "item": "https://www.novaranatureestates.com/blogs/benefits-of-farmland-investment-near-bangalore"
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Top 5 Benefits of Owning Farmland as an Investment",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "1093",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
   },
   {
     "id": 3,
