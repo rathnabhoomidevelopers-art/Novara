@@ -9165,9 +9165,9 @@ export const BLOGS = [
     "heroImage": "/images/Blog 2_11zon.webp",
     "coverImage": "/images/Blog 2_11zon.webp",
     "imageAlt": "Top 5 Benefits of Farmland Investment Near Bangalore",
-    "imageTitle": "",
+    "imageTitle": "Top 5 Benefits of Farmland Investment Near Bangalore",
     "imageCaption": "",
-    "imageDescription": "",
+    "imageDescription": "Top 5 Benefits of Farmland Investment Near Bangalore",
     "videoUrl": "",
     "tags": [
       "Farmland Investment",
