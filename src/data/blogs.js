@@ -4751,9 +4751,9 @@ export const BLOGS = [
     "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775986218/eejozxgmexoab1vrvnss.webp",
     "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775986218/eejozxgmexoab1vrvnss.webp",
     "imageAlt": "Farmland near Devanahalli",
-    "imageTitle": "",
+    "imageTitle": "Farmland near Devanahalli",
     "imageCaption": "",
-    "imageDescription": "",
+    "imageDescription": "Farmland near Devanahalli",
     "videoUrl": "",
     "tags": [],
     "sections": [
@@ -5123,17 +5123,17 @@ export const BLOGS = [
         "json": ""
       },
       "blog": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": ""
+            "@id": "https://www.novaranatureestates.com/blogs/farmland-near-devanahalli-guide"
           },
-          "headline": "",
-          "image": "",
+          "headline": "Thinking About Farmland Near Devanahalli? Here Is What the Airport Zone Actually Means for Investors.",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1775986218/eejozxgmexoab1vrvnss.webp",
           "author": {
             "@type": "Organization",
             "name": "Novara Nature Estates",
@@ -5147,19 +5147,27 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/images/logo.svg"
             }
           },
-          "datePublished": "",
-          "dateModified": ""
+          "datePublished": "2026-04-11T18:30:00.000Z",
+          "dateModified": "2026-04-11T18:30:00.000Z"
         },
         "json": ""
       },
       "breadcrumb": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "items": [
             {
-              "name": "",
-              "item": ""
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blogs",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Thinking About Farmland Near Devanahalli? Here Is What the Airport Zone Actually Means for Investors.",
+              "item": "https://www.novaranatureestates.com/blogs/farmland-near-devanahalli-guide"
             }
           ]
         },
