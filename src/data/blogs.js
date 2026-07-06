@@ -12015,6 +12015,11 @@ export const BLOGS = [
     "image": "/images/blog_11.webp",
     "heroImage": "/images/blog_11.webp",
     "coverImage": "/images/blog_11.webp",
+    "imageAlt": "Farmland Near Bangalore — Complete Investment Guide 2026",
+    "imageTitle": "Farmland Near Bangalore — Complete Investment Guide 2026",
+    "imageCaption": "",
+    "imageDescription": "Farmland Near Bangalore — Complete Investment Guide 2026",
+    "videoUrl": "",
     "tags": [
       "Sustainable Farming",
       "Eco Farmland",
@@ -12023,499 +12028,649 @@ export const BLOGS = [
     ],
     "sections": [
       {
-        "type": "h2",
-        "text": "Introduction"
+        "type": "p",
+        "text": "A few years ago, Vikram, a tech professional working in Bangalore, found himself in a familiar situation. He had built a solid career, invested in mutual funds, and was doing everything “right” financially. But something still felt incomplete.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "A few years ago, Vikram, a tech professional working in Bangalore, found himself in a familiar situation. He had built a solid career, invested in mutual funds, and was doing everything “right” financially. But something still felt incomplete."
+        "text": "It wasn’t about returns. His portfolio was performing well. What he lacked was something tangible—an asset he could actually visit, walk on, and eventually pass on to his family.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "It wasn’t about returns. His portfolio was performing well. What he lacked was something tangible—an asset he could actually visit, walk on, and eventually pass on to his family."
+        "text": "That’s when he started exploring farmland investment near Bangalore.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "That’s when he started exploring farmland investment near Bangalore."
+        "text": "Within a few weeks, Vikram visited a couple of projects along the Bangalore–Hyderabad NH44 corridor and eventually chose a managed farmland plot near Lepakshi. The experience surprised him.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Within a few weeks, Vikram visited a couple of projects along the Bangalore–Hyderabad NH44 corridor and eventually chose a managed farmland plot near Lepakshi. The experience surprised him."
+        "text": "“I thought it would be complicated. But it turned out to be one of the simplest investments I’ve made.”",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "“I thought it would be complicated. But it turned out to be one of the simplest investments I’ve made.”"
-      },
-      {
-        "type": "p",
-        "text": "If you’ve been thinking along similar lines, this guide will help you understand everything—from returns and risks to locations and legal checks—without spending weeks researching."
-      },
-      {
-        "type": "h2",
-        "text": "Why Farmland Investment Near Bangalore Actually Makes Sense Right Now"
-      },
-      {
-        "type": "p",
-        "text": "Most investment assets give you one thing — returns, or safety, or tax benefits. Rarely all three at once. Farmland near Bangalore, particularly in the North Bangalore and NH44 corridors, happens to offer all three simultaneously — and that's what makes it genuinely interesting rather than just trendy."
-      },
-      {
-        "type": "p",
-        "text": "Let's break down why."
-      },
-      {
-        "type": "p",
-        "text": "Bangalore isn't slowing down. The city's growth is moving northward — toward Devanahalli, Doddaballapur, and the long stretch of NH44 running up toward Hyderabad. Agricultural land sitting in this path has been appreciating steadily for over a decade, driven by real economic activity: the airport at Devanahalli, KIADB industrial zones, new IT parks, and a highway that the government keeps investing in. These aren't speculative drivers — they're infrastructure you can see from the road."
-      },
-      {
-        "type": "p",
-        "text": "Then there's the tax angle, which most Bangalore investors don't fully appreciate until they sit down with their CA. Agricultural income in India is completely exempt from income tax under Section 10(1). If you're in the 30% tax bracket, that changes the effective return on your investment significantly. Add capital gains exemptions under Section 54B and the absence of wealth tax on agricultural land, and you're looking at a tax profile that no FD, mutual fund, or apartment can match."
-      },
-      {
-        "type": "p",
-        "text": "Finally, the managed farmland model means your land doesn't sit idle while you're in office. An established coconut or mango plantation generates produce income on an ongoing basis — handled entirely by a professional management team. You own the land and the trees. Someone else does the farming."
-      },
-      {
-        "type": "p",
-        "text": "Three forces. One asset. That's the core of the farmland near Bangalore investment thesis."
+        "text": "If you’ve been thinking along similar lines, this guide will help you understand everything—from returns and risks to locations and legal checks—without spending weeks researching.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "What Returns Should You Realistically Expect?"
+        "text": "Why Farmland Investment Near Bangalore Actually Makes Sense Right Now",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Let's be honest about this, because the space has its share of developers who love throwing big numbers around."
+        "text": "Most investment assets give you one thing — returns, or safety, or tax benefits. Rarely all three at once. Farmland near Bangalore, particularly in the North Bangalore and NH44 corridors, happens to offer all three simultaneously — and that's what makes it genuinely interesting rather than just trendy.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "No legitimate farmland project can guarantee specific returns. What you can reasonably expect, based on the economic fundamentals of this corridor, falls into three buckets."
-      },
-      {
-        "type": "h3",
-        "text": "Land Appreciation"
-      },
-      {
-        "type": "p",
-        "text": "Agricultural land in the Lepakshi–Devanahalli–NH44 belt has historically grown faster than fixed deposits and kept pace with — or exceeded — suburban residential real estate. The key word is historically, and past performance doesn't guarantee anything. But the underlying drivers are structural, not cyclical. Bangalore's northward expansion, airport growth, and industrial development aren't going to stop. Land within 100 kilometres of Kempegowda International Airport, adjacent to NH44, and situated in an active KIADB zone is sitting in the path of all three."
-      },
-      {
-        "type": "h3",
-        "text": "Income from the Plantation"
+        "text": "Let's break down why.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "A well-managed coconut plantation in Karnataka typically yields 80 to 100 coconuts per tree annually. Mango adds seasonal harvest income on top of that. At Ecovara, there are already 800+ mature trees across the 15-acre property — which means buyers start generating income from day one, not three years from now when saplings finally grow up."
-      },
-      {
-        "type": "h3",
-        "text": "The Right Time Horizon"
+        "text": "Bangalore isn't slowing down. The city's growth is moving northward — toward Devanahalli, Doddaballapur, and the long stretch of NH44 running up toward Hyderabad. Agricultural land sitting in this path has been appreciating steadily for over a decade, driven by real economic activity: the airport at Devanahalli, KIADB industrial zones, new IT parks, and a highway that the government keeps investing in. These aren't speculative drivers — they're infrastructure you can see from the road.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Think of farmland near Bangalore as a 7 to 15 year asset. Investors who bought in the Lepakshi and Devanahalli corridors between 2015 and 2018 have seen what that time horizon delivers when the infrastructure tailwinds are real. Those same tailwinds are stronger now than they were then."
+        "text": "Then there's the tax angle, which most Bangalore investors don't fully appreciate until they sit down with their CA. Agricultural income in India is completely exempt from income tax under Section 10(1). If you're in the 30% tax bracket, that changes the effective return on your investment significantly. Add capital gains exemptions under Section 54B and the absence of wealth tax on agricultural land, and you're looking at a tax profile that no FD, mutual fund, or apartment can match.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "Finally, the managed farmland model means your land doesn't sit idle while you're in office. An established coconut or mango plantation generates produce income on an ongoing basis — handled entirely by a professional management team. You own the land and the trees. Someone else does the farming.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "Three forces. One asset. That's the core of the farmland near Bangalore investment thesis.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "The 5 Corridors Worth Your Attention Near Bangalore"
+        "text": "What Returns Should You Realistically Expect?",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Geography matters enormously in farmland investment. Here are the areas where the fundamentals genuinely support buying, in order of current investment momentum."
+        "text": "Let's be honest about this, because the space has its share of developers who love throwing big numbers around.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "No legitimate farmland project can guarantee specific returns. What you can reasonably expect, based on the economic fundamentals of this corridor, falls into three buckets.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "1. Lepakshi — The Sweet Spot"
+        "text": "Land Appreciation",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For 2026, Lepakshi is the corridor we'd look at first. It's about 75 kilometres from the airport on NH44, which puts it close enough to Bangalore for a comfortable weekend drive but far enough to feel genuinely rural. The Lepakshi Temple — a Vijayanagara architectural gem that draws over two lakh visitors a year — adds a heritage premium that most farmland zones can't claim. Tourism, infrastructure, highway access, and history all converge here."
-      },
-      {
-        "type": "p",
-        "text": "Ecovara Farm Plots by Novara Nature Estates sits in this corridor. 15 acres, 800+ existing trees, clear titles, full amenities, and professional management. For investors looking for a verified, operational project in this zone, it's the obvious starting point."
+        "text": "<a href=\"https://www.novaranatureestates.com/projects\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Agricultural land in the Lepakshi</a>–Devanahalli–NH44 belt has historically grown faster than fixed deposits and kept pace with — or exceeded — suburban residential real estate. The key word is historically, and past performance doesn't guarantee anything. But the underlying drivers are structural, not cyclical. Bangalore's northward expansion, airport growth, and industrial development aren't going to stop. Land within 100 kilometres of Kempegowda International Airport, adjacent to NH44, and situated in an active KIADB zone is sitting in the path of all three.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "2. Devanahalli — Airport-Driven Growth"
+        "text": "Income from the Plantation",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Devanahalli isn't just where the airport is — it's where North Bangalore's commercial future is being built. Aerospace SEZ, KIADB industrial parks, IT campuses — the kind of development that drives sustained land demand over decades. Farmland here carries one of the clearest infrastructure-backed appreciation stories in Karnataka."
+        "text": "A well-managed coconut plantation in Karnataka typically yields 80 to 100 coconuts per tree annually. Mango adds seasonal harvest income on top of that. At Ecovara, there are already 800+ mature trees across the 15-acre property — which means buyers start generating income from day one, not three years from now when saplings finally grow up.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "3. The NH44 Belt — Infrastructure as Investment"
+        "text": "The Right Time Horizon",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The 100-kilometre highway corridor between Bangalore and Hindupuram is essentially a linear bet on government infrastructure spending. Every new logistics hub, warehouse cluster, or industrial zone along this route increases the economic weight of the surrounding land. Buying farmland along NH44 is buying into that momentum directly."
-      },
-      {
-        "type": "h3",
-        "text": "4. North Bangalore's Outer Ring"
-      },
-      {
-        "type": "p",
-        "text": "Doddaballapur, Bagepalli, Gudibande, Penukonda — these areas are further out and more affordable. For investors who want exposure to Bangalore's northward growth story but aren't ready to pay Lepakshi prices, this belt offers a longer-horizon play with genuine upside as urban boundaries expand."
-      },
-      {
-        "type": "h3",
-        "text": "5. Hindupuram"
-      },
-      {
-        "type": "p",
-        "text": "The regional hub for the Lepakshi belt. Hindupuram has the hospitals, markets, and civic infrastructure that make surrounding farmland liveable and attractive. Land here is slightly less expensive than Lepakshi proper, but it shares the same corridor momentum and connectivity advantages."
+        "text": "Think of farmland near Bangalore as a 7 to 15 year asset. Investors who bought in the Lepakshi and Devanahalli corridors between 2015 and 2018 have seen what that time horizon delivers when the infrastructure tailwinds are real. Those same tailwinds are stronger now than they were then.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Who Is This Investment Actually Right For?"
+        "text": "The 5 Corridors Worth Your Attention Near Bangalore",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Farmland investment near Bangalore isn't a one-size-fits-all proposition. Here's an honest look at the profiles where it genuinely makes sense."
+        "text": "Geography matters enormously in farmland investment. Here are the areas where the fundamentals genuinely support buying, in order of current investment momentum.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "IT Professionals and Senior Salaried Employees"
+        "text": "1. Lepakshi — The Sweet Spot",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "This is where the fit is strongest — and honestly, it's who most Ecovara buyers are. High income means high tax liability, which makes the agricultural income exemption materially valuable. A demanding work schedule means the managed farmland model is essential — you're not going to be travelling to Lepakshi every weekend to supervise a plantation. And after years of watching money move between screens, there's something deeply satisfying about owning land you can drive to and stand on."
+        "text": "For 2026, Lepakshi is the corridor we'd look at first. It's about 75 kilometres from the airport on NH44, which puts it close enough to Bangalore for a comfortable weekend drive but far enough to feel genuinely rural. The Lepakshi Temple — a Vijayanagara architectural gem that draws over two lakh visitors a year — adds a heritage premium that most farmland zones can't claim. Tourism, infrastructure, highway access, and history all converge here.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "If you're earning above ₹15 lakhs annually, the tax-adjusted return on farmland starts looking significantly better than the headline returns on comparable investments."
+        "text": "Ecovara Farm Plots by Novara Nature Estates sits in this corridor. 15 acres, 800+ existing trees, clear titles, full amenities, and professional management. For investors looking for a verified, operational project in this zone, it's the obvious starting point.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "NRIs Looking to Stay Connected to India"
+        "text": "2. Devanahalli — Airport-Driven Growth",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For NRIs, land ownership in India carries both financial logic and emotional weight. It's a hedge against currency exposure, a legacy asset for family back home, and a connection to something permanent. The regulatory framework under FEMA and RBI does require proper legal structuring for agricultural land — but the pathway exists and is navigable with the right guidance. "
+        "text": "Devanahalli isn't just where the airport is — it's where North Bangalore's commercial future is being built. Aerospace SEZ, KIADB industrial parks, IT campuses — the kind of development that drives sustained land demand over decades. Farmland here carries one of the clearest infrastructure-backed appreciation stories in Karnataka.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Pre-Retirees and Retirees"
+        "text": "3. The NH44 Belt — Infrastructure as Investment",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "If you're approaching retirement and thinking about where to put capital that you won't need to access quickly, managed farmland is worth a serious look. It generates tax-free income without demanding your attention. It doesn't have quarterly earnings calls. It won't lose 30% of its value in a market correction. And unlike most financial assets, it's something you can physically visit, use, and eventually pass on."
+        "text": "The 100-kilometre highway corridor between Bangalore and Hindupuram is essentially a linear bet on government infrastructure spending. Every new logistics hub, warehouse cluster, or industrial zone along this route increases the economic weight of the surrounding land. Buying farmland along NH44 is buying into that momentum directly.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Families Thinking Generationally"
+        "text": "4. North Bangalore's Outer Ring",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Land has been India's primary vehicle for passing wealth across generations for as long as anyone can remember. There's a reason for that. A plot at Ecovara today isn't just an investment — it's something your children will be able to walk on, point to, and understand. That tangibility matters in ways that a demat account statement never quite captures."
+        "text": "Doddaballapur, Bagepalli, Gudibande, Penukonda — these areas are further out and more affordable. For investors who want exposure to Bangalore's northward growth story but aren't ready to pay Lepakshi prices, this belt offers a longer-horizon play with genuine upside as urban boundaries expand.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Investors Who Are Already Over-Exposed Elsewhere"
+        "text": "5. Hindupuram",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "If your portfolio is heavy in equities or city real estate, farmland offers something genuinely different. Agricultural land has almost no correlation with stock market movements — it doesn't fall when the Sensex does. It's also a reliable long-term inflation hedge, with land prices in urban growth corridors historically tracking or exceeding inflation over meaningful time periods."
+        "text": "The regional hub for the Lepakshi belt. Hindupuram has the hospitals, markets, and civic infrastructure that make surrounding farmland liveable and attractive. Land here is slightly less expensive than Lepakshi proper, but it shares the same corridor momentum and connectivity advantages.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "The Tax Picture — Explained Simply"
+        "text": "Who Is This Investment Actually Right For?",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Tax efficiency is the most underappreciated aspect of farmland investment near Bangalore. Most investors discover it after they've already decided to buy — and it ends up being a bonus rather than a reason. It should probably be higher up the list."
+        "text": "Farmland investment near Bangalore isn't a one-size-fits-all proposition. Here's an honest look at the profiles where it genuinely makes sense.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h3",
+        "text": "IT Professionals and Senior Salaried Employees",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Here's what the law actually says, in plain language."
+        "text": "This is where the fit is strongest — and honestly, it's who most Ecovara buyers are. High income means high tax liability, which makes the agricultural income exemption materially valuable. A demanding work schedule means the managed farmland model is essential — you're not going to be travelling to Lepakshi every weekend to supervise a plantation. And after years of watching money move between screens, there's something deeply satisfying about owning land you can drive to and stand on.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "text": "Your farming income is tax-free. ",
-            "bold": true
-          },
-          {
-            "text": "Section 10(1) of the Income Tax Act exempts agricultural income from income tax entirely. Coconut proceeds, mango harvests, any income from farming activities on your land — none of it is taxable. For a 30% bracket professional, ₹1 lakh of farm income stays ₹1 lakh. The same amount earned through salary becomes ₹70,000."
-          }
-        ]
+        "type": "p",
+        "text": "If you're earning above ₹15 lakhs annually, the tax-adjusted return on farmland starts looking significantly better than the headline returns on comparable investments.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "text": "Selling and reinvesting is efficient. ",
-            "bold": true
-          },
-          {
-            "text": "Under Section 54B, if you sell agricultural land and reinvest those proceeds in other agricultural land within two years, your capital gains are exempt. This makes farmland a useful vehicle for moving wealth without triggering a large tax event."
-          }
-        ]
+        "type": "h3",
+        "text": "NRIs Looking to Stay Connected to India",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "text": "No wealth tax liability. ",
-            "bold": true
-          },
-          {
-            "text": "Agricultural land doesn't count as a taxable asset under the Wealth Tax Act — regardless of its market value. It won't increase your wealth tax exposure as it appreciates."
-          }
-        ]
+        "type": "p",
+        "text": "For NRIs, land ownership in India carries both financial logic and emotional weight. It's a hedge against currency exposure, a legacy asset for family back home, and a connection to something permanent. The regulatory framework under FEMA and RBI does require proper legal structuring for agricultural land — but the pathway exists and is navigable with the right guidance.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "text": "Lower transaction costs. ",
-            "bold": true
-          },
-          {
-            "text": "Stamp duty on agricultural land in Karnataka is generally lower than on residential or commercial property, which reduces the cost of entry."
-          }
-        ]
+        "type": "h3",
+        "text": "Pre-Retirees and Retirees",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "text": "One important note: ",
-            "bold": true
-          },
-          {
-            "text": "how these provisions apply to your specific situation depends on your income, how you hold the asset, and other factors. Your CA should be the final word on this, not a blog post. Consider this a starting point for that conversation."
-          }
+        "type": "p",
+        "text": "If you're approaching retirement and thinking about where to put capital that you won't need to access quickly, managed farmland is worth a serious look. It generates tax-free income without demanding your attention. It doesn't have quarterly earnings calls. It won't lose 30% of its value in a market correction. And unlike most financial assets, it's something you can physically visit, use, and eventually pass on.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h3",
+        "text": "Families Thinking Generationally",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "Land has been India's primary vehicle for passing wealth across generations for as long as anyone can remember. There's a reason for that. A plot at Ecovara today isn't just an investment — it's something your children will be able to walk on, point to, and understand. That tangibility matters in ways that a demat account statement never quite captures.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h3",
+        "text": "Investors Who Are Already Over-Exposed Elsewhere",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "If your portfolio is heavy in equities or city real estate, farmland offers something genuinely different. Agricultural land has almost no correlation with stock market movements — it doesn't fall when the Sensex does. It's also a reliable long-term inflation hedge, with land prices in urban growth corridors historically tracking or exceeding inflation over meaningful time periods.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "The Tax Picture — Explained Simply",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "Tax efficiency is the most underappreciated aspect of farmland investment near Bangalore. Most investors discover it after they've already decided to buy — and it ends up being a bonus rather than a reason. It should probably be higher up the list.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "Here's what the law actually says, in plain language.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<strong>Your farming income is tax-free. </strong>Section 10(1) of the Income Tax Act exempts agricultural income from income tax entirely. Coconut proceeds, mango harvests, any income from farming activities on your land — none of it is taxable. For a 30% bracket professional, ₹1 lakh of farm income stays ₹1 lakh. The same amount earned through salary becomes ₹70,000.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<strong>Selling and reinvesting is efficient. </strong>Under Section 54B, if you sell agricultural land and reinvest those proceeds in other agricultural land within two years, your capital gains are exempt. This makes farmland a useful vehicle for moving wealth without triggering a large tax event.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<strong>No wealth tax liability. </strong>Agricultural land doesn't count as a taxable asset under the Wealth Tax Act — regardless of its market value. It won't increase your wealth tax exposure as it appreciates.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<strong>Lower transaction costs. </strong>Stamp duty on agricultural land in Karnataka is generally lower than on residential or commercial property, which reduces the cost of entry.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<strong>One important note: </strong>how these provisions apply to your specific situation depends on your income, how you hold the asset, and other factors. Your CA should be the final word on this, not a blog post. Consider this a starting point for that conversation.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "How to Separate Good Farmland Projects from Bad Ones",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "The managed farmland space near Bangalore has grown quickly over the last few years, and quality varies enormously. Before you write any cheques, here's what you should be doing.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<strong>Get an independent title opinion. </strong>The developer's legal team is not your legal team. Hire your own lawyer and ask for a title search going back at least 30 years. What you're looking for is clean, unbroken ownership with no disputes, no mortgages, and a clear encumbrance certificate. This is non-negotiable regardless of how professional the developer seems.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<strong>Visit before you commit to anything. </strong>This sounds obvious but it gets skipped more often than you'd think. Walk the actual land. Check whether the roads, water supply, and security are operational — not promised. See the plantation. If a developer pushes back on you visiting before payment, that's your answer.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<strong>Understand exactly what management means. </strong>'Managed farmland' means very different things depending on who's saying it. Ask specifically: What does your team do on the property each month? How do you communicate with owners? Can I visit unannounced? What happens if I want to sell? The answers tell you whether you're buying into a real operation or a marketing concept.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<strong>Talk to existing buyers. </strong>Any developer worth dealing with will connect you with people who've already bought. A phone call with one or two existing plot owners will tell you more than an hour of reading brochures.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "How Farmland Compares to What You're Already Invested In",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "Most Bangalore investors are comparing farmland against something they already own or are considering. Here's the honest version of those comparisons.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<strong>Against an apartment: </strong>A flat gives you better liquidity — you can sell it faster. But it comes with maintenance charges, sinking fund contributions, builder risk, committee disputes, and interiors that depreciate the moment you move in. A managed farmland plot has lower liquidity but zero ongoing maintenance cost, tax-free income, and land that appreciates as a finite resource.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<strong>Against gold: </strong> Gold is familiar and genuinely liquid, which makes it useful for a certain role in a portfolio. But it just sits there. It generates nothing. Farmland generates income, serves an economic purpose, and appreciates based on real demand — not global commodity sentiment.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<strong>Against equities: </strong>Stocks can outperform over long periods, but they require monitoring and carry volatility that can be genuinely stressful. Farmland doesn't move with the market. It appreciates slowly and predictably. For someone who already has significant equity exposure, farmland offers the diversification that another stock or fund simply can't.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<strong>Against a second home: </strong>A second home costs money every month — maintenance, property tax, security, and often a loan. It typically generates nothing while you're not using it. A managed farmland plot generates income while you're in office, costs you nothing to maintain, and goes up in value as land rather than depreciating like a built structure.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Why Ecovara Is the Project Most Serious Investors Look at First",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "When Bangalore investors get serious about farmland, Ecovara by Novara Nature Estates tends to be the benchmark they're measuring other projects against.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "The location is strong — NH44, near Lepakshi Temple, 75 kilometres from the airport. The plantation is already established — 800+ coconut and mango trees across 15 acres, which means your investment is productive from the first day. Titles are legally verified and clear. The layout is thoughtfully planned with 80% open green space, a European-inspired design that feels genuinely different from most farmland projects in this region.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "Practically speaking: there's a clubhouse, a swimming pool, a cafeteria, a jogging track, organic farming plots where you can grow your own produce, and 24/7 gated security. A lotus pond, campfire area, and rain dance space for the weekends when you want to bring the family and actually enjoy the place. Plot sizes run from 6,000 to 10,000 square feet.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "This isn't a project under construction with a projected completion date. It's a functioning farm you can visit this weekend.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "FAQs",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "ol",
+        "text": [
+          "<span style=\"font-weight: bold;\">Is farmland near Bangalore a good investment in 2026?</span><br>For someone with a 7 to 15 year investment horizon, the fundamentals are strong. Airport expansion, NH44 infrastructure, and Bangalore's northward growth are structural drivers — not cyclical ones. If you're looking for short-term liquidity, farmland isn't the right tool. If you're building long-term wealth, it deserves serious consideration.",
+          "<span style=\"font-weight: bold;\">What's the minimum investment to get started?</span><br>It depends on the project and location. At Ecovara, plots start from 6,000 square feet. Get in touch with the Novara team for current pricing — it changes based on availability.",
+          "<span style=\"font-weight: bold;\">Do I need farming experience or local contacts?</span><br>No. That's specifically what the managed farmland model removes from the equation. You own the land. Novara's team handles everything on the ground.",
+          "<span style=\"font-weight: bold;\">How liquid is farmland if I need to sell?</span><br>Less liquid than stocks or gold — expect a sale process of a few months rather than a few days. This is the main trade-off. Don't invest capital you might need in a hurry. For the right time horizon, the illiquidity is actually useful — it keeps you from making emotional decisions during market volatility.",
+          "<span style=\"font-weight: bold;\">What's the actual first step?</span><br>Visit the site. Seriously. You can read all the guides you want, but standing on 15 acres of plantation land near Lepakshi at sunrise is a different kind of convincing. Novara offers free site visits — no pressure, no obligation.",
+          "<span style=\"font-weight: bold;\">What documents do I get on purchase?</span><br><span style=\"font-weight: normal;\">The full set: title deed, encumbrance certificate, RTC, khata, and sale deed registered in your name at the Sub-Registrar's office. The Novara team handles the entire registration process with you.</span>"
         ]
       },
       {
         "type": "h2",
-        "text": "How to Separate Good Farmland Projects from Bad Ones"
+        "text": "Conclusion",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The managed farmland space near Bangalore has grown quickly over the last few years, and quality varies enormously. Before you write any cheques, here's what you should be doing."
-      },
-      {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "text": "Get an independent title opinion. ",
-            "bold": true
-          },
-          {
-            "text": "The developer's legal team is not your legal team. Hire your own lawyer and ask for a title search going back at least 30 years. What you're looking for is clean, unbroken ownership with no disputes, no mortgages, and a clear encumbrance certificate. This is non-negotiable regardless of how professional the developer seems."
-          }
-        ]
-      },
-      {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "text": "Visit before you commit to anything. ",
-            "bold": true
-          },
-          {
-            "text": "This sounds obvious but it gets skipped more often than you'd think. Walk the actual land. Check whether the roads, water supply, and security are operational — not promised. See the plantation. If a developer pushes back on you visiting before payment, that's your answer."
-          }
-        ]
-      },
-      {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "text": "Understand exactly what management means. ",
-            "bold": true
-          },
-          {
-            "text": "'Managed farmland' means very different things depending on who's saying it. Ask specifically: What does your team do on the property each month? How do you communicate with owners? Can I visit unannounced? What happens if I want to sell? The answers tell you whether you're buying into a real operation or a marketing concept."
-          }
-        ]
-      },
-      {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "text": "Talk to existing buyers. ",
-            "bold": true
-          },
-          {
-            "text": "Any developer worth dealing with will connect you with people who've already bought. A phone call with one or two existing plot owners will tell you more than an hour of reading brochures."
-          }
-        ]
-      },
-      {
-        "type": "h2",
-        "text": "How Farmland Compares to What You're Already Invested In"
+        "text": "In five years of working with Bangalore investors, we've seen a lot of people sit on the fence about farmland — waiting for a better time, a lower price, more certainty. Some of them came back a year or two later ready to buy. The land they'd been looking at had gone up. It always does.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Most Bangalore investors are comparing farmland against something they already own or are considering. Here's the honest version of those comparisons."
-      },
-      {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "text": "Against an apartment: ",
-            "bold": true
-          },
-          {
-            "text": "A flat gives you better liquidity — you can sell it faster. But it comes with maintenance charges, sinking fund contributions, builder risk, committee disputes, and interiors that depreciate the moment you move in. A managed farmland plot has lower liquidity but zero ongoing maintenance cost, tax-free income, and land that appreciates as a finite resource."
-          }
-        ]
-      },
-      {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "text": "Against gold: ",
-            "bold": true
-          },
-          {
-            "text": " Gold is familiar and genuinely liquid, which makes it useful for a certain role in a portfolio. But it just sits there. It generates nothing. Farmland generates income, serves an economic purpose, and appreciates based on real demand — not global commodity sentiment."
-          }
-        ]
-      },
-      {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "text": "Against equities: ",
-            "bold": true
-          },
-          {
-            "text": "Stocks can outperform over long periods, but they require monitoring and carry volatility that can be genuinely stressful. Farmland doesn't move with the market. It appreciates slowly and predictably. For someone who already has significant equity exposure, farmland offers the diversification that another stock or fund simply can't."
-          }
-        ]
-      },
-      {
-        "type": "p_with_bold",
-        "parts": [
-          {
-            "text": "Against a second home: ",
-            "bold": true
-          },
-          {
-            "text": "A second home costs money every month — maintenance, property tax, security, and often a loan. It typically generates nothing while you're not using it. A managed farmland plot generates income while you're in office, costs you nothing to maintain, and goes up in value as land rather than depreciating like a built structure."
-          }
-        ]
-      },
-      {
-        "type": "h2",
-        "text": "Why Ecovara Is the Project Most Serious Investors Look at First"
-      },
-      {
-        "type": "p_with_link",
-        "textBefore": "When Bangalore investors get serious about farmland,",
-        "linkText": "Ecovara by Novara Nature Estates",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": "tends to be the benchmark they're measuring other projects against."
+        "text": "The investors who moved — the Vikrams who drove to Lepakshi on a Saturday and drove back with a plot — they don't regret it. Not one of them. They have land that grows trees, generates income, and will outlast any portfolio statement. Some of them visit on weekends with their kids. Some of them just know it's there.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The location is strong — NH44, near Lepakshi Temple, 75 kilometres from the airport. The plantation is already established — 800+ coconut and mango trees across 15 acres, which means your investment is productive from the first day. Titles are legally verified and clear. The layout is thoughtfully planned with 80% open green space, a European-inspired design that feels genuinely different from most farmland projects in this region."
+        "text": "That knowledge — that somewhere outside the city there's a piece of earth with your name on it — turns out to be worth more than most of them expected.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Practically speaking: there's a clubhouse, a swimming pool, a cafeteria, a jogging track, organic farming plots where you can grow your own produce, and 24/7 gated security. A lotus pond, campfire area, and rain dance space for the weekends when you want to bring the family and actually enjoy the place. Plot sizes run from 6,000 to 10,000 square feet."
+        "text": "<span style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\"><a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\">Schedule your free site visit</a></span><a href=\"https://www.novaranatureestates.com/contactus\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\"> </a> <strong>to Ecovara </strong>→ Or call us directly<a href=\"+tel: :+91-8660200662\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">:+91-8660200662</a>",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "This isn't a project under construction with a projected completion date. It's a functioning farm you can visit this weekend."
-      },
-      {
-        "type": "h2",
-        "text": "FAQs"
-      },
-      {
-        "type": "h3",
-        "text": "1.Is farmland near Bangalore a good investment in 2026?"
-      },
-      {
-        "type": "p",
-        "text": " For someone with a 7 to 15 year investment horizon, the fundamentals are strong. Airport expansion, NH44 infrastructure, and Bangalore's northward growth are structural drivers — not cyclical ones. If you're looking for short-term liquidity, farmland isn't the right tool. If you're building long-term wealth, it deserves serious consideration."
-      },
-      {
-        "type": "h3",
-        "text": "2.What's the minimum investment to get started?"
-      },
-      {
-        "type": "p",
-        "text": " It depends on the project and location. At Ecovara, plots start from 6,000 square feet. Get in touch with the Novara team for current pricing — it changes based on availability."
-      },
-      {
-        "type": "h3",
-        "text": "3.Do I need farming experience or local contacts?"
-      },
-      {
-        "type": "p",
-        "text": "No. That's specifically what the managed farmland model removes from the equation. You own the land. Novara's team handles everything on the ground."
-      },
-      {
-        "type": "h3",
-        "text": "4.How liquid is farmland if I need to sell?"
-      },
-      {
-        "type": "p",
-        "text": "Less liquid than stocks or gold — expect a sale process of a few months rather than a few days. This is the main trade-off. Don't invest capital you might need in a hurry. For the right time horizon, the illiquidity is actually useful — it keeps you from making emotional decisions during market volatility."
-      },
-      {
-        "type": "h3",
-        "text": "5.What's the actual first step? "
-      },
-      {
-        "type": "p",
-        "text": "Visit the site. Seriously. You can read all the guides you want, but standing on 15 acres of plantation land near Lepakshi at sunrise is a different kind of convincing. Novara offers free site visits — no pressure, no obligation."
-      },
-      {
-        "type": "h3",
-        "text": "6.What documents do I get on purchase?"
-      },
-      {
-        "type": "p",
-        "text": "The full set: title deed, encumbrance certificate, RTC, khata, and sale deed registered in your name at the Sub-Registrar's office. The Novara team handles the entire registration process with you."
-      },
-      {
-        "type": "h2",
-        "text": "Conclusion"
-      },
-      {
-        "type": "p",
-        "text": "In five years of working with Bangalore investors, we've seen a lot of people sit on the fence about farmland — waiting for a better time, a lower price, more certainty. Some of them came back a year or two later ready to buy. The land they'd been looking at had gone up. It always does."
-      },
-      {
-        "type": "p",
-        "text": "The investors who moved — the Vikrams who drove to Lepakshi on a Saturday and drove back with a plot — they don't regret it. Not one of them. They have land that grows trees, generates income, and will outlast any portfolio statement. Some of them visit on weekends with their kids. Some of them just know it's there."
-      },
-      {
-        "type": "p",
-        "text": "That knowledge — that somewhere outside the city there's a piece of earth with your name on it — turns out to be worth more than most of them expected."
-      },
-      {
-        "type": "p_with_link_bold",
-        "linkText": "Schedule your free site visit ",
-        "href": "https://www.novaranatureestates.com/contactus",
-        "partsAfter": [
-          {
-            "text": "to Ecovara ",
-            "bold": true
-          },
-          {
-            "text": "→ Or call us directly:"
-          },
-          {
-            "text": "+91-8660200662",
-            "bold": true
-          }
-        ]
-      },
-      {
-        "type": "p",
-        "text": "Disclaimer: This guide is for informational purposes only and does not constitute financial or legal advice. Land investment carries risk and returns are not guaranteed. Tax benefits are based on current Indian income tax provisions — please consult your Chartered Accountant for advice specific to your situation."
+        "text": "Disclaimer: This guide is for informational purposes only and does not constitute financial or legal advice. Land investment carries risk and returns are not guaranteed. Tax benefits are based on current Indian income tax provisions — please consult your Chartered Accountant for advice specific to your situation.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       }
-    ]
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Is farmland near Bangalore a good investment in 2026?",
+              "text": "For someone with a 7 to 15 year investment horizon, the fundamentals are strong. Airport expansion, NH44 infrastructure, and Bangalore's northward growth are structural drivers — not cyclical ones. If you're looking for short-term liquidity, farmland isn't the right tool. If you're building long-term wealth, it deserves serious consideration."
+            },
+            {
+              "name": "What's the minimum investment to get started?",
+              "text": "It depends on the project and location. At Ecovara, plots start from 6,000 square feet. Get in touch with the Novara team for current pricing — it changes based on availability."
+            },
+            {
+              "name": "Do I need farming experience or local contacts?",
+              "text": "No. That's specifically what the managed farmland model removes from the equation. You own the land. Novara's team handles everything on the ground."
+            },
+            {
+              "name": "How liquid is farmland if I need to sell?",
+              "text": "Less liquid than stocks or gold — expect a sale process of a few months rather than a few days. This is the main trade-off. Don't invest capital you might need in a hurry. For the right time horizon, the illiquidity is actually useful — it keeps you from making emotional decisions during market volatility."
+            },
+            {
+              "name": "What's the actual first step?",
+              "text": "Visit the site. Seriously. You can read all the guides you want, but standing on 15 acres of plantation land near Lepakshi at sunrise is a different kind of convincing. Novara offers free site visits — no pressure, no obligation."
+            },
+            {
+              "name": "What documents do I get on purchase?",
+              "text": "The full set: title deed, encumbrance certificate, RTC, khata, and sale deed registered in your name at the Sub-Registrar's office. The Novara team handles the entire registration process with you."
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novaranatureestates.com/blogs/farmland-investment-near-bangalore-guide"
+          },
+          "headline": "Farmland Investment Near Bangalore — The Complete Guide 2026",
+          "image": "https://www.novaranatureestates.com/images/blog_11.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "url": "https://www.novaranatureestates.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/images/logo.svg"
+            }
+          },
+          "datePublished": "2026-03-21T18:30:39+05:30",
+          "dateModified": "2026-03-21T18:30:39+05:30"
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blogs",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Farmland Investment Near Bangalore — The Complete Guide 2026",
+              "item": "https://www.novaranatureestates.com/blogs/farmland-investment-near-bangalore-guide"
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Farmland Investment Near Bangalore — The Complete Guide 2026",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "987",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
   },
   {
     "id": 12,
