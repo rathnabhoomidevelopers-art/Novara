@@ -3042,157 +3042,188 @@ export const BLOGS = [
       {
         "type": "p",
         "text": "The airport question comes up in every conversation with a serious farmland investor near Bangalore.\n\nNot \"should I buy near the airport?”. That part feels obvious. People are actually asking if the airport story is already fully priced in. Are they paying a premium for appreciation that has already happened?. Is there still a genuine opportunity within the airport influence zone?",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "These are the questions.. They have specific answers. Depending on which part of the airport corridor you are evaluating and what your investment timeline looks like.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "The Core Question. Is Airport Proximity an Advantage?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The short answer is yes. The useful answer explains why. And why the location of your plot within the airport corridor matters as much as the proximity itself.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Kempegowda International Airport has been generating activity and land appreciation along the NH44 corridor since 2008. The appreciation wave has moved outward from the airport. From Devanahalli to the mid-corridor to the 50 to 75 kilometre zone.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "For an investor evaluating farm plots near Bangalore airport the question is not whether airport proximity creates value. It clearly does. The question is where within the airport corridor the best remaining opportunity sits.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "What Farm Plots Near Bangalore Airport Actually Look Like",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Agricultural land within the Kempegowda International Airport influence zone covers a range of locations. From the immediate Devanahalli area to the broader NH44 corridor extending 75 to 100 kilometres from the airport.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The character of farmland investment changes significantly depending on where within this zone you're looking.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong>Immediate Airport Zone - 0 To 20 Kilometres</strong>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Farm plots in this zone sit within or adjacent to commercial and industrial development. The investment case here is appreciation driven by established infrastructure demand.. Entry prices already reflect a significant portion of the airport premium.\n\nThe farm experience in this zone is increasingly compromised by surrounding development.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong>Mid-Corridor -  20 To 50 Kilometres</strong>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Farm plots in this range offer entry prices than the immediate airport zone with meaningful infrastructure development visible along the corridor.\n\nFor investors who want established infrastructure alongside some remaining appreciation potential the mid-corridor offers a balance.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong>Outer Corridor -  50 To 75 Kilometres</strong>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "This is where the strongest value proposition currently sits for investors with a 7 to 15 year horizon.\n\nFarm plots in this zone. The Lepakshi belt on NH44. Are within the documented airport influence zone but at earlier stage pricing.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The structural drivers that produced appreciation in zones are actively operating here. Airport expansion, NH44 infrastructure investment, northward Bangalore growth.\n\nThis is the zone where Ecovara Farm Plots by Novara Nature Estates is positioned.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Why Farm Plots Specifically. Not Raw Land",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "There is a difference between purchasing a farm plot within a managed farmland project and purchasing raw agricultural land near the airport corridor.\n\nA farm plot within a managed project like Ecovara gives you something that raw land cannot: a functioning asset from day one",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "The Income Dimension",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "A farm plot within a managed project generates income from the existing plantation throughout your holding period.\n\nThis income is tax-free under Section 10(1) of the Income Tax Act.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "The Management Dimension",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Owning agricultural land requires either regular personal visits to oversee farming activity, a trusted local contact to manage the land or accepting that the land sits unmanaged and unproductive.\n\nA managed farm plot eliminates this entirely.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "What the Investment Numbers Look Like",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Any specific return projection from any developer should be viewed with scepticism.\n\nThe appreciation is best captured over 7 to 15 years.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "The Checklist Before Buying Farm Plots Near Bangalore Airport",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong>Location precision - </strong> Confirm the distance in kilometres from Kempegowda International Airport and the specific route.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong>Land classification -</strong>  Confirm the plot is classified as agricultural in the RTC records.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong>KIADB notification status - </strong> For plots within 30 kilometres of the airport verify with your lawyer whether the specific survey number falls within or adjacent to a KIADB-notified industrial zone.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong> Title verification -</strong>  Engage your independent lawyer. Not the developers. To conduct a 30-year title search verify the encumbrance certificate check the RTC for ownership and land classification and confirm mutation records are current.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "For investors who have been evaluating farm plots near Bangalore airport and want to see a project that has addressed every item on the checklist above. Ecovara by Novara Nature Estates is the starting point.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Ecovara Farm Plots     in the Airport Corridor Worth Visiting",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "ul",
@@ -3207,87 +3238,104 @@ export const BLOGS = [
       {
         "type": "p",
         "text": "Plot sizes start at 6,000 feet. You can also find plots that're 8,000 and 10,000 square feet.\nCheck out Ecovara farm plots to see what plots are available and learn more about the project.\nSchedule a free visit to the site and see the airport corridor for yourself.\nWhen you drive from Bangalore to Ecovara on NH44 you get an idea of what the corridor looks like what the farm is and if its a good investment for you",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
         "text": "Frequently Asked Questions About Farm Plots Near Bangalore Airport",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Are farm plots near Bangalore airport a good buy?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "In the area around the airport. 0 To 20 kilometres. Prices have already gone up.\n\nIn the area. 50 To 75 kilometres along NH44. Prices are still low.\n\nFor investors who can wait 7 to 15 years the outer area offers the value.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "What is the smallest plot size available near Bangalore airport?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "At Ecovara plots start at 6,000 feet.\n\nCall the Novara team for prices. +91-8660200662.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Do farm plots near the airport make money?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Yes. If there are already trees planted.\n\nAt Ecovara there are over 800 trees that make money from day one.\n\nRaw land near the airport doesn't make money unless you farm it or rent it to a farmer.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Is a managed farm plot better than buying land near the airport?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "For investors in Bangalore who don't know farming yes.\n\nA managed farm plot is a working asset with ownership existing income and professional management from day one.\n\nRaw land requires you to handle all those things yourself.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "How do I verify that a farm plot near the airport has ownership?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Hire a lawyer who's n't with the developer.\n\nCheck the ownership papers, certificates and records independently.\n\nAny developer who doesn't let you do this is one to avoid.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
         "text": "Can I visit Ecovara before deciding?",
-        "fontWeight": "font-bold"
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "Yes.. This is recommended.\n\nSchedule a visit through the Novara contact page.\n\nThe visit is free no strings attached and most investors find that walking the land answers questions that no guide can.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<strong>The Airport Corridor Explained</strong>",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "The airport question has an answer.\n\nAirports bring activity.\n\nEconomic activity brings demand for land.\n\nDemand for land brings appreciation in value.\n\nThis has been happening on the NH44 corridor since 2008. Is still happening.\n\nThe question for investors is not if they should be in the airport corridor.\n\nIt's where in the corridor to invest.. At what stage of appreciation.\n\nThe outer NH44 corridor at 75 kilometres from the airport is where appreciation is happening in 2026.\n\nThat's where Ecovara is.\n\nThat's why smart investors are looking here.",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
         "text": "<a href=\"https://novaranatureestates.com/contactus\" style=\"color:#E3A600\">Schedule your free site visit</a>  to Ecovara +91-8660200662",
-        "fontWeight": "font-normal"
+        "fontWeight": "font-normal",
+        "align": "justify"
       }
     ],
     "schemas": {
