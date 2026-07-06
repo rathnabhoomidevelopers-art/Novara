@@ -12047,7 +12047,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Within a few weeks, Vikram visited a couple of projects along the Bangalore–Hyderabad NH44 corridor and eventually chose a managed farmland plot near Lepakshi. The experience surprised him.",
+        "text": "Within a few weeks, Vikram visited a couple of projects along the Bangalore–Hyderabad NH44 corridor and eventually chose a <a href=\"https://www.novaranatureestates.com/blogs/farm-plots-near-lepakshi\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">managed farmland plot near Lepakshi</a>. The experience surprised him.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -12071,7 +12071,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Most investment assets give you one thing — returns, or safety, or tax benefits. Rarely all three at once. Farmland near Bangalore, particularly in the North Bangalore and NH44 corridors, happens to offer all three simultaneously — and that's what makes it genuinely interesting rather than just trendy.",
+        "text": "Most investment assets give you one thing — returns, or safety, or tax benefits. Rarely all three at once. <a href=\"https://www.novaranatureestates.com/blogs/farmland-near-bangalore-farm-visit-checklist\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Farmland near Bangalore</a>, particularly in the North Bangalore and NH44 corridors, happens to offer all three simultaneously — and that's what makes it genuinely interesting rather than just trendy.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
