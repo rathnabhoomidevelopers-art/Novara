@@ -3325,17 +3325,17 @@ export const BLOGS = [
         "json": ""
       },
       "blog": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": ""
+            "@id": "https://www.novaranatureestates.com/blogs/farm-plots-near-bangalore-airport"
           },
-          "headline": "",
-          "image": "",
+          "headline": "Farm Plots Near Bangalore Airport — The Investment Case Examined Honestly",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1777098210/cay2ur9d7baee04tx5ea.webp",
           "author": {
             "@type": "Organization",
             "name": "Novara Nature Estates",
@@ -3349,19 +3349,27 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/images/logo.svg"
             }
           },
-          "datePublished": "",
-          "dateModified": ""
+          "datePublished": "2026-04-24T18:30:00.000Z",
+          "dateModified": "2026-04-24T18:30:00.000Z"
         },
         "json": ""
       },
       "breadcrumb": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "items": [
             {
-              "name": "",
-              "item": ""
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blog",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Farm Plots Near Bangalore Airport — The Investment Case Examined Honestly",
+              "item": "https://www.novaranatureestates.com/blogs/farm-plots-near-bangalore-airport"
             }
           ]
         },
