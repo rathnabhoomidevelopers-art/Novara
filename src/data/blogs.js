@@ -10910,6 +10910,11 @@ export const BLOGS = [
     "image": "/images/blog_9.webp",
     "heroImage": "/images/blog_9.webp",
     "coverImage": "/images/blog_9.webp",
+    "imageAlt": "Farm Plots Near Lepakshi | Investment Guide for Buyers",
+    "imageTitle": "",
+    "imageCaption": "",
+    "imageDescription": "",
+    "videoUrl": "",
     "tags": [
       "Sustainable Farming",
       "Eco Farmland",
@@ -10918,244 +10923,495 @@ export const BLOGS = [
     ],
     "sections": [
       {
-        "type": "h2",
-        "text": "Introduction"
+        "type": "p",
+        "text": "<span style=\"text-align: justify;\">Farm plots near Lepakshi are becoming increasingly popular among investors from Bangalore who are looking for agricultural land ownership combined with long-term investment potential. Located along the Bangalore–Hyderabad National Highway (NH44), Lepakshi offers a unique opportunity for buyers to own farmland in a peaceful natural setting while staying connected to a major metropolitan city.</span>",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Farm plots near Lepakshi are becoming increasingly popular among investors from Bangalore who are looking for agricultural land ownership combined with long-term investment potential. Located along the Bangalore–Hyderabad National Highway (NH44), Lepakshi offers a unique opportunity for buyers to own farmland in a peaceful natural setting while staying connected to a major metropolitan city."
-      },
-      {
-        "type": "p_with_link",
-        "textBefore": "With rising interest in sustainable investments and weekend retreats, many urban professionals are exploring ",
-        "linkText": "farm plots near Lepakshi",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": " as an alternative to traditional real estate assets. The region offers open landscapes, improving infrastructure, and the potential for plantation-based"
+        "text": "With rising interest in sustainable investments and weekend retreats, many urban professionals are exploring  <a href=\"https://www.novaranatureestates.com/projects\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">farm plots near Lepakshi</a>  as an alternative to traditional real estate assets. The region offers open landscapes, improving infrastructure, and the potential for plantation-based",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For buyers who want to diversify their investments or enjoy a countryside lifestyle, farm plots near Lepakshi provide an attractive opportunity. In this guide, we will explore the advantages of buying farm plots in Lepakshi, key factors to consider before investing, and how managed farmland projects simplify the ownership experience."
+        "text": "For buyers who want to diversify their investments or enjoy a countryside lifestyle, farm plots near Lepakshi provide an attractive opportunity. In this guide, we will explore the advantages of buying farm plots in Lepakshi, key factors to consider before investing, and how managed farmland projects simplify the ownership experience.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Why Farm Plots Near Lepakshi Are Attracting Investors"
+        "text": "Why Farm Plots Near Lepakshi Are Attracting Investors",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Over the past few years, farmland ownership has gained popularity among urban investors who are seeking stable assets and greener lifestyles. Lepakshi has emerged as one of the preferred locations for farm plots due to its strategic location and peaceful environment."
+        "text": "Over the past few years, farmland ownership has gained popularity among urban investors who are seeking stable assets and greener lifestyles. Lepakshi has emerged as one of the preferred locations for farm plots due to its strategic location and peaceful environment.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "One of the main reasons behind the growing interest is the region’s accessibility from Bangalore. Investors can travel to Lepakshi conveniently through NH44, making it feasible to visit farmland regularly."
+        "text": "One of the main reasons behind the growing interest is the region’s accessibility from Bangalore. Investors can travel to Lepakshi conveniently through NH44, making it feasible to visit farmland regularly.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Another important factor is affordability. Compared to many locations closer to Bangalore, farm plots near Lepakshi often provide better value for buyers who want larger land parcels and agricultural potential."
+        "text": "Another important factor is affordability. Compared to many locations closer to Bangalore, farm plots near Lepakshi often provide better value for buyers who want larger land parcels and agricultural potential.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Strategic Location and Connectivity"
+        "text": "Strategic Location and Connectivity",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Location plays a major role when choosing farmland. Lepakshi benefits from excellent connectivity through the Bangalore–Hyderabad highway, which connects the region to several important cities."
+        "text": "Location plays a major role when choosing farmland. Lepakshi benefits from excellent connectivity through the Bangalore–Hyderabad highway, which connects the region to several important cities.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Access from Bangalore"
+        "text": "Access from Bangalore",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Many investors prefer farmland that is within comfortable driving distance from Bangalore. Lepakshi’s location allows buyers to reach their farmland within a few hours, making it suitable for weekend visits and agricultural activities."
+        "text": "Many investors prefer farmland that is within comfortable driving distance from Bangalore. Lepakshi’s location allows buyers to reach their farmland within a few hours, making it suitable for weekend visits and agricultural activities.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Connectivity Through NH44"
+        "text": "Connectivity Through NH44",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "NH44 is one of the most important highways in South India. Its connectivity improves accessibility to Lepakshi and enhances the long-term investment potential of farmland in the region."
+        "text": "NH44 is one of the most important highways in South India. Its connectivity improves accessibility to Lepakshi and enhances the long-term investment potential of farmland in the region.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Proximity to North Bangalore Development"
+        "text": "Proximity to North Bangalore Development",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "North Bangalore is experiencing rapid growth due to expanding infrastructure, business hubs, and transportation networks. As development continues in this direction, surrounding regions such as Lepakshi are likely to attract increasing interest from investors."
+        "text": "North Bangalore is experiencing rapid growth due to expanding infrastructure, business hubs, and transportation networks. As development continues in this direction, surrounding regions such as Lepakshi are likely to attract increasing interest from investors.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Advantages of Buying Farm Plots Near Lepakshi"
+        "text": "Advantages of Buying Farm Plots Near Lepakshi",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Owning a farm plot near Lepakshi offers several advantages for buyers looking for agricultural land investment."
+        "text": "Owning a farm plot near Lepakshi offers several advantages for buyers looking for agricultural land investment.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Long-Term Land Appreciation"
+        "text": "Long-Term Land Appreciation",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Land values in developing regions often increase gradually as infrastructure improves and demand rises. Lepakshi’s proximity to Bangalore and its location along NH44 make it a promising area for long-term land appreciation."
+        "text": "Land values in developing regions often increase gradually as infrastructure improves and demand rises. Lepakshi’s proximity to Bangalore and its location along NH44 make it a promising area for long-term land appreciation.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Weekend Retreat and Nature Living"
+        "text": "Weekend Retreat and Nature Living",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Many farmland owners use their property as a weekend getaway where they can relax and reconnect with nature. Farm plots near Lepakshi offer open landscapes, fresh air, and a peaceful rural atmosphere."
+        "text": "Many farmland owners use their property as a weekend getaway where they can relax and reconnect with nature. Farm plots near Lepakshi offer open landscapes, fresh air, and a peaceful rural atmosphere.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Sustainable Investment"
+        "text": "Sustainable Investment",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Agricultural land supports plantation activities and eco-friendly farming practices. Investors interested in sustainable investments often prefer farmland as it contributes to environmental conservation and green living."
+        "text": "Agricultural land supports plantation activities and eco-friendly farming practices. Investors interested in sustainable investments often prefer farmland as it contributes to environmental conservation and green living.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Managed Farmland Projects Near Lepakshi"
+        "text": "Managed Farmland Projects Near Lepakshi",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For many urban investors, managing farmland operations can be challenging due to lack of time and agricultural expertise. Managed farmland projects solve this problem by providing professional farm management services."
+        "text": "For many urban investors, managing farmland operations can be challenging due to lack of time and agricultural expertise. <a href=\"https://www.novaranatureestates.com/blogs/managed-farmland-lepakshi\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Managed farmland projects</a> solve this problem by providing professional farm management services.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "In managed farmland communities, experts handle plantation activities, irrigation systems, and maintenance of the farmland. This allows investors to enjoy farmland ownership without dealing with the complexities of farming."
+        "text": "In managed farmland communities, experts handle plantation activities, irrigation systems, and maintenance of the farmland. This allows investors to enjoy farmland ownership without dealing with the complexities of farming.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Companies like Novara Nature Estates offer managed farmland opportunities where buyers can own farm plots while professionals manage the agricultural operations. These projects often include well-planned plantations and sustainable farming practices."
+        "text": "Companies like <a href=\"https://www.novaranatureestates.com/why-novara\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Novara Nature Estates</a> offer managed farmland opportunities where buyers can own farm plots while professionals manage the agricultural operations. These projects often include well-planned plantations and sustainable farming practices.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "What Buyers Should Check Before Purchasing Farm Plots"
+        "text": "What Buyers Should Check Before Purchasing Farm Plots",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Before investing in farm plots near Lepakshi, buyers should carefully evaluate several factors to ensure a secure investment."
+        "text": "Before investing in farm plots near Lepakshi, buyers should carefully evaluate several factors to ensure a secure investment.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Land Title Verification"
+        "text": "Land Title Verification",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The most important step is verifying that the land has a clear title and proper documentation. Buyers should confirm ownership records and ensure there are no legal disputes associated with the property."
+        "text": "The most important step is verifying that the land has a clear title and proper documentation. Buyers should confirm ownership records and ensure there are no legal disputes associated with the property.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Water Availability"
+        "text": "Water Availability",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Agricultural land requires reliable water sources. Checking borewells, irrigation facilities, or nearby water resources is essential before purchasing farmland."
+        "text": "Agricultural land requires reliable water sources. Checking borewells, irrigation facilities, or nearby water resources is essential before purchasing farmland.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Soil Quality"
+        "text": "Soil Quality",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Soil condition determines the suitability of farmland for plantations or crops. Understanding soil fertility helps investors evaluate the agricultural potential of the land."
+        "text": "Soil condition determines the suitability of farmland for plantations or crops. Understanding soil fertility helps investors evaluate the agricultural potential of the land.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Road Access"
+        "text": "Road Access",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Good road connectivity ensures that farmland owners can easily access their property whenever required."
+        "text": "Good road connectivity ensures that farmland owners can easily access their property whenever required.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Investment Potential of Lepakshi Region"
+        "text": "Investment Potential of Lepakshi Region",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The Lepakshi region is gradually gaining recognition among farmland investors because of its location and infrastructure growth. As interest in agricultural land increases, regions near major highways often see gradual development."
+        "text": "The Lepakshi region is gradually gaining recognition among farmland investors because of its location and infrastructure growth. As interest in agricultural land increases, regions near major highways often see gradual development.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Additionally, the rising demand for managed farmland projects and sustainable living is encouraging more buyers to consider farm plots near Lepakshi as a long-term investment."
+        "text": "Additionally, the rising demand for managed farmland projects and sustainable living is encouraging more buyers to consider farm plots near Lepakshi as a long-term investment.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For investors looking to diversify their portfolio while enjoying nature-based assets, Lepakshi presents an attractive farmland investment opportunity."
+        "text": "For investors looking to diversify their portfolio while enjoying nature-based assets, Lepakshi presents an attractive farmland investment opportunity.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Conclusion"
+        "text": "Conclusion",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Farm plots near Lepakshi offer an appealing combination of natural beauty, investment potential, and accessibility from Bangalore. The region’s location along NH44, peaceful environment, and growing interest from investors make it a promising destination for farmland ownership."
+        "text": "Farm plots near Lepakshi offer an appealing combination of natural beauty, investment potential, and accessibility from Bangalore. The region’s location along NH44, peaceful environment, and growing interest from investors make it a promising destination for farmland ownership.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "With the availability of managed farmland projects, owning agricultural land has become easier for urban investors who want to benefit from farmland investments without managing farming activities themselves."
+        "text": "With the availability of managed farmland projects, owning agricultural land has become easier for urban investors who want to benefit from farmland investments without managing farming activities themselves.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Exploring farmland projects offered by Novara Nature Estates can help investors experience well-planned agricultural communities designed for long-term land ownership and sustainable living."
+        "text": "Exploring farmland projects offered by Novara Nature Estates can help investors experience well-planned agricultural communities designed for long-term land ownership and sustainable living.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "p_with_link",
-        "textBefore": "",
-        "linkText": "Scheduling a farm visit",
-        "href": "https://www.novaranatureestates.com/contactus",
-        "textAfter": " allows potential buyers to better understand the location, surroundings, and investment potential of farm plots near Lepakshi."
+        "type": "p",
+        "text": "<a href=\"https://www.novaranatureestates.com/contactus\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">Scheduling a farm visit</a>  allows potential buyers to better understand the location, surroundings, and investment potential of farm plots near Lepakshi.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "FAQs"
+        "text": "FAQs",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "1. Are farm plots near Lepakshi good for investment?"
+        "text": "1. Are farm plots near Lepakshi good for investment?",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Yes, Lepakshi is attracting investors due to its connectivity to Bangalore and growing interest in farmland investments."
+        "text": "Yes, Lepakshi is attracting investors due to its connectivity to Bangalore and growing interest in farmland investments.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "2. Can farm plots be used as weekend retreats?"
+        "text": "2. Can farm plots be used as weekend retreats?",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Many investors purchase farm plots near Lepakshi to enjoy a peaceful weekend getaway away from city life."
+        "text": "Many investors purchase farm plots near Lepakshi to enjoy a peaceful weekend getaway away from city life.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "3. What is managed farmland?"
+        "text": "3. What is managed farmland?",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Managed farmland allows investors to own farmland while professionals manage plantation and maintenance activities."
+        "text": "Managed farmland allows investors to own farmland while professionals manage plantation and maintenance activities.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "4. How far is Lepakshi from Bangalore?"
+        "text": "4. How far is Lepakshi from Bangalore?",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Lepakshi is accessible through the Bangalore–Hyderabad highway and can be reached from Bangalore within a few hours."
+        "text": "Lepakshi is accessible through the Bangalore–Hyderabad highway and can be reached from Bangalore within a few hours.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "5. What should buyers check before buying farmland?"
+        "text": "5. What should buyers check before buying farmland?",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Important factors include land title verification, water availability, soil quality, and accessibility."
+        "text": "Important factors include land title verification, water availability, soil quality, and accessibility.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       }
-    ]
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Are farm plots near Lepakshi good for investment?",
+              "text": "Yes, Lepakshi is attracting investors due to its connectivity to Bangalore and growing interest in farmland investments."
+            },
+            {
+              "name": "Can farm plots be used as weekend retreats?",
+              "text": "Many investors purchase farm plots near Lepakshi to enjoy a peaceful weekend getaway away from city life."
+            },
+            {
+              "name": "What is managed farmland?",
+              "text": "Managed farmland allows investors to own farmland while professionals manage plantation and maintenance activities."
+            },
+            {
+              "name": "How far is Lepakshi from Bangalore?",
+              "text": "Lepakshi is accessible through the Bangalore–Hyderabad highway and can be reached from Bangalore within a few hours."
+            },
+            {
+              "name": "What should buyers check before buying farmland?",
+              "text": "Important factors include land title verification, water availability, soil quality, and accessibility."
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novaranatureestates.com/blogs/farm-plots-near-lepakshi"
+          },
+          "headline": "Farm Plots Near Lepakshi — Everything Buyers Need to Know",
+          "image": "https://www.novaranatureestates.com/images/blog_9.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "url": "https://www.novaranatureestates.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/images/logo.svg"
+            }
+          },
+          "datePublished": "2026-03-12T18:30:49+05:30",
+          "dateModified": "2026-03-12T18:30:49+05:30"
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blogs",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Farm Plots Near Lepakshi — Everything Buyers Need to Know",
+              "item": "https://www.novaranatureestates.com/blogs/farm-plots-near-lepakshi"
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Farm Plots Near Lepakshi — Everything Buyers Need to Know",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "987",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
   },
   {
     "id": 10,
