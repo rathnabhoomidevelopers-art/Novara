@@ -10010,6 +10010,11 @@ export const BLOGS = [
     "image": "/images/Blog 4_11zon.webp",
     "heroImage": "/images/Blog 4_11zon.webp",
     "coverImage": "/images/Blog 4_11zon.webp",
+    "imageAlt": "Farmlands Near Bangalore: Perfect Weekend Retreat",
+    "imageTitle": "Farmlands Near Bangalore: Perfect Weekend Retreat",
+    "imageCaption": "",
+    "imageDescription": "Farmlands Near Bangalore: Perfect Weekend Retreat",
+    "videoUrl": "",
     "tags": [
       "Weekend Retreat",
       "Sustainable Living",
@@ -10018,116 +10023,294 @@ export const BLOGS = [
     ],
     "sections": [
       {
-        "type": "p_with_link",
-        "textBefore": "Life in Bangalore can get fast-paced. With the traffic, deadlines, and constant hustle, it’s no wonder more and more people are looking for a place to unwind and reconnect with nature. Imagine this: after a busy week in the city, you drive just a couple of hours to a peaceful, serene retreat surrounded by greenery, fresh air, and open spaces. No, it's not a dream — it's becoming a reality with ",
-        "linkText": "farmlands near Bangalore.",
-        "href": "https://www.novaranatureestates.com",
-        "textAfter": ""
+        "type": "p",
+        "text": "Life in Bangalore can get fast-paced. With the traffic, deadlines, and constant hustle, it’s no wonder more and more people are looking for a place to unwind and reconnect with nature. Imagine this: after a busy week in the city, you drive just a couple of hours to a peaceful, serene retreat surrounded by greenery, fresh air, and open spaces. No, it's not a dream — it's becoming a reality with  <a href=\"https://www.novaranatureestates.com\" style=\"color:#E3A600\">farmlands near Bangalore.</a>",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "More people are choosing to invest in farmlands not just for farming or investment purposes, but as their very own weekend escape. The growing interest in sustainable living, peace of mind, and getting away from the city’s chaos has made these farmlands a perfect choice for many looking for a getaway. Let’s dive into why farmlands near Bangalore are quickly becoming the ideal weekend retreat."
+        "text": "More people are choosing to invest in farmlands not just for farming or investment purposes, but as their very own weekend escape. The growing interest in sustainable living, peace of mind, and getting away from the city’s chaos has made these farmlands a perfect choice for many looking for a getaway. Let’s dive into why farmlands near Bangalore are quickly becoming the ideal weekend retreat.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "1. Proximity to Bangalore: Close Enough for Comfort, Far Enough to Escape"
+        "text": "1. Proximity to Bangalore: Close Enough for Comfort, Far Enough to Escape",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "One of the best things about farmlands near Bangalore is the location. Whether you want to enjoy a weekend getaway every now and then or you’re looking to escape for longer, farmlands just outside the city make it easy. You don’t need to spend hours driving to a remote location. In just a couple of hours, you can leave the traffic and noise of Bangalore behind and step into a world of fresh air and open spaces."
+        "text": "One of the best things about farmlands near Bangalore is the location. Whether you want to enjoy a weekend getaway every now and then or you’re looking to escape for longer, farmlands just outside the city make it easy. You don’t need to spend hours driving to a remote location. In just a couple of hours, you can leave the traffic and noise of Bangalore behind and step into a world of fresh air and open spaces.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For example, land near places like Nandi Hills, Devanahalli, and Lepakshi not only offer beautiful landscapes but also proximity to Bangalore’s city center. These areas are becoming increasingly popular for those who want to build their dream weekend farmhouses or simply enjoy a farm stay."
+        "text": "For example, land near places like Nandi Hills, Devanahalli, and Lepakshi not only offer beautiful landscapes but also proximity to Bangalore’s city center. These areas are becoming increasingly popular for those who want to build their dream weekend farmhouses or simply enjoy a farm stay.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "2. The Charm of Nature and Fresh Air"
+        "text": "2. The Charm of Nature and Fresh Air",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "There’s something uniquely special about being surrounded by nature. Whether it’s the sight of vast green fields, the smell of fresh earth, or the sound of birds chirping, farmlands near Bangalore offer a refreshing break from the hustle and bustle. Imagine spending your weekend on a plot of land where you can breathe in the fresh air, enjoy a sunset over your private property, and take long walks through open fields."
+        "text": "There’s something uniquely special about being surrounded by nature. Whether it’s the sight of vast green fields, the smell of fresh earth, or the sound of birds chirping, farmlands near Bangalore offer a refreshing break from the hustle and bustle. Imagine spending your weekend on a plot of land where you can breathe in the fresh air, enjoy a sunset over your private property, and take long walks through open fields.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For many, it’s the chance to slow down, appreciate the simple things in life, and reconnect with nature. No crowded cafes or loud traffic — just peaceful surroundings where you can finally take a break from technology and distractions."
+        "text": "For many, it’s the chance to slow down, appreciate the simple things in life, and reconnect with nature. No crowded cafes or loud traffic — just peaceful surroundings where you can finally take a break from technology and distractions.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "3. The Possibility of Building Your Dream Farmhouse"
-      },
-      {
-        "type": "p_with_link",
-        "textBefore": "One of the biggest attractions of ",
-        "linkText": "farmlands near Bangalore.",
-        "href": "https://www.novaranatureestates.com",
-        "textAfter": " is the opportunity to design your very own farmhouse. Many city dwellers dream of owning a house surrounded by greenery, where they can spend their weekends gardening, hosting family get-togethers, or simply relaxing."
+        "text": "3. The Possibility of Building Your Dream Farmhouse",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Building a weekend farmhouse on your farmland offers the best of both worlds. You can design it to reflect your personality, whether you want a cozy retreat with a modern twist or a rustic cottage that feels like a home away from home. Plus, the land surrounding your house can be used to grow your own vegetables, fruits, and even flowers — adding that personal touch to your weekend retreat."
+        "text": "One of the biggest attractions of  <a href=\"https://www.novaranatureestates.com\" style=\"color:#E3A600\">farmlands near Bangalore.</a>  is the opportunity to design your very own farmhouse. Many city dwellers dream of owning a house surrounded by greenery, where they can spend their weekends gardening, hosting family get-togethers, or simply relaxing.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "Building a weekend farmhouse on your farmland offers the best of both worlds. You can design it to reflect your personality, whether you want a cozy retreat with a modern twist or a rustic cottage that feels like a home away from home. Plus, the land surrounding your house can be used to grow your own vegetables, fruits, and even flowers — adding that personal touch to your weekend retreat.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "4. Peace, Quiet, and a Break from Technology"
+        "text": "4. Peace, Quiet, and a Break from Technology",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "In today’s world, where we’re constantly connected to our phones, emails, and social media, a weekend retreat on farmland offers a much-needed digital detox. Picture this: no email alerts, no notifications, just you and the beauty of nature. Farmlands near Bangalore provide a sanctuary where you can truly switch off."
+        "text": "In today’s world, where we’re constantly connected to our phones, emails, and social media, a weekend retreat on farmland offers a much-needed digital detox. Picture this: no email alerts, no notifications, just you and the beauty of nature. Farmlands near Bangalore provide a sanctuary where you can truly switch off.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "You can spend your time reading a book in the garden, taking a leisurely walk around the property, or perhaps even trying your hand at some light farming. It’s a place where you can embrace a slower pace of life, free from the constant buzz of the digital world."
+        "text": "You can spend your time reading a book in the garden, taking a leisurely walk around the property, or perhaps even trying your hand at some light farming. It’s a place where you can embrace a slower pace of life, free from the constant buzz of the digital world.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "5. Embrace a Sustainable Lifestyle"
+        "text": "5. Embrace a Sustainable Lifestyle",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "More people today are embracing sustainability and mindful living. Farmlands near Bangalore provide the perfect setting to do just that. Whether you want to grow your own organic vegetables, set up a small herb garden, or simply live in a way that’s more in tune with nature, owning farmland gives you the space to create a sustainable lifestyle."
+        "text": "More people today are embracing sustainability and mindful living. Farmlands near Bangalore provide the perfect setting to do just that. Whether you want to grow your own organic vegetables, set up a small herb garden, or simply live in a way that’s more in tune with nature, owning farmland gives you the space to create a sustainable lifestyle.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The beauty of owning farmland is that you can start small. You don’t need to become a full-time farmer to enjoy the benefits of living closer to nature. Even if it’s just cultivating a garden or learning about organic farming, your weekend retreat can help you embrace eco-friendly living and grow your own food, which adds a layer of fulfillment that’s hard to find in the city."
+        "text": "The beauty of owning farmland is that you can start small. You don’t need to become a full-time farmer to enjoy the benefits of living closer to nature. Even if it’s just cultivating a garden or learning about organic farming, your weekend retreat can help you embrace eco-friendly living and grow your own food, which adds a layer of fulfillment that’s hard to find in the city.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "6. A Space for Family and Friends to Gather"
+        "text": "6. A Space for Family and Friends to Gather",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "A weekend retreat isn’t just about peace and solitude — it’s also about creating memories with your loved ones. A farmhouse near Bangalore provides the perfect setting for family and friends to gather and enjoy quality time together."
+        "text": "A weekend retreat isn’t just about peace and solitude — it’s also about creating memories with your loved ones. A farmhouse near Bangalore provides the perfect setting for family and friends to gather and enjoy quality time together.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Whether it’s a weekend BBQ, a nature walk, or a simple picnic in the fields, a farmhouse on your farmland offers the space to host guests without the restrictions of city living. Imagine having your family over for a weekend of fun, away from the distractions of everyday life — everyone can enjoy the wide-open spaces and activities on the land."
+        "text": "Whether it’s a weekend BBQ, a nature walk, or a simple picnic in the fields, a farmhouse on your farmland offers the space to host guests without the restrictions of city living. Imagine having your family over for a weekend of fun, away from the distractions of everyday life — everyone can enjoy the wide-open spaces and activities on the land.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "7. The Rise of Farm Stays and Rural Tourism"
+        "text": "7. The Rise of Farm Stays and Rural Tourism",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "If you’re not quite ready to buy land but still want to experience the charm of farmlands, farm stays near Bangalore are a growing trend. This form of agro-tourism allows you to spend weekends on a working farm, experiencing life as a farmer, learning about organic farming, or even participating in harvesting crops."
+        "text": "If you’re not quite ready to buy land but still want to experience the charm of farmlands, farm stays near Bangalore are a growing trend. This form of agro-tourism allows you to spend weekends on a working farm, experiencing life as a farmer, learning about organic farming, or even participating in harvesting crops.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "This type of rural tourism is increasingly popular for city dwellers who crave the peace and beauty of nature. And if you do decide to invest in farmland near Bangalore, you can explore the agro-tourism opportunity as a potential income-generating venture — offering guests a taste of farm life."
+        "text": "This type of rural tourism is increasingly popular for city dwellers who crave the peace and beauty of nature. And if you do decide to invest in farmland near Bangalore, you can explore the agro-tourism opportunity as a potential income-generating venture — offering guests a taste of farm life.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Conclusion: Your Perfect Weekend Retreat Awaits"
+        "text": "Conclusion: Your Perfect Weekend Retreat Awaits",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Investing in farmland near Bangalore isn’t just about owning property — it’s about creating a lifestyle that offers peace, tranquility, and a chance to disconnect from the fast pace of city life. With easy access to the city, stunning natural beauty, and the ability to build your own dream weekend farmhouse, it’s easy to see why so many people are choosing farmlands near Bangalore as their ideal weekend retreat."
+        "text": "Investing in farmland near Bangalore isn’t just about owning property — it’s about creating a lifestyle that offers peace, tranquility, and a chance to disconnect from the fast pace of city life. With easy access to the city, stunning natural beauty, and the ability to build your own dream weekend farmhouse, it’s easy to see why so many people are choosing farmlands near Bangalore as their ideal weekend retreat.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Whether you're looking for a quiet space to relax, a place to connect with family, or a way to embrace sustainable living, farmlands near Bangalore provide everything you need for a fulfilling, peaceful weekend getaway. Ready to leave the noise of the city behind? Your perfect weekend retreat could be just a few hours away."
+        "text": "Whether you're looking for a quiet space to relax, a place to connect with family, or a way to embrace sustainable living, farmlands near Bangalore provide everything you need for a fulfilling, peaceful weekend getaway. Ready to leave the noise of the city behind? Your perfect weekend retreat could be just a few hours away.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       }
-    ]
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "",
+              "text": ""
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novaranatureestates.com/blogs/farmlands-near-bangalore-weekend-retreat"
+          },
+          "headline": "How Farmlands Near Bangalore Are Becoming the Ideal Weekend Retreat",
+          "image": "https://www.novaranatureestates.com/images/Blog%204_11zon.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "url": "https://www.novaranatureestates.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/images/logo.svg"
+            }
+          },
+          "datePublished": "2026-01-27T18:30:49+05:30",
+          "dateModified": "2026-01-27T18:30:49+05:30"
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blog",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "How Farmlands Near Bangalore Are Becoming the Ideal Weekend Retreat",
+              "item": "https://www.novaranatureestates.com/blogs/farmlands-near-bangalore-weekend-retreat"
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "How Farmlands Near Bangalore Are Becoming the Ideal Weekend Retreat",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "1596",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
   },
   {
     "id": 5,
