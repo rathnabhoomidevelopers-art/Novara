@@ -4583,7 +4583,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "<strong>Schedule your free site visit to Ecovara +91-8660200662</strong>",
+        "text": "<strong><a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); text-decoration-line: underline;\">Schedule your free site visit</a> to Ecovara +91-8660200662</strong>",
         "fontWeight": "font-normal",
         "align": "justify"
       }
