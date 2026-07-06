@@ -10567,7 +10567,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "If you’re thinking about investing in farmland, or if you're already a landowner, it’s essential to keep an eye on the evolving trends. In this blog, we’ll explore the key trends that are likely to impact the farmland market in India over the next few years and how you can leverage these changes to make informed investment decisions.",
+        "text": "If you’re thinking about <a href=\"https://www.novaranatureestates.com/blogs/how-to-invest-in-farmland-india\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">investing in farmland</a>, or if you're already a landowner, it’s essential to keep an eye on the evolving trends. In this blog, we’ll explore the key trends that are likely to impact the farmland market in India over the next few years and how you can leverage these changes to make informed investment decisions.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -10579,7 +10579,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "One of the most noticeable trends in India’s agricultural sector is the rising demand for  <a href=\"https://www.novaranatureestates.com/whynovara\" style=\"color:#E3A600\">sustainable and organic farming</a>  As awareness about health and environmental sustainability grows, consumers are increasingly turning to organic produce. This shift is prompting farmers to adopt more eco-friendly practices, which in turn is driving up the demand for land that supports organic farming.",
+        "text": "One of the most noticeable trends in India’s agricultural sector is the rising demand for  <span style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\"><a href=\"https://www.novaranatureestates.com/why-novara\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\">sustainable and organic farming</a></span>  As awareness about health and environmental sustainability grows, consumers are increasingly turning to organic produce. This shift is prompting farmers to adopt more eco-friendly practices, which in turn is driving up the demand for land that supports organic farming.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -10681,7 +10681,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "By 2026, the government is likely to introduce more initiatives related to irrigation, soil health, and agriculture-related infrastructure. If you invest in farmland near Bangalore or other urban hubs, you may benefit from tax incentives, grants, or subsidies aimed at increasing productivity and sustainability.",
+        "text": "By 2026, the government is likely to introduce more initiatives related to irrigation, soil health, and agriculture-related infrastructure. If you <a href=\"https://www.novaranatureestates.com/blogs/benefits-of-farmland-investment-near-bangalore\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">invest in farmland near Bangalore</a> or other urban hubs, you may benefit from tax incentives, grants, or subsidies aimed at increasing productivity and sustainability.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -10717,13 +10717,13 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "The future of  <a href=\"https://www.novaranatureestates.com/projects\" style=\"color:#E3A600\">farmland investment</a>  in India looks promising as we move toward 2026. From the rise of sustainable farming practices and agri-tech to the increasing popularity of agro-tourism, there are countless opportunities for those looking to invest in farmland. With India’s growing population, rapid urbanization, and increasing demand for organic produce, farmland is set to become an even more valuable asset.",
+        "text": "The future of  <a href=\"https://www.novaranatureestates.com/projects\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">farmland investment</a>  in India looks promising as we move toward 2026. From the rise of sustainable farming practices and agri-tech to the increasing popularity of agro-tourism, there are countless opportunities for those looking to invest in farmland. With India’s growing population, rapid urbanization, and increasing demand for organic produce, farmland is set to become an even more valuable asset.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
       {
         "type": "p",
-        "text": "If you’re considering investing in farmland, now is the perfect time to explore these trends and position yourself for success. Whether you’re looking for long-term capital appreciation, income through farming or agro-tourism, or just a way to contribute to sustainable agriculture, farmland near Bangalore and other cities can provide a stable and profitable investment for years to come.",
+        "text": "If you’re considering investing in farmland, now is the perfect time to explore these trends and position yourself for success. Whether you’re looking for long-term capital appreciation, income through farming or agro-tourism, or just a way to contribute to sustainable agriculture, <a href=\"https://www.novaranatureestates.com/blogs/managed-farmland-near-bangalore-guide\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">farmland near Bangalore</a> and other cities can provide a stable and profitable investment for years to come.",
         "fontWeight": "font-normal",
         "align": "justify"
       }
