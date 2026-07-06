@@ -9437,6 +9437,11 @@ export const BLOGS = [
     "image": "/images/Blog 3_11zon.webp",
     "heroImage": "/images/Blog 3_11zon.webp",
     "coverImage": "/images/Blog 3_11zon.webp",
+    "imageAlt": "How to Invest in Farmland in India | Bangalore Guide",
+    "imageTitle": "How to Invest in Farmland in India | Bangalore Guide",
+    "imageCaption": "",
+    "imageDescription": "How to Invest in Farmland in India | Bangalore Guide",
+    "videoUrl": "",
     "tags": [
       "Farmland Investment",
       "Beginner's Guide",
@@ -9446,287 +9451,482 @@ export const BLOGS = [
     "sections": [
       {
         "type": "p",
-        "text": "When you think about investment, you might imagine stocks, real estate, or mutual funds. But have you ever considered investing in farmland? It’s a smart, stable, and long-term way to grow your wealth — and it’s especially appealing if you’re looking for something tangible and meaningful. Whether you’re drawn to the idea of cultivating crops, enjoying the peace of rural life, or diversifying your investment portfolio, owning farmland in India offers a unique set of benefits."
+        "text": "When you think about investment, you might imagine stocks, real estate, or mutual funds. But have you ever considered investing in farmland? It’s a smart, stable, and long-term way to grow your wealth — and it’s especially appealing if you’re looking for something tangible and meaningful. Whether you’re drawn to the idea of cultivating crops, enjoying the peace of rural life, or diversifying your investment portfolio, owning farmland in India offers a unique set of benefits.",
+        "fontWeight": "font-normal"
       },
       {
-        "type": "p_with_link",
-        "textBefore": "If you’re new to ",
-        "linkText": "farmland investment,",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": " don’t worry! We’ve broken it down into simple steps to guide you through the process. By the end of this post, you’ll have a clear understanding of how to get started, what to consider, and why investing in farmland could be one of the best decisions you ever make."
+        "type": "p",
+        "text": "If you’re new to  <a href=\"https://www.novaranatureestates.com/projects\" style=\"color:#E3A600\">farmland investment,</a>  don’t worry! We’ve broken it down into simple steps to guide you through the process. By the end of this post, you’ll have a clear understanding of how to get started, what to consider, and why investing in farmland could be one of the best decisions you ever make.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "1. Understand the Benefits of Farmland Investment"
+        "text": "1. Understand the Benefits of Farmland Investment",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Before diving into the how, let’s first take a moment to understand the why. Why should you invest in farmland?"
+        "text": "Before diving into the how, let’s first take a moment to understand the why. Why should you invest in farmland?",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Stable Returns:"
+        "text": "Stable Returns:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Unlike stocks or real estate, farmland tends to offer steady returns. The price of land generally appreciates over time, and you can generate income by farming or leasing the land to others."
+        "text": "Unlike stocks or real estate, farmland tends to offer steady returns. The price of land generally appreciates over time, and you can generate income by farming or leasing the land to others.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Diversification:"
+        "text": "Diversification:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Farmland can serve as a strong hedge against inflation and economic downturns, making it a solid diversification strategy for your portfolio."
+        "text": "Farmland can serve as a strong hedge against inflation and economic downturns, making it a solid diversification strategy for your portfolio.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Tangible Asset:"
+        "text": "Tangible Asset:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Farmland is a physical asset — you can see it, touch it, and make use of it. Whether you choose to farm, lease, or sell the produce, it provides an opportunity for hands-on management."
+        "text": "Farmland is a physical asset — you can see it, touch it, and make use of it. Whether you choose to farm, lease, or sell the produce, it provides an opportunity for hands-on management.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Sustainability:"
+        "text": "Sustainability:",
+        "fontWeight": "font-bold"
       },
       {
-        "type": "p_with_link",
-        "textBefore": "Farmland investments, especially those focused on organic farming or ",
-        "linkText": "sustainable agriculture,",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": " are increasingly popular with eco-conscious investors."
+        "type": "p",
+        "text": "Farmland investments, especially those focused on organic farming or  <a href=\"https://www.novaranatureestates.com/projects\" style=\"color:#E3A600\">sustainable agriculture,</a>  are increasingly popular with eco-conscious investors.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "2. Research the Land Market in India"
+        "text": "2. Research the Land Market in India",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Investing in farmland isn’t the same as buying a house. The land market can vary greatly depending on the region, and there are several factors to consider."
+        "text": "Investing in farmland isn’t the same as buying a house. The land market can vary greatly depending on the region, and there are several factors to consider.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Location:"
+        "text": "Location:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "The location of the land is crucial. Is it close to urban areas or more remote? Is it near key agricultural zones, or is it a popular tourist area where agro-tourism can become a future opportunity? For example, Novara’s Ecovara Project near Lepakshi offers a blend of peace and proximity to growing cities."
+        "text": "The location of the land is crucial. Is it close to urban areas or more remote? Is it near key agricultural zones, or is it a popular tourist area where agro-tourism can become a future opportunity? For example, Novara’s Ecovara Project near Lepakshi offers a blend of peace and proximity to growing cities.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Soil Quality:"
+        "text": "Soil Quality:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Land with fertile soil is a major factor if you plan to farm. Soil testing is a must to ensure that the land is good for cultivating crops."
+        "text": "Land with fertile soil is a major factor if you plan to farm. Soil testing is a must to ensure that the land is good for cultivating crops.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Water Availability:"
+        "text": "Water Availability:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Check the water situation — can you easily irrigate the land, or are there seasonal shortages? Access to water is essential for agriculture."
+        "text": "Check the water situation — can you easily irrigate the land, or are there seasonal shortages? Access to water is essential for agriculture.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Land Use Zoning:"
+        "text": "Land Use Zoning:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "In some areas, land may be reserved for certain types of use, such as farming or industrial development. Make sure the land is legally zoned for your intended purpose."
+        "text": "In some areas, land may be reserved for certain types of use, such as farming or industrial development. Make sure the land is legally zoned for your intended purpose.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "3. Understand the Legalities of Farmland Ownership in India"
+        "text": "3. Understand the Legalities of Farmland Ownership in India",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Buying farmland in India requires understanding some legal complexities. Different states have different laws related to land ownership, and as a beginner, it's important to know what you're getting into."
+        "text": "Buying farmland in India requires understanding some legal complexities. Different states have different laws related to land ownership, and as a beginner, it's important to know what you're getting into.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Ownership Rights:"
+        "text": "Ownership Rights:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "In some states, only farmers can own agricultural land, while in others, anyone can purchase it. Ensure that you meet the eligibility criteria to own farmland."
+        "text": "In some states, only farmers can own agricultural land, while in others, anyone can purchase it. Ensure that you meet the eligibility criteria to own farmland.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Land Title:"
+        "text": "Land Title:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Always verify the title of the land. Check if the land has a clear title (without any legal disputes), and ask for all related documentation like previous sale deeds, land records, and tax receipts."
+        "text": "Always verify the title of the land. Check if the land has a clear title (without any legal disputes), and ask for all related documentation like previous sale deeds, land records, and tax receipts.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Land Ceiling Act:"
+        "text": "Land Ceiling Act:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Some states have laws that limit the amount of land an individual can own. Ensure you’re not violating these restrictions."
+        "text": "Some states have laws that limit the amount of land an individual can own. Ensure you’re not violating these restrictions.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Legal Assistance:"
+        "text": "Legal Assistance:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Hire a lawyer or legal expert to help you navigate land registration, ownership rights, and ensure all legal procedures are followed. This will help avoid any future issues."
+        "text": "Hire a lawyer or legal expert to help you navigate land registration, ownership rights, and ensure all legal procedures are followed. This will help avoid any future issues.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "4. Choose the Right Type of Land for Your Needs"
+        "text": "4. Choose the Right Type of Land for Your Needs",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Farmland can be used for many purposes, and it’s important to match the type of land with your goals. Here are some options to consider:"
+        "text": "Farmland can be used for many purposes, and it’s important to match the type of land with your goals. Here are some options to consider:",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Agricultural Land:"
+        "text": "Agricultural Land:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Ideal if you want to grow crops or raise livestock. Make sure the soil is suitable for the crops you plan to grow and that the land is in a productive agricultural zone."
+        "text": "Ideal if you want to grow crops or raise livestock. Make sure the soil is suitable for the crops you plan to grow and that the land is in a productive agricultural zone.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Recreational Land:"
+        "text": "Recreational Land:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "If you’re looking for a second home or a place to relax on weekends, you might want to invest in farmland that’s more recreational or has scenic views (for instance, the Ecovara project)."
+        "text": "If you’re looking for a second home or a place to relax on weekends, you might want to invest in farmland that’s more recreational or has scenic views (for instance, the Ecovara project).",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Agro-Tourism Land:"
+        "text": "Agro-Tourism Land:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Agro-tourism is booming, where investors set up farms or homesteads and invite people to visit, stay, and participate in farming activities. If this interests you, look for farmland with high tourist traffic and proximity to attractions."
+        "text": "Agro-tourism is booming, where investors set up farms or homesteads and invite people to visit, stay, and participate in farming activities. If this interests you, look for farmland with high tourist traffic and proximity to attractions.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Commercial Farming Land:"
+        "text": "Commercial Farming Land:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "For large-scale operations, such as plantations, orchards, or timber farming, this would require significant upfront investment but could yield long-term profits."
+        "text": "For large-scale operations, such as plantations, orchards, or timber farming, this would require significant upfront investment but could yield long-term profits.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "5. Secure Financing for Your Farmland Investment"
+        "text": "5. Secure Financing for Your Farmland Investment",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Buying farmland requires capital, and while it’s tempting to pay in cash, many people choose financing options to make the process more manageable."
+        "text": "Buying farmland requires capital, and while it’s tempting to pay in cash, many people choose financing options to make the process more manageable.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Bank Loans:"
+        "text": "Bank Loans:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Many Indian banks offer loans for farmland, but you’ll need to have a clear plan for how you intend to use the land (e.g., agriculture, development)."
+        "text": "Many Indian banks offer loans for farmland, but you’ll need to have a clear plan for how you intend to use the land (e.g., agriculture, development).",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Government Schemes:"
+        "text": "Government Schemes:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Various state and national government schemes provide loans or subsidies for farmers and landowners who are interested in improving the land or adopting new farming techniques."
+        "text": "Various state and national government schemes provide loans or subsidies for farmers and landowners who are interested in improving the land or adopting new farming techniques.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Personal Savings or Family Investment:"
+        "text": "Personal Savings or Family Investment:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Many investors also choose to pool resources with family or friends to fund a farmland purchase."
+        "text": "Many investors also choose to pool resources with family or friends to fund a farmland purchase.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "6. Finalize the Purchase and Register the Land"
+        "text": "6. Finalize the Purchase and Register the Land",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Once you’ve found the right piece of land and sorted the legalities and financing, it’s time to close the deal."
+        "text": "Once you’ve found the right piece of land and sorted the legalities and financing, it’s time to close the deal.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Negotiate the Price"
+        "text": "Negotiate the Price",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Don’t accept the first price that comes your way. Negotiate with the seller to get a fair deal."
+        "text": "Don’t accept the first price that comes your way. Negotiate with the seller to get a fair deal.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Due Diligence:"
+        "text": "Due Diligence:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Before finalizing the purchase, do a last round of due diligence. This includes checking land tax payments, verifying the zoning laws, and ensuring there are no ongoing legal issues."
+        "text": "Before finalizing the purchase, do a last round of due diligence. This includes checking land tax payments, verifying the zoning laws, and ensuring there are no ongoing legal issues.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Land Registration:"
+        "text": "Land Registration:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "In India, once the purchase is agreed upon, the final step is land registration. This legally transfers ownership from the seller to you, and it’s done through the local sub-registrar’s office. You’ll need to bring all necessary documents, including the sale agreement and ID proof."
+        "text": "In India, once the purchase is agreed upon, the final step is land registration. This legally transfers ownership from the seller to you, and it’s done through the local sub-registrar’s office. You’ll need to bring all necessary documents, including the sale agreement and ID proof.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h2",
-        "text": "7. Managing Your Farmland Investment"
+        "text": "7. Managing Your Farmland Investment",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Once you own the land, it’s time to manage it. Whether you’re farming yourself, renting it out, or exploring agro-tourism, regular maintenance and management are key."
+        "text": "Once you own the land, it’s time to manage it. Whether you’re farming yourself, renting it out, or exploring agro-tourism, regular maintenance and management are key.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Farming"
+        "text": "Farming",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "If you plan to farm, start by testing the soil, preparing the land, and deciding what to grow. Seek out resources and experts who can guide you."
+        "text": "If you plan to farm, start by testing the soil, preparing the land, and deciding what to grow. Seek out resources and experts who can guide you.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Leasing"
+        "text": "Leasing",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "If you don’t plan to farm but want to generate income, you can lease your land to local farmers or companies. Make sure the lease agreement is clear on the terms."
+        "text": "If you don’t plan to farm but want to generate income, you can lease your land to local farmers or companies. Make sure the lease agreement is clear on the terms.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Agro-Tourism:"
+        "text": "Agro-Tourism:",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "If you want to turn your land into a farm stay, build facilities, market your farm, and set up booking systems.Regular maintenance of infrastructure like roads, water systems, and fencing is also crucial to ensure the land remains productive."
+        "text": "If you want to turn your land into a farm stay, build facilities, market your farm, and set up booking systems.Regular maintenance of infrastructure like roads, water systems, and fencing is also crucial to ensure the land remains productive.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "h3",
-        "text": "Conclusion: Your Farmland Investment Journey Starts Here"
+        "text": "Conclusion: Your Farmland Investment Journey Starts Here",
+        "fontWeight": "font-bold"
       },
       {
         "type": "p",
-        "text": "Investing in farmland is a rewarding and tangible way to grow your wealth. While the process can seem overwhelming at first, breaking it down into manageable steps — from understanding the market to securing financing — makes it much easier. By taking the time to research, learn, and plan, you’ll set yourself up for a successful investment that benefits you for years to come."
+        "text": "Investing in farmland is a rewarding and tangible way to grow your wealth. While the process can seem overwhelming at first, breaking it down into manageable steps — from understanding the market to securing financing — makes it much easier. By taking the time to research, learn, and plan, you’ll set yourself up for a successful investment that benefits you for years to come.",
+        "fontWeight": "font-normal"
       },
       {
         "type": "p",
-        "text": "Farmland in India holds great potential. Whether you’re looking to grow crops, lease the land, or turn it into a farm stay, the opportunities are endless."
+        "text": "Farmland in India holds great potential. Whether you’re looking to grow crops, lease the land, or turn it into a farm stay, the opportunities are endless.",
+        "fontWeight": "font-normal"
       }
-    ]
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "",
+              "text": ""
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novaranatureestates.com/blogs/how-to-invest-in-farmland-india"
+          },
+          "headline": "How to Invest in Farmland in India: A Step-by-Step Guide for Beginners",
+          "image": "https://www.novaranatureestates.com/images/Blog%203_11zon.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "url": "https://www.novaranatureestates.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/images/logo.svg"
+            }
+          },
+          "datePublished": "2026-01-27T18:30:00.000Z",
+          "dateModified": "2026-01-27T18:30:00.000Z"
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blogs",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "How to Invest in Farmland in India: A Step-by-Step Guide for Beginners",
+              "item": "https://www.novaranatureestates.com/blogs/how-to-invest-in-farmland-india"
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "How to Invest in Farmland in India: A Step-by-Step Guide for Beginners",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "4098",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
   },
   {
     "id": 4,
