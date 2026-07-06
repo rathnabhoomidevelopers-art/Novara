@@ -4011,17 +4011,17 @@ export const BLOGS = [
         "json": ""
       },
       "blog": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": ""
+            "@id": "https://www.novaranatureestates.com/blogs/farmland-near-bangalore-airport"
           },
-          "headline": "",
-          "image": "",
+          "headline": "Farmland Near Bangalore Airport — What Every Investor Needs to Know Before Buying",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1776852713/qli1z5yaijuf0057pe7r.webp",
           "author": {
             "@type": "Organization",
             "name": "Novara Nature Estates",
@@ -4035,19 +4035,27 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/images/logo.svg"
             }
           },
-          "datePublished": "",
-          "dateModified": ""
+          "datePublished": "2026-04-21T18:30:00.000Z",
+          "dateModified": "2026-04-21T18:30:00.000Z"
         },
         "json": ""
       },
       "breadcrumb": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "items": [
             {
-              "name": "",
-              "item": ""
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blog Page",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Farmland Near Bangalore Airport — What Every Investor Needs to Know Before Buying",
+              "item": "https://www.novaranatureestates.com/blogs/farmland-near-bangalore-airport"
             }
           ]
         },
