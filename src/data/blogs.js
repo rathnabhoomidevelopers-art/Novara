@@ -1166,10 +1166,10 @@ export const BLOGS = [
       {
         "type": "ul",
         "text": [
-          "Spacious Plot Dimensions: Plot sizes start from 6,000 sq.ft, giving families open surroundings and farm-style ownership.",
-          "European-Style Farmland Planning: The layout offers visual appeal and an organized farmplot environment.",
-          "Fruit-Bearing Plantation: Plantation features improve greenery and create a natural farm setting.",
-          "Organic Garden Space: Garden spaces help families experience natural living, gardening and healthier food habits."
+          "<span style=\"font-weight: bold;\">Spacious Plot Dimensions:</span> Plot sizes start from 6,000 sq.ft, giving families open surroundings and farm-style ownership.",
+          "<span style=\"font-weight: bold;\">European-Style Farmland Planning:</span> The layout offers visual appeal and an organized farmplot environment.",
+          "<span style=\"font-weight: bold;\">Fruit-Bearing Plantation:</span> Plantation features improve greenery and create a natural farm setting.",
+          "<span style=\"font-weight: bold;\">Organic Garden Space:</span> Garden spaces help families experience natural living, gardening and healthier food habits."
         ]
       },
       {
@@ -1187,13 +1187,13 @@ export const BLOGS = [
       {
         "type": "ul",
         "text": [
-          "64+ Tree Plantation: Creates a green and peaceful environment.",
-          "Lotus Pond / Fish Pond: Adds natural beauty and calmness.",
-          "Campfire / Rain Dance Area: Useful for weekend enjoyment and celebrations.",
-          "24/7 Security Check: Controlled access supports a safer environment.",
-          "Solar Street Lights: Eco-friendly lighting supports safe internal movement.",
-          "Cafeteria: A place to relax during site visits.",
-          "Jogging Track & Pet Route: Useful for fitness, leisure and pet-friendly visits."
+          "<span style=\"font-weight: bold;\">64+ Tree Plantation:</span> Creates a green and peaceful environment.",
+          "<span style=\"font-weight: bold;\">Lotus Pond / Fish Pond:</span> Adds natural beauty and calmness.",
+          "<span style=\"font-weight: bold;\">Campfire / Rain Dance Area:</span> Useful for weekend enjoyment and celebrations.",
+          "<span style=\"font-weight: bold;\">24/7 Security Check:</span> Controlled access supports a safer environment.",
+          "<span style=\"font-weight: bold;\">Solar Street Lights:</span> Eco-friendly lighting supports safe internal movement.",
+          "<span style=\"font-weight: bold;\">Cafeteria:</span> A place to relax during site visits.",
+          "<span style=\"font-weight: bold;\">Jogging Track &amp; Pet Route:</span> Useful for fitness, leisure and pet-friendly visits."
         ]
       },
       {
