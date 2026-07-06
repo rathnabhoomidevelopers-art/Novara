@@ -2381,7 +2381,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Looking up Ecovara reviews before booking? The smartest way to evaluate any managed farmland project is a site visit - walk the Ecovara farm plots, see the 64-plus variety tree plantation and amenities, and judge the location for yourself.</span>",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">Looking up <a href=\"https://www.google.com/search?q=novara+nature+estaes&amp;oq=novara+nature+estaes&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgkIARAAGA0YgAQyCggCEAAYgAQYogQyCggDEAAYgAQYogQyCggEEAAYgAQYogQyBwgFEAAY7wUyCggGEAAYgAQYogTSAQgyMzY5ajBqN6gCALACAA&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x6c0f66896b98bf8d:0xee5555d3f98a6e9b,1,,,,\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Ecovara reviews</a> before booking? The smartest way to evaluate any managed farmland project is a site visit - walk the Ecovara farm plots, see the 64-plus variety tree plantation and amenities, and judge the location for yourself.</span>",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -2406,11 +2406,11 @@ export const BLOGS = [
       {
         "type": "ol",
         "text": [
-          "<span style=\"font-weight: bold;\">Where is the Ecovara Farmplot located?<br></span>Ecovara is located near Lepakshi on the Bengaluru–Hyderabad National Highway, roughly 10 minutes from the Lepakshi Temple and about 75 minutes from Kempegowda International Airport, Devanahalli.",
-          "<span style=\"font-weight: bold;\">What sizes are the Ecovara farm plots?<br></span>The Ecovara farm plots are available in 6,000, 8,000 and 10,000 sq.ft configurations, all within a gated 15-acre community.",
-          "<span style=\"font-weight: bold;\">What is the Ecovara Farmplot price?<br></span>The Ecovara Farmplot price is shared on enquiry. You can unlock per-configuration pricing by downloading the brochure or contacting the Novara team for the latest rates and offers.",
-          "<span style=\"font-weight: bold;\">Is Ecovara a managed farmland project?<br></span>Yes. The plantation and ongoing maintenance are professionally managed, which makes it a low-hassle managed farmland near Bangalore that you can simply enjoy.",
-          "<span style=\"font-weight: bold;\">What amenities does Ecovara offer?<br></span>Ecovara amenities include a 64-plus variety tree plantation, a cafeteria, a jogging and pet route, solar street lights and 24/7 security."
+          "<p style=\"text-align: justify;\"><span style=\"font-weight: bold;\">Where is the Ecovara Farmplot located?</span></p><p style=\"text-align: justify;\">Ecovara is located near Lepakshi on the Bengaluru–Hyderabad National Highway, roughly 10 minutes from the Lepakshi Temple and about 75 minutes from Kempegowda International Airport, Devanahalli.</p>",
+          "<p style=\"text-align: justify;\"><span style=\"font-weight: bold;\">What sizes are the Ecovara farm plots?</span></p><p style=\"text-align: justify;\">The Ecovara farm plots are available in 6,000, 8,000 and 10,000 sq.ft configurations, all within a gated 15-acre community.</p>",
+          "<p style=\"text-align: justify;\"><span style=\"font-weight: bold;\">What is the Ecovara Farmplot price?</span></p><p style=\"text-align: justify;\">The Ecovara Farmplot price is shared on enquiry. You can unlock per-configuration pricing by downloading the brochure or contacting the Novara team for the latest rates and offers.</p>",
+          "<p style=\"text-align: justify;\"><span style=\"font-weight: bold;\">Is Ecovara a managed farmland project?</span></p><p style=\"text-align: justify;\">Yes. The plantation and ongoing maintenance are professionally managed, which makes it a low-hassle managed farmland near Bangalore that you can simply enjoy.</p>",
+          "<p style=\"text-align: justify;\"><span style=\"font-weight: bold;\">What amenities does Ecovara offer?</span></p><p style=\"text-align: justify;\">Ecovara amenities include a 64-plus variety tree plantation, a cafeteria, a jogging and pet route, solar street lights and 24/7 security.</p>"
         ]
       }
     ],
