@@ -2248,8 +2248,8 @@ export const BLOGS = [
         "caption": "",
         "videoUrl": "https://youtu.be/EkRggU8OOTQ?si=B9H4UsXzGhPOLysi",
         "alignment": "center",
-        "imgWidth": "222",
-        "imgHeight": "124",
+        "imgWidth": "336",
+        "imgHeight": "188",
         "filename": "Ecovara Farm Plots Near Bangalore  Smart Farmland Investment in Lepakshi.avif",
         "fileFormat": "AVIF",
         "fileSize": "27.6 KB"
