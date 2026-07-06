@@ -10024,7 +10024,7 @@ export const BLOGS = [
     "sections": [
       {
         "type": "p",
-        "text": "Life in Bangalore can get fast-paced. With the traffic, deadlines, and constant hustle, it’s no wonder more and more people are looking for a place to unwind and reconnect with nature. Imagine this: after a busy week in the city, you drive just a couple of hours to a peaceful, serene retreat surrounded by greenery, fresh air, and open spaces. No, it's not a dream — it's becoming a reality with  <a href=\"https://www.novaranatureestates.com\" style=\"color:#E3A600\">farmlands near Bangalore.</a>",
+        "text": "Life in Bangalore can get fast-paced. With the traffic, deadlines, and constant hustle, it’s no wonder more and more people are looking for a place to unwind and reconnect with nature. Imagine this: after a busy week in the city, you drive just a couple of hours to a peaceful, serene retreat surrounded by greenery, fresh air, and open spaces. No, it's not a dream — it's becoming a reality with  <span style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\"><a href=\"https://www.novaranatureestates.com/blogs/managed-farmland-near-bangalore-guide\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0);\">farmlands near Bangalore</a></span><a href=\"https://www.novaranatureestates.com\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">.</a>",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -10078,7 +10078,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "One of the biggest attractions of  <a href=\"https://www.novaranatureestates.com\" style=\"color:#E3A600\">farmlands near Bangalore.</a>  is the opportunity to design your very own farmhouse. Many city dwellers dream of owning a house surrounded by greenery, where they can spend their weekends gardening, hosting family get-togethers, or simply relaxing.",
+        "text": "One of the biggest attractions of  farmlands near Bangalore<span style=\"font-weight: bold;\">.</span>  is the opportunity to design your very own farmhouse. Many city dwellers dream of owning a house surrounded by greenery, where they can spend their weekends gardening, hosting family get-togethers, or simply relaxing.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -10168,7 +10168,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Investing in farmland near Bangalore isn’t just about owning property — it’s about creating a lifestyle that offers peace, tranquility, and a chance to disconnect from the fast pace of city life. With easy access to the city, stunning natural beauty, and the ability to build your own dream weekend farmhouse, it’s easy to see why so many people are choosing farmlands near Bangalore as their ideal weekend retreat.",
+        "text": "<a href=\"https://www.novaranatureestates.com/blogs/farmland-investment-near-bangalore\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Investing in farmland near Bangalore</a> isn’t just about owning property — it’s about creating a lifestyle that offers peace, tranquility, and a chance to disconnect from the fast pace of city life. With easy access to the city, stunning natural beauty, and the ability to build your own dream weekend farmhouse, it’s easy to see why so many people are choosing farmlands near Bangalore as their ideal weekend retreat.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
