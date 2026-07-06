@@ -2241,6 +2241,20 @@ export const BLOGS = [
         "align": "justify"
       },
       {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783331563/n06zqxhgcdjdv75cxjfe.webp",
+        "alt": "Ecovara Farm Plots Near Bangalore  Smart Farmland Investment in Lepakshi",
+        "title": "Ecovara Farm Plots Near Bangalore  Smart Farmland Investment in Lepakshi",
+        "caption": "",
+        "videoUrl": "https://youtu.be/EkRggU8OOTQ?si=B9H4UsXzGhPOLysi",
+        "alignment": "center",
+        "imgWidth": "222",
+        "imgHeight": "124",
+        "filename": "Ecovara Farm Plots Near Bangalore  Smart Farmland Investment in Lepakshi.avif",
+        "fileFormat": "AVIF",
+        "fileSize": "27.6 KB"
+      },
+      {
         "type": "p",
         "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\"><span style=\"color: rgb(0, 0, 0);\">Ecovara is a premium managed farmland project by </span><a href=\"https://www.novaranatureestates.com/\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"font-weight: bold; text-decoration-line: underline; color: rgb(17, 24, 39);\">Novara Nature Estates</a><span style=\"color: rgb(0, 0, 0);\">, spread across 15 acres of a gated community. Inspired by nature and designed for weekend living, the Novara Ecovara community blends rustic charm with modern comforts. Each Ecovara Farmplot sits within a thoughtfully planned layout with spacious plot dimensions, a fruit-bearing plantation, and dedicated organic garden space - so you own a productive, living asset rather than just an empty patch of land.</span></span>",
         "fontWeight": "font-normal",
