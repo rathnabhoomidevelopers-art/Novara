@@ -365,6 +365,47 @@ export default function BlogDetail({ vikeSlug }) {
                 // same clean "N. " prefix, no matter how it was authored.
                 const stripManualNum = (t = "") => t.replace(/^\s*Q?\.?\s*\d+\s*[.):]\s*/i, "").trim();
 
+                // Turn any FAQ "ol" item into a clean { q, a } pair, no matter how
+                // the Blog Builder saved it: plain "Q?\nA", concatenated "Q?A", or
+                // rich HTML like `<span style="font-weight:bold">Q?<br></span>A` or
+                // `<p><span ...>Q?</span></p><p>A</p>`. The question always renders
+                // as plain text (the h3 supplies bold + size) and the answer keeps
+                // real inline formatting (links, emphasis) but drops wrapper markup,
+                // so every blog's FAQ looks identical.
+                const stripTags = (h = "") =>
+                  h.replace(/<[^>]+>/g, "")
+                    .replace(/&nbsp;/gi, " ")
+                    .replace(/&amp;/gi, "&")
+                    .replace(/&quot;/gi, '"')
+                    .replace(/&#39;/gi, "'")
+                    .replace(/\s+/g, " ")
+                    .trim();
+                const parseFaqItem = (item = "") => {
+                  let q, a;
+                  const brAt = item.search(/<br\s*\/?>/i);
+                  const pEnd = item.search(/<\/p>/i);
+                  if (brAt !== -1) {
+                    // Builder-style bold heading + <br> + answer
+                    q = item.slice(0, brAt);
+                    a = item.slice(brAt).replace(/^\s*(<br\s*\/?>|<\/span>|<\/b>|<\/strong>|<\/p>)+/i, "");
+                  } else if (pEnd !== -1) {
+                    // Old builder-style <p>Q</p><p>A</p>
+                    q = item.slice(0, pEnd);
+                    a = item.slice(pEnd + 4);
+                  } else {
+                    // Plain text: split at the first "?"
+                    const qi = item.indexOf("?");
+                    q = item.slice(0, qi + 1);
+                    a = item.slice(qi + 1);
+                  }
+                  q = stripManualNum(stripTags(q));
+                  a = a
+                    .replace(/<\/?(p|div|span|font)[^>]*>/gi, "") // drop wrapper markup
+                    .replace(/<br\s*\/?>/gi, " ")                 // no stray line breaks
+                    .replace(/^\s+|\s+$/g, "");                   // keeps <a>, <b>, <em>, <u>
+                  return { q, a };
+                };
+
                 // Only treat an h2/h3 ending in "?" as an FAQ question once we're
                 // past a real "FAQ" / "Frequently Asked Questions" heading —
                 // otherwise an unrelated subheading that happens to end in "?"
@@ -587,16 +628,13 @@ export default function BlogDetail({ vikeSlug }) {
                     });
                     if (isFaqStyle) {
                       const startNum = olFaqStart.get(i) || 1;
-                      const faqItems = items.map((item) => {
-                        const qi = item.indexOf("?");
-                        return { q: item.slice(0, qi + 1).trim(), a: item.slice(qi + 1).trim() };
-                      });
+                      const faqItems = items.map((item) => parseFaqItem(item));
                       return (
                         <div key={i} className="space-y-3">
                           {faqItems.map((item, fi) => (
                             <div key={fi}>
                               <h3 className="scroll-mt-28 text-[16px] sm:text-[18px] font-bold text-[#111827]">
-                                {`${startNum + fi}. `}<span dangerouslySetInnerHTML={{ __html: stripManualNum(item.q) }} />
+                                {`${startNum + fi}. ${item.q}`}
                               </h3>
                               <p className="text-[13px] sm:text-[14px] leading-relaxed text-slate-600" dangerouslySetInnerHTML={{ __html: item.a }} />
                             </div>
