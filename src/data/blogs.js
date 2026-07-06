@@ -10911,9 +10911,9 @@ export const BLOGS = [
     "heroImage": "/images/blog_9.webp",
     "coverImage": "/images/blog_9.webp",
     "imageAlt": "Farm Plots Near Lepakshi | Investment Guide for Buyers",
-    "imageTitle": "",
+    "imageTitle": "Farm Plots Near Lepakshi | Investment Guide for Buyers",
     "imageCaption": "",
-    "imageDescription": "",
+    "imageDescription": "Farm Plots Near Lepakshi | Investment Guide for Buyers",
     "videoUrl": "",
     "tags": [
       "Sustainable Farming",
