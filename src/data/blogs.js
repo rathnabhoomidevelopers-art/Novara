@@ -11427,9 +11427,9 @@ export const BLOGS = [
     "heroImage": "/images/blog_10.webp",
     "coverImage": "/images/blog_10.webp",
     "imageAlt": "Managed Farmland Near Lepakshi | How It Works for Investors",
-    "imageTitle": "",
+    "imageTitle": "Managed Farmland Near Lepakshi | How It Works for Investors",
     "imageCaption": "",
-    "imageDescription": "",
+    "imageDescription": "Managed Farmland Near Lepakshi | How It Works for Investors",
     "videoUrl": "",
     "tags": [
       "Sustainable Farming",
