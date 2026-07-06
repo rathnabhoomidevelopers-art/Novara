@@ -10438,9 +10438,9 @@ export const BLOGS = [
     ],
     "sections": [
       {
-        "type": "h2",
+        "type": "p",
         "text": "Over the past few years, farmland investment has become increasingly popular among urban investors looking for stable and sustainable assets. Many professionals from Bangalore are exploring agricultural land as a long-term investment option, and one location that is gaining significant attention is Lepakshi.",
-        "fontWeight": "font-bold",
+        "fontWeight": "font-normal",
         "align": "justify"
       },
       {
@@ -10727,7 +10727,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Scheduling a farm visit can help potential buyers understand the location, environment, and investment potential of farmland in Lepakshi.",
+        "text": "<a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Scheduling a farm visit</a> can help potential buyers understand the location, environment, and investment potential of farmland in Lepakshi.",
         "fontWeight": "font-normal",
         "align": "justify"
       },
@@ -10740,11 +10740,11 @@ export const BLOGS = [
       {
         "type": "ol",
         "text": [
-          "Why isLepakshi popular for farmland investment?Lepakshi offers good connectivity to Bangalore, peaceful surroundings, and increasing interest from urban investors looking for farmland ownership.",
-          "Is farmland investment in Lepakshi suitable for weekend retreats?Yes, many investors use farmland near Lepakshi as a weekend retreat where they can enjoy nature and relaxation.",
-          "What is managed farmland?Managed farmland allows investors to own farmland while professional teams handle plantation, irrigation, and maintenance.",
-          "How does infrastructure affect farmland investment?Improving roads, highways, and connectivity often increase the long-term value of agricultural land.",
-          "What should investors check before buying farmland?Buyers should verify land titles, water availability, soil quality, and road accessibility."
+          "<span style=\"font-weight: bold;\">Why is Lepakshi popular for farmland investment?<br></span>Lepakshi offers good connectivity to Bangalore, peaceful surroundings, and increasing interest from urban investors looking for farmland ownership.",
+          "<span style=\"font-weight: bold;\">Is farmland investment in Lepakshi suitable for weekend retreats?<br></span>Yes, many investors use farmland near Lepakshi as a weekend retreat where they can enjoy nature and relaxation.",
+          "<span style=\"font-weight: bold;\">What is managed farmland?<br></span>Managed farmland allows investors to own farmland while professional teams handle plantation, irrigation, and maintenance.",
+          "<span style=\"font-weight: bold;\">How does infrastructure affect farmland investment?<br></span>Improving roads, highways, and connectivity often increase the long-term value of agricultural land.",
+          "<span style=\"font-weight: bold;\">What should investors check before buying farmland?<br></span>Buyers should verify land titles, water availability, soil quality, and road accessibility."
         ]
       }
     ],
