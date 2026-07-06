@@ -9456,7 +9456,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "If you’re new to  <a href=\"https://www.novaranatureestates.com/projects\" style=\"color:#E3A600\">farmland investment,</a>  don’t worry! We’ve broken it down into simple steps to guide you through the process. By the end of this post, you’ll have a clear understanding of how to get started, what to consider, and why investing in farmland could be one of the best decisions you ever make.",
+        "text": "If you’re new to  <a href=\"https://www.novaranatureestates.com/projects\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\"><span style=\"font-weight: bold; text-decoration-line: underline;\">farmland investment</span>,</a>  don’t worry! We’ve broken it down into simple steps to guide you through the process. By the end of this post, you’ll have a clear understanding of how to get started, what to consider, and why investing in farmland could be one of the best decisions you ever make.",
         "fontWeight": "font-normal"
       },
       {
@@ -9506,7 +9506,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "Farmland investments, especially those focused on organic farming or  <a href=\"https://www.novaranatureestates.com/projects\" style=\"color:#E3A600\">sustainable agriculture,</a>  are increasingly popular with eco-conscious investors.",
+        "text": "Farmland investments, especially those focused on organic farming or  sustainable agriculture,  are increasingly popular with eco-conscious investors.",
         "fontWeight": "font-normal"
       },
       {
@@ -9526,7 +9526,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "The location of the land is crucial. Is it close to urban areas or more remote? Is it near key agricultural zones, or is it a popular tourist area where agro-tourism can become a future opportunity? For example, Novara’s Ecovara Project near Lepakshi offers a blend of peace and proximity to growing cities.",
+        "text": "The location of the land is crucial. Is it close to urban areas or more remote? Is it near key agricultural zones, or is it a popular tourist area where agro-tourism can become a future opportunity? For example, Novara’s <a href=\"https://www.novaranatureestates.com/blogs/ecovara-farmplot-near-bangalore\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Ecovara Project near Lepakshi</a> offers a blend of peace and proximity to growing cities.",
         "fontWeight": "font-normal"
       },
       {
@@ -9776,7 +9776,7 @@ export const BLOGS = [
       },
       {
         "type": "p",
-        "text": "If you want to turn your land into a farm stay, build facilities, market your farm, and set up booking systems.Regular maintenance of infrastructure like roads, water systems, and fencing is also crucial to ensure the land remains productive.",
+        "text": "If you want to turn your land into a farm stay, build facilities, market your farm, and set up booking systems. Regular maintenance of infrastructure like roads, water systems, and fencing is also crucial to ensure the land remains productive.",
         "fontWeight": "font-normal"
       },
       {
