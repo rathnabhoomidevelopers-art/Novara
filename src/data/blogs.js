@@ -10874,6 +10874,11 @@ export const BLOGS = [
     "image": "/images/blog_7.webp",
     "heroImage": "/images/blog_7.webp",
     "coverImage": "/images/blog_7.webp",
+    "imageAlt": "Ecovara Farm Land Near Lepakshi",
+    "imageTitle": "Ecovara Farm Land Near Lepakshi",
+    "imageCaption": "",
+    "imageDescription": "Ecovara Farm Land Near Lepakshi",
+    "videoUrl": "",
     "tags": [
       "Farmland Investment",
       "Sustainable Farming",
@@ -10883,235 +10888,329 @@ export const BLOGS = [
     "sections": [
       {
         "type": "p",
-        "text": "Karthik had been driving down NH44 every other weekend for three years. Mysore trips, Hyderabad work travel, the occasional Nandi Hills escape. And every single time, somewhere around the 75-kilometre mark from Bangalore, he would slow down slightly and look out at the stretches of green farmland rolling past his window."
+        "text": "Karthik had been driving down NH44 every other weekend for three years. Mysore trips, Hyderabad work travel, the occasional Nandi Hills escape. And every single time, somewhere around the 75-kilometre mark from Bangalore, he would slow down slightly and look out at the stretches of green farmland rolling past his window.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "\"Someone owns all of this,\" he told us when he finally called. \"I just never thought that someone could be me.\"."
+        "text": "\"Someone owns all of this,\" he told us when he finally called. \"I just never thought that someone could be me.\".",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Three weeks after that call, Karthik stood inside Ecovara Farms near Lepakshi Temple — 15 acres of managed farmland with 800 existing coconut and mango trees, a gated entrance, a clubhouse, and a view that made his Whitefield apartment feel very far away. He booked his plot the same afternoon."
+        "text": "Three weeks after that call, Karthik stood inside Ecovara Farms near Lepakshi Temple — 15 acres of managed farmland with 800 existing coconut and mango trees, a gated entrance, a clubhouse, and a view that made his Whitefield apartment feel very far away. He booked his plot the same afternoon.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "What is Ecovara Farms Near Lepakshi?"
-      },
-      {
-        "type": "p_with_link",
-        "textBefore": "Ecovara Farms is a premium ",
-        "linkText": "managed farmland",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": " project developed by Novara Nature Estates, a Bengaluru-based farmland developer focused on clear-title, legally verified agricultural land investments near Bangalore."
+        "text": "What is Ecovara Farms Near Lepakshi?",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The project sits in the North Bangalore corridor near Lepakshi Temple — one of the most historically significant and naturally scenic locations in the region. It spans 15 acres and has been thoughtfully developed for urban investors who want to own productive farmland without managing it themselves."
+        "text": "Ecovara Farms is a premium  <a href=\"https://www.novaranatureestates.com/projects\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">managed farmland</a>  project developed by Novara Nature Estates, a Bengaluru-based farmland developer focused on clear-title, legally verified agricultural land investments near Bangalore.",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "The project sits in the North Bangalore corridor near Lepakshi Temple — one of the most historically significant and naturally scenic locations in the region. It spans 15 acres and has been thoughtfully developed for urban investors who want to own productive farmland without managing it themselves.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "The Vision Behind Ecovara"
+        "text": "The Vision Behind Ecovara",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Most people who want to own farmland near Bangalore have the same problem — they love the idea but have no time, no farming knowledge, and no local contacts to manage the land. Ecovara was built specifically to solve that problem."
+        "text": "Most people who want to own farmland near Bangalore have the same problem — they love the idea but have no time, no farming knowledge, and no local contacts to manage the land. Ecovara was built specifically to solve that problem.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "You own the land. Novara Nature Estates manages everything else — plantation maintenance, water supply, security, and farm operations. It is farmland ownership made genuinely simple."
+        "text": "You own the land. Novara Nature Estates manages everything else — plantation maintenance, water supply, security, and farm operations. It is farmland ownership made genuinely simple.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "What Makes This Project Different"
+        "text": "What Makes This Project Different",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Three things set Ecovara apart from most farmland projects near Bangalore:"
+        "text": "Three things set Ecovara apart from most farmland projects near Bangalore:",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "First, the existing plantation. When you buy a plot at Ecovara you are not buying bare land and waiting years for trees to grow. There are already 800+ coconut and mango trees on the property — mature, established, and productive."
+        "text": "First, the existing plantation. When you buy a plot at Ecovara you are not buying bare land and waiting years for trees to grow. There are already 800+ coconut and mango trees on the property — mature, established, and productive.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Second, the location. Lepakshi is not a random location choice. It sits directly on NH44 — the Bangalore-Hyderabad National Highway — with exceptional connectivity, growing infrastructure investment, and strong land appreciation history."
+        "text": "Second, the location. Lepakshi is not a random location choice. It sits directly on NH44 — the Bangalore-Hyderabad National Highway — with exceptional connectivity, growing infrastructure investment, and strong land appreciation history.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Third, clear titles. Every plot at Ecovara comes with legally verified, clear title documentation. No disputes, no grey areas, no surprises after purchase."
+        "text": "Third, clear titles. Every plot at Ecovara comes with legally verified, clear title documentation. No disputes, no grey areas, no surprises after purchase.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Location Advantages of Ecovara Farms Near Lepakshi"
+        "text": "Location Advantages of Ecovara Farms Near Lepakshi",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Distance from Bangalore — Exactly How Far"
+        "text": "Distance from Bangalore — Exactly How Far",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Ecovara Farms is located approximately 75 kilometres from Kempegowda International Airport, Devanahalli — roughly 75 to 90 minutes by road depending on traffic. From Electronic City or Whitefield, add another 20-30 minutes."
+        "text": "Ecovara Farms is located approximately 75 kilometres from Kempegowda International Airport, Devanahalli — roughly 75 to 90 minutes by road depending on traffic. From Electronic City or Whitefield, add another 20-30 minutes.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "For most Bangalore residents this distance is the sweet spot — far enough to feel genuinely away from the city, close enough for a comfortable weekend drive without overnight commitment."
+        "text": "For most Bangalore residents this distance is the sweet spot — far enough to feel genuinely away from the city, close enough for a comfortable weekend drive without overnight commitment.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Hindupuram town is just 10 minutes from the farm, giving you easy access to daily necessities, hospitals, and local markets."
+        "text": "Hindupuram town is just 10 minutes from the farm, giving you easy access to daily necessities, hospitals, and local markets.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "NH44 Connectivity — Why It Matters"
+        "text": "NH44 Connectivity — Why It Matters",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The Bangalore-Hyderabad National Highway is not just a road — it is one of the most actively developed infrastructure corridors in South India. The expressway expansion, ongoing logistics park development, and growing industrial zones along this corridor have been consistently driving land appreciation in the region for the past decade."
+        "text": "The Bangalore-Hyderabad National Highway is not just a road — it is one of the most actively developed infrastructure corridors in South India. The expressway expansion, ongoing logistics park development, and growing industrial zones along this corridor have been consistently driving land appreciation in the region for the past decade.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Buying farmland directly on or adjacent to NH44 means your asset sits on a corridor that governments and private developers are actively investing in. That infrastructure tailwind is built into every plot at Ecovara."
+        "text": "Buying farmland directly on or adjacent to NH44 means your asset sits on a corridor that governments and private developers are actively investing in. That infrastructure tailwind is built into every plot at Ecovara.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Lepakshi Temple and Surrounding Landmarks"
+        "text": "Lepakshi Temple and Surrounding Landmarks",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Lepakshi Temple is a UNESCO-recognised Vijayanagara architectural masterpiece that draws over 2 lakh visitors annually. The presence of a significant heritage landmark 10 minutes from Ecovara is not just a lifestyle advantage — it is an economic one. Tourism demand drives local land prices, hospitality investment, and regional development in ways that benefit landowners directly."
+        "text": "Lepakshi Temple is a UNESCO-recognised Vijayanagara architectural masterpiece that draws over 2 lakh visitors annually. The presence of a significant heritage landmark 10 minutes from Ecovara is not just a lifestyle advantage — it is an economic one. Tourism demand drives local land prices, hospitality investment, and regional development in ways that benefit landowners directly.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Other landmarks within easy reach include Gudibande Fort (30 minutes), Nandi Hills (60 minutes), Isha Foundation (50 minutes), and Penukonda Fort (30 minutes). On weekends Ecovara is not just your farm — it is your base for exploring one of Karnataka's richest heritage corridors."
+        "text": "Other landmarks within easy reach include Gudibande Fort (30 minutes), Nandi Hills (60 minutes), Isha Foundation (50 minutes), and Penukonda Fort (30 minutes). On weekends Ecovara is not just your farm — it is your base for exploring one of Karnataka's richest heritage corridors.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "What You Get — Ecovara Farms Features and Amenities"
+        "text": "What You Get — Ecovara Farms Features and Amenities",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Land and Plantation Details"
+        "text": "Land and Plantation Details",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "ul",
         "text": [
-          "Total project size: 15 acres",
-          "Existing trees: 800+ coconut and mango trees",
-          "Open space: 80% of the project is green and open",
-          "Plot sizes: Available in multiple configurations"
+          "<span style=\"font-weight: bold;\">Total project size:</span> 15 acres",
+          "<span style=\"font-weight: bold;\">Existing trees:</span> 800+ coconut and mango trees",
+          "<span style=\"font-weight: bold;\">Open space:</span> 80% of the project is green and open",
+          "<span style=\"font-weight: bold;\">Plot sizes:</span> Available in multiple configurations"
         ]
       },
       {
         "type": "p",
-        "text": "The existing plantation is one of Ecovara's strongest selling points. Unlike projects that hand you bare land, Ecovara gives you an already-green farm. The trees are established, the canopy is visible, and the farm feels alive from day one."
+        "text": "The existing plantation is one of Ecovara's strongest selling points. Unlike projects that hand you bare land, Ecovara gives you an already-green farm. The trees are established, the canopy is visible, and the farm feels alive from day one.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Infrastructure and Amenities"
+        "text": "Infrastructure and Amenities",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Ecovara Farms includes:"
+        "text": "Ecovara Farms includes:",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "ul",
         "text": [
-          "Clubhouse — a dedicated social and leisure space for plot owners",
-          "Swimming pool — resort-style facility within the farm community",
-          "Kids play area — designed for families who visit on weekends",
-          "Organic farming plots — dedicated space to grow your own produce",
-          "Well-planned internal roads — paved access throughout the property",
-          "24/7 security — gated entry with round-the-clock monitoring",
-          "Reliable water supply — managed irrigation for the plantation"
+          "<span style=\"font-weight: bold;\">Clubhouse —</span> a dedicated social and leisure space for plot owners",
+          "<span style=\"font-weight: bold;\">Swimming pool — </span>resort-style facility within the farm community",
+          "<span style=\"font-weight: bold;\">Kids play area —</span> designed for families who visit on weekends",
+          "<span style=\"font-weight: bold;\">Organic farming plots —</span> dedicated space to grow your own produce",
+          "<span style=\"font-weight: bold;\">Well-planned internal roads —</span> paved access throughout the property",
+          "<span style=\"font-weight: bold;\">24/7 security —</span> gated entry with round-the-clock monitoring",
+          "<span style=\"font-weight: bold;\">Reliable water supply —</span> managed irrigation for the plantation"
         ]
       },
       {
         "type": "h3",
-        "text": "Farm Management Services"
+        "text": "Farm Management Services",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "This is where Ecovara genuinely stands out. Novara Nature Estates provides complete farm management — plantation care, maintenance schedules, water management, and regular property updates. You do not need to visit every week to keep your investment healthy. The team handles it so your farm grows in value whether you are at your Bangalore desk or on a flight to Singapore."
+        "text": "This is where Ecovara genuinely stands out. Novara Nature Estates provides complete farm management — plantation care, maintenance schedules, water management, and regular property updates. You do not need to visit every week to keep your investment healthy. The team handles it so your farm grows in value whether you are at your Bangalore desk or on a flight to Singapore.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Why Investing in Ecovara Farms Near Lepakshi Makes Sense in 2026"
+        "text": "Why Investing in Ecovara Farms Near Lepakshi Makes Sense in 2026",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Land Appreciation in the North Bangalore Corridor"
+        "text": "Land Appreciation in the North Bangalore Corridor",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Agricultural land along the NH44 corridor between Bangalore and Hindupuram has seen consistent appreciation over the past five years driven by infrastructure investment, airport proximity, and growing investor demand from Bangalore's IT workforce."
+        "text": "Agricultural land along the NH44 corridor between Bangalore and Hindupuram has seen consistent appreciation over the past five years driven by infrastructure investment, airport proximity, and growing investor demand from Bangalore's IT workforce.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Early buyers in this corridor have seen land values grow significantly — and with the Bangalore metropolitan expansion continuing northward, this trend shows no sign of reversing."
+        "text": "Early buyers in this corridor have seen land values grow significantly — and with the Bangalore metropolitan expansion continuing northward, this trend shows no sign of reversing.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Passive Income Potential"
+        "text": "Passive Income Potential",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Agricultural land in India enjoys significant tax advantages. Income from farming activities on agricultural land is exempt from income tax under the Indian Income Tax Act. For high-earning IT professionals in Bangalore this tax efficiency alone makes farmland a compelling asset class."
+        "text": "Agricultural land in India enjoys significant tax advantages. Income from farming activities on agricultural land is exempt from income tax under the Indian Income Tax Act. For high-earning IT professionals in Bangalore this tax efficiency alone makes farmland a compelling asset class.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Beyond tax benefits the existing plantation at Ecovara generates ongoing produce — coconuts, mangoes, and seasonal crops — creating a passive income stream from the land itself."
+        "text": "Beyond tax benefits the existing plantation at Ecovara generates ongoing produce — coconuts, mangoes, and seasonal crops — creating a passive income stream from the land itself.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Tax Benefits of Agricultural Land"
+        "text": "Tax Benefits of Agricultural Land",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Agricultural income in India is not subject to income tax. Capital gains on sale of agricultural land in rural areas are also exempt under specific conditions. For a Bangalore professional in the 30% tax bracket these benefits represent genuine financial value beyond land appreciation alone. Always consult your CA for specific advice on your situation."
+        "text": "Agricultural income in India is not subject to income tax. Capital gains on sale of agricultural land in rural areas are also exempt under specific conditions. For a Bangalore professional in the 30% tax bracket these benefits represent genuine financial value beyond land appreciation alone. Always consult your CA for specific advice on your situation.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "What Buyers Are Saying About Ecovara Farms"
+        "text": "What Buyers Are Saying About Ecovara Farms",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Real Client Experiences"
-      },
-      {
-        "type": "p_with_link",
-        "textBefore": "Sridhar, who works in the IT sector in Bangalore, visited ",
-        "linkText": "Ecovara",
-        "href": "https://www.novaranatureestates.com/projects",
-        "textAfter": " after a conversation with a friend about weekend investment options. He told us: What started as a casual discussion turned into a confident decision after visiting the farm. The team was transparent and the location was everything they said it would be."
+        "text": "Real Client Experiences",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Anitha, another plot owner, was convinced after seeing the existing coconut and mango plantation in person. \"The quality of development and the way the farm is maintained convinced me. Visiting the site gave me complete clarity.\""
+        "text": "Sridhar, who works in the IT sector in Bangalore, visited  <a href=\"https://www.novaranatureestates.com/projects\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">Ecovara</a>  after a conversation with a friend about weekend investment options. He told us: What started as a casual discussion turned into a confident decision after visiting the farm. The team was transparent and the location was everything they said it would be.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Rahul visited with four other families in January. \"The model house, the open space, the farm activities — it was a genuinely memorable experience. The food was prepared according to our preferences. It felt like a resort and a farm at the same time.\""
+        "text": "Anitha, another plot owner, was convinced after seeing the existing coconut and mango plantation in person. \"The quality of development and the way the farm is maintained convinced me. Visiting the site gave me complete clarity.\"",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "Rahul visited with four other families in January. \"The model house, the open space, the farm activities — it was a genuinely memorable experience. The food was prepared according to our preferences. It felt like a resort and a farm at the same time.\"",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "What They Checked Before Buying"
+        "text": "What They Checked Before Buying",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Every serious buyer at Ecovara asked three things: Is the title clear? Is the location genuine? And is the management team trustworthy? The answer to all three, as our buyers consistently confirm, is yes."
+        "text": "Every serious buyer at Ecovara asked three things: Is the title clear? Is the location genuine? And is the management team trustworthy? The answer to all three, as our buyers consistently confirm, is yes.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "How to Book Your Plot at Ecovara Farms"
+        "text": "How to Book Your Plot at Ecovara Farms",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Step by Step Process"
+        "text": "Step by Step Process",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "ol",
         "text": [
-          "Schedule a free farm visit through the Novara website",
+          "<a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Schedule a free farm visit</a> through the Novara website",
           "Visit Ecovara Farms with your family — see the land in person",
           "Review plot options, sizes, and pricing with the team",
           "Complete legal and documentation verification",
@@ -11120,96 +11219,229 @@ export const BLOGS = [
       },
       {
         "type": "h3",
-        "text": "Documents Required"
+        "text": "Documents Required",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Standard KYC documents — Aadhaar, PAN, address proof. The Novara team handles all land documentation, title verification, and registration support."
+        "text": "Standard KYC documents — Aadhaar, PAN, address proof. The Novara team handles all land documentation, title verification, and registration support.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h3",
-        "text": "Schedule a Farm Visit"
+        "text": "Schedule a Farm Visit",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The best way to understand Ecovara is to walk it. No photograph, no video, and no blog post does justice to 15 acres of green farmland with coconut trees, open sky, and Lepakshi Temple visible on the horizon."
+        "text": "The best way to understand Ecovara is to walk it. No photograph, no video, and no blog post does justice to 15 acres of green farmland with coconut trees, open sky, and Lepakshi Temple visible on the horizon.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "h2",
-        "text": "Frequently Asked Questions About Ecovara Farms Near Lepakshi"
+        "text": "Frequently Asked Questions About Ecovara Farms Near Lepakshi",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
-        "type": "h3",
-        "text": "Q1. How far is Ecovara Farms from Bangalore?"
-      },
-      {
-        "type": "p",
-        "text": " Ecovara Farms is approximately 75 kilometres from Kempegowda International Airport, Devanahalli — roughly 75 to 90 minutes by road on NH44."
-      },
-      {
-        "type": "h3",
-        "text": "Q2. Is the farmland title clear at Ecovara?"
-      },
-      {
-        "type": "p",
-        "text": " Yes. Every plot at Ecovara Farms comes with legally verified, clear title documentation. Novara Nature Estates handles complete title due diligence before sale."
-      },
-      {
-        "type": "h3",
-        "text": "Q3. Do I need farming experience to own a plot at Ecovara?"
-      },
-      {
-        "type": "p",
-        "text": "No. Novara Nature Estates provides complete farm management services. You own the land — the team handles plantation maintenance, water, security, and operations."
-      },
-      {
-        "type": "h3",
-        "text": "Q4. What amenities are available at Ecovara Farms?"
-      },
-      {
-        "type": "p",
-        "text": "Ecovara includes a clubhouse, swimming pool, kids play area, organic farming plots, 24/7 security, reliable water supply, and well-maintained internal roads."
-      },
-      {
-        "type": "h3",
-        "text": "Q5. Can I visit Ecovara Farms before buying?"
-      },
-      {
-        "type": "p",
-        "text": " Absolutely — and we strongly encourage it. Farm visits are free and can be scheduled through the contact page. Most buyers make their decision after visiting in person."
+        "type": "ol",
+        "text": [
+          "<p style=\"text-align: justify;\"><span style=\"font-weight: bold;\">How far is Ecovara Farms from Bangalore?</span></p><p style=\"text-align: justify;\">Ecovara Farms is approximately 75 kilometres from Kempegowda International Airport, Devanahalli — roughly 75 to 90 minutes by road on NH44.</p>",
+          "<p style=\"text-align: justify;\"><span style=\"font-weight: bold;\">Is the farmland title clear at Ecovara?</span></p><p style=\"text-align: justify;\">Yes. Every plot at Ecovara Farms comes with legally verified, clear title documentation. Novara Nature Estates handles complete title due diligence before sale.</p>",
+          "<p style=\"text-align: justify;\"><span style=\"font-weight: bold;\">Do I need farming experience to own a plot at Ecovara?</span></p><p style=\"text-align: justify;\">No. Novara Nature Estates provides complete farm management services. You own the land — the team handles plantation maintenance, water, security, and operations.</p>",
+          "<p style=\"text-align: justify;\"><span style=\"font-weight: bold;\">What amenities are available at Ecovara Farms?</span></p><p style=\"text-align: justify;\">Ecovara includes a clubhouse, swimming pool, kids play area, organic farming plots, 24/7 security, reliable water supply, and well-maintained internal roads.</p>",
+          "<p style=\"text-align: justify;\"><span style=\"font-weight: bold;\">Can I visit Ecovara Farms before buying?</span></p><p style=\"text-align: justify;\">Absolutely — and we strongly encourage it. Farm visits are free and can be scheduled through the contact page. Most buyers make their decision after visiting in person.</p>"
+        ]
       },
       {
         "type": "h2",
-        "text": "Conclusion"
+        "text": "Conclusion",
+        "fontWeight": "font-bold",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Ecovara Farms near Lepakshi is not just a farmland project. It is a carefully managed, legally sound, strategically located land investment that gives Bangalore investors everything they have been looking for — without the complexity of doing it alone."
+        "text": "Ecovara Farms near Lepakshi is not just a farmland project. It is a carefully managed, legally sound, strategically located land investment that gives Bangalore investors everything they have been looking for — without the complexity of doing it alone.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "The land is real. The trees are already growing. The team is already managing it. The only question left is whether you want to be part of it."
+        "text": "The land is real. The trees are already growing. The team is already managing it. The only question left is whether you want to be part of it.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Come see it for yourself."
-      },
-      {
-        "type": "p_with_link",
-        "textBefore": "",
-        "linkText": "Schedule your free farm visit",
-        "href": "https://www.novaranatureestates.com/contactus",
-        "textAfter": " today"
+        "text": "Come see it for yourself.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
         "type": "p",
-        "text": "Schedule your free farm visit today "
+        "text": "<a href=\"https://www.novaranatureestates.com/contactus\" style=\"color:#E3A600\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\">Schedule your free farm visit</a>  today",
+        "fontWeight": "font-normal",
+        "align": "justify"
       },
       {
-        "type": "h3",
-        "text": "Interested in other farmland investment opportunities near Bangalore? Explore our Ecovara managed farmland project or read more about farmland investment near Bangalore."
+        "type": "p",
+        "text": "Interested in other farmland investment opportunities near Bangalore? Explore our Ecovara managed farmland project or read more about farmland investment near Bangalore.",
+        "fontWeight": "font-normal",
+        "align": "justify"
       }
-    ]
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "How far is Ecovara Farms from Bangalore?",
+              "text": "Ecovara Farms is approximately 75 kilometres from Kempegowda International Airport, Devanahalli — roughly 75 to 90 minutes by road on NH44."
+            },
+            {
+              "name": "Is the farmland title clear at Ecovara?",
+              "text": "Yes. Every plot at Ecovara Farms comes with legally verified, clear title documentation. Novara Nature Estates handles complete title due diligence before sale."
+            },
+            {
+              "name": "Do I need farming experience to own a plot at Ecovara?",
+              "text": "No. Novara Nature Estates provides complete farm management services. You own the land — the team handles plantation maintenance, water, security, and operations."
+            },
+            {
+              "name": "What amenities are available at Ecovara Farms?",
+              "text": "Ecovara includes a clubhouse, swimming pool, kids play area, organic farming plots, 24/7 security, reliable water supply, and well-maintained internal roads."
+            },
+            {
+              "name": "Can I visit Ecovara Farms before buying?",
+              "text": "Absolutely — and we strongly encourage it. Farm visits are free and can be scheduled through the contact page. Most buyers make their decision after visiting in person."
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novaranatureestates.com/blogs/ecovara-farms-near-lepakshi-complete-guide"
+          },
+          "headline": "Ecovara Farms Near Lepakshi — Complete Guide 2026",
+          "image": "https://www.novaranatureestates.com/images/blog_7.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "url": "https://www.novaranatureestates.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/images/logo.svg"
+            }
+          },
+          "datePublished": "2026-03-01T18:30:24+05:30",
+          "dateModified": "2026-03-01T18:30:24+05:30"
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blog",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Ecovara Farms Near Lepakshi — Complete Guide 2026",
+              "item": "https://www.novaranatureestates.com/blogs/ecovara-farms-near-lepakshi-complete-guide"
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Ecovara Farms Near Lepakshi — Complete Guide 2026",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "1029",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
   },
   {
     "id": 8,
