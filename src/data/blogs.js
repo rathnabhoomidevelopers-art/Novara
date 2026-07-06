@@ -4619,17 +4619,17 @@ export const BLOGS = [
         "json": ""
       },
       "blog": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "@context": "https://schema.org",
           "@type": "BlogPosting",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": ""
+            "@id": "https://www.novaranatureestates.com/blogs/farmland-investment-devanahalli"
           },
-          "headline": "",
-          "image": "",
+          "headline": "Why Bangalore Investors Are Watching Devanahalli — And Where Smart Money Is Moving Next",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1776584037/lzwbxme1ncqwdg5qikc5.webp",
           "author": {
             "@type": "Organization",
             "name": "Novara Nature Estates",
@@ -4643,19 +4643,27 @@ export const BLOGS = [
               "url": "https://www.novaranatureestates.com/images/logo.svg"
             }
           },
-          "datePublished": "",
-          "dateModified": ""
+          "datePublished": "2026-04-18T18:30:00.000Z",
+          "dateModified": "2026-04-18T18:30:00.000Z"
         },
         "json": ""
       },
       "breadcrumb": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "items": [
             {
-              "name": "",
-              "item": ""
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blogs",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Why Bangalore Investors Are Watching Devanahalli — And Where Smart Money Is Moving Next",
+              "item": "https://www.novaranatureestates.com/blogs/farmland-investment-devanahalli"
             }
           ]
         },
