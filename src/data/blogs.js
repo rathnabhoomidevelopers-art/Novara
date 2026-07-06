@@ -631,14 +631,14 @@ export const BLOGS = [
       {
         "type": "ol",
         "text": [
-          "Lepakshi Temple — around 10 minutes",
-          "Hindupuram Town — around 10 minutes",
-          "Bagepalli Toll Plaza — around 20 minutes",
-          "Penukonda Fort — around 30 minutes",
-          "Isha Foundation — around 50 minutes",
-          "Nandi Hills — around 60 minutes",
-          "Devanahalli — around 65 minutes",
-          "Kempegowda International Airport, Devanahalli — around 75 minutes"
+          "<span style=\"font-weight: bold;\">Lepakshi Temple —</span> around 10 minutes",
+          "<span style=\"font-weight: bold;\">Hindupuram Town —</span> around 10 minutes",
+          "<span style=\"font-weight: bold;\">Bagepalli Toll Plaza —</span> around 20 minutes",
+          "<span style=\"font-weight: bold;\">Penukonda Fort —</span> around 30 minutes",
+          "<span style=\"font-weight: bold;\">Isha Foundation —</span> around 50 minutes",
+          "<span style=\"font-weight: bold;\">Nandi Hills —</span> around 60 minutes",
+          "<span style=\"font-weight: bold;\">Devanahalli —</span> around 65 minutes",
+          "<span style=\"font-weight: bold;\">Kempegowda International Airport, Devanahalli —</span> around 75 minutes"
         ]
       },
       {
@@ -812,11 +812,11 @@ export const BLOGS = [
       {
         "type": "ol",
         "text": [
-          "Is farmland near Lepakshi good for Bangalore-based buyers?Yes. Farmland near Lepakshi can be suitable for Bangalore-based buyers because it offers peaceful surroundings, road connectivity, weekend usability, and access to nearby attractions.",
-          "What makes Ecovara a managed farmland project?Ecovara offers planned farmland features such as spacious plots, plantations, organic garden space, security, common amenities, and a managed ownership experience.",
-          "What are the plot sizes available at Ecovara?Ecovara offers flexible plot sizes starting from 6,000 sq. ft., with options such as 8,000 sq. ft. and 10,000 sq. ft.",
-          "Is Ecovara close to Lepakshi Temple?Yes. As per the project location highlights, Lepakshi Temple is around 10 minutes from Ecovara.",
-          "What should I check before buying farmland near Lepakshi?You should check title documents, access road, water availability, approvals, maintenance model, security, fencing, developer credibility, and distance from major roads."
+          "<span style=\"font-weight: bold;\">Is farmland near Lepakshi good for Bangalore-based buyers?<br></span>Yes. Farmland near Lepakshi can be suitable for Bangalore-based buyers because it offers peaceful surroundings, road connectivity, weekend usability, and access to nearby attractions.",
+          "<span style=\"font-weight: bold;\">What makes Ecovara a managed farmland project?<br></span>Ecovara offers planned farmland features such as spacious plots, plantations, organic garden space, security, common amenities, and a managed ownership experience.",
+          "<span style=\"font-weight: bold;\">What are the plot sizes available at Ecovara?<br></span>Ecovara offers flexible plot sizes starting from 6,000 sq. ft., with options such as 8,000 sq. ft. and 10,000 sq. ft.",
+          "<span style=\"font-weight: bold;\">Is Ecovara close to Lepakshi Temple?<br></span>Yes. As per the project location highlights, Lepakshi Temple is around 10 minutes from Ecovara.",
+          "<span style=\"font-weight: bold;\">What should I check before buying farmland near Lepakshi?<br></span>You should check title documents, access road, water availability, approvals, maintenance model, security, fencing, developer credibility, and distance from major roads."
         ]
       }
     ],
