@@ -7241,17 +7241,21 @@ export const BLOGS = [
         "json": ""
       },
       "breadcrumb": {
-        "enabled": false,
+        "enabled": true,
         "mode": "default",
         "data": {
           "items": [
             {
-              "name": "",
-              "item": ""
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
             },
             {
-              "name": "",
-              "item": ""
+              "name": "Blogs",
+              "item": "https://www.novaranatureestates.com/blogs/"
+            },
+            {
+              "name": "Sustainable Plantation Farmland Investment Near Bangalore for Long-Term Income & Growth.",
+              "item": "https://www.novaranatureestates.com/blogs/sustainable-plantation-farmland-investment-india"
             }
           ]
         },
