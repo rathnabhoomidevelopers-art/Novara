@@ -1,5 +1,479 @@
 export const BLOGS = [
   {
+    "id": 31,
+    "slug": "farmland-in-hindupur",
+    "category": "Managed Farmland",
+    "title": "Farmland in Hindupur: Premium Managed Farmland Near Lepakshi",
+    "headline": "Farmland in Hindupur: Why Bangalore Buyers Are Exploring This Belt",
+    "description": "Discover premium farmland in Hindupur near Lepakshi with managed farm plots, fruit plantations, organic gardens, and weekend living near Bangalore. ",
+    "date": "Jul 9, 2026",
+    "keywords": "",
+    "author": "Novara Nature Estates",
+    "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783583852/ew2i9rxqfz18uvuavjsp.webp",
+    "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783583852/ew2i9rxqfz18uvuavjsp.webp",
+    "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783583852/ew2i9rxqfz18uvuavjsp.webp",
+    "imageAlt": "Farmland in Hindupur near Lepakshi with premium managed farm plots for Bangalore buyers",
+    "imageTitle": "farmland in hindupur banner",
+    "imageCaption": "",
+    "imageDescription": "Farmland in Hindupur near Lepakshi with premium managed farm plots for Bangalore buyers",
+    "videoUrl": "",
+    "tags": [],
+    "sections": [
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Bangalore buyers are no longer looking only at apartments, villas, or small plotted developments inside the city. Many families, professionals, business owners, and NRIs are now exploring land-based investments that offer open space, greenery, weekend usability, and long-term value. This is where </span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Farmland in Hindupur</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"> is gaining attention.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Located along the Bengaluru–Hyderabad side and close to the historic Lepakshi region, Hindupur offers a peaceful countryside setting without feeling completely disconnected from Bangalore. For buyers who want a weekend farm, nature retreat, organic garden, or managed farmland experience, this belt is becoming an attractive option.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">One such project in this region is </span><span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\"><span style=\"text-decoration-line: none; font-weight: 700;\">Ecovara by </span><a href=\"https://www.novaranatureestates.com/\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Novara Nature Estates</a></span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">, a premium managed farmland project near Lepakshi, designed for buyers who want land ownership with lifestyle comfort, greenery, and professional planning.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Why Hindupur Is Emerging as a Farmland Belt Near Bangalore",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">The demand for <a href=\"https://www.novaranatureestates.com/blogs/farmland-near-bangalore-farm-visit-checklist\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">farmland near Bangalore</a> has increased because buyers are looking for larger spaces, cleaner surroundings, and a better quality of life. City life offers convenience, but it also comes with traffic, pollution, limited outdoor space, and rising real estate prices.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Hindupur gives buyers a different experience. It offers open landscapes, village-side calmness, and access to important locations around the Lepakshi and Bengaluru–Hyderabad corridor. For people who want to own land without going too far from Bangalore, </span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Farmland in Hindupur</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"> becomes a practical choice.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The belt is especially appealing to those who want a weekend destination where they can relax, grow trees, plan a farmhouse, or enjoy nature with family.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Location Advantage: Close to Bangalore, Away from City Pressure",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">One of the main reasons buyers are exploring Hindupur is its location advantage. It is far enough from Bangalore to offer peace and space, but close enough for weekend travel.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\"><a href=\"https://www.novaranatureestates.com/projects\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Ecovara</a> is located near the historic </span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Lepakshi Temple</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"> and along the Bengaluru–Hyderabad National Highway side. This gives the project strong weekend-drive appeal for Bangalore buyers. The project location highlights include Lepakshi Temple and Hindupur Town within about 10 minutes, Bagepalli Toll Plaza within about 20 minutes, Penukonda Fort within about 30 minutes, Isha Foundation within about 50 minutes, Nandi Hills within about 60 minutes, Devanahalli within about 65 minutes, and Kempegowda International Airport within about 75 minutes.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">This makes the location useful for families who want a peaceful retreat while still staying connected to major travel points.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "The Bengaluru–Hyderabad Growth Corridor Effect",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Land buyers often follow growth corridors because connectivity plays a major role in long-term land demand. The Bengaluru–Hyderabad side has seen increasing interest from buyers who are looking beyond traditional Bangalore outskirts.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Hindupur benefits from this movement because it sits in a belt that connects lifestyle, travel, heritage, and land availability. Buyers who earlier focused only on Devanahalli, Nandi Hills, or Chikkaballapur are now exploring nearby belts that offer more open land and better countryside appeal.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">However, buyers should approach this with a practical mindset. Farmland should not be purchased only with the expectation of quick appreciation. The better approach is to look at land as a long-term asset that also provides lifestyle value.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Why Buyers Are Looking Beyond Devanahalli and Chikkaballapur",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Devanahalli, Nandi Hills, and Chikkaballapur are already popular among Bangalore buyers. Because of this, many land parcels in these belts have become expensive or crowded. Buyers who want larger spaces, more privacy, and a peaceful farm environment are now looking slightly beyond these saturated zones.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">This is where </span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Farmland in Hindupur</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"> becomes interesting. It offers a quieter alternative with better scope for spacious plots, tree plantations, organic gardens, and weekend homes. For buyers who want the feeling of a true countryside retreat, the Hindupur–Lepakshi belt has strong lifestyle potential.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Better Land Value Compared to Bangalore Outskirts",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Bangalore’s outskirts have become costly, especially in well-known plotted development zones. Many buyers find that they are paying a high price but getting limited space. Farmland near Hindupur gives buyers the possibility of owning larger land parcels where they can enjoy more usable outdoor space.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">At Ecovara, the available plot configurations start from </span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">6,000 sq. ft. onwards</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">, with options such as 6,000 sq. ft., 8,000 sq. ft., and 10,000 sq. ft. These sizes are suitable for buyers who want more than a small plot. They can plan gardens, sit-outs, fruit plantations, private cottages, or weekend farm experiences.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Lifestyle Appeal: Weekend Farm, Family Retreat, and Nature Living",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The biggest attraction of farmland is not only investment. It is also the lifestyle it creates.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Imagine spending weekends away from traffic, surrounded by fruit-bearing trees, organic gardens, open skies, and fresh air. For families, farmland offers space for children to experience nature. For working professionals, it becomes a stress-free escape. For senior buyers, it can become a peaceful retirement retreat.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara has been planned with this lifestyle in mind. Spread across </span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">15 acres</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">, the project blends rustic charm with contemporary comfort. It includes features such as European-style farmland planning, spacious plot dimensions, fruit-bearing plantations, organic garden space, and nature-inspired surroundings.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The idea is to create a place where buyers can enjoy both land ownership and a meaningful connection with nature.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Hindupur and Lepakshi Belt: A Weekend Destination Advantage",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The Hindupur–Lepakshi belt has a unique advantage because it is not just about land. It also has cultural and weekend destination value.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Lepakshi Temple, Penukonda Fort, Gudibande Fort, Isha Foundation, Nandi Hills, Puttaparthi Sai Baba Temple, and Vidhurashwatha Temple are some of the nearby attractions that add value to the location. This makes the area more appealing for weekend visits, family outings, and peaceful short breaks.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For Bangalore buyers, this is important. A farmland project becomes more useful when the surrounding area itself offers travel and leisure value.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Why Managed Farmland Is Better Than Buying Raw Land",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Buying raw farmland can be challenging for city buyers. Land requires regular maintenance, boundary protection, plantation planning, water management, and security. Many buyers purchase land with enthusiasm but later struggle to manage it from the city.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Managed farmland solves this problem by offering a more organized ownership experience. At Ecovara, the project is designed as a gated community with planned amenities and nature-focused development.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">The project highlights include </span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">64+ tree plantation varieties</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">, lotus pond or fish pond, campfire and rain dance area, 24/7 security check, solar street lights, cafeteria, jogging track, and pet route. These features make the land more usable, enjoyable, and convenient for weekend visits.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For busy Bangalore professionals and NRIs, managed farmland can be a more practical choice than buying isolated raw land.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Farmland in Hindupur as a Long-Term Asset",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Land is a tangible asset, and well-located farmland can hold long-term value when chosen carefully. Hindupur’s appeal comes from its connectivity, open land availability, nearby attractions, and growing interest from Bangalore buyers.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">But buyers should avoid unrealistic promises. Farmland should be viewed as a long-term asset that combines lifestyle, nature, and future potential. The value depends on the location, access road, legal clarity, water availability, maintenance quality, and overall development of the region.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara positions itself as a premium managed farmland project for buyers who want this balanced approach.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "What to Check Before Buying Farmland in Hindupur",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Before buying any farmland, proper verification is very important. Buyers should check the title documents, sale deed, mother deed, encumbrance certificate, RTC or revenue records, mutation records, survey sketch, tax paid receipts, land classification, access road, water source, and legal opinion from a local advocate.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">They should also understand the project maintenance model, security arrangements, plantation plan, and usage rules. This helps avoid confusion after purchase.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Who Should Consider Buying Farmland in Hindupur?",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Farmland in Hindupur is suitable for Bangalore professionals, business owners, NRIs, families, nature lovers, organic farming enthusiasts, and buyers looking for weekend retreats. It is also suitable for people who want larger land parcels instead of compact city plots.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">For anyone looking for open land, greenery, weekend usability, and managed farmland convenience, the Hindupur–Lepakshi belt is worth exploring.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Final Thoughts",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Farmland in Hindupur</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"> is gaining attention because it offers a practical mix of location, lifestyle, space, and long-term potential. It gives Bangalore buyers a chance to own land in a peaceful belt while staying connected to important destinations.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">With its 15-acre planned farmland community, spacious plot sizes, fruit-bearing plantations, organic garden spaces, security, leisure amenities, and proximity to Lepakshi, Hindupur Town, Devanahalli, and Kempegowda International Airport, </span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:700;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">Ecovara by Novara Nature Estates</span><span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\"> is designed for buyers who want more than just a plot.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size:11pt;font-family:'Times New Roman',serif;color:#000000;background-color:transparent;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none;vertical-align:baseline;white-space:pre;white-space:pre-wrap;\">It is not just farmland. It is a weekend escape, a nature retreat, and a long-term land ownership opportunity.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "h2",
+        "text": "Explore Ecovara Near the Hindupur–Lepakshi Belt",
+        "fontWeight": "font-bold",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\">Looking for premium <a href=\"https://www.novaranatureestates.com/blogs/managed-farmland-near-bangalore-guide\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">managed farmland</a> near Bangalore? Explore Ecovara by Novara Nature Estates and discover thoughtfully planned farmland starting from 6,000 sq. ft. onwards.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      },
+      {
+        "type": "p",
+        "text": "<span style=\"font-size: 11pt; font-family: &quot;Times New Roman&quot;, serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;\"><a href=\"https://www.novaranatureestates.com/contact-us\" target=\"_blank\" rel=\"noopener noreferrer\" data-styled=\"1\" style=\"color: rgb(227, 166, 0); font-weight: bold; text-decoration-line: underline;\">Book a site visit today</a> and experience nature-led land ownership near Lepakshi.</span>",
+        "fontWeight": "font-normal",
+        "align": "justify"
+      }
+    ],
+    "schemas": {
+      "faq": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "",
+              "text": ""
+            },
+            {
+              "name": "",
+              "text": ""
+            },
+            {
+              "name": "",
+              "text": ""
+            }
+          ]
+        },
+        "json": ""
+      },
+      "blog": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.novaranatureestates.com/blogs/farmland-in-hindupur-why-bangalore-buyers-are-exploring-this-belt"
+          },
+          "headline": "Farmland in Hindupur: Why Bangalore Buyers Are Exploring This Belt",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783583852/ew2i9rxqfz18uvuavjsp.webp",
+          "author": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "url": "https://www.novaranatureestates.com/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Novara Nature Estates",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.novaranatureestates.com/images/logo.svg"
+            }
+          },
+          "datePublished": "2026-07-08T11:43:29+05:30",
+          "dateModified": "2026-07-08T11:43:29+05:30"
+        },
+        "json": ""
+      },
+      "breadcrumb": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "items": [
+            {
+              "name": "Novara Nature Estates",
+              "item": "https://www.novaranatureestates.com/"
+            },
+            {
+              "name": "Blogs",
+              "item": "https://www.novaranatureestates.com/blogs"
+            },
+            {
+              "name": "Farmland in Hindupur: Why Bangalore Buyers Are Exploring This Belt",
+              "item": "https://www.novaranatureestates.com/blogs"
+            }
+          ]
+        },
+        "json": ""
+      },
+      "review": {
+        "enabled": true,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Farmland in Hindupur: Why Bangalore Buyers Are Exploring This Belt",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "1874",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "json": ""
+      },
+      "video": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "",
+          "description": "",
+          "thumbnailUrl": "",
+          "uploadDate": "",
+          "duration": "",
+          "contentUrl": "",
+          "embedUrl": ""
+        },
+        "json": ""
+      },
+      "product": {
+        "enabled": false,
+        "mode": "default",
+        "data": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": "",
+          "image": "",
+          "description": "",
+          "brand": {
+            "@type": "Brand",
+            "name": ""
+          },
+          "sku": "",
+          "offers": {
+            "@type": "Offer",
+            "url": "",
+            "priceCurrency": "",
+            "price": "",
+            "priceValidUntil": "",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "",
+            "bestRating": "",
+            "worstRating": "",
+            "ratingCount": ""
+          }
+        },
+        "json": ""
+      }
+    }
+  },
+  {
     "id": 30,
     "slug": "farmland-near-bangalore-farm-visit-checklist",
     "category": "Managed Farmland",
