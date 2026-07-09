@@ -9,9 +9,9 @@ export const BLOGS = [
     "date": "Jul 9, 2026",
     "keywords": "",
     "author": "Novara Nature Estates",
-    "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783583852/ew2i9rxqfz18uvuavjsp.webp",
-    "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783583852/ew2i9rxqfz18uvuavjsp.webp",
-    "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783583852/ew2i9rxqfz18uvuavjsp.webp",
+    "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783584384/s3jxsev9exznbmr69mbn.webp",
+    "heroImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783584384/s3jxsev9exznbmr69mbn.webp",
+    "coverImage": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783584384/s3jxsev9exznbmr69mbn.webp",
     "imageAlt": "Farmland in Hindupur near Lepakshi with premium managed farm plots for Bangalore buyers",
     "imageTitle": "farmland in hindupur banner",
     "imageCaption": "",
@@ -365,7 +365,7 @@ export const BLOGS = [
             "@id": "https://www.novaranatureestates.com/blogs/farmland-in-hindupur-why-bangalore-buyers-are-exploring-this-belt"
           },
           "headline": "Farmland in Hindupur: Why Bangalore Buyers Are Exploring This Belt",
-          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783583852/ew2i9rxqfz18uvuavjsp.webp",
+          "image": "https://res.cloudinary.com/dwkaitos8/image/upload/v1783584384/s3jxsev9exznbmr69mbn.webp",
           "author": {
             "@type": "Organization",
             "name": "Novara Nature Estates",
@@ -399,7 +399,7 @@ export const BLOGS = [
             },
             {
               "name": "Farmland in Hindupur: Why Bangalore Buyers Are Exploring This Belt",
-              "item": "https://www.novaranatureestates.com/blogs"
+              "item": "https://www.novaranatureestates.com/blogs/farmland-in-hindupur"
             }
           ]
         },
