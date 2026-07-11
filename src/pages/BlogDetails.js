@@ -381,28 +381,41 @@ export default function BlogDetail({ vikeSlug }) {
                     .replace(/\s+/g, " ")
                     .trim();
                 const parseFaqItem = (item = "") => {
-                  let q, a;
-                  const brAt = item.search(/<br\s*\/?>/i);
-                  const pEnd = item.search(/<\/p>/i);
-                  if (brAt !== -1) {
-                    // Builder-style bold heading + <br> + answer
-                    q = item.slice(0, brAt);
-                    a = item.slice(brAt).replace(/^\s*(<br\s*\/?>|<\/span>|<\/b>|<\/strong>|<\/p>)+/i, "");
-                  } else if (pEnd !== -1) {
-                    // Old builder-style <p>Q</p><p>A</p>
-                    q = item.slice(0, pEnd);
-                    a = item.slice(pEnd + 4);
-                  } else {
-                    // Plain text: split at the first "?"
-                    const qi = item.indexOf("?");
-                    q = item.slice(0, qi + 1);
-                    a = item.slice(qi + 1);
+                  // The question always ends at the first "?" that appears in the
+                  // *visible text* (not inside a tag/attribute). Splitting there is
+                  // format-agnostic: it works for plain "Q?\nA", concatenated "Q?A",
+                  // `<span>Q?<br></span>A`, `<p>Q?</p><p>A</p>`, and Google-Docs
+                  // pastes that wrap the whole Q&A in one <p> with nested spans.
+                  let inTag = false;
+                  let splitAt = -1;
+                  for (let k = 0; k < item.length; k++) {
+                    const c = item[k];
+                    if (c === "<") inTag = true;
+                    else if (c === ">") inTag = false;
+                    else if (c === "?" && !inTag) { splitAt = k; break; }
                   }
+
+                  let q, a;
+                  if (splitAt === -1) {
+                    // No question mark — treat the whole item as the question.
+                    q = item;
+                    a = "";
+                  } else {
+                    q = item.slice(0, splitAt + 1);
+                    a = item.slice(splitAt + 1);
+                  }
+
+                  // Question renders as plain text (the h3 supplies bold + size).
                   q = stripManualNum(stripTags(q));
+                  // Answer: drop wrapper/heading markup so it never inherits the
+                  // bold/serif styling a paste carried in, but keep real inline
+                  // formatting (links, emphasis).
                   a = a
-                    .replace(/<\/?(p|div|span|font)[^>]*>/gi, "") // drop wrapper markup
-                    .replace(/<br\s*\/?>/gi, " ")                 // no stray line breaks
-                    .replace(/^\s+|\s+$/g, "");                   // keeps <a>, <b>, <em>, <u>
+                    .replace(/<\/?(p|div|span|font|h[1-6])[^>]*>/gi, "") // wrapper markup
+                    .replace(/<br\s*\/?>/gi, " ")                        // no stray breaks
+                    .replace(/&nbsp;/gi, " ")
+                    .replace(/\s+/g, " ")                                // collapse whitespace
+                    .replace(/^\s+|\s+$/g, "");                          // keeps <a>, <b>, <em>, <u>
                   return { q, a };
                 };
 
